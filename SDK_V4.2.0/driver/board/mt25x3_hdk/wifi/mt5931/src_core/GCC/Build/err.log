@@ -1,0 +1,17 @@
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/kal_public_api.c: In function 'evshed_set_event':
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/kal_public_api.c:874:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         return (eventid)timer_id;
+                ^
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/kal_public_api.c: In function 'evshed_timer_handler':
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/kal_public_api.c:974:76: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                     (*(kal_os_sched_ptr->timerTab[timer_id].kalTimerFunc))((void *)timer_id);
+                                                                            ^
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/kal_public_api.c: In function 'kal_queue_send':
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/kal_public_api.c:1841:18: warning: comparison between pointer and integer [enabled by default]
+     if(wait_time == NULL){
+                  ^
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/stack_ltlcom.c: In function 'msg_send_ext_queue_to_head':
+../../../../../../../driver/board/mt25x3_hdk/wifi/mt5931/src_core/stack_ltlcom.c:538:16: warning: unused variable 'xHigherPriorityTaskWoken' [-Wunused-variable]
+     BaseType_t xHigherPriorityTaskWoken;
+                ^
+../../../../../../../tools/gcc//gcc-arm-none-eabi/bin/arm-none-eabi-ar: creating Build/libwifibsp.a

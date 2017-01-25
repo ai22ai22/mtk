@@ -1,0 +1,3 @@
+/tmp/ccrIaWHS.s: Assembler messages:
+/tmp/ccrIaWHS.s:2098: writing to APSR without specifying a bitmask is deprecated
+../../../../../tools/gcc//gcc-arm-none-eabi/bin/arm-none-eabi-ar: creating Build/libhal_core_CM4_GCC.a
