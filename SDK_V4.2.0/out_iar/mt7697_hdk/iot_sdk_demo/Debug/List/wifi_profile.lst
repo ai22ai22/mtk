@@ -1,0 +1,1799 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:46
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_profile.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_profile.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\wifi_profile.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\wifi_profile.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_profile.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdio.h>
+     36          #include <string.h>
+     37          #include <stdlib.h>
+     38          #include "type_def.h"
+     39          #include "mt7687.h"
+     40          #include "connsys_driver.h"
+     41          #include "connsys_util.h"
+     42          #include "wifi_scan.h"
+     43          #include "wifi_api.h"
+     44          #include "wifi_inband.h"
+     45          #include "os.h"
+     46          #include "os_util.h"
+     47          #include "nvdm.h"
+     48          #include "get_profile_string.h"
+     49          #include "timer.h"
+     50          #include "syslog.h"
+     51          #include "wifi_profile.h"
+     52          
+     53          
+     54          /**
+     55           * @brief judge whether the opmode is valid
+     56           */
+     57          bool wifi_is_opmode_valid(uint8_t mode)
+     58          {
+     59              return (mode <= WIFI_MODE_P2P_ONLY);
+     60          }
+     61          
+     62          /**
+     63           * @brief judge whether the port is valid
+     64           */
+     65          bool wifi_is_port_valid(uint8_t port)
+     66          {
+     67              return (port <= WIFI_PORT_AP);
+     68          }
+     69          
+     70          /**
+     71           * @brief judge whether the band is valid
+     72           */
+     73          bool wifi_is_band_valid(uint8_t band)
+     74          {
+     75              return (band <= WIFI_BAND_5_G);
+     76          }
+     77          
+     78          /**
+     79           * @brief judge whether the bandwidth is valid
+     80           */
+     81          bool wifi_is_bandwidth_valid(uint8_t bandwidth)
+     82          {
+     83              return (bandwidth <= WIFI_IOT_COMMAND_CONFIG_BANDWIDTH_2040MHZ);
+     84          }
+     85          
+     86          /**
+     87           * @brief judge whether the auth mode is valid
+     88           */
+     89          bool wifi_is_auth_mode_valid(uint8_t auth_mode)
+     90          {
+     91              return (auth_mode <= WIFI_AUTH_MODE_WPA_PSK_WPA2_PSK);
+     92          }
+     93          
+     94          /**
+     95           * @brief judge whether the encrypt type is valid
+     96           */
+     97          bool wifi_is_encrypt_type_valid(uint8_t encrypt_type)
+     98          {
+     99          #ifdef WAPI_SUPPORT
+    100              return (encrypt_type <= WIFI_ENCRYPT_TYPE_ENCRYPT_SMS4_ENABLED);
+    101          #else
+    102              return (encrypt_type <= WIFI_ENCRYPT_TYPE_GROUP_WEP104_ENABLED);
+    103          #endif
+    104          }
+    105          
+    106          /**
+    107           * @brief judge whether the power save mode is valid
+    108           */
+    109          bool wifi_is_ps_mode_valid(uint8_t ps_mode)
+    110          {
+    111              return (ps_mode <= 2);
+    112          }
+    113          
+    114          #ifdef MTK_WIFI_PROFILE_ENABLE
+    115          int32_t wifi_profile_set_opmode(uint8_t mode)
+    116          {
+    117              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    118          
+    119              if (!wifi_is_opmode_valid(mode)) {
+    120                  LOG_E(wifi, "mode is invalid: %d", mode);
+    121                  return WIFI_ERR_PARA_INVALID;
+    122              }
+    123          
+    124              sprintf(buf, "%d", mode);
+    125          
+    126              if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_COMMON, "OpMode",
+    127                      NVDM_DATA_ITEM_TYPE_STRING,
+    128                      (uint8_t *)buf, os_strlen(buf))) {
+    129                  return WIFI_FAIL;
+    130              }
+    131          
+    132              return WIFI_SUCC;
+    133          }
+    134          
+    135          int32_t wifi_profile_get_opmode(uint8_t *mode)
+    136          {
+    137              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    138              uint32_t len = sizeof(buf);
+    139          
+    140              if (NULL == mode) {
+    141                  LOG_E(wifi, "mode is null");
+    142                  return WIFI_ERR_PARA_INVALID;
+    143              }
+    144          
+    145              if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_COMMON, "OpMode", (uint8_t *)buf, &len)) {
+    146                  return WIFI_FAIL;
+    147              }
+    148          
+    149              *mode = atoi(buf);
+    150              return WIFI_SUCC;
+    151          }
+    152          
+    153          
+    154          int32_t wifi_profile_set_channel(uint8_t port, uint8_t channel)
+    155          {
+    156              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    157          
+    158              sprintf(buf, "%d", channel);
+    159          
+    160              if (port == WIFI_PORT_AP) {
+    161                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "Channel",
+    162                          NVDM_DATA_ITEM_TYPE_STRING,
+    163                          (uint8_t *)buf, os_strlen(buf))) {
+    164                      return WIFI_FAIL;
+    165                  }
+    166              } else if (port == WIFI_PORT_STA) {
+    167                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "Channel",
+    168                          NVDM_DATA_ITEM_TYPE_STRING,
+    169                          (uint8_t *)buf, os_strlen(buf))) {
+    170                      return WIFI_FAIL;
+    171                  }
+    172              } else {
+    173                  LOG_E(wifi, "port is invalid: %d", port);
+    174                  return WIFI_ERR_PARA_INVALID;
+    175              }
+    176              return WIFI_SUCC;
+    177          }
+    178          
+    179          int32_t wifi_profile_get_channel(uint8_t port, uint8_t *channel)
+    180          {
+    181              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    182              uint32_t len = sizeof(buf);
+    183          
+    184              if (NULL == channel) {
+    185                  return WIFI_ERR_PARA_INVALID;
+    186              }
+    187          
+    188              if (port == WIFI_PORT_AP) {
+    189                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "Channel", (uint8_t *)buf, &len)) {
+    190                      return WIFI_FAIL;
+    191                  }
+    192              } else if (port == WIFI_PORT_STA) {
+    193                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "Channel", (uint8_t *)buf, &len)) {
+    194                      return WIFI_FAIL;
+    195                  }
+    196              } else {
+    197                  LOG_E(wifi, "port is invalid: %d", port);
+    198                  return WIFI_ERR_PARA_INVALID;
+    199              }
+    200          
+    201              *channel = atoi(buf);
+    202              return WIFI_SUCC;
+    203          }
+    204          
+    205          int32_t wifi_profile_set_bandwidth(uint8_t port, uint8_t bandwidth)
+    206          {
+    207              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    208          
+    209              if (!wifi_is_bandwidth_valid(bandwidth)) {
+    210                  LOG_E(wifi, "bandwidth is invalid: %d", bandwidth);
+    211                  return WIFI_ERR_PARA_INVALID;
+    212              }
+    213          
+    214              sprintf(buf, "%d", bandwidth);
+    215          
+    216              if (port == WIFI_PORT_AP) {
+    217                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "BW",
+    218                          NVDM_DATA_ITEM_TYPE_STRING,
+    219                          (uint8_t *)buf, os_strlen(buf))) {
+    220                      return WIFI_FAIL;
+    221                  }
+    222              } else if (port == WIFI_PORT_STA) {
+    223                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "BW",
+    224                          NVDM_DATA_ITEM_TYPE_STRING,
+    225                          (uint8_t *)buf, os_strlen(buf))) {
+    226                      return WIFI_FAIL;
+    227                  }
+    228              } else {
+    229                  LOG_E(wifi, "port is invalid: %d", port);
+    230                  return WIFI_ERR_PARA_INVALID;
+    231              }
+    232              return WIFI_SUCC;
+    233          }
+    234          
+    235          
+    236          int32_t wifi_profile_get_bandwidth(uint8_t port, uint8_t *bandwidth)
+    237          {
+    238              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    239              uint32_t len = sizeof(buf);
+    240          
+    241              if (NULL == bandwidth) {
+    242                  LOG_E(wifi, "bandwidth is null");
+    243                  return WIFI_ERR_PARA_INVALID;
+    244              }
+    245          
+    246              if (port == WIFI_PORT_AP) {
+    247                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "BW", (uint8_t *)buf, &len)) {
+    248                      return WIFI_FAIL;
+    249                  }
+    250              } else if (port == WIFI_PORT_STA) {
+    251                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "BW", (uint8_t *)buf, &len)) {
+    252                      return WIFI_FAIL;
+    253                  }
+    254              } else {
+    255                  LOG_E(wifi, "port is invalid: %d", port);
+    256                  return WIFI_ERR_PARA_INVALID;
+    257              }
+    258          
+    259              *bandwidth = atoi(buf);
+    260              return WIFI_SUCC;
+    261          }
+    262          
+    263          int32_t wifi_profile_get_mac_address(uint8_t port, uint8_t *address)
+    264          {
+    265              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    266              uint32_t len = sizeof(buf);
+    267          
+    268              if (!wifi_is_port_valid(port)) {
+    269                  LOG_E(wifi, "port is invalid: %d", port);
+    270                  return WIFI_ERR_PARA_INVALID;
+    271              }
+    272              if (NULL == address) {
+    273                  LOG_E(wifi, "address is null");
+    274                  return WIFI_ERR_PARA_INVALID;
+    275              }
+    276          
+    277          #ifdef MTK_WIFI_REPEATER_ENABLE
+    278              uint8_t mode;
+    279              if (wifi_profile_get_opmode(&mode) < 0) {
+    280                  return WIFI_FAIL;
+    281              }
+    282              if ((mode == WIFI_MODE_REPEATER) && (port == WIFI_PORT_AP)) {
+    283                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "MacAddr", (uint8_t *)buf, &len)) {
+    284                      return WIFI_FAIL;
+    285                  }
+    286              } else {
+    287                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "MacAddr", (uint8_t *)buf, &len)) {
+    288                      return WIFI_FAIL;
+    289                  }
+    290              }
+    291          #else
+    292              /* Use STA MAC/IP as AP MAC/IP for the time being, due to N9 dual interface not ready yet */
+    293              if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "MacAddr", (uint8_t *)buf, &len)) {
+    294                  return WIFI_FAIL;
+    295              }
+    296          #endif
+    297          
+    298              wifi_conf_get_mac_from_str((char *)address, buf);
+    299              return WIFI_SUCC;
+    300          }
+    301          
+    302          
+    303          int32_t wifi_profile_set_mac_address(uint8_t port, uint8_t *address)
+    304          {
+    305              if (!wifi_is_port_valid(port)) {
+    306                  LOG_E(wifi, "port is invalid: %d", port);
+    307                  return WIFI_ERR_PARA_INVALID;
+    308              }
+    309              if (address == NULL) {
+    310                  LOG_E(wifi, "mac address is null.");
+    311                  return WIFI_ERR_PARA_INVALID;
+    312              }
+    313          
+    314              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    315          
+    316              sprintf(buf, "%02x:%02x:%02x:%02x:%02x:%02x",
+    317                      address[0], address[1], address[2], address[3], address[4], address[5]);
+    318          
+    319              if (port == WIFI_PORT_AP) {
+    320                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "MacAddr",
+    321                          NVDM_DATA_ITEM_TYPE_STRING,
+    322                          (uint8_t *)buf, os_strlen(buf))) {
+    323                      return WIFI_FAIL;
+    324                  }
+    325              } else {
+    326                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "MacAddr",
+    327                          NVDM_DATA_ITEM_TYPE_STRING,
+    328                          (uint8_t *)buf, os_strlen(buf))) {
+    329                      return WIFI_FAIL;
+    330                  }
+    331              }
+    332          
+    333              return WIFI_SUCC;
+    334          }
+    335          
+    336          
+    337          int32_t wifi_profile_set_ssid(uint8_t port, uint8_t *ssid , uint8_t ssid_length)
+    338          {
+    339              if (!wifi_is_port_valid(port)) {
+    340                  LOG_E(wifi, "port is invalid: %d", port);
+    341                  return WIFI_ERR_PARA_INVALID;
+    342              }
+    343              if (ssid_length > WIFI_MAX_LENGTH_OF_SSID) {
+    344                  LOG_I(wifi, "incorrect length(=%d)", ssid_length);
+    345                  return WIFI_ERR_PARA_INVALID;
+    346              }
+    347              if (NULL == ssid) {
+    348                  LOG_E(wifi, "ssid is null.");
+    349                  return WIFI_ERR_PARA_INVALID;
+    350              }
+    351          
+    352              char ssid_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    353              char ssid_len_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    354          
+    355              os_memcpy(ssid_buf, ssid, ssid_length);
+    356              ssid_buf[ssid_length] = '\0';
+    357          
+    358          
+    359              /***add by Pengfei, optimize PMK calculate at boot up***/
+    360              if (WIFI_PORT_STA == port) {
+    361                  uint8_t pmk_info[WIFI_MAX_LENGTH_OF_SSID+WIFI_LENGTH_PASSPHRASE+WIFI_LENGTH_PMK] = {0};
+    362                  uint8_t buf_passphrase[WIFI_LENGTH_PASSPHRASE] = {0};
+    363                  uint8_t passphrase_length = 0;
+    364                  uint8_t psk[WIFI_LENGTH_PMK];
+    365                  if (wifi_profile_get_wpa_psk_key(port, buf_passphrase, &passphrase_length) < 0) {
+    366                      return WIFI_FAIL;
+    367                  }
+    368          
+    369          #ifdef MTK_MINISUPP_ENABLE
+    370                  if (__g_wpa_supplicant_api.cal_pmk) {
+    371                      if (__g_wpa_supplicant_api.cal_pmk(buf_passphrase, ssid, ssid_length, psk) < 0) {
+    372                          LOG_E(wifi, "callback cal_pmk is not ready");
+    373                          return WIFI_FAIL;
+    374                      }
+    375                  }
+    376          #endif /* MTK_MINISUPP_ENABLE */
+    377          
+    378                  os_memcpy(pmk_info, ssid, ssid_length);
+    379                  os_memcpy(pmk_info+WIFI_MAX_LENGTH_OF_SSID, buf_passphrase, passphrase_length);
+    380                  os_memcpy(pmk_info+WIFI_MAX_LENGTH_OF_SSID+WIFI_LENGTH_PASSPHRASE, psk, WIFI_LENGTH_PMK);
+    381                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "PMK_INFO", NVDM_DATA_ITEM_TYPE_STRING,
+    382                                      (uint8_t *)pmk_info, WIFI_MAX_LENGTH_OF_SSID+WIFI_LENGTH_PASSPHRASE+WIFI_LENGTH_PMK)) {
+    383                      return WIFI_FAIL;
+    384                  }
+    385              }
+    386          
+    387              sprintf(ssid_len_buf, "%d", ssid_length);
+    388              if (port == WIFI_PORT_AP) {
+    389                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "Ssid",
+    390                          NVDM_DATA_ITEM_TYPE_STRING,
+    391                          (uint8_t *)ssid_buf, os_strlen(ssid_buf))) {
+    392                      return WIFI_FAIL;
+    393                  }
+    394                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "SsidLen",
+    395                          NVDM_DATA_ITEM_TYPE_STRING,
+    396                          (uint8_t *)ssid_len_buf, os_strlen(ssid_len_buf))) {
+    397                      return WIFI_FAIL;
+    398                  }
+    399              } else {
+    400                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "Ssid",
+    401                          NVDM_DATA_ITEM_TYPE_STRING,
+    402                          (uint8_t *)ssid_buf, os_strlen(ssid_buf))) {
+    403                      return WIFI_FAIL;
+    404                  }
+    405                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "SsidLen",
+    406                          NVDM_DATA_ITEM_TYPE_STRING,
+    407                          (uint8_t *)ssid_len_buf, os_strlen(ssid_len_buf))) {
+    408                      return WIFI_FAIL;
+    409                  }
+    410              }
+    411              return WIFI_SUCC;
+    412          }
+    413          
+    414          
+    415          int32_t wifi_profile_get_ssid(uint8_t port, uint8_t *ssid, uint8_t *ssid_length)
+    416          {
+    417              char buf[WIFI_PROFILE_BUFFER_LENGTH];
+    418              uint32_t len;
+    419          
+    420              if (!wifi_is_port_valid(port)) {
+    421                  LOG_E(wifi, "port is invalid: %d", port);
+    422                  return WIFI_ERR_PARA_INVALID;
+    423              }
+    424              if (NULL == ssid_length) {
+    425                  LOG_E(wifi, "ssid_length is null.");
+    426                  return WIFI_ERR_PARA_INVALID;
+    427              }
+    428              if (NULL == ssid) {
+    429                  LOG_E(wifi, "ssid is null.");
+    430                  return WIFI_ERR_PARA_INVALID;
+    431              }
+    432          
+    433              if (port == WIFI_PORT_AP) {
+    434                  os_memset(buf, 0, WIFI_PROFILE_BUFFER_LENGTH);
+    435                  len = sizeof(buf);
+    436                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "Ssid", (uint8_t *)buf, &len)) {
+    437                      return WIFI_FAIL;
+    438                  }
+    439                  strcpy((char *)ssid, buf);
+    440          
+    441                  os_memset(buf, 0, WIFI_PROFILE_BUFFER_LENGTH);
+    442                  len = sizeof(buf);
+    443                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "SsidLen", (uint8_t *)buf, &len)) {
+    444                      return WIFI_FAIL;
+    445                  }
+    446                  *ssid_length = atoi(buf);
+    447                  return WIFI_SUCC;
+    448              } else {
+    449                  os_memset(buf, 0, WIFI_PROFILE_BUFFER_LENGTH);
+    450                  len = sizeof(buf);
+    451                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "Ssid", (uint8_t *)buf, &len)) {
+    452                      return WIFI_FAIL;
+    453                  }
+    454                  strcpy((char *)ssid, buf);
+    455          
+    456                  os_memset(buf, 0, WIFI_PROFILE_BUFFER_LENGTH);
+    457                  len = sizeof(buf);
+    458                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "SsidLen", (uint8_t *)buf, &len)) {
+    459                      return WIFI_FAIL;
+    460                  }
+    461                  *ssid_length = atoi(buf);
+    462                  return WIFI_SUCC;
+    463              }
+    464          }
+    465          
+    466          int32_t wifi_profile_commit_setting(char *profile_section)
+    467          {
+    468              return WIFI_SUCC;
+    469          }
+    470          
+    471          int32_t wifi_profile_get_profile(uint8_t port, wifi_profile_t *profile)
+    472          {
+    473              return WIFI_SUCC;
+    474          }
+    475          
+    476          int32_t wifi_profile_set_wireless_mode(uint8_t port, wifi_phy_mode_t mode)
+    477          {
+    478              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    479          
+    480              if (!wifi_is_port_valid(port)) {
+    481                  LOG_E(wifi, "port is invalid: %d", port);
+    482                  return WIFI_ERR_PARA_INVALID;
+    483              }
+    484          
+    485              int32_t support_5g = 0;
+    486              support_5g = wifi_5g_support();
+    487              if (((WIFI_PHY_11A == mode) || (WIFI_PHY_11ABG_MIXED == mode) ||(WIFI_PHY_11ABGN_MIXED == mode) || (WIFI_PHY_11AN_MIXED == mode))
+    488                   && (support_5g < 0)) {
+    489                   LOG_E(wifi, "Chip doesn't support 5G.");
+    490                   return WIFI_ERR_NOT_SUPPORT;
+    491              }
+    492          
+    493              sprintf(buf, "%d", mode);
+    494          
+    495              if (port == WIFI_PORT_AP) {
+    496                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "WirelessMode",
+    497                          NVDM_DATA_ITEM_TYPE_STRING,
+    498                          (uint8_t *)buf, os_strlen(buf))) {
+    499                      return WIFI_FAIL;
+    500                  }
+    501              } else {
+    502                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "WirelessMode",
+    503                          NVDM_DATA_ITEM_TYPE_STRING,
+    504                          (uint8_t *)buf, os_strlen(buf))) {
+    505                      return WIFI_FAIL;
+    506                  }
+    507              }
+    508              return WIFI_SUCC;
+    509          }
+    510          
+    511          
+    512          int32_t wifi_profile_get_wireless_mode(uint8_t port, wifi_phy_mode_t *mode)
+    513          {
+    514              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    515              uint32_t len = sizeof(buf);
+    516          
+    517              if (!wifi_is_port_valid(port)) {
+    518                  LOG_E(wifi, "port is invalid: %d", port);
+    519                  return WIFI_ERR_PARA_INVALID;
+    520              }
+    521              if (NULL == mode) {
+    522                  LOG_E(wifi, "mode is null");
+    523                  return WIFI_ERR_PARA_INVALID;
+    524              }
+    525          
+    526              if (port == WIFI_PORT_AP) {
+    527                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "WirelessMode", (uint8_t *)buf, &len)) {
+    528                      return WIFI_FAIL;
+    529                  }
+    530              } else {
+    531                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "WirelessMode", (uint8_t *)buf, &len)) {
+    532                      return WIFI_FAIL;
+    533                  }
+    534              }
+    535          
+    536              *mode = (wifi_phy_mode_t)atoi(buf);
+    537              return WIFI_SUCC;
+    538          }
+    539          
+    540          int32_t wifi_profile_set_security_mode(uint8_t port, wifi_auth_mode_t auth_mode, wifi_encrypt_type_t encrypt_type)
+    541          {
+    542              char auth_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    543              char encrypt_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    544          
+    545              if (!wifi_is_port_valid(port)) {
+    546                  LOG_E(wifi, "port is invalid: %d", port);
+    547                  return WIFI_ERR_PARA_INVALID;
+    548              }
+    549              if (!wifi_is_auth_mode_valid(auth_mode)) {
+    550                  LOG_E(wifi, "auth_mode is invalid: %d", auth_mode);
+    551                  return WIFI_ERR_PARA_INVALID;
+    552              }
+    553              if (!wifi_is_encrypt_type_valid(encrypt_type)) {
+    554                  LOG_E(wifi, "encrypt_type is invalid: %d", encrypt_type);
+    555                  return WIFI_ERR_PARA_INVALID;
+    556              }
+    557          
+    558              sprintf(auth_buf, "%d", auth_mode);
+    559              sprintf(encrypt_buf, "%d", encrypt_type);
+    560          
+    561              if (port == WIFI_PORT_AP) {
+    562                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "AuthMode",
+    563                          NVDM_DATA_ITEM_TYPE_STRING,
+    564                          (uint8_t *)auth_buf, os_strlen(auth_buf))) {
+    565                      return WIFI_FAIL;
+    566                  }
+    567                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "EncrypType",
+    568                          NVDM_DATA_ITEM_TYPE_STRING,
+    569                          (uint8_t *)encrypt_buf, os_strlen(encrypt_buf))) {
+    570                      return WIFI_FAIL;
+    571                  }
+    572              } else {
+    573                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "AuthMode",
+    574                          NVDM_DATA_ITEM_TYPE_STRING,
+    575                          (uint8_t *)auth_buf, os_strlen(auth_buf))) {
+    576                      return WIFI_FAIL;
+    577                  }
+    578                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "EncrypType",
+    579                          NVDM_DATA_ITEM_TYPE_STRING,
+    580                          (uint8_t *)encrypt_buf, os_strlen(encrypt_buf))) {
+    581                      return WIFI_FAIL;
+    582                  }
+    583              }
+    584              return WIFI_SUCC;
+    585          }
+    586          
+    587          int32_t wifi_profile_get_security_mode(uint8_t port, wifi_auth_mode_t *auth_mode, wifi_encrypt_type_t *encrypt_type)
+    588          {
+    589              char auth_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    590              char encypt_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    591              uint32_t auth_buf_len = sizeof(auth_buf);
+    592              uint32_t encypt_buf_len = sizeof(encypt_buf);
+    593          
+    594              if (!wifi_is_port_valid(port)) {
+    595                  LOG_E(wifi, "port is invalid: %d", port);
+    596                  return WIFI_ERR_PARA_INVALID;
+    597              }
+    598              if (NULL == auth_mode || NULL == encrypt_type) {
+    599                  LOG_E(wifi, "null input pointer");
+    600                  return WIFI_ERR_PARA_INVALID;
+    601              }
+    602          
+    603              if (port == WIFI_PORT_AP) {
+    604                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "AuthMode", (uint8_t *)auth_buf, &auth_buf_len)) {
+    605                      return WIFI_FAIL;
+    606                  }
+    607                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "EncrypType", (uint8_t *)encypt_buf, &encypt_buf_len)) {
+    608                      return WIFI_FAIL;
+    609                  }
+    610              } else {
+    611                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "AuthMode", (uint8_t *)auth_buf, &auth_buf_len)) {
+    612                      return WIFI_FAIL;
+    613                  }
+    614                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "EncrypType", (uint8_t *)encypt_buf, &encypt_buf_len)) {
+    615                      return WIFI_FAIL;
+    616                  }
+    617              }
+    618          
+    619              *auth_mode = (wifi_auth_mode_t)atoi(auth_buf);
+    620              *encrypt_type = (wifi_encrypt_type_t)atoi(encypt_buf);
+    621              return WIFI_SUCC;
+    622          }
+    623          
+    624          
+    625          int32_t wifi_profile_set_wpa_psk_key(uint8_t port, uint8_t *passphrase, uint8_t passphrase_length)
+    626          {
+    627              char pass_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    628              char pass_len_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    629          
+    630              if (!wifi_is_port_valid(port)) {
+    631                  LOG_E(wifi, "port is invalid: %d", port);
+    632                  return WIFI_ERR_PARA_INVALID;
+    633              }
+    634              if (passphrase == NULL) {
+    635                  LOG_E(wifi, "passphrase is null.");
+    636                  return WIFI_ERR_PARA_INVALID;
+    637              }
+    638              if ((passphrase_length < 8) || (passphrase_length > WIFI_LENGTH_PASSPHRASE)) {
+    639                  LOG_E(wifi, "incorrect length(=%d)", passphrase_length);
+    640                  return WIFI_ERR_PARA_INVALID;
+    641              }
+    642              if (passphrase_length == WIFI_LENGTH_PASSPHRASE) {
+    643                  for (uint8_t index = 0; index < WIFI_LENGTH_PASSPHRASE; index++) {
+    644                      if (!hex_isdigit(passphrase[index])) {
+    645                          LOG_E(wifi, "length(=%d) but the strings are not hex strings!", passphrase_length);
+    646                          return WIFI_ERR_PARA_INVALID;
+    647                      }
+    648                  }
+    649              }
+    650          
+    651              sprintf(pass_len_buf, "%d", passphrase_length);
+    652              os_memcpy(pass_buf, passphrase, passphrase_length);
+    653              pass_buf[passphrase_length] = '\0';
+    654          
+    655              /***add by Pengfei, optimize PMK calculate at boot up***/
+    656              if (WIFI_PORT_STA == port) {
+    657                  uint8_t pmk_info[WIFI_MAX_LENGTH_OF_SSID+WIFI_LENGTH_PASSPHRASE+WIFI_LENGTH_PMK] = {0};
+    658                  uint8_t ssid[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    659                  uint8_t ssid_length = 0;
+    660                  uint8_t psk[WIFI_LENGTH_PMK];
+    661                  if (wifi_profile_get_ssid(port, ssid, &ssid_length) < 0) {
+    662                      return WIFI_FAIL;
+    663                  }
+    664          
+    665          #ifdef MTK_MINISUPP_ENABLE
+    666                  if (__g_wpa_supplicant_api.cal_pmk) {
+    667                      if (__g_wpa_supplicant_api.cal_pmk(passphrase, ssid, ssid_length, psk) < 0) {
+    668                          LOG_E(wifi, "passphrase length is 64.");
+    669                      }
+    670                  }
+    671          #endif /* MTK_MINISUPP_ENABLE */
+    672          
+    673                  os_memcpy(pmk_info, ssid, ssid_length);
+    674                  os_memcpy(pmk_info+WIFI_MAX_LENGTH_OF_SSID, passphrase, passphrase_length);
+    675                  os_memcpy(pmk_info+WIFI_MAX_LENGTH_OF_SSID+WIFI_LENGTH_PASSPHRASE, psk, WIFI_LENGTH_PMK);
+    676                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "PMK_INFO", NVDM_DATA_ITEM_TYPE_STRING,
+    677                                      (uint8_t *)pmk_info, WIFI_MAX_LENGTH_OF_SSID+WIFI_LENGTH_PASSPHRASE+WIFI_LENGTH_PMK)) {
+    678                      return WIFI_FAIL;
+    679                  }
+    680          
+    681              }
+    682          
+    683              if (port == WIFI_PORT_AP) {
+    684                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "WpaPskLen",
+    685                          NVDM_DATA_ITEM_TYPE_STRING,
+    686                          (uint8_t *)pass_len_buf, os_strlen(pass_len_buf))) {
+    687                      return WIFI_FAIL;
+    688                  }
+    689                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "WpaPsk",
+    690                          NVDM_DATA_ITEM_TYPE_STRING,
+    691                          (uint8_t *)pass_buf, os_strlen(pass_buf))) {
+    692                      return WIFI_FAIL;
+    693                  }
+    694              } else {
+    695                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "WpaPskLen",
+    696                          NVDM_DATA_ITEM_TYPE_STRING,
+    697                          (uint8_t *)pass_len_buf, os_strlen(pass_len_buf))) {
+    698                      return WIFI_FAIL;
+    699                  }
+    700                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "WpaPsk",
+    701                          NVDM_DATA_ITEM_TYPE_STRING,
+    702                          (uint8_t *)pass_buf, os_strlen(pass_buf))) {
+    703                      return WIFI_FAIL;
+    704                  }
+    705              }
+    706              return WIFI_SUCC;
+    707          }
+    708          
+    709          
+    710          int32_t wifi_profile_get_wpa_psk_key(uint8_t port, uint8_t *passphrase, uint8_t *passphrase_length)
+    711          {
+    712              char pass_len_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    713              char pass_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    714              uint32_t pass_len_buf_size = sizeof(pass_len_buf);
+    715              uint32_t pass_buf_size = sizeof(pass_buf);
+    716          
+    717              if (!wifi_is_port_valid(port)) {
+    718                  LOG_E(wifi, "port is invalid: %d", port);
+    719                  return WIFI_ERR_PARA_INVALID;
+    720              }
+    721              if (NULL == passphrase || NULL == passphrase_length) {
+    722                  LOG_E(wifi, "null input pointer");
+    723                  return WIFI_ERR_PARA_INVALID;
+    724              }
+    725          
+    726              if (port == WIFI_PORT_AP) {
+    727                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "WpaPskLen", (uint8_t *)pass_len_buf, &pass_len_buf_size)) {
+    728                      return WIFI_FAIL;
+    729                  }
+    730                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "WpaPsk", (uint8_t *)pass_buf, &pass_buf_size)) {
+    731                      return WIFI_FAIL;
+    732                  }
+    733              } else {
+    734                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "WpaPskLen", (uint8_t *)pass_len_buf, &pass_len_buf_size)) {
+    735                      return WIFI_FAIL;
+    736                  }
+    737                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "WpaPsk", (uint8_t *)pass_buf, &pass_buf_size)) {
+    738                      return WIFI_FAIL;
+    739                  }
+    740              }
+    741          
+    742              if ((strlen(pass_len_buf) == 0) || (strlen(pass_buf) == 0)) {
+    743                  *passphrase_length = 0;
+    744                  passphrase[0] = '\0';
+    745                  return WIFI_SUCC;
+    746              }
+    747          
+    748              *passphrase_length = atoi(pass_len_buf);
+    749              if (*passphrase_length > WIFI_LENGTH_PASSPHRASE) {
+    750                  LOG_E(wifi, "passphrase_length is too big: %d", *passphrase_length);
+    751                  return WIFI_FAIL;
+    752              }
+    753          
+    754              os_memcpy(passphrase, pass_buf, *passphrase_length);
+    755              return WIFI_SUCC;
+    756          }
+    757          
+    758          
+    759          int32_t wifi_profile_set_pmk(uint8_t port, uint8_t *pmk)
+    760          {
+    761              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    762          
+    763              if (!wifi_is_port_valid(port)) {
+    764                  LOG_E(wifi, "port is invalid: %d", port);
+    765                  return WIFI_ERR_PARA_INVALID;
+    766              }
+    767              if (NULL == pmk) {
+    768                  LOG_E(wifi, "pmk is null");
+    769                  return WIFI_ERR_PARA_INVALID;
+    770              }
+    771          
+    772              char *buf_ptr = buf;
+    773              for (int i = 0; i < WIFI_LENGTH_PMK; i++) {
+    774                  sprintf(buf_ptr, "%02x", pmk[i]);
+    775                  buf_ptr += 2;
+    776              }
+    777              *buf_ptr = '\0';
+    778          
+    779              if (port == WIFI_PORT_AP) {
+    780                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "PMK",
+    781                          NVDM_DATA_ITEM_TYPE_STRING,
+    782                          (uint8_t *)buf, os_strlen(buf))) {
+    783                      return WIFI_FAIL;
+    784                  }
+    785              } else {
+    786                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "PMK",
+    787                          NVDM_DATA_ITEM_TYPE_STRING,
+    788                          (uint8_t *)buf, os_strlen(buf))) {
+    789                      return WIFI_FAIL;
+    790                  }
+    791              }
+    792              return WIFI_SUCC;
+    793          }
+    794          
+    795          
+    796          int32_t wifi_profile_get_pmk(uint8_t port, uint8_t *pmk)
+    797          {
+    798              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    799              uint32_t len = sizeof(buf);
+    800          
+    801              if (!wifi_is_port_valid(port)) {
+    802                  LOG_E(wifi, "port is invalid: %d", port);
+    803                  return WIFI_ERR_PARA_INVALID;
+    804              }
+    805              if (NULL == pmk) {
+    806                  LOG_E(wifi, "pmk is null");
+    807                  return WIFI_ERR_PARA_INVALID;
+    808              }
+    809          
+    810              if (port == WIFI_PORT_AP) {
+    811                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "PMK", (uint8_t *)buf, &len)) {
+    812                      return WIFI_FAIL;
+    813                  }
+    814              } else {
+    815                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "PMK", (uint8_t *)buf, &len)) {
+    816                      return WIFI_FAIL;
+    817                  }
+    818              }
+    819          
+    820              if (os_strlen(buf) == 0) {
+    821                  os_memset(pmk, 0, WIFI_LENGTH_PMK);
+    822                  return WIFI_SUCC;
+    823              } else if (os_strlen(buf) != (WIFI_LENGTH_PMK * 2)) {
+    824                  LOG_E(wifi, "pmk integrity check fail");
+    825                  return WIFI_FAIL;
+    826              }
+    827          
+    828              char segment[3];
+    829              for (int i = 0; i < WIFI_LENGTH_PMK; i++) {
+    830                  os_memset(segment, 0, 3);
+    831                  os_memcpy(segment, (buf + (i * 2)), 2);
+    832                  segment[2] = '\0';
+    833                  pmk[i] = (int)strtol(segment, NULL, 16);
+    834              }
+    835              return WIFI_SUCC;
+    836          }
+    837          
+    838          int32_t wifi_profile_set_wep_key(uint8_t port, wifi_wep_key_t *wep_keys)
+    839          {
+    840              char key_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    841              char key_len_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    842              char def_key_id_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    843          
+    844              char temp_str[4];
+    845              char temp_str1[WIFI_MAX_WEP_KEY_LENGTH + 2];
+    846              char *key_len_ptr = key_len_buf;
+    847              char *key_ptr = key_buf;
+    848          
+    849              if (!wifi_is_port_valid(port)) {
+    850                  LOG_E(wifi, "port is invalid: %d", port);
+    851                  return WIFI_ERR_PARA_INVALID;
+    852              }
+    853              if (NULL == wep_keys) {
+    854                  LOG_E(wifi, "wep_keys is null");
+    855                  return WIFI_ERR_PARA_INVALID;
+    856              }
+    857          
+    858              for (uint8_t index = 0; index < WIFI_NUMBER_WEP_KEYS; index++) {
+    859                  if (index < WIFI_NUMBER_WEP_KEYS - 1) {
+    860                      sprintf(temp_str, "%d,", wep_keys->wep_key_length[index]);
+    861                      os_memcpy(temp_str1, wep_keys->wep_key[index], wep_keys->wep_key_length[index]);
+    862                      temp_str1[wep_keys->wep_key_length[index]] = ',';
+    863                      temp_str1[wep_keys->wep_key_length[index] + 1] = '\0';
+    864                  } else {
+    865                      sprintf(temp_str, "%d", wep_keys->wep_key_length[index]);
+    866                      os_memcpy(temp_str1, wep_keys->wep_key[index], wep_keys->wep_key_length[index]);
+    867                      temp_str1[wep_keys->wep_key_length[index]] = '\0';
+    868                  }
+    869                  strcpy(key_len_ptr, temp_str);
+    870                  key_len_ptr += strlen(temp_str);
+    871                  strcpy(key_ptr, temp_str1);
+    872                  key_ptr += strlen(temp_str1);
+    873                  os_memset(temp_str, 0, 4);
+    874                  os_memset(temp_str1, 0, WIFI_MAX_WEP_KEY_LENGTH + 2);
+    875              }
+    876          
+    877              sprintf(def_key_id_buf, "%d", wep_keys->wep_tx_key_index);
+    878              LOG_I(wifi, "wifi_profile_set_wep_key: SharedKey =%s, SharedKeyLen=%s, DefaultKeyId=%s", key_buf, key_len_buf, temp_str);
+    879          
+    880              if (port == WIFI_PORT_AP) {
+    881                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "SharedKey",
+    882                          NVDM_DATA_ITEM_TYPE_STRING,
+    883                          (uint8_t *)key_buf, os_strlen(key_buf))) {
+    884                      return WIFI_FAIL;
+    885                  }
+    886                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "SharedKeyLen",
+    887                          NVDM_DATA_ITEM_TYPE_STRING,
+    888                          (uint8_t *)key_len_buf, os_strlen(key_len_buf))) {
+    889                      return WIFI_FAIL;
+    890                  }
+    891                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "DefaultKeyId",
+    892                          NVDM_DATA_ITEM_TYPE_STRING,
+    893                          (uint8_t *)def_key_id_buf, os_strlen(def_key_id_buf))) {
+    894                      return WIFI_FAIL;
+    895                  }
+    896              } else {
+    897                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "SharedKey",
+    898                          NVDM_DATA_ITEM_TYPE_STRING,
+    899                          (uint8_t *)key_buf, os_strlen(key_buf))) {
+    900                      return WIFI_FAIL;
+    901                  }
+    902                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "SharedKeyLen",
+    903                          NVDM_DATA_ITEM_TYPE_STRING,
+    904                          (uint8_t *)key_len_buf, os_strlen(key_len_buf))) {
+    905                      return WIFI_FAIL;
+    906                  }
+    907                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "DefaultKeyId",
+    908                          NVDM_DATA_ITEM_TYPE_STRING,
+    909                          (uint8_t *)def_key_id_buf, os_strlen(def_key_id_buf))) {
+    910                      return WIFI_FAIL;
+    911                  }
+    912              }
+    913              return WIFI_SUCC;
+    914          }
+    915          
+    916          int32_t wifi_profile_get_wep_key(uint8_t port, wifi_wep_key_t *wep_keys)
+    917          {
+    918              char key_len_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    919              uint32_t key_len_buf_size = sizeof(key_len_buf);
+    920          
+    921              uint8_t index = 0;
+    922              char *ptr = NULL;
+    923          
+    924              if (!wifi_is_port_valid(port)) {
+    925                  LOG_E(wifi, "port is invalid: %d", port);
+    926                  return WIFI_ERR_PARA_INVALID;
+    927              }
+    928              if (NULL == wep_keys) {
+    929                  LOG_E(wifi, "wep_keys is null");
+    930                  return WIFI_ERR_PARA_INVALID;
+    931              }
+    932          
+    933              /* WEP KEY LEN */
+    934              if (port == WIFI_PORT_AP) {
+    935                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "SharedKeyLen", (uint8_t *)key_len_buf, &key_len_buf_size)) {
+    936                      return WIFI_FAIL;
+    937                  }
+    938              } else {
+    939                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "SharedKeyLen", (uint8_t *)key_len_buf, &key_len_buf_size)) {
+    940                      return WIFI_FAIL;
+    941                  }
+    942              }
+    943          
+    944              for (index = 0, ptr = rstrtok((char *)key_len_buf, ","); (ptr); ptr = rstrtok(NULL, ",")) {
+    945                  wep_keys->wep_key_length[index] = atoi(ptr);
+    946                  index++;
+    947                  if (index >= WIFI_NUMBER_WEP_KEYS) {
+    948                      break;
+    949                  }
+    950              }
+    951          
+    952              /* WEP KEY */
+    953              char key_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    954              uint32_t key_buf_len = sizeof(key_buf);
+    955              if (port == WIFI_PORT_AP) {
+    956                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "SharedKey", (uint8_t *)key_buf, &key_buf_len)) {
+    957                      return WIFI_FAIL;
+    958                  }
+    959              } else {
+    960                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "SharedKey", (uint8_t *)key_buf, &key_buf_len)) {
+    961                      return WIFI_FAIL;
+    962                  }
+    963              }
+    964          
+    965              for (index = 0, ptr = rstrtok(key_buf, ","); (ptr); ptr = rstrtok(NULL, ",")) {
+    966                  if (wep_keys->wep_key_length[index] == 5 ||
+    967                          wep_keys->wep_key_length[index] == 13) {
+    968                      os_memcpy(&wep_keys->wep_key[index], ptr, wep_keys->wep_key_length[index]);
+    969                  } else if (wep_keys->wep_key_length[index] == 10 ||
+    970                             wep_keys->wep_key_length[index] == 26) {
+    971                      wep_keys->wep_key_length[index] /= 2;
+    972                      AtoH(ptr, (char *)&wep_keys->wep_key[index], (int)wep_keys->wep_key_length[index]);
+    973                  } else {
+    974                      //printf("WEP Key Length(=%d) is incorrect.\n", wep_keys->wep_key_length[index]);
+    975                  }
+    976                  index++;
+    977                  if (index >= WIFI_NUMBER_WEP_KEYS) {
+    978                      break;
+    979                  }
+    980              }
+    981          
+    982              /* Default key ID */
+    983              char def_key_id_buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    984              uint32_t def_key_id_buf_size = sizeof(def_key_id_buf);
+    985              if (port == WIFI_PORT_AP) {
+    986                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "DefaultKeyId", (uint8_t *)def_key_id_buf, &def_key_id_buf_size)) {
+    987                      return WIFI_FAIL;
+    988                  }
+    989              } else {
+    990                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "DefaultKeyId", (uint8_t *)def_key_id_buf, &def_key_id_buf_size)) {
+    991                      return WIFI_FAIL;
+    992                  }
+    993              }
+    994          
+    995              wep_keys->wep_tx_key_index = (uint8_t)atoi(def_key_id_buf);
+    996              return WIFI_SUCC;
+    997          }
+    998          
+    999          
+   1000          int32_t wifi_profile_get_country_region(uint8_t band, uint8_t *region)
+   1001          {
+   1002              if (!wifi_is_band_valid(band)) {
+   1003                  LOG_E(wifi, "band is invalid: %d", band);
+   1004                  return WIFI_ERR_PARA_INVALID;
+   1005              }
+   1006          
+   1007              int32_t support_5g = 0;
+   1008          
+   1009              support_5g = wifi_5g_support();
+   1010              if ((band == WIFI_BAND_5_G) && (support_5g < 0)) {
+   1011                  LOG_E(wifi, "Chip doesn't support 5G.");
+   1012                  return WIFI_ERR_NOT_SUPPORT;
+   1013              }
+   1014          
+   1015              if (NULL == region) {
+   1016                  LOG_E(wifi, "region is null");
+   1017                  return WIFI_ERR_PARA_INVALID;
+   1018              }
+   1019          
+   1020              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1021              uint32_t len = sizeof(buf);
+   1022          
+   1023              if (band == WIFI_BAND_2_4_G) {
+   1024                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_COMMON, "CountryRegion", (uint8_t *)buf, &len)) {
+   1025                      return WIFI_FAIL;
+   1026                  }
+   1027              } else {
+   1028                  if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_COMMON, "CountryRegionABand", (uint8_t *)buf, &len)) {
+   1029                      return WIFI_FAIL;
+   1030                  }
+   1031              }
+   1032          
+   1033              *region = atoi(buf);
+   1034              return WIFI_SUCC;
+   1035          }
+   1036          
+   1037          int32_t wifi_profile_set_country_region(uint8_t band, uint8_t region)
+   1038          {
+   1039              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1040              int32_t support_5g = 0;
+   1041          
+   1042              if (!wifi_is_band_valid(band)) {
+   1043                  LOG_E(wifi, "band is invalid: %d", band);
+   1044                  return WIFI_ERR_PARA_INVALID;
+   1045              }
+   1046          
+   1047              sprintf(buf, "%d", region);
+   1048          
+   1049              support_5g = wifi_5g_support();
+   1050          
+   1051              if (band == WIFI_BAND_2_4_G) {
+   1052                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_COMMON, "CountryRegion",
+   1053                          NVDM_DATA_ITEM_TYPE_STRING,
+   1054                          (uint8_t *)buf, os_strlen(buf))) {
+   1055                      return WIFI_FAIL;
+   1056                  }
+   1057                  if (wifi_get_channel_list(WIFI_BAND_2_4_G, region, buf) >= 0) {
+   1058                      if (NVDM_STATUS_OK != nvdm_write_data_item("common", "BGChannelTable",
+   1059                              NVDM_DATA_ITEM_TYPE_STRING,
+   1060                              (uint8_t *)buf, os_strlen(buf))) {
+   1061                          return WIFI_FAIL;
+   1062                      }
+   1063                  }
+   1064              } else {
+   1065                  if (support_5g < 0) {
+   1066                      LOG_E(wifi, "Chip doesn't support 5G.");
+   1067                      return WIFI_ERR_NOT_SUPPORT;
+   1068          		}
+   1069                  if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_COMMON, "CountryRegionABand",
+   1070                          NVDM_DATA_ITEM_TYPE_STRING,
+   1071                          (uint8_t *)buf, os_strlen(buf))) {
+   1072                      return WIFI_FAIL;
+   1073                  }
+   1074                  if (wifi_get_channel_list(WIFI_BAND_5_G, region, buf) >= 0) {
+   1075                      if (NVDM_STATUS_OK != nvdm_write_data_item("common", "AChannelTable",
+   1076                              NVDM_DATA_ITEM_TYPE_STRING,
+   1077                              (uint8_t *)buf, os_strlen(buf))) {
+   1078                          return WIFI_FAIL;
+   1079                      }
+   1080                  }
+   1081              }
+   1082              return WIFI_SUCC;
+   1083          }
+   1084          
+   1085          
+   1086          int32_t wifi_profile_get_dtim_interval(uint8_t *interval)
+   1087          {
+   1088              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1089              uint32_t len = sizeof(buf);
+   1090          
+   1091              if (NULL == interval) {
+   1092                  LOG_E(wifi, "interval is null");
+   1093                  return WIFI_ERR_PARA_INVALID;
+   1094              }
+   1095          
+   1096              if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_AP, "DtimPeriod", (uint8_t *)buf, &len)) {
+   1097                  return WIFI_FAIL;
+   1098              }
+   1099          
+   1100              *interval = atoi(buf);
+   1101              return WIFI_SUCC;
+   1102          }
+   1103          
+   1104          
+   1105          int32_t wifi_profile_set_dtim_interval(uint8_t interval)
+   1106          {
+   1107              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1108          
+   1109              if (0 == interval) {
+   1110                  LOG_E(wifi, "interval is invalid: %d", interval);
+   1111                  return WIFI_ERR_PARA_INVALID;
+   1112              }
+   1113          
+   1114              sprintf(buf, "%d", interval);
+   1115              if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_AP, "DtimPeriod",
+   1116                      NVDM_DATA_ITEM_TYPE_STRING,
+   1117                      (const uint8_t *)buf, os_strlen(buf))) {
+   1118                  return WIFI_FAIL;
+   1119              }
+   1120          
+   1121              return WIFI_SUCC;
+   1122          }
+   1123          
+   1124          
+   1125          int32_t wifi_profile_get_listen_interval(uint8_t *interval)
+   1126          {
+   1127              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1128              uint32_t len = sizeof(buf);
+   1129          
+   1130              if (NULL == interval) {
+   1131                  LOG_E(wifi, "interval is null");
+   1132                  return WIFI_ERR_PARA_INVALID;
+   1133              }
+   1134          
+   1135              if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "ListenInterval", (uint8_t *)buf, &len)) {
+   1136                  return WIFI_FAIL;
+   1137              }
+   1138          
+   1139              *interval = atoi(buf);
+   1140              return WIFI_SUCC;
+   1141          }
+   1142          
+   1143          
+   1144          int32_t wifi_profile_set_listen_interval(uint8_t interval)
+   1145          {
+   1146              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1147          
+   1148              if (0 == interval) {
+   1149                  LOG_E(wifi, "interval is invalid: %d", interval);
+   1150                  return WIFI_ERR_PARA_INVALID;
+   1151              }
+   1152          
+   1153              sprintf(buf, "%d", interval);
+   1154          
+   1155              if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "ListenInterval",
+   1156                      NVDM_DATA_ITEM_TYPE_STRING,
+   1157                      (const uint8_t *)buf, os_strlen(buf))) {
+   1158                  return WIFI_FAIL;
+   1159              }
+   1160          
+   1161              return WIFI_SUCC;
+   1162          }
+   1163          
+   1164          int32_t wifi_profile_get_power_save_mode(uint8_t *power_save_mode)
+   1165          {
+   1166              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1167              uint32_t len = sizeof(buf);
+   1168          
+   1169              if (NULL == power_save_mode) {
+   1170                  LOG_E(wifi, "power_save_mode is null");
+   1171                  return WIFI_ERR_PARA_INVALID;
+   1172              }
+   1173          
+   1174              if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_STA, "PSMode", (uint8_t *)buf, &len)) {
+   1175                  return WIFI_FAIL;
+   1176              }
+   1177          
+   1178              *power_save_mode = atoi(buf);
+   1179              return WIFI_SUCC;
+   1180          }
+   1181          
+   1182          int32_t wifi_profile_set_power_save_mode(uint8_t power_save_mode)
+   1183          {
+   1184              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1185          
+   1186              if (!wifi_is_ps_mode_valid(power_save_mode)) {
+   1187                  LOG_E(wifi, "power_save_mode is invalid: %d", power_save_mode);
+   1188                  return WIFI_ERR_PARA_INVALID;
+   1189              }
+   1190          
+   1191              sprintf(buf, "%d", power_save_mode);
+   1192              if (nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "PSMode",
+   1193                                       NVDM_DATA_ITEM_TYPE_STRING,
+   1194                                       (const uint8_t *)buf, os_strlen(buf))) {
+   1195                  return WIFI_FAIL;
+   1196              }
+   1197          
+   1198              return WIFI_SUCC;
+   1199          }
+   1200          
+   1201          int32_t wifi_profile_get_configfree(uint8_t *config_ready)
+   1202          {
+   1203              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1204              uint32_t len = sizeof(buf);
+   1205          
+   1206              if (NULL == config_ready) {
+   1207                  LOG_E(wifi, "config_ready is null");
+   1208                  return WIFI_ERR_PARA_INVALID;
+   1209              }
+   1210          
+   1211              if (NVDM_STATUS_OK != nvdm_read_data_item(WIFI_PROFILE_BUFFER_COMMON, "ConfigFree_Ready", (uint8_t *)buf, &len)) {
+   1212                  return WIFI_FAIL;
+   1213              }
+   1214          
+   1215              *config_ready = atoi(buf);
+   1216              return WIFI_SUCC;
+   1217          }
+   1218          
+   1219          int32_t wifi_profile_set_configfree(uint8_t config_ready)
+   1220          {
+   1221              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1222          
+   1223              if (0 != config_ready && 1 != config_ready) {
+   1224                  LOG_E(wifi, "config_ready is invalid: %d", config_ready);
+   1225                  return WIFI_ERR_PARA_INVALID;
+   1226              }
+   1227          
+   1228              sprintf(buf, "%d", WIFI_MODE_REPEATER);
+   1229              LOG_I(wifi, "wifi_profile_set_opmode: opmode=%s", buf);
+   1230          
+   1231              if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_COMMON, "OpMode",
+   1232                      NVDM_DATA_ITEM_TYPE_STRING,
+   1233                      (uint8_t *)buf, os_strlen(buf))) {
+   1234                  return WIFI_FAIL;
+   1235              }
+   1236          
+   1237              os_memset(buf, 0x0, WIFI_PROFILE_BUFFER_LENGTH);
+   1238          
+   1239              sprintf(buf, "%d", config_ready);
+   1240              LOG_I(wifi, "ConfigFree ready: %s", buf);
+   1241          
+   1242              if (NVDM_STATUS_OK != nvdm_write_data_item(WIFI_PROFILE_BUFFER_COMMON, "ConfigFree_Ready",
+   1243                      NVDM_DATA_ITEM_TYPE_STRING,
+   1244                      (uint8_t *)buf, os_strlen(buf))) {
+   1245                  return WIFI_FAIL;
+   1246              }
+   1247          
+   1248              return WIFI_SUCC;
+   1249          }
+   1250          #endif //MTK_WIFI_PROFILE_ENABLE
+   1251          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   wifi_is_auth_mode_valid
+       0   wifi_is_band_valid
+       0   wifi_is_bandwidth_valid
+       0   wifi_is_encrypt_type_valid
+       0   wifi_is_opmode_valid
+       0   wifi_is_port_valid
+       0   wifi_is_ps_mode_valid
+       0   wifi_profile_commit_setting
+     152   wifi_profile_get_bandwidth
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> atoi
+       152   -> nvdm_read_data_item
+     152   wifi_profile_get_channel
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> atoi
+       152   -> nvdm_read_data_item
+     144   wifi_profile_get_configfree
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> atoi
+       144   -> nvdm_read_data_item
+     152   wifi_profile_get_country_region
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> atoi
+       152   -> nvdm_read_data_item
+       152   -> wifi_5g_support
+       152   -> wifi_is_band_valid
+     144   wifi_profile_get_dtim_interval
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> atoi
+       144   -> nvdm_read_data_item
+     144   wifi_profile_get_listen_interval
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> atoi
+       144   -> nvdm_read_data_item
+     152   wifi_profile_get_mac_address
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> nvdm_read_data_item
+       152   -> wifi_conf_get_mac_from_str
+       152   -> wifi_is_port_valid
+       152   -> wifi_profile_get_opmode
+     144   wifi_profile_get_opmode
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> atoi
+       144   -> nvdm_read_data_item
+     152   wifi_profile_get_pmk
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> nvdm_read_data_item
+       152   -> os_memcpy
+       152   -> os_memset
+       152   -> os_strlen
+       152   -> strtol
+       152   -> wifi_is_port_valid
+     144   wifi_profile_get_power_save_mode
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> atoi
+       144   -> nvdm_read_data_item
+       0   wifi_profile_get_profile
+     288   wifi_profile_get_security_mode
+       288   -- Indirect call
+       288   -> __aeabi_memclr4
+       288   -> atoi
+       288   -> nvdm_read_data_item
+       288   -> wifi_is_port_valid
+     160   wifi_profile_get_ssid
+       160   -- Indirect call
+       160   -> atoi
+       160   -> nvdm_read_data_item
+       160   -> os_memset
+       160   -> strcpy
+       160   -> wifi_is_port_valid
+     416   wifi_profile_get_wep_key
+       416   -- Indirect call
+       416   -> AtoH
+       416   -> __aeabi_memclr4
+       416   -> atoi
+       416   -> nvdm_read_data_item
+       416   -> os_memcpy
+       416   -> rstrtok
+       416   -> wifi_is_port_valid
+     152   wifi_profile_get_wireless_mode
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> atoi
+       152   -> nvdm_read_data_item
+       152   -> wifi_is_port_valid
+     288   wifi_profile_get_wpa_psk_key
+       288   -- Indirect call
+       288   -> __aeabi_memclr4
+       288   -> atoi
+       288   -> nvdm_read_data_item
+       288   -> os_memcpy
+       288   -> strlen
+       288   -> wifi_is_port_valid
+     152   wifi_profile_set_bandwidth
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> nvdm_write_data_item
+       152   -> os_strlen
+       152   -> sprintf
+       152   -> wifi_is_bandwidth_valid
+     152   wifi_profile_set_channel
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> nvdm_write_data_item
+       152   -> os_strlen
+       152   -> sprintf
+     160   wifi_profile_set_configfree
+       160   -- Indirect call
+       160   -> __aeabi_memclr4
+       160   -> nvdm_write_data_item
+       160   -> os_memset
+       160   -> os_strlen
+       160   -> sprintf
+     152   wifi_profile_set_country_region
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> nvdm_write_data_item
+       152   -> os_strlen
+       152   -> sprintf
+       152   -> wifi_5g_support
+       152   -> wifi_get_channel_list
+       152   -> wifi_is_band_valid
+     144   wifi_profile_set_dtim_interval
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> nvdm_write_data_item
+       144   -> os_strlen
+       144   -> sprintf
+     144   wifi_profile_set_listen_interval
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> nvdm_write_data_item
+       144   -> os_strlen
+       144   -> sprintf
+     160   wifi_profile_set_mac_address
+       160   -- Indirect call
+       160   -> __aeabi_memclr4
+       160   -> nvdm_write_data_item
+       160   -> os_strlen
+       160   -> sprintf
+       160   -> wifi_is_port_valid
+     144   wifi_profile_set_opmode
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> nvdm_write_data_item
+       144   -> os_strlen
+       144   -> sprintf
+       144   -> wifi_is_opmode_valid
+     160   wifi_profile_set_pmk
+       160   -- Indirect call
+       160   -> __aeabi_memclr4
+       160   -> nvdm_write_data_item
+       160   -> os_strlen
+       160   -> sprintf
+       160   -> wifi_is_port_valid
+     144   wifi_profile_set_power_save_mode
+       144   -- Indirect call
+       144   -> __aeabi_memclr4
+       144   -> nvdm_write_data_item
+       144   -> os_strlen
+       144   -> sprintf
+       144   -> wifi_is_ps_mode_valid
+     288   wifi_profile_set_security_mode
+       288   -- Indirect call
+       288   -> __aeabi_memclr4
+       288   -> nvdm_write_data_item
+       288   -> os_strlen
+       288   -> sprintf
+       288   -> wifi_is_auth_mode_valid
+       288   -> wifi_is_encrypt_type_valid
+       288   -> wifi_is_port_valid
+     512   wifi_profile_set_ssid
+       512   -- Indirect call
+       512   -> __aeabi_memclr4
+       512   -> nvdm_write_data_item
+       512   -> os_memcpy
+       512   -> os_strlen
+       512   -> sprintf
+       512   -> wifi_is_port_valid
+       512   -> wifi_profile_get_wpa_psk_key
+     472   wifi_profile_set_wep_key
+       472   -- Indirect call
+       472   -> __aeabi_memclr4
+       472   -> nvdm_write_data_item
+       472   -> os_memcpy
+       472   -> os_memset
+       472   -> os_strlen
+       472   -> sprintf
+       472   -> strcpy
+       472   -> strlen
+       472   -> wifi_is_port_valid
+     152   wifi_profile_set_wireless_mode
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> nvdm_write_data_item
+       152   -> os_strlen
+       152   -> sprintf
+       152   -> wifi_5g_support
+       152   -> wifi_is_port_valid
+     576   wifi_profile_set_wpa_psk_key
+       576   -- Indirect call
+       576   -> __aeabi_memclr4
+       576   -> nvdm_write_data_item
+       576   -> os_memcpy
+       576   -> os_strlen
+       576   -> sprintf
+       576   -> wifi_is_port_valid
+       576   -> wifi_profile_get_ssid
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable141
+       4  ??DataTable142
+       4  ??DataTable142_1
+       4  ??DataTable144
+       4  ??DataTable145
+       4  ??DataTable145_1
+       4  ??DataTable147
+       4  ??DataTable148
+       4  ??DataTable148_1
+       4  ??DataTable149
+       4  ??DataTable149_1
+       4  ??DataTable150
+       4  ??DataTable150_1
+       4  ??DataTable150_2
+       4  ??DataTable150_3
+       4  ??DataTable150_4
+       4  ??DataTable150_5
+       4  ??DataTable151
+       4  ??DataTable152
+       4  ??DataTable152_1
+       4  ??DataTable152_2
+       4  ??DataTable154
+       4  ??DataTable154_1
+       4  ??DataTable154_2
+       4  ??DataTable154_3
+       4  ??DataTable155
+       4  ??DataTable155_1
+       4  ??DataTable156
+       4  ??DataTable156_1
+       4  ??DataTable157
+       4  ??DataTable157_1
+       4  ??DataTable158
+       4  ??DataTable161
+       4  ??DataTable163
+       4  ??DataTable164
+       4  ??DataTable165
+       4  ??DataTable165_1
+       4  ??DataTable166
+       4  ??DataTable166_1
+       4  ??DataTable166_2
+       4  ??DataTable166_3
+       4  ??DataTable166_4
+       4  ??DataTable166_5
+       4  ??DataTable166_6
+     128  ?_0
+      20  ?_1
+       4  ?_10
+     128  ?_100
+      24  ?_101
+      20  ?_102
+     128  ?_103
+      28  ?_104
+      36  ?_105
+      24  ?_106
+      20  ?_11
+     128  ?_12
+     128  ?_13
+      28  ?_14
+       4  ?_15
+     128  ?_16
+      20  ?_17
+     128  ?_18
+      16  ?_19
+       4  ?_2
+       8  ?_20
+      24  ?_21
+     128  ?_22
+      32  ?_23
+      24  ?_24
+      16  ?_25
+     128  ?_26
+     128  ?_27
+     128  ?_28
+      64  ?_29
+       8  ?_3
+      32  ?_30
+      12  ?_31
+       8  ?_32
+       8  ?_33
+      24  ?_34
+     128  ?_35
+      28  ?_36
+      16  ?_37
+     128  ?_38
+     128  ?_39
+       8  ?_4
+     128  ?_40
+      28  ?_41
+      28  ?_42
+      12  ?_43
+      12  ?_44
+     128  ?_45
+     128  ?_46
+      20  ?_47
+     128  ?_48
+     128  ?_49
+     128  ?_5
+      20  ?_50
+      52  ?_51
+     128  ?_52
+     128  ?_53
+      28  ?_54
+      12  ?_55
+       8  ?_56
+     128  ?_57
+     128  ?_58
+      36  ?_59
+      16  ?_6
+     128  ?_60
+      12  ?_61
+       8  ?_62
+       4  ?_63
+     128  ?_64
+      28  ?_65
+     128  ?_66
+     128  ?_67
+     128  ?_68
+      20  ?_69
+     128  ?_7
+       4  ?_70
+      76  ?_71
+      12  ?_72
+      16  ?_73
+      16  ?_74
+     128  ?_75
+       2  ?_76
+     128  ?_77
+     128  ?_78
+      20  ?_79
+       4  ?_8
+      16  ?_80
+     128  ?_81
+      16  ?_82
+      20  ?_83
+     128  ?_84
+      16  ?_85
+      16  ?_86
+     128  ?_87
+      20  ?_88
+      12  ?_89
+       8  ?_9
+     128  ?_90
+      24  ?_91
+     128  ?_92
+      16  ?_93
+     128  ?_94
+     128  ?_95
+      24  ?_96
+       8  ?_97
+     128  ?_98
+      32  ?_99
+      12  wifi_is_auth_mode_valid
+      12  wifi_is_band_valid
+      12  wifi_is_bandwidth_valid
+      12  wifi_is_encrypt_type_valid
+      12  wifi_is_opmode_valid
+      12  wifi_is_port_valid
+      12  wifi_is_ps_mode_valid
+       4  wifi_profile_commit_setting
+     144  wifi_profile_get_bandwidth
+     120  wifi_profile_get_channel
+      88  wifi_profile_get_configfree
+     194  wifi_profile_get_country_region
+      90  wifi_profile_get_dtim_interval
+      90  wifi_profile_get_listen_interval
+     174  wifi_profile_get_mac_address
+      90  wifi_profile_get_opmode
+     254  wifi_profile_get_pmk
+      88  wifi_profile_get_power_save_mode
+       4  wifi_profile_get_profile
+     214  wifi_profile_get_security_mode
+     320  wifi_profile_get_ssid
+     372  wifi_profile_get_wep_key
+     142  wifi_profile_get_wireless_mode
+     300  wifi_profile_get_wpa_psk_key
+     166  wifi_profile_set_bandwidth
+     130  wifi_profile_set_channel
+     208  wifi_profile_set_configfree
+     262  wifi_profile_set_country_region
+     100  wifi_profile_set_dtim_interval
+      98  wifi_profile_set_listen_interval
+     186  wifi_profile_set_mac_address
+     104  wifi_profile_set_opmode
+     186  wifi_profile_set_pmk
+     102  wifi_profile_set_power_save_mode
+     288  wifi_profile_set_security_mode
+     442  wifi_profile_set_ssid
+     508  wifi_profile_set_wep_key
+     184  wifi_profile_set_wireless_mode
+     508  wifi_profile_set_wpa_psk_key
+     896  -- Other
+
+ 
+ 5 474 bytes in section .rodata
+ 8 372 bytes in section .text
+ 
+ 8 372 bytes of CODE  memory
+ 5 474 bytes of CONST memory
+
+Errors: none
+Warnings: none

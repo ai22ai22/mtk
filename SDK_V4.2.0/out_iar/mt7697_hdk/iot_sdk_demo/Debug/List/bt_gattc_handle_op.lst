@@ -1,0 +1,1270 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:34:47
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\bt_gattc_handle_op.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\bt_gattc_handle_op.c"
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\bt_gattc_handle_op.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\bt_gattc_handle_op.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\bt_gattc_handle_op.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /*mian for  gattc operation*/
+     36          #include "bt_gattc_handle_op.h"
+     37          #include "bt_gattc.h"
+     38          #include "bt_debug.h"
+     39          #include "bt_gattc_connect.h"
+     40          #include "bt_gattc_srv.h"
+     41          #include "hrc.h"
+     42          #include <stdlib.h>
+     43          #ifdef MTK_MCS_ENABLE
+     44          #include "mcs.h"
+     45          #endif
+     46          
+     47          
+     48          gattc_conn_t g_gattc_conn;
+     49          static void bt_gattc_explore_service(uint16_t conn_id, bt_gatt_service_t *srv);
+     50          
+     51          static void bt_gattc_discover_primary_service_cnf(bt_status_t status, bt_gattc_find_by_type_value_rsp_t *p_event_data);
+     52          
+     53          static void bt_gattc_discover_include_service_cnf(bt_status_t status, bt_gattc_read_by_type_rsp_t *p_event_data);
+     54          
+     55          static void bt_gattc_discover_charactiristics_cnf(bt_status_t status, bt_gattc_read_by_type_rsp_t *p_event_data);
+     56          
+     57          static void bt_gattc_discover_descriptors_cnf(bt_status_t status, bt_gattc_find_info_rsp_t *p_event_data);
+     58          
+     59          static void bt_gattc_write_char_cnf(bt_status_t status, bt_gattc_write_rsp_t *param);
+     60          
+     61          static void bt_gattc_discover_complete(uint16_t conn_id, bt_status_t status, bt_gatt_service_t *service);
+     62          
+     63          static bt_status_t bt_gattc_find_all_descriptor_of_char(uint16_t conn_id,  bt_gatt_service_t *service, uint8_t index);
+     64          
+     65          static bt_gatt_service_t *bt_gattc_get_service(uint16_t conn_id);
+     66          
+     67          static void bt_gattc_char_val_notify_and_ind(bt_status_t status, bt_gatt_handle_value_notification_t *rsp);
+     68          
+     69          static void bt_gattc_notify_error(uint16_t conn_id, bt_status_t status);
+     70          
+     71          static void bt_gattc_parse_characteristic(bt_gattc_read_by_type_rsp_t *data, bt_gatt_service_t *service_node);
+     72          
+     73          static void bt_gattc_parse_descriptor(bt_gattc_find_info_rsp_t *data, bt_gatt_char_t *char_node);
+     74          
+     75          static bt_status_t bt_gattc_discover_charateristic(uint16_t conn_handle, uint16_t start_handle, uint16_t end_handle);
+     76          
+     77          static void bt_gattc_parse_primary_service(bt_gattc_find_by_type_value_rsp_t *rsp, gatt_data_t *data);
+     78          
+     79          static bt_status_t bt_gattc_discover_include_service(uint16_t conn_handle, uint16_t start_handle, uint16_t end_handle);
+     80          
+     81          static void bt_gattc_parse_include_service(bt_gattc_read_by_type_rsp_t *rsp, bt_gatt_service_t *service);
+     82          
+     83          
+     84          gatt_data_t g_data;
+     85          
+     86          
+     87          #define BLE_GPIO_ADDRESS               {0xAA, 0xAA, 0xAA, 0xAA, 0xAA, 0xAA}
+     88          #define BLE_GPIO_ADV_DATA              "DDDDDDDDDHRG"
+     89          #define BLE_GPIO_ADV_DATA_LEN          12
+     90          #define BLE_GPIO_DEVICE_NAME           "HRG"
+     91          #define BLE_GPIO_SERVICE_UUID          (0x18BB)
+     92          #define BLE_GPIO_MAX_INTERVAL          0x00C0    /*The range is from 0x0020 to 0x4000.*/
+     93          #define BLE_GPIO_MIN_INTERVAL          0x00C0    /*The range is from 0x0020 to 0x4000.*/
+     94          #define BLE_GPIO_CHANNEL_NUM           7
+     95          #define BLE_GPIO_FILTER_POLICY         0
+     96          #define BLE_GPIO_AD_FLAG_LEN           2
+     97          #define BLE_GPIO_AD_UUID_LEN           3
+     98          #define BLE_GPIO_AD_NAME_LEN           4
+     99          
+    100          #if 0
+    101          #define BLE_SMTCN_ADDRESS               {0x0C, 0x01, 0x02, 0x03, 0x04, 0x05}
+    102          #define BLE_SMTCN_ADV_DATA              "DDDDDDDDDBLE_SMTCN"
+    103          #define BLE_SMTCN_ADV_DATA_LEN          18
+    104          #define BLE_SMTCN_DEVICE_NAME           "BLE_SMTCN"
+    105          #define BLE_SMTCN_SERVICE_UUID          (0x18AA)
+    106          #define BLE_SMTCN_MAX_INTERVAL          0x00C0    /*The range is from 0x0020 to 0x4000.*/
+    107          #define BLE_SMTCN_MIN_INTERVAL          0x00C0    /*The range is from 0x0020 to 0x4000.*/
+    108          #define BLE_SMTCN_CHANNEL_NUM           7
+    109          #define BLE_SMTCN_FILTER_POLICY         0
+    110          #define BLE_SMTCN_AD_FLAG_LEN           2
+    111          #define BLE_SMTCN_AD_UUID_LEN           3
+    112          #define BLE_SMTCN_AD_NAME_LEN           10
+    113          #endif
+    114          
+    115          bool gpio_started;
+    116          
+    117          void ble_gpio_set_adv(void)
+    118          {
+    119              bt_bd_addr_t addr = BLE_GPIO_ADDRESS;
+    120              bt_bd_addr_ptr_t random_addr = addr;    
+    121              extern char gatts_device_name[256];
+    122              
+    123              memset(gatts_device_name, 0x00, sizeof(gatts_device_name));
+    124              strcpy(gatts_device_name, BLE_GPIO_DEVICE_NAME);
+    125              
+    126              bt_gap_le_set_random_address(random_addr);
+    127          
+    128              gpio_started = true;
+    129          }
+    130          
+    131          
+    132          /* For Profile API only for connect id*/
+    133          bt_status_t bt_gattc_start_discover_service(uint16_t conn_id)
+    134          {
+    135              bt_status_t status = 0;
+    136              uint8_t buff[40];
+    137              uint8_t uuid[2] = {0x0D, 0x18
+    138                                };
+    139              bt_gattc_discover_primary_service_by_uuid_req_t req;
+    140              gattc_conn_t *gattc_conn = bt_gattc_link_info_by_id(conn_id);
+    141              if (gattc_conn) {
+    142                  if (gattc_conn->state == GATTC_CONNECTED) {
+    143                      gattc_conn->state = GATTC_IN_SEARCHING;
+    144                      req.attribute_value_length = 2;
+    145                      req.att_req = (bt_att_find_by_type_value_req_t *)buff;
+    146                      req.att_req->opcode = BT_ATT_OPCODE_FIND_BY_TYPE_VALUE_REQUEST;
+    147                      req.att_req->starting_handle = 0x0001;
+    148                      req.att_req->ending_handle = 0xFFFF;
+    149                      memcpy(req.att_req->attribute_value, uuid, 2);
+    150                      req.att_req->uuid = BT_GATT_UUID16_PRIMARY_SERVICE;
+    151          
+    152                      status = bt_gattc_discover_primary_service_by_uuid(conn_id, &req);
+    153          
+    154                      BT_LOGI("GATTC", "bt_gattc_start_discover_service: status = %d", status);
+    155                  } else {
+    156                      status = GATTC_IN_SEARCHING;
+    157                  }
+    158              } else {
+    159          
+    160                  status = GATTC_IN_IDLE;
+    161                  BT_LOGI("GATTC", "bt_gattc_start_discover_service--not found conn info");
+    162              }
+    163          
+    164              BT_LOGI("GATTC", "bt_gattc_start_discover_service--end: status = %d", status);
+    165              return status;
+    166          }
+    167          
+    168          
+    169          static void bt_gattc_discover_primary_service_cnf(bt_status_t status, bt_gattc_find_by_type_value_rsp_t *p_event_data)
+    170          {
+    171              BT_LOGI("GATTC", "primary_service_cnf: status = %d", status);
+    172              uint16_t conn_id = 0;
+    173              gattc_conn_t *gattc_conn;
+    174              gatt_data_t *data;
+    175          
+    176              if (p_event_data) {
+    177                  conn_id = p_event_data->connection_handle;
+    178                  gattc_conn = bt_gattc_link_info_by_id(conn_id);
+    179                  if (gattc_conn == NULL) {
+    180          
+    181                      return;
+    182                  }
+    183                  data = &gattc_conn->data;
+    184                  if (status == BT_ATT_ERRCODE_CONTINUE) {
+    185                      bt_gattc_parse_primary_service(p_event_data, data);
+    186                  } else if (status == BT_STATUS_SUCCESS) {
+    187                      if (p_event_data->att_rsp) {
+    188                          bt_gattc_parse_primary_service(p_event_data, data);
+    189                      }
+    190                      BT_LOGI("GATTC", "discover finished :success.. t_ser_num = %d", data->service_number);
+    191                      bt_gattc_explore_service(conn_id, &data->att_data);
+    192                  } else if (status == BT_ATT_ERRCODE_ATTRIBUTE_NOT_FOUND) {
+    193                      BT_LOGI("GATTC", "discover finished :not found .. t_ser_num = %d", data->service_number);
+    194                      bt_gattc_explore_service(conn_id, &data->att_data);
+    195          
+    196                  } else {
+    197                      BT_LOGI("GATTC", "error happend");
+    198                      bt_gattc_notify_error(conn_id, status);
+    199                  }
+    200              }
+    201          }
+    202          
+    203          
+    204          static void bt_gattc_explore_service(uint16_t conn_id, bt_gatt_service_t *srv)
+    205          {
+    206              uint16_t start_handle, end_handle;
+    207          
+    208              if (srv) {
+    209                  start_handle = srv->start_handle;
+    210                  end_handle = srv->end_handle;
+    211                  bt_gattc_discover_include_service(conn_id, start_handle, end_handle);
+    212              } else {
+    213          
+    214                  BT_LOGI("GATTC", "srv node error happend");
+    215              }
+    216          }
+    217          
+    218          
+    219          static bt_status_t bt_gattc_discover_include_service(uint16_t conn_handle, uint16_t start_handle, uint16_t end_handle)
+    220          {
+    221              bt_status_t status;
+    222              bt_gattc_find_included_services_req_t req;
+    223              BT_LOGI("GATTC", "include_service start: start_handle = %d, end_handle = %d", start_handle, end_handle);
+    224              req.opcode = BT_ATT_OPCODE_READ_BY_TYPE_REQUEST;
+    225              req.starting_handle = start_handle;
+    226              req.ending_handle = end_handle;
+    227              req.type16 =  BT_GATT_UUID16_INCLUDE;
+    228              status = bt_gattc_find_included_services(conn_handle, &req);
+    229              BT_LOGI("GATTC", "include_service end: status = %d", status);
+    230              return status;
+    231          }
+    232          
+    233          
+    234          static void bt_gattc_discover_include_service_cnf(bt_status_t status , bt_gattc_read_by_type_rsp_t *p_event_data)
+    235          {
+    236              uint16_t conn_id;
+    237              uint16_t start_handle, end_handle;
+    238              BT_LOGI("GATTC", "discover_include_service_cn: status = %d", status);
+    239              if (p_event_data == NULL) {
+    240                  return;
+    241              }
+    242              conn_id = p_event_data->connection_handle;
+    243              bt_gatt_service_t *service =  bt_gattc_get_service(conn_id);
+    244          
+    245          
+    246              if (status == BT_ATT_ERRCODE_CONTINUE) {
+    247                  bt_gattc_parse_include_service(p_event_data, service);
+    248              } else if (status == BT_STATUS_SUCCESS) {
+    249          
+    250                  if (p_event_data->att_rsp) {
+    251                      bt_gattc_parse_include_service(p_event_data, service);
+    252                  }
+    253                  start_handle = service->start_handle;
+    254                  end_handle = service->end_handle;
+    255          
+    256                  bt_gattc_discover_charateristic(conn_id, start_handle, end_handle);
+    257          
+    258          
+    259                  BT_LOGI("GATTC", "success :starting_handle = 0x%08x, end_group_handle = 0x%08x", start_handle, end_handle);
+    260              } else if (status == BT_ATT_ERRCODE_ATTRIBUTE_NOT_FOUND) {
+    261          
+    262                  start_handle = service->start_handle;
+    263                  end_handle = service->end_handle;
+    264                  BT_LOGI("GATTC", "not found :starting_handle = 0x%08x, end_group_handle = 0x%08x", start_handle, end_handle);
+    265                  bt_gattc_discover_charateristic(conn_id, start_handle, end_handle);
+    266          
+    267              } else {
+    268                  BT_LOGI("GATTC", "error happend");
+    269                  bt_gattc_notify_error(conn_id, status);
+    270              }
+    271          }
+    272          
+    273          
+    274          static bt_status_t bt_gattc_discover_charateristic(uint16_t conn_handle, uint16_t start_handle, uint16_t end_handle)
+    275          {
+    276              bt_status_t  status;
+    277              bt_gattc_discover_charc_req_t req;
+    278              BT_LOGI("GATTC", "dis_char start: start_handle = %d, end_handle = %d", start_handle, end_handle);
+    279              uint16_t uuid_16 = BT_GATT_UUID16_CHARC;
+    280              req.opcode = BT_ATT_OPCODE_READ_BY_TYPE_REQUEST;
+    281              req.starting_handle = start_handle;
+    282              req.ending_handle = end_handle;
+    283              bt_uuid_load(&(req.type), (void *)&uuid_16, 2);
+    284              status = bt_gattc_discover_charc(conn_handle, &req);
+    285              BT_LOGI("GATTC", "dis_char end: status = %d", status);
+    286              return status;
+    287          }
+    288          
+    289          
+    290          static void bt_gattc_discover_charactiristics_cnf(bt_status_t status, bt_gattc_read_by_type_rsp_t *p_event_data)
+    291          {
+    292              uint16_t conn_id;
+    293              bt_gatt_service_t *service;
+    294          
+    295              BT_LOGI("GATTC", "discover_charactiristics_cnf: status = %d", status);
+    296              if (p_event_data == NULL) {
+    297          
+    298                  return;
+    299              }
+    300              conn_id = p_event_data->connection_handle;
+    301              service = bt_gattc_get_service(conn_id);
+    302          
+    303              if (status == BT_ATT_ERRCODE_CONTINUE) {
+    304                  bt_gattc_parse_characteristic(p_event_data, service);
+    305              } else if (status == BT_STATUS_SUCCESS) {
+    306                  if (p_event_data->att_rsp) {
+    307                      bt_gattc_parse_characteristic(p_event_data, service);
+    308                  }
+    309                  BT_LOGI("GATTC", "disc_char_cnf: success char_num = %d", service->num_of_char);
+    310          
+    311                  if (service->num_of_char) {
+    312                      bt_gattc_find_all_descriptor_of_char(conn_id, service, 0);
+    313                  }
+    314              } else if (status == BT_ATT_ERRCODE_ATTRIBUTE_NOT_FOUND) {
+    315                  BT_LOGI("GATTC", "disc_char_cnf: not found char_num = %d", service->num_of_char);
+    316                  if (service->num_of_char) {
+    317                      bt_gattc_find_all_descriptor_of_char(conn_id, service, 0);
+    318                  }
+    319              } else {
+    320                  BT_LOGI("GATTC", "error happend");
+    321              }
+    322          }
+    323          
+    324          
+    325          bt_status_t bt_gattc_discover_descriptor_of_characteristic(uint16_t conn_handle, uint16_t start_handle, uint16_t end_handle)
+    326          {
+    327              bt_status_t status;
+    328              bt_gattc_discover_charc_descriptor_req_t req;
+    329              BT_LOGI("GATTC", "dis_descr start: start_handle = %d, end_handle = %d", start_handle, end_handle);
+    330              req.opcode = BT_ATT_OPCODE_FIND_INFORMATION_REQUEST;
+    331              req.starting_handle = start_handle;
+    332              req.ending_handle = end_handle;
+    333          
+    334              status = bt_gattc_discover_charc_descriptor(conn_handle, &req);
+    335              BT_LOGI("GATTC", "dis_descr end: status = %d", status);
+    336              return status;
+    337          }
+    338          
+    339          
+    340          static bt_status_t bt_gattc_find_all_descriptor_of_char(uint16_t conn_id, bt_gatt_service_t *service, uint8_t index)
+    341          {
+    342              bt_gatt_char_t *cur_char, *next_char;
+    343              bt_status_t status = 0;
+    344              BT_LOGI("GATTC", "[Gattc]ble_gattc_find_all_descriptor_of_char--start:n_id= %d", conn_id);
+    345              uint8_t char_num;
+    346              char_num = service->num_of_char;
+    347              service->explore_index = index;
+    348              if (index <= (char_num - 1)) {
+    349                  uint16_t start_handle;
+    350                  uint16_t end_handle;
+    351                  cur_char = service->chara + index;
+    352                  start_handle = cur_char->value_handle + 1;
+    353          
+    354                  BT_LOGI("GATTC", "[Gattc]ble_gattc_find_all_descriptor_of_char--cha_hd = %d, num = %d", index, char_num);
+    355          
+    356                  /* This one might be the last characteristic in service */
+    357                  if (index == char_num - 1) {
+    358                      end_handle = service->end_handle;
+    359          
+    360                  } else {
+    361                      next_char = service->chara + index + 1;
+    362                      end_handle = next_char->handle - 1;
+    363                  }
+    364          
+    365                  BT_LOGI("GATTC", "[Gattc]ble_gattc_find_all_descriptor_of_char--s_hd = %x, e_hd =%x", start_handle, end_handle);
+    366                  if (start_handle <= end_handle) {
+    367                      bt_gattc_discover_descriptor_of_characteristic(conn_id, start_handle, end_handle);
+    368                  } else {
+    369                      bt_gattc_find_all_descriptor_of_char(conn_id, service, index + 1);
+    370                  }
+    371              } else {/*all descriptor is complete done */
+    372          
+    373                  BT_LOGI("GATTC", "[Gattc]ble_gattc_find_all_descriptor_of_char--next service");
+    374                  bt_gattc_discover_complete(conn_id, status, service);
+    375              }
+    376              BT_LOGI("GATTC", "[Gattc]ble_gattc_find_all_descriptor_of_char--end");
+    377              return status;
+    378          }
+    379          
+    380          
+    381          static void bt_gattc_discover_descriptors_cnf(bt_status_t status, bt_gattc_find_info_rsp_t *p_event_data)
+    382          {
+    383              uint16_t conn_id;
+    384              bt_gatt_char_t *chara = NULL;
+    385              bt_gatt_service_t *service;
+    386              if (p_event_data == NULL) {
+    387                  return;
+    388              }
+    389              conn_id = p_event_data->connection_handle;
+    390              BT_LOGI("GATTC", "disc_desc_cnf: status = %d", status);
+    391              service = bt_gattc_get_service(conn_id);
+    392              if (service == NULL) {
+    393                  return;
+    394              }
+    395              if (service->explore_index < service->num_of_char) {
+    396                  chara = service->chara + service->explore_index;
+    397              }
+    398          
+    399              service->explore_index++;
+    400          
+    401              if (status == BT_ATT_ERRCODE_CONTINUE) {
+    402                  bt_gattc_parse_descriptor(p_event_data, chara);
+    403          
+    404              } else if (status == BT_STATUS_SUCCESS) {
+    405                  if (p_event_data->att_rsp) {
+    406                      bt_gattc_parse_descriptor(p_event_data, chara);
+    407                  }
+    408                  BT_LOGI("GATTC", "disc_desc_cnf: succsee:index = %d", service->explore_index);
+    409                  bt_gattc_find_all_descriptor_of_char(conn_id, service, service->explore_index);
+    410              } else if (status == BT_ATT_ERRCODE_ATTRIBUTE_NOT_FOUND) {
+    411                  BT_LOGI("GATTC", "disc_desc_cnf: not found :index = %d", service->explore_index);
+    412                  bt_gattc_find_all_descriptor_of_char(conn_id, service, service->explore_index);;
+    413              } else {
+    414                  BT_LOGI("GATTC", "error happend");
+    415              }
+    416          }
+    417          
+    418          
+    419          static void bt_gattc_parse_primary_service(bt_gattc_find_by_type_value_rsp_t *rsp, gatt_data_t *data)
+    420          {
+    421              uint8_t i;
+    422              uint16_t uuid = 0;
+    423              uint8_t *attribute_data_list = rsp->att_rsp->handles_info_list;
+    424              uint8_t num_of_data = (rsp->length - 1) / 4;
+    425              bt_gatt_service_t *srv_data;
+    426          
+    427              for (i = 0 ; i < num_of_data; i++) {
+    428                  srv_data = &data->att_data;
+    429                  memcpy(&srv_data->start_handle, attribute_data_list + i * 4, 2);
+    430                  memcpy(&srv_data->end_handle, attribute_data_list +  i * 4 + 2, 2);
+    431          
+    432                  BT_LOGI("GATTC", "starting_handle = 0x%08x, end_group_handle = 0x%08x, uuid = 0x%08x", srv_data->start_handle, srv_data->end_handle, uuid);
+    433                  srv_data->uuid = 0x180d;
+    434                  data->service_number++;
+    435              }
+    436          }
+    437          
+    438          
+    439          static bt_gatt_service_t *bt_gattc_get_service(uint16_t conn_id)
+    440          {
+    441              gattc_conn_t *gattc_conn;
+    442              gatt_data_t *data;
+    443              bt_gatt_service_t *srv_data;
+    444              gattc_conn = bt_gattc_link_info_by_id(conn_id);
+    445              if (gattc_conn == NULL) {
+    446                  BT_LOGI("GATTC", "bt_gattc_get_service--conn link is null");
+    447                  return NULL;
+    448              }
+    449              data = &gattc_conn->data;
+    450              srv_data = &data->att_data;
+    451          
+    452              BT_LOGI("GATTC", "bt_gattc_get_service--start_h = %x", srv_data->start_handle);
+    453              return srv_data;
+    454          }
+    455          
+    456          
+    457          void bt_gattc_parse_include_command_data(bt_gatt_included_service_t *include_service, uint8_t *attribute_data_list)
+    458          {
+    459              memset(include_service, 0, sizeof(bt_gatt_included_service_t));
+    460              memcpy(&(include_service->handle), attribute_data_list, 2);
+    461              memcpy(&(include_service->start_handle), attribute_data_list + 2, 2);
+    462              memcpy(&(include_service->end_handle), attribute_data_list + 4, 2);
+    463          }
+    464          
+    465          static void bt_gattc_parse_include_service(bt_gattc_read_by_type_rsp_t *rsp, bt_gatt_service_t *service)
+    466          {
+    467              uint16_t uuid;
+    468              bt_gatt_included_service_t include_service;
+    469              uint8_t *attribute_data_list;
+    470              bt_att_read_by_type_rsp_t *att_rsp = rsp->att_rsp;
+    471          
+    472              if (att_rsp == NULL) {
+    473                  return;
+    474              }
+    475              attribute_data_list = att_rsp->attribute_data_list;
+    476              if (rsp->att_rsp->length <= 8) {
+    477                  uint8_t num_of_data = (rsp->length - 2) / rsp->att_rsp->length;
+    478                  for (int i = 0 ; i < num_of_data; i++) {
+    479                      bt_gattc_parse_include_command_data(&include_service, (attribute_data_list + rsp->att_rsp->length * i));
+    480                      memcpy(&(include_service.uuid), attribute_data_list + rsp->att_rsp->length * i + 6, 2);
+    481                      memcpy((void*)(service->incl_srv + i), &include_service, sizeof(bt_gatt_included_service_t));
+    482                  }
+    483              } else { /*when it is 128 , it must only one uuid not a list*/
+    484                  bt_uuid_t uuid128;
+    485                  bt_gattc_parse_include_command_data(&include_service, attribute_data_list);
+    486          
+    487                  memcpy((void*)&uuid128.uuid, attribute_data_list + 6, 16);
+    488          
+    489                  BT_LOGI("GATTC", "attribute_handle = 0x%08x, starting_handle = 0x%08x, end_group_handle = 0x%08x",
+    490                          include_service.handle, include_service.start_handle, include_service.end_handle);
+    491                  uuid = uuid128.uuid16;
+    492                  include_service.uuid = uuid;
+    493                  memcpy((void*)service->incl_srv, &include_service, sizeof(bt_gatt_included_service_t));
+    494                  BT_LOGI("GATTC", "  uuid = 0x%08x,", uuid);
+    495              }
+    496          }
+    497          
+    498          
+    499          void bt_gattc_parse_char_command_data(bt_gatt_char_t *char_info, uint8_t *attribute_data_list)
+    500          {
+    501              if (attribute_data_list) {
+    502                  memset(char_info, 0, sizeof(bt_gatt_char_t));
+    503                  memcpy(&char_info->handle, attribute_data_list, 2);
+    504                  memcpy(&char_info->property, attribute_data_list + 2, 1);
+    505                  memcpy(&char_info->value_handle, attribute_data_list + 3, 2);
+    506                  BT_LOGI("GATTC", "handle = %d, value_handle = 0x%08x", char_info->value_handle, char_info->handle);
+    507              }
+    508          
+    509          }
+    510          
+    511          
+    512          static void bt_gattc_parse_characteristic(bt_gattc_read_by_type_rsp_t *data, bt_gatt_service_t *service)
+    513          {
+    514              bt_gattc_read_by_type_rsp_t rsp = *data;
+    515              bt_gatt_char_t char_info;
+    516              uint8_t *attribute_data_list = rsp.att_rsp->attribute_data_list;
+    517              uint16_t attribute_handle = 0, uuid;
+    518          
+    519              uint8_t num_of_data = (rsp.length - 2) / rsp.att_rsp->length;
+    520              service->num_of_char = num_of_data;
+    521              BT_LOGI("GATTC", "ble_gattc_parse_characteristic : char_num = %d", service->num_of_char);
+    522              if (rsp.att_rsp->length < 20) {/*16+2 + 1 +1*/
+    523          
+    524                  for (int i = 0 ; i < num_of_data; i++) {
+    525          
+    526                      bt_gattc_parse_char_command_data(&char_info, (rsp.att_rsp->attribute_data_list + i * rsp.att_rsp->length));
+    527          
+    528                      memcpy((void*)&char_info.uuid, attribute_data_list + i * rsp.att_rsp->length + 5, 2);
+    529          
+    530                      BT_LOGI("GATTC", "num_of_data = %d, attribute handle = 0x%08x", i, char_info.uuid);
+    531                      memcpy((void*)(service->chara + i), &char_info, sizeof(bt_gatt_char_t));
+    532                  }
+    533              } else {
+    534                  bt_uuid_t uuid128;
+    535                  bt_gattc_parse_char_command_data(&char_info, rsp.att_rsp->attribute_data_list);
+    536                  memcpy(&uuid128.uuid, attribute_data_list + rsp.att_rsp->length + 5, 16);
+    537                  uuid = uuid128.uuid16;
+    538                  char_info.uuid = uuid;
+    539                  BT_LOGI("GATTC", "attribute handle = 0x%08x, value_handle = 0x%08x", attribute_handle, uuid);
+    540                  memcpy((void*)service->chara, &char_info, sizeof(bt_gatt_char_t));
+    541              }
+    542          }
+    543          
+    544          
+    545          static void bt_gattc_parse_descriptor(bt_gattc_find_info_rsp_t *data, bt_gatt_char_t *chara)
+    546          {
+    547              bt_gattc_find_info_rsp_t rsp = *data;
+    548          
+    549              uint8_t format = 0;
+    550              uint16_t attribute_handle = 0, attribute_value = 0;
+    551              uint8_t attribute_length = 0;
+    552              uint8_t i;
+    553          
+    554              if (rsp.att_rsp) {
+    555                  format = rsp.att_rsp->format;
+    556              }
+    557              if (format == 0x02) {
+    558                  attribute_length = 18;
+    559              } else {
+    560                  attribute_length = 4;
+    561              }
+    562              uint8_t num_of_attribute = (rsp.length - 2) / attribute_length;
+    563              for (i = 0; i < num_of_attribute; i++) {
+    564                  if (format == 0x02) {
+    565                      /* uuid 128 */
+    566                      bt_uuid_t uuid128;
+    567                      memcpy(&attribute_handle, rsp.att_rsp->info_data + i * attribute_length, 2);
+    568          
+    569                      memcpy(&uuid128, rsp.att_rsp->info_data + i * attribute_length + 2, 16);
+    570                      attribute_value = uuid128.uuid16;
+    571          
+    572                  } else {
+    573                      /* uuid 16 */
+    574                      memcpy(&attribute_handle, rsp.att_rsp->info_data + i * attribute_length, 2);
+    575                      memcpy(&attribute_value, rsp.att_rsp->info_data + i * attribute_length + 2, 2);
+    576                  }
+    577                  BT_LOGI("GATTC", "attribute handle = 0x%08x, attribute value = 0x%08x", attribute_handle, attribute_value);
+    578                  bt_gatt_descriptor_t descr_data;
+    579                  memset(&descr_data, 0, sizeof(bt_gatt_descriptor_t));
+    580                  descr_data.handle = attribute_handle;
+    581          
+    582                  descr_data.uuid = attribute_value;
+    583                  memcpy(chara->descr + i, &descr_data, sizeof(bt_gatt_descriptor_t));
+    584              }
+    585          }
+    586          
+    587          
+    588          bt_status_t bt_gattc_write_descr(uint16_t conn_id, bt_gattc_write_descr_req_t *req)
+    589          {
+    590              bt_status_t status;
+    591              bt_gattc_write_charc_req_t write_req;
+    592              uint8_t buffer[256];
+    593              memset(&write_req, 0, sizeof(bt_gattc_write_charc_req_t));
+    594              write_req.attribute_value_length = req->size;
+    595          
+    596              write_req.att_req = (bt_att_write_req_t*)buffer;
+    597          	  write_req.att_req->opcode = BT_ATT_OPCODE_WRITE_COMMAND;
+    598              write_req.att_req->attribute_handle = req->handle;
+    599          
+    600              memcpy(write_req.att_req->attribute_value, req->value, req->size);
+    601              status = bt_gattc_write_charc(conn_id, &write_req);
+    602              BT_LOGI("GATTC", "bt_gattc_write_descr: status = %d\r\n", status);
+    603              return status;
+    604          }
+    605          
+    606          
+    607          static void bt_gattc_write_char_cnf(bt_status_t status, bt_gattc_write_rsp_t *param)/*write char vaule */
+    608          {
+    609              BT_LOGI("GATTC", "status = 0x%08x", status);
+    610          }
+    611          
+    612          
+    613          static void bt_gattc_char_val_notify_and_ind(bt_status_t status, bt_gatt_handle_value_notification_t *rsp)
+    614          {
+    615              uint16_t conn_id = 0;
+    616              gattc_conn_t *gattc_conn = NULL;
+    617              app_callback_struct *cb;
+    618              gattc_value_t value;
+    619              if (rsp) {
+    620                  conn_id = rsp->connection_handle;
+    621                  gattc_conn = bt_gattc_link_info_by_id(conn_id);
+    622              }
+    623              if (gattc_conn) {
+    624                  gattc_user_context_t *user;
+    625                  gattc_user_connect_struct conn;
+    626                  if (g_gattc_ctx.userContext.flag) { /*service node 's all userlist*/
+    627                      user = &g_gattc_ctx.userContext;
+    628                      conn.reg_cntx = (void *)user;
+    629                      conn.conn_id = conn_id;
+    630                      cb = (app_callback_struct *)user->appCb;
+    631                      if (cb) {
+    632                          if (cb->notify_cb) {
+    633                              if (rsp->att_rsp) {
+    634                                  memcpy(value.value, rsp->att_rsp->attribute_value, rsp->length - 3);
+    635                              }
+    636                              value.len = rsp->length - 3;
+    637                              cb->notify_cb(&conn, rsp->att_rsp->handle, &value);
+    638                          }
+    639                      }
+    640                  }
+    641              }
+    642          }
+    643          
+    644          bt_handle_t g_bt_conn_handle = 0;
+    645          bt_status_t bt_gattc_event_callback(bt_msg_type_t msg, bt_status_t status, void *param)
+    646          {
+    647              switch (msg) { 
+    648                  case BT_GAP_LE_SET_RANDOM_ADDRESS_CNF:
+    649                  {
+    650                      if (gpio_started == true) {
+    651                          bt_hci_cmd_le_set_advertising_enable_t enable;
+    652                          bt_hci_cmd_le_set_advertising_parameters_t adv_param = {
+    653                                  .advertising_interval_min = BLE_GPIO_MIN_INTERVAL,
+    654                                  .advertising_interval_max = BLE_GPIO_MAX_INTERVAL,
+    655                                  .advertising_type = BT_HCI_ADV_TYPE_CONNECTABLE_UNDIRECTED,
+    656                                  .own_address_type = BT_ADDR_RANDOM,
+    657                                  .advertising_channel_map = BLE_GPIO_CHANNEL_NUM,
+    658                                  .advertising_filter_policy = BLE_GPIO_FILTER_POLICY
+    659                              };
+    660          
+    661                              
+    662                          bt_hci_cmd_le_set_advertising_data_t adv_data = {
+    663                             .advertising_data_length = BLE_GPIO_ADV_DATA_LEN,
+    664                              .advertising_data = BLE_GPIO_ADV_DATA
+    665                          };
+    666          
+    667                          adv_data.advertising_data[0] = BLE_GPIO_AD_FLAG_LEN;
+    668                          adv_data.advertising_data[1] = BT_GAP_LE_AD_TYPE_FLAG;
+    669                          adv_data.advertising_data[2] = BT_GAP_LE_AD_FLAG_BR_EDR_NOT_SUPPORTED | BT_GAP_LE_AD_FLAG_GENERAL_DISCOVERABLE;
+    670                          adv_data.advertising_data[3] = BLE_GPIO_AD_UUID_LEN;
+    671                          adv_data.advertising_data[4] = BT_GAP_LE_AD_TYPE_16_BIT_UUID_COMPLETE;
+    672                          adv_data.advertising_data[5] = BLE_GPIO_SERVICE_UUID & 0x00FF;
+    673                          adv_data.advertising_data[6] = (BLE_GPIO_SERVICE_UUID & 0xFF00)>>8;
+    674                          adv_data.advertising_data[7] = BLE_GPIO_AD_NAME_LEN;
+    675                          adv_data.advertising_data[8] = BT_GAP_LE_AD_TYPE_NAME_COMPLETE;
+    676          
+    677                          enable.advertising_enable = BT_HCI_ENABLE;
+    678                          bt_gap_le_set_advertising(&enable, &adv_param, &adv_data, NULL);
+    679          
+    680                          gpio_started = false;
+    681                      }
+    682                  }
+    683                      break;
+    684                  case BT_GAP_LE_SET_ADVERTISING_CNF: {
+    685                      BT_LOGI("GATTC", "BT_GAP_SET_ADVERTISING_CNF %s",
+    686                              (status == BT_STATUS_SUCCESS) ? "Success" : "Failed");
+    687                      BT_LOGI("GATTC", "bt_app_event_callback:adv cnf");
+    688                      }
+    689                      break;
+    690                  case BT_GAP_LE_ADVERTISING_REPORT_IND:{
+    691                      BT_LOGI("GATTC", "BT_GAP_ADVERTISING_REPORT_IND %s",
+    692                              (status == BT_STATUS_SUCCESS) ? "Success" : "Failed");
+    693                      gattc_notify_scan_info_to_all_user((bt_gap_le_advertising_report_ind_t *)param);
+    694          
+    695                      }
+    696                      break;
+    697                  case BT_GAP_LE_CONNECT_IND:
+    698                  {
+    699                      BT_LOGI("GATTC", "BT_GAP_CONNECT_IND %s",
+    700                              (status == BT_STATUS_SUCCESS) ? "Success" : "Failed");
+    701          
+    702                      bt_handle_t handle;
+    703                      app_bt_connection_cb_t *conn_info = NULL;
+    704                      const bt_gap_le_connection_ind_t *connect_ind = (bt_gap_le_connection_ind_t *)param;
+    705                      if (connect_ind == NULL) {
+    706                          BT_LOGI("GATTC", "connection ind is null\r\n");
+    707                          return status;
+    708                      }
+    709                      handle = connect_ind->connection_handle;
+    710                      BT_LOGI("GATTC", "connection handle=0x%04x", handle);
+    711                      BT_LOGI("GATTC", "role=%s", (connect_ind->role == BT_ROLE_MASTER) ? "Master" : "Slave");
+    712                      BT_LOGI("GATTC", "peer address:%s (%s)\r\n ", bt_debug_bd_addr2str(connect_ind->peer_addr.addr),
+    713                              connect_ind->peer_addr.type ? "Random Device Address" : "Public Device Address");
+    714          
+    715                      if (status == BT_STATUS_SUCCESS) {
+    716                          add_connection_info(param);
+    717          
+    718                          BT_LOGI("GATTC", "connection role=0x%04x", connect_ind->role);
+    719                          if (connect_ind->role == BT_ROLE_MASTER) {
+    720                              conn_info = find_conneciton_info_by_handle(handle);
+    721                              gattc_connect_cb(status, conn_info);
+    722                          }
+    723                          g_bt_conn_handle = handle;
+    724                      }
+    725          #ifdef MTK_MCS_ENABLE
+    726                      mcs_update(2,1,"BLE is connected !");
+    727          #endif
+    728                  }
+    729                      break;
+    730                  case BT_GAP_LE_DISCONNECT_IND: {
+    731                      BT_LOGI("GATTC", "BT_GAP_DISCONNECT_IND %s",
+    732                              (status == BT_STATUS_SUCCESS) ? "Success" : "Failed");
+    733                      gattc_disconnect_cb(status, (bt_hci_evt_disconnect_complete_t *)param);
+    734                      delete_connection_info(param);
+    735                      g_bt_conn_handle = 0;
+    736          #ifdef MTK_MCS_ENABLE
+    737                      mcs_update(2,0,"BLE is disconnected !");
+    738          #endif
+    739                      }
+    740                      break;
+    741                  case BT_GAP_LE_SET_SCAN_CNF:{
+    742                      BT_LOGI("GATTC", "BT_GAP_SET_SCAN_CNF %s",
+    743                              (status == BT_STATUS_SUCCESS) ? "Success" : "Failed");
+    744                      }
+    745                      break;
+    746          
+    747                  case BT_GATTC_DISCOVER_PRIMARY_SERVICE_BY_UUID: {
+    748                      BT_LOGI("GATTC", "Primary service: msg_id = %d,status = %d", msg, status);
+    749                      bt_gattc_discover_primary_service_cnf(status, (bt_gattc_find_by_type_value_rsp_t *)param);
+    750                      break;
+    751                  }
+    752                  case BT_GATTC_FIND_INCLUDED_SERVICES: {
+    753                      BT_LOGI("GATTC", "inlcuded service: msg_id = %d,status = %d", msg, status);
+    754                      bt_gattc_discover_include_service_cnf(status, (bt_gattc_read_by_type_rsp_t *)param);
+    755                      break;
+    756                  }
+    757                  case BT_GATTC_DISCOVER_CHARC: {
+    758                      BT_LOGI("GATTC", "discover char: msg_id = %d,status = %d", msg, status);
+    759                      bt_gattc_discover_charactiristics_cnf(status, (bt_gattc_read_by_type_rsp_t *)param);
+    760                      break;
+    761                  }
+    762                  case BT_GATTC_DISCOVER_CHARC_DESCRIPTOR: {
+    763                      BT_LOGI("GATTC", "discover discriptor: msg_id = %d,status = %d", msg, status);
+    764                      bt_gattc_discover_descriptors_cnf(status, (bt_gattc_find_info_rsp_t *)param);
+    765                      break;
+    766                  }
+    767                  case BT_GATTC_WRITE_CHARC: {
+    768                      BT_LOGI("GATTC", "BT_GATTC_WRITE_CHARC: msg_id = %d,status = %d", msg, status);
+    769                      bt_gattc_write_char_cnf(status, (bt_gattc_write_rsp_t *)param);
+    770                      break;
+    771                  }
+    772                  case BT_GATTC_READ_CHARC:
+    773                  {
+    774                      BT_LOGI("GATTC", "BT_GATTC_READ_CHARC: msg_id = %d,status = %d", msg, status);
+    775                      
+    776                      bt_gattc_read_rsp_t rsp = *((bt_gattc_read_rsp_t *)param);
+    777                  
+    778                      if (status == BT_STATUS_SUCCESS && rsp.att_rsp == NULL) {
+    779                          BT_LOGI("GATTC", "BT_GATTC_READ_CHARC FINISHED!!");
+    780                          break;
+    781                      }
+    782                      
+    783                      if (rsp.att_rsp == NULL) {
+    784                          BT_LOGI("GATTC", "status = %d", status);
+    785                          break;
+    786                      }
+    787                      
+    788                      uint8_t op_code = rsp.att_rsp->opcode;
+    789                      BT_LOGI("GATTC", "op_code = 0x%08x", op_code);
+    790                                  
+    791                      uint8_t length = rsp.length - 1;
+    792                      BT_LOGI("GATTC", "length = 0x%08x", length);
+    793                      
+    794                      for (int i = 0; i < length ; i++) {
+    795                          BT_LOGI("GATTC", "0x%02x ", rsp.att_rsp->attribute_value[i]);
+    796                      }
+    797                      
+    798          
+    799                      if (status == BT_STATUS_SUCCESS) {
+    800                          BT_LOGI("APP", "bt_gattc_read_charc FINISHED!!!");
+    801                      }
+    802                      
+    803                      break;
+    804                  }
+    805                  case BT_GATTC_CHARC_VALUE_NOTIFICATION: {
+    806                      bt_gattc_char_val_notify_and_ind(status, (bt_gatt_handle_value_notification_t *)param);
+    807                      break;
+    808                  }
+    809              }
+    810              return BT_STATUS_SUCCESS;
+    811          }
+    812          
+    813          
+    814          static void bt_gattc_notify_error(uint16_t conn_id, bt_status_t status)
+    815          {
+    816              bt_gattc_discover_complete(conn_id, status, NULL);
+    817          }
+    818          
+    819          
+    820          static void bt_gattc_discover_complete(uint16_t conn_id, bt_status_t status, bt_gatt_service_t *service)
+    821          {
+    822              app_callback_struct *app_cb = NULL;
+    823              gattc_conn_t *conn = bt_gattc_link_info_by_id(conn_id);
+    824              BT_LOGI("GATTC", "bt_gattc_discover_complete: --start");
+    825              if (conn) {
+    826                  BT_LOGI("GATTC", "bt_gattc_discover_complete: --state = %d, result = %d", conn->state, status);
+    827          
+    828                  if (conn->state == GATTC_IN_SEARCHING) {
+    829                      if (status == BT_STATUS_SUCCESS) {
+    830                          conn->state = GATTC_SEARCH_DONE;
+    831                      } else {
+    832                          conn->state = GATTC_CONNECTED;
+    833                      }
+    834                  }
+    835          
+    836                  if (g_gattc_ctx.userContext.flag) {
+    837                      /*for all user in userlist*/
+    838                      gattc_user_context_t *user = &g_gattc_ctx.userContext;
+    839                      gattc_user_connect_struct user_conn;
+    840                      user_conn.reg_cntx = (void *)user;
+    841                      user_conn.conn_id = conn->conn_id;
+    842                      app_cb = (app_callback_struct *)user->appCb;
+    843                      app_cb->search_complete_cb(&user_conn, status, service);
+    844                  }
+    845              }
+    846              BT_LOGI("GATTC", "bt_gattc_discover_complete: end");
+    847          }
+    848          
+    849          
+    850          bt_gatt_char_t *bt_gattc_get_char_by_handle(uint16_t conn_id, uint16_t handle)
+    851          {
+    852              uint8_t i;
+    853              bt_gatt_char_t *chara;
+    854              bt_gatt_service_t *service = bt_gattc_get_service(conn_id);
+    855              if (handle >= service->start_handle && handle <= service->end_handle) {
+    856          
+    857                  for (i = 0; i < service->num_of_char; i++) {
+    858          
+    859                      chara = service->chara + i;
+    860                      if (handle == chara->value_handle) {
+    861                          return chara;
+    862                      }
+    863                  }
+    864              }
+    865          
+    866              return NULL;
+    867          
+    868          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   ble_gpio_set_adv
+        16   -> __aeabi_memcpy
+        16   -> __aeabi_memset
+        16   -> bt_gap_le_set_random_address
+     536   bt_gattc_char_val_notify_and_ind
+       536   -- Indirect call
+       536   -> __aeabi_memcpy
+       536   -> bt_gattc_link_info_by_id
+      24   bt_gattc_discover_charactiristics_cnf
+         0   -> bt_debug_log
+        24   -> bt_debug_log
+         0   -> bt_gattc_find_all_descriptor_of_char
+        24   -> bt_gattc_get_service
+         0   -> bt_gattc_parse_characteristic
+        24   -> bt_gattc_parse_characteristic
+      48   bt_gattc_discover_charateristic
+        48   -> bt_debug_log
+        48   -> bt_gattc_discover_charc
+        48   -> bt_uuid_load
+      24   bt_gattc_discover_complete
+        24   -- Indirect call
+        24   -> bt_debug_log
+        24   -> bt_gattc_link_info_by_id
+      24   bt_gattc_discover_descriptor_of_characteristic
+        24   -> bt_debug_log
+        24   -> bt_gattc_discover_charc_descriptor
+      24   bt_gattc_discover_descriptors_cnf
+         0   -> bt_debug_log
+        24   -> bt_debug_log
+         0   -> bt_gattc_find_all_descriptor_of_char
+        24   -> bt_gattc_get_service
+         0   -> bt_gattc_parse_descriptor
+        24   -> bt_gattc_parse_descriptor
+      24   bt_gattc_discover_include_service
+        24   -> bt_debug_log
+        24   -> bt_gattc_find_included_services
+      24   bt_gattc_discover_include_service_cnf
+         0   -> bt_debug_log
+        24   -> bt_debug_log
+         0   -> bt_gattc_discover_charateristic
+        24   -> bt_gattc_discover_charateristic
+        24   -> bt_gattc_get_service
+         0   -> bt_gattc_notify_error
+         0   -> bt_gattc_parse_include_service
+        24   -> bt_gattc_parse_include_service
+      24   bt_gattc_discover_primary_service_cnf
+        24   -> bt_debug_log
+         0   -> bt_gattc_explore_service
+        24   -> bt_gattc_link_info_by_id
+         0   -> bt_gattc_notify_error
+         0   -> bt_gattc_parse_primary_service
+        24   -> bt_gattc_parse_primary_service
+      80   bt_gattc_event_callback
+        80   -> __aeabi_memcpy
+        80   -> add_connection_info
+        80   -> bt_debug_bd_addr2str
+        80   -> bt_debug_log
+        80   -> bt_gap_le_set_advertising
+        80   -> bt_gattc_char_val_notify_and_ind
+        80   -> bt_gattc_discover_charactiristics_cnf
+        80   -> bt_gattc_discover_descriptors_cnf
+        80   -> bt_gattc_discover_include_service_cnf
+        80   -> bt_gattc_discover_primary_service_cnf
+        80   -> bt_gattc_write_char_cnf
+        80   -> delete_connection_info
+        80   -> find_conneciton_info_by_handle
+        80   -> gattc_connect_cb
+        80   -> gattc_disconnect_cb
+        80   -> gattc_notify_scan_info_to_all_user
+        80   -> mcs_update
+       0   bt_gattc_explore_service
+         0   -> bt_debug_log
+         0   -> bt_gattc_discover_include_service
+      32   bt_gattc_find_all_descriptor_of_char
+        32   -> bt_debug_log
+        32   -> bt_gattc_discover_complete
+        32   -> bt_gattc_discover_descriptor_of_characteristic
+        32   -> bt_gattc_find_all_descriptor_of_char
+      16   bt_gattc_get_char_by_handle
+        16   -> bt_gattc_get_service
+       8   bt_gattc_get_service
+         8   -> bt_debug_log
+         8   -> bt_gattc_link_info_by_id
+       0   bt_gattc_notify_error
+         0   -> bt_gattc_discover_complete
+      16   bt_gattc_parse_char_command_data
+        16   -> __aeabi_memcpy
+        16   -> __aeabi_memset
+         0   -> bt_debug_log
+      72   bt_gattc_parse_characteristic
+        72   -> __aeabi_memcpy
+        72   -> bt_debug_log
+        72   -> bt_gattc_parse_char_command_data
+      64   bt_gattc_parse_descriptor
+        64   -> __aeabi_memcpy
+        64   -> __aeabi_memset4
+        64   -> bt_debug_log
+      16   bt_gattc_parse_include_command_data
+         0   -> __aeabi_memcpy
+        16   -> __aeabi_memcpy
+        16   -> __aeabi_memset
+      48   bt_gattc_parse_include_service
+        48   -> __aeabi_memcpy
+        48   -> bt_debug_log
+        48   -> bt_gattc_parse_include_command_data
+      24   bt_gattc_parse_primary_service
+        24   -> __aeabi_memcpy
+        24   -> bt_debug_log
+      64   bt_gattc_start_discover_service
+        64   -> __aeabi_memcpy
+        64   -> bt_debug_log
+        64   -> bt_gattc_discover_primary_service_by_uuid
+        64   -> bt_gattc_link_info_by_id
+       0   bt_gattc_write_char_cnf
+         0   -> bt_debug_log
+     280   bt_gattc_write_descr
+       280   -> __aeabi_memcpy
+       280   -> __aeabi_memset4
+       280   -> bt_debug_log
+       280   -> bt_gattc_write_charc
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable86
+       4  ??DataTable91
+       4  ??DataTable91_1
+       4  ??DataTable91_10
+       4  ??DataTable91_11
+       4  ??DataTable91_12
+       4  ??DataTable91_13
+       4  ??DataTable91_14
+       4  ??DataTable91_15
+       4  ??DataTable91_16
+       4  ??DataTable91_17
+       4  ??DataTable91_18
+       4  ??DataTable91_19
+       4  ??DataTable91_2
+       4  ??DataTable91_20
+       4  ??DataTable91_21
+       4  ??DataTable91_22
+       4  ??DataTable91_23
+       4  ??DataTable91_24
+       4  ??DataTable91_25
+       4  ??DataTable91_26
+       4  ??DataTable91_27
+       4  ??DataTable91_28
+       4  ??DataTable91_29
+       4  ??DataTable91_3
+       4  ??DataTable91_30
+       4  ??DataTable91_31
+       4  ??DataTable91_4
+       4  ??DataTable91_5
+       4  ??DataTable91_6
+       4  ??DataTable91_7
+       4  ??DataTable91_8
+       4  ??DataTable91_9
+       8  ?_0
+       4  ?_1
+      36  ?_10
+      72  ?_11
+      48  ?_12
+      56  ?_13
+      76  ?_14
+      76  ?_15
+      64  ?_16
+      40  ?_17
+      56  ?_18
+      52  ?_19
+       2  ?_2
+      52  ?_20
+      64  ?_21
+      40  ?_22
+      76  ?_23
+      80  ?_24
+      80  ?_25
+      72  ?_26
+      64  ?_27
+      40  ?_28
+      48  ?_29
+      60  ?_3
+      52  ?_30
+      80  ?_31
+      52  ?_32
+      48  ?_33
+      92  ?_34
+      32  ?_35
+      48  ?_36
+      60  ?_37
+      56  ?_38
+      64  ?_39
+      68  ?_4
+      64  ?_40
+      48  ?_41
+      28  ?_42
+      44  ?_43
+       8  ?_44
+       8  ?_45
+      44  ?_46
+      48  ?_47
+      36  ?_48
+      40  ?_49
+      64  ?_5
+      40  ?_50
+      20  ?_51
+       8  ?_52
+       8  ?_53
+      36  ?_54
+      24  ?_55
+      24  ?_56
+      36  ?_57
+      20  ?_58
+      40  ?_59
+      48  ?_6
+      24  ?_60
+      36  ?_61
+      56  ?_62
+      56  ?_63
+      52  ?_64
+      60  ?_65
+      60  ?_66
+      60  ?_67
+      44  ?_68
+      24  ?_69
+      56  ?_7
+      32  ?_70
+      28  ?_71
+      20  ?_72
+      44  ?_73
+      48  ?_74
+      68  ?_75
+      44  ?_76
+      16  ?_77
+      32  ?_78
+      60  ?_8
+      28  ?_9
+      58  ble_gpio_set_adv
+     104  bt_gattc_char_val_notify_and_ind
+     126  bt_gattc_discover_charactiristics_cnf
+      78  bt_gattc_discover_charateristic
+      94  bt_gattc_discover_complete
+      54  bt_gattc_discover_descriptor_of_characteristic
+     164  bt_gattc_discover_descriptors_cnf
+      62  bt_gattc_discover_include_service
+     146  bt_gattc_discover_include_service_cnf
+     138  bt_gattc_discover_primary_service_cnf
+     766  bt_gattc_event_callback
+      18  bt_gattc_explore_service
+     154  bt_gattc_find_all_descriptor_of_char
+      68  bt_gattc_get_char_by_handle
+      38  bt_gattc_get_service
+       2  bt_gattc_notify_error
+      64  bt_gattc_parse_char_command_data
+     196  bt_gattc_parse_characteristic
+     212  bt_gattc_parse_descriptor
+      48  bt_gattc_parse_include_command_data
+     184  bt_gattc_parse_include_service
+      96  bt_gattc_parse_primary_service
+     168  bt_gattc_start_discover_service
+      10  bt_gattc_write_char_cnf
+      96  bt_gattc_write_descr
+     100  g_data
+     108  g_gattc_conn
+       4  gpio_started
+          g_bt_conn_handle
+
+ 
+   212 bytes in section .bss
+ 1 150 bytes in section .rodata
+ 5 728 bytes in section .text
+ 
+ 5 728 bytes of CODE  memory
+ 1 150 bytes of CONST memory
+   212 bytes of DATA  memory
+
+Errors: none
+Warnings: none

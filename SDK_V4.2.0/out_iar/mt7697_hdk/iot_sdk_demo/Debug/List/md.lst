@@ -1,0 +1,700 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:16
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\md.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\md.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\md.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\md.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\md.c
+      1          /**
+      2           * \file mbedtls_md.c
+      3           *
+      4           * \brief Generic message digest wrapper for mbed TLS
+      5           *
+      6           * \author Adriaan de Jong <dejong@fox-it.com>
+      7           *
+      8           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+      9           *  SPDX-License-Identifier: Apache-2.0
+     10           *
+     11           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     12           *  not use this file except in compliance with the License.
+     13           *  You may obtain a copy of the License at
+     14           *
+     15           *  http://www.apache.org/licenses/LICENSE-2.0
+     16           *
+     17           *  Unless required by applicable law or agreed to in writing, software
+     18           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     19           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     20           *  See the License for the specific language governing permissions and
+     21           *  limitations under the License.
+     22           *
+     23           *  This file is part of mbed TLS (https://tls.mbed.org)
+     24           */
+     25          
+     26          #if !defined(MBEDTLS_CONFIG_FILE)
+     27          #include "mbedtls/config.h"
+     28          #else
+     29          #include MBEDTLS_CONFIG_FILE
+     30          #endif
+     31          
+     32          #if defined(MBEDTLS_MD_C)
+     33          
+     34          #include "mbedtls/md.h"
+     35          #include "mbedtls/md_internal.h"
+     36          
+     37          #if defined(MBEDTLS_PLATFORM_C)
+     38          #include "mbedtls/platform.h"
+     39          #else
+     40          #include <stdlib.h>
+     41          #define mbedtls_calloc    calloc
+     42          #define mbedtls_free       free
+     43          #endif
+     44          
+     45          #include <string.h>
+     46          
+     47          #if defined(MBEDTLS_FS_IO)
+     48          #include <stdio.h>
+     49          #endif
+     50          
+     51          /* Implementation that should never be optimized out by the compiler */
+     52          static void mbedtls_zeroize( void *v, size_t n ) {
+     53              volatile unsigned char *p = v; while( n-- ) *p++ = 0;
+     54          }
+     55          
+     56          /*
+     57           * Reminder: update profiles in x509_crt.c when adding a new hash!
+     58           */
+     59          static const int supported_digests[] = {
+     60          
+     61          #if defined(MBEDTLS_SHA512_C)
+     62                  MBEDTLS_MD_SHA512,
+     63                  MBEDTLS_MD_SHA384,
+     64          #endif
+     65          
+     66          #if defined(MBEDTLS_SHA256_C)
+     67                  MBEDTLS_MD_SHA256,
+     68                  MBEDTLS_MD_SHA224,
+     69          #endif
+     70          
+     71          #if defined(MBEDTLS_SHA1_C)
+     72                  MBEDTLS_MD_SHA1,
+     73          #endif
+     74          
+     75          #if defined(MBEDTLS_RIPEMD160_C)
+     76                  MBEDTLS_MD_RIPEMD160,
+     77          #endif
+     78          
+     79          #if defined(MBEDTLS_MD5_C)
+     80                  MBEDTLS_MD_MD5,
+     81          #endif
+     82          
+     83          #if defined(MBEDTLS_MD4_C)
+     84                  MBEDTLS_MD_MD4,
+     85          #endif
+     86          
+     87          #if defined(MBEDTLS_MD2_C)
+     88                  MBEDTLS_MD_MD2,
+     89          #endif
+     90          
+     91                  MBEDTLS_MD_NONE
+     92          };
+     93          
+     94          const int *mbedtls_md_list( void )
+     95          {
+     96              return( supported_digests );
+     97          }
+     98          
+     99          const mbedtls_md_info_t *mbedtls_md_info_from_string( const char *md_name )
+    100          {
+    101              if( NULL == md_name )
+    102                  return( NULL );
+    103          
+    104              /* Get the appropriate digest information */
+    105          #if defined(MBEDTLS_MD2_C)
+    106              if( !strcmp( "MD2", md_name ) )
+    107                  return mbedtls_md_info_from_type( MBEDTLS_MD_MD2 );
+    108          #endif
+    109          #if defined(MBEDTLS_MD4_C)
+    110              if( !strcmp( "MD4", md_name ) )
+    111                  return mbedtls_md_info_from_type( MBEDTLS_MD_MD4 );
+    112          #endif
+    113          #if defined(MBEDTLS_MD5_C)
+    114              if( !strcmp( "MD5", md_name ) )
+    115                  return mbedtls_md_info_from_type( MBEDTLS_MD_MD5 );
+    116          #endif
+    117          #if defined(MBEDTLS_RIPEMD160_C)
+    118              if( !strcmp( "RIPEMD160", md_name ) )
+    119                  return mbedtls_md_info_from_type( MBEDTLS_MD_RIPEMD160 );
+    120          #endif
+    121          #if defined(MBEDTLS_SHA1_C)
+    122              if( !strcmp( "SHA1", md_name ) || !strcmp( "SHA", md_name ) )
+    123                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA1 );
+    124          #endif
+    125          #if defined(MBEDTLS_SHA256_C)
+    126              if( !strcmp( "SHA224", md_name ) )
+    127                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA224 );
+    128              if( !strcmp( "SHA256", md_name ) )
+    129                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA256 );
+    130          #endif
+    131          #if defined(MBEDTLS_SHA512_C)
+    132              if( !strcmp( "SHA384", md_name ) )
+    133                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA384 );
+    134              if( !strcmp( "SHA512", md_name ) )
+    135                  return mbedtls_md_info_from_type( MBEDTLS_MD_SHA512 );
+    136          #endif
+    137              return( NULL );
+    138          }
+    139          
+    140          const mbedtls_md_info_t *mbedtls_md_info_from_type( mbedtls_md_type_t md_type )
+    141          {
+    142              switch( md_type )
+    143              {
+    144          #if defined(MBEDTLS_MD2_C)
+    145                  case MBEDTLS_MD_MD2:
+    146                      return( &mbedtls_md2_info );
+    147          #endif
+    148          #if defined(MBEDTLS_MD4_C)
+    149                  case MBEDTLS_MD_MD4:
+    150                      return( &mbedtls_md4_info );
+    151          #endif
+    152          #if defined(MBEDTLS_MD5_C)
+    153                  case MBEDTLS_MD_MD5:
+    154                      return( &mbedtls_md5_info );
+    155          #endif
+    156          #if defined(MBEDTLS_RIPEMD160_C)
+    157                  case MBEDTLS_MD_RIPEMD160:
+    158                      return( &mbedtls_ripemd160_info );
+    159          #endif
+    160          #if defined(MBEDTLS_SHA1_C)
+    161                  case MBEDTLS_MD_SHA1:
+    162                      return( &mbedtls_sha1_info );
+    163          #endif
+    164          #if defined(MBEDTLS_SHA256_C)
+    165                  case MBEDTLS_MD_SHA224:
+    166                      return( &mbedtls_sha224_info );
+    167                  case MBEDTLS_MD_SHA256:
+    168                      return( &mbedtls_sha256_info );
+    169          #endif
+    170          #if defined(MBEDTLS_SHA512_C)
+    171                  case MBEDTLS_MD_SHA384:
+    172                      return( &mbedtls_sha384_info );
+    173                  case MBEDTLS_MD_SHA512:
+    174                      return( &mbedtls_sha512_info );
+    175          #endif
+    176                  default:
+    177                      return( NULL );
+    178              }
+    179          }
+    180          
+    181          void mbedtls_md_init( mbedtls_md_context_t *ctx )
+    182          {
+    183              memset( ctx, 0, sizeof( mbedtls_md_context_t ) );
+    184          }
+    185          
+    186          void mbedtls_md_free( mbedtls_md_context_t *ctx )
+    187          {
+    188              if( ctx == NULL || ctx->md_info == NULL )
+    189                  return;
+    190          
+    191              if( ctx->md_ctx != NULL )
+    192                  ctx->md_info->ctx_free_func( ctx->md_ctx );
+    193          
+    194              if( ctx->hmac_ctx != NULL )
+    195              {
+    196                  mbedtls_zeroize( ctx->hmac_ctx, 2 * ctx->md_info->block_size );
+    197                  mbedtls_free( ctx->hmac_ctx );
+    198              }
+    199          
+    200              mbedtls_zeroize( ctx, sizeof( mbedtls_md_context_t ) );
+    201          }
+    202          
+    203          int mbedtls_md_clone( mbedtls_md_context_t *dst,
+    204                                const mbedtls_md_context_t *src )
+    205          {
+    206              if( dst == NULL || dst->md_info == NULL ||
+    207                  src == NULL || src->md_info == NULL ||
+    208                  dst->md_info != src->md_info )
+    209              {
+    210                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    211              }
+    212          
+    213              dst->md_info->clone_func( dst->md_ctx, src->md_ctx );
+    214          
+    215              return( 0 );
+    216          }
+    217          
+    218          #if ! defined(MBEDTLS_DEPRECATED_REMOVED)
+    219          int mbedtls_md_init_ctx( mbedtls_md_context_t *ctx, const mbedtls_md_info_t *md_info )
+    220          {
+    221              return mbedtls_md_setup( ctx, md_info, 1 );
+    222          }
+    223          #endif
+    224          
+    225          int mbedtls_md_setup( mbedtls_md_context_t *ctx, const mbedtls_md_info_t *md_info, int hmac )
+    226          {
+    227              if( md_info == NULL || ctx == NULL )
+    228                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    229          
+    230              if( ( ctx->md_ctx = md_info->ctx_alloc_func() ) == NULL )
+    231                  return( MBEDTLS_ERR_MD_ALLOC_FAILED );
+    232          
+    233              if( hmac != 0 )
+    234              {
+    235                  ctx->hmac_ctx = mbedtls_calloc( 2, md_info->block_size );
+    236                  if( ctx->hmac_ctx == NULL )
+    237                  {
+    238                      md_info->ctx_free_func( ctx->md_ctx );
+    239                      return( MBEDTLS_ERR_MD_ALLOC_FAILED );
+    240                  }
+    241              }
+    242          
+    243              ctx->md_info = md_info;
+    244          
+    245              return( 0 );
+    246          }
+    247          
+    248          int mbedtls_md_starts( mbedtls_md_context_t *ctx )
+    249          {
+    250              if( ctx == NULL || ctx->md_info == NULL )
+    251                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    252          
+    253              ctx->md_info->starts_func( ctx->md_ctx );
+    254          
+    255              return( 0 );
+    256          }
+    257          
+    258          int mbedtls_md_update( mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen )
+    259          {
+    260              if( ctx == NULL || ctx->md_info == NULL )
+    261                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    262          
+    263              ctx->md_info->update_func( ctx->md_ctx, input, ilen );
+    264          
+    265              return( 0 );
+    266          }
+    267          
+    268          int mbedtls_md_finish( mbedtls_md_context_t *ctx, unsigned char *output )
+    269          {
+    270              if( ctx == NULL || ctx->md_info == NULL )
+    271                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    272          
+    273              ctx->md_info->finish_func( ctx->md_ctx, output );
+    274          
+    275              return( 0 );
+    276          }
+    277          
+    278          int mbedtls_md( const mbedtls_md_info_t *md_info, const unsigned char *input, size_t ilen,
+    279                      unsigned char *output )
+    280          {
+    281              if( md_info == NULL )
+    282                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    283          
+    284              md_info->digest_func( input, ilen, output );
+    285          
+    286              return( 0 );
+    287          }
+    288          
+    289          #if defined(MBEDTLS_FS_IO)
+    290          int mbedtls_md_file( const mbedtls_md_info_t *md_info, const char *path, unsigned char *output )
+    291          {
+    292              int ret;
+    293              FILE *f;
+    294              size_t n;
+    295              mbedtls_md_context_t ctx;
+    296              unsigned char buf[1024];
+    297          
+    298              if( md_info == NULL )
+    299                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    300          
+    301              if( ( f = fopen( path, "rb" ) ) == NULL )
+    302                  return( MBEDTLS_ERR_MD_FILE_IO_ERROR );
+    303          
+    304              mbedtls_md_init( &ctx );
+    305          
+    306              if( ( ret = mbedtls_md_setup( &ctx, md_info, 0 ) ) != 0 )
+    307                  goto cleanup;
+    308          
+    309              md_info->starts_func( ctx.md_ctx );
+    310          
+    311              while( ( n = fread( buf, 1, sizeof( buf ), f ) ) > 0 )
+    312                  md_info->update_func( ctx.md_ctx, buf, n );
+    313          
+    314              if( ferror( f ) != 0 )
+    315              {
+    316                  ret = MBEDTLS_ERR_MD_FILE_IO_ERROR;
+    317                  goto cleanup;
+    318              }
+    319          
+    320              md_info->finish_func( ctx.md_ctx, output );
+    321          
+    322          cleanup:
+    323              fclose( f );
+    324              mbedtls_md_free( &ctx );
+    325          
+    326              return( ret );
+    327          }
+    328          #endif /* MBEDTLS_FS_IO */
+    329          
+    330          int mbedtls_md_hmac_starts( mbedtls_md_context_t *ctx, const unsigned char *key, size_t keylen )
+    331          {
+    332              unsigned char sum[MBEDTLS_MD_MAX_SIZE];
+    333              unsigned char *ipad, *opad;
+    334              size_t i;
+    335          
+    336              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    337                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    338          
+    339              if( keylen > (size_t) ctx->md_info->block_size )
+    340              {
+    341                  ctx->md_info->starts_func( ctx->md_ctx );
+    342                  ctx->md_info->update_func( ctx->md_ctx, key, keylen );
+    343                  ctx->md_info->finish_func( ctx->md_ctx, sum );
+    344          
+    345                  keylen = ctx->md_info->size;
+    346                  key = sum;
+    347              }
+    348          
+    349              ipad = (unsigned char *) ctx->hmac_ctx;
+    350              opad = (unsigned char *) ctx->hmac_ctx + ctx->md_info->block_size;
+    351          
+    352              memset( ipad, 0x36, ctx->md_info->block_size );
+    353              memset( opad, 0x5C, ctx->md_info->block_size );
+    354          
+    355              for( i = 0; i < keylen; i++ )
+    356              {
+    357                  ipad[i] = (unsigned char)( ipad[i] ^ key[i] );
+    358                  opad[i] = (unsigned char)( opad[i] ^ key[i] );
+    359              }
+    360          
+    361              mbedtls_zeroize( sum, sizeof( sum ) );
+    362          
+    363              ctx->md_info->starts_func( ctx->md_ctx );
+    364              ctx->md_info->update_func( ctx->md_ctx, ipad, ctx->md_info->block_size );
+    365          
+    366              return( 0 );
+    367          }
+    368          
+    369          int mbedtls_md_hmac_update( mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen )
+    370          {
+    371              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    372                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    373          
+    374              ctx->md_info->update_func( ctx->md_ctx, input, ilen );
+    375          
+    376              return( 0 );
+    377          }
+    378          
+    379          int mbedtls_md_hmac_finish( mbedtls_md_context_t *ctx, unsigned char *output )
+    380          {
+    381              unsigned char tmp[MBEDTLS_MD_MAX_SIZE];
+    382              unsigned char *opad;
+    383          
+    384              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    385                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    386          
+    387              opad = (unsigned char *) ctx->hmac_ctx + ctx->md_info->block_size;
+    388          
+    389              ctx->md_info->finish_func( ctx->md_ctx, tmp );
+    390              ctx->md_info->starts_func( ctx->md_ctx );
+    391              ctx->md_info->update_func( ctx->md_ctx, opad, ctx->md_info->block_size );
+    392              ctx->md_info->update_func( ctx->md_ctx, tmp, ctx->md_info->size );
+    393              ctx->md_info->finish_func( ctx->md_ctx, output );
+    394          
+    395              return( 0 );
+    396          }
+    397          
+    398          int mbedtls_md_hmac_reset( mbedtls_md_context_t *ctx )
+    399          {
+    400              unsigned char *ipad;
+    401          
+    402              if( ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL )
+    403                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    404          
+    405              ipad = (unsigned char *) ctx->hmac_ctx;
+    406          
+    407              ctx->md_info->starts_func( ctx->md_ctx );
+    408              ctx->md_info->update_func( ctx->md_ctx, ipad, ctx->md_info->block_size );
+    409          
+    410              return( 0 );
+    411          }
+    412          
+    413          int mbedtls_md_hmac( const mbedtls_md_info_t *md_info, const unsigned char *key, size_t keylen,
+    414                          const unsigned char *input, size_t ilen,
+    415                          unsigned char *output )
+    416          {
+    417              mbedtls_md_context_t ctx;
+    418              int ret;
+    419          
+    420              if( md_info == NULL )
+    421                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    422          
+    423              mbedtls_md_init( &ctx );
+    424          
+    425              if( ( ret = mbedtls_md_setup( &ctx, md_info, 1 ) ) != 0 )
+    426                  return( ret );
+    427          
+    428              mbedtls_md_hmac_starts( &ctx, key, keylen );
+    429              mbedtls_md_hmac_update( &ctx, input, ilen );
+    430              mbedtls_md_hmac_finish( &ctx, output );
+    431          
+    432              mbedtls_md_free( &ctx );
+    433          
+    434              return( 0 );
+    435          }
+    436          
+    437          int mbedtls_md_process( mbedtls_md_context_t *ctx, const unsigned char *data )
+    438          {
+    439              if( ctx == NULL || ctx->md_info == NULL )
+    440                  return( MBEDTLS_ERR_MD_BAD_INPUT_DATA );
+    441          
+    442              ctx->md_info->process_func( ctx->md_ctx, data );
+    443          
+    444              return( 0 );
+    445          }
+    446          
+    447          unsigned char mbedtls_md_get_size( const mbedtls_md_info_t *md_info )
+    448          {
+    449              if( md_info == NULL )
+    450                  return( 0 );
+    451          
+    452              return md_info->size;
+    453          }
+    454          
+    455          mbedtls_md_type_t mbedtls_md_get_type( const mbedtls_md_info_t *md_info )
+    456          {
+    457              if( md_info == NULL )
+    458                  return( MBEDTLS_MD_NONE );
+    459          
+    460              return md_info->type;
+    461          }
+    462          
+    463          const char *mbedtls_md_get_name( const mbedtls_md_info_t *md_info )
+    464          {
+    465              if( md_info == NULL )
+    466                  return( NULL );
+    467          
+    468              return md_info->name;
+    469          }
+    470          
+    471          #endif /* MBEDTLS_MD_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   mbedtls_md
+         8   -- Indirect call
+       8   mbedtls_md_clone
+         8   -- Indirect call
+       8   mbedtls_md_finish
+         8   -- Indirect call
+       8   mbedtls_md_free
+         8   -- Indirect call
+         0   -> mbedtls_zeroize
+         8   -> mbedtls_zeroize
+         8   -> vPortFree
+       0   mbedtls_md_get_name
+       0   mbedtls_md_get_size
+       0   mbedtls_md_get_type
+      32   mbedtls_md_hmac
+        32   -> mbedtls_md_free
+        32   -> mbedtls_md_hmac_finish
+        32   -> mbedtls_md_hmac_starts
+        32   -> mbedtls_md_hmac_update
+        32   -> mbedtls_md_init
+        32   -> mbedtls_md_setup
+      80   mbedtls_md_hmac_finish
+        80   -- Indirect call
+      16   mbedtls_md_hmac_reset
+        16   -- Indirect call
+      88   mbedtls_md_hmac_starts
+        88   -- Indirect call
+        88   -> __aeabi_memset
+        88   -> mbedtls_zeroize
+       8   mbedtls_md_hmac_update
+         8   -- Indirect call
+       8   mbedtls_md_info_from_string
+         0   -> mbedtls_md_info_from_type
+         8   -> strcmp
+       0   mbedtls_md_info_from_type
+       0   mbedtls_md_init
+         0   -> __aeabi_memset4
+       0   mbedtls_md_init_ctx
+         0   -> mbedtls_md_setup
+       0   mbedtls_md_list
+       8   mbedtls_md_process
+         8   -- Indirect call
+      16   mbedtls_md_setup
+        16   -- Indirect call
+        16   -> pvPortCalloc
+       8   mbedtls_md_starts
+         8   -- Indirect call
+       8   mbedtls_md_update
+         8   -- Indirect call
+       0   mbedtls_zeroize
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable17
+       4  ??DataTable18
+       4  ??DataTable21
+       4  ??DataTable21_1
+       4  ??DataTable21_2
+       4  ??DataTable21_3
+       4  ??DataTable21_4
+       4  ??DataTable21_5
+       4  ??DataTable21_6
+       4  ??DataTable21_7
+       4  ?_0
+       8  ?_1
+       4  ?_2
+       8  ?_3
+       8  ?_4
+       8  ?_5
+       8  ?_6
+      26  mbedtls_md
+      42  mbedtls_md_clone
+      26  mbedtls_md_finish
+      56  mbedtls_md_free
+      12  mbedtls_md_get_name
+      14  mbedtls_md_get_size
+      12  mbedtls_md_get_type
+      76  mbedtls_md_hmac
+      88  mbedtls_md_hmac_finish
+      44  mbedtls_md_hmac_reset
+     168  mbedtls_md_hmac_starts
+      32  mbedtls_md_hmac_update
+     156  mbedtls_md_info_from_string
+      44  mbedtls_md_info_from_type
+       8  mbedtls_md_init
+       2  mbedtls_md_init_ctx
+       6  mbedtls_md_list
+      26  mbedtls_md_process
+      68  mbedtls_md_setup
+      26  mbedtls_md_starts
+      26  mbedtls_md_update
+      18  mbedtls_zeroize
+      28  supported_digests
+
+ 
+     8 bytes in section .rodata
+ 1 084 bytes in section .text
+ 
+ 1 084 bytes of CODE  memory
+     8 bytes of CONST memory
+
+Errors: none
+Warnings: none

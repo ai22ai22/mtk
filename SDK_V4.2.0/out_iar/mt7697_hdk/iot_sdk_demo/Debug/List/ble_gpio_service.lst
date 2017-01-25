@@ -1,0 +1,475 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:34:45
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\ble_gpio_service.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\ble_gpio_service.c"
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\ble_gpio_service.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\ble_gpio_service.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\ble_gpio_service.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          #if 1
+     35          #include "gatt_service.h"
+     36          #include "bt_gatts.h"
+     37          #include "bt_gattc.h"
+     38          #include "bt_uuid.h"
+     39          #ifndef __TS_WIN32__
+     40          #include <FreeRTOS.h>
+     41          #include "timers.h"
+     42          #endif
+     43          #include "connection_info.h"
+     44          #include "os.h"
+     45          #ifdef MTK_MCS_ENABLE
+     46          #include "mcs.h"
+     47          #endif
+     48          
+     49          typedef struct {
+     50              uint16_t conn_handle;               /**< connect handle */
+     51              uint16_t is_notify;          /**< client config is notify or not*/
+     52              uint8_t hr_value[2];         /**< HeartRate Measurement vaule */
+     53          
+     54              TimerHandle_t timer;
+     55          } hr_app_cntx_t;
+     56          
+     57          hr_app_cntx_t g_hr_app;
+     58          
+     59          #define BT_SIG_UUID16_HEARTRATE_MEASUREMENT 0x2A37
+     60          //static uint16_t bt_if_hr_notify = 0;//Client Characteristic Configuration
+     61          const bt_uuid_t BT_SIG_UUID_HEARTRATE_MEASUREMENT = BT_UUID_INIT_WITH_UUID16(BT_SIG_UUID16_HEARTRATE_MEASUREMENT);
+     62          
+     63          //added for GPIO control
+     64          #define BT_GATT_UUID16_GPIO_SERVICE        (0x18BB) 
+     65          #define BT_SIG_UUID16_GPIO_CONTROL 0x3ABB
+     66          const bt_uuid_t BT_SIG_UUID_GPIO_CONTROL = BT_UUID_INIT_WITH_UUID16(BT_SIG_UUID16_GPIO_CONTROL);
+     67          
+     68          
+     69          /* heart rate start ...*/
+     70          static void bt_hr_notify()
+     71          {
+     72              bt_status_t status;
+     73              uint16_t conn_handle;
+     74              TimerHandle_t timer;
+     75              uint8_t buff[6] = {0};
+     76              bt_gattc_charc_value_notification_indication_t *notify;
+     77              notify = (bt_gattc_charc_value_notification_indication_t *)buff;
+     78              BT_LOGD("HRS", "bt_hr_notify : start... ");
+     79          
+     80              conn_handle = g_hr_app.conn_handle;
+     81              timer = g_hr_app.timer;
+     82              app_bt_connection_cb_t *conn_cb = find_conneciton_info_by_handle(conn_handle);
+     83          
+     84              if (conn_cb == NULL) {/*MAYBE link disconnect*/
+     85          #ifndef __TS_WIN32__
+     86                  xTimerStop(timer, 0);
+     87                  xTimerDelete(timer, 0);
+     88                  //bt_timer_cancel(timer);
+     89                  os_memset(&g_hr_app, 0 , sizeof(hr_app_cntx_t));
+     90                  BT_LOGD("HRS", "connection link is invalid bt_hr_notify : stop... ");
+     91          #endif
+     92              } else {
+     93          #ifndef __TS_WIN32__
+     94                  if (timer) {
+     95                     xTimerChangePeriod(timer, 3000 / portTICK_PERIOD_MS, 0);
+     96                     xTimerReset(timer, 0);
+     97                     //bt_timer_cancel(timer);
+     98                  }
+     99          #endif
+    100                  notify->attribute_value_length = 5;
+    101                  notify->att_req.opcode = BT_ATT_OPCODE_HANDLE_VALUE_NOTIFICATION;;
+    102                  notify->att_req.handle = 0x0602;
+    103          #ifdef MTK_MCS_ENABLE
+    104                  int ledstatus = 0;
+    105                  ledstatus = mcs_get_gpio33_led();
+    106                  g_hr_app.hr_value[0] = 0;
+    107                  g_hr_app.hr_value[1] = ledstatus; //led statsus
+    108          #else
+    109                  g_hr_app.hr_value[0] = 0;
+    110                  g_hr_app.hr_value[1] = 30;
+    111          #endif        
+    112                  os_memcpy(notify->att_req.attribute_value, &g_hr_app.hr_value, 2);
+    113                  BT_LOGD("HRS", "bt_hr_notify : notify data = %s", notify->att_req.attribute_value);
+    114                  status =  bt_gatts_send_charc_value_notification_indication(conn_handle, notify);
+    115                  BT_LOGD("HRS", "bt_hr_notify : notificaiton status = %d", status);
+    116              }
+    117          }
+    118          
+    119          static uint32_t bt_if_heartrate_client_config_callback(const uint8_t rw, uint16_t handle, void *data, uint16_t size, uint16_t offset)
+    120          {
+    121              BT_LOGD("HRS", "client_config_callback : RW= %d, size = %d", rw, size);
+    122          
+    123              if (rw == BT_GATTS_CALLBACK_WRITE) {
+    124                  if (size != sizeof(g_hr_app.is_notify)) { //Size check
+    125                      return 0;
+    126                  }
+    127                  g_hr_app.is_notify = *(uint16_t *)data;
+    128                  BT_LOGD("HRS", "client_config_callback :notify= %d, data = %d", g_hr_app.is_notify, *(uint16_t *)data);
+    129          
+    130                  if (g_hr_app.is_notify ==
+    131                          CLIENT_CHARC_CONFIGURATION_NOTIFICATION) {
+    132                      g_hr_app.conn_handle = handle;
+    133          #ifndef __TS_WIN32__
+    134                      g_hr_app.timer = xTimerCreate("HRS Timer", 0xffff, pdFALSE, ( void *) 0,
+    135                                                    (TimerCallbackFunction_t)bt_hr_notify);
+    136                      xTimerChangePeriod(g_hr_app.timer, 3000 / portTICK_PERIOD_MS, 0);
+    137                      xTimerReset(g_hr_app.timer, 0);
+    138                     // bt_timer_start(g_hr_app.timer, 0, 3000, bt_hr_notify)
+    139          #else
+    140                      bt_hr_notify();
+    141          #endif
+    142                  } else {
+    143          #ifndef  __TS_WIN32__
+    144                      if (g_hr_app.timer) {
+    145                      xTimerStop(g_hr_app.timer, 0);
+    146                      xTimerDelete(g_hr_app.timer, 0);
+    147                      //bt_timer_cancel(g_hr_app.timer);
+    148                      BT_LOGD("HRS", "bt_hr_notify : stop... ");
+    149                      }
+    150          
+    151          #endif
+    152                  }
+    153              } else {
+    154                  if (size != 0) {
+    155                      uint16_t *buf = (uint16_t *) data;
+    156                      *buf = g_hr_app.is_notify;
+    157                  }
+    158              }
+    159              return sizeof(g_hr_app.is_notify);
+    160          }
+    161          
+    162          static uint32_t bt_if_gpio_control_callback (const uint8_t rw, uint16_t handle, void *data, uint16_t size, uint16_t offset)
+    163          {
+    164          #ifndef MTK_MCS_ENABLE
+    165              char gpio_status_buf[64]={"ON"};
+    166              uint32_t str_size = strlen(gpio_status_buf);
+    167              uint32_t buf_size = sizeof(gpio_status_buf);
+    168              uint32_t copy_size;
+    169          #endif
+    170              
+    171              BT_LOGD("GPIO", "bt_if_gpio_control_callback : rw = %d ",rw);
+    172              
+    173              switch (rw) {
+    174                  case BT_GATTS_CALLBACK_READ:
+    175                      BT_LOGD("GPIO", "bt_if_gpio_control_callback : BT_GATTS_CALLBACK_READ ");
+    176          #ifdef MTK_MCS_ENABLE
+    177                      //do something here
+    178                      break;
+    179          #else
+    180                      copy_size = (str_size> offset)?(str_size-offset):0;
+    181                      if (size==0){
+    182                          return str_size;
+    183                      }
+    184                      copy_size = (size > copy_size)? copy_size:size;
+    185                      memcpy(data, gpio_status_buf+offset, copy_size);
+    186                      return copy_size;
+    187          #endif  
+    188                  case BT_GATTS_CALLBACK_WRITE:
+    189                      BT_LOGD("GPIO", "bt_if_gpio_control_callback : BT_GATTS_CALLBACK_WRITE : %s", (char*)data);
+    190          #ifdef MTK_MCS_ENABLE
+    191                      if ( os_strncmp((char *)data , "ON", 2) == 0 )//turn on led
+    192                          mcs_set_gpio33_led(1);
+    193                      else if ( os_strncmp((char *)data , "OFF", 3) == 0 )// turn off led 
+    194                          mcs_set_gpio33_led(0);
+    195                      else
+    196                          BT_LOGD("GPIO", "bt_if_gpio_control_callback : ERROR OPERATION!");
+    197                                          
+    198                      break;
+    199          #else
+    200                     copy_size = (size > buf_size)? buf_size:size;
+    201                      memset(gpio_status_buf, 0 , buf_size);
+    202                      memcpy(gpio_status_buf, data, copy_size);
+    203                      return copy_size;
+    204          #endif
+    205                  default:
+    206                      //nothing here
+    207                      break;
+    208              }
+    209              return BT_STATUS_SUCCESS;
+    210          }
+    211          
+    212          
+    213          BT_GATTS_NEW_PRIMARY_SERVICE_16(bt_if_hearrate_primary_service, BT_GATT_UUID16_HEART_RATE_SERVICE);
+    214          
+    215          BT_GATTS_NEW_CHARC_16(bt_if_heartrate_measurement,
+    216                                BT_GATT_CHARC_PROP_NOTIFY, 0x0602, BT_SIG_UUID16_HEARTRATE_MEASUREMENT);
+    217          
+    218          BT_GATTS_NEW_CHARC_VALUE_UINT16(bt_if_heartrate_measurement_value, BT_SIG_UUID_HEARTRATE_MEASUREMENT,
+    219                                          BT_GATTS_REC_PERM_READABLE,
+    220                                          0);
+    221          
+    222          
+    223          BT_GATTS_NEW_CLIENT_CHARC_CONFIG(bt_if_heartrate_client_config,
+    224                                           BT_GATTS_REC_PERM_READABLE | BT_GATTS_REC_PERM_WRITABLE,
+    225                                           bt_if_heartrate_client_config_callback);
+    226                                           
+    227          static const bt_gatts_service_rec_t *bt_if_hr_service_rec[] = {
+    228              (const bt_gatts_service_rec_t *) &bt_if_hearrate_primary_service,
+    229              (const bt_gatts_service_rec_t *) &bt_if_heartrate_measurement,
+    230              (const bt_gatts_service_rec_t *) &bt_if_heartrate_measurement_value,
+    231              (const bt_gatts_service_rec_t *) &bt_if_heartrate_client_config
+    232          };
+    233          
+    234          const bt_gatts_service_t bt_if_hr_service = {
+    235              .starting_handle = 0x0600,
+    236              .ending_handle = 0x0603,
+    237              .required_encryption_key_size = 0,
+    238              .records = bt_if_hr_service_rec
+    239          };
+    240                                           
+    241          //added for GPIO control
+    242          BT_GATTS_NEW_PRIMARY_SERVICE_16(bt_if_gpio_primary_service, BT_GATT_UUID16_GPIO_SERVICE);
+    243          
+    244          BT_GATTS_NEW_CHARC_16_WRITABLE(bt_if_gpio_control, BT_GATT_CHARC_PROP_READ, 0x0702, BT_SIG_UUID16_GPIO_CONTROL);
+    245          
+    246          
+    247          BT_GATTS_NEW_CHARC_VALUE_CALLBACK(bt_if_gpio_control_value, BT_SIG_UUID_GPIO_CONTROL,
+    248                          BT_GATTS_REC_PERM_READABLE|BT_GATTS_REC_PERM_WRITABLE, bt_if_gpio_control_callback);
+    249          
+    250          
+    251          #if 0  
+    252          BT_GATTS_NEW_CLIENT_CHARC_CONFIG(bt_if_gpio_control_client_config,
+    253                                           BT_GATTS_REC_PERM_READABLE | BT_GATTS_REC_PERM_WRITABLE,
+    254                                           bt_if_gpio_control_callback);
+    255          #else
+    256          BT_GATTS_NEW_CHARC_USER_DESCRIPTION(bt_if_gpio_control_client_config,
+    257                                           BT_GATTS_REC_PERM_READABLE | BT_GATTS_REC_PERM_WRITABLE,
+    258                                           bt_if_gpio_control_callback);
+    259          #endif
+    260          
+    261          
+    262          static const bt_gatts_service_rec_t *bt_if_gpio_service_rec[] = {
+    263              (const bt_gatts_service_rec_t *) &bt_if_gpio_primary_service,
+    264              (const bt_gatts_service_rec_t *) &bt_if_gpio_control,
+    265              (const bt_gatts_service_rec_t *) &bt_if_gpio_control_value,
+    266              (const bt_gatts_service_rec_t *) &bt_if_gpio_control_client_config
+    267          };
+    268          
+    269          
+    270          const bt_gatts_service_t bt_if_gpio_service = {
+    271              .starting_handle = 0x0700,
+    272              .ending_handle = 0x0703,
+    273              .required_encryption_key_size = 0,
+    274              .records = bt_if_gpio_service_rec
+    275          };
+    276          
+    277          /* heart rate end ...*/
+    278          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   bt_hr_notify
+        32   -> bt_debug_log
+        32   -> bt_gatts_send_charc_value_notification_indication
+        32   -> find_conneciton_info_by_handle
+        32   -> mcs_get_gpio33_led
+        32   -> os_memcpy
+        32   -> os_memset
+        32   -> xTaskGetTickCount
+        32   -> xTimerGenericCommand
+      16   bt_if_gpio_control_callback
+        16   -> bt_debug_log
+        16   -> mcs_set_gpio33_led
+        16   -> os_strncmp
+      24   bt_if_heartrate_client_config_callback
+        24   -> bt_debug_log
+        24   -> xTaskGetTickCount
+        24   -> xTimerCreate
+        24   -> xTimerGenericCommand
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable28
+       4  ??DataTable28_1
+       4  ??DataTable28_2
+       4  ??DataTable28_3
+       8  ?_0
+      36  ?_1
+      68  ?_10
+      72  ?_11
+       4  ?_12
+       4  ?_13
+      60  ?_14
+      64  ?_2
+      44  ?_3
+      52  ?_4
+      56  ?_5
+      56  ?_6
+      12  ?_7
+      36  ?_8
+      52  ?_9
+      16  BT_SIG_UUID_GPIO_CONTROL
+      16  BT_SIG_UUID_HEARTRATE_MEASUREMENT
+     206  bt_hr_notify
+      16  bt_if_gpio_control
+     102  bt_if_gpio_control_callback
+      12  bt_if_gpio_control_client_config
+      12  bt_if_gpio_control_value
+      12  bt_if_gpio_primary_service
+      12  bt_if_gpio_service
+      16  bt_if_gpio_service_rec
+      12  bt_if_hearrate_primary_service
+      12  bt_if_heartrate_client_config
+     178  bt_if_heartrate_client_config_callback
+      16  bt_if_heartrate_measurement
+      12  bt_if_heartrate_measurement_value
+      12  bt_if_hr_service
+      16  bt_if_hr_service_rec
+      12  g_hr_app
+
+ 
+    12 bytes in section .bss
+    48 bytes in section .data
+   160 bytes in section .rodata
+ 1 110 bytes in section .text
+ 
+ 1 110 bytes of CODE  memory
+   160 bytes of CONST memory
+    60 bytes of DATA  memory
+
+Errors: none
+Warnings: none

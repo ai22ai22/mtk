@@ -1,0 +1,499 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:34
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\sys_init.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\sys_init.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\sys_init.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\sys_init.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\sys_init.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdint.h>
+     36          #include <stdio.h>
+     37          #include <stdlib.h>
+     38          #include <string.h>
+     39          #include <time.h>
+     40          
+     41          /* Kernel includes. */
+     42          #include <FreeRTOS.h>
+     43          #include <task.h>
+     44          #include <os.h>
+     45          
+     46          #include <top.h>
+     47          #include <hal_gpio.h>
+     48          #include <hal_flash.h>
+     49          #include <syslog.h>
+     50          
+     51          #define CFG_FPGA 0
+     52          #if defined(MTK_HAL_LOWPOWER_ENABLE)
+     53          #include <hal_lp.h>
+     54          #endif
+     55          
+     56          #include <sys.h>
+     57          #include <connsys_driver.h>
+     58          
+     59          #include "io_def.h"
+     60          #if defined(MTK_MINICLI_ENABLE)
+     61          #include "cli_def.h"
+     62          #endif
+     63          
+     64          #include <nvdm.h>
+     65          
+     66          #include "sys_init.h"
+     67          
+     68          #if defined(HAL_TRNG_MODULE_ENABLED)
+     69          #include <hal_trng.h>
+     70          #endif
+     71          #include "hal_cache.h"
+     72          #include "flash_map.h"
+     73          
+     74          void user_check_default_value(void);
+     75          
+     76          
+     77          #ifndef MTK_DEBUG_LEVEL_NONE
+     78          
+     79          log_create_module(main, PRINT_LEVEL_ERROR);
+     80          
+     81          LOG_CONTROL_BLOCK_DECLARE(main);
+     82          LOG_CONTROL_BLOCK_DECLARE(common);
+     83          LOG_CONTROL_BLOCK_DECLARE(hal);
+     84          LOG_CONTROL_BLOCK_DECLARE(lwip);
+     85          LOG_CONTROL_BLOCK_DECLARE(minisupp);
+     86          LOG_CONTROL_BLOCK_DECLARE(inband);
+     87          LOG_CONTROL_BLOCK_DECLARE(wifi);
+     88          LOG_CONTROL_BLOCK_DECLARE(BT);
+     89          LOG_CONTROL_BLOCK_DECLARE(BTMM);
+     90          LOG_CONTROL_BLOCK_DECLARE(BTL2CAP);
+     91          LOG_CONTROL_BLOCK_DECLARE(BTHCI);
+     92          #ifdef MTK_MCS_ENABLE
+     93          LOG_CONTROL_BLOCK_DECLARE(MCS);
+     94          #endif
+     95          
+     96          
+     97          
+     98          log_control_block_t *syslog_control_blocks[] = {
+     99              &LOG_CONTROL_BLOCK_SYMBOL(main),
+    100              &LOG_CONTROL_BLOCK_SYMBOL(common),
+    101              &LOG_CONTROL_BLOCK_SYMBOL(hal),
+    102              &LOG_CONTROL_BLOCK_SYMBOL(lwip),
+    103              &LOG_CONTROL_BLOCK_SYMBOL(minisupp),
+    104              &LOG_CONTROL_BLOCK_SYMBOL(inband),
+    105              &LOG_CONTROL_BLOCK_SYMBOL(wifi),
+    106              &LOG_CONTROL_BLOCK_SYMBOL(BT),
+    107              &LOG_CONTROL_BLOCK_SYMBOL(BTMM),
+    108              &LOG_CONTROL_BLOCK_SYMBOL(BTL2CAP),
+    109              &LOG_CONTROL_BLOCK_SYMBOL(BTHCI),
+    110          #ifdef MTK_MCS_ENABLE    
+    111              &LOG_CONTROL_BLOCK_SYMBOL(MCS),
+    112          #endif
+    113              NULL
+    114          };
+    115          #endif
+    116          
+    117          static void SystemClock_Config(void)
+    118          {
+    119              top_xtal_init();
+    120          }
+    121          
+    122          /**
+    123          * @brief       This function is to do cache initialization.
+    124          * @param[in]   cache_size: the size of cache user wants to config.
+    125          *              #HAL_CACHE_SIZE_32KB, config cache size as 32KB.\n
+    126          *              #HAL_CACHE_SIZE_16KB, config cache size as 16KB.\n
+    127          *              #HAL_CACHE_SIZE_8KB, config cache size as 8KB.\n
+    128          * @return      #0, if OK.\n
+    129          *              #-1, if user's parameter is invalid.\n
+    130          */
+    131          static int32_t cache_enable(hal_cache_size_t cache_size)
+    132          {
+    133              hal_cache_region_t region, region_number;
+    134          
+    135              hal_cache_region_config_t region_cfg_tbl[] = {
+    136                  /* cache_region_address, cache_region_size(both MUST be 4k bytes aligned) */
+    137                  {
+    138                      /* Set FreeRTOS code on XIP flash to cacheable. Please refer to memory layout dev guide for more detail. */
+    139                      FLASH_BASE + CM4_CODE_BASE, CM4_CODE_LENGTH
+    140                  }
+    141                  /* add cache regions below if you have any */
+    142              };
+    143          
+    144              region_number = (hal_cache_region_t)(sizeof(region_cfg_tbl) / sizeof(region_cfg_tbl[0]));
+    145              if (region_number > HAL_CACHE_REGION_MAX) {
+    146                  return -1;
+    147              }
+    148          
+    149              hal_cache_init();
+    150          
+    151              /* Set the cache size to 32KB. It will ocuppy the TCM memory size */
+    152              hal_cache_set_size(cache_size);
+    153              for (region = HAL_CACHE_REGION_0; region < region_number; region++) {
+    154                  hal_cache_region_config(region, &region_cfg_tbl[region]);
+    155                  hal_cache_region_enable(region);
+    156              }
+    157              for (; region < HAL_CACHE_REGION_MAX; region++) {
+    158                  hal_cache_region_disable(region);
+    159              }
+    160              hal_cache_enable();
+    161              return 0;
+    162          }
+    163          
+    164          static void prvSetupHardware(void)
+    165          {
+    166          #if defined(MTK_HAL_LOWPOWER_ENABLE)
+    167          
+    168              /* Handle low power interrupt */
+    169              hal_lp_handle_intr();
+    170          
+    171              if ((hal_lp_get_wic_status()) || (1 == hal_lp_get_wic_wakeup())) {
+    172                  /* N9 MUST be active for clock switch and pinmux config*/
+    173                  /* Wakeup N9 by connsys ownership */
+    174                  connsys_open();
+    175                  connsys_close();
+    176              }
+    177          #endif
+    178          
+    179          #if (CFG_FPGA == 0)
+    180              /* Enable MCU clock to 192MHz */
+    181              cmnCpuClkConfigureTo192M();
+    182          
+    183              /*Enable flash clock to 64MHz*/
+    184              cmnSerialFlashClkConfTo64M();
+    185          #endif /* CFG_FPGA = 0 */
+    186          
+    187              io_def_uart_init();
+    188          
+    189              if (cache_enable(HAL_CACHE_SIZE_32KB) < 0) {
+    190                  LOG_E(common, "cache enable failed");
+    191              }
+    192          
+    193              hal_flash_init();
+    194          }
+    195          
+    196          
+    197          
+    198          #ifndef MTK_DEBUG_LEVEL_NONE
+    199          
+    200          static void syslog_config_save(const syslog_config_t *config)
+    201          {
+    202              char *syslog_filter_buf;
+    203          
+    204              syslog_filter_buf = (char*)pvPortMalloc(SYSLOG_FILTER_LEN);
+    205              configASSERT(syslog_filter_buf != NULL);
+    206              syslog_convert_filter_val2str((const log_control_block_t **)config->filters, syslog_filter_buf);
+    207              nvdm_write_data_item("common", "syslog_filters", \
+    208                                   NVDM_DATA_ITEM_TYPE_STRING, (const uint8_t *)syslog_filter_buf, strlen(syslog_filter_buf));
+    209              vPortFree(syslog_filter_buf);
+    210          }
+    211          
+    212          static uint32_t syslog_config_load(syslog_config_t *config)
+    213          {
+    214              uint32_t sz = SYSLOG_FILTER_LEN;
+    215              char *syslog_filter_buf;
+    216          
+    217              syslog_filter_buf = (char*)pvPortMalloc(SYSLOG_FILTER_LEN);
+    218              configASSERT(syslog_filter_buf != NULL);
+    219              nvdm_read_data_item("common", "syslog_filters", (uint8_t *)syslog_filter_buf, &sz);
+    220              syslog_convert_filter_str2val(config->filters, syslog_filter_buf);
+    221              vPortFree(syslog_filter_buf);
+    222          
+    223              return 0;
+    224          }
+    225          
+    226          #endif
+    227          
+    228          /**
+    229           * Initialize C library random function using HAL TRNG.
+    230           */
+    231          static void _main_sys_random_init(void)
+    232          {
+    233          #if defined(HAL_TRNG_MODULE_ENABLED)
+    234              uint32_t            seed;
+    235              hal_trng_status_t   s;
+    236          
+    237              s = hal_trng_init();
+    238          
+    239              if (s == HAL_TRNG_STATUS_OK) {
+    240                  s = hal_trng_get_generated_random_number(&seed);
+    241          
+    242              }
+    243          
+    244              if (s == HAL_TRNG_STATUS_OK) {
+    245                  srand((unsigned int)seed);
+    246              }
+    247          
+    248              if (s != HAL_TRNG_STATUS_OK) {
+    249                  printf("trng init failed\n");
+    250              } else {
+    251          
+    252              }
+    253          #endif /* HAL_TRNG_MODULE_ENABLED */
+    254          }
+    255          
+    256          void system_init(void)
+    257          {
+    258              time_t      t       = 12345;
+    259          
+    260              /* SystemClock Config */
+    261              SystemClock_Config();
+    262          
+    263              /* Configure the hardware ready to run the test. */
+    264              prvSetupHardware();
+    265          
+    266              nvdm_init();
+    267              user_check_default_value();
+    268          
+    269          #ifndef MTK_DEBUG_LEVEL_NONE
+    270              log_init(syslog_config_save, syslog_config_load, syslog_control_blocks);
+    271          #endif
+    272          
+    273          #ifdef ENABLE_RTOS_TRACE
+    274              trace_init(); // init appended FreeRTOS trace function.
+    275          #endif /* #ifdef ENABLE_RTOS_TRACE */
+    276          
+    277              /* workaround for NSTP */
+    278              ctime(&t);
+    279          
+    280              _main_sys_random_init();
+    281          
+    282          
+    283          
+    284              LOG_I(common, "FreeRTOS Running");
+    285          }
+    286          
+    287          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SystemClock_Config
+         0   -> top_xtal_init
+      16   _main_sys_random_init
+        16   -> hal_trng_get_generated_random_number
+        16   -> hal_trng_init
+        16   -> printf
+        16   -> srand
+      16   cache_enable
+        16   -> hal_cache_enable
+        16   -> hal_cache_init
+        16   -> hal_cache_region_config
+        16   -> hal_cache_region_disable
+        16   -> hal_cache_region_enable
+        16   -> hal_cache_set_size
+      16   prvSetupHardware
+        16   -- Indirect call
+        16   -> cache_enable
+        16   -> cmnCpuClkConfigureTo192M
+        16   -> cmnSerialFlashClkConfTo64M
+        16   -> connsys_close
+        16   -> connsys_open
+         0   -> hal_flash_init
+        16   -> hal_lp_get_wic_status
+        16   -> hal_lp_get_wic_wakeup
+        16   -> hal_lp_handle_intr
+        16   -> io_def_uart_init
+      16   syslog_config_load
+        16   -> nvdm_read_data_item
+        16   -> platform_assert
+        16   -> pvPortMalloc
+        16   -> syslog_convert_filter_str2val
+        16   -> vPortFree
+      16   syslog_config_save
+        16   -> nvdm_write_data_item
+        16   -> platform_assert
+        16   -> pvPortMalloc
+        16   -> strlen
+        16   -> syslog_convert_filter_val2str
+         0   -> vPortFree
+      16   system_init
+        16   -- Indirect call
+        16   -> SystemClock_Config
+        16   -> __ctime32
+        16   -> _main_sys_random_init
+        16   -> log_init
+        16   -> nvdm_init
+        16   -> prvSetupHardware
+        16   -> user_check_default_value
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable12_2
+       4  ??DataTable12_3
+       8  ?_0
+       8  ?_1
+      20  ?_2
+      28  ?_3
+      84  ?_4
+       8  ?_5
+      16  ?_6
+      20  ?_7
+      20  ?_8
+       4  SystemClock_Config
+      44  _main_sys_random_init
+      76  cache_enable
+      16  log_control_block_main
+      82  prvSetupHardware
+      66  syslog_config_load
+      72  syslog_config_save
+      52  syslog_control_blocks
+      68  system_init
+      32  -- Other
+
+ 
+  68 bytes in section .data
+   8 bytes in section .rodata
+ 664 bytes in section .text
+ 
+ 664 bytes of CODE  memory
+   8 bytes of CONST memory
+  68 bytes of DATA  memory
+
+Errors: none
+Warnings: none

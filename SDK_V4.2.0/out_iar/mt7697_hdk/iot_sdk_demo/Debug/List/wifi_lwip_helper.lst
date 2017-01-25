@@ -1,0 +1,540 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:44
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\wifi_lwip_helper.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\wifi_lwip_helper.c"
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\wifi_lwip_helper.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\wifi_lwip_helper.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\wifi_lwip_helper.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          #include <stdint.h>
+     35          #include <stdio.h>
+     36          #include <string.h>
+     37          
+     38          #include "FreeRTOS.h"
+     39          #include "task.h"
+     40          #include "os.h"
+     41          #include "semphr.h"
+     42          #include "wifi_api.h"
+     43          #include "lwip/ip4_addr.h"
+     44          #include "lwip/inet.h"
+     45          #include "lwip/netif.h"
+     46          #include "lwip/tcpip.h"
+     47          #include "lwip/dhcp.h"
+     48          #include "ethernetif.h"
+     49          #include "portmacro.h"
+     50          #include "dhcpd.h"
+     51          #include "wifi_lwip_helper.h"
+     52          #include "wifi_nvdm_config.h"
+     53          #include "wifi_private_api.h"
+     54          
+     55          static SemaphoreHandle_t wifi_connected;
+     56          
+     57          static SemaphoreHandle_t ip_ready;
+     58          
+     59          static void ip_ready_callback(struct netif *netif);
+     60          
+     61          static int32_t wifi_station_port_secure_event_handler(wifi_event_t event, uint8_t *payload, uint32_t length);
+     62          static int32_t wifi_station_disconnected_event_handler(wifi_event_t event, uint8_t *payload, uint32_t length);
+     63          
+     64          /**
+     65            * @brief  dhcp got ip will callback this function.
+     66            * @param[in] struct netif *netif: which network interface got ip.
+     67            * @retval None
+     68            */
+     69          static void ip_ready_callback(struct netif *netif)
+     70          {
+     71              if (!ip4_addr_isany_val(netif->ip_addr)) {
+     72                  char ip_addr[17] = {0};
+     73                  if (NULL != inet_ntoa(netif->ip_addr)) {
+     74                      strcpy(ip_addr, inet_ntoa(netif->ip_addr));
+     75                      LOG_I(common, "************************");
+     76                      LOG_I(common, "DHCP got IP:%s", ip_addr);
+     77                      LOG_I(common, "************************");
+     78                  } else {
+     79                      LOG_E(common, "DHCP got Failed");
+     80                  }
+     81              #ifdef MTK_WIFI_REPEATER_ENABLE
+     82                  uint8_t op_mode = 0;
+     83                  struct netif *ap_if = netif_find_by_type(NETIF_TYPE_AP);
+     84                  wifi_config_get_opmode(&op_mode);
+     85                  if (WIFI_MODE_REPEATER == op_mode) {
+     86                      netif_set_addr(ap_if, &netif->ip_addr, &netif->netmask, &netif->gw);
+     87                  }
+     88              #endif
+     89                
+     90                 /*This is a private API , which used to inform IP is ready to wifi driver
+     91                  *In present, WiFi Driver will do some operation when this API is invoked, such as:
+     92                  *Do WiFi&BLE Coexstence relative behavior if BLE is enabled and do Power Saving Status change.
+     93                  *This API will be improved, user may need to use new API to replace it in future*/
+     94                  wifi_connection_inform_ip_ready();
+     95              }
+     96              xSemaphoreGive(ip_ready);
+     97          }
+     98          
+     99          /**
+    100            * @brief  wifi connected will call this callback function. set lwip status in this function
+    101            * @param[in] wifi_event_t event: not used.
+    102            * @param[in] uint8_t *payload: not used.
+    103            * @param[in] uint32_t length: not used.
+    104            * @retval None
+    105            */
+    106          #ifdef MTK_MCS_ENABLE
+    107          extern uint8_t g_ip_ready;
+    108          #endif
+    109          static int32_t wifi_station_port_secure_event_handler(wifi_event_t event,
+    110                  uint8_t *payload,
+    111                  uint32_t length)
+    112          {
+    113              struct netif *sta_if;
+    114          
+    115              sta_if = netif_find_by_type(NETIF_TYPE_STA);
+    116              netif_set_link_up(sta_if);
+    117          
+    118              if (dhcp_config_init() == STA_IP_MODE_STATIC) {
+    119                 /*This is a private API , which used to inform IP is ready to wifi driver
+    120                  *In present, WiFi Driver will do some operation when this API is invoked, such as:
+    121                  *Do WiFi&BLE Coexstence relative behavior if BLE is enabled and do Power Saving Status change.
+    122                  *This API will be improved, user may need to use new API to replace it in future*/
+    123                  wifi_connection_inform_ip_ready();
+    124              }
+    125          
+    126              xSemaphoreGive(wifi_connected);
+    127          #ifdef MTK_MCS_ENABLE    
+    128              g_ip_ready = 0;
+    129          #endif    
+    130              LOG_I(common, "wifi connected");
+    131              return 0;
+    132          }
+    133          
+    134          /**
+    135            * @brief  wifi disconnected will call this callback function. set lwip status in this function
+    136            * @param[in] wifi_event_t event: not used.
+    137            * @param[in] uint8_t *payload: not used.
+    138            * @param[in] uint32_t length: not used.
+    139            * @retval None
+    140            */
+    141          static int32_t wifi_station_disconnected_event_handler(wifi_event_t event,
+    142                  uint8_t *payload,
+    143                  uint32_t length)
+    144          {
+    145              uint8_t opmode  = 0;
+    146          
+    147              wifi_config_get_opmode(&opmode);
+    148              if ((WIFI_MODE_AP_ONLY != opmode) && WIFI_EVENT_IOT_DISCONNECTED == event) {
+    149                  uint8_t link_status = 1;
+    150                  //should check link status, it will emit this event when sp disconnect with host under repeater mode.
+    151                  wifi_connection_get_link_status(&link_status);
+    152                  if (link_status == 0) {
+    153                      struct netif *sta_if;
+    154                      sta_if = netif_find_by_type(NETIF_TYPE_STA);
+    155                      netif_set_link_down(sta_if);
+    156                      if(dhcp_config_init() == STA_IP_MODE_DHCP) {
+    157                          netif_set_addr(sta_if, IP4_ADDR_ANY, IP4_ADDR_ANY, IP4_ADDR_ANY);
+    158                      }
+    159                      LOG_I(common, "wifi disconnected");
+    160                  }
+    161              }
+    162          #ifdef MTK_MCS_ENABLE    
+    163                  g_ip_ready = 0;
+    164          #endif   
+    165              return 1;
+    166          }
+    167          
+    168          /**
+    169            * @brief  network init function. initial wifi and lwip config
+    170            * @param None
+    171            * @retval None
+    172            */
+    173          
+    174          void lwip_network_init(uint8_t opmode)
+    175          {
+    176              lwip_tcpip_config_t tcpip_config = {{0}, {0}, {0}, {0}, {0}, {0}};
+    177          
+    178              if (0 != tcpip_config_init(&tcpip_config)) {
+    179                  LOG_E(common, "tcpip config init fail");
+    180                  return;
+    181              }
+    182              wifi_connected = xSemaphoreCreateBinary();
+    183              if(dhcp_config_init() == STA_IP_MODE_DHCP) {
+    184                  ip_ready = xSemaphoreCreateBinary();
+    185              }
+    186              lwip_tcpip_init(&tcpip_config, opmode);
+    187          }
+    188          
+    189          /**
+    190            * @brief  Start lwip service in a certain operation mode.
+    191            * @param[in] uint8_t opmode: the target operation mode.
+    192            * @retval None
+    193            */
+    194          void lwip_net_start(uint8_t opmode)
+    195          {
+    196              struct netif *sta_if;
+    197              struct netif *ap_if;
+    198          
+    199              switch(opmode) {
+    200                  case WIFI_MODE_STA_ONLY:
+    201                  case WIFI_MODE_REPEATER:
+    202                      wifi_connection_register_event_handler(WIFI_EVENT_IOT_PORT_SECURE, wifi_station_port_secure_event_handler);
+    203                      wifi_connection_register_event_handler(WIFI_EVENT_IOT_DISCONNECTED, wifi_station_disconnected_event_handler);
+    204                      if(dhcp_config_init() == STA_IP_MODE_DHCP) {
+    205                          sta_if = netif_find_by_type(NETIF_TYPE_STA);
+    206                          netif_set_default(sta_if);
+    207                          netif_set_status_callback(sta_if, ip_ready_callback);
+    208                          dhcp_start(sta_if);
+    209                      }
+    210                      break;
+    211                  case WIFI_MODE_AP_ONLY: {
+    212                      dhcpd_settings_t dhcpd_settings = {{0},{0},{0},{0},{0},{0},{0}};
+    213                      lwip_tcpip_config_t tcpip_config = {{0}, {0}, {0}, {0}, {0}, {0}};
+    214          
+    215                      if (0 != tcpip_config_init(&tcpip_config)) {
+    216                          LOG_E(common, "tcpip config init fail");
+    217                          return;
+    218                      }
+    219          
+    220                      dhcpd_settings_init(&tcpip_config, &dhcpd_settings);
+    221                      ap_if = netif_find_by_type(NETIF_TYPE_AP);
+    222                      netif_set_default(ap_if);
+    223                      netif_set_link_up(ap_if);
+    224                      dhcpd_start(&dhcpd_settings);
+    225                      break;
+    226                  }
+    227              }
+    228          }
+    229          
+    230          /**
+    231            * @brief  Stop lwip service in a certain operation mode.
+    232            * @param[in] uint8_t opmode: the current operation mode.
+    233            * @retval None
+    234            */
+    235          void lwip_net_stop(uint8_t opmode)
+    236          {
+    237              struct netif *sta_if;
+    238              struct netif *ap_if;
+    239          
+    240              sta_if = netif_find_by_type(NETIF_TYPE_STA);
+    241              ap_if = netif_find_by_type(NETIF_TYPE_AP);
+    242              switch (opmode) {
+    243                  case WIFI_MODE_AP_ONLY:
+    244                      dhcpd_stop();
+    245                      netif_set_link_down(ap_if);
+    246                      break;
+    247                  case WIFI_MODE_STA_ONLY:
+    248                  case WIFI_MODE_REPEATER:
+    249                      netif_set_status_callback(sta_if, NULL);
+    250                      dhcp_release(sta_if);
+    251                      dhcp_stop(sta_if);
+    252                      netif_set_link_down(sta_if);
+    253                      break;
+    254              }
+    255          }
+    256          
+    257          #ifdef MTK_MCS_ENABLE
+    258          uint8_t g_ip_ready = 0;
+    259          uint8_t is_lwip_net_ready(void)
+    260          {
+    261              return g_ip_ready;
+    262          }
+    263          #endif
+    264          
+    265          
+    266          /**
+    267            * @brief  when wifi and ip ready will return, only used in station and repeater mode.
+    268            * @param None
+    269            * @retval None
+    270            */
+    271          void lwip_net_ready()
+    272          {
+    273              xSemaphoreTake(wifi_connected, portMAX_DELAY);
+    274              if(dhcp_config_init() == STA_IP_MODE_DHCP) {
+    275                  xSemaphoreTake(ip_ready, portMAX_DELAY);
+    276              }
+    277          #ifdef MTK_MCS_ENABLE    
+    278              g_ip_ready = 1;
+    279          #endif
+    280          
+    281          }
+    282          
+    283          /**
+    284            * @brief  Change operation mode dynamically.
+    285            * @param[in] uint8_t target_mode: the target switched operation mode.
+    286            * @retval None
+    287            */
+    288          uint8_t wifi_set_opmode(uint8_t target_mode)
+    289          {
+    290              uint8_t origin_op_mode = 0;
+    291              wifi_config_get_opmode(&origin_op_mode);
+    292              if(target_mode == origin_op_mode) {
+    293                  LOG_I(wifi, "same opmode %d, do nothing", target_mode);
+    294                  return 0;
+    295              }
+    296              lwip_net_stop(origin_op_mode);
+    297          
+    298              if(wifi_config_set_opmode(target_mode) < 0) {
+    299                  return 1;
+    300              }
+    301              LOG_I(wifi, "set opmode to [%d]", target_mode);
+    302          
+    303              lwip_net_start(target_mode);
+    304              return 0;
+    305          }
+    306          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   ip_ready_callback
+        48   -- Indirect call
+        48   -> __aeabi_memclr4
+        48   -> ip4addr_ntoa
+        48   -> netif_find_by_type
+        48   -> netif_set_addr
+        48   -> strcpy
+        48   -> wifi_config_get_opmode
+        48   -> wifi_connection_inform_ip_ready
+        48   -> xQueueGenericSend
+       0   is_lwip_net_ready
+       8   lwip_net_ready
+         8   -> dhcp_config_init
+         8   -> xQueueGenericReceive
+     152   lwip_net_start
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> dhcp_config_init
+       152   -> dhcp_start
+       152   -> dhcpd_settings_init
+       152   -> dhcpd_start
+       152   -> netif_find_by_type
+       152   -> netif_set_default
+       152   -> netif_set_link_up
+       152   -> netif_set_status_callback
+       152   -> tcpip_config_init
+       152   -> wifi_connection_register_event_handler
+      16   lwip_net_stop
+        16   -> dhcp_release
+        16   -> dhcp_stop
+        16   -> dhcpd_stop
+        16   -> netif_find_by_type
+         0   -> netif_set_link_down
+        16   -> netif_set_status_callback
+      40   lwip_network_init
+        40   -- Indirect call
+        40   -> dhcp_config_init
+        40   -> lwip_tcpip_init
+        40   -> tcpip_config_init
+        40   -> xQueueGenericCreate
+      24   wifi_set_opmode
+        24   -- Indirect call
+        24   -> lwip_net_start
+        24   -> lwip_net_stop
+        24   -> wifi_config_get_opmode
+        24   -> wifi_config_set_opmode
+      16   wifi_station_disconnected_event_handler
+        16   -- Indirect call
+        16   -> dhcp_config_init
+        16   -> netif_find_by_type
+        16   -> netif_set_addr
+        16   -> netif_set_link_down
+        16   -> wifi_config_get_opmode
+        16   -> wifi_connection_get_link_status
+      16   wifi_station_port_secure_event_handler
+        16   -- Indirect call
+        16   -> dhcp_config_init
+        16   -> netif_find_by_type
+        16   -> netif_set_link_up
+        16   -> wifi_connection_inform_ip_ready
+        16   -> xQueueGenericSend
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable25
+       4  ??DataTable25_1
+       4  ??DataTable25_2
+       4  ??DataTable25_3
+       4  ??DataTable25_4
+       4  ??DataTable25_5
+       4  ??DataTable25_6
+      20  ?_0
+      28  ?_1
+      28  ?_10
+      20  ?_11
+      16  ?_2
+      16  ?_3
+      16  ?_4
+      20  ?_5
+      24  ?_6
+      24  ?_7
+     112  ?_8
+      24  ?_9
+      12  g_ip_ready
+          wifi_connected
+          ip_ready
+     194  ip_ready_callback
+       6  is_lwip_net_ready
+      46  lwip_net_ready
+     158  lwip_net_start
+      78  lwip_net_stop
+      96  lwip_network_init
+     108  wifi_set_opmode
+     112  wifi_station_disconnected_event_handler
+      68  wifi_station_port_secure_event_handler
+     152  -- Other
+
+ 
+    12 bytes in section .bss
+   132 bytes in section .rodata
+ 1 262 bytes in section .text
+ 
+ 1 262 bytes of CODE  memory
+   132 bytes of CONST memory
+    12 bytes of DATA  memory
+
+Errors: none
+Warnings: 5

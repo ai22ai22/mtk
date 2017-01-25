@@ -1,0 +1,643 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:26
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\lwip\src\core\raw.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\lwip\src\core\raw.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\raw.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\raw.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\third_party\lwip\src\core\raw.c
+      1          /**
+      2           * @file
+      3           * Implementation of raw protocol PCBs for low-level handling of
+      4           * different types of protocols besides (or overriding) those
+      5           * already available in lwIP.
+      6           *
+      7           */
+      8          
+      9          /*
+     10           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+     11           * All rights reserved.
+     12           *
+     13           * Redistribution and use in source and binary forms, with or without modification,
+     14           * are permitted provided that the following conditions are met:
+     15           *
+     16           * 1. Redistributions of source code must retain the above copyright notice,
+     17           *    this list of conditions and the following disclaimer.
+     18           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     19           *    this list of conditions and the following disclaimer in the documentation
+     20           *    and/or other materials provided with the distribution.
+     21           * 3. The name of the author may not be used to endorse or promote products
+     22           *    derived from this software without specific prior written permission.
+     23           *
+     24           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     25           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     26           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     27           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     28           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     29           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     30           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     31           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     32           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     33           * OF SUCH DAMAGE.
+     34           *
+     35           * This file is part of the lwIP TCP/IP stack.
+     36           *
+     37           * Author: Adam Dunkels <adam@sics.se>
+     38           *
+     39           */
+     40          
+     41          #include "lwip/opt.h"
+     42          
+     43          #if LWIP_RAW /* don't build if not configured for use in lwipopts.h */
+     44          
+     45          #include "lwip/def.h"
+     46          #include "lwip/memp.h"
+     47          #include "lwip/ip_addr.h"
+     48          #include "lwip/netif.h"
+     49          #include "lwip/raw.h"
+     50          #include "lwip/stats.h"
+     51          #include "lwip/ip6.h"
+     52          #include "lwip/ip6_addr.h"
+     53          #include "lwip/inet_chksum.h"
+     54          
+     55          #include <string.h>
+     56          
+     57          /** The list of RAW PCBs */
+     58          static struct raw_pcb *raw_pcbs;
+     59          
+     60          /**
+     61           * Determine if in incoming IP packet is covered by a RAW PCB
+     62           * and if so, pass it to a user-provided receive callback function.
+     63           *
+     64           * Given an incoming IP datagram (as a chain of pbufs) this function
+     65           * finds a corresponding RAW PCB and calls the corresponding receive
+     66           * callback function.
+     67           *
+     68           * @param p pbuf to be demultiplexed to a RAW PCB.
+     69           * @param inp network interface on which the datagram was received.
+     70           * @return - 1 if the packet has been eaten by a RAW PCB receive
+     71           *           callback function. The caller MAY NOT not reference the
+     72           *           packet any longer, and MAY NOT call pbuf_free().
+     73           * @return - 0 if packet is not eaten (pbuf is still referenced by the
+     74           *           caller).
+     75           *
+     76           */
+     77          u8_t
+     78          raw_input(struct pbuf *p, struct netif *inp)
+     79          {
+     80            struct raw_pcb *pcb, *prev;
+     81            s16_t proto;
+     82            u8_t eaten = 0;
+     83          
+     84            LWIP_UNUSED_ARG(inp);
+     85          
+     86          #if LWIP_IPV6
+     87          #if LWIP_IPV4
+     88            if (IP_HDR_GET_VERSION(p->payload) == 6)
+     89          #endif /* LWIP_IPV4 */
+     90            {
+     91              struct ip6_hdr *ip6hdr = (struct ip6_hdr *)p->payload;
+     92              proto = IP6H_NEXTH(ip6hdr);
+     93            }
+     94          #if LWIP_IPV4
+     95            else
+     96          #endif /* LWIP_IPV4 */
+     97          #endif /* LWIP_IPV6 */
+     98          #if LWIP_IPV4
+     99            {
+    100              proto = IPH_PROTO((struct ip_hdr *)p->payload);
+    101            }
+    102          #endif /* LWIP_IPV4 */
+    103          
+    104            prev = NULL;
+    105            pcb = raw_pcbs;
+    106            /* loop through all raw pcbs until the packet is eaten by one */
+    107            /* this allows multiple pcbs to match against the packet by design */
+    108            while ((eaten == 0) && (pcb != NULL)) {
+    109              if ((pcb->protocol == proto) && IP_PCB_IPVER_INPUT_MATCH(pcb) &&
+    110                  (ip_addr_isany(&pcb->local_ip) ||
+    111                   ip_addr_cmp(&pcb->local_ip, ip_current_dest_addr()))) {
+    112          #if IP_SOF_BROADCAST_RECV
+    113                /* broadcast filter? */
+    114                if ((ip_get_option(pcb, SOF_BROADCAST) || !ip_addr_isbroadcast(ip_current_dest_addr(), ip_current_netif()))
+    115          #if LWIP_IPV6
+    116                    || PCB_ISIPV6(pcb)
+    117          #endif /* LWIP_IPV6 */
+    118                    )
+    119          #endif /* IP_SOF_BROADCAST_RECV */
+    120                {
+    121                  /* receive callback function available? */
+    122                  if (pcb->recv != NULL) {
+    123          #ifndef LWIP_NOASSERT
+    124                    void* old_payload = p->payload;
+    125          #endif
+    126                    /* the receive callback function did not eat the packet? */
+    127                    eaten = pcb->recv(pcb->recv_arg, pcb, p, ip_current_src_addr());
+    128                    if (eaten != 0) {
+    129                      /* receive function ate the packet */
+    130                      p = NULL;
+    131                      eaten = 1;
+    132                      if (prev != NULL) {
+    133                      /* move the pcb to the front of raw_pcbs so that is
+    134                         found faster next time */
+    135                        prev->next = pcb->next;
+    136                        pcb->next = raw_pcbs;
+    137                        raw_pcbs = pcb;
+    138                      }
+    139                    } else {
+    140                      /* sanity-check that the receive callback did not alter the pbuf */
+    141                      LWIP_ASSERT("raw pcb recv callback altered pbuf payload pointer without eating packet",
+    142                        p->payload == old_payload);
+    143                    }
+    144                  }
+    145                  /* no receive callback function was set for this raw PCB */
+    146                }
+    147                /* drop the packet */
+    148              }
+    149              prev = pcb;
+    150              pcb = pcb->next;
+    151            }
+    152            return eaten;
+    153          }
+    154          
+    155          /**
+    156           * Bind a RAW PCB.
+    157           *
+    158           * @param pcb RAW PCB to be bound with a local address ipaddr.
+    159           * @param ipaddr local IP address to bind with. Use IP_ADDR_ANY to
+    160           * bind to all local interfaces.
+    161           *
+    162           * @return lwIP error code.
+    163           * - ERR_OK. Successful. No error occurred.
+    164           * - ERR_USE. The specified IP address is already bound to by
+    165           * another RAW PCB.
+    166           *
+    167           * @see raw_disconnect()
+    168           */
+    169          err_t
+    170          raw_bind(struct raw_pcb *pcb, const ip_addr_t *ipaddr)
+    171          {
+    172            if ((pcb == NULL) || (ipaddr == NULL) || !IP_ADDR_PCB_VERSION_MATCH(pcb, ipaddr)) {
+    173              return ERR_VAL;
+    174            }
+    175            ip_addr_set_ipaddr(&pcb->local_ip, ipaddr);
+    176            return ERR_OK;
+    177          }
+    178          
+    179          /**
+    180           * Connect an RAW PCB. This function is required by upper layers
+    181           * of lwip. Using the raw api you could use raw_sendto() instead
+    182           *
+    183           * This will associate the RAW PCB with the remote address.
+    184           *
+    185           * @param pcb RAW PCB to be connected with remote address ipaddr and port.
+    186           * @param ipaddr remote IP address to connect with.
+    187           *
+    188           * @return lwIP error code
+    189           *
+    190           * @see raw_disconnect() and raw_sendto()
+    191           */
+    192          err_t
+    193          raw_connect(struct raw_pcb *pcb, const ip_addr_t *ipaddr)
+    194          {
+    195            if ((pcb == NULL) || (ipaddr == NULL) || !IP_ADDR_PCB_VERSION_MATCH(pcb, ipaddr)) {
+    196              return ERR_VAL;
+    197            }
+    198            ip_addr_set_ipaddr(&pcb->remote_ip, ipaddr);
+    199            return ERR_OK;
+    200          }
+    201          
+    202          /**
+    203           * Set the callback function for received packets that match the
+    204           * raw PCB's protocol and binding. 
+    205           * 
+    206           * The callback function MUST either
+    207           * - eat the packet by calling pbuf_free() and returning non-zero. The
+    208           *   packet will not be passed to other raw PCBs or other protocol layers.
+    209           * - not free the packet, and return zero. The packet will be matched
+    210           *   against further PCBs and/or forwarded to another protocol layers.
+    211           * 
+    212           * @return non-zero if the packet was free()d, zero if the packet remains
+    213           * available for others.
+    214           */
+    215          void
+    216          raw_recv(struct raw_pcb *pcb, raw_recv_fn recv, void *recv_arg)
+    217          {
+    218            /* remember recv() callback and user data */
+    219            pcb->recv = recv;
+    220            pcb->recv_arg = recv_arg;
+    221          }
+    222          
+    223          /**
+    224           * Send the raw IP packet to the given address. Note that actually you cannot
+    225           * modify the IP headers (this is inconsistent with the receive callback where
+    226           * you actually get the IP headers), you can only specify the IP payload here.
+    227           * It requires some more changes in lwIP. (there will be a raw_send() function
+    228           * then.)
+    229           *
+    230           * @param pcb the raw pcb which to send
+    231           * @param p the IP payload to send
+    232           * @param ipaddr the destination address of the IP packet
+    233           *
+    234           */
+    235          err_t
+    236          raw_sendto(struct raw_pcb *pcb, struct pbuf *p, const ip_addr_t *ipaddr)
+    237          {
+    238            err_t err;
+    239            struct netif *netif;
+    240            ip_addr_t *src_ip;
+    241            struct pbuf *q; /* q will be sent down the stack */
+    242            s16_t header_size;
+    243            const ip_addr_t *dst_ip = ipaddr;
+    244          #if LWIP_IPV4 && LWIP_IPV6
+    245            ip_addr_t src_ip_tmp;
+    246          #endif /* LWIP_IPV4 && LWIP_IPV6 */
+    247          
+    248            if ((pcb == NULL) || (ipaddr == NULL) || !IP_ADDR_PCB_VERSION_MATCH(pcb, ipaddr)) {
+    249              return ERR_VAL;
+    250            }
+    251          
+    252            LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_TRACE, ("raw_sendto\n"));
+    253          
+    254            header_size = (
+    255          #if LWIP_IPV4 && LWIP_IPV6
+    256              PCB_ISIPV6(pcb) ? IP6_HLEN : IP_HLEN);
+    257          #elif LWIP_IPV4
+    258              IP_HLEN);
+    259          #else
+    260              IP6_HLEN);
+    261          #endif
+    262          
+    263            /* not enough space to add an IP header to first pbuf in given p chain? */
+    264            if (pbuf_header(p, header_size)) {
+    265              /* allocate header in new pbuf */
+    266              q = pbuf_alloc(PBUF_IP, 0, PBUF_RAM);
+    267              /* new header pbuf could not be allocated? */
+    268              if (q == NULL) {
+    269                LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_SERIOUS, ("raw_sendto: could not allocate header\n"));
+    270                return ERR_MEM;
+    271              }
+    272              if (p->tot_len != 0) {
+    273                /* chain header q in front of given pbuf p */
+    274                pbuf_chain(q, p);
+    275              }
+    276              /* { first pbuf q points to header pbuf } */
+    277              LWIP_DEBUGF(RAW_DEBUG, ("raw_sendto: added header pbuf %p before given pbuf %p\n", (void *)q, (void *)p));
+    278            }  else {
+    279              /* first pbuf q equals given pbuf */
+    280              q = p;
+    281              if(pbuf_header(q, -header_size)) {
+    282                LWIP_ASSERT("Can't restore header we just removed!", 0);
+    283                return ERR_MEM;
+    284              }
+    285            }
+    286          
+    287          #if ((defined MTK_TCPIP_FOR_EXTERNAL_MODULE_ENABLE) && (defined LWIP_SOCKET_OPTION_BINDTODEVICE))
+    288            if (pcb->so_options & SO_BINDTODEVICE) {        
+    289              u16_t netif_num;
+    290              netif_num = (pcb->so_options) & (~SO_BINDTODEVICE);  
+    291              if (netif_num > 0) {
+    292                netif = netif_find_by_context_id(netif_num);
+    293              } else {
+    294                /* wifi netif_num == 0, ip_route */
+    295                netif = ip_route(PCB_ISIPV6(pcb), &pcb->local_ip, dst_ip);
+    296              }
+    297            } else 
+    298          #endif /* LWIP_SOCKET_OPTION_BINDTODEVICE */
+    299            {
+    300              netif = ip_route(PCB_ISIPV6(pcb), &pcb->local_ip, dst_ip);
+    301            }
+    302          
+    303          
+    304            if (netif == NULL) {
+    305              LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_LEVEL_WARNING, ("raw_sendto: No route to "));
+    306              ip_addr_debug_print(RAW_DEBUG | LWIP_DBG_LEVEL_WARNING, dst_ip);
+    307              /* free any temporary header pbuf allocated by pbuf_header() */
+    308              if (q != p) {
+    309                pbuf_free(q);
+    310              }
+    311              return ERR_RTE;
+    312            }
+    313          
+    314          #if IP_SOF_BROADCAST
+    315          #if LWIP_IPV6
+    316            if (!PCB_ISIPV6(pcb))
+    317          #endif /* LWIP_IPV6 */
+    318            {
+    319              /* broadcast filter? */
+    320              if (!ip_get_option(pcb, SOF_BROADCAST) && ip_addr_isbroadcast(ipaddr, netif)) {
+    321                LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_LEVEL_WARNING, ("raw_sendto: SOF_BROADCAST not enabled on pcb %p\n", (void *)pcb));
+    322                /* free any temporary header pbuf allocated by pbuf_header() */
+    323                if (q != p) {
+    324                  pbuf_free(q);
+    325                }
+    326                return ERR_VAL;
+    327              }
+    328            }
+    329          #endif /* IP_SOF_BROADCAST */
+    330          
+    331            if (ip_addr_isany(&pcb->local_ip)) {
+    332              /* use outgoing network interface IP address as source address */
+    333              src_ip = ip_netif_get_local_ip(PCB_ISIPV6(pcb), netif, dst_ip, &src_ip_tmp);
+    334          #if LWIP_IPV6
+    335              if (src_ip == NULL) {
+    336                if (q != p) {
+    337                  pbuf_free(q);
+    338                }
+    339                return ERR_RTE;
+    340              }
+    341          #endif /* LWIP_IPV6 */
+    342            } else {
+    343              /* use RAW PCB local IP address as source address */
+    344              src_ip = &pcb->local_ip;
+    345            }
+    346          
+    347          #if LWIP_IPV6
+    348            /* If requested, based on the IPV6_CHECKSUM socket option per RFC3542,
+    349               compute the checksum and update the checksum in the payload. */
+    350            if (PCB_ISIPV6(pcb) && pcb->chksum_reqd) {
+    351              u16_t chksum = ip6_chksum_pseudo(p, pcb->protocol, p->tot_len, ip_2_ip6(src_ip), ip_2_ip6(dst_ip));
+    352              LWIP_ASSERT("Checksum must fit into first pbuf", p->len >= (pcb->chksum_offset + 2));
+    353              SMEMCPY(((u8_t *)p->payload) + pcb->chksum_offset, &chksum, sizeof(u16_t));
+    354            }
+    355          #endif
+    356          
+    357            NETIF_SET_HWADDRHINT(netif, &pcb->addr_hint);
+    358            err = ip_output_if(PCB_ISIPV6(pcb), q, src_ip, dst_ip, pcb->ttl, pcb->tos, pcb->protocol, netif);
+    359            NETIF_SET_HWADDRHINT(netif, NULL);
+    360          
+    361            /* did we chain a header earlier? */
+    362            if (q != p) {
+    363              /* free the header */
+    364              pbuf_free(q);
+    365            }
+    366            return err;
+    367          }
+    368          
+    369          /**
+    370           * Send the raw IP packet to the address given by raw_connect()
+    371           *
+    372           * @param pcb the raw pcb which to send
+    373           * @param p the IP payload to send
+    374           *
+    375           */
+    376          err_t
+    377          raw_send(struct raw_pcb *pcb, struct pbuf *p)
+    378          {
+    379            return raw_sendto(pcb, p, &pcb->remote_ip);
+    380          }
+    381          
+    382          /**
+    383           * Remove an RAW PCB.
+    384           *
+    385           * @param pcb RAW PCB to be removed. The PCB is removed from the list of
+    386           * RAW PCB's and the data structure is freed from memory.
+    387           *
+    388           * @see raw_new()
+    389           */
+    390          void
+    391          raw_remove(struct raw_pcb *pcb)
+    392          {
+    393            struct raw_pcb *pcb2;
+    394            /* pcb to be removed is first in list? */
+    395            if (raw_pcbs == pcb) {
+    396              /* make list start at 2nd pcb */
+    397              raw_pcbs = raw_pcbs->next;
+    398              /* pcb not 1st in list */
+    399            } else {
+    400              for(pcb2 = raw_pcbs; pcb2 != NULL; pcb2 = pcb2->next) {
+    401                /* find pcb in raw_pcbs list */
+    402                if (pcb2->next != NULL && pcb2->next == pcb) {
+    403                  /* remove pcb from list */
+    404                  pcb2->next = pcb->next;
+    405                  break;
+    406                }
+    407              }
+    408            }
+    409            memp_free(MEMP_RAW_PCB, pcb);
+    410          }
+    411          
+    412          /**
+    413           * Create a RAW PCB.
+    414           *
+    415           * @return The RAW PCB which was created. NULL if the PCB data structure
+    416           * could not be allocated.
+    417           *
+    418           * @param proto the protocol number of the IPs payload (e.g. IP_PROTO_ICMP)
+    419           *
+    420           * @see raw_remove()
+    421           */
+    422          struct raw_pcb *
+    423          raw_new(u8_t proto)
+    424          {
+    425            struct raw_pcb *pcb;
+    426          
+    427            LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_TRACE, ("raw_new\n"));
+    428          
+    429            pcb = (struct raw_pcb *)memp_malloc(MEMP_RAW_PCB);
+    430            /* could allocate RAW PCB? */
+    431            if (pcb != NULL) {
+    432              /* initialize PCB to all zeroes */
+    433              memset(pcb, 0, sizeof(struct raw_pcb));
+    434              pcb->protocol = proto;
+    435              pcb->ttl = RAW_TTL;
+    436              pcb->next = raw_pcbs;
+    437              raw_pcbs = pcb;
+    438            }
+    439            return pcb;
+    440          }
+    441          
+    442          #if LWIP_IPV6
+    443          /**
+    444           * Create a RAW PCB for IPv6.
+    445           *
+    446           * @return The RAW PCB which was created. NULL if the PCB data structure
+    447           * could not be allocated.
+    448           *
+    449           * @param proto the protocol number (next header) of the IPv6 packet payload
+    450           *              (e.g. IP6_NEXTH_ICMP6)
+    451           *
+    452           * @see raw_remove()
+    453           */
+    454          struct raw_pcb *
+    455          raw_new_ip6(u8_t proto)
+    456          {
+    457            struct raw_pcb *pcb;
+    458            pcb = raw_new(proto);
+    459          #if LWIP_IPV4
+    460            ip_set_v6(pcb, 1);
+    461          #endif /* LWIP_IPV4 */
+    462            return pcb;
+    463          }
+    464          #endif /* LWIP_IPV6 */
+    465          
+    466          #endif /* LWIP_RAW */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   raw_bind
+       0   raw_connect
+      32   raw_input
+        32   -- Indirect call
+        32   -> printf
+      16   raw_new
+        16   -> __aeabi_memset4
+        16   -> mem_malloc
+       0   raw_recv
+       0   raw_remove
+         0   -> mem_free
+       0   raw_send
+         0   -> raw_sendto
+      32   raw_sendto
+        32   -> ip4_output_if
+        32   -> ip4_route
+        32   -> pbuf_alloc
+        32   -> pbuf_chain
+        32   -> pbuf_free
+        32   -> pbuf_header
+        32   -> printf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+      40  ?_0
+      76  ?_1
+      76  ?_2
+      40  ?_3
+      22  raw_bind
+      22  raw_connect
+     150  raw_input
+      42  raw_new
+       4  raw_pcbs
+       6  raw_recv
+      38  raw_remove
+       4  raw_send
+     192  raw_sendto
+
+ 
+   4 bytes in section .bss
+ 724 bytes in section .text
+ 
+ 724 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: 3

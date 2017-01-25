@@ -16,7 +16,6 @@ var group__mt2523__hdk__apps =
     [ "gdi_display_helloworld", "group__mt2523__hdk__apps__gdi__display__helloworld.html", null ],
     [ "gnss_get_location", "group__mt2523__hdk__apps__gnss__get__location.html", null ],
     [ "iot_sdk_demo", "group__mt2523__hdk__apps__iot__sdk__demo.html", "group__mt2523__hdk__apps__iot__sdk__demo" ],
-    [ "modem_wifi5931_ref_design", "group__mt2523__hdk__apps__modem__wifi5931__ref__design.html", null ],
     [ "mp3_local_playback", "group__mt2523__hdk__apps__mp3__local__playback.html", null ],
     [ "sensor_subsys_accelerometer", "group__mt2523__hdk__apps__sensor__subsys__accelerometer.html", null ],
     [ "watch_ref_design", "group__mt2523__hdk__apps__watch__ref__design.html", null ]

@@ -1,0 +1,3316 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:34:53
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\sdio_gen3\connsys_util.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\sdio_gen3\connsys_util.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\connsys_util.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\connsys_util.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\sdio_gen3\connsys_util.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdio.h>
+     36          #include <stdlib.h>
+     37          #include <string.h>
+     38          #include "type_def.h"
+     39          #include "mem_util.h"
+     40          #include "mt_cmd_fmt.h"
+     41          #include "connsys_driver.h"
+     42          #include "connsys_bus.h"
+     43          #include "connsys_util.h"
+     44          #include "connsys_adapter.h"
+     45          #include "sfc.h"
+     46          #include "mt7687.h"
+     47          #include "nvic.h"
+     48          #include "debug.h"
+     49          #include "dma_sw.h"
+     50          #include "dma_hw.h"
+     51          #include "misc.h"
+     52          #include "toi.h"
+     53          #include "memory_attribute.h"
+     54          #include "connsys_profile.h"
+     55          #include "hal_log.h"
+     56          #include "syslog.h"
+     57          #include "wifi_rx_desc.h"
+     58          
+     59          #define CFG_FPGA 0
+     60          
+     61          sys_cfg_t *g_wifi_profile = NULL;
+     62          
+     63          uint32_t connsys_fw_download_CmdAddressLenReq(uint32_t addr, uint32_t len, uint32_t data_mode, uint8_t *buffer);
+     64          int32_t connsys_pda_config(uint32_t dest_addr, uint32_t data_len, uint32_t data_mode);
+     65          
+     66          //+++++++ Firmware Download +++++++++//
+     67          #if defined(__ICCARM__)
+     68          ATTR_4BYTE_ALIGN uint8_t g_tx_buf[MAX_BUF_SIZE + 0x10];
+     69          #else
+     70          uint8_t g_tx_buf[MAX_BUF_SIZE + 0x10] __attribute__((aligned(4)));
+     71          #endif
+     72          
+     73          #define WIFI_PROFILE_LEN                (0x800) // 2K
+     74          #define WIFI_PROFILE_ADDR               (0x020B2000)
+     75          #define WIFI_PROFILE_DATA_MODE          (0x80000000) // plain (non-encrypted)
+     76          #define WIFI_PROFILE_KEY_INDEX          (0x0)
+     77          
+     78          wifi_rx_handler_t connsys_raw_handler = NULL;
+     79          
+     80          void connsys_get_ilm_image_info(fw_dl_data_t *output, ssize_t length)
+     81          {
+     82          
+     83          
+     84              fw_image_tailer_t *info;
+     85              info = (fw_image_tailer_t *) & (output->image[length - sizeof(fw_image_tailer_t)]);
+     86          
+     87              LOG_I(connsys, "ilm_addr = %08x, ilm_len = %x, feature_set = %d.\n",
+     88                    (unsigned int)info->ilm_info.addr,
+     89                    (unsigned int)info->ilm_info.len,
+     90                    (int)info->ilm_info.feature_set);
+     91              LOG_I(connsys, "dlm_addr = %08x, dlm_len = %x, feature_set = %d.\n",
+     92                    (unsigned int)info->dlm_info.addr,
+     93                    (unsigned int)info->dlm_info.len,
+     94                    (int)info->dlm_info.feature_set);
+     95          
+     96              output->ilm_addr = info->ilm_info.addr;
+     97              output->ilm_len = info->ilm_info.len;
+     98              output->ilm_encrypt = ((info->ilm_info.feature_set) & FEATURE_MASK_ENCRYPT_MODE) & 0xFF;
+     99              output->ilm_encrypt_key_index = ((info->ilm_info.feature_set) & FEATURE_MASK_KEY_INDEX) & 0xFF;
+    100          
+    101              output->dlm_addr = info->dlm_info.addr;
+    102              output->dlm_len = info->dlm_info.len;
+    103              output->dlm_encrypt = ((info->dlm_info.feature_set) & FEATURE_MASK_ENCRYPT_MODE) & 0xFF;
+    104              output->dlm_encrypt_key_index = ((info->dlm_info.feature_set) & FEATURE_MASK_KEY_INDEX) & 0xFF;
+    105          }
+    106          
+    107          static fw_image_tailer_t *n9_fw_info;
+    108          
+    109          void connsys_util_get_n9_fw_ver(char *ver)
+    110          {
+    111              n9_fw_info->ilm_info.ram_built_date[0] = ' '; // workaround to remove the prefix: '_'
+    112              memcpy(ver, &(n9_fw_info->ilm_info.ram_built_date[1]), 14);
+    113          }
+    114          
+    115          void connsys_get_ilm_image_info_from_flash(fw_dl_data_t *output)
+    116          {
+    117          
+    118              uint32_t length = 0;
+    119          
+    120              length = *((uint32_t *) & (output->image[0]));
+    121          
+    122              n9_fw_info = (fw_image_tailer_t *) & (output->image[length - sizeof(fw_image_tailer_t)]);
+    123              // print_content(sizeof(fw_image_tailer_t), (uint8_t *)n9_fw_info, "tailer");
+    124              LOG_HEXDUMP_I(connsys, "tailer", (const char *)n9_fw_info, sizeof(fw_image_tailer_t));
+    125          
+    126              LOG_I(connsys, "ilm_addr = %08x, ilm_len = %x, feature_set = %d.\n",
+    127                    (unsigned int)n9_fw_info->ilm_info.addr,
+    128                    (unsigned int)n9_fw_info->ilm_info.len,
+    129                    (int)n9_fw_info->ilm_info.feature_set);
+    130              LOG_I(connsys, "dlm_addr = %08x, dlm_len = %x, feature_set = %d.\n",
+    131                    (unsigned int)n9_fw_info->dlm_info.addr,
+    132                    (unsigned int)n9_fw_info->dlm_info.len,
+    133                    (int)n9_fw_info->dlm_info.feature_set);
+    134              LOG_I(connsys, "N9 RAM build date: %s\n", n9_fw_info->ilm_info.ram_built_date);
+    135          
+    136              output->ilm_addr = n9_fw_info->ilm_info.addr;
+    137              output->ilm_len = n9_fw_info->ilm_info.len;
+    138              output->ilm_encrypt = ((n9_fw_info->ilm_info.feature_set) & FEATURE_MASK_ENCRYPT_MODE) & 0xFF;
+    139              output->ilm_encrypt_key_index = ((n9_fw_info->ilm_info.feature_set) & FEATURE_MASK_KEY_INDEX) & 0xFF;
+    140          
+    141              output->dlm_addr = n9_fw_info->dlm_info.addr;
+    142              output->dlm_len = n9_fw_info->dlm_info.len;
+    143              output->dlm_encrypt = ((n9_fw_info->dlm_info.feature_set) & FEATURE_MASK_ENCRYPT_MODE) & 0xFF;
+    144              output->dlm_encrypt_key_index = ((n9_fw_info->dlm_info.feature_set) & FEATURE_MASK_KEY_INDEX) & 0xFF;
+    145          }
+    146          
+    147          uint32_t connsys_img_direct_download(uint32_t target_addr, uint32_t length, uint32_t src_addr, uint32_t data_mode, uint32_t key_index)
+    148          {
+    149              uint32_t len = 0, reg = 0, total = 0;
+    150              uint32_t volatile_reg1 = 0, volatile_reg2 = 0;
+    151          
+    152              connsys_pda_config(target_addr, length, data_mode);
+    153          
+    154              volatile_reg1 = REG32(PDA_SOURCE_CON);
+    155              volatile_reg2 = REG32(PDA_DWLD_STATE);
+    156              LOG_I(connsys, "Before Switch PDA source, con=0x%x, state=0x%x\n", volatile_reg1, volatile_reg2);
+    157              // Step2: Set PDA source to PKT-GEN, instead of HIF
+    158              REG32(PDA_SOURCE_CON) |= (PDA_SOURCE_SEL_BIT);
+    159              volatile_reg1 = REG32(PDA_SOURCE_CON);
+    160              volatile_reg2 = REG32(PDA_DWLD_STATE);
+    161              LOG_I(connsys, "After Switch PDA source, con=0x%x, state=0x%x\n", volatile_reg1, volatile_reg2);
+    162          
+    163              (void)volatile_reg1;
+    164              (void)volatile_reg2;
+    165          
+    166              while (total < length) {
+    167                  len = *((uint32_t *)src_addr);
+    168          
+    169                  // Step3: Configure CM4 GDMA
+    170          
+    171                  /* clear start bit  */
+    172                  REG32(GDMA_CH2_START) &= ~(0x1 << 15); /* clear start DMA bit */
+    173          
+    174                  // Enable GDMA Channels
+    175          //        REG32(0xE000E100) = 1;
+    176                  REG32(GDMA_CHANNEL_ENABLE) = 0xFFFFFFFF;
+    177                  REG32(0xE000E100) = 2;
+    178          
+    179                  // Configure GDMA : CH2
+    180                  REG32(GDMA_CH2_SRC) = src_addr;
+    181                  REG32(GDMA_CH2_DST) = PDA_TOP_WRAPPER_PORT;
+    182                  REG32(GDMA_CH2_COUNT) = (len >> 2); // by unit of  >>> [DW] <<<<, "len" includes 3DW header
+    183                  REG32(GDMA_CH2_CON) = 0x3F00206; // bit[1,2,9,20-25]
+    184          
+    185          
+    186                  // wait DMA finish
+    187                  LOG_I(connsys, "Wait GDMA finishing...\n");
+    188          
+    189                  /* DMA kick out */
+    190                  REG32(GDMA_CH2_START) |= (0x1 << 15); /* Start DMA channel*/
+    191                  do {
+    192                      reg = REG32(GDMA_CH2_RLCT);
+    193                  } while (reg != 0x00);
+    194                  total += (len - PDA_PKT_HDR_SIZE);
+    195                  LOG_I(connsys, "GDMA move from (0x%x) %d bytes to N9, total %d bytes.\n",
+    196                        (unsigned int)src_addr,
+    197                        (int)len,
+    198                        (int)total);
+    199          
+    200                  src_addr += len; // len includes 3DW header
+    201              }
+    202          
+    203              // Step5: Switch back PDA source to HIF
+    204              REG32(PDA_SOURCE_CON) &= ~(PDA_SOURCE_SEL_BIT);
+    205          
+    206              if (total != length) {
+    207                  LOG_E(connsys, "ERROR! the total %d bytes != assigned length(%d bytes)\n",
+    208                        (int) total, (int)length);
+    209                  return 0;
+    210              }
+    211          
+    212              return src_addr;
+    213          }
+    214          
+    215          static int connsys_download_wifi_profile(sys_cfg_t *wifi_profile)
+    216          {
+    217              uint8_t err;
+    218              uint8_t wifi_profile_data[WIFI_PROFILE_LEN] = {0};
+    219              memcpy(wifi_profile_data, wifi_profile, sizeof(sys_cfg_t));
+    220          
+    221              /* for debug */
+    222              LOG_HEXDUMP_I(connsys, "wifi_profile_data:", wifi_profile_data, sizeof(sys_cfg_t));
+    223              LOG_I(connsys, "wifi profile length is %d.", sizeof(sys_cfg_t));
+    224          #ifdef MTK_WIFI_PRIVILEGE_ENABLE
+    225              LOG_I(connsys,"wifi privilege enable is %d.", wifi_profile->wifi_privilege_enable);
+    226          #endif /*MTK_WIFI_PRIVILEGE_ENABLE*/
+    227              err = connsys_util_pda_download(WIFI_PROFILE_ADDR, WIFI_PROFILE_LEN, WIFI_PROFILE_DATA_MODE, 0, (unsigned char *)(wifi_profile_data));
+    228              if (err) {
+    229                  LOG_E(connsys, "\n\n\n<<%s>> Send wifi profile download fail!\n\n\n", __FUNCTION__);
+    230              }
+    231          
+    232              return 1;
+    233          }
+    234          
+    235          int32_t connsys_util_fw_direct_download(void)
+    236          {
+    237              uint32_t data_mode = 0;
+    238              fw_dl_data_t data;
+    239              uint8_t *ptr = NULL;
+    240          #ifdef MTK_FW_DW_BY_CM4
+    241              uint8_t mcu_mode = 1;
+    242          #else
+    243              uint8_t mcu_mode = 0;
+    244          #endif
+    245          
+    246              // Step 0: get ownership form firmware
+    247              if (TRUE == connsys_get_ownership()) {
+    248                  LOG_I(connsys, "<<%s>> Get ownership ok.\n", __FUNCTION__);
+    249              } else {
+    250                  LOG_I(connsys, "<<%s>> Get ownership failed.\n", __FUNCTION__);
+    251              }
+    252          
+    253              data.image = (uint8_t *)(WIFI_FW_ADDR_IN_FLASH);
+    254              connsys_get_ilm_image_info_from_flash(&data);
+    255          
+    256              // add 4 byte CRC len
+    257              data.ilm_len += LEN_4_BYTE_CRC;
+    258              data.dlm_len += LEN_4_BYTE_CRC;
+    259          
+    260              // only support one data mode   (ILM data mode = DLM data mode)
+    261              data_mode = (((data.dlm_encrypt) << DATA_MODE_BIT_SHFT_ENCRYPT_MODE) & DATA_MODE_MASK_ENCRYPT_MODE)
+    262                          | (((data.dlm_encrypt_key_index) << DATA_MODE_BIT_SHFT_KEY_INDEX) & DATA_MODE_MASK_KEY_INDEX)
+    263                          | ((data.dlm_encrypt == 1) ? (((uint32_t)1 << DATA_MODE_BIT_SHFT_RESET_IV) & DATA_MODE_MASK_RESET_IV) : (0))
+    264                          | (((uint32_t)1 << DATA_MODE_BIT_SHFT_NEED_ACK) & DATA_MODE_MASK_NEED_ACK);
+    265          
+    266              LOG_I(connsys, "DLM encrypt(%d), dlm key index(%d)\n",
+    267                    (int)data.dlm_encrypt,
+    268                    (int)data.dlm_encrypt_key_index);
+    269          
+    270          
+    271              // Step3: download ILM
+    272              LOG_I(connsys, "Download ILM (%d bytes to N9 0x%x, mode:0x%x)...\n",
+    273                    (int)data.ilm_len, (unsigned int)data.ilm_addr, (unsigned int)data_mode);
+    274          
+    275              if (mcu_mode) {
+    276                  int32_t err = 0;
+    277          
+    278                  // get ownership form firmware
+    279                  if (TRUE == connsys_get_ownership()) {
+    280                      LOG_I(connsys, "<<%s>> Get ownership ok.\n", __FUNCTION__);
+    281                  } else {
+    282                      LOG_I(connsys, "<<%s>> Get ownership failed.\n", __FUNCTION__);
+    283                  }
+    284          
+    285                  LOG_I(connsys, "<<%s>> ILM: Send fw download command...\n", __FUNCTION__);
+    286                  err = connsys_util_pda_download(data.ilm_addr, data.ilm_len, data_mode, 4, data.image);  /* skip total image size, offset=4 */
+    287                  if (err) {
+    288                      return err;
+    289                  }
+    290          
+    291                  LOG_I(connsys, "<<%s>> DLM: Send fw download command...\n", __FUNCTION__);
+    292                  err = connsys_util_pda_download(data.dlm_addr, data.dlm_len, data_mode, 4 + data.ilm_len, data.image); /* skip total image size+ILM size, offset=4+ilm_len */
+    293                  if (err) {
+    294                      return err;
+    295                  }
+    296          
+    297              } else {
+    298                  ptr = &(data.image[4]);    /* skip total image size */
+    299                  ptr = (uint8_t *)connsys_img_direct_download(data.ilm_addr, data.ilm_len, (uint32_t)ptr,
+    300                          data_mode, data.ilm_encrypt_key_index);
+    301                  if (ptr == NULL) {
+    302                      LOG_E(connsys, "Download ILM Fail.\n");
+    303                      return 0;
+    304                  }
+    305          
+    306                  // Step4: download DLM
+    307                  LOG_I(connsys, "Download DLM (%d bytes to N9 0x%x, mode:0x%x), ptr=0x%p...\n",
+    308                        (int)data.dlm_len, (unsigned int)data.dlm_addr, (unsigned int)data_mode, (void *)ptr);
+    309          
+    310                  ptr = (uint8_t *)connsys_img_direct_download(data.dlm_addr, data.dlm_len, (uint32_t)ptr,
+    311                          data_mode, data.dlm_encrypt_key_index);
+    312                  if (ptr == NULL) {
+    313                      LOG_E(connsys, "Download DLM Fail.\n");
+    314                      return 0;
+    315                  }
+    316              }
+    317              // Step6: Check FW download done, and start FW
+    318              connsys_util_fw_download_done();
+    319          
+    320              LOG_I(connsys, "Download done.\n");
+    321          
+    322              return 1;
+    323          }
+    324          
+    325          int32_t connsys_util_firmware_download(void)
+    326          {
+    327              connsys_util_patch_download();
+    328              return connsys_util_fw_direct_download();
+    329          }
+    330          
+    331          
+    332          void connsys_fw_download(fw_dl_data_t *data)
+    333          {
+    334              uint32_t data_mode = 0;
+    335              uint8_t err = 0;
+    336          
+    337              LOG_I(connsys, "<<%s>> The Bin File , ilm_addr = %08x, ilm_tx_len = %x\n",
+    338                    __FUNCTION__, (unsigned int)data->ilm_addr, (unsigned int)data->ilm_len);
+    339          
+    340              LOG_I(connsys, "<<%s>> dlm_addr = %08x, dlm_tx_len = %x, enrypt = %d, encrypt_key_index = %d\n",
+    341                    __FUNCTION__,
+    342                    (unsigned int)data->dlm_addr,
+    343                    (unsigned int)data->dlm_len,
+    344                    (int)data->dlm_encrypt,
+    345                    (int)data->dlm_encrypt_key_index);
+    346          
+    347              data_mode = (((data->dlm_encrypt) << DATA_MODE_BIT_SHFT_ENCRYPT_MODE) & DATA_MODE_MASK_ENCRYPT_MODE)
+    348                          | (((data->dlm_encrypt_key_index) << DATA_MODE_BIT_SHFT_KEY_INDEX) & DATA_MODE_MASK_KEY_INDEX)
+    349                          | ((data->dlm_encrypt == 1) ? (((uint32_t)1 << DATA_MODE_BIT_SHFT_RESET_IV) & DATA_MODE_MASK_RESET_IV) : (0))
+    350                          | (((uint32_t)1 << DATA_MODE_BIT_SHFT_NEED_ACK) & DATA_MODE_MASK_NEED_ACK);
+    351          
+    352              LOG_I(connsys, "<<%s>> data_mode = %08x\n", __FUNCTION__, (unsigned int)data_mode);
+    353          
+    354          
+    355              // get ownership form firmware
+    356              if (TRUE == connsys_get_ownership()) {
+    357                  LOG_I(connsys, "<<%s>> Get ownership ok.\n", __FUNCTION__);
+    358              } else {
+    359                  LOG_I(connsys, "<<%s>> Get ownership failed.\n", __FUNCTION__);
+    360              }
+    361          
+    362              LOG_I(connsys, "<<%s>> ILM: Send fw download command...\n", __FUNCTION__);
+    363              err = connsys_util_pda_download(data->ilm_addr, data->ilm_len, data_mode, 0, data->image);
+    364              if (err) {
+    365                  return;
+    366              }
+    367          
+    368              LOG_I(connsys, "<<%s>> DLM: Send fw download command...\n", __FUNCTION__);
+    369              err = connsys_util_pda_download(data->dlm_addr, data->dlm_len, data_mode, data->ilm_len, data->image);
+    370              if (err) {
+    371                  return;
+    372              }
+    373              connsys_util_fw_download_done();
+    374          }
+    375          //================= Patch Download test ==========================================================//
+    376          
+    377          uint8_t connsys_patch_finish(void)
+    378          {
+    379              uint32_t counter = 0;
+    380              uint32_t value; //, offset;
+    381              uint32_t tx_len, cmd_len;
+    382              uint32_t real_rx_len;
+    383              int32_t ret;
+    384              uint8_t wait_tx_done, wait_rx_done, err = 1;
+    385              uint8_t buffer[SDIO_MAX_RW_SIZE];
+    386          
+    387              // Patch finish command
+    388              cmd_len = sizeof(INIT_HIF_TX_HEADER_T);
+    389              tx_len = LEN_SDIO_TX_AGG_WRAPPER(cmd_len);
+    390          
+    391              memset(buffer, 0, tx_len);
+    392          
+    393              // fill in the txd
+    394              connsys_util_create_inband_cmd_txd_rom(cmd_len, buffer, MT_PATCH_FINISH_REQ); //offset=
+    395          
+    396              // print_content(tx_len, buffer, "patch finish");
+    397              LOG_HEXDUMP_I(connsys, "patch finish", (const char *)buffer, tx_len);
+    398          
+    399              // send to dut
+    400              LOG_I(connsys, "<<%s>> Send Patch finish command ...\n", __FUNCTION__);
+    401              // write connsys_util_fw_download cmd to dut
+    402              ret = connsys_fifo_write(buffer, tx_len);
+    403              if (ret != 0) {
+    404                  // error cuures
+    405                  return err;
+    406              }
+    407          
+    408              // check tx done and rx0 done interrupt status
+    409              wait_tx_done = 1;
+    410              wait_rx_done = 1;
+    411              counter = 0;
+    412              while (1) {
+    413                  ret = connsys_cr_read(WHISR, &value);
+    414                  if (ret) {
+    415                      LOG_E(connsys, "<<%s>> Read WHISR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    416                      return err;
+    417                  }
+    418          
+    419                  LOG_I(connsys, "<<%s>> WHISR = %08x.\n", __FUNCTION__, (unsigned int)value);
+    420          
+    421                  connsys_abnormal_interrupt_check(value);
+    422          
+    423          
+    424                  if (wait_tx_done == 1) {
+    425                      if (value & TX_DONE_INT) {
+    426                          wait_tx_done = 0;
+    427                      }
+    428                  }
+    429          
+    430                  if (wait_rx_done == 1) {
+    431                      if (value & RX0_DONE_INT) {
+    432                          wait_rx_done = 0;
+    433                      }
+    434                  }
+    435          
+    436                  if ((wait_tx_done == 0) && (wait_rx_done == 0)) {
+    437                      break;
+    438                  }
+    439          
+    440                  if (counter > 20000) { // wait for at least 1 second
+    441                      LOG_E(connsys, "<<%s>> Check interrupt failed. wait_tx_done = %d, wait_tx_done = %d.\n",
+    442                            __FUNCTION__,
+    443                            (int)wait_tx_done,
+    444                            (int)wait_rx_done);
+    445                      return err;
+    446                  }
+    447                  //udelay(50); //delay 50us
+    448          
+    449                  counter++;
+    450              }
+    451          
+    452          
+    453              // Rx Patch finish response
+    454              LOG_I(connsys, "<<%s>> Rx Patch finish event...\n", __FUNCTION__);
+    455              ret = connsys_cr_read(WRPLR, &value);
+    456              if (ret) {
+    457                  LOG_E(connsys, "<<%s>> Read WRPLR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    458                  return err;
+    459              }
+    460          
+    461              real_rx_len = LEN_FW_DOWNLOAD_EVENT;
+    462          
+    463              if (GET_RX0_PACKET_LENGTH(value) != real_rx_len) {
+    464                  LOG_E(connsys, "<<%s>> Patch finish response length incoreect. WRPLR = %08x.\n",
+    465                        __FUNCTION__,
+    466                        (unsigned int)value);
+    467                  return err;
+    468              }
+    469          
+    470              LOG_I(connsys, "<<%s>> Receive Patch finish event ...\n", __FUNCTION__);
+    471          
+    472              connsys_fifo_read(WRDR0, buffer, real_rx_len);
+    473          
+    474              // print_content(real_rx_len, buffer, "patch finish..2");
+    475              LOG_HEXDUMP_I(connsys, "patch finish..2", (const char *)buffer, real_rx_len);
+    476          
+    477              // check event status
+    478              if (connsys_util_fw_download_CmdAddressLenReq_event_check(buffer) != 0) {
+    479                  return err;
+    480              }
+    481          
+    482              err = 0;
+    483              return err;
+    484          }
+    485          
+    486          /* ===============================================================
+    487           * Function: connsys_util_create_inband_cmd_txd_rom()
+    488           * Description: to fill the inband commnad header of rom code.
+    489           * Input: total size of cmd, buffer, command id
+    490           * Return: the header size
+    491           * ===============================================================*/
+    492          uint32_t connsys_util_create_inband_cmd_txd_rom(uint32_t cmd_len, uint8_t *buffer, enum MT_CMD_TYPE cmd) {
+    493              P_INIT_HIF_TX_HEADER_T p_txd;
+    494              P_INIT_WIFI_CMD_T   p_cmd;
+    495          
+    496              p_txd = (P_INIT_HIF_TX_HEADER_T)buffer;
+    497              p_txd->u2TxByteCount = cmd_len;
+    498              p_txd->u2PQ_ID = P1_Q0;
+    499          
+    500              p_cmd = &(p_txd->rInitWifiCmd);
+    501              p_cmd->ucCID = cmd;
+    502              p_cmd->ucPktTypeID = PKT_ID_CMD;
+    503          
+    504              return LEN_INBAND_CMD_HDR_ROM;
+    505          }
+    506          
+    507          //================= FW Download test ==========================================================//
+    508          uint32_t connsys_fw_download_CmdAddressLenReq(uint32_t addr, uint32_t len, uint32_t data_mode, uint8_t *buffer)
+    509          {
+    510              uint32_t cmd_len, offset;
+    511              P_INIT_CMD_DOWNLOAD_CONFIG p_data;
+    512          
+    513              cmd_len = sizeof(INIT_HIF_TX_HEADER_T) + sizeof(INIT_CMD_DOWNLOAD_CONFIG);
+    514          
+    515              // fill in the txd
+    516              offset = connsys_util_create_inband_cmd_txd_rom(cmd_len, buffer, MT_TARGET_ADDRESS_LEN_REQ);
+    517          
+    518              // fill in the parameters
+    519              p_data = (P_INIT_CMD_DOWNLOAD_CONFIG)(buffer + offset);
+    520              p_data->u4Address = addr;
+    521              p_data->u4Length = len;
+    522              p_data->u4DataMode = data_mode;
+    523          
+    524              // print_content(cmd_len, buffer, "FW download: addr len req");
+    525              LOG_HEXDUMP_I(connsys, "FW download: addr len req", (const char *)buffer, cmd_len);
+    526          
+    527              return cmd_len;
+    528          }
+    529          
+    530          /* ===============================================================
+    531           * Function: connsys_create_inband_fw_scatter_txd_rom()
+    532           * Description: to fill the scatter commnad header of rom code.
+    533           * Input: total size of cmd, buffer, command id
+    534           * Return: the header size
+    535           * ===============================================================*/
+    536          uint32_t connsys_create_inband_fw_scatter_txd_rom(uint32_t cmd_len, uint8_t *buffer)
+    537          {
+    538              P_INIT_HIF_TX_HEADER_T p_txd;
+    539              P_INIT_WIFI_CMD_T   p_cmd;
+    540          
+    541              p_txd = (P_INIT_HIF_TX_HEADER_T)buffer;
+    542              p_txd->u2TxByteCount = cmd_len;
+    543              p_txd->u2PQ_ID = PQ_TO_PDA;
+    544          
+    545              p_cmd = &(p_txd->rInitWifiCmd);
+    546              p_cmd->ucCID = MT_FW_SCATTER;
+    547              p_cmd->ucPktTypeID = PKT_ID_CMD;
+    548          
+    549              return LEN_INBAND_CMD_HDR_ROM;
+    550          }
+    551          
+    552          uint8_t connsys_util_fw_download_CmdAddressLenReq_event_check(uint8_t *buffer)
+    553          {
+    554              P_INIT_WIFI_EVENT_T p_event;
+    555              P_INIT_EVENT_CMD_RESULT p_status;
+    556              uint8_t err = 0;
+    557          
+    558              // get stauts
+    559              p_event = (P_INIT_WIFI_EVENT_T)buffer;
+    560              p_status = (P_INIT_EVENT_CMD_RESULT)p_event->aucBuffer;
+    561          
+    562              // print_content(p_event->u2RxByteCount, buffer, "FW download: addr len req evt check");
+    563              LOG_HEXDUMP_I(connsys, "FW download: addr len req evt check", (const char *)buffer, p_event->u2RxByteCount);
+    564          
+    565              if ((p_status->ucStatus) || (p_event->ucEID != INIT_EVENT_ID_CMD_RESULT)) {
+    566                  LOG_E(connsys, "<<%s>> Download config event incorrect. EID = %d, Status = %d\n",
+    567                        __FUNCTION__,
+    568                        (int)p_event->ucEID,
+    569                        (int)p_status->ucStatus);
+    570                  err = 1;
+    571              } else {
+    572                  LOG_I(connsys, "<<%s>> Download config set Successfully.\n", __FUNCTION__);
+    573              }
+    574          
+    575              return err;
+    576          }
+    577          
+    578          uint8_t connsys_util_patch_download_get_semaphore_event_check(uint8_t *buffer, uint8_t *status)
+    579          {
+    580              P_INIT_WIFI_EVENT_T p_event;
+    581              P_INIT_EVENT_PATCH_SEMA_CTRL_T p_status;
+    582              uint8_t err = 0;
+    583          
+    584              // get stauts
+    585              p_event = (P_INIT_WIFI_EVENT_T)buffer;
+    586              p_status = (P_INIT_EVENT_PATCH_SEMA_CTRL_T)p_event->aucBuffer;
+    587          
+    588              // print_content(p_event->u2RxByteCount, buffer, "Patch download");
+    589              LOG_HEXDUMP_I(connsys, "Patch download", (const char *)buffer, p_event->u2RxByteCount);
+    590          
+    591              if (p_event->ucEID != INIT_EVENT_ID_PATCH_SEMA_CTRL) {
+    592                  LOG_E(connsys, "<<%s>> Patch semaphore event incorrect. EID = %d\n",
+    593                        __FUNCTION__,
+    594                        (int)p_event->ucEID);
+    595                  err = 1;
+    596              } else {
+    597                  LOG_I(connsys, "<<%s>> Patch semaphore event ok.\n", __FUNCTION__);
+    598          
+    599                  *status = p_status->ucStatus;
+    600              }
+    601          
+    602          
+    603              return err;
+    604          }
+    605          
+    606          int32_t connsys_fw_download_Tx_Scatter(uint8_t *image, uint32_t len)
+    607          {
+    608              int32_t err = 0;
+    609              int32_t ret;
+    610              uint32_t left_len = len;
+    611              uint32_t read_len = 0;
+    612              uint32_t pos = 0, offset = 0;
+    613              uint32_t tx_len;
+    614          
+    615              LOG_I(connsys, "<<%s>>\n", __FUNCTION__);
+    616              while (left_len) {
+    617                  if (left_len < LEN_FW_SCATTER) {
+    618                      read_len = left_len;
+    619                  } else {
+    620                      read_len = LEN_FW_SCATTER;
+    621                  }
+    622          
+    623                  // prepare txd
+    624                  tx_len = LEN_SDIO_TX_AGG_WRAPPER(LEN_INBAND_CMD_HDR_ROM + read_len);
+    625          
+    626                  memset(g_tx_buf, 0, tx_len);
+    627                  offset = connsys_create_inband_fw_scatter_txd_rom(LEN_INBAND_CMD_HDR_ROM + read_len, g_tx_buf);
+    628          
+    629                  memcpy(&g_tx_buf[offset], &image[pos], read_len);
+    630          
+    631                  pos += read_len;
+    632                  left_len -= read_len;
+    633          
+    634                  LOG_I(connsys, "<<%s>> Read file total_len: %d.\n", __FUNCTION__, (int)pos);
+    635                  // print_content(32, g_tx_buf, "Send FW (first 32 bytes)");
+    636                  LOG_HEXDUMP_I(connsys, "Send FW (first 32 bytes)", (const char *)g_tx_buf, 32);
+    637          
+    638                  // write to dut
+    639                  ret = connsys_fifo_write(g_tx_buf, tx_len);
+    640                  if (ret != 0) {
+    641                      // error cuures
+    642                      LOG_E(connsys, "<<%s>> Read scatter failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    643                      err = 1;;
+    644                  }
+    645              }
+    646              return err;
+    647          }
+    648          
+    649          int32_t connsys_pda_config(uint32_t dest_addr, uint32_t data_len, uint32_t data_mode)
+    650          {
+    651              uint32_t value, rx_size, counter = 0;
+    652              int32_t ret;
+    653              uint8_t wait_tx_done, wait_rx_done;
+    654              int32_t err = 1;
+    655              uint8_t buffer[SDIO_MAX_RW_SIZE];
+    656          
+    657              LOG_I(connsys, "<<%s>> Send fw download command...\n", __FUNCTION__);
+    658          
+    659              memset(buffer, 0, SDIO_MAX_RW_SIZE);
+    660          
+    661              value = connsys_fw_download_CmdAddressLenReq(dest_addr, data_len, data_mode, buffer);
+    662          
+    663              // write connsys_util_fw_download cmd to dut
+    664              ret = connsys_fifo_write(buffer, LEN_SDIO_TX_AGG_WRAPPER(value));
+    665              if (ret != 0) {
+    666                  // error cuures
+    667                  return err;
+    668              }
+    669          
+    670              wait_tx_done = 1;
+    671              wait_rx_done = 1;
+    672              counter = 0;
+    673              while (1) {
+    674                  ret = connsys_cr_read(WHISR, &value);
+    675                  if (ret) {
+    676                      LOG_E(connsys, "<<%s>> Read WHISR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    677                      return err;
+    678                  }
+    679          
+    680                  //LOG_I(connsys, "<<%s>> WHISR = %08x.\n", __FUNCTION__, value);
+    681          
+    682                  connsys_abnormal_interrupt_check(value);
+    683          
+    684                  if (wait_tx_done == 1) {
+    685                      if (value & TX_DONE_INT) {
+    686                          wait_tx_done = 0;
+    687                      }
+    688                  }
+    689          
+    690                  if (wait_rx_done == 1) {
+    691                      if (value & RX0_DONE_INT) {
+    692                          wait_rx_done = 0;
+    693                      }
+    694                  }
+    695          
+    696                  if ((wait_tx_done == 0) && (wait_rx_done == 0)) {
+    697                      break;
+    698                  }
+    699          
+    700                  if (counter > 2000000) { // wait for at least 1 second
+    701                      LOG_E(connsys, "<<%s>> Check interrupt failed. wait_tx_done = %d, wait_tx_done = %d.\n",
+    702                            __FUNCTION__,
+    703                            (int)wait_tx_done,
+    704                            (int)wait_rx_done);
+    705                      return err;
+    706                  }
+    707                  //udelay(50); //delay 50us
+    708          
+    709                  counter++;
+    710              }
+    711          
+    712              // rx event from dut
+    713              LOG_I(connsys, "<<%s>> Rx fw download event...\n", __FUNCTION__);
+    714              ret = connsys_cr_read(WRPLR, &value);
+    715              if (ret) {
+    716                  LOG_E(connsys, "<<%s>> Read WRPLR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    717                  return err;
+    718              }
+    719          
+    720              LOG_I(connsys, "<<%s>> WRPLR = %08x.\n", __FUNCTION__, (unsigned int)value);
+    721          
+    722          
+    723              //rx_size = LEN_SDIO_RX_PACKET_WRAPPER(LEN_FW_DOWNLOAD_EVENT); //use this one will cause data incorrect. all 0.
+    724              rx_size = LEN_FW_DOWNLOAD_EVENT;
+    725          
+    726              if (GET_RX0_PACKET_LENGTH(value) != rx_size) {
+    727                  LOG_E(connsys, "<<%s>> download config event response length incoreect. WRPLR = %08x.\n",
+    728                        __FUNCTION__,
+    729                        (unsigned int)value);
+    730                  return err;
+    731              }
+    732              connsys_fifo_read(WRDR0, buffer, rx_size);
+    733              ret = connsys_util_fw_download_CmdAddressLenReq_event_check(buffer);
+    734              return err;
+    735          }
+    736          
+    737          int32_t connsys_util_pda_download(uint32_t dest_addr, uint32_t data_len, uint32_t data_mode, uint32_t data_offset, uint8_t *image)
+    738          {
+    739              int32_t ret;
+    740          
+    741              ret = connsys_pda_config(dest_addr, data_len, data_mode);
+    742          
+    743          
+    744              if (image != NULL) {
+    745                  ret = connsys_fw_download_Tx_Scatter(&(image[data_offset]), data_len);
+    746              }
+    747              return ret;
+    748          }
+    749          
+    750          void connsys_util_fw_download_done()
+    751          {
+    752              uint32_t counter = 0;
+    753              uint32_t tx_len, cmd_len;
+    754              uint32_t value, offset;
+    755              P_INIT_CMD_WIFI_START p_data;
+    756              uint8_t wait_tx_done, wait_rx_done;
+    757              uint8_t buffer[SDIO_MAX_RW_SIZE];
+    758              uint32_t real_rx_len, valid_rx_len;
+    759              int32_t ret;
+    760          
+    761              memset(buffer, 0, SDIO_MAX_RW_SIZE);
+    762          
+    763              // FW Start command
+    764              cmd_len = sizeof(INIT_HIF_TX_HEADER_T) + sizeof(INIT_CMD_WIFI_START);
+    765              tx_len = LEN_SDIO_TX_AGG_WRAPPER(cmd_len);
+    766          
+    767              memset(buffer, 0, tx_len);
+    768          
+    769              // fill in the txd
+    770              offset = connsys_util_create_inband_cmd_txd_rom(cmd_len, buffer, MT_FW_START_REQ);
+    771          
+    772              // fill in the parameters
+    773              p_data = (P_INIT_CMD_WIFI_START)(buffer + offset);
+    774              p_data->u4Address = 0;
+    775              p_data->u4Override = 0;
+    776              // print_content(tx_len, buffer, "fw download test");
+    777              LOG_HEXDUMP_I(connsys, "fw download test", (const char *)buffer, tx_len);
+    778          
+    779              // send to dut
+    780              LOG_I(connsys, "<<%s>> Send FW_START command ...\n", __FUNCTION__);
+    781              // write connsys_util_fw_download cmd to dut
+    782              ret = connsys_fifo_write(buffer, tx_len);
+    783              if (ret != 0) {
+    784                  // error cuures
+    785                  return;
+    786              }
+    787          
+    788          
+    789              // check tx done and rx0 done interrupt status
+    790              wait_tx_done = 1;
+    791              wait_rx_done = 1;
+    792              counter = 0;
+    793              while (1) {
+    794                  ret = connsys_cr_read(WHISR, &value);
+    795                  if (ret) {
+    796                      LOG_E(connsys, "<<%s>> Read WHISR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    797                      return;
+    798                  }
+    799          
+    800                  //LOG_I(connsys, "<<%s>> WHISR = %08x.\n", __FUNCTION__, value);
+    801          
+    802                  connsys_abnormal_interrupt_check(value);
+    803          
+    804          
+    805                  if (wait_tx_done == 1) {
+    806                      if (value & TX_DONE_INT) {
+    807                          wait_tx_done = 0;
+    808                      }
+    809                  }
+    810          
+    811                  if (wait_rx_done == 1) {
+    812                      if (value & RX0_DONE_INT) {
+    813                          wait_rx_done = 0;
+    814                      }
+    815                  }
+    816          
+    817                  if ((wait_tx_done == 0) && (wait_rx_done == 0)) {
+    818                      break;
+    819                  }
+    820          
+    821                  if (counter > 20000000) { // wait for at least 1 second
+    822                      LOG_E(connsys, "<<%s>> Check interrupt failed. wait_tx_done = %d, wait_tx_done = %d.\n",
+    823                            __FUNCTION__,
+    824                            (int)wait_tx_done,
+    825                            (int)wait_rx_done);
+    826                      return;
+    827                  }
+    828                  //udelay(50); //delay 50us
+    829          
+    830                  counter++;
+    831              }
+    832          
+    833          
+    834              // Rx FW start response
+    835              LOG_I(connsys, "<<%s>> Rx fw download event...\n", __FUNCTION__);
+    836              ret = connsys_cr_read(WRPLR, &value);
+    837              if (ret) {
+    838                  LOG_E(connsys, "<<%s>> Read WRPLR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    839                  return;
+    840              }
+    841          
+    842              valid_rx_len = LEN_FW_DOWNLOAD_EVENT;
+    843              real_rx_len = valid_rx_len;
+    844          
+    845              if (GET_RX0_PACKET_LENGTH(value) != real_rx_len) {
+    846                  LOG_E(connsys, "<<%s>> FW start response length incoreect. WRPLR = %08x.\n",
+    847                        __FUNCTION__,
+    848                        (unsigned int)value);
+    849                  return;
+    850              }
+    851          
+    852              LOG_I(connsys, "<<%s>> Receive FW_START event ...\n", __FUNCTION__);
+    853          
+    854              connsys_fifo_read(WRDR0, buffer, real_rx_len);
+    855              // print_content(real_rx_len, buffer, "fw download test..2");
+    856              LOG_HEXDUMP_I(connsys, "fw download test..2", (const char *)buffer, real_rx_len);
+    857          
+    858              // check event status
+    859              if (connsys_util_fw_download_CmdAddressLenReq_event_check(buffer) != 0) {
+    860                  return;
+    861              }
+    862          
+    863              // polling function ready bit.
+    864              counter = 0;
+    865              while (1) {
+    866                  ret = connsys_cr_read(WCIR, &value);
+    867                  if (ret) {
+    868                      LOG_E(connsys, "<<%s>> Read WCIR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    869                      return;
+    870                  }
+    871          
+    872                  LOG_I(connsys, "<<%s>> WCIR = %08x.\n", __FUNCTION__, (unsigned int)value);
+    873          
+    874                  if (value & W_FUNC_RDY) {
+    875                      break;
+    876                  }
+    877          
+    878                  if (counter > 20000) { // wait for at least 1 second
+    879                      LOG_E(connsys, "<<%s>> Check interrupt failed. wait_tx_done = %d, wait_tx_done = %d.\n",
+    880                            __FUNCTION__,
+    881                            (int)wait_tx_done,
+    882                            (int)wait_rx_done);
+    883                      return;
+    884                  }
+    885                  //udelay(50); //delay 50us
+    886          
+    887                  counter++;
+    888              }
+    889              LOG_I(connsys, "<<%s>> FW Download Successfully.\n", __FUNCTION__);
+    890          }
+    891          
+    892          uint8_t connsys_get_patch_semaphore(void)
+    893          {
+    894              uint8_t err = 1, wait_tx_done, wait_rx_done, get_semaphore, status;
+    895              uint32_t cmd_len, tx_len, offset, counter, value, valid_rx_len, get_patch_delay;
+    896              P_INIT_CMD_PATCH_SEMA_CTRL p_data;
+    897              ssize_t ret;
+    898              uint8_t buffer[SDIO_MAX_RW_SIZE];
+    899          
+    900              cmd_len = sizeof(INIT_HIF_TX_HEADER_T) + sizeof(INIT_CMD_PATCH_SEMA_CTRL);
+    901              tx_len = LEN_SDIO_TX_AGG_WRAPPER(cmd_len);
+    902          
+    903              memset(buffer, 0, tx_len);
+    904          
+    905              get_semaphore = 1;
+    906              get_patch_delay = 0;
+    907              while (get_semaphore) {
+    908                  // fill in the txd
+    909                  offset = connsys_util_create_inband_cmd_txd_rom(cmd_len, buffer, MT_PATCH_SEM_CONTROL);
+    910          
+    911                  // fill in the parameters
+    912                  p_data = (P_INIT_CMD_PATCH_SEMA_CTRL)(buffer + offset);
+    913                  p_data->ucGetSemaphore = 1; //get semaphore
+    914                  // print_content(tx_len, buffer, "get patch semaphore");
+    915                  LOG_HEXDUMP_I(connsys, "get patch semaphore", (const char *)buffer, tx_len);
+    916          
+    917                  // send to dut
+    918                  LOG_I(connsys, "<<%s>> Send Get Patch Semaphore command ...\n", __FUNCTION__);
+    919                  // write connsys_util_fw_download cmd to dut
+    920                  ret = connsys_fifo_write(buffer, tx_len);
+    921                  if (ret != 0) {
+    922                      // error cuures
+    923                      return err;
+    924                  }
+    925          
+    926                  // check tx done and rx0 done interrupt status
+    927                  wait_tx_done = 1;
+    928                  wait_rx_done = 1;
+    929                  counter = 0;
+    930                  while (1) {
+    931                      ret = connsys_cr_read(WHISR, &value);
+    932                      if (ret) {
+    933                          LOG_E(connsys, "<<%s>> Read WHISR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    934                          return err;
+    935                      }
+    936          
+    937                      LOG_I(connsys, "<<%s>> WHISR = %08x.\n", __FUNCTION__, (unsigned int)value);
+    938          
+    939                      connsys_abnormal_interrupt_check(value);
+    940          
+    941          
+    942                      if (wait_tx_done == 1) {
+    943                          if (value & TX_DONE_INT) {
+    944                              wait_tx_done = 0;
+    945                          }
+    946                      }
+    947          
+    948                      if (wait_rx_done == 1) {
+    949                          if (value & RX0_DONE_INT) {
+    950                              wait_rx_done = 0;
+    951                          }
+    952          
+    953          
+    954                          if (value & RX1_DONE_INT) {
+    955                              wait_rx_done = 0;
+    956                          }
+    957                      }
+    958          
+    959                      if ((wait_tx_done == 0) && (wait_rx_done == 0)) {
+    960                          break;
+    961                      }
+    962          
+    963                      if (counter > 20000) { // wait for at least 1 seconds
+    964                          LOG_E(connsys, "<<%s>> Check interrupt failed. wait_tx_done = %d, wait_tx_done = %d.\n",
+    965                                __FUNCTION__,
+    966                                (int)wait_tx_done,
+    967                                (int)wait_rx_done);
+    968                          return err;
+    969                      }
+    970                      //udelay(50); //delay 50us
+    971          
+    972                      counter++;
+    973                  }
+    974          
+    975          
+    976                  // Rx get_patch_semaphore response
+    977                  LOG_I(connsys, "<<%s>> Rx fw download event...\n", __FUNCTION__);
+    978                  ret = connsys_cr_read(WRPLR, &value);
+    979                  if (ret) {
+    980                      LOG_E(connsys, "<<%s>> Read WRPLR failed. Error = %d.\n", __FUNCTION__, (int)ret);
+    981                      return err;
+    982                  }
+    983          
+    984                  valid_rx_len = LEN_GET_PATCH_SEMAPHORE_EVENT;
+    985          
+    986                  if (GET_RX0_PACKET_LENGTH(value) != valid_rx_len) {
+    987                      LOG_E(connsys, "<<%s>> Get patch semaphore response length incoreect. WRPLR = %08x.\n",
+    988                            __FUNCTION__,
+    989                            (unsigned int)value);
+    990                      return err;
+    991                  }
+    992          
+    993                  LOG_I(connsys, "<<%s>> Receive Get patch semaphore event ...\n", __FUNCTION__);
+    994          
+    995                  connsys_fifo_read(WRDR0, buffer, valid_rx_len);
+    996                  // print_content(valid_rx_len, buffer, "get patch semaphore...2");
+    997                  LOG_HEXDUMP_I(connsys, "get patch semaphore...2", (const char *)buffer, valid_rx_len);
+    998          
+    999                  // check event status
+   1000                  if (connsys_util_patch_download_get_semaphore_event_check(buffer, &status)) {
+   1001                      return err;
+   1002                  } else {
+   1003                      if (status == WIFI_PATCH_SEMA_NEED_PATCH_SEMA_FAIL) {
+   1004                          if (get_patch_delay > 20000) {  //wait 1 second
+   1005                              LOG_E(connsys, "<<%s>> FAIL. Get patch semaphore fail.\n", __FUNCTION__);
+   1006                              return err;
+   1007                          }
+   1008          
+   1009                          get_patch_delay += 1;
+   1010                          //udelay(50); //delay 50us
+   1011                      } else if (status == WIFI_PATCH_SEMA_PATCH_DONE_SEMA_IGNORE) {
+   1012                          LOG_E(connsys, "<<%s>> FAIL. Get patch semaphore fail.\n", __FUNCTION__);
+   1013                          get_semaphore = 0;
+   1014          
+   1015                      } else if (status == WIFI_PATCH_SEMA_NEED_PATCH_SEMA_SUCCESS) {
+   1016                          get_semaphore = 0;
+   1017                      } else if (status == WIFI_PATCH_SEMA_RELEASE_SUCCESS) {
+   1018                      }
+   1019                  }
+   1020              }
+   1021          
+   1022              return status;
+   1023          }
+   1024          
+   1025          void connsys_patch_direct_download()
+   1026          {
+   1027              uint32_t data_mode = 0, length = 0;
+   1028              uint8_t status = 0;
+   1029              patch_dl_data_t data;
+   1030              uint8_t *ptr = NULL;
+   1031          
+   1032          #if 0
+   1033              LOG_I(connsys, "<<%s>> The Bin File = %s, ilm_addr = %08x, ilm_tx_len = %x\n",
+   1034                    __FUNCTION__, data->file_name, data->ilm_addr, data->ilm_len);
+   1035          #endif
+   1036          
+   1037              data.image = (uint8_t *)(WIFI_FW_ADDR_IN_FLASH);
+   1038              data.ilm_addr = MT7687_PATCH_START_ADDR;
+   1039          
+   1040              length = *((uint32_t *) & (data.image[0]));
+   1041          
+   1042              data.ilm_len = length - 4 - LEN_PATCH_FILE_HEADER; //??? LEN_4_BYTE_CRC;
+   1043          
+   1044              data_mode |= (((uint32_t)1 << DATA_MODE_BIT_SHFT_NEED_ACK) & DATA_MODE_MASK_NEED_ACK);
+   1045          
+   1046              LOG_I(connsys, "<<%s>> data_mode = %08x\n", __FUNCTION__, (unsigned int)data_mode);
+   1047          
+   1048              // get ownership form firmware
+   1049              if (TRUE == connsys_get_ownership()) {
+   1050                  LOG_I(connsys, "<<%s>> Get ownership ok.\n", __FUNCTION__);
+   1051              } else {
+   1052                  LOG_I(connsys, "<<%s>> Get ownership failed.\n", __FUNCTION__);
+   1053              }
+   1054          
+   1055              // get semaphore
+   1056              status = connsys_get_patch_semaphore();
+   1057              if (status == WIFI_PATCH_SEMA_NEED_PATCH_SEMA_SUCCESS) {
+   1058                  LOG_I(connsys, "<<%s>> Send patch download command...\n", __FUNCTION__);
+   1059          
+   1060                  ptr = &(data.image[4 + LEN_PATCH_FILE_HEADER]);    /* skip total image size */
+   1061                  ptr = (uint8_t *)connsys_img_direct_download(data.ilm_addr, data.ilm_len, (uint32_t)ptr,
+   1062                          data_mode, 0); // data.ilm_encrypt_key_index = 0 , just a dummy for PATCH has no encryption
+   1063                  if (ptr == NULL) {
+   1064                      LOG_E(connsys, "Download PATCH Fail.\n");
+   1065                      return ;
+   1066                  }
+   1067                  // send patch finish command
+   1068                  status = connsys_patch_finish();
+   1069                  if (status) {
+   1070                      LOG_E(connsys, "\n\n\n<<%s>> Patch Download Fail.\n\n\n", __FUNCTION__);
+   1071                      return;
+   1072                  }
+   1073          
+   1074                  LOG_I(connsys, "<<%s>> Patch Direct Download Successfully.\n", __FUNCTION__);
+   1075              } else if (status == WIFI_PATCH_SEMA_PATCH_DONE_SEMA_IGNORE) {
+   1076                  LOG_I(connsys, "<<%s>> Patch has been done, needn't get semaphore.\n", __FUNCTION__);
+   1077              } else if (status == WIFI_PATCH_SEMA_RELEASE_SUCCESS) {
+   1078                  LOG_I(connsys, "<<%s>> Fail! Get semaphore instead of release patch semaphore.\n", __FUNCTION__);
+   1079              } else if (status == WIFI_PATCH_SEMA_NEED_PATCH_SEMA_FAIL) {
+   1080                  LOG_I(connsys, "<<%s>> Fail! Get patch semaphore failed.\n", __FUNCTION__);
+   1081              }
+   1082          
+   1083          }
+   1084          
+   1085          void connsys_set_wifi_profile(sys_cfg_t *config)
+   1086          {
+   1087              g_wifi_profile = config;
+   1088          }
+   1089          
+   1090          void connsys_patch_download_body(const patch_dl_data_t *data)
+   1091          {
+   1092              uint32_t data_mode = 0;
+   1093              uint8_t err = 0;
+   1094              uint8_t status;
+   1095          
+   1096          #if 0
+   1097              LOG_I(connsys, "<<%s>> The Bin File = %s, ilm_addr = %08x, ilm_tx_len = %x\n",
+   1098                    __FUNCTION__, data->file_name, data->ilm_addr, data->ilm_len);
+   1099          #endif
+   1100              data_mode |= (((uint32_t)1 << DATA_MODE_BIT_SHFT_NEED_ACK) & DATA_MODE_MASK_NEED_ACK);
+   1101          
+   1102          
+   1103              LOG_I(connsys, "<<%s>> data_mode = %08x\n", __FUNCTION__, (unsigned int)data_mode);
+   1104          
+   1105              // get ownership form firmware
+   1106              if (TRUE == connsys_get_ownership()) {
+   1107                  LOG_I(connsys, "<<%s>> Get ownership ok.\n", __FUNCTION__);
+   1108              } else {
+   1109                  LOG_I(connsys, "<<%s>> Get ownership failed.\n", __FUNCTION__);
+   1110              }
+   1111          
+   1112              // get semaphore
+   1113              status = connsys_get_patch_semaphore();
+   1114              if (status == WIFI_PATCH_SEMA_NEED_PATCH_SEMA_SUCCESS) {
+   1115          #if (CFG_FPGA == 0)
+   1116                  LOG_I(connsys, "<<%s>> Send patch download command...\n", __FUNCTION__);
+   1117                  err = connsys_util_pda_download(data->ilm_addr, data->ilm_len, data_mode, LEN_PATCH_FILE_HEADER, data->image);
+   1118                  if (err) {
+   1119                      LOG_E(connsys, "\n\n\n<<%s>> Send patch download fail!\n\n\n", __FUNCTION__);
+   1120                      return;
+   1121                  }
+   1122          #endif // CFG_FPGA
+   1123          
+   1124                  // Download N9 wifi profile
+   1125                  if (NULL != g_wifi_profile) {
+   1126                      connsys_download_wifi_profile(g_wifi_profile);
+   1127                  }
+   1128          
+   1129                  // send patch finish command
+   1130                  err = connsys_patch_finish();
+   1131                  if (err) {
+   1132                      LOG_E(connsys, "\n\n\n<<%s>> Patch Download Fail.\n\n\n", __FUNCTION__);
+   1133                      return;
+   1134                  }
+   1135          
+   1136                  LOG_I(connsys, "<<%s>> Patch download Successfully.\n", __FUNCTION__);
+   1137              } else if (status == WIFI_PATCH_SEMA_PATCH_DONE_SEMA_IGNORE) {
+   1138                  LOG_I(connsys, "<<%s>> Patch has been done, needn't get semaphore.\n", __FUNCTION__);
+   1139              } else if (status == WIFI_PATCH_SEMA_RELEASE_SUCCESS) {
+   1140                  LOG_I(connsys, "<<%s>> Fail! Get semaphore instead of release patch semaphore.\n", __FUNCTION__);
+   1141              } else if (status == WIFI_PATCH_SEMA_NEED_PATCH_SEMA_FAIL) {
+   1142                  LOG_I(connsys, "<<%s>> Fail! Get patch semaphore failed.\n", __FUNCTION__);
+   1143              }
+   1144          
+   1145          }
+   1146          
+   1147          
+   1148          patch_header_t *g_patch_info;
+   1149          void connsys_util_get_ncp_patch_ver(char *ver)
+   1150          {
+   1151              memcpy(ver, g_patch_info->built_date, 14);
+   1152          }
+   1153          
+   1154          void connsys_util_patch_download(void)
+   1155          {
+   1156              uint32_t fw_size;
+   1157              patch_dl_data_t data = {
+   1158                  .ilm_addr = MT7687_PATCH_START_ADDR,
+   1159                  .ilm_len  = 0,
+   1160                  .image    = NULL,
+   1161              };
+   1162              LOG_I(connsys, "==> HW ID=0x%x\n", REG32(CM4_CONFIG_BASE));
+   1163          
+   1164              data.image = (uint8_t *)(WIFI_FW_ADDR_IN_FLASH);
+   1165              fw_size = *((uint32_t *)(data.image)); // include 4-byte total_length  itself
+   1166              data.image += fw_size;
+   1167              g_patch_info = (patch_header_t *)(data.image + 4);
+   1168              data.ilm_len = *((uint32_t *)(data.image)); // patch image size, include 4-byte patch length
+   1169              data.ilm_len -= (LEN_PATCH_FILE_HEADER + 4); // 4-byte patch_length
+   1170              data.image   += 4; // patch image start, including header
+   1171              //LOG_I(connsys, "==> PATCH size: %d bytes, build time: %s\n", (int)data.ilm_len,	g_patch_info->built_date);
+   1172          
+   1173              LOG_I(connsys, "patch ilm_addr = %08x, ilm_len = %x.\n", (unsigned int)data.ilm_addr, (unsigned int)data.ilm_len);
+   1174              connsys_patch_download_body(&data);
+   1175          }
+   1176          
+   1177          #if 0
+   1178          #if 1
+   1179          #else
+   1180          uint8_t MT7687_FirmwareImage[] = {0x00}; // for test, avoid LARGE array lead to memory overflow
+   1181          #endif
+   1182          
+   1183          
+   1184          void connsys_util_fw_download()
+   1185          {
+   1186              fw_dl_data_t data;
+   1187              //uint8_t input[128];
+   1188          
+   1189              data.image = MT7687_FirmwareImage;
+   1190              connsys_get_ilm_image_info(&data, sizeof(MT7687_FirmwareImage));
+   1191          
+   1192              // add 4 byte CRC len
+   1193              data.ilm_len += LEN_4_BYTE_CRC;
+   1194              data.dlm_len += LEN_4_BYTE_CRC;
+   1195          
+   1196              LOG_I(connsys, "ilm_addr = %08x, ilm_len = %x, encryt = %d, key_index = %d.\n", data.ilm_addr, data.ilm_len, data.ilm_encrypt, data.ilm_encrypt_key_index);
+   1197              LOG_I(connsys, "dlm_addr = %08x, dlm_len = %x.\n", data.dlm_addr, data.dlm_len);
+   1198          
+   1199              connsys_fw_download((fw_dl_data_t *)&data);
+   1200          }
+   1201          #endif
+   1202          
+   1203          int32_t connsys_util_tx_data(uint8_t *buf, ssize_t len)
+   1204          {
+   1205              int32_t ret;
+   1206          
+   1207          
+   1208          
+   1209              if (CONNSYS_TEST_DEBUG(CONNSYS_DBG_TX_Q0) || CONNSYS_TEST_DEBUG(CONNSYS_DBG_TX_Q1)) {
+   1210                  P_INIT_HIF_TX_HEADER_T p_txd = (P_INIT_HIF_TX_HEADER_T)buf;
+   1211                  if (p_txd->u2PQ_ID == P1_Q0) {
+   1212                      LOG_HEXDUMP_I(connsys, "P1_Q0 tx_buf", (uint8_t *)buf, (uint32_t)len);
+   1213                  } else {
+   1214                      LOG_HEXDUMP_I(connsys, "P1_Q1 tx_buf", (uint8_t *)buf, (uint32_t)len);
+   1215                  }
+   1216              }
+   1217          
+   1218              ret = connsys_fifo_write(buf, len);
+   1219              return ret;
+   1220          }
+   1221          
+   1222          int32_t connsys_util_rx_data(uint8_t *buf, ssize_t len, int32_t port)
+   1223          {
+   1224              ssize_t err = CONNSYS_STATUS_SUCCESS, ret;
+   1225          
+   1226              if (port == WIFI_HIF_RX_PORT0_IDX) {
+   1227                  ret = connsys_fifo_read(WRDR0, buf, len);
+   1228              } else {
+   1229                  ret = connsys_fifo_read(WRDR1, buf, len);
+   1230              }
+   1231          
+   1232              if (ret) {
+   1233                  LOG_E(connsys, "<<%s>> Failed. Rx data, port(0x%x)\n", __FUNCTION__, WRDR1);
+   1234                  err = CONNSYS_STATUS_FAIL;
+   1235              }
+   1236          
+   1237              return err;
+   1238          }
+   1239          
+   1240          #if (CFG_CONNSYS_DVT_RX_ENHANCE_MODE_EN == 1)
+   1241          // return value: total read size
+   1242          int32_t connsys_util_rx_data_enhance_mode(uint8_t *buf, ssize_t *len, int32_t port)
+   1243          {
+   1244          #if defined(__ICCARM__)
+   1245              ATTR_4BYTE_ALIGN uint8_t input[LEN_INT_ENHANCE_MODE];
+   1246          #else
+   1247              uint8_t input[LEN_INT_ENHANCE_MODE] __attribute__((aligned(4)));
+   1248          #endif
+   1249              uint32_t rx_len = 0, addr = WRDR0;
+   1250              uint32_t reg_value = 0;
+   1251              enhance_mode_data_struct_t *p_int_enhance;
+   1252              int32_t i;
+   1253          
+   1254              if (port == 0) {
+   1255                  addr = WRDR0;
+   1256              } else if (port == 1) {
+   1257                  addr = WRDR1;
+   1258              } else {
+   1259                  LOG_E(connsys, "Invalid port:%d\n", port);
+   1260                  return CONNSYS_STATUS_FAIL;
+   1261              }
+   1262          
+   1263              // enable RX enhance mode
+   1264              if (connsys_cr_read(WHCR, &reg_value)) {
+   1265                  LOG_E(connsys, "FAIL. read WHCR.\n");
+   1266                  return CONNSYS_STATUS_FAIL;
+   1267              }
+   1268              reg_value |= RX_ENHANCE_MODE;
+   1269              if (connsys_cr_write(WHCR, reg_value)) {
+   1270                  LOG_E(connsys, "FAIL. write WHCR.\n");
+   1271                  return CONNSYS_STATUS_FAIL;
+   1272              }
+   1273              reg_value = 0;
+   1274              if (connsys_cr_read(WHCR, &reg_value)) {
+   1275                  LOG_E(connsys, "FAIL. read WHCR.\n");
+   1276                  return CONNSYS_STATUS_FAIL;
+   1277              } else {
+   1278                  if (!(reg_value & RX_ENHANCE_MODE)) {
+   1279                      LOG_E(connsys, "FAIL. write RX_ENHANCE_MODE fail. WHCR = 0x%08x.\n", reg_value);
+   1280                      return CONNSYS_STATUS_FAIL;
+   1281                  }
+   1282              }
+   1283              LOG_I(connsys, "Enable enhance mode, WHCR=0x%x\n", reg_value);
+   1284          
+   1285              memset(input, 0, sizeof(input));
+   1286              connsys_fifo_read(WHISR, (uint8_t *)input, LEN_INT_ENHANCE_MODE);
+   1287          
+   1288              p_int_enhance = (enhance_mode_data_struct_t *)input;
+   1289          
+   1290              for (i = 0; i < p_int_enhance->rx_info.u.valid_len_num[port]; i++) {
+   1291                  if (p_int_enhance->rx_info.u.each_rx_len[port][i] == 0) {
+   1292                      LOG_E(connsys, "FAIL. au2Rx[%d]Len[%d] = %d. ()\n", port, i, p_int_enhance->rx_info.u.each_rx_len[port][i]);
+   1293                      continue;
+   1294                  }
+   1295                  rx_len = p_int_enhance->rx_info.u.each_rx_len[port][i];
+   1296                  LOG_I(connsys, "rx len = %d\n", rx_len);
+   1297                  connsys_fifo_read(addr, (uint8_t *)buf, rx_len);
+   1298              }
+   1299              *len = rx_len;
+   1300          
+   1301              return CONNSYS_STATUS_SUCCESS;
+   1302          }
+   1303          
+   1304          #endif /* CFG_CONNSYS_DVT_RX_ENHANCE_MODE_EN */
+   1305          
+   1306          
+   1307          #if (CFG_CONNSYS_TRX_BALANCE_EN == 1)
+   1308          void connnsys_balance_init(void)
+   1309          {
+   1310              uint32_t flags;
+   1311              local_irq_save(flags);
+   1312          
+   1313              memset(&g_balance_ctr, 0, sizeof(connsys_balance_ctr_t));
+   1314              g_balance_ctr.num_of_continuous_rx = CFG_CONNSYS_BALANCE_DEFAULT_RX_NUM;
+   1315              g_balance_ctr.num_of_continuous_tx = CFG_CONNSYS_BALANCE_DEFAULT_TX_NUM;
+   1316              g_balance_ctr.balance_en = FALSE;
+   1317              local_irq_restore(flags);
+   1318          }
+   1319          
+   1320          void connnsys_balance_set_max_num_of_continuous_rx(uint32_t num)
+   1321          {
+   1322              uint32_t flags;
+   1323              local_irq_save(flags);
+   1324              g_balance_ctr.num_of_continuous_rx = num;
+   1325              local_irq_restore(flags);
+   1326          }
+   1327          
+   1328          void connnsys_balance_set_max_num_of_continuous_tx(uint32_t num)
+   1329          {
+   1330              uint32_t flags;
+   1331              local_irq_save(flags);
+   1332              g_balance_ctr.num_of_continuous_tx = num;
+   1333              local_irq_restore(flags);
+   1334          }
+   1335          
+   1336          void connnsys_balance_set_enable(uint32_t enable)
+   1337          {
+   1338              uint32_t flags;
+   1339              local_irq_save(flags);
+   1340              g_balance_ctr.balance_en = (uint8_t)enable;
+   1341              local_irq_restore(flags);
+   1342          }
+   1343          
+   1344          
+   1345          void connnsys_balance_show_info(void)
+   1346          {
+   1347              uint32_t flags;
+   1348              connsys_balance_ctr_t ctr;
+   1349              local_irq_save(flags);
+   1350              memcpy(&ctr, &g_balance_ctr, sizeof(connsys_balance_ctr_t));
+   1351              local_irq_restore(flags);
+   1352          
+   1353              printf("show connsys balance info:\n");
+   1354              printf("\tnum_of_continuous_tx = %u\n", (unsigned int)ctr.num_of_continuous_tx);
+   1355              printf("\tnum_of_continuous_rx = %u\n", (unsigned int)ctr.num_of_continuous_rx);
+   1356              printf("\tnum_of_tx = %u\n", (unsigned int)ctr.num_of_tx);
+   1357              printf("\tnum_of_rx = %u\n", (unsigned int)ctr.num_of_rx);
+   1358              printf("\tfg_tx_wait = %u\n", (unsigned int)ctr.fg_tx_wait);
+   1359              printf("\tfg_rx_wait = %u\n", (unsigned int)ctr.fg_rx_wait);
+   1360              printf("\ttx_yield_time = %u\n", (unsigned int)ctr.tx_yield_time);
+   1361              printf("\trx_yield_time = %u\n", (unsigned int)ctr.rx_yield_time);
+   1362              printf("\ttx_handle = %u\n", (unsigned int)ctr.tx_handle);
+   1363              printf("\trx_handle = %u\n", (unsigned int)ctr.rx_handle);
+   1364              printf("\tbalance_en = %u\n", (unsigned int)ctr.balance_en);
+   1365          }
+   1366          
+   1367          uint8_t connsys_balance_check_tx_yield(void)
+   1368          {
+   1369              uint32_t flags;
+   1370              uint8_t ret = FALSE;
+   1371          
+   1372              local_irq_save(flags);
+   1373              if (g_balance_ctr.fg_rx_wait &&
+   1374                      (g_balance_ctr.num_of_tx >= g_balance_ctr.num_of_continuous_tx)) {
+   1375                  g_balance_ctr.num_of_tx = 0;
+   1376                  g_balance_ctr.fg_tx_wait = TRUE;
+   1377                  g_balance_ctr.tx_yield_time ++;
+   1378                  ret = TRUE;
+   1379              } else {
+   1380                  g_balance_ctr.num_of_tx++;
+   1381                  ret = FALSE;
+   1382              }
+   1383              local_irq_restore(flags);
+   1384              return ret;
+   1385          }
+   1386          
+   1387          void connsys_balance_clear_tx_wait(void)
+   1388          {
+   1389              uint32_t flags;
+   1390              local_irq_save(flags);
+   1391              g_balance_ctr.fg_tx_wait = FALSE;
+   1392              local_irq_restore(flags);
+   1393          }
+   1394          
+   1395          uint8_t connsys_balance_check_rx_yield(void)
+   1396          {
+   1397              uint32_t flags;
+   1398              uint8_t ret = FALSE;
+   1399          
+   1400          
+   1401              if (g_balance_ctr.balance_en == FALSE) {
+   1402                  return FALSE;
+   1403              }
+   1404          
+   1405              local_irq_save(flags);
+   1406              if (g_balance_ctr.fg_tx_wait &&
+   1407                      (g_balance_ctr.num_of_rx >= g_balance_ctr.num_of_continuous_rx)) {
+   1408                  g_balance_ctr.num_of_rx = 0;
+   1409                  g_balance_ctr.rx_yield_time ++;
+   1410                  ret = TRUE;
+   1411              } else {
+   1412                  g_balance_ctr.num_of_rx++;
+   1413                  ret = FALSE;
+   1414              }
+   1415              local_irq_restore(flags);
+   1416              return ret;
+   1417          }
+   1418          
+   1419          void connsys_balance_clear_rx_wait(void)
+   1420          {
+   1421              uint32_t flags;
+   1422              local_irq_save(flags);
+   1423              g_balance_ctr.fg_rx_wait = FALSE;
+   1424              local_irq_restore(flags);
+   1425          }
+   1426          
+   1427          
+   1428          #endif /* CFG_CONNSYS_TRX_BALANCE_EN */
+   1429          
+   1430          
+   1431          void connsys_intr_enhance_mode_dump_struct(enhance_mode_data_struct_t *p_enhance_mode_struct)
+   1432          {
+   1433              uint32_t i, j;
+   1434              printf("==>connsys_intr_enhance_mode_dump_struct\n");
+   1435              printf("WHISR_reg_val = 0x%x\n", (unsigned int)p_enhance_mode_struct->WHISR_reg_val);
+   1436              printf("TX:");
+   1437              for (i = 0; i < NUM_OF_WIFI_TXQ; i++) {
+   1438                  printf("\ttx_info.u.free_page_num[%u] = %u\n",
+   1439                         (unsigned int)i,
+   1440                         (unsigned int)p_enhance_mode_struct->tx_info.u.free_page_num[i]);
+   1441              }
+   1442          
+   1443              printf("RX:");
+   1444              for (i = 0; i < NUM_OF_WIFI_HIF_RX_PORT; i++) {
+   1445                  printf("Port %u\n", (unsigned int)i);
+   1446                  printf("\tvalid_len_num: %u\n",
+   1447                         (unsigned short)p_enhance_mode_struct->rx_info.u.valid_len_num[i]);
+   1448          
+   1449                  printf("\teach_rx_len:\n");
+   1450                  for (j = 0; j < WIFI_HIF_RX_FIFO_MAX_LEN; j++) {
+   1451                      printf("\t[%2u]: %8u", (unsigned int)j, (unsigned short)p_enhance_mode_struct->rx_info.u.each_rx_len[i][j]);
+   1452                      if ((j % 4) == 3) {
+   1453                          printf("\n");
+   1454                      }
+   1455                  }
+   1456              }
+   1457              printf("receive_mail_box_0 = 0x%x\n", (unsigned int)p_enhance_mode_struct->receive_mail_box_0);
+   1458              printf("receive_mail_box_1 = 0x%x\n", (unsigned int)p_enhance_mode_struct->receive_mail_box_1);
+   1459          }
+   1460          
+   1461          void connsys_util_intr_enhance_mode_dump_last_struct(void)
+   1462          {
+   1463              connsys_intr_enhance_mode_dump_struct(&g_last_enhance_mode_data_struct);
+   1464          }
+   1465          
+   1466          
+   1467          uint8_t rssi_threshold_enable = 0;
+   1468          int8_t rssi_threshold = 0;
+   1469          
+   1470          uint8_t raw_packet_handler_enabled(void)
+   1471          {
+   1472              return (connsys_raw_handler != NULL);
+   1473          }
+   1474          
+   1475          void wifi_set_raw_rssi_threshold(uint8_t enable, int8_t rssi)
+   1476          {
+   1477              rssi_threshold_enable = enable;
+   1478              rssi_threshold = rssi;
+   1479          }
+   1480          
+   1481          void wifi_get_raw_rssi_threshold(uint8_t *enable, int8_t *rssi)
+   1482          {
+   1483              *enable = rssi_threshold_enable;
+   1484              *rssi = rssi_threshold;
+   1485          }
+   1486          
+   1487          uint32_t get_rx_vector(uint8_t group_vld)
+   1488          {
+   1489              uint32_t grp3_offset = 0;
+   1490          
+   1491              // RX Status Group
+   1492              grp3_offset = sizeof(HW_MAC_RX_DESC_T);
+   1493              if (group_vld & BIT(RX_GROUP_VLD_4)) {
+   1494                  grp3_offset += sizeof(HW_MAC_RX_STS_GROUP_4_T);
+   1495              }
+   1496              if (group_vld & BIT(RX_GROUP_VLD_1)) {
+   1497                  grp3_offset += sizeof(HW_MAC_RX_STS_GROUP_1_T);
+   1498              }
+   1499              if (group_vld & BIT(RX_GROUP_VLD_2)) {
+   1500                  grp3_offset += sizeof(HW_MAC_RX_STS_GROUP_2_T);
+   1501              }
+   1502              if (group_vld & BIT(RX_GROUP_VLD_3)) {
+   1503                  return (uint32_t)grp3_offset;
+   1504              } else {
+   1505                  return 0;
+   1506              }
+   1507          }
+   1508          
+   1509          int32_t check_raw_pkt_rssi_threshold(uint8_t *payload, uint32_t len)
+   1510          {
+   1511              if (rssi_threshold_enable == 0) {
+   1512                  return 0;
+   1513              }
+   1514          
+   1515              int32_t ret = 0;
+   1516              P_HW_MAC_RX_STS_GROUP_3_T grp3;
+   1517              uint32_t grp3_offset = 0;
+   1518              int8_t rssi_info;
+   1519              uint8_t grp_vld;
+   1520          
+   1521              /* grp3_offset = get_rx_vector(((*(first_dw)) >> 25) & 0xf);
+   1522               * same to the following two line
+   1523               */
+   1524              grp_vld = HAL_RX_STATUS_GET_GROUP_VLD((P_HW_MAC_RX_DESC_T)payload);
+   1525              grp3_offset = get_rx_vector(grp_vld);
+   1526              if (grp3_offset != 0) {
+   1527                  grp3 = (P_HW_MAC_RX_STS_GROUP_3_T)(payload + grp3_offset);
+   1528                  /* RSSI = RCPI/2 - 110
+   1529                   * rssi_info = ((((grp3[2]) >> 9) & 0x7f) - 110) & 0xff;
+   1530                   * The same to the following line code
+   1531                   */
+   1532                  rssi_info = (((HAL_RX_STATUS_GET_RCPI(grp3) >> 1) & 0x7f) - 110) & 0xff;
+   1533              } else {
+   1534                  rssi_info = -110;
+   1535              }
+   1536          
+   1537              /*
+   1538                  hex_dump("pkt rssi:", payload, grp3_offset+40);
+   1539                  if(grp3_offset != 0){
+   1540                      hex_dump("grp3:", grp3, sizeof(HW_MAC_RX_STS_GROUP_3_T));
+   1541                  }
+   1542                  printf("rssi:%d\n", rssi_info);
+   1543                  */
+   1544          
+   1545              if (rssi_info < rssi_threshold) {
+   1546                  ret = -1;
+   1547              }
+   1548          
+   1549              return ret;
+   1550          }
+   1551          
+   1552          #if 0
+   1553          typedef struct __pkt_lock_tickless {
+   1554              struct os_time timeout;
+   1555              int32_t pkt_rcv_num_in_sec;
+   1556              uint8_t lock_status;
+   1557              uint8_t sleep_lock;
+   1558          } pkt_lock_tickless_t;
+   1559          
+   1560          static pkt_lock_tickless_t pkt_lock;
+   1561          
+   1562          static void reset_pkt_lock_status(uint8_t status, struct os_time *timeout_value)
+   1563          {
+   1564              struct os_time current;
+   1565          
+   1566              os_get_time(&current);
+   1567              if (timeout_value) {
+   1568                  pkt_lock.timeout.sec = current.sec + timeout_value->sec;
+   1569                  pkt_lock.timeout.usec = current.usec + timeout_value->usec;
+   1570              } else {
+   1571                  pkt_lock.timeout.sec = current.sec + 1;
+   1572              }
+   1573          
+   1574              pkt_lock.lock_status = status;
+   1575              pkt_lock.pkt_rcv_num_in_sec = 0;
+   1576          }
+   1577          
+   1578          
+   1579          static void enter_pkt_lock(void)
+   1580          {
+   1581              LOG_I(lwip, "enter lock\n");
+   1582          
+   1583              reset_pkt_lock_status(1, NULL);
+   1584              //hal_sleep_manager_lock_sleep(pkt_lock.sleep_lock);
+   1585              wifi_lock_sleep(pkt_lock.sleep_lock);
+   1586          }
+   1587          
+   1588          static void exit_pkt_lock(void)
+   1589          {
+   1590              LOG_I(lwip, "unlock\n");
+   1591          
+   1592              reset_pkt_lock_status(0, NULL);
+   1593              //hal_sleep_manager_unlock_sleep(pkt_lock.sleep_lock);
+   1594              wifi_unlock_sleep(pkt_lock.sleep_lock);
+   1595          }
+   1596          
+   1597          static void inc_pkt_rcv_num(void)
+   1598          {
+   1599              pkt_lock.pkt_rcv_num_in_sec++;
+   1600          
+   1601              if (pkt_lock.lock_status == 0) {
+   1602                  if (pkt_lock.pkt_rcv_num_in_sec >= 16) {
+   1603                      enter_pkt_lock();
+   1604                  }
+   1605              }
+   1606          }
+   1607          
+   1608          static void extend_pkt_lock_time(struct os_time *timeout_value)
+   1609          {
+   1610              LOG_I(lwip, "extend lock");
+   1611              reset_pkt_lock_status(1, timeout_value);
+   1612          }
+   1613          
+   1614          int32_t pkt_lock_init(struct os_time *timeout_value)
+   1615          {
+   1616              struct os_time current;
+   1617          
+   1618              memset(&pkt_lock, 0, sizeof(pkt_lock));
+   1619              pkt_lock.sleep_lock = 0xff;
+   1620              os_get_time(&current);
+   1621          
+   1622              if (timeout_value) {
+   1623                  pkt_lock.timeout.sec = current.sec + timeout_value->sec;
+   1624                  pkt_lock.timeout.usec = current.usec + timeout_value->usec;
+   1625              } else {
+   1626                  pkt_lock.timeout.sec = current.sec + 1;
+   1627              }
+   1628          
+   1629              //pkt_lock.sleep_lock = hal_sleep_manager_set_sleep_handle("pkt_lock");
+   1630              pkt_lock.sleep_lock = wifi_set_sleep_handle("pkt_lock");
+   1631              if (pkt_lock.sleep_lock == 0xff) {
+   1632                  return -1;
+   1633              }
+   1634          
+   1635              LOG_I(lwip, "sleep lock:%d\n", pkt_lock.sleep_lock);
+   1636          
+   1637              return 0;
+   1638          }
+   1639          
+   1640          static void pkt_lock_timer_handler(void)
+   1641          {
+   1642              if (pkt_lock.lock_status != 0) {
+   1643                  if (pkt_lock.pkt_rcv_num_in_sec > 16) {
+   1644                      extend_pkt_lock_time(NULL);
+   1645                  } else {
+   1646                      exit_pkt_lock();
+   1647                  }
+   1648              }  else {
+   1649                  if (pkt_lock.pkt_rcv_num_in_sec >= 16) {
+   1650                      enter_pkt_lock();
+   1651                  } else {
+   1652                      reset_pkt_lock_status(0, NULL);
+   1653                      LOG_I(lwip, "continue unlock\n");
+   1654                  }
+   1655              }
+   1656          }
+   1657          
+   1658          #define my_time_before(a, b) \
+   1659          	((a)->sec < (b)->sec || \
+   1660          	 ((a)->sec == (b)->sec && (a)->usec < (b)->usec))
+   1661          
+   1662          static void check_pkt_lock(void)
+   1663          {
+   1664              struct os_time now;
+   1665              uint32_t idx;
+   1666          
+   1667              /*for debug
+   1668              if(pkt_lock.pkt_rcv_num_in_sec == 0){
+   1669                  enter_pkt_lock();
+   1670              }
+   1671          
+   1672              if(idx = hal_sleep_manager_get_lock_status())
+   1673                  LOG_E(lwip,"lock status:%d\n", idx);
+   1674              else
+   1675                  LOG_E(lwip,"unlock status\n");
+   1676                  */
+   1677          
+   1678              inc_pkt_rcv_num();
+   1679          
+   1680              os_get_time(&now);
+   1681              if (my_time_before(&pkt_lock.timeout, &now)) {
+   1682                  pkt_lock_timer_handler();
+   1683              }
+   1684          }
+   1685          #endif
+   1686          
+   1687          void connsys_set_rxraw_handler(wifi_rx_handler_t handler)
+   1688          {
+   1689              connsys_raw_handler = handler;
+   1690          }
+   1691          
+   1692          int32_t wifi_util_get_inf_number(uint8_t *buf)
+   1693          {
+   1694              P_INIT_WIFI_EVENT_T header = (P_INIT_WIFI_EVENT_T)(buf);
+   1695              if ((header->aucReserved[0] & IOT_INF_MASK) == IOT_PACKET_TYPE_INF_1) {
+   1696                  return 1;
+   1697              }
+   1698          
+   1699              return 0;
+   1700          }
+   1701          
+   1702          void connsys_dispatch(void *pkt, uint8_t *payload, int port, unsigned int len)
+   1703          {
+   1704              if (pkt == NULL || payload == NULL) {
+   1705                  return;
+   1706              }
+   1707          
+   1708              PKT_HANDLE_RESULT_T handled = PKT_HANDLE_NON_COMPLETE;
+   1709              WIFI_EVENT_DATA_PORT_T *wifi_event_hdr = (WIFI_EVENT_DATA_PORT_T *)payload;
+   1710              unsigned int packet_total_offset;
+   1711          
+   1712              if (pkt != NULL) {
+   1713          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1714                  if (CONNSYS_TEST_DEBUG(CONNSYS_DBG_RX)) {
+   1715                      DBG_CONNSYS(CONNSYS_DBG_RX, ("\n== Connsys_RX Start ==:\n"));
+   1716                      DBG_CONNSYS(CONNSYS_DBG_RX, ("pkt = 0x%x, port = %d, len = %u\n",
+   1717                                                   (unsigned int)pkt,
+   1718                                                   (int)port,
+   1719                                                   (unsigned int)len));
+   1720                      DBG_CONNSYS(CONNSYS_DBG_RX, ("wifi_event_hdr:\n"));
+   1721                      DBG_CONNSYS(CONNSYS_DBG_RX, ("\tu2Length = 0x%x, u2PktTypeID = 0x%x, ucPacketOffset = 0x%x\n",
+   1722                                                   wifi_event_hdr->u2Length,
+   1723                                                   wifi_event_hdr->u2PktTypeID,
+   1724                                                   wifi_event_hdr->ucPacketOffset));
+   1725                  }
+   1726          #endif
+   1727          
+   1728                  if (len >= WIFI_HIF_HEADER_LEN) {
+   1729          
+   1730                      if (port == WIFI_HIF_RX_PORT0_IDX) {
+   1731                          /* cmd packet */
+   1732                          if (connsys_ops && connsys_ops->deliver_inband) {
+   1733                              handled = connsys_ops->deliver_inband(pkt, payload, len);
+   1734                          }
+   1735                      } else {
+   1736                          /* data packet */
+   1737          
+   1738                          //check_pkt_lock();
+   1739                          if (connsys_raw_handler != NULL) {
+   1740                              if (check_raw_pkt_rssi_threshold(payload, len) < 0) {
+   1741                                  handled = PKT_HANDLE_COMPLETE;
+   1742                                  goto complete;
+   1743                              }
+   1744                              handled = (PKT_HANDLE_RESULT_T)!!(*connsys_raw_handler)(payload, len);
+   1745                              if (handled == PKT_HANDLE_COMPLETE) {
+   1746                                  goto complete;
+   1747                              }
+   1748                          }
+   1749          
+   1750                          if (handled != PKT_HANDLE_COMPLETE) {
+   1751          #if (CFG_CONNSYS_IOT_RX_ZERO_COPY_EN == 1)
+   1752                              packet_total_offset = WIFI_HIF_HEADER_LEN + wifi_event_hdr->ucPacketOffset;
+   1753          #else
+   1754                              packet_total_offset = WIFI_HIF_HEADER_LEN;
+   1755          #endif
+   1756          #if defined(MTK_BSP_LOOPBACK_ENABLE)
+   1757                              if (g_loopback_start) {
+   1758                                  static unsigned int cnt = 0;
+   1759                                  static unsigned int now = 0, start = 0;
+   1760                                  cnt += (len - (WIFI_HIF_HEADER_LEN + wifi_event_hdr->aucReserved2[0]));
+   1761                                  if (now == 0) {
+   1762                                      now = GPT_return_current_count(2); //DRV_Reg32(0x83050068);
+   1763                                      start = GPT_return_current_count(2); //DRV_Reg32(0x83050068);
+   1764                                  }
+   1765                                  if (cnt > 1024000) {
+   1766                                      now = GPT_return_current_count(2); //DRV_Reg32(0x83050068);
+   1767                                      LOG_I(connsys, "[LB] %d bytes, %d ms, %d Mbps\n", (int)cnt, (now - start) / 32, (int)((cnt * 8) * 32 / (now - start) / 1000));
+   1768                                      start = now;
+   1769                                      cnt = 0;
+   1770                                  }
+   1771                                  packet_total_offset = WIFI_HIF_HEADER_LEN + wifi_event_hdr->aucReserved2[0]; // Use TX offset field, due to loopback
+   1772                              }
+   1773          #endif // MTK_BSP_LOOPBACK_ENABLE
+   1774          
+   1775                              if (len >= packet_total_offset) {
+   1776                                  int inf = 0;
+   1777                                  inf = wifi_util_get_inf_number(payload);
+   1778          
+   1779                                  /* skip HIF header 3DW = 12 bytes */
+   1780                                  connsys_ops->advance_pkt_hdr(pkt, packet_total_offset);
+   1781                                  connsys_ops->deliver_tcpip(pkt, payload, len, inf);
+   1782                              } else {
+   1783                                  LOG_HEXDUMP_I(connsys, "len is less than WIFI HIF RX offset", payload, len);
+   1784                                  handled = PKT_HANDLE_COMPLETE;
+   1785                              }
+   1786                          }
+   1787                      }
+   1788                  } else {
+   1789                      LOG_I(connsys, "WARN! len is less than WIFI HIF header length.\n");
+   1790                      handled = PKT_HANDLE_COMPLETE;
+   1791                  }
+   1792              }
+   1793          
+   1794          complete:
+   1795              if (handled == PKT_HANDLE_COMPLETE) {
+   1796                  connsys_ops->free(pkt);
+   1797              }
+   1798          }
+   1799          
+   1800          void connsys_intr_enhance_mode_receive_one_data(int32_t port, int16_t rx_len)
+   1801          {
+   1802              void *pkt_ptr = NULL;
+   1803              uint8_t *payload_ptr = NULL;
+   1804              uint32_t read_len = 0, addr = WRDR1;
+   1805          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1806              uint32_t flags;
+   1807              static uint32_t continuous_allocate_fail_cnt = 0;
+   1808          #endif
+   1809          
+   1810              if (port == WIFI_HIF_RX_PORT0_IDX) {
+   1811                  addr = WRDR0;
+   1812              }
+   1813          
+   1814              read_len = rx_len + WIFI_HIF_RX_CS_OFFLOAD_STATUS_LEN;
+   1815          
+   1816          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1817              if (rx_len > CONNSYS_MAX_RX_PKT_SIZE) {
+   1818                  DBG_CONNSYS(CONNSYS_DBG_RX,
+   1819                              ("WARN! connsys: receive too large pkt, rx_len = %u\n", rx_len));
+   1820          
+   1821                  /* Driver must read the RX0/1 data completely reported by
+   1822                     interrupt enhance mode. No interrupt is trigger again for
+   1823                     the remaining packets.
+   1824                   */
+   1825                  local_irq_save(flags);
+   1826                  g_connsys_stat.rx_port[port].rx_invalid_sz_packet_cnt++;
+   1827                  if (rx_len > g_connsys_stat.rx_port[port].rx_max_invalid_sz) {
+   1828                      g_connsys_stat.rx_port[port].rx_max_invalid_sz = rx_len;
+   1829                  }
+   1830                  local_irq_restore(flags);
+   1831                  connsys_bus_read_port_garbage(addr, read_len);
+   1832                  return;
+   1833              }
+   1834          #endif
+   1835          
+   1836              //g_connsys_callback_func.allocate_pkt_callback(CONNSYS_MAX_RX_PKT_SIZE, &pkt_ptr, &payload_ptr);
+   1837              connsys_ops->alloc(read_len, &pkt_ptr, &payload_ptr);
+   1838              if (pkt_ptr != NULL) {
+   1839                  connsys_fifo_read(addr, payload_ptr, read_len);
+   1840          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1841                  continuous_allocate_fail_cnt = 0;
+   1842          #endif
+   1843              } else {
+   1844          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1845                  DBG_CONNSYS(CONNSYS_DBG_RX, ("WARN! connsys: can't allocate buffer\n"));
+   1846                  /* Driver must read the RX0/1 data completely reported by
+   1847                     interrupt enhance mode. No interrupt is trigger again for
+   1848                     the remaining packets.
+   1849                   */
+   1850                  continuous_allocate_fail_cnt ++;
+   1851                  if ((continuous_allocate_fail_cnt > CFG_CONNSYS_CONTINOUS_ALLOCATE_FAIL_PRINT_CNT_VAL) &&
+   1852                          (continuous_allocate_fail_cnt % CFG_CONNSYS_CONTINOUS_ALLOCATE_FAIL_PRINT_CNT_VAL == 1))
+   1853                      LOG_E(connsys, "WARN! connsys: can't allocate buffer for %u times, %u bytes\n",
+   1854                            (unsigned int)continuous_allocate_fail_cnt, read_len);
+   1855          
+   1856          #endif
+   1857                  connsys_bus_read_port_garbage(addr, read_len);
+   1858          
+   1859          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1860                  local_irq_save(flags);
+   1861                  g_connsys_stat.rx_port[port].rx_allocate_fail_cnt ++;
+   1862                  local_irq_restore(flags);
+   1863          #endif
+   1864                  return;
+   1865              }
+   1866          
+   1867              connsys_dispatch(pkt_ptr, payload_ptr, port, rx_len);
+   1868          
+   1869          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1870              local_irq_save(flags);
+   1871              g_connsys_stat.rx_port[port].rx_packet_cnt ++;
+   1872              local_irq_restore(flags);
+   1873          #endif
+   1874          }
+   1875          
+   1876          
+   1877          int32_t connsys_util_intr_enhance_mode_receive_data(void)
+   1878          {
+   1879              uint32_t cr_whisr;
+   1880              uint32_t cr_wrplr;
+   1881              uint32_t rx_len;
+   1882              int32_t  port;
+   1883              ssize_t  err;
+   1884              uint32_t retry;
+   1885          
+   1886              rx_len = 0;
+   1887              retry = 0;
+   1888              err = 0;
+   1889          
+   1890          #if (CFG_CONNSYS_MEASURE_INT_TIME_EN == 1)
+   1891              connsys_measure_time_set(2);
+   1892          #endif
+   1893          
+   1894              // 0. Disable Interrupt
+   1895              connsys_disable_interrupt();       //connsys_cr_write(WHLPCR, W_INT_EN_CLR)
+   1896              connsys_disable_whier_trx_int();   //WHIER, val &= ~(TX_DONE_INT_EN | RX0_DONE_INT_EN | RX1_DONE_INT_EN);
+   1897          
+   1898              // 1. Packet Process
+   1899              while (retry < 10)
+   1900                  //while (retry<rtry_level)
+   1901              {
+   1902                  // Read WHISR to Check Interrupt/TX/RX Status
+   1903                  connsys_cr_read(WHISR, &cr_whisr);
+   1904                  if (cr_whisr == 0) {
+   1905                      if (!retry) {
+   1906                          LOG_E(connsys, "WHISR=0x%x, abort...\n", (unsigned int)cr_whisr);
+   1907                      }
+   1908          
+   1909                      // Enable Interrupt
+   1910                      connsys_enalbe_whier_tx_int();
+   1911                      connsys_enalbe_whier_rx_int();
+   1912                      connsys_enable_interrupt();
+   1913                      return (retry) ? CONNSYS_STATUS_SUCCESS : CONNSYS_STATUS_FAIL;
+   1914                  }
+   1915          
+   1916          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1917                  if (cr_whisr & ABNORMAL_INT) {
+   1918                      uint32_t reg1, reg2;
+   1919          
+   1920                      connsys_cr_read(WASR, &reg1);
+   1921                      connsys_cr_read(WASR2, &reg2);
+   1922          
+   1923                      g_connsys_stat.number_of_abnormal_int ++;
+   1924          
+   1925                      LOG_E(connsys, "Abnormal Interrupt: WASR(0x%x), WASR2(0x%x)\n", (unsigned int)reg1, (unsigned int)reg2);
+   1926                  }
+   1927          
+   1928                  if (cr_whisr & FW_OWN_BACK_INT) {
+   1929                      uint32_t reg1;
+   1930                      connsys_cr_read(WASR, &reg1);
+   1931                      g_connsys_stat.number_of_fw_own_back ++;
+   1932                      //LOG_I(connsys,"FW_OWN_BACK_INT: WASR(0x%x)\n", (unsigned int)reg1);
+   1933                  }
+   1934          #endif
+   1935          
+   1936                  // Update TX Status
+   1937                  if (cr_whisr & TX_DONE_INT) {
+   1938          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1939                      g_connsys_stat.num_of_tx_int ++;
+   1940          #endif
+   1941                      connsys_tx_flow_control_update_free_page_cnt();
+   1942                  }
+   1943          
+   1944                  // Process RX0/RX1 Packets
+   1945                  if (cr_whisr & (RX0_DONE_INT | RX1_DONE_INT)) {
+   1946          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1947                      g_connsys_stat.num_of_rx_int ++;
+   1948          #endif
+   1949                      while (1) {
+   1950                          // Read Port Select
+   1951                          if (cr_whisr & RX0_DONE_INT) {
+   1952                              port = WIFI_HIF_RX_PORT0_IDX;
+   1953                              cr_whisr &= ~RX0_DONE_INT;
+   1954                          } else if (cr_whisr & RX1_DONE_INT) {
+   1955                              port = WIFI_HIF_RX_PORT1_IDX;
+   1956                              cr_whisr &= ~RX1_DONE_INT;
+   1957                          } else {
+   1958                              break;
+   1959                          }
+   1960          
+   1961                          // Read Packet Length
+   1962                          err = connsys_cr_read(WRPLR, &cr_wrplr);
+   1963                          if (!err) {
+   1964                              rx_len = (port == WIFI_HIF_RX_PORT0_IDX) ? GET_RX0_PACKET_LENGTH(cr_wrplr) : GET_RX1_PACKET_LENGTH(cr_wrplr);
+   1965                          }
+   1966          
+   1967                          if (err || !rx_len) {
+   1968          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   1969                              g_connsys_stat.rx_port[port].rx_error_cnt++;
+   1970          #endif
+   1971                              //LOG_hal_fatal( "<<%s>> Read WRPLR failed. Error = %d.\n", __FUNCTION__, (int)err);
+   1972                              printf("<<%s>> Read WRPLR failed. Error = %d.\n", __FUNCTION__, (int)err);
+   1973                              return CONNSYS_STATUS_FAIL;
+   1974                          }
+   1975          
+   1976                          // Read Packet Data
+   1977                          connsys_intr_enhance_mode_receive_one_data(port, rx_len);
+   1978          
+   1979                          //#if (CFG_CONNSYS_MEASURE_INT_TIME_EN == 1)
+   1980                          //    connsys_measure_time_set_pkt_time(port, i);
+   1981                          //#endif
+   1982                      }
+   1983                  } else {
+   1984                      break;
+   1985                  }
+   1986                  retry++;
+   1987              }
+   1988          
+   1989          #if (CFG_CONNSYS_MEASURE_INT_TIME_EN == 1)
+   1990              connsys_measure_time_set(3);
+   1991              connsys_measure_time_finish();
+   1992          #endif
+   1993          
+   1994              // Enable Interrupt
+   1995              connsys_enalbe_whier_tx_int();
+   1996              connsys_enalbe_whier_rx_int();
+   1997              connsys_enable_interrupt();
+   1998          
+   1999          #if (CFG_CONNSYS_TRX_BALANCE_EN == 1)
+   2000              connsys_balance_clear_rx_wait();
+   2001          #endif
+   2002          
+   2003              return CONNSYS_STATUS_SUCCESS;
+   2004          }
+   2005          
+   2006          
+   2007          int32_t connsys_util_low_level_output(uint8_t *buf, ssize_t len, int32_t inf_num)
+   2008          {
+   2009          #if defined(__ICCARM__)
+   2010              ATTR_4BYTE_ALIGN static uint8_t connsys_tx_buf[SDIO_TX_OUTPUT_BUF_SIZE];
+   2011          #else
+   2012              static uint8_t connsys_tx_buf[SDIO_TX_OUTPUT_BUF_SIZE] __attribute__((aligned(4)));
+   2013          #endif
+   2014          
+   2015              uint8_t *tx_buf = connsys_tx_buf;
+   2016              uint8_t fg_need_copy = TRUE;
+   2017              uint32_t real_tx_len, tx_len;
+   2018              uint32_t clear_len;
+   2019              P_INIT_HIF_TX_HEADER_T p_txd;
+   2020              int32_t ret = CONNSYS_STATUS_SUCCESS;
+   2021          
+   2022          #if (CFG_CONNSYS_TXD_PAD_SIZE != 0)
+   2023              if (IS_NOT_ALIGN_4((uint32_t)buf) && (g_connsys_func.use_dma)) {
+   2024                  tx_buf = connsys_tx_buf;
+   2025                  fg_need_copy = TRUE;
+   2026              } else {
+   2027                  tx_buf = buf;
+   2028                  fg_need_copy = FALSE;
+   2029              }
+   2030          
+   2031          #endif
+   2032          
+   2033              DBG_CONNSYS(CONNSYS_DBG_TX_Q1, ("fg_need_copy = %u\n",
+   2034                                              (unsigned int)fg_need_copy));
+   2035          
+   2036              tx_len = len + sizeof(INIT_HIF_TX_HEADER_T);
+   2037              real_tx_len = ALIGN_4BYTE(tx_len);
+   2038          
+   2039              if (real_tx_len > SDIO_TX_OUTPUT_BUF_SIZE) {
+   2040                  return CONNSYS_STATUS_FAIL;
+   2041              }
+   2042          
+   2043              clear_len = real_tx_len + WIFI_HIF_TX_BYTE_CNT_LEN;
+   2044              if (clear_len > SDIO_TX_OUTPUT_BUF_SIZE) {
+   2045                  clear_len = SDIO_TX_OUTPUT_BUF_SIZE;
+   2046              }
+   2047              memset(tx_buf, 0, sizeof(INIT_HIF_TX_HEADER_T));
+   2048          
+   2049              /*
+   2050               * tx_buf = INIT_HIF_TX_HEADER + packet_data
+   2051               */
+   2052              p_txd = (P_INIT_HIF_TX_HEADER_T)tx_buf;
+   2053              p_txd->u2TxByteCount = tx_len;
+   2054              p_txd->u2PQ_ID = P1_Q1;
+   2055              p_txd->rInitWifiCmd.ucPktTypeID = PKT_ID_CMD;
+   2056          
+   2057              if (inf_num == IOT_PACKET_TYPE_INF_1_IDX) {
+   2058                  p_txd->rInitWifiCmd.ucReserved = IOT_PACKET_TYPE_INF_1;
+   2059              } else {
+   2060                  p_txd->rInitWifiCmd.ucReserved = IOT_PACKET_TYPE_INF_0;
+   2061              }
+   2062          
+   2063          
+   2064              if (fg_need_copy) {
+   2065                  /* Fill in packet data */
+   2066                  memmove(p_txd->rInitWifiCmd.aucBuffer, buf, len);
+   2067              }
+   2068          
+   2069              memset((void *)((unsigned int)tx_buf + tx_len), 0, clear_len - tx_len);
+   2070          
+   2071              {
+   2072                  signed int flow_control_status;
+   2073                  flow_control_status =
+   2074                      connsys_tx_flow_control_check_and_update_tx(WIFI_HIF_TX_PORT_IDX, real_tx_len);
+   2075          
+   2076                  if (flow_control_status == CONNSYS_STATUS_SUCCESS) {
+   2077                      ret = connsys_util_tx_data((uint8_t *)tx_buf, tx_len);
+   2078                  } else {
+   2079                      ret = CONNSYS_STATUS_FAIL;
+   2080                  }
+   2081              }
+   2082          
+   2083              return ret;
+   2084          }
+   2085          
+   2086          
+   2087          #if (WIFI_BUILD_OPTION == 1)
+   2088          #include "dma_sw.h"
+   2089          
+   2090          static void connsys_dma_LP_irq_handler()
+   2091          {
+   2092              printf("DMA handler for LP...\n");
+   2093          }
+   2094          
+   2095          // only for Low Power emulation
+   2096          int32_t connsys_emulLP_connsys_open()
+   2097          {
+   2098              struct connsys_func *func = &g_connsys_func;
+   2099              int32_t  ret = 0;
+   2100          
+   2101              g_connsys_func.blksize = MY_CONNSYS_BLOCK_SIZE;
+   2102              g_connsys_func.num = SDIO_GEN3_FUNCTION_WIFI;
+   2103              g_connsys_func.irq_callback = NULL;
+   2104              g_connsys_func.use_dma = 0; // 1 for DMA mode
+   2105          
+   2106              if (g_connsys_func.use_dma) {
+   2107                  DMA_Register(SDIO_GDMA_CH, connsys_dma_LP_irq_handler);
+   2108              }
+   2109          
+   2110              // Enable GDMA
+   2111              if (g_connsys_func.use_dma) {
+   2112                  REG32(GDMA_CHANNEL_ENABLE) = 0xFFFFFFFF;
+   2113              }
+   2114          
+   2115              // function enable
+   2116              connsys_bus_get_bus(func);
+   2117              ret = connsys_bus_enable_func(func);
+   2118              connsys_bus_release_bus(func);
+   2119              if (ret) {
+   2120                  LOG_E(connsys, "<<%s>> Enable function failed. Error = %d.\n", __FUNCTION__, (int)ret);
+   2121                  goto err;
+   2122              }
+   2123          
+   2124              // set block size
+   2125              connsys_bus_get_bus(func);
+   2126              ret = connsys_bus_set_block_size(func, func->blksize);
+   2127              connsys_bus_release_bus(func);
+   2128          
+   2129              if (ret) {
+   2130                  LOG_E(connsys, "<<%s>> Set block size failed. Error = %d.\n", __FUNCTION__, (int)ret);
+   2131                  goto err;
+   2132              }
+   2133          
+   2134              // register sdio irq
+   2135              connsys_bus_get_bus(func);
+   2136              ret = connsys_bus_get_irq(func, connsys_driver_interrupt); /* Interrupt IRQ handler */
+   2137              connsys_bus_release_bus(func);
+   2138              if (ret) {
+   2139                  LOG_E(connsys, "<<%s>> Claim irq failed. Error = %d.\n", __FUNCTION__, (int)ret);
+   2140                  goto err;
+   2141              }
+   2142          
+   2143              // register to MCU IRQ
+   2144          //    NVIC_Register(CM4_HIF_IRQ, connsys_irq_handler);
+   2145          //    NVIC_EnableIRQ(CM4_HIF_IRQ);
+   2146          
+   2147              //connsys_bus_writel(func, 0x0, 0x160, &ret);
+   2148              //LOG_I(connsys, "write 0x160 done, ret=0x%x\n", ret);
+   2149          
+   2150              LOG_I(connsys, " End of %s\n", __FUNCTION__);
+   2151          err:
+   2152              return ret;
+   2153          }
+   2154          #endif //#if (WIFI_BUILD_OPTION == 1)
+   2155          
+   2156          void connsys_cli_set_debug_falg(uint32_t debug)
+   2157          {
+   2158              LOG_I(connsys, "set debug flag %u\n", (unsigned int)debug);
+   2159              if (debug <= CONNSYS_DBG_MAX_NUM) {
+   2160                  CONNSYS_SET_DEBUG((1 << debug));
+   2161              } else {
+   2162                  LOG_I(connsys, "WARN! wrong argument. connsys has no such debug flag.\n");
+   2163              }
+   2164          }
+   2165          
+   2166          void connsys_cli_clear_debug_falg(uint32_t debug)
+   2167          {
+   2168              LOG_I(connsys, "clear debug flag %u\n", (unsigned int)debug);
+   2169          
+   2170              if (debug <= CONNSYS_DBG_MAX_NUM) {
+   2171                  CONNSYS_CLEAR_DEBUG((1 << debug));
+   2172              } else {
+   2173                  LOG_E(connsys, "WARN! wrong argument. connsys has no such debug flag.\n");
+   2174              }
+   2175          }
+   2176          
+   2177          
+   2178          void connsys_cli_show_debug_flag()
+   2179          {
+   2180              printf("all debug falgs:\n");
+   2181              printf("0:CONNSYS_DBG_RX\n");
+   2182              printf("1:CONNSYS_DBG_TX_Q0 (in-band cmd)\n");
+   2183              printf("2:CONNSYS_DBG_TX_Q1 (data)\n");
+   2184              printf("3:CONNSYS_DBG_PORT\n");
+   2185          
+   2186          }
+   2187          
+   2188          
+   2189          void connsys_cli_show_current_debug_flag()
+   2190          {
+   2191              printf("current debug flags:\n");
+   2192          
+   2193              if (CONNSYS_TEST_DEBUG(CONNSYS_DBG_RX)) {
+   2194                  printf("0:CONNSYS_DBG_RX\n");
+   2195              }
+   2196          
+   2197              if (CONNSYS_TEST_DEBUG(CONNSYS_DBG_TX_Q0)) {
+   2198                  printf("1:CONNSYS_DBG_TX_Q0\n");
+   2199              }
+   2200          
+   2201              if (CONNSYS_TEST_DEBUG(CONNSYS_DBG_TX_Q1)) {
+   2202                  printf("2:CONNSYS_DBG_TX_Q1\n");
+   2203              }
+   2204          
+   2205              if (CONNSYS_TEST_DEBUG(CONNSYS_DBG_PORT)) {
+   2206                  printf("3:CONNSYS_DBG_PORT\n");
+   2207              }
+   2208          }
+   2209          
+   2210          
+   2211          /*
+   2212              unit:
+   2213                  0: in numbers of frames
+   2214                  1: in numbers of pages
+   2215           */
+   2216          
+   2217          uint32_t pse_get_queue_len(uint32_t pid, uint32_t qid, uint8_t unit)
+   2218          {
+   2219              uint32_t q_len;
+   2220          
+   2221              if (unit) {
+   2222                  REG32(PSE_GQC) = PSE_GQC_QLEN_IN_PAGE_PAGES |
+   2223                                   (pid << PSE_GQC_GET_QLEN_PID_OFFSET) |
+   2224                                   (qid << PSE_GQC_GET_QLEN_QID_OFFSET);
+   2225              } else {
+   2226                  REG32(PSE_GQC) = PSE_GQC_QLEN_IN_PAGE_FRAMES |
+   2227                                   (pid << PSE_GQC_GET_QLEN_PID_OFFSET) |
+   2228                                   (qid << PSE_GQC_GET_QLEN_QID_OFFSET);
+   2229              }
+   2230          
+   2231              q_len = (REG32(PSE_GQC) & PSE_GQC_QLEN_RETURN_VALUE_MASK) >>
+   2232                      PSE_GQC_QLEN_RETURN_VALUE_OFFSET;
+   2233          
+   2234              return q_len;
+   2235          }
+   2236          
+   2237          uint32_t pse_get_total_page_num(void)
+   2238          {
+   2239              uint32_t total_page_num;
+   2240              total_page_num = (REG32(PSE_BC)&PSE_BC_TOTAL_PAGE_NUM_MASK) >> PSE_BC_TOTAL_PAGE_NUM_OFFSET;
+   2241              return total_page_num;
+   2242          }
+   2243          
+   2244          void pse_show_flow_control_setting(char *queue_name, uint32_t addr)
+   2245          {
+   2246              uint32_t max_quota;
+   2247              uint32_t min_reserve;
+   2248          
+   2249          
+   2250              max_quota = (REG32(addr)&PSE_FC_MAX_QUOTA_MASK) >> PSE_FC_MAX_QUOTA_OFFSET;
+   2251              min_reserve = (REG32(addr)&PSE_FC_MIN_RSRV_MASK) >> PSE_FC_MIN_RSRV_OFFSET;
+   2252          
+   2253          
+   2254              if (max_quota == 0xFFF) {
+   2255                  printf("\t%s(0x%x): max quota setting disable, min reserv setting %u\n",
+   2256                         queue_name,
+   2257                         (unsigned int)addr,
+   2258                         (unsigned int)min_reserve);
+   2259              } else {
+   2260                  printf("\t%s(0x%x): max quota setting %u, min reserv setting %u\n",
+   2261                         queue_name,
+   2262                         (unsigned int)addr,
+   2263                         (unsigned int)max_quota,
+   2264                         (unsigned int)min_reserve);
+   2265              }
+   2266          
+   2267          }
+   2268          
+   2269          uint32_t connsys_util_pse_get_p0_min_resv(void)
+   2270          {
+   2271              uint32_t min_reserve;
+   2272              min_reserve = (REG32(PSE_FC_P0)&PSE_FC_MIN_RSRV_MASK) >> PSE_FC_MIN_RSRV_OFFSET;
+   2273              return min_reserve;
+   2274          }
+   2275          
+   2276          void connsys_tx_query_whisr(void)
+   2277          {
+   2278              uint32_t cr_whisr;
+   2279          
+   2280              connsys_disable_interrupt();
+   2281              connsys_disable_whier_trx_int();
+   2282              connsys_cr_read(WHISR, &cr_whisr);
+   2283              if (cr_whisr & TX_DONE_INT) {
+   2284          #if (CONNSYS_DEBUG_MODE_EN == 1)
+   2285                  g_connsys_stat.num_of_tx_int ++;
+   2286          #endif
+   2287                  connsys_tx_flow_control_update_free_page_cnt();
+   2288              }
+   2289              connsys_enalbe_whier_tx_int();
+   2290              connsys_enalbe_whier_rx_int();
+   2291              connsys_enable_interrupt();
+   2292          }
+   2293          
+   2294          #ifdef MTK_MINICLI_ENABLE
+   2295          void pse_show_ffc(void)
+   2296          {
+   2297              uint32_t ffa_cnt;
+   2298              uint32_t free_page_cnt;
+   2299              ffa_cnt = (REG32(PSE_FC_FFC)&PSE_FC_FFC_FFA_CNT_MASK) >> PSE_FC_FFC_FFA_CNT_OFFSET;
+   2300              free_page_cnt = (REG32(PSE_FC_FFC)&PSE_FC_FFC_FREE_PAGE_CNTT_MASK) >> PSE_FC_FFC_FREE_PAGE_CNTT_OFFSET;
+   2301          
+   2302              printf("\tFC_FFC(0x%x):\n", (unsigned int)PSE_FC_FFC);
+   2303              printf("\t\tFree for all counter status:%u\n", (unsigned int)ffa_cnt);
+   2304              printf("\t\tFree page counter status:%u\n", (unsigned int)free_page_cnt);
+   2305          }
+   2306          
+   2307          
+   2308          void connsys_cli_show_pse(void)
+   2309          {
+   2310              uint32_t pid;
+   2311              uint32_t qid;
+   2312              printf("==>connsys_cli_show_pse\n");
+   2313          
+   2314              printf("PSE queue length\n");
+   2315              printf("Host (P0):\n");
+   2316              printf("\tHTX Qs\n");
+   2317              pid = 0;
+   2318              for (qid = 0; qid < 2; qid++) {
+   2319                  printf("\tQ%u: %8u frames, %8u pages\n",
+   2320                         (unsigned int)qid,
+   2321                         (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2322                         (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2323              }
+   2324              printf("\tHRX Qs\n");
+   2325              qid = 2;
+   2326              printf("\tQ0: %8u frames, %8u pages\n",
+   2327                     (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2328                     (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2329          
+   2330              pid = 1;
+   2331              printf("CPU (P1):\n");
+   2332              for (qid = 0; qid < 4; qid++) {
+   2333                  printf("\tCTX_Q%u: %8u frames, %8u pages\n",
+   2334                         (unsigned int)qid,
+   2335                         (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2336                         (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2337              }
+   2338          
+   2339              printf("WLAN (P2):\n");
+   2340              pid = 2;
+   2341              for (qid = 0; qid < 14; qid++) {
+   2342                  if (qid == 7) {
+   2343                      printf("\tAC%u(BC/MC): %8u frames, %8u pages\n",
+   2344                             (unsigned int)qid,
+   2345                             (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2346                             (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2347          
+   2348                  } else if (qid == 8) {
+   2349                      printf("\tAC%u(Beacon): %8u frames, %8u pages\n",
+   2350                             (unsigned int)qid,
+   2351                             (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2352                             (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2353                  } else {
+   2354                      printf("\tAC%u: %8u frames, %8u pages\n",
+   2355                             (unsigned int)qid,
+   2356                             (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2357                             (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2358                  }
+   2359              }
+   2360          
+   2361              pid = 3;
+   2362              printf("PSE (P3):\n");
+   2363              printf("\tSWitch Qs:\n");
+   2364              for (qid = 0; qid < 8; qid++) {
+   2365                  printf("\tSW%u: %8u frames, %8u pages\n",
+   2366                         (unsigned int)qid,
+   2367                         (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2368                         (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2369              }
+   2370              printf("\tFree Q:\n");
+   2371              qid = 8;
+   2372              printf("\tFree: %8u frames, %8u pages\n",
+   2373                     (unsigned int)pse_get_queue_len(pid, qid, 0),
+   2374                     (unsigned int)pse_get_queue_len(pid, qid, 1));
+   2375          
+   2376              printf("Free control related:\n");
+   2377              printf("Total page number:%u\n", (unsigned int)pse_get_total_page_num());
+   2378              pse_show_flow_control_setting("P0", PSE_FC_P0);
+   2379              pse_show_flow_control_setting("P1", PSE_FC_P1);
+   2380              pse_show_flow_control_setting("P2 Q0", PSE_FC_P2_Q0);
+   2381              pse_show_flow_control_setting("P2 Q1", PSE_FC_P2_Q1);
+   2382              pse_show_flow_control_setting("P2 Q2", PSE_FC_P2_Q2);
+   2383              pse_show_ffc();
+   2384          }
+   2385          
+   2386          
+   2387          void connsys_cli_dump_pse_reg(void)
+   2388          {
+   2389              uint32_t offset;
+   2390              uint32_t addr;
+   2391          
+   2392              printf("==>connsys_cli_dump_pse_reg\n");
+   2393              printf("WF_PSE_TOP_BASE: 0x%x\n", WF_PSE_TOP_BASE);
+   2394          
+   2395          
+   2396              for (offset = 0x0; offset <= 0x18; offset += 4) {
+   2397                  addr = offset + WF_PSE_TOP_BASE;
+   2398                  printf("Addr: 0x%x, 0x%x\n",
+   2399                         (unsigned int)addr,
+   2400                         (unsigned int)REG32(addr));
+   2401              }
+   2402          
+   2403          
+   2404              for (offset = 0x118; offset <= 0x150; offset += 4) {
+   2405                  addr = offset + WF_PSE_TOP_BASE;
+   2406                  printf("Addr: 0x%x, 0x%x\n",
+   2407                         (unsigned int)addr,
+   2408                         (unsigned int)REG32(addr));
+   2409              }
+   2410          }
+   2411          
+   2412          
+   2413          void connsys_cli_show_help(void)
+   2414          {
+   2415              printf("connsys cli help:\n");
+   2416              printf("Usage: c <param1> <param2>\n");
+   2417              printf("The following are description for param1:\n");
+   2418              printf("\t0: show connsys debug flag\n");
+   2419              printf("\t1: set connsys debug flag\n");
+   2420              printf("\t    e.g. '$c 1 2' ==>enable TX Q1 debug\n");
+   2421              printf("\t2: clear connsys debug flag\n");
+   2422              printf("\t    e.g. '$c 2 1' ==>disable TX Q0 debug\n");
+   2423              printf("\t3: show current connsys debug flag\n");
+   2424              printf("\t4: show stat\n");
+   2425              printf("\t5: dump CR\n");
+   2426              printf("\t6: show tx flow control info\n");
+   2427              printf("\t7: show connsys compiler option\n");
+   2428              printf("\t8: read whisr register\n");
+   2429              printf("\t9: trigger connsys interrupt handler\n");
+   2430              printf("\t10: show connsys time measure\n");
+   2431              printf("\t11: set tx flow control config, 1: enable, 0: disable\n");
+   2432              printf("\t12: show pse info \n");
+   2433              printf("\t13: dump pse reg \n");
+   2434              printf("\t14: set tx flow control reserve page \n");
+   2435              printf("\t15: show last interrupt enhance mode struct\n");
+   2436              printf("\t16: set tx/rx balance config, 1: enable, 0: disable\n");
+   2437              printf("\t17: set max continus tx num for balance\n");
+   2438              printf("\t18: set max continus rx num for balance\n");
+   2439              printf("\t19: show tx/rx balance info\n");
+   2440              printf("\t20: show headroom offset for QoS/non-QoS\n");
+   2441              printf("\t21: set headroom offset for QoS, ex: c 21 42 => set offset to 42 bytes\n");
+   2442              printf("\t22: set headroom offset for non-QoS, ex: c 22 38 => set offset to 38 bytes\n");
+   2443              printf("\t23: get connsys driver domain CR, ex: c 23 0x14      => get WHIER(0x14)\n");
+   2444              printf("\t24: set connsys driver domain CR, ex: c 24 0x14  0x0 => set WHIER(0x14) to 0\n");
+   2445          }
+   2446          
+   2447          uint8_t connsys_util_cli_handler(uint8_t len, char *param[])
+   2448          {
+   2449              LOG_I(connsys, "==>connsys_util_cli_handler\n");
+   2450          
+   2451              if (len == 0) {
+   2452                  printf("incomplete command\n");
+   2453                  connsys_cli_show_help();
+   2454                  return 0;
+   2455              }
+   2456          
+   2457          
+   2458              switch (atoi(param[0])) {
+   2459                  case 0: {
+   2460                      connsys_cli_show_debug_flag();
+   2461                  }
+   2462                  break;
+   2463          
+   2464                  case 1: {
+   2465                      uint32_t debug_flag;
+   2466                      debug_flag = atoi(param[1]);
+   2467                      if (len != 2) {
+   2468                          LOG_E(connsys, "WARN! wrong argument\n");
+   2469                      } else {
+   2470                          connsys_cli_set_debug_falg(debug_flag);
+   2471                      }
+   2472                  }
+   2473                  break;
+   2474          
+   2475                  case 2: {
+   2476                      uint32_t debug_flag;
+   2477                      debug_flag = atoi(param[1]);
+   2478                      if (len != 2) {
+   2479                          printf("WARN! wrong argument\n");
+   2480                      } else {
+   2481                          connsys_cli_clear_debug_falg(debug_flag);
+   2482                      }
+   2483                  }
+   2484                  break;
+   2485          
+   2486                  case 3: {
+   2487                      connsys_cli_show_current_debug_flag();
+   2488                  }
+   2489                  break;
+   2490          
+   2491                  case 4: {
+   2492                      connsys_print_stat();
+   2493                  }
+   2494                  break;
+   2495          
+   2496                  case 5: {
+   2497                      connsys_dump_cr();
+   2498                  }
+   2499                  break;
+   2500          
+   2501                  case 6: {
+   2502                      connsys_tx_flow_control_show_info();
+   2503                  }
+   2504                  break;
+   2505                  case 7: {
+   2506                      connsys_show_config_option();
+   2507                  }
+   2508                  break;
+   2509          
+   2510                  case 8: {
+   2511                      connsys_dump_whisr();
+   2512                  }
+   2513                  break;
+   2514                  case 9: {
+   2515                      printf("trigger connsys interrupt by cmd\n");
+   2516                      connsys_driver_interrupt(&g_connsys_func);
+   2517                  }
+   2518                  break;
+   2519          
+   2520          
+   2521                  case 10: {
+   2522          #if (CFG_CONNSYS_MEASURE_INT_TIME_EN == 1)
+   2523                      connsys_measure_time_show();
+   2524          #else
+   2525                      printf("WARN! not support\n");
+   2526          #endif
+   2527                  }
+   2528                  break;
+   2529                  case 11: {
+   2530                      uint8_t config;
+   2531                      config = (uint8_t)atoi(param[1]);
+   2532                      printf("Configure tx flow control, 1: enable, 0: disable\n");
+   2533                      if (len != 2) {
+   2534                          printf("WARN! wrong argument\n");
+   2535                      } else {
+   2536                          connsys_tx_flow_control_config(config);
+   2537                      }
+   2538                  }
+   2539                  break;
+   2540                  case 12: {
+   2541                      connsys_cli_show_pse();
+   2542                  }
+   2543                  break;
+   2544          
+   2545                  case 13: {
+   2546                      connsys_cli_dump_pse_reg();
+   2547                  }
+   2548                  break;
+   2549          
+   2550                  case 14: {
+   2551                      uint32_t reserve_page_num;
+   2552                      reserve_page_num = (uint32_t)atoi(param[1]);
+   2553                      printf("set tx flow control reserve page\n");
+   2554                      if (len != 2) {
+   2555                          printf("WARN! wrong argument\n");
+   2556                      } else {
+   2557                          connsys_tx_flow_control_set_reserve_page(reserve_page_num);
+   2558                      }
+   2559                  }
+   2560                  break;
+   2561          
+   2562                  case 15: {
+   2563                      connsys_util_intr_enhance_mode_dump_last_struct();
+   2564                  }
+   2565                  break;
+   2566          
+   2567          #if (CFG_CONNSYS_TRX_BALANCE_EN == 1)
+   2568                  case 16: {
+   2569                      uint8_t config;
+   2570                      config = (uint32_t)atoi(param[1]);
+   2571                      printf("Configure tx flow control, 1: enable, 0: disable\n");
+   2572                      if (len != 2) {
+   2573                          printf("WARN! wrong argument\n");
+   2574                      } else {
+   2575                          connnsys_balance_set_enable(config);
+   2576                      }
+   2577                  }
+   2578                  break;
+   2579          
+   2580                  case 17: {
+   2581                      uint32_t num;
+   2582                      num = (uint32_t)atoi(param[1]);
+   2583                      printf("set max continus tx num for balance\n");
+   2584                      if (len != 2) {
+   2585                          printf("WARN! wrong argument\n");
+   2586                      } else {
+   2587                          connnsys_balance_set_max_num_of_continuous_tx(num);
+   2588                      }
+   2589                  }
+   2590                  break;
+   2591                  case 18: {
+   2592                      uint32_t num;
+   2593                      num = (uint32_t)atoi(param[1]);
+   2594                      printf("set max continus rx num for balance\n");
+   2595                      if (len != 2) {
+   2596                          printf("WARN! wrong argument\n");
+   2597                      } else {
+   2598                          connnsys_balance_set_max_num_of_continuous_rx(num);
+   2599                      }
+   2600                  }
+   2601                  break;
+   2602          
+   2603                  case 19: {
+   2604                      connnsys_balance_show_info();
+   2605                  }
+   2606                  break;
+   2607          #endif /* (CFG_CONNSYS_TRX_BALANCE_EN == 1) */
+   2608                  case 20: {
+   2609                      printf("Headroom offset for QoS=%d bytes, for non-QoS=%d bytes\n",
+   2610                             (int)connsys_get_headroom_offset(CONNSYS_HEADROOM_OFFSET_QOS),
+   2611                             (int)connsys_get_headroom_offset(CONNSYS_HEADROOM_OFFSET_NON_QOS));
+   2612                  }
+   2613                  break;
+   2614                  case 21: {
+   2615                      uint32_t offset;
+   2616                      offset = (uint32_t)atoi(param[1]);
+   2617                      connsys_set_headroom_offset(CONNSYS_HEADROOM_OFFSET_QOS, offset);
+   2618                      printf("set headroom offset for QoS=%d bytes\n", (int)offset);
+   2619                  }
+   2620                  break;
+   2621                  case 22: {
+   2622                      uint32_t offset;
+   2623                      offset = (uint32_t)atoi(param[1]);
+   2624                      connsys_set_headroom_offset(CONNSYS_HEADROOM_OFFSET_NON_QOS, offset);
+   2625                      printf("set headroom offset for Non-QoS=%d bytes\n", (int)offset);
+   2626                  }
+   2627                  break;
+   2628                  case 23: {
+   2629                      uint8_t  type;
+   2630                      uint32_t reg, value;
+   2631          
+   2632                      reg = toi(param[1], &type);
+   2633                      connsys_cr_read(reg, &value);
+   2634                      printf("CR[0x%x]=0x%x\n", (unsigned int)reg, (unsigned int)value);
+   2635                      break;
+   2636                  }
+   2637          
+   2638                  case 24: {
+   2639                      uint8_t  type;
+   2640                      uint32_t reg, value;
+   2641          
+   2642                      reg = toi(param[1], &type);
+   2643                      value = toi(param[2], &type);
+   2644                      connsys_cr_write(reg, value);
+   2645                      printf("Write CR[0x%x]=0x%x\n", (unsigned int)reg, (unsigned int)value);
+   2646                      break;
+   2647                  }
+   2648                  default:
+   2649                      printf("WARN! invalid option %s\n", param[0]);
+   2650                      connsys_cli_show_help();
+   2651                      break;
+   2652              }
+   2653          
+   2654              return 0;
+   2655          }
+   2656          #endif
+   2657          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   check_raw_pkt_rssi_threshold
+        16   -> get_rx_vector
+      32   connsys_cli_clear_debug_falg
+        32   -- Indirect call
+       8   connsys_cli_dump_pse_reg
+         8   -> printf
+      32   connsys_cli_set_debug_falg
+        32   -- Indirect call
+       8   connsys_cli_show_current_debug_flag
+         0   -> printf
+         8   -> printf
+       8   connsys_cli_show_debug_flag
+         0   -> printf
+         8   -> printf
+       8   connsys_cli_show_help
+         0   -> printf
+         8   -> printf
+      16   connsys_cli_show_pse
+        16   -> printf
+        16   -> pse_get_queue_len
+        16   -> pse_get_total_page_num
+         0   -> pse_show_ffc
+        16   -> pse_show_flow_control_setting
+       0   connsys_create_inband_fw_scatter_txd_rom
+      48   connsys_dispatch
+         0   -- Indirect call
+        48   -- Indirect call
+        48   -> check_raw_pkt_rssi_threshold
+        48   -> printf
+        48   -> wifi_util_get_inf_number
+    2080   connsys_download_wifi_profile
+      2080   -- Indirect call
+      2080   -> __aeabi_memclr4
+      2080   -> __aeabi_memcpy
+      2080   -> connsys_util_pda_download
+      48   connsys_fw_download
+        48   -- Indirect call
+        48   -> connsys_get_ownership
+         0   -> connsys_util_fw_download_done
+        48   -> connsys_util_pda_download
+      32   connsys_fw_download_CmdAddressLenReq
+        32   -- Indirect call
+        32   -> connsys_util_create_inband_cmd_txd_rom
+      56   connsys_fw_download_Tx_Scatter
+        56   -- Indirect call
+        56   -> __aeabi_memcpy
+        56   -> __aeabi_memset4
+        56   -> connsys_create_inband_fw_scatter_txd_rom
+        56   -> connsys_fifo_write
+      40   connsys_get_ilm_image_info
+        40   -- Indirect call
+      40   connsys_get_ilm_image_info_from_flash
+        40   -- Indirect call
+     184   connsys_get_patch_semaphore
+       184   -- Indirect call
+       184   -> __aeabi_memset4
+       184   -> connsys_abnormal_interrupt_check
+       184   -> connsys_cr_read
+       184   -> connsys_fifo_read
+       184   -> connsys_fifo_write
+       184   -> connsys_util_create_inband_cmd_txd_rom
+       184   -> connsys_util_patch_download_get_semaphore_event_check
+      56   connsys_img_direct_download
+        56   -- Indirect call
+        56   -> connsys_pda_config
+      16   connsys_intr_enhance_mode_dump_struct
+         0   -> printf
+        16   -> printf
+      40   connsys_intr_enhance_mode_receive_one_data
+        40   -- Indirect call
+        40   -> connsys_bus_read_port_garbage
+        40   -> connsys_dispatch
+        40   -> connsys_fifo_read
+        40   -> printf
+      32   connsys_patch_direct_download
+        32   -- Indirect call
+        32   -> connsys_get_ownership
+        32   -> connsys_get_patch_semaphore
+        32   -> connsys_img_direct_download
+        32   -> connsys_patch_finish
+      32   connsys_patch_download_body
+        32   -- Indirect call
+        32   -> connsys_download_wifi_profile
+        32   -> connsys_get_ownership
+        32   -> connsys_get_patch_semaphore
+        32   -> connsys_patch_finish
+        32   -> connsys_util_pda_download
+     176   connsys_patch_finish
+       176   -- Indirect call
+       176   -> __aeabi_memset4
+       176   -> connsys_abnormal_interrupt_check
+       176   -> connsys_cr_read
+       176   -> connsys_fifo_read
+       176   -> connsys_fifo_write
+       176   -> connsys_util_create_inband_cmd_txd_rom
+       176   -> connsys_util_fw_download_CmdAddressLenReq_event_check
+     176   connsys_pda_config
+       176   -- Indirect call
+       176   -> __aeabi_memset4
+       176   -> connsys_abnormal_interrupt_check
+       176   -> connsys_cr_read
+       176   -> connsys_fifo_read
+       176   -> connsys_fifo_write
+       176   -> connsys_fw_download_CmdAddressLenReq
+       176   -> connsys_util_fw_download_CmdAddressLenReq_event_check
+       0   connsys_set_rxraw_handler
+       0   connsys_set_wifi_profile
+       8   connsys_tx_query_whisr
+         8   -> connsys_cr_read
+         8   -> connsys_disable_interrupt
+         8   -> connsys_disable_whier_trx_int
+         8   -> connsys_enable_interrupt
+         8   -> connsys_enalbe_whier_rx_int
+         8   -> connsys_enalbe_whier_tx_int
+         8   -> connsys_tx_flow_control_update_free_page_cnt
+      32   connsys_util_cli_handler
+        32   -- Indirect call
+        32   -> atoi
+        32   -> connsys_cli_clear_debug_falg
+        32   -> connsys_cli_dump_pse_reg
+        32   -> connsys_cli_set_debug_falg
+        32   -> connsys_cli_show_current_debug_flag
+        32   -> connsys_cli_show_debug_flag
+        32   -> connsys_cli_show_help
+        32   -> connsys_cli_show_pse
+        32   -> connsys_cr_read
+        32   -> connsys_cr_write
+        32   -> connsys_driver_interrupt
+        32   -> connsys_dump_cr
+        32   -> connsys_dump_whisr
+        32   -> connsys_get_headroom_offset
+        32   -> connsys_print_stat
+        32   -> connsys_set_headroom_offset
+        32   -> connsys_show_config_option
+        32   -> connsys_tx_flow_control_config
+        32   -> connsys_tx_flow_control_set_reserve_page
+        32   -> connsys_tx_flow_control_show_info
+        32   -> connsys_util_intr_enhance_mode_dump_last_struct
+        32   -> printf
+        32   -> toi
+       0   connsys_util_create_inband_cmd_txd_rom
+       8   connsys_util_firmware_download
+         0   -> connsys_util_fw_direct_download
+         8   -> connsys_util_patch_download
+      72   connsys_util_fw_direct_download
+        72   -- Indirect call
+        72   -> connsys_get_ilm_image_info_from_flash
+        72   -> connsys_get_ownership
+        72   -> connsys_img_direct_download
+        72   -> connsys_util_fw_download_done
+      40   connsys_util_fw_download_CmdAddressLenReq_event_check
+        40   -- Indirect call
+     176   connsys_util_fw_download_done
+       176   -- Indirect call
+       176   -> __aeabi_memset4
+       176   -> connsys_abnormal_interrupt_check
+       176   -> connsys_cr_read
+       176   -> connsys_fifo_read
+       176   -> connsys_fifo_write
+       176   -> connsys_util_create_inband_cmd_txd_rom
+       176   -> connsys_util_fw_download_CmdAddressLenReq_event_check
+       0   connsys_util_get_n9_fw_ver
+         0   -> __aeabi_memcpy
+       0   connsys_util_get_ncp_patch_ver
+         0   -> __aeabi_memcpy
+       0   connsys_util_intr_enhance_mode_dump_last_struct
+         0   -> connsys_intr_enhance_mode_dump_struct
+      48   connsys_util_intr_enhance_mode_receive_data
+        48   -- Indirect call
+        48   -> connsys_cr_read
+        48   -> connsys_disable_interrupt
+        48   -> connsys_disable_whier_trx_int
+        48   -> connsys_enable_interrupt
+        48   -> connsys_enalbe_whier_rx_int
+        48   -> connsys_enalbe_whier_tx_int
+        48   -> connsys_intr_enhance_mode_receive_one_data
+        48   -> connsys_tx_flow_control_update_free_page_cnt
+        48   -> printf
+      32   connsys_util_low_level_output
+        32   -> __aeabi_memmove
+        32   -> __aeabi_memset
+        32   -> __aeabi_memset4
+        32   -> connsys_tx_flow_control_check_and_update_tx
+         0   -> connsys_util_tx_data
+        32   -> printf
+      40   connsys_util_patch_download
+        40   -- Indirect call
+        40   -> connsys_patch_download_body
+      40   connsys_util_patch_download_get_semaphore_event_check
+        40   -- Indirect call
+      16   connsys_util_pda_download
+         0   -> connsys_fw_download_Tx_Scatter
+        16   -> connsys_pda_config
+       0   connsys_util_pse_get_p0_min_resv
+      24   connsys_util_rx_data
+        24   -- Indirect call
+        24   -> connsys_fifo_read
+      32   connsys_util_tx_data
+        32   -- Indirect call
+         0   -> connsys_fifo_write
+       0   get_rx_vector
+       0   pse_get_queue_len
+       0   pse_get_total_page_num
+      16   pse_show_ffc
+         0   -> printf
+        16   -> printf
+      16   pse_show_flow_control_setting
+         0   -> printf
+        16   -> printf
+       0   raw_packet_handler_enabled
+       0   wifi_get_raw_rssi_threshold
+       0   wifi_set_raw_rssi_threshold
+       0   wifi_util_get_inf_number
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable226
+       4  ??DataTable227
+       4  ??DataTable228
+       4  ??DataTable228_1
+       4  ??DataTable228_2
+       4  ??DataTable228_3
+       4  ??DataTable228_4
+       4  ??DataTable228_5
+       4  ??DataTable229
+       4  ??DataTable229_1
+       4  ??DataTable229_2
+       4  ??DataTable229_3
+       4  ??DataTable230
+       4  ??DataTable231
+       4  ??DataTable231_1
+       4  ??DataTable231_2
+       4  ??DataTable231_3
+       4  ??DataTable233
+       4  ??DataTable234
+       4  ??DataTable234_1
+       4  ??DataTable237
+       4  ??DataTable240
+       4  ??DataTable245
+       4  ??DataTable245_1
+       4  ??DataTable246
+       4  ??DataTable247
+       4  ??DataTable248
+       4  ??DataTable249
+       4  ??DataTable254
+       4  ??DataTable254_1
+       4  ??DataTable256
+       4  ??DataTable258
+       4  ??DataTable258_1
+       4  ??DataTable258_2
+       4  ??DataTable258_3
+       4  ??DataTable258_4
+       4  ??DataTable258_5
+       4  ??DataTable258_6
+       4  ??DataTable258_7
+       4  ??DataTable258_8
+       4  ??DataTable259
+       4  ??DataTable259_1
+       4  ??DataTable259_2
+       4  ??DataTable259_3
+       4  ??DataTable259_4
+       4  ??DataTable259_5
+       4  ??DataTable259_6
+       4  ??DataTable259_7
+       4  ??DataTable259_8
+       4  ??DataTable259_9
+      52  ?_0
+      52  ?_1
+      20  ?_10
+      64  ?_100
+      24  ?_101
+      48  ?_102
+      20  ?_103
+      20  ?_104
+      56  ?_105
+      24  ?_106
+      20  ?_107
+      20  ?_108
+      36  ?_109
+      28  ?_11
+      28  ?_110
+      20  ?_111
+      24  ?_112
+      24  ?_113
+      24  ?_114
+      64  ?_115
+      56  ?_116
+      16  ?_117
+      36  ?_118
+      32  ?_119
+      32  ?_12
+      28  ?_120
+      20  ?_121
+      12  ?_122
+      12  ?_123
+      32  ?_124
+      12  ?_125
+      28  ?_126
+      12  ?_127
+      36  ?_128
+      12  ?_129
+      48  ?_13
+      40  ?_130
+      40  ?_131
+      32  ?_132
+      12  ?_133
+      16  ?_134
+      32  ?_135
+      12  ?_136
+      32  ?_137
+      24  ?_138
+      24  ?_139
+      28  ?_14
+       4  ?_140
+       4  ?_141
+       8  ?_142
+       8  ?_143
+       8  ?_144
+      32  ?_145
+      24  ?_146
+      20  ?_147
+      20  ?_148
+      28  ?_149
+      32  ?_15
+      44  ?_150
+      32  ?_151
+      28  ?_152
+      44  ?_153
+      32  ?_154
+      44  ?_155
+      40  ?_156
+      16  ?_157
+      16  ?_158
+      32  ?_159
+      36  ?_16
+      36  ?_160
+      28  ?_161
+      40  ?_162
+      32  ?_163
+      56  ?_164
+      24  ?_165
+      20  ?_166
+      40  ?_167
+      48  ?_168
+      56  ?_169
+      52  ?_17
+      44  ?_170
+      44  ?_171
+      32  ?_172
+      44  ?_173
+      76  ?_174
+      80  ?_175
+      76  ?_176
+      80  ?_177
+      32  ?_178
+      20  ?_179
+      44  ?_18
+      24  ?_180
+      36  ?_181
+      20  ?_182
+      52  ?_183
+      36  ?_184
+      56  ?_185
+      40  ?_186
+      44  ?_187
+      16  ?_188
+      24  ?_189
+      44  ?_19
+      28  ?_190
+      12  ?_191
+       8  ?_2
+      20  ?_20
+      60  ?_21
+      20  ?_22
+      16  ?_23
+      56  ?_24
+      80  ?_25
+      28  ?_26
+      16  ?_27
+      40  ?_28
+      40  ?_29
+      24  ?_3
+      24  ?_30
+      72  ?_31
+      36  ?_32
+      40  ?_33
+      64  ?_34
+      40  ?_35
+      16  ?_36
+      28  ?_37
+      36  ?_38
+      64  ?_39
+      48  ?_4
+      44  ?_40
+      16  ?_41
+      52  ?_42
+      36  ?_43
+       8  ?_44
+      36  ?_45
+      28  ?_46
+      44  ?_47
+      36  ?_48
+      32  ?_49
+      48  ?_5
+      24  ?_50
+      72  ?_51
+      20  ?_52
+      36  ?_53
+      60  ?_54
+      36  ?_55
+      20  ?_56
+      40  ?_57
+      24  ?_58
+      36  ?_59
+      24  ?_6
+      20  ?_60
+      48  ?_61
+      72  ?_62
+      48  ?_63
+      24  ?_64
+      40  ?_65
+      40  ?_66
+      24  ?_67
+      36  ?_68
+      44  ?_69
+      56  ?_7
+      52  ?_70
+      64  ?_71
+      44  ?_72
+      40  ?_73
+      40  ?_74
+      16  ?_75
+      40  ?_76
+      16  ?_77
+      16  ?_78
+      36  ?_79
+      56  ?_8
+      44  ?_80
+      24  ?_81
+       4  ?_82
+      36  ?_83
+       4  ?_84
+      12  ?_85
+      20  ?_86
+      16  ?_87
+      12  ?_88
+       2  ?_89
+    2048  ?_9
+      28  ?_90
+      28  ?_91
+      28  ?_92
+      36  ?_93
+      20  ?_94
+      64  ?_95
+      36  ?_96
+      48  ?_97
+      52  ?_98
+      40  ?_99
+      72  check_raw_pkt_rssi_threshold
+      74  connsys_cli_clear_debug_falg
+      76  connsys_cli_dump_pse_reg
+      74  connsys_cli_set_debug_falg
+      74  connsys_cli_show_current_debug_flag
+      46  connsys_cli_show_debug_flag
+     246  connsys_cli_show_help
+     502  connsys_cli_show_pse
+      20  connsys_create_inband_fw_scatter_txd_rom
+     334  connsys_dispatch
+     174  connsys_download_wifi_profile
+     300  connsys_fw_download
+      60  connsys_fw_download_CmdAddressLenReq
+     224  connsys_fw_download_Tx_Scatter
+     142  connsys_get_ilm_image_info
+     206  connsys_get_ilm_image_info_from_flash
+     576  connsys_get_patch_semaphore
+     296  connsys_img_direct_download
+     170  connsys_intr_enhance_mode_dump_struct
+     284  connsys_intr_enhance_mode_receive_one_data
+     312  connsys_patch_direct_download
+     320  connsys_patch_download_body
+     430  connsys_patch_finish
+     368  connsys_pda_config
+       4  connsys_raw_handler
+       8  connsys_set_rxraw_handler
+       8  connsys_set_wifi_profile
+    1600  connsys_tx_buf
+      50  connsys_tx_query_whisr
+     504  connsys_util_cli_handler
+      18  connsys_util_create_inband_cmd_txd_rom
+      12  connsys_util_firmware_download
+     330  connsys_util_fw_direct_download
+     112  connsys_util_fw_download_CmdAddressLenReq_event_check
+     550  connsys_util_fw_download_done
+      18  connsys_util_get_n9_fw_ver
+      12  connsys_util_get_ncp_patch_ver
+       6  connsys_util_intr_enhance_mode_dump_last_struct
+     342  connsys_util_intr_enhance_mode_receive_data
+     178  connsys_util_low_level_output
+     116  connsys_util_patch_download
+     120  connsys_util_patch_download_get_semaphore_event_check
+      28  connsys_util_pda_download
+      12  connsys_util_pse_get_p0_min_resv
+      72  connsys_util_rx_data
+      90  connsys_util_tx_data
+       4  continuous_allocate_fail_cnt
+       4  g_patch_info
+    1040  g_tx_buf
+       4  g_wifi_profile
+      32  get_rx_vector
+       4  n9_fw_info
+      32  pse_get_queue_len
+      12  pse_get_total_page_num
+      54  pse_show_ffc
+      60  pse_show_flow_control_setting
+      18  raw_packet_handler_enabled
+       2  rssi_threshold_enable
+          rssi_threshold
+      14  wifi_get_raw_rssi_threshold
+      10  wifi_set_raw_rssi_threshold
+      18  wifi_util_get_inf_number
+     800  -- Other
+
+ 
+  2 662 bytes in section .bss
+  2 066 bytes in section .rodata
+ 15 644 bytes in section .text
+ 
+ 15 644 bytes of CODE  memory
+  2 066 bytes of CONST memory
+  2 662 bytes of DATA  memory
+
+Errors: none
+Warnings: none

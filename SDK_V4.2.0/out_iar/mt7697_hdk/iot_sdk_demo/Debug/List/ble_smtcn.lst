@@ -1,0 +1,968 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:34:46
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ble_smtcn.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ble_smtcn.c"
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\ble_smtcn.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\ble_smtcn.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ble_smtcn.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /*
+     36                  BLE SMART CONNECTION is able to receive the SSID, password and security mode from the APK by BLE connection, and then connect to the WIFI AP.
+     37          It support GCC, Keil and IAR compilation. The lib is in middleware/MTK/ble_smtcn. Please switch MTK_BLE_SMTCN_ENABLE to enable/disable this feature
+     38          in project/mt7697_hdk/apps/iot_sdk/GCC/feature.mk.
+     39          
+     40          
+     41          *************How to use BLE SMART CONNECTION*************
+     42          
+     43          step1, Download the bin file to MT7697;
+     44          
+     45          step2, Get the APK in SDK packet in tools/ble_smart_connection/ble_smart_connection.apk and install it on Android Smartphone(Android 4.3 or later);
+     46          
+     47          step3, Make Smartphone connect to a WIFI AP;
+     48          
+     49          step4, Connect MT7697 to the PC, and connect to ComPortLogger or putty, set speed to be 115200.
+     50          
+     51          step5, Reset MT7697, input ATcommand "ble wifi smart" in ComPortLogger , ble smart connection will be started;
+     52          
+     53          step6, Start the APK and search BLE device, select the MT7697 device named "BLE_SMTCN" to connect;
+     54          
+     55          step7, Input the password of the connected WIFI AP and press "connect" button in the APK, MT7697 will start to connect to the same WIFI AP, and
+     56                  the result will show in the APK.
+     57          */
+     58          
+     59          
+     60          
+     61          /*BLE SMART CONNECTION compile option, switch it in feature.mk*/
+     62          #ifdef MTK_BLE_SMTCN_ENABLE
+     63          #include <string.h>
+     64          #include <stdint.h>
+     65          #include <stdbool.h>
+     66          #include <stdio.h>
+     67          #include "bt_gap_le.h"
+     68          #include "bt_gatts.h"
+     69          #include "bt_uuid.h"
+     70          #include "wifi_api.h"
+     71          #include "lwip/netif.h"
+     72          #include "lwip/inet.h"
+     73          #include "FreeRTOS.h"
+     74          #include "timers.h"
+     75          #include "lwip/dhcp.h"
+     76          
+     77          #ifdef MTK_BLE_GPIO_SERVICE
+     78          #include "connection_info.h"
+     79          #endif
+     80          
+     81          #define BLE_SMTCN_ADDRESS               {0x0C, 0x01, 0x02, 0x03, 0x04, 0x05}
+     82          #define BLE_SMTCN_ADV_DATA              "DDDDDDDDDBLE_SMTCN"
+     83          #define BLE_SMTCN_ADV_DATA_LEN          18
+     84          #define BLE_SMTCN_DEVICE_NAME           "BLE_SMTCN"
+     85          #define BLE_SMTCN_SERVICE_UUID          (0x18AA)
+     86          #define BLE_SMTCN_MAX_INTERVAL          0x00C0    /*The range is from 0x0020 to 0x4000.*/
+     87          #define BLE_SMTCN_MIN_INTERVAL          0x00C0    /*The range is from 0x0020 to 0x4000.*/
+     88          #define BLE_SMTCN_CHANNEL_NUM           7
+     89          #define BLE_SMTCN_FILTER_POLICY         0
+     90          #define BLE_SMTCN_AD_FLAG_LEN           2
+     91          #define BLE_SMTCN_AD_UUID_LEN           3
+     92          #define BLE_SMTCN_AD_NAME_LEN           10
+     93          
+     94          
+     95          #define BLE_SMTCN_SERVICE_UUID        (0x18AA) // Data Transfer Service
+     96          #define BLE_SMTCN_CHAR_UUID           (0x2AAA)
+     97          #define BLE_SMTCN_SSID_LEN            32
+     98          #define BLE_SMTCN_IP_LEN              17
+     99          #define BLE_SMTCN_CHAR_VALUE_HANDLE   0x0016
+    100          #define BLE_SMTCN_MAX_DATA_LEN        (23 - 3 - 2) //mtu - 3bytes for gatt - 1byte(tagid) - 1byte(tag_length)
+    101          #define BLE_SMTCN_TIMER_PERIOD       1000
+    102          
+    103          typedef enum {
+    104              BLE_SMTCN_WIFI_INFO_SSID = 0x01,
+    105              BLE_SMTCN_WIFI_INFO_PW,
+    106              BLE_SMTCN_WIFI_INFO_SEC_MODE,
+    107              BLE_SMTCN_WIFI_INFO_IP,
+    108          
+    109              BLE_SMTCN_WIFI_INFO_DISCONNECTED = 0x07,
+    110              BLE_SMTCN_WIFI_INFO_CONNECTED = 0x08
+    111          }ble_smtcn_wifi_info_id_t;
+    112          
+    113          typedef struct {
+    114              uint16_t conn_handle;
+    115              uint16_t indicate_enable;
+    116              
+    117              char ip_addr[BLE_SMTCN_IP_LEN];
+    118              uint8_t ssidrx[BLE_SMTCN_SSID_LEN];
+    119              uint8_t ssidrx_len;
+    120              uint8_t pwrx[20];
+    121              uint8_t pwrx_len;
+    122              wifi_auth_mode_t authrx;
+    123              wifi_encrypt_type_t encryptrx;
+    124              uint16_t wifi_conn_enabled;
+    125          
+    126              TimerHandle_t dtp_timer;
+    127              bool smtcn_started;
+    128          }ble_smtcn_context_t;
+    129          
+    130          static ble_smtcn_context_t ble_smtcn_cntx;
+    131          static ble_smtcn_context_t *p_smtcn = &ble_smtcn_cntx;
+    132          /*configration for DTP*/
+    133          const bt_uuid_t BLE_SMTCN_CHAR_UUID128 = BT_UUID_INIT_WITH_UUID16(BLE_SMTCN_CHAR_UUID);
+    134          
+    135          log_create_module(BLE_SMTCN, PRINT_LEVEL_INFO);
+    136          
+    137          
+    138          #ifdef MTK_BLE_GPIO_SERVICE
+    139          
+    140          void ble_smtcn_init2(void)
+    141          {
+    142              //int32_t status;
+    143              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_init2\n");
+    144              memset(p_smtcn, 0, sizeof(ble_smtcn_context_t));
+    145              clear_bonded_info();
+    146          }
+    147          
+    148          /* Stop smart connection */
+    149          void ble_smtcn_stop_adv(void)
+    150          {
+    151              if ( p_smtcn->smtcn_started == false )
+    152              {
+    153                  LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_stop_adv : stop already !");
+    154                  return;
+    155              }
+    156          
+    157              //stop ADV pack
+    158              bt_hci_cmd_le_set_advertising_enable_t enable;
+    159              enable.advertising_enable = BT_HCI_DISABLE;
+    160              bt_gap_le_set_advertising(&enable, NULL, NULL, NULL);
+    161              p_smtcn->smtcn_started = false;
+    162          }
+    163          #endif
+    164          
+    165          
+    166          /*****************************************************************************
+    167          * FUNCTION
+    168          *  ble_smtcn_set_adv
+    169          * DESCRIPTION
+    170          *  Set ble smart connection ramdom address
+    171          * PARAMETERS
+    172          *  void
+    173          * RETURNS
+    174          *  void
+    175          *****************************************************************************/
+    176          void ble_smtcn_set_adv(void)
+    177          {
+    178              if ( p_smtcn->smtcn_started == true )
+    179              {
+    180                  LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_set_adv : started already !");
+    181                  return;
+    182              }
+    183              
+    184              bt_bd_addr_t addr = BLE_SMTCN_ADDRESS;
+    185              bt_bd_addr_ptr_t random_addr = addr;    
+    186              extern char gatts_device_name[256];
+    187          
+    188              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_set_adv\n");
+    189              memset(gatts_device_name, 0x00, sizeof(gatts_device_name));
+    190              //memcpy(gatts_device_name, &adv_data.advertising_data[BLE_SMTCN_ADV_DATA_LEN - BLE_SMTCN_DEVICE_NAME_LEN], BLE_SMTCN_DEVICE_NAME_LEN);
+    191              strcpy(gatts_device_name, BLE_SMTCN_DEVICE_NAME);
+    192              
+    193              bt_gap_le_set_random_address(random_addr);
+    194          
+    195              p_smtcn->smtcn_started = true;
+    196          }
+    197          
+    198          
+    199          /*****************************************************************************
+    200          * FUNCTION
+    201          *  ble_smtcn_event_callback
+    202          * DESCRIPTION
+    203          *  Deal with event from bt stack
+    204          * PARAMETERS
+    205          *  void
+    206          * RETURNS
+    207          *  void
+    208          *****************************************************************************/
+    209          void ble_smtcn_event_callback(bt_msg_type_t msg, bt_status_t status, void *buff)
+    210          {
+    211              switch(msg) {
+    212                  case BT_GAP_LE_SET_RANDOM_ADDRESS_CNF:
+    213                  {
+    214                      LOG_I(BLE_SMTCN, "[BLE_SMTCN]start advertising (%d)\n", p_smtcn->smtcn_started);
+    215                      if (p_smtcn->smtcn_started == true) {
+    216                          bt_hci_cmd_le_set_advertising_enable_t enable;
+    217                          bt_hci_cmd_le_set_advertising_parameters_t adv_param = {
+    218                                  .advertising_interval_min = BLE_SMTCN_MIN_INTERVAL,
+    219                                  .advertising_interval_max = BLE_SMTCN_MAX_INTERVAL,
+    220                                  .advertising_type = BT_HCI_ADV_TYPE_CONNECTABLE_UNDIRECTED,
+    221                                  .own_address_type = BT_ADDR_RANDOM,
+    222                                  .advertising_channel_map = BLE_SMTCN_CHANNEL_NUM,
+    223                                  .advertising_filter_policy = BLE_SMTCN_FILTER_POLICY
+    224                              };
+    225                          bt_hci_cmd_le_set_advertising_data_t adv_data = {
+    226                              .advertising_data_length = BLE_SMTCN_ADV_DATA_LEN,
+    227                              .advertising_data = BLE_SMTCN_ADV_DATA
+    228                          };
+    229          
+    230                          adv_data.advertising_data[0] = BLE_SMTCN_AD_FLAG_LEN;
+    231                          adv_data.advertising_data[1] = BT_GAP_LE_AD_TYPE_FLAG;
+    232                          adv_data.advertising_data[2] = BT_GAP_LE_AD_FLAG_BR_EDR_NOT_SUPPORTED | BT_GAP_LE_AD_FLAG_GENERAL_DISCOVERABLE;
+    233                          adv_data.advertising_data[3] = BLE_SMTCN_AD_UUID_LEN;
+    234                          adv_data.advertising_data[4] = BT_GAP_LE_AD_TYPE_16_BIT_UUID_COMPLETE;
+    235                          adv_data.advertising_data[5] = BLE_SMTCN_SERVICE_UUID & 0x00FF;
+    236                          adv_data.advertising_data[6] = (BLE_SMTCN_SERVICE_UUID & 0xFF00)>>8;
+    237                          adv_data.advertising_data[7] = BLE_SMTCN_AD_NAME_LEN;
+    238                          adv_data.advertising_data[8] = BT_GAP_LE_AD_TYPE_NAME_COMPLETE;
+    239          
+    240                          enable.advertising_enable = BT_HCI_ENABLE;
+    241                          bt_gap_le_set_advertising(&enable, &adv_param, &adv_data, NULL);
+    242          
+    243                          p_smtcn->smtcn_started = false;
+    244                      }
+    245                  }
+    246                      break;
+    247          
+    248                  default:
+    249                      break;
+    250              }
+    251                  
+    252          }
+    253          
+    254          
+    255          void ble_smtcn_send_indication(ble_smtcn_wifi_info_id_t tag_id, uint8_t len, uint8_t *value)
+    256          {
+    257              uint8_t buf[64] = {0};
+    258              uint8_t pak[20] = {0}; 
+    259              uint8_t pak_len;
+    260              bt_gattc_charc_value_notification_indication_t *req;
+    261              bt_status_t send_status;
+    262          
+    263              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_send_indication, tag_id = %d\n", tag_id);
+    264          
+    265              pak[0] = tag_id;
+    266          
+    267              pak_len = 1;
+    268          
+    269              if (len > BLE_SMTCN_MAX_DATA_LEN) {
+    270                  LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_send_indication: data length = %d, > 18!!!\n", len);
+    271              }
+    272              if (tag_id == BLE_SMTCN_WIFI_INFO_SSID || tag_id == BLE_SMTCN_WIFI_INFO_IP) {
+    273                  pak[1] = len;
+    274                  memcpy(pak + 2, value, (len > BLE_SMTCN_MAX_DATA_LEN)? BLE_SMTCN_MAX_DATA_LEN : len);
+    275                  pak_len += len + 1;
+    276              }
+    277          
+    278              req = (bt_gattc_charc_value_notification_indication_t*)buf;
+    279              req->attribute_value_length = 3 + pak_len;
+    280              req->att_req.opcode = BT_ATT_OPCODE_HANDLE_VALUE_INDICATION;
+    281              req->att_req.handle = BLE_SMTCN_CHAR_VALUE_HANDLE;
+    282              memcpy(req->att_req.attribute_value, pak, pak_len);
+    283              send_status = bt_gatts_send_charc_value_notification_indication(p_smtcn->conn_handle, req);
+    284          
+    285              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_send_indication: send_status = %x\n", send_status);
+    286          }
+    287          
+    288          
+    289          void ble_smtcn_parse_data(uint8_t *data, uint16_t size) 
+    290          {
+    291              ble_smtcn_wifi_info_id_t tag_id;
+    292              uint8_t tag_len;   
+    293          
+    294              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_parse_data\n");
+    295              
+    296              tag_id = (ble_smtcn_wifi_info_id_t)data[0];
+    297              tag_len = data[1];
+    298          
+    299              tag_len = ((tag_len > BLE_SMTCN_MAX_DATA_LEN)? BLE_SMTCN_MAX_DATA_LEN : tag_len);
+    300          
+    301              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_parse_data, tag_id = %d, tag_len = %d\n", tag_id, tag_len);
+    302              switch (tag_id) {
+    303                  case BLE_SMTCN_WIFI_INFO_SSID:
+    304                  {
+    305                      memcpy(p_smtcn->ssidrx, data + 2, tag_len);
+    306                      p_smtcn->ssidrx_len = tag_len;
+    307                      p_smtcn->wifi_conn_enabled |= (1 << BLE_SMTCN_WIFI_INFO_SSID);
+    308                      LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_parse_data, ssid = %s, wifi_conn_enabled = 0x%x\n", p_smtcn->ssidrx, p_smtcn->wifi_conn_enabled);
+    309                  }
+    310                      break;
+    311                      
+    312                  case BLE_SMTCN_WIFI_INFO_PW: 
+    313                  {
+    314                      memcpy(p_smtcn->pwrx, data + 2, tag_len);
+    315                      p_smtcn->pwrx_len = tag_len;
+    316                      p_smtcn->wifi_conn_enabled |= (1 << BLE_SMTCN_WIFI_INFO_PW);
+    317                      LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_parse_data, pw = %s, wifi_conn_enabled = 0x%x\n", p_smtcn->pwrx, p_smtcn->wifi_conn_enabled);
+    318                  }
+    319                      break;
+    320                      
+    321                  case BLE_SMTCN_WIFI_INFO_SEC_MODE:
+    322                      if (tag_len == 2) {
+    323                          p_smtcn->authrx = (wifi_auth_mode_t)data[2];  
+    324                          p_smtcn->encryptrx = (wifi_encrypt_type_t)data[3]; //0, 1, 4, 6, 8 are always used
+    325                          p_smtcn->wifi_conn_enabled |= (1 << BLE_SMTCN_WIFI_INFO_SEC_MODE);
+    326                          //LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_parse_data, auth = %d, encryt = %d, wifi_conn_enabled = 0x%x\n", p_smtcn->authrx, p_smtcn->encryptrx, p_smtcn->wifi_conn_enabled);
+    327                      } else {
+    328                          LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_parse_data, security mode is wrong, tag_len = %d\n", tag_len);
+    329                      }
+    330                      break;
+    331                      
+    332                  default:
+    333                      LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_parse_data, wrong tag id\n", tag_id);
+    334                      break;
+    335              }
+    336          }
+    337          
+    338          
+    339          void ble_smtcn_timeout_callback(TimerHandle_t xTimer)
+    340          {    
+    341              uint8_t link_status;
+    342              uint8_t ssid[BLE_SMTCN_SSID_LEN] = {0};
+    343              uint8_t ssid_len;
+    344          
+    345              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_timeout_callback\n");
+    346          
+    347              if (wifi_connection_get_link_status(&link_status) >= 0) {
+    348                  if (link_status  == WIFI_STATUS_LINK_CONNECTED) {
+    349                      if (wifi_config_get_ssid(0, ssid, &(ssid_len)) >= 0) {
+    350          
+    351                          ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_CONNECTED, 0, NULL);
+    352                          ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_SSID, ssid_len, ssid);
+    353                          if (strlen(p_smtcn->ip_addr)) {
+    354                              //send indication
+    355                              ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_IP, strlen(p_smtcn->ip_addr), (uint8_t *)(p_smtcn->ip_addr));
+    356          
+    357                              memset(p_smtcn->ip_addr, 0, BLE_SMTCN_IP_LEN);
+    358                          }
+    359                      } else {
+    360                          //get ssid fail
+    361                          LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_timeout_callback, get ssid fail\n");
+    362                      }
+    363                  } else {
+    364                      //disconnected
+    365                      ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_DISCONNECTED, 0, NULL);     
+    366                  }
+    367              }
+    368          }
+    369          
+    370          void ble_smtcn_setup_wifi_connection()
+    371          {
+    372              int32_t result;
+    373              uint8_t port = WIFI_PORT_STA;
+    374          
+    375              result = wifi_config_set_ssid(port, p_smtcn->ssidrx, strlen((char *)(p_smtcn->ssidrx)));
+    376              LOG_I(BLE_SMTCN, "[BLE_SMTCN]set ssid = %d\n", result);
+    377              if (result < 0) {
+    378                  return;
+    379              }
+    380              
+    381              result = wifi_config_set_security_mode(port, p_smtcn->authrx, p_smtcn->encryptrx);
+    382              LOG_I(BLE_SMTCN, "[BLE_SMTCN]set security mode = %d, encrypt = %d\n", result, p_smtcn->encryptrx);
+    383              if (result < 0) {
+    384                  return;
+    385              }
+    386              
+    387              if (p_smtcn->encryptrx == 0) {
+    388                  wifi_wep_key_t wep_key;
+    389                  uint8_t key_id = 0; 
+    390          
+    391                  if (p_smtcn->pwrx_len == 5 || p_smtcn->pwrx_len == 10 || p_smtcn->pwrx_len == 13) {
+    392                      wep_key.wep_tx_key_index = key_id;
+    393                  
+    394                      memcpy(wep_key.wep_key[key_id], p_smtcn->pwrx, p_smtcn->pwrx_len);
+    395                      wep_key.wep_key_length[key_id] = p_smtcn->pwrx_len;
+    396          
+    397                      result = wifi_config_set_wep_key(port, &wep_key); // wep encryption mode, the pw length can only be 5, 10 or 13
+    398                      LOG_I(BLE_SMTCN, "[BLE_SMTCN]set wep key = %d\n", result);
+    399                      if (result < 0) {
+    400                          return;
+    401                      }
+    402                  } else {
+    403                      LOG_I(BLE_SMTCN, "[BLE_SMTCN]invalid password length = %d\n", p_smtcn->pwrx_len);
+    404                  }
+    405              } else {
+    406                  result = wifi_config_set_wpa_psk_key(port, p_smtcn->pwrx, p_smtcn->pwrx_len);//the passwd length should be 8-64
+    407                  LOG_I(BLE_SMTCN, "[BLE_SMTCN]set psk key = %d\n", result);
+    408                  if (result < 0) {
+    409                      return;
+    410                  }
+    411              }
+    412             
+    413              result = wifi_config_reload_setting();
+    414              LOG_I(BLE_SMTCN, "[BLE_SMTCN]reload = %d\n", result);
+    415          }
+    416          
+    417          static uint32_t ble_smtcn_charc_value_callback (const uint8_t rw, uint16_t handle, void *data, uint16_t size, uint16_t offset)
+    418          {
+    419              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_charc_value_callback,rw = %d, handle = 0x%x, size = %d\n", rw, handle, size);
+    420          
+    421              if (rw == BT_GATTS_CALLBACK_WRITE) {
+    422                  uint8_t link_status;
+    423                  uint8_t ssid[BLE_SMTCN_SSID_LEN] = {0};
+    424                  uint8_t ssid_len;
+    425                  /*uint8_t test1[] = {0x01, 0x07, 0x53, 0x51, 0x41, 0x5F, 0x43, 0x48, 0x54};
+    426                  uint8_t test2[] = {0x02, 0x08, 0x37, 0x37, 0x37, 0x37, 0x37, 0x37, 0x37, 0x37};
+    427                  uint8_t test3[] = {0x03, 0x02, 0x09, 0x04};*/
+    428          
+    429                  ble_smtcn_parse_data(data, size);
+    430                  if (p_smtcn->wifi_conn_enabled == 0x0E && p_smtcn->indicate_enable == 0x0002) { 
+    431                      //every tag is ready and indication is enabled
+    432                      if (wifi_connection_get_link_status(&link_status) >= 0) {
+    433                          if (link_status  == WIFI_STATUS_LINK_CONNECTED) {
+    434          
+    435                              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_charc_value_callback: wifi connected\n");
+    436                              
+    437                              if (wifi_config_get_ssid(0, ssid, &(ssid_len)) >= 0) {
+    438                                  
+    439                                  LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_charc_value_callback: The connected ssid id %s\n", ssid);
+    440                                  if (!memcmp(ssid, p_smtcn->ssidrx, BLE_SMTCN_SSID_LEN)) {
+    441                                      
+    442                                      //the wifi AP is already connected
+    443                                      ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_CONNECTED, 0, NULL);
+    444                                      ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_SSID, ssid_len, ssid);
+    445                                      if (strlen(p_smtcn->ip_addr)) {
+    446                                          //send indication
+    447                                          ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_IP, strlen(p_smtcn->ip_addr), (uint8_t *)(p_smtcn->ip_addr));
+    448          
+    449                                          memset(p_smtcn->ip_addr, 0, BLE_SMTCN_IP_LEN);
+    450                                      }
+    451                                  } else {
+    452                                  
+    453                                      //different ssid, setup new wifi connection
+    454                                      ble_smtcn_setup_wifi_connection();
+    455                                  }
+    456                              } else {
+    457                                  LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_charc_value_callback: get ssid fail\n");
+    458                              }
+    459                           } else {
+    460                              //disconnected
+    461                              
+    462                              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_charc_value_callback: wifi disconnected\n");
+    463                              
+    464                              ble_smtcn_setup_wifi_connection();
+    465                           }
+    466                      } else {
+    467                          LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_charc_value_callback: get wifi link status fail\n");
+    468                      }  
+    469          
+    470                      p_smtcn->wifi_conn_enabled = 0;
+    471                  }
+    472              }else {
+    473                  return 0;
+    474              }
+    475          
+    476              return (uint32_t)size;
+    477          
+    478          }
+    479          
+    480          static uint32_t ble_smtcn_client_config_callback (const uint8_t rw, uint16_t handle, void *data, uint16_t size, uint16_t offset)
+    481          {
+    482          
+    483              LOG_I(BLE_SMTCN, "[BLE_SMTCN]CCC, rw = %d, handle = 0x%x, size = %d\n", rw, handle, size);
+    484               
+    485              p_smtcn->conn_handle = handle;
+    486          
+    487              //add a timer
+    488              if (p_smtcn->dtp_timer == NULL) {
+    489                  p_smtcn->dtp_timer = xTimerCreate("BLE_SMTCN_TIMER",
+    490                                            BLE_SMTCN_TIMER_PERIOD / portTICK_PERIOD_MS, pdFALSE,
+    491                                            ( void *)0,
+    492                                            ble_smtcn_timeout_callback);
+    493          
+    494                  if (!p_smtcn->dtp_timer) {
+    495                      LOG_I(BLE_SMTCN, "[BLE_SMTCN]CCC, create timer fail, timer = 0x%x\n", p_smtcn->dtp_timer);
+    496                  }
+    497              }
+    498          
+    499              if (rw == BT_GATTS_CALLBACK_WRITE) {
+    500                  if (size != sizeof(p_smtcn->indicate_enable)){ //Size check
+    501                      return 0;
+    502                  }
+    503                  p_smtcn->indicate_enable = *(uint16_t*)data;
+    504          
+    505                  if (p_smtcn->indicate_enable == 0x0002) {
+    506                      //send indication
+    507                      if (xTimerStart(p_smtcn->dtp_timer, 0 ) != pdPASS ) {
+    508                          LOG_I(BLE_SMTCN, "[BLE_SMTCN]CCC: timer start fail\n");
+    509                      } else {
+    510                          LOG_I(BLE_SMTCN, "[BLE_SMTCN]CCC: timer start\n");
+    511                      }
+    512                  }
+    513              }else {
+    514                  if (size!=0){
+    515                      memcpy(data, &p_smtcn->indicate_enable, sizeof(p_smtcn->indicate_enable));
+    516                  }
+    517              }
+    518          
+    519              return sizeof(p_smtcn->indicate_enable);
+    520          }
+    521          
+    522          
+    523          static void ble_smtcn_ip_change_callback(struct netif *netif)
+    524          {
+    525              if (!ip4_addr_isany_val(netif->ip_addr)) {
+    526                  
+    527                  strcpy(p_smtcn->ip_addr, inet_ntoa(netif->ip_addr)); 
+    528                  LOG_I(BLE_SMTCN, "[BLE_SMTCN] got IP:%s", p_smtcn->ip_addr);
+    529          
+    530                  if (p_smtcn->indicate_enable == 0x0002) {
+    531                      
+    532                      ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_IP, strlen(p_smtcn->ip_addr), (uint8_t *)(p_smtcn->ip_addr));
+    533          
+    534                      memset(p_smtcn->ip_addr, 0, BLE_SMTCN_IP_LEN);
+    535                  }
+    536              }
+    537          }
+    538          
+    539          
+    540          int32_t ble_smtcn_wifi_event_handler(wifi_event_t event, uint8_t *payload, uint32_t length)
+    541          {
+    542              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_wifi_event_handler: event = %d\n", event);
+    543          
+    544              switch(event) {
+    545                  case WIFI_EVENT_IOT_PORT_SECURE:
+    546                  {
+    547                      if (p_smtcn->indicate_enable == 0x0002) {
+    548                          uint8_t ssid[BLE_SMTCN_SSID_LEN] = {0};
+    549                          uint8_t ssid_len;
+    550                          struct netif *sta_if = netif_find("st2");
+    551          
+    552                          netif_set_status_callback(sta_if, ble_smtcn_ip_change_callback);
+    553                          netif_set_link_up(sta_if);
+    554                          dhcp_start(sta_if);
+    555          
+    556                          wifi_config_get_ssid(0, ssid, &(ssid_len));
+    557          
+    558                          LOG_I(BLE_SMTCN, "[BLE_SMTCN]dtps_wifi_event_handler, ssid = %s, ssid_len = %d\n", ssid, ssid_len);
+    559          
+    560          
+    561                          //send connected indication
+    562                          LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_wifi_event_handler: send connected indication\n");
+    563          
+    564                          ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_CONNECTED, 0, NULL);
+    565                          ble_smtcn_send_indication(BLE_SMTCN_WIFI_INFO_SSID, ssid_len, ssid);
+    566                      }
+    567                      break;
+    568                  }
+    569          
+    570                  case WIFI_EVENT_IOT_DISCONNECTED:
+    571                  {
+    572                      struct netif *sta_if = netif_find("st2");
+    573                      netif_set_status_callback(sta_if, NULL);
+    574                      netif_set_link_down(sta_if);
+    575                      netif_set_addr(sta_if, IP4_ADDR_ANY, IP4_ADDR_ANY, IP4_ADDR_ANY);
+    576                      break;
+    577                  }
+    578                  default:
+    579                      break;
+    580              }
+    581          
+    582              return 1;
+    583          }
+    584          
+    585          
+    586          int32_t ble_smtcn_init(void)
+    587          {
+    588              int32_t status;
+    589          
+    590              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_init\n");
+    591          
+    592              memset(p_smtcn, 0, sizeof(ble_smtcn_context_t));
+    593          
+    594              status = wifi_connection_register_event_handler(WIFI_EVENT_IOT_PORT_SECURE, ble_smtcn_wifi_event_handler);
+    595          
+    596              if (status < 0) {
+    597                  return status;
+    598          }
+    599          
+    600              status = wifi_connection_register_event_handler(WIFI_EVENT_IOT_DISCONNECTED, ble_smtcn_wifi_event_handler);
+    601          
+    602              if (status < 0) {
+    603                  return status;
+    604              }
+    605          
+    606              return 0;
+    607          }
+    608          
+    609          
+    610          int32_t ble_smtcn_deinit(void)
+    611          {
+    612              int32_t status;
+    613              
+    614              LOG_I(BLE_SMTCN, "[BLE_SMTCN]ble_smtcn_deinit\n");
+    615              
+    616              memset(p_smtcn, 0, sizeof(ble_smtcn_context_t));
+    617              
+    618              status = wifi_connection_unregister_event_handler(WIFI_EVENT_IOT_PORT_SECURE, ble_smtcn_wifi_event_handler);
+    619              if (status < 0) {
+    620                  return status;
+    621              }
+    622          
+    623              status = wifi_connection_unregister_event_handler(WIFI_EVENT_IOT_DISCONNECTED, ble_smtcn_wifi_event_handler);
+    624              if (status < 0) {
+    625                  return status;
+    626              }
+    627              
+    628              return 0;
+    629          }
+    630          
+    631          BT_GATTS_NEW_PRIMARY_SERVICE_16(bt_if_dtp_primary_service, BLE_SMTCN_SERVICE_UUID);
+    632          
+    633          BT_GATTS_NEW_CHARC_16(bt_if_dtp_char,
+    634                                BT_GATT_CHARC_PROP_WRITE | BT_GATT_CHARC_PROP_INDICATE, BLE_SMTCN_CHAR_VALUE_HANDLE, BLE_SMTCN_CHAR_UUID);
+    635          
+    636          BT_GATTS_NEW_CHARC_VALUE_CALLBACK(bt_if_dtp_char_value, BLE_SMTCN_CHAR_UUID128,
+    637                              BT_GATTS_REC_PERM_READABLE | BT_GATTS_REC_PERM_WRITABLE, ble_smtcn_charc_value_callback);
+    638          
+    639          BT_GATTS_NEW_CLIENT_CHARC_CONFIG(bt_if_dtp_client_config,
+    640                                           BT_GATTS_REC_PERM_READABLE | BT_GATTS_REC_PERM_WRITABLE,
+    641                                           ble_smtcn_client_config_callback);
+    642          
+    643          static const bt_gatts_service_rec_t *bt_if_ble_smtcn_service_rec[] = {
+    644              (const bt_gatts_service_rec_t *) &bt_if_dtp_primary_service,
+    645              (const bt_gatts_service_rec_t *) &bt_if_dtp_char,
+    646              (const bt_gatts_service_rec_t *) &bt_if_dtp_char_value,
+    647              (const bt_gatts_service_rec_t *) &bt_if_dtp_client_config
+    648          };
+    649          
+    650          const bt_gatts_service_t bt_if_ble_smtcn_service = {
+    651              .starting_handle = 0x0014,
+    652              .ending_handle = 0x0017,
+    653              .required_encryption_key_size = 0,
+    654              .records = bt_if_ble_smtcn_service_rec
+    655          };
+    656          
+    657          #endif
+    658          
+    659          
+    660          
+    661          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      72   ble_smtcn_charc_value_callback
+        72   -- Indirect call
+        72   -> __aeabi_memclr4
+        72   -> __aeabi_memset4
+        72   -> ble_smtcn_parse_data
+        72   -> ble_smtcn_send_indication
+        72   -> ble_smtcn_setup_wifi_connection
+        72   -> memcmp
+        72   -> strlen
+        72   -> wifi_config_get_ssid
+        72   -> wifi_connection_get_link_status
+      48   ble_smtcn_client_config_callback
+        48   -- Indirect call
+        48   -> __aeabi_memcpy
+        48   -> xTaskGetTickCount
+        48   -> xTimerCreate
+        48   -> xTimerGenericCommand
+      16   ble_smtcn_deinit
+        16   -- Indirect call
+        16   -> __aeabi_memset4
+        16   -> wifi_connection_unregister_event_handler
+      64   ble_smtcn_event_callback
+        64   -- Indirect call
+        64   -> bt_gap_le_set_advertising
+      16   ble_smtcn_init
+        16   -- Indirect call
+        16   -> __aeabi_memset4
+        16   -> wifi_connection_register_event_handler
+      16   ble_smtcn_init2
+        16   -- Indirect call
+        16   -> __aeabi_memset4
+         0   -> clear_bonded_info
+      24   ble_smtcn_ip_change_callback
+        24   -- Indirect call
+         0   -> __aeabi_memset4
+        24   -> ble_smtcn_send_indication
+        24   -> ip4addr_ntoa
+        24   -> strcpy
+        24   -> strlen
+      40   ble_smtcn_parse_data
+        40   -- Indirect call
+        40   -> __aeabi_memcpy
+     128   ble_smtcn_send_indication
+       128   -- Indirect call
+       128   -> __aeabi_memclr4
+       128   -> __aeabi_memcpy
+       128   -> bt_gatts_send_charc_value_notification_indication
+      32   ble_smtcn_set_adv
+        32   -- Indirect call
+        32   -> __aeabi_memcpy
+        32   -> __aeabi_memset
+        32   -> bt_gap_le_set_random_address
+     144   ble_smtcn_setup_wifi_connection
+       144   -- Indirect call
+       144   -> __aeabi_memcpy
+       144   -> strlen
+       144   -> wifi_config_reload_setting
+       144   -> wifi_config_set_security_mode
+       144   -> wifi_config_set_ssid
+       144   -> wifi_config_set_wep_key
+       144   -> wifi_config_set_wpa_psk_key
+      16   ble_smtcn_stop_adv
+        16   -- Indirect call
+        16   -> bt_gap_le_set_advertising
+      56   ble_smtcn_timeout_callback
+        56   -- Indirect call
+        56   -> __aeabi_memclr4
+        56   -> __aeabi_memset4
+        56   -> ble_smtcn_send_indication
+        56   -> strlen
+        56   -> wifi_config_get_ssid
+        56   -> wifi_connection_get_link_status
+      72   ble_smtcn_wifi_event_handler
+        72   -- Indirect call
+        72   -> __aeabi_memclr4
+        72   -> ble_smtcn_send_indication
+        72   -> dhcp_start
+        72   -> netif_find
+        72   -> netif_set_addr
+        72   -> netif_set_link_down
+        72   -> netif_set_link_up
+        72   -> netif_set_status_callback
+        72   -> wifi_config_get_ssid
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable82
+       4  ??DataTable82_1
+       4  ??DataTable82_2
+       4  ??DataTable82_3
+       4  ??DataTable82_4
+       4  ??DataTable82_5
+       4  ??DataTable82_6
+       4  ??DataTable82_7
+      12  ?_0
+      28  ?_1
+      68  ?_10
+      56  ?_11
+      36  ?_12
+      60  ?_13
+      72  ?_14
+      68  ?_15
+      72  ?_16
+      48  ?_17
+      32  ?_18
+      40  ?_19
+      48  ?_2
+      56  ?_20
+      28  ?_21
+      52  ?_22
+      32  ?_23
+      44  ?_24
+      32  ?_25
+      24  ?_26
+      80  ?_27
+      32  ?_28
+      60  ?_29
+      52  ?_3
+      72  ?_30
+      60  ?_31
+      64  ?_32
+      72  ?_33
+      52  ?_34
+      16  ?_35
+      52  ?_36
+      36  ?_37
+      32  ?_38
+      24  ?_39
+       8  ?_4
+      56  ?_40
+      32  ?_41
+       4  ?_42
+      64  ?_43
+      68  ?_44
+      28  ?_45
+      32  ?_46
+      16  ?_47
+      32  ?_48
+      32  ?_5
+      36  ?_6
+      64  ?_7
+      20  ?_8
+      52  ?_9
+      16  BLE_SMTCN_CHAR_UUID128
+     344  ble_smtcn_charc_value_callback
+     234  ble_smtcn_client_config_callback
+      88  ble_smtcn_cntx
+      66  ble_smtcn_deinit
+     164  ble_smtcn_event_callback
+      66  ble_smtcn_init
+      44  ble_smtcn_init2
+     102  ble_smtcn_ip_change_callback
+     304  ble_smtcn_parse_data
+     214  ble_smtcn_send_indication
+     112  ble_smtcn_set_adv
+     296  ble_smtcn_setup_wifi_connection
+      68  ble_smtcn_stop_adv
+     176  ble_smtcn_timeout_callback
+     206  ble_smtcn_wifi_event_handler
+      12  bt_if_ble_smtcn_service
+      16  bt_if_ble_smtcn_service_rec
+      16  bt_if_dtp_char
+      12  bt_if_dtp_char_value
+      12  bt_if_dtp_client_config
+      12  bt_if_dtp_primary_service
+      20  log_control_block_BLE_SMTCN
+          p_smtcn
+     364  -- Other
+
+ 
+    88 bytes in section .bss
+    36 bytes in section .data
+   264 bytes in section .rodata
+ 4 764 bytes in section .text
+ 
+ 4 764 bytes of CODE  memory
+   264 bytes of CONST memory
+   124 bytes of DATA  memory
+
+Errors: none
+Warnings: 5

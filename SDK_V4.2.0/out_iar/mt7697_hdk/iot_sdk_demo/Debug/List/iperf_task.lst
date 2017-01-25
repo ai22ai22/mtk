@@ -1,0 +1,1829 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:13
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\MTK\iperf\src\iperf_task.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\MTK\iperf\src\iperf_task.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\iperf_task.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\iperf_task.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\MTK\iperf\src\iperf_task.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          // Includes --------------------------------------------------------------------
+     36          #include "iperf_task.h"
+     37          #include "hal_gpt.h"
+     38          #include "ctype.h"
+     39          #include "syslog.h"
+     40          
+     41          #ifdef PING_MODULE_PRINTF
+     42          #define IPERF_LOGE(fmt,arg...)   printf(("[iperf]: "fmt), ##arg)
+     43          #define IPERF_LOGW(fmt,arg...)   printf(("[iperf]: "fmt), ##arg)
+     44          #define IPERF_LOGI(fmt,arg...)   printf(("[iperf]: "fmt), ##arg)
+     45          #else
+     46          log_create_module(iperf, PRINT_LEVEL_INFO);
+     47          #define IPERF_LOGE(fmt,arg...)   LOG_E(iperf, "[iperf]: "fmt,##arg)
+     48          #define IPERF_LOGW(fmt,arg...)   LOG_W(iperf, "[iperf]: "fmt,##arg)
+     49          #define IPERF_LOGI(fmt,arg...)   LOG_I(iperf, "[iperf]: "fmt,##arg)
+     50          #endif
+     51          
+     52          enum {
+     53              kConv_Unit,
+     54              kConv_Kilo,
+     55              kConv_Mega,
+     56              kConv_Giga
+     57          };
+     58          
+     59          /* factor to multiply the number by */
+     60          const double kConversion[] =
+     61          {
+     62              1.0,                       /* unit */
+     63              1.0 / 1024,                /* kilo */
+     64              1.0 / 1024 / 1024,         /* mega */
+     65              1.0 / 1024 / 1024 / 1024   /* giga */
+     66          };
+     67          
+     68          /* factor to multiply the number by for bits*/
+     69          const double kConversionForBits[] =
+     70          {
+     71              1.0,                       /* unit */
+     72              1.0 / 1000,                /* kilo */
+     73              1.0 / 1000 / 1000,         /* mega */
+     74              1.0 / 1000 / 1000 / 1000   /* giga */
+     75          };
+     76          
+     77          /* labels for Byte formats [KMG] */
+     78          const char* kLabel_Byte[] =
+     79          {
+     80              "Byte",
+     81              "KByte",
+     82              "MByte",
+     83              "GByte"
+     84          };
+     85          
+     86          /* labels for bit formats [kmg] */
+     87          const char* kLabel_bit[]  =
+     88          {
+     89              "bit",
+     90              "Kbit",
+     91              "Mbit",
+     92              "Gbit"
+     93          };
+     94          
+     95          typedef struct _iperf_context
+     96          {
+     97              uint32_t server_addr;
+     98              uint32_t port;
+     99              uint32_t buffer_len;
+    100              uint32_t win_band;
+    101              uint32_t amount;
+    102              iperf_result_t result_t;
+    103              iperf_callback_t callback;
+    104          }iperf_context_t;
+    105          
+    106          // Private variables -----------------------------------------------------------
+    107          uint32_t g_iperf_debug_feature = 0;
+    108          int g_iperf_is_tradeoff_test_client = 0;
+    109          int g_iperf_is_tradeoff_test_server = 0;
+    110          iperf_context_t g_iperf_context = {0};
+    111          
+    112          static uint32_t start_count = 0;
+    113          static uint32_t end_count = 0;
+    114          
+    115          // Private function prototypes -------------------------------------------------
+    116          static void iperf_calculate_result(int pkt_size, count_t *pkt_count);
+    117          static void iperf_display_report(char *report_title, unsigned time, unsigned h_ms_time, count_t *pkt_count);
+    118          static void iperf_reset_count(count_t *pkt_count);
+    119          static void iperf_copy_count(count_t *pkt_count_src, count_t *pkt_count_dest);
+    120          static void iperf_diff_count(count_t *result_count, count_t *pkt_count, count_t *tmp_count);
+    121          static char* iperf_ftoa(double f, char * buf, int precision);
+    122          static int byte_snprintf(char* outString, double inNum, char inFormat);
+    123          static void iperf_get_current_time(uint32_t *s, uint32_t *ms);
+    124          static void iperf_pattern(char *outBuf, int inBytes);
+    125          // Private functions -----------------------------------------------------------
+    126          
+    127          void iperf_udp_run_server(char *parameters[])
+    128          {
+    129          
+    130              int sockfd;
+    131              struct sockaddr_in servaddr;
+    132              struct sockaddr_in cliaddr;
+    133              int cli_len;
+    134          #if LWIP_IGMP
+    135              struct ip_mreq group;
+    136          #endif
+    137              int server_port;
+    138              int i;
+    139              count_t pkt_count;
+    140              count_t tmp_count;
+    141              int nbytes = 0; /* the number of read */
+    142              int send_bytes = 0; /* the number of send */
+    143              int total_send = 0; /* the total number of send  */
+    144          #if LWIP_IGMP
+    145              int mcast_tag = 0; /* the tag of parameter "-B"  */
+    146          #endif
+    147              int interval_tag = 0; /* the tag of parameter "-i"  */
+    148              char *mcast;
+    149          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    150              int tmp = 0;
+    151          #endif
+    152              char *buffer = NULL;
+    153              uint32_t t1, t2 , curr_t, curr_h_ms, t2_h_ms, t1_h_ms, tmp_t, tmp_h_ms, offset_t1, offset_t2, offset_time;
+    154              UDP_datagram *udp_h;
+    155              client_hdr *client_h;
+    156              client_hdr client_h_trans;
+    157              struct timeval timeout;
+    158              timeout.tv_sec = 20; //set recvive timeout = 20(sec)
+    159              timeout.tv_usec = 0;
+    160              int is_test_started = 0;
+    161              int udp_h_id = 0;
+    162          
+    163              //Statistics init
+    164              iperf_reset_count(&pkt_count);
+    165              iperf_reset_count(&tmp_count);
+    166              hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &start_count);
+    167              server_port = 0;
+    168              t1 = 0;
+    169              t2 = 0;
+    170              int offset = IPERF_COMMAND_BUFFER_SIZE / sizeof(char *);
+    171              int data_size = IPERF_TEST_BUFFER_SIZE;
+    172          
+    173              //Handle input parameters
+    174              if (g_iperf_is_tradeoff_test_client == 0) {
+    175                  for (i = 0; i < 13; i++) {
+    176                      if (strcmp((char *)&parameters[i * offset], "-p") == 0) {
+    177                          i++;
+    178                          server_port = atoi((char *)&parameters[i * offset]);
+    179                      } else if (strcmp((char *)&parameters[i * offset], "-n") == 0) {
+    180                          i++;
+    181                          total_send = iperf_format_transform((char *)&parameters[i * offset]);
+    182                          IPERF_LOGI("Set number to transmit = %d Bytes\n", total_send);
+    183                      } else if (strcmp((char *)&parameters[i * offset], "-B") == 0) {
+    184                          i++;
+    185                          mcast = (char *)&parameters[i * offset];
+    186          #if LWIP_IGMP
+    187                          mcast_tag = 1;
+    188          #endif
+    189                          IPERF_LOGI("Join Multicast %s \n", mcast);
+    190                      } else if (strcmp((char *)&parameters[i * offset], "-i") == 0) {
+    191                          interval_tag = 1;
+    192                          IPERF_LOGI("Set 10 seconds between periodic bandwidth reports\n");
+    193                      } else if (strcmp((char *)&parameters[i * offset], "-l") == 0) {
+    194                          i++;
+    195                          data_size = iperf_format_transform((char *)&parameters[i * offset]);
+    196                          IPERF_LOGI("Set buffer size = %d Bytes\n", data_size);
+    197                          if (data_size > IPERF_TEST_BUFFER_SIZE ) {
+    198                              data_size = IPERF_TEST_BUFFER_SIZE;
+    199                              IPERF_LOGI("Upper limit of buffer size = %d Bytes\n", IPERF_TEST_BUFFER_SIZE);
+    200                          } else if (data_size < (sizeof(UDP_datagram) + sizeof(client_hdr))) {
+    201                              data_size = sizeof(UDP_datagram) + sizeof(client_hdr);
+    202                              IPERF_LOGI("Lower limit of buffer size = %d Bytes\n", data_size);
+    203                          }
+    204                      }
+    205                  }
+    206              }
+    207          
+    208              // Create a new UDP connection handle
+    209              if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+    210                  IPERF_LOGI("[%s:%d] sockfd = %d\n", __FUNCTION__, __LINE__, sockfd);
+    211                  if (parameters) {
+    212                      vPortFree(parameters);
+    213                  }
+    214                  vTaskDelete(NULL);
+    215              }
+    216          
+    217              socklen_t len = sizeof(timeout);
+    218              if (setsockopt (sockfd, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, len) < 0) {
+    219                  IPERF_LOGI("Setsockopt failed - cancel receive timeout\n");
+    220              }
+    221          
+    222              // Bind to port and any IP address
+    223              memset(&servaddr, 0, sizeof(servaddr));
+    224              servaddr.sin_family = AF_INET;
+    225              servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    226              if (server_port == 0) {
+    227                  servaddr.sin_port = htons(IPERF_DEFAULT_PORT);
+    228                  IPERF_LOGI("Default server port = %d \n", IPERF_DEFAULT_PORT);
+    229              } else {
+    230                  servaddr.sin_port = htons(server_port);
+    231                  IPERF_LOGI("Set server port = %d \n", server_port);
+    232              }
+    233          #if LWIP_IGMP
+    234              //Multicast settings
+    235              if (mcast_tag == 1) {
+    236                  group.imr_multiaddr.s_addr = inet_addr(mcast);
+    237                  group.imr_interface.s_addr = htonl(INADDR_ANY);
+    238          
+    239                  if (setsockopt(sockfd, IPPROTO_IP, IP_ADD_MEMBERSHIP, (char *)&group, sizeof(struct ip_mreq)) < 0) {
+    240                      IPERF_LOGI("Setsockopt failed - multicast settings\n");
+    241                  }
+    242              }
+    243          #endif
+    244              if ((bind(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr))) < 0) {
+    245                  IPERF_LOGI("[%s:%d]\n", __FUNCTION__, __LINE__);
+    246                  close(sockfd);
+    247                  if (parameters) {
+    248                      vPortFree(parameters);
+    249                  }
+    250                  vTaskDelete(NULL);
+    251              }
+    252          
+    253              cli_len = sizeof(cliaddr);
+    254              buffer = pvPortMalloc(IPERF_TEST_BUFFER_SIZE);
+    255              if (buffer == NULL) {
+    256                  IPERF_LOGI("not enough buffer to send data!\n");
+    257                  close(sockfd);
+    258                  if (parameters) {
+    259                      vPortFree(parameters);
+    260                  }
+    261                  vTaskDelete(NULL);
+    262              }
+    263              memset(buffer, 0, IPERF_TEST_BUFFER_SIZE);
+    264              // Wait and check the request
+    265              do {
+    266                  // Handles request
+    267                  do {
+    268                      iperf_get_current_time(&offset_t1, 0);
+    269                      nbytes = recvfrom(sockfd, buffer, data_size, MSG_TRUNC, (struct sockaddr *)&cliaddr, (socklen_t *)&cli_len);
+    270                      iperf_get_current_time(&offset_t2, 0);
+    271          
+    272                      //if connected to iperf v2.0.1, there is no end package sent from client side
+    273                      if ((offset_t2 > (offset_t1 + 2)) && (nbytes <= 0) && (pkt_count.times >= 1)) {
+    274                          offset_time = offset_t2 - offset_t1;
+    275                      } else if (offset_time != 0) {
+    276                          offset_time = 0;
+    277                      }
+    278          
+    279                      udp_h = (UDP_datagram *)buffer;
+    280                      udp_h_id = (int)ntohl(udp_h->id);
+    281          
+    282          #if defined(IPERF_DEBUG_INTERNAL)
+    283                      client_h = (client_hdr *)&buffer[12];
+    284                      client_h_trans.flags = (int32_t)(ntohl(client_h->flags));
+    285                      client_h_trans.num_threads = (int32_t)(ntohl(client_h->num_threads));
+    286                      client_h_trans.port = (int32_t)(ntohl(client_h->port));
+    287                      client_h_trans.buffer_len = (int32_t)(ntohl(client_h->buffer_len));
+    288                      client_h_trans.win_band = (int32_t)(ntohl(client_h->win_band));
+    289                      client_h_trans.amount = (int32_t)(ntohl(client_h->amount));
+    290          
+    291                      DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("UDP server, receive from sockfd \"%d\", id is \"%d\", tv_sec is \"%d\", tv_usec is \"%d\", nbytes is \"%d\"\n",
+    292                                                           sockfd, udp_h_id, ntohl(udp_h->tv_sec), ntohl(udp_h->tv_usec), nbytes));
+    293                      DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("UDP server, receive from sin_len = %d, sin_family = %d , port = %d, s_addr = 0x%x\n", cliaddr.sin_len, cliaddr.sin_family,
+    294                                                           cliaddr.sin_port, cliaddr.sin_addr.s_addr));
+    295                      DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("[%s:%d] t1 = %d, t2 = %d\n", __FUNCTION__, __LINE__, t1, t2));
+    296          
+    297                      DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("[%s:%d], client_h_trans.flag = %d, num_threads = %d, port = %d, buffer_len = %d, win_band = %d, amount = %d\n"
+    298                                                           , __FUNCTION__, __LINE__, client_h_trans.flags, client_h_trans.num_threads, client_h_trans.port, client_h_trans.buffer_len, client_h_trans.win_band, client_h_trans.amount));
+    299          #endif
+    300          
+    301          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    302                      if (tmp != nbytes) {
+    303                          DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("\n[%s:%d] nbytes=%d \n", __FUNCTION__, __LINE__, nbytes));
+    304                      } else {
+    305                          DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("."));
+    306                      }
+    307                      tmp = nbytes;
+    308          #endif
+    309          
+    310                      iperf_calculate_result(nbytes, &pkt_count);
+    311          
+    312                      if (pkt_count.times == 1) {
+    313                          iperf_get_current_time(&t1, &t1_h_ms);
+    314                          t1_h_ms = (t1_h_ms / 100) % 10;
+    315                      }
+    316          
+    317                      // Report by second
+    318                      if ((pkt_count.times >= 1 && interval_tag > 0)) {
+    319                          iperf_get_current_time(&curr_t, &curr_h_ms);
+    320                          curr_h_ms = (curr_h_ms / 100) % 10;
+    321          
+    322                          if (offset_time > 0) {
+    323                              curr_t -= offset_time;
+    324                          }
+    325          
+    326                          if (curr_h_ms >= t1_h_ms) {
+    327                              tmp_h_ms = curr_h_ms - t1_h_ms;
+    328                              tmp_t = curr_t - t1;
+    329                          } else {
+    330                              tmp_h_ms = curr_h_ms + 10 - t1_h_ms;
+    331                              tmp_t = curr_t - t1 - 1;
+    332                          }
+    333          
+    334                          if ((((curr_t - t1) / 10) == interval_tag) && ((curr_h_ms >= t1_h_ms) || ((curr_t - t1) % 10) >= 1)) {
+    335                              count_t result_count;
+    336                              IPERF_LOGI("\nInterval: %d.0 - %d.0 sec   ", (int)(curr_t - t1) / 10 * 10 - 10, (int)(curr_t - t1) / 10 * 10);
+    337                              iperf_diff_count(&result_count, &pkt_count, &tmp_count);
+    338                              iperf_display_report("UDP Server", 10, 0, &result_count);
+    339                              iperf_copy_count(&pkt_count, &tmp_count);
+    340                              interval_tag++;
+    341                          } else if (((udp_h_id < 0) || (nbytes <= 0)) &&
+    342                                     (((tmp_t) % 10) != 0) &&
+    343                                     (is_test_started == 1)) {
+    344                              count_t result_count;
+    345                              IPERF_LOGI("\nInterval: %d.0 - %d.%d sec   ", (int)(curr_t - t1 + 1) / 10 * 10 - 10, (int)tmp_t, (int)tmp_h_ms);
+    346                              iperf_diff_count(&result_count, &pkt_count, &tmp_count);
+    347                              iperf_display_report("UDP Server", (tmp_t - ((curr_t - t1 + 1) / 10 * 10 - 10)), tmp_h_ms, &result_count);
+    348                              iperf_copy_count(&pkt_count, &tmp_count);
+    349                              interval_tag++;
+    350                          }
+    351                      }
+    352          
+    353                      if ((is_test_started == 0) && (udp_h_id > 0) && (nbytes > 0)) {
+    354                          is_test_started = 1;
+    355                      } else if (((udp_h_id < 0) || (nbytes <= 0)) && (is_test_started == 1)) { // the last package
+    356                          int32_t old_flag = 0;
+    357          
+    358                          // test end, save the current time to "t2"
+    359                          if (pkt_count.times >= 1) {
+    360                              /* sync the time if report by second */
+    361                              if (interval_tag > 0) {
+    362                                  t2 = curr_t;
+    363                                  t2_h_ms = curr_h_ms;
+    364                              } else {
+    365                                  iperf_get_current_time(&t2, &t2_h_ms);
+    366                                  t2_h_ms = (t2_h_ms / 100) % 10;
+    367                                  if (offset_time > 0) {
+    368                                      t2 -= offset_time;
+    369                                  }
+    370                              }
+    371                          }
+    372          
+    373                          // Calculate time: second
+    374                          if (t2_h_ms >= t1_h_ms) {
+    375                              t2_h_ms = t2_h_ms - t1_h_ms;
+    376                              t2 = t2 - t1;
+    377                          } else {
+    378                              t2_h_ms = t2_h_ms + 10 - t1_h_ms;
+    379                              t2 = t2 - t1 - 1;
+    380                          }
+    381                          // print out result
+    382                          iperf_display_report("[Total]UDP Server", t2, t2_h_ms, &pkt_count);
+    383          
+    384          
+    385                          //TODO: need to send the correct report to client-side, flag = 0 means the report is ignored.
+    386                          if (udp_h_id < 0) {
+    387                              old_flag = client_h_trans.flags;
+    388                              client_h_trans.flags = (int32_t)0;
+    389          
+    390                              // send the server report to client-side
+    391                              send_bytes = sendto(sockfd, buffer, nbytes, 0, (struct sockaddr *)&cliaddr, cli_len);
+    392                              (void)send_bytes;
+    393                              client_h_trans.flags = old_flag;
+    394                          }
+    395          
+    396          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    397                          DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("[%s:%d]send_bytes = %d, nbytes = %d,\n", __FUNCTION__, __LINE__, send_bytes, nbytes));
+    398          #endif
+    399          
+    400                          client_h = (client_hdr *)&buffer[12];
+    401                          client_h_trans.flags = (int32_t)(ntohl(client_h->flags));
+    402          
+    403                          // Tradeoff mode
+    404                          if (IPERF_HEADER_VERSION1 & client_h_trans.flags) {
+    405                              IPERF_LOGI("Tradeoff mode, client-side start.\n");
+    406          
+    407                              g_iperf_is_tradeoff_test_server = 1;
+    408                              memset(&g_iperf_context, 0, sizeof(iperf_context_t));
+    409                              g_iperf_context.server_addr = cliaddr.sin_addr.s_addr;
+    410                              g_iperf_context.port = ntohl(client_h->port);
+    411                              g_iperf_context.buffer_len = ntohl(client_h->buffer_len);
+    412                              g_iperf_context.win_band = ntohl(client_h->win_band);
+    413                              g_iperf_context.amount = ntohl(client_h->amount);
+    414                              iperf_udp_run_client(NULL);
+    415                              g_iperf_is_tradeoff_test_server = 0;
+    416          
+    417                          }
+    418          
+    419                          IPERF_LOGI("Data transfer is finished.\n");
+    420                          //TODO: send report to other side
+    421                          break;
+    422                      }
+    423                  } while (nbytes > 0);
+    424          
+    425          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    426                  DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("[%s:%d] Interval = %d.%d (secs)\n", __FUNCTION__, __LINE__, t2, t2_h_ms)); //sec.
+    427          #endif
+    428          
+    429              } while (0);
+    430              if (buffer) {
+    431                  vPortFree(buffer);
+    432              }
+    433              IPERF_LOGI("\n UDP server close socket!\n");
+    434              close(sockfd);
+    435          
+    436              IPERF_LOGI("If you want to execute iperf server again, please enter \"iperf -s -u\".\n");
+    437          
+    438              if (parameters) {
+    439                  vPortFree(parameters);
+    440              }
+    441          
+    442              g_iperf_context.result_t.data_size = 0;
+    443              g_iperf_context.result_t.send_time = 0;
+    444              if (g_iperf_context.callback) {
+    445                  g_iperf_context.callback(&g_iperf_context.result_t);
+    446              }
+    447              // For tradeoff mode, task will be deleted in iperf_udp_run_client
+    448              if (g_iperf_is_tradeoff_test_client == 0) {
+    449                  vTaskDelete(NULL);
+    450              }
+    451          }
+    452          
+    453          
+    454          void iperf_tcp_run_server(char *parameters[])
+    455          {
+    456              int listenfd, connfd;
+    457              struct sockaddr_in servaddr, cliaddr;
+    458              socklen_t clilen;
+    459              int server_port;
+    460              int i;
+    461              count_t pkt_count;
+    462              count_t tmp_count;
+    463              int nbytes = 0; /* the number of read */
+    464              int total_rcv = 0; /* the total number of receive  */
+    465              int num_tag = 0; /* the tag of parameter "-n"  */
+    466              int interval_tag = 0; /* the tag of parameter "-i"  */
+    467          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    468              int tmp = 0;
+    469          #endif
+    470              char *buffer = NULL;
+    471              uint32_t t1, t2, curr_t;
+    472              int offset = IPERF_COMMAND_BUFFER_SIZE / sizeof(char *);
+    473          
+    474              struct timeval timeout;
+    475              timeout.tv_sec = 20; //set recvive timeout = 20(sec)
+    476              timeout.tv_usec = 0;
+    477          
+    478              //Statistics init
+    479              iperf_reset_count(&pkt_count);
+    480              iperf_reset_count(&tmp_count);
+    481              hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &start_count);
+    482              server_port = 0;
+    483          
+    484              //Handle input parameters
+    485              for (i = 0; i < 9; i++) {
+    486                  if (strcmp((char *)&parameters[i * offset], "-p") == 0) {
+    487                      i++;
+    488                      server_port = atoi((char *)&parameters[i * offset]);
+    489                  } else if (strcmp((char *)&parameters[i * offset], "-n") == 0) {
+    490                      i++;
+    491                      total_rcv = iperf_format_transform((char *)&parameters[i * offset]);
+    492                      num_tag = 1;
+    493                      IPERF_LOGI("Set number to receive = %d Bytes\n", total_rcv);
+    494                  } else if (strcmp((char *)&parameters[i * offset], "-i") == 0) {
+    495                      interval_tag = 1;
+    496                      IPERF_LOGI("Set 10 seconds between periodic bandwidth reports\n");
+    497                  }
+    498              }
+    499          
+    500              // Create a new TCP connection handle
+    501              if ((listenfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+    502                  IPERF_LOGI("[%s:%d] listenfd = %d\n", __FUNCTION__, __LINE__, listenfd);
+    503                  if (parameters) {
+    504                      vPortFree(parameters);
+    505                  }
+    506                  vTaskDelete(NULL);
+    507              }
+    508          
+    509              socklen_t len = sizeof(timeout);
+    510              if (setsockopt (listenfd, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, len) < 0) {
+    511                  IPERF_LOGI("Setsockopt failed - cancel receive timeout\n");
+    512              }
+    513          
+    514              do {
+    515                  // Bind to port and any IP address
+    516                  memset(&servaddr, 0, sizeof(servaddr));
+    517                  servaddr.sin_family = AF_INET;
+    518                  servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    519                  if (server_port == 0) {
+    520                      servaddr.sin_port = htons(IPERF_DEFAULT_PORT);
+    521                      IPERF_LOGI("Default server port = %d \n", IPERF_DEFAULT_PORT);
+    522                  } else {
+    523                      servaddr.sin_port = htons(server_port);
+    524                      IPERF_LOGI("Set server port = %d \n", server_port);
+    525                  }
+    526          
+    527                  if ((bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr))) < 0) {
+    528                      IPERF_LOGI("[%s:%d]\n", __FUNCTION__, __LINE__);
+    529                      break;
+    530                  }
+    531          
+    532                  // Put the connection into LISTEN state
+    533                  if ((listen(listenfd, 1024)) < 0) {
+    534                      IPERF_LOGI("[%s:%d]\n", __FUNCTION__, __LINE__);
+    535                      break;
+    536                  }
+    537                  buffer = pvPortMalloc(IPERF_TEST_BUFFER_SIZE);
+    538                  if (buffer == NULL) {
+    539                      IPERF_LOGI("not enough buffer to send data!\n");
+    540                      close(listenfd);
+    541                      if (parameters) {
+    542                          vPortFree(parameters);
+    543                      }
+    544                      vTaskDelete(NULL);
+    545                  }
+    546                  memset(buffer, 0, IPERF_TEST_BUFFER_SIZE);
+    547                  do {
+    548                      if (server_port != 0) {
+    549                          IPERF_LOGI("Listen...(port = %d)\n", server_port);
+    550                      } else {
+    551                          IPERF_LOGI("Listen...(port = %d)\n", IPERF_DEFAULT_PORT);
+    552                      }
+    553                      // Block and wait for an incoming connection
+    554                      if ((connfd = accept(listenfd, (struct sockaddr *)&cliaddr, &clilen)) != -1) {
+    555                          IPERF_LOGI("[%s:%d] Accept... (sockfd=%d)\n", __FUNCTION__, __LINE__, connfd);
+    556          
+    557                          //Connection
+    558                          do {
+    559                              nbytes = recv(connfd, buffer, IPERF_TEST_BUFFER_SIZE, 0);
+    560                              iperf_calculate_result(nbytes, &pkt_count);
+    561                              if (pkt_count.times == 1) {
+    562                                  iperf_get_current_time(&t1, 0);
+    563                              }
+    564          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    565                              if (tmp != nbytes) {
+    566                                  DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("\n[%s:%d] nbytes=%d \n", __FUNCTION__, __LINE__, nbytes));
+    567                              } else {
+    568                                  DBGPRINT_IPERF(IPERF_DEBUG_RECEIVE, ("."));
+    569                              }
+    570                              tmp = nbytes;
+    571          #endif
+    572                              if (num_tag == 1) {
+    573                                  total_rcv -= nbytes;
+    574                              }
+    575          
+    576                              //Reach total receive number "-n"
+    577                              if (total_rcv < 0) {
+    578                                  IPERF_LOGI("Finish Receiving \n");
+    579                                  break;
+    580                              }
+    581                              if (pkt_count.times >= 1 && interval_tag > 0) {
+    582                                  iperf_get_current_time(&curr_t, 0);
+    583                                  if (((curr_t - t1) / 10) == interval_tag) {
+    584                                      count_t result_count;
+    585                                      IPERF_LOGI("\nInterval: %d - %d sec   ", (int)(curr_t - t1) / 10 * 10 - 10, (int)(curr_t - t1) / 10 * 10);
+    586                                      iperf_diff_count(&result_count, &pkt_count, &tmp_count);
+    587                                      iperf_display_report("TCP Server", 10, 0, &result_count);
+    588                                      iperf_copy_count(&pkt_count, &tmp_count);
+    589                                      interval_tag++;
+    590                                  }
+    591                              }
+    592                          } while (nbytes > 0);
+    593          
+    594                          if (pkt_count.times >= 1) {
+    595                              iperf_get_current_time(&t2, 0);
+    596                          }
+    597          
+    598          
+    599                          IPERF_LOGI("\nClose socket!\n");
+    600                          //Get report
+    601                          iperf_display_report("[Total]TCP Server", t2 - t1, 0, &pkt_count);
+    602          
+    603                          g_iperf_context.result_t.data_size = 0;
+    604                          g_iperf_context.result_t.send_time = 0;
+    605                          if (g_iperf_context.callback) {
+    606                              g_iperf_context.callback(&g_iperf_context.result_t);
+    607                          }
+    608                          //Statistics init
+    609                          iperf_reset_count(&pkt_count);
+    610                          iperf_reset_count(&tmp_count);
+    611                          if (interval_tag > 0) {
+    612                              interval_tag = 1;
+    613                          } else {
+    614                              interval_tag = 0;
+    615                          }
+    616          
+    617                          close(connfd);
+    618                      }
+    619                  } while (connfd != -1 && num_tag == 0);
+    620          
+    621                  close(listenfd);
+    622                  if (num_tag == 0) {
+    623                      IPERF_LOGI("\nClose socket!\n");
+    624                      iperf_display_report("[Total]TCP Server ", t2 - t1, 0, &pkt_count);
+    625                  }
+    626              } while (0); //Loop just once
+    627              if (buffer) {
+    628                  vPortFree(buffer);
+    629              }
+    630              IPERF_LOGI("If you want to execute iperf server again, please enter \"iperf -s\".\n");
+    631          
+    632              if (parameters) {
+    633                  vPortFree(parameters);
+    634              }
+    635          
+    636              vTaskDelete(NULL);
+    637          }
+    638          
+    639          
+    640          void iperf_tcp_run_client(char *parameters[])
+    641          {
+    642          
+    643              int sockfd;
+    644              struct sockaddr_in servaddr;
+    645              char *Server_IP;
+    646              count_t pkt_count;
+    647              count_t tmp_count;
+    648              int nbytes = 0; /* the number of send */
+    649              int total_send = 0; /* the total number of transmit  */
+    650              int num_tag = 0; /* the tag of parameter "-n"  */
+    651              int interval_tag = 0; /* the tag of parameter "-i"  */
+    652              char *str = NULL;
+    653              int i;
+    654              int win_size, send_time, server_port, pkt_delay, tos;
+    655              uint32_t t1, t2, curr_t;
+    656              int offset = IPERF_COMMAND_BUFFER_SIZE / sizeof(char *);
+    657          
+    658              //Statistics init
+    659              iperf_reset_count(&pkt_count);
+    660              iperf_reset_count(&tmp_count);
+    661              hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &start_count);
+    662              win_size = 0;
+    663              send_time = 0;
+    664              server_port = 0;
+    665              pkt_delay = 0;
+    666              tos = 0;
+    667          
+    668              //Handle input parameters
+    669              Server_IP = (char *)&parameters[0];
+    670          
+    671              for (i = 1; i < 18; i++) {
+    672                  if (strcmp((char *)&parameters[i * offset], "-w") == 0) {
+    673                      i++;
+    674                      win_size = iperf_format_transform((char *)&parameters[i * offset]);
+    675                      IPERF_LOGI("Set window size = %d Bytes\n", win_size);
+    676                  }
+    677          
+    678                  else if (strcmp((char *)&parameters[i * offset], "-t") == 0) {
+    679                      i++;
+    680                      send_time = atoi((char *)&parameters[i * offset]);
+    681                      IPERF_LOGI("Set send times = %d (secs)\n", atoi((char *)&parameters[i * offset]));
+    682          
+    683                  }
+    684          
+    685                  else if (strcmp((char *)&parameters[i * offset], "-p") == 0) {
+    686                      i++;
+    687                      server_port = atoi((char *)&parameters[i * offset]);
+    688          
+    689                  }
+    690          
+    691                  else if (strcmp((char *)&parameters[i * offset], "-d") == 0) {
+    692                      i++;
+    693                      pkt_delay = atoi((char *)&parameters[i * offset]);
+    694                      IPERF_LOGI("Set packet delay = %d (ms)\n", atoi((char *)&parameters[i * offset]));
+    695          
+    696                  } else if (strcmp((char *)&parameters[i * offset], "-n") == 0) {
+    697                      i++;
+    698                      total_send = iperf_format_transform((char *)&parameters[i * offset]);
+    699                      num_tag = 1;
+    700                      IPERF_LOGI("Set number to transmit = %d Bytes\n", total_send);
+    701                  } else if (strcmp((char *)&parameters[i * offset], "-S") == 0) {
+    702                      i++;
+    703                      tos = atoi((char *)&parameters[i * offset]);
+    704                      IPERF_LOGI("Set TOS = %d \n", atoi((char *)&parameters[i * offset]));
+    705                  } else if (strcmp((char *)&parameters[i * offset], "-i") == 0) {
+    706                      interval_tag = 1;
+    707                      IPERF_LOGI("Set 10 seconds between periodic bandwidth reports\n");
+    708                  }
+    709              }
+    710          
+    711              if (win_size == 0) {
+    712                  win_size = 1460;
+    713                  IPERF_LOGI("Default window size = %d Bytes\n", win_size);
+    714              }
+    715              if (send_time == 0) {
+    716                  if (num_tag == 1) {
+    717                      send_time = 999999;
+    718                  } else {
+    719                      send_time = 10;
+    720                      IPERF_LOGI("Default send times = %d (secs)\n", send_time);
+    721                  }
+    722              }
+    723          
+    724              // Create a new TCP connection handle
+    725              if ( (sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+    726                  IPERF_LOGI("[%s:%d] sockfd = %d\n", __FUNCTION__, __LINE__, sockfd);
+    727                  if (parameters) {
+    728                      vPortFree(parameters);
+    729                  }
+    730                  vTaskDelete(NULL);
+    731              }
+    732          
+    733              if (setsockopt(sockfd, IPPROTO_IP, IP_TOS, &tos, sizeof(tos)) < 0) {
+    734                  IPERF_LOGI("Set TOS: fail!\n");
+    735              }
+    736          
+    737              // Bind to port and IP
+    738              memset(&servaddr, 0, sizeof(servaddr));
+    739              servaddr.sin_family = AF_INET;
+    740              servaddr.sin_addr.s_addr = inet_addr(Server_IP);
+    741              if (server_port == 0) {
+    742                  servaddr.sin_port = htons(IPERF_DEFAULT_PORT);
+    743                  IPERF_LOGI("Default server port = %d \n", IPERF_DEFAULT_PORT);
+    744              } else {
+    745                  servaddr.sin_port = htons(server_port);
+    746                  IPERF_LOGI("Set server port = %d \n", server_port);
+    747              }
+    748          
+    749              if ((connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr))) < 0) {
+    750                  IPERF_LOGI("Connect failed, sockfd is %d, addr is \"%s\"\n", (int)sockfd, ((struct sockaddr *)&servaddr)->sa_data);
+    751                  close(sockfd);
+    752                  if (parameters) {
+    753                      vPortFree(parameters);
+    754                  }
+    755                  if (g_iperf_context.callback)
+    756                      g_iperf_context.callback(NULL);
+    757                  vTaskDelete(NULL);
+    758              }
+    759          
+    760              iperf_get_current_time(&t1, 0);
+    761          
+    762              str = pvPortCalloc(1, IPERF_TEST_BUFFER_SIZE);
+    763              if (str == NULL) {
+    764                  IPERF_LOGI("not enough buffer to send data!\n");
+    765                  close(sockfd);
+    766                  if (parameters) {
+    767                      vPortFree(parameters);
+    768                  }
+    769                  if (g_iperf_context.callback)
+    770                      g_iperf_context.callback(NULL);
+    771                  vTaskDelete(NULL);
+    772              }
+    773              memset(str, 0, IPERF_TEST_BUFFER_SIZE);
+    774              iperf_pattern(str, IPERF_TEST_BUFFER_SIZE);
+    775              do {
+    776                  nbytes = send(sockfd, str, win_size, 0);
+    777                  iperf_calculate_result(nbytes, &pkt_count);
+    778          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    779                  DBGPRINT_IPERF(IPERF_DEBUG_SEND, ("\n[%s:%d] nbytes=%d \n", __FUNCTION__, __LINE__, nbytes));
+    780          #endif
+    781                  vTaskDelay(pkt_delay);
+    782                  if (num_tag == 1) {
+    783                      total_send -= nbytes;
+    784                  }
+    785                  //Reach total receive number "-n"
+    786                  if (total_send < 0) {
+    787                      IPERF_LOGI("Finish Sending \n");
+    788                      break;
+    789                  }
+    790          
+    791                  if (interval_tag > 0) {
+    792                      iperf_get_current_time(&curr_t, 0);
+    793          
+    794                      if (((curr_t - t1) / 10) == interval_tag) {
+    795                          count_t result_count;
+    796                          IPERF_LOGI("\nInterval: %d - %d sec   ", (int)(curr_t - t1) / 10 * 10 - 10, (int)(curr_t - t1) / 10 * 10);
+    797                          iperf_diff_count(&result_count, &pkt_count, &tmp_count);
+    798                          iperf_display_report("TCP Client", 10, 0, &result_count);
+    799                          iperf_copy_count(&pkt_count, &tmp_count);
+    800                          interval_tag++;
+    801                      }
+    802                  }
+    803          
+    804                  iperf_get_current_time(&curr_t, 0);
+    805              } while ( (curr_t - t1) < send_time );
+    806          
+    807              iperf_get_current_time(&t2, 0);
+    808              if (str) {
+    809                  vPortFree(str);
+    810              }
+    811              close(sockfd);
+    812              IPERF_LOGI("\nClose socket!\n");
+    813          
+    814              iperf_display_report("[Total]TCP Client", t2 - t1, 0, &pkt_count);
+    815          
+    816              if (parameters) {
+    817                  vPortFree(parameters);
+    818              }
+    819          
+    820              g_iperf_context.result_t.data_size = win_size;
+    821              g_iperf_context.result_t.send_time = send_time;
+    822              if (g_iperf_context.callback)
+    823                  g_iperf_context.callback(&g_iperf_context.result_t);
+    824          
+    825              vTaskDelete(NULL);
+    826          
+    827          }
+    828          
+    829          
+    830          void iperf_udp_run_client(char *parameters[])
+    831          {
+    832              int sockfd;
+    833              struct sockaddr_in servaddr;
+    834              char *Server_IP = 0;
+    835              count_t pkt_count;
+    836              count_t tmp_count;
+    837              int nbytes = 0; /* the number of send */
+    838              int total_send = 0; /* the total number of transmit  */
+    839              int num_tag = 0; /* the tag of parameter "-n"  */
+    840              int interval_tag = 0; /* the tag of parameter "-i"  */
+    841              int tradeoff_tag = 0; /* the tag of parameter "-r"  */
+    842              char *str = NULL;
+    843              int i;
+    844              int data_size, send_time, server_port, pkt_delay, pkt_delay_offset, tos, bw;
+    845              uint32_t t1, t2, curr_t, t1_ms, last_tick, current_tick, last_sleep, current_sleep;
+    846              UDP_datagram *udp_h;
+    847              client_hdr *client_h;
+    848              int udp_h_id = 0;
+    849              int offset = IPERF_COMMAND_BUFFER_SIZE / sizeof(char *);
+    850          
+    851              //Statistics init
+    852              iperf_reset_count(&pkt_count);
+    853              iperf_reset_count(&tmp_count);
+    854              hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &start_count);
+    855              data_size = 0;
+    856              send_time = 0;
+    857              server_port = 0;
+    858              pkt_delay = 0;
+    859              pkt_delay_offset = 0;
+    860              tos = 0;
+    861              bw = 0;
+    862          
+    863              //Handle input parameters
+    864              if (g_iperf_is_tradeoff_test_server == 0) {
+    865                  Server_IP = (char *)&parameters[0];
+    866                  for (i = 1; i < 18; i++) {
+    867                      if (strcmp((char *)&parameters[i * offset], "-l") == 0) {
+    868                          i++;
+    869                          data_size = iperf_format_transform((char *)&parameters[i * offset]);
+    870                          IPERF_LOGI("Set datagram size = %d Bytes\n", data_size);
+    871                      }
+    872          
+    873                      else if (strcmp((char *)&parameters[i * offset], "-t") == 0) {
+    874                          i++;
+    875                          send_time = atoi((char *)&parameters[i * offset]);
+    876                          IPERF_LOGI("Set send times = %d (secs)\n", atoi((char *)&parameters[i * offset]));
+    877                      }
+    878          
+    879                      else if (strcmp((char *)&parameters[i * offset], "-p") == 0) {
+    880                          i++;
+    881                          server_port = atoi((char *)&parameters[i * offset]);
+    882                      }
+    883          
+    884                      else if (strcmp((char *)&parameters[i * offset], "-d") == 0) {
+    885                          i++;
+    886                          pkt_delay = atoi((char *)&parameters[i * offset]);
+    887                          IPERF_LOGI("Set packet delay = %d (ms)\n", atoi((char *)&parameters[i * offset]));
+    888                      } else if (strcmp((char *)&parameters[i * offset], "-n") == 0) {
+    889                          i++;
+    890                          total_send = iperf_format_transform((char *)&parameters[i * offset]);
+    891                          num_tag = 1;
+    892                          IPERF_LOGI("Set number to transmit = %d Bytes\n", total_send);
+    893                      } else if (strcmp((char *)&parameters[i * offset], "-S") == 0) {
+    894                          i++;
+    895                          tos = atoi((char *)&parameters[i * offset]);
+    896                          IPERF_LOGI("Set TOS = %d \n", atoi((char *)&parameters[i * offset]));
+    897                      } else if (strcmp((char *)&parameters[i * offset], "-b") == 0) {
+    898                          i++;
+    899                          IPERF_LOGI("Set bandwidth = %s\n", (char *)&parameters[i * offset]);
+    900                          bw = iperf_format_transform((char *)&parameters[i * offset]) / 8;
+    901                          if (bw > 2621440 || bw <= 0) {
+    902                              bw = 2621440;
+    903                              IPERF_LOGI("Upper limit of bandwith setting = 20Mbits/sec\n");
+    904                          }
+    905                          IPERF_LOGI("bandwidth = %d\n", bw);
+    906                      } else if (strcmp((char *)&parameters[i * offset], "-i") == 0) {
+    907                          interval_tag = 1;
+    908                          IPERF_LOGI("Set 10 seconds between periodic bandwidth reports\n");
+    909                      } else if (strcmp((char *)&parameters[i * offset], "-r") == 0) {
+    910                          tradeoff_tag = 1;
+    911                          IPERF_LOGI("Set to tradeoff mode\n");
+    912                      }
+    913                  }
+    914              }
+    915          
+    916              // Bind to port and IP
+    917              memset(&servaddr, 0, sizeof(servaddr));
+    918              servaddr.sin_family = AF_INET;
+    919          
+    920              if (g_iperf_is_tradeoff_test_server == 0) {
+    921                  servaddr.sin_addr.s_addr = inet_addr(Server_IP);
+    922              } else {
+    923                  servaddr.sin_addr.s_addr = g_iperf_context.server_addr;
+    924                  server_port = g_iperf_context.port;
+    925                  bw = g_iperf_context.win_band / 8;
+    926                  total_send = g_iperf_context.amount;
+    927                  num_tag = 1;
+    928              }
+    929              IPERF_LOGI("Server address = %x \n", (unsigned int)servaddr.sin_addr.s_addr);
+    930          
+    931              if (data_size == 0) {
+    932                  data_size = 1460;
+    933                  IPERF_LOGI("Default datagram size = %d Bytes\n", data_size);
+    934              }
+    935          
+    936              g_iperf_context.result_t.data_size = data_size;
+    937          
+    938              if (bw > 0) {
+    939                  pkt_delay = (1000 * data_size) / bw;
+    940          
+    941                  // pkt_dalay add 1ms regularly to reduce the offset
+    942                  pkt_delay_offset = (((1000 * data_size) % bw) * 10 / bw);
+    943                  if (pkt_delay_offset) {
+    944                      pkt_delay_offset = 10 / pkt_delay_offset;
+    945                  }
+    946              }
+    947          
+    948              if (send_time == 0) {
+    949                  if (num_tag == 1) {
+    950                      send_time = 999999;
+    951                  } else {
+    952                      send_time = 10;
+    953                      IPERF_LOGI("Default send times = %d (secs)\n", send_time);
+    954                  }
+    955              }
+    956          
+    957              g_iperf_context.result_t.send_time = send_time;
+    958          
+    959              // Create a new TCP connection handle
+    960              if ( (sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+    961                  IPERF_LOGI("[%s:%d] sockfd = %d\n", __FUNCTION__, __LINE__, sockfd);
+    962                  if (parameters) {
+    963                      vPortFree(parameters);
+    964                  }
+    965                  if (g_iperf_context.callback)
+    966                      g_iperf_context.callback(NULL);
+    967                  vTaskDelete(NULL);
+    968              }
+    969          
+    970              if (setsockopt(sockfd, IPPROTO_IP, IP_TOS, &tos, sizeof(tos)) < 0) {
+    971                  IPERF_LOGI("Set TOS: fail!\n");
+    972              }
+    973          
+    974              if (server_port == 0) {
+    975                  servaddr.sin_port = htons(IPERF_DEFAULT_PORT);
+    976                  IPERF_LOGI("\nDefault server port = %d \n", IPERF_DEFAULT_PORT);
+    977              } else {
+    978                  servaddr.sin_port = htons(server_port);
+    979                  IPERF_LOGI("\nSet server port = %d \n", server_port);
+    980              }
+    981          
+    982              if ((connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr))) < 0) {
+    983                  IPERF_LOGI("Connect failed\n");
+    984                  close(sockfd);
+    985                  if (parameters) {
+    986                      vPortFree(parameters);
+    987                  }
+    988                  if (g_iperf_context.callback)
+    989                      g_iperf_context.callback(NULL);
+    990                  vTaskDelete(NULL);
+    991              }
+    992          
+    993              str = pvPortCalloc(1, IPERF_TEST_BUFFER_SIZE);
+    994              if (str == NULL) {
+    995                  IPERF_LOGI("not enough buffer to send data!\n");
+    996                  close(sockfd);
+    997                  if (parameters) {
+    998                      vPortFree(parameters);
+    999                  }
+   1000                  if (g_iperf_context.callback)
+   1001                      g_iperf_context.callback(NULL);
+   1002                  vTaskDelete(NULL);
+   1003              }
+   1004              memset(str, 0, IPERF_TEST_BUFFER_SIZE);
+   1005              iperf_pattern(str, IPERF_TEST_BUFFER_SIZE);
+   1006          
+   1007              // Init UDP data header
+   1008              udp_h = (UDP_datagram *)&str[0];
+   1009              client_h = (client_hdr *)&str[12];
+   1010              if (tradeoff_tag == 1) {
+   1011                  client_h->flags = htonl(IPERF_HEADER_VERSION1);
+   1012              } else {
+   1013                  client_h->flags = 0;
+   1014              }
+   1015              client_h->num_threads = htonl(1);
+   1016              client_h->port = htonl(IPERF_DEFAULT_PORT);
+   1017              client_h->buffer_len = 0;
+   1018              client_h->win_band = htonl((bw * 8));
+   1019              if (num_tag != 1) { // time mode
+   1020                  client_h->amount = htonl(~(long)(send_time * bw));
+   1021              } else {
+   1022                  client_h->amount = htonl((long)(total_send));
+   1023                  client_h->amount &= htonl(0x7FFFFFFF);
+   1024              }
+   1025          
+   1026              iperf_get_current_time(&t1, &t1_ms);
+   1027              last_tick = t1_ms;
+   1028              last_sleep = 0;
+   1029          
+   1030              do {
+   1031                  udp_h->id = htonl(udp_h_id++);
+   1032                  udp_h->tv_sec = htonl((last_tick + last_sleep) / 1000);
+   1033                  udp_h->tv_usec = htonl(last_tick + last_sleep);
+   1034          
+   1035                  nbytes = send(sockfd, str, data_size, 0);
+   1036                  iperf_calculate_result(nbytes, &pkt_count);
+   1037          
+   1038                  iperf_get_current_time(&curr_t, &current_tick);
+   1039          
+   1040                  if ((udp_h_id % pkt_delay_offset) == 0) {
+   1041                      current_sleep = pkt_delay - (current_tick - last_tick - last_sleep) + 1;
+   1042                  } else {
+   1043                      current_sleep = pkt_delay - (current_tick - last_tick - last_sleep);
+   1044                  }
+   1045          
+   1046                  if ((int)current_sleep > 0) {
+   1047                      vTaskDelay(current_sleep);
+   1048                  } else {
+   1049                      current_sleep = 0;
+   1050                  }
+   1051          
+   1052                  last_tick = current_tick;
+   1053                  last_sleep = current_sleep;
+   1054          
+   1055          #if defined(IPERF_DEBUG_INTERNAL)
+   1056                  // show the debug info per second
+   1057                  if (((bw == 0) && ((udp_h_id % 5000 == 0))) || (udp_h_id % (bw / nbytes) == 0)) {
+   1058                      DBGPRINT_IPERF(IPERF_DEBUG_SEND, ("\n[%s:%d] nbytes = %d, udp_h_id = %d, pkt_delay = %d, current_tick = %d, current_sleep = %d\n",
+   1059                                                        __FUNCTION__, __LINE__, nbytes, udp_h_id, pkt_delay, current_tick, current_sleep));
+   1060                  }
+   1061          #endif
+   1062          
+   1063                  if (num_tag == 1) {
+   1064                      total_send -= nbytes;
+   1065                  }
+   1066          
+   1067                  //Reach total receive number "-n"
+   1068                  if (total_send < 0) {
+   1069                      IPERF_LOGI("Finish Sending ");
+   1070                      break;
+   1071                  }
+   1072          
+   1073                  if (interval_tag > 0) {
+   1074                      if (((current_tick - t1_ms) / 10000) == interval_tag) {
+   1075                          count_t result_count;
+   1076                          IPERF_LOGI("\nInterval: %d - %d sec   ", (int)(current_tick - t1_ms) / 10000 * 10 - 10, (int)(current_tick - t1_ms) / 10000 * 10);
+   1077                          iperf_diff_count(&result_count, &pkt_count, &tmp_count);
+   1078                          iperf_display_report("UDP Client", 10, 0, &result_count);
+   1079                          iperf_copy_count(&pkt_count, &tmp_count);
+   1080                          interval_tag++;
+   1081                      }
+   1082                      iperf_get_current_time(&curr_t, &current_tick);
+   1083                  }
+   1084              } while ((current_tick + pkt_delay - t1_ms) < send_time * 1000);
+   1085          
+   1086              iperf_get_current_time(&t2, 0);
+   1087              iperf_display_report("[Total]UDP Client", t2 - t1, 0, &pkt_count);
+   1088          
+   1089              // send the last datagram
+   1090              udp_h_id = (-udp_h_id);
+   1091              udp_h->id = htonl(udp_h_id);
+   1092              iperf_get_current_time(&curr_t, 0);
+   1093              udp_h->tv_sec = htonl(curr_t);
+   1094              udp_h->tv_usec = htonl(curr_t * 1000);
+   1095          
+   1096              nbytes = send(sockfd, str, data_size, 0);
+   1097          
+   1098              //TODO: receive the report from server side and print out
+   1099              if (str) {
+   1100                  vPortFree(str);
+   1101              }
+   1102              IPERF_LOGI("\nUDP Client close socket!");
+   1103              close(sockfd);
+   1104          
+   1105              // tradeoff testing
+   1106              if (tradeoff_tag == 1) {
+   1107                  IPERF_LOGI("Tradoff test, start server-side.");
+   1108                  g_iperf_is_tradeoff_test_client = 1;
+   1109                  iperf_udp_run_server(NULL);
+   1110                  g_iperf_is_tradeoff_test_client = 0;
+   1111              }
+   1112          
+   1113              if (parameters) {
+   1114                  vPortFree(parameters);
+   1115              }
+   1116              if (g_iperf_context.callback)
+   1117                  g_iperf_context.callback(&g_iperf_context.result_t);
+   1118          
+   1119              // For tradeoff mode, task will be deleted in iperf_udp_run_server
+   1120              if (g_iperf_is_tradeoff_test_server == 0) {
+   1121                  vTaskDelete(NULL);
+   1122              }
+   1123          }
+   1124          
+   1125          
+   1126          static void iperf_calculate_result(int pkt_size, count_t *pkt_count)
+   1127          {
+   1128              if (pkt_size > 0) {
+   1129                  pkt_count->Bytes += pkt_size;
+   1130                  pkt_count->times++;
+   1131              }
+   1132          }
+   1133          
+   1134          
+   1135          static char * iperf_ftoa(double f, char * buf, int precision)
+   1136          {
+   1137              char * ptr = buf;
+   1138              char * p = ptr;
+   1139              char * p1;
+   1140              char c;
+   1141              long intPart;
+   1142              char* temp_str;
+   1143          
+   1144              // sign stuff
+   1145              if (f < 0) {
+   1146                  f = -f;
+   1147                  *ptr++ = '-';
+   1148              }
+   1149          
+   1150              f += (double)0.005;
+   1151          
+   1152              intPart = (long)f;
+   1153              f -= intPart;
+   1154          
+   1155              if (!intPart)
+   1156                  *ptr++ = '0';
+   1157              else {
+   1158                  // save start pointer
+   1159                  p = ptr;
+   1160          
+   1161                  // convert (reverse order)
+   1162                  while (intPart) {
+   1163                      *p++ = '0' + intPart % 10;
+   1164                      intPart /= 10;
+   1165                  }
+   1166          
+   1167                  // save end pos
+   1168                  p1 = p;
+   1169          
+   1170                  // reverse result
+   1171                  while (p > ptr) {
+   1172                      c = *--p;
+   1173                      *p = *ptr;
+   1174                      *ptr++ = c;
+   1175              }
+   1176          
+   1177                  // restore end pos
+   1178                  ptr = p1;
+   1179          }
+   1180          
+   1181              // decimal part
+   1182              if (precision) {
+   1183                  // place decimal point
+   1184                  *ptr++ = '.';
+   1185          
+   1186                  // convert
+   1187                  while (precision--) {
+   1188                      f *= (double)10.0;
+   1189                      c = (char)f;
+   1190                      *ptr++ = '0' + c;
+   1191                      f -= c;
+   1192                  }
+   1193              }
+   1194          
+   1195              // terminating zero
+   1196              *ptr = 0;
+   1197          
+   1198              temp_str = --ptr;
+   1199              while(*temp_str != '.') {
+   1200                  if(*temp_str == '0') {
+   1201                      *temp_str = '\0';
+   1202                  } else {
+   1203                      break;
+   1204                  }
+   1205                  temp_str--;
+   1206              }
+   1207          
+   1208              if((*(temp_str+1) == '\0') && (*temp_str == '.')) {
+   1209                  *(temp_str+1) = '0';
+   1210              }
+   1211          
+   1212              return buf;
+   1213          }
+   1214          
+   1215          
+   1216          static int byte_snprintf( char* outString, double inNum, char inFormat)
+   1217          {
+   1218              int conv;
+   1219          
+   1220              if ( ! isupper( (int)inFormat ) ) {
+   1221                  inNum *= 8;
+   1222              }
+   1223          
+   1224              double tmpNum = inNum;
+   1225              conv = kConv_Unit;
+   1226          
+   1227              if ( isupper((int)inFormat) ) {
+   1228                  while ( tmpNum >= (double)1024.0  &&  conv <= kConv_Giga ) {
+   1229                      tmpNum /= (double)1024.0;
+   1230                      conv++;
+   1231              }
+   1232              } else {
+   1233                  while ( tmpNum >= (double)1000.0  &&  conv <= kConv_Giga ) {
+   1234                      tmpNum /= (double)1000.0;
+   1235                      conv++;
+   1236                  }
+   1237              }
+   1238          
+   1239              if ( ! isupper ((int)inFormat) ) {
+   1240                  inNum *= kConversionForBits[ conv ];
+   1241              } else {
+   1242                  inNum *= kConversion [conv];
+   1243              }
+   1244          
+   1245              iperf_ftoa(inNum, outString, 2);
+   1246              return conv;
+   1247          } /* end byte_snprintf */
+   1248          
+   1249          
+   1250          static void iperf_display_report(char *report_title, unsigned time, unsigned h_ms_time, count_t *pkt_count)
+   1251          {
+   1252              double tmp_time = time + (double)h_ms_time/(double)10.0;
+   1253              char s[9] = {0};
+   1254              double tput = 0.0;
+   1255              int conv;
+   1256              memcpy(g_iperf_context.result_t.report_title, report_title, strlen(report_title));
+   1257          #if defined(MTK_IPERF_DEBUG_ENABLE)
+   1258              DBGPRINT_IPERF(IPERF_DEBUG_REPORT, ("\nTransfer in %d.%d seconds: ", time, h_ms_time));
+   1259              if (pkt_count->GBytes != 0) {
+   1260                  DBGPRINT_IPERF(IPERF_DEBUG_REPORT, ("%d GBytes ", pkt_count->GBytes));
+   1261              }
+   1262          
+   1263              if (pkt_count->MBytes != 0) {
+   1264                  DBGPRINT_IPERF(IPERF_DEBUG_REPORT, ("%d MBytes ", pkt_count->MBytes));
+   1265              }
+   1266          
+   1267              if (pkt_count->KBytes != 0) {
+   1268                  DBGPRINT_IPERF(IPERF_DEBUG_REPORT, ("%d KBytes ", pkt_count->KBytes));
+   1269          }
+   1270          
+   1271              DBGPRINT_IPERF(IPERF_DEBUG_REPORT, ("[%s:%d], time = %d, h_ms_time = %d, GBytes = %d, MBytes = %d, KBytes= %d, Bytes= %d \n", __FUNCTION__, __LINE__,
+   1272                                                  time, h_ms_time, pkt_count->GBytes, pkt_count->MBytes, pkt_count->KBytes, pkt_count->Bytes));
+   1273          #endif
+   1274              tput = (double)(pkt_count->Bytes);
+   1275          
+   1276              conv = byte_snprintf(s, tput, 'K');
+   1277              IPERF_LOGI("The total len: %s %s", s, kLabel_Byte[conv]);
+   1278          
+   1279              sprintf(g_iperf_context.result_t.total_len, "%s %s", s, kLabel_Byte[conv]);
+   1280              tput = tput/(double)tmp_time;
+   1281          
+   1282              conv = byte_snprintf(s, tput, 'k');
+   1283          
+   1284              IPERF_LOGI("%s Bandwidth: %s %s/sec.", report_title, s, kLabel_bit[conv]);
+   1285          
+   1286              sprintf(g_iperf_context.result_t.result, "%s %s/sec.", s, kLabel_bit[conv]);
+   1287          
+   1288          #if defined(MTK_IPERF_DEBUG_ENABLE)
+   1289              DBGPRINT_IPERF(IPERF_DEBUG_REPORT, ("Receive times: %d\n", pkt_count->times));
+   1290          #endif
+   1291          
+   1292          }
+   1293          
+   1294          
+   1295          static void iperf_reset_count(count_t *pkt_count)
+   1296          {
+   1297              pkt_count->Bytes = 0;
+   1298              pkt_count->times = 0;
+   1299          }
+   1300          
+   1301          
+   1302          static void iperf_copy_count(count_t *pkt_count_src, count_t *pkt_count_dest)
+   1303          {
+   1304          
+   1305              pkt_count_dest->Bytes = pkt_count_src->Bytes;
+   1306              pkt_count_dest->times = pkt_count_src->times;
+   1307          }
+   1308          
+   1309          
+   1310          static void iperf_diff_count(count_t *result_count, count_t *pkt_count, count_t *tmp_count)
+   1311          {
+   1312              /* pkt_count > tmp_count */
+   1313              result_count->times = pkt_count->times - tmp_count->times;
+   1314          
+   1315              if (pkt_count->Bytes >= tmp_count->Bytes) {
+   1316                  result_count->Bytes = pkt_count->Bytes - tmp_count->Bytes;
+   1317              } else {
+   1318                  IPERF_LOGI("Warning: Diff data is wrong.");
+   1319              }
+   1320          
+   1321          #if defined(IPERF_DEBUG_INTERNAL)
+   1322              DBGPRINT_IPERF(IPERF_DEBUG_REPORT, ("\niperf_diff_count: ret.times = %d, ret.GBytes = %d, ret.MBytes = %d, ret.KBytes = %d, ret.Bytes = %d\n",
+   1323                                                  result_count->times, result_count->GBytes, result_count->MBytes, result_count->KBytes, result_count->Bytes));
+   1324          #endif
+   1325          }
+   1326          
+   1327          
+   1328          static void iperf_get_current_time(uint32_t *s, uint32_t *ms)
+   1329          {
+   1330              uint32_t count = 0;
+   1331              uint64_t count_temp = 0;
+   1332              hal_gpt_status_t ret_status;
+   1333          
+   1334              ret_status = hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &count);
+   1335              if (HAL_GPT_STATUS_OK != ret_status) {
+   1336                  IPERF_LOGI("[%s:%d]get count error, ret_status = %d", __FUNCTION__, __LINE__, ret_status);
+   1337              }
+   1338          
+   1339              hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &end_count);
+   1340              hal_gpt_get_duration_count(start_count, end_count, &count);
+   1341              if (s) {
+   1342                  *s = count / 32768;
+   1343              }
+   1344          
+   1345              if (ms) {
+   1346                  count_temp = (uint64_t)count * 1000;
+   1347                  *ms = (uint32_t)(count_temp / 32768);
+   1348              }
+   1349          }
+   1350          
+   1351          
+   1352          void iperf_set_debug_mode(uint32_t debug)
+   1353          {
+   1354              g_iperf_debug_feature = debug;
+   1355          }
+   1356          
+   1357          
+   1358          int iperf_format_transform(char *param)
+   1359          {
+   1360              char *temp;
+   1361              int win_size = 0;
+   1362              int i;
+   1363          
+   1364              temp = param;
+   1365          
+   1366              for (i = 0; temp[i] != '\0'; i++) {
+   1367                  if (temp[i] == 'k') {
+   1368                      temp[i] = '\0';
+   1369                      win_size = (int) (1000 * atof(temp));
+   1370                  } else if (temp[i] == 'm') {
+   1371                      temp[i] = '\0';
+   1372                      win_size = (int) (1000 * 1000 * atof(temp));
+   1373                  } else if (temp[i] == 'K') {
+   1374                      temp[i] = '\0';
+   1375                      win_size = (int) (1024 * atof(temp));
+   1376                  } else if (temp[i] == 'M') {
+   1377                      temp[i] = '\0';
+   1378                      win_size = (int) (1024 * 1024 * atof(temp));
+   1379                  } else {
+   1380                      win_size = atoi(param);
+   1381                  }
+   1382              }
+   1383              return win_size;
+   1384          }
+   1385          
+   1386          /*
+   1387           * Initialize the buffer with a pattern of (index mod 10).
+   1388           */
+   1389          static void iperf_pattern(char *outBuf, int inBytes)
+   1390          {
+   1391              while (inBytes -- > 0) {
+   1392                  outBuf[inBytes] = (inBytes % 10) + '0';
+   1393              }
+   1394          }
+   1395          
+   1396          void iperf_register_callback(iperf_callback_t callback)
+   1397          {
+   1398              g_iperf_context.callback = callback;
+   1399          }
+   1400          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   byte_snprintf
+        32   -> __aeabi_ddiv
+        32   -> __aeabi_dmul
+        32   -> iperf_ftoa
+        32   -> isupper
+        32 __aeabi_cdrcmple
+       8   iperf_calculate_result
+       0   iperf_copy_count
+      16   iperf_diff_count
+        16   -- Indirect call
+      80   iperf_display_report
+        80   -- Indirect call
+        80   -> __aeabi_dadd
+        80   -> __aeabi_ddiv
+        80   -> __aeabi_memcpy
+        80   -> __aeabi_ui2d
+        80   -> __aeabi_ul2d
+        80   -> byte_snprintf
+        80   -> sprintf
+        80   -> strlen
+      16   iperf_format_transform
+        16   -> __aeabi_d2iz
+        16   -> __aeabi_dmul
+        16   -> atof
+        16   -> atoi
+      32   iperf_ftoa
+        32   -> __aeabi_d2iz
+        32   -> __aeabi_dadd
+        32   -> __aeabi_dmul
+        32   -> __aeabi_dsub
+        32   -> __aeabi_i2d
+        32   -> __aeabi_ui2d
+        32 __aeabi_cdcmple
+      40   iperf_get_current_time
+        40   -- Indirect call
+        40   -> hal_gpt_get_duration_count
+        40   -> hal_gpt_get_free_run_count
+       0   iperf_pattern
+       0   iperf_register_callback
+       0   iperf_reset_count
+       0   iperf_set_debug_mode
+     176   iperf_tcp_run_client
+       176   -- Indirect call
+       176   -> __aeabi_memset
+       176   -> __aeabi_memset4
+       176   -> atoi
+       176   -> hal_gpt_get_free_run_count
+       176   -> ipaddr_addr
+       176   -> iperf_calculate_result
+       176   -> iperf_copy_count
+       176   -> iperf_diff_count
+       176   -> iperf_display_report
+       176   -> iperf_format_transform
+       176   -> iperf_get_current_time
+       176   -> iperf_pattern
+       176   -> iperf_reset_count
+       176   -> lwip_close
+       176   -> lwip_connect
+       176   -> lwip_htons
+       176   -> lwip_send
+       176   -> lwip_setsockopt
+       176   -> lwip_socket
+       176   -> pvPortCalloc
+       176   -> strcmp
+       176   -> vPortFree
+       176   -> vTaskDelay
+       176   -> vTaskDelete
+     192   iperf_tcp_run_server
+       192   -- Indirect call
+       192   -> __aeabi_memset
+       192   -> __aeabi_memset4
+       192   -> atoi
+       192   -> hal_gpt_get_free_run_count
+       192   -> iperf_calculate_result
+       192   -> iperf_copy_count
+       192   -> iperf_diff_count
+       192   -> iperf_display_report
+       192   -> iperf_format_transform
+       192   -> iperf_get_current_time
+       192   -> iperf_reset_count
+       192   -> lwip_accept
+       192   -> lwip_bind
+       192   -> lwip_close
+       192   -> lwip_htonl
+       192   -> lwip_htons
+       192   -> lwip_listen
+       192   -> lwip_recv
+       192   -> lwip_setsockopt
+       192   -> lwip_socket
+       192   -> pvPortMalloc
+       192   -> strcmp
+       192   -> vPortFree
+       192   -> vTaskDelete
+     200   iperf_udp_run_client
+       200   -- Indirect call
+       200   -> __aeabi_memset
+       200   -> __aeabi_memset4
+       200   -> atoi
+       200   -> hal_gpt_get_free_run_count
+       200   -> ipaddr_addr
+       200   -> iperf_calculate_result
+       200   -> iperf_copy_count
+       200   -> iperf_diff_count
+       200   -> iperf_display_report
+       200   -> iperf_format_transform
+       200   -> iperf_get_current_time
+       200   -> iperf_pattern
+       200   -> iperf_reset_count
+       200   -> iperf_udp_run_server
+       200   -> lwip_close
+       200   -> lwip_connect
+       200   -> lwip_htonl
+       200   -> lwip_htons
+       200   -> lwip_send
+       200   -> lwip_setsockopt
+       200   -> lwip_socket
+       200   -> pvPortCalloc
+       200   -> strcmp
+       200   -> vPortFree
+       200   -> vTaskDelay
+       200   -> vTaskDelete
+     232   iperf_udp_run_server
+       232   -- Indirect call
+       232   -> __aeabi_memset
+       232   -> __aeabi_memset4
+       232   -> atoi
+       232   -> hal_gpt_get_free_run_count
+       232   -> iperf_calculate_result
+       232   -> iperf_copy_count
+       232   -> iperf_diff_count
+       232   -> iperf_display_report
+       232   -> iperf_format_transform
+       232   -> iperf_get_current_time
+       232   -> iperf_reset_count
+       232   -> iperf_udp_run_client
+       232   -> lwip_bind
+       232   -> lwip_close
+       232   -> lwip_htonl
+       232   -> lwip_htons
+       232   -> lwip_ntohl
+       232   -> lwip_recvfrom
+       232   -> lwip_sendto
+       232   -> lwip_setsockopt
+       232   -> lwip_socket
+       232   -> pvPortMalloc
+       232   -> strcmp
+       232   -> vPortFree
+       232   -> vTaskDelete
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable104
+       4  ??DataTable104_1
+       4  ??DataTable104_10
+       4  ??DataTable104_11
+       4  ??DataTable104_2
+       4  ??DataTable104_3
+       4  ??DataTable104_4
+       4  ??DataTable104_5
+       4  ??DataTable104_6
+       4  ??DataTable104_7
+       4  ??DataTable104_8
+       4  ??DataTable104_9
+       4  ??DataTable94
+       4  ??DataTable94_1
+       4  ??DataTable94_2
+       4  ??DataTable94_3
+       4  ??DataTable94_4
+       4  ??DataTable94_5
+       4  ??DataTable94_6
+       4  ??DataTable95
+       4  ??DataTable95_1
+       4  ??DataTable95_2
+       4  ??DataTable96
+       4  ??DataTable96_1
+       4  ??DataTable96_2
+       4  ??DataTable96_3
+       4  ??DataTable97
+       4  ??DataTable97_1
+       8  ?_0
+       8  ?_1
+       4  ?_10
+      44  ?_11
+       4  ?_12
+      32  ?_13
+       4  ?_14
+      60  ?_15
+       4  ?_16
+      40  ?_17
+      48  ?_18
+      48  ?_19
+       8  ?_2
+      32  ?_20
+      56  ?_21
+      36  ?_22
+      32  ?_23
+      20  ?_24
+      44  ?_25
+      40  ?_26
+      12  ?_27
+      40  ?_28
+      20  ?_29
+       8  ?_3
+      44  ?_30
+      40  ?_31
+      40  ?_32
+      84  ?_33
+      44  ?_34
+      32  ?_35
+      32  ?_36
+      40  ?_37
+      28  ?_38
+      36  ?_39
+       8  ?_4
+      12  ?_40
+      28  ?_41
+      20  ?_42
+      20  ?_43
+      80  ?_44
+       4  ?_45
+      40  ?_46
+       4  ?_47
+      40  ?_48
+       4  ?_49
+       4  ?_5
+      40  ?_50
+       4  ?_51
+      24  ?_52
+      44  ?_53
+      44  ?_54
+      28  ?_55
+      56  ?_56
+      28  ?_57
+      12  ?_58
+      20  ?_59
+       8  ?_6
+      40  ?_60
+       4  ?_61
+      32  ?_62
+      56  ?_63
+      28  ?_64
+       4  ?_65
+      32  ?_66
+      32  ?_67
+      44  ?_68
+      40  ?_69
+       8  ?_7
+      36  ?_70
+      28  ?_71
+      28  ?_72
+      12  ?_73
+      20  ?_74
+      36  ?_75
+      44  ?_76
+      12  ?_77
+      32  ?_78
+       8  ?_79
+       8  ?_8
+      36  ?_80
+      12  ?_81
+      40  ?_82
+      52  ?_83
+       4  ?_9
+     196  byte_snprintf
+     124  g_iperf_context
+          log_control_block_iperf
+          g_iperf_is_tradeoff_test_client
+          g_iperf_is_tradeoff_test_server
+          start_count
+          end_count
+       4  g_iperf_debug_feature
+      34  iperf_calculate_result
+      14  iperf_copy_count
+      68  iperf_diff_count
+     258  iperf_display_report
+     154  iperf_format_transform
+     276  iperf_ftoa
+     114  iperf_get_current_time
+      28  iperf_pattern
+       6  iperf_register_callback
+      14  iperf_reset_count
+       6  iperf_set_debug_mode
+    1290  iperf_tcp_run_client
+    1122  iperf_tcp_run_server
+    1956  iperf_udp_run_client
+    1678  iperf_udp_run_server
+      32  kConversion
+      32  kConversionForBits
+      32  kLabel_Byte
+          kLabel_bit
+     164  -- Other
+
+ 
+     4 bytes in section .bss
+   156 bytes in section .data
+   124 bytes in section .rodata
+ 9 802 bytes in section .text
+ 
+ 9 802 bytes of CODE  memory
+   124 bytes of CONST memory
+   160 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

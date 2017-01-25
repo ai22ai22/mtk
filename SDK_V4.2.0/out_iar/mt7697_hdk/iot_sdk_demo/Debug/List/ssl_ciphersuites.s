@@ -1,0 +1,2406 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM      25/Jan/2017  17:35:31
+// Copyright 1999-2016 IAR Systems AB.
+//
+//    Cpu mode     =  thumb
+//    Endian       =  little
+//    Source file  =  
+//        C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\ssl_ciphersuites.c
+//    Command line =  
+//        "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\ssl_ciphersuites.c"
+//        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+//        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+//        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+//        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+//        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+//        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+//        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+//        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+//        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+//        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+//        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+//        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+//        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+//        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE
+//        -D __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+//        "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+//        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+//        "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+//        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+//        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+//        (x86)\IAR Systems\Embedded Workbench
+//        7.5\arm\INC\c\DLib_Config_Full.h" -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+//        "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+//        -I "C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+//        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+//        7.5\arm\CMSIS\Include\"
+//    Locale       =  Chinese (Simplified)_CHN.936
+//    List file    =  
+//        C:\LEO\myGit\MTK
+//        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\ssl_ciphersuites.s
+//
+///////////////////////////////////////////////////////////////////////////////
+
+        RTMODEL "__SystemLibrary", "DLib"
+        RTMODEL "__dlib_file_descriptor", "1"
+        RTMODEL "__dlib_full_locale_support", "1"
+        AAPCS BASE,INTERWORK,VFP
+        PRESERVE8
+        REQUIRE8
+
+        #define SHT_PROGBITS 0x1
+
+        EXTERN strcmp
+
+        PUBLIC mbedtls_ssl_ciphersuite_from_id
+        PUBLIC mbedtls_ssl_ciphersuite_from_string
+        PUBLIC mbedtls_ssl_ciphersuite_uses_psk
+        PUBLIC mbedtls_ssl_get_ciphersuite_id
+        PUBLIC mbedtls_ssl_get_ciphersuite_name
+        PUBLIC mbedtls_ssl_get_ciphersuite_sig_pk_alg
+        PUBLIC mbedtls_ssl_list_ciphersuites
+        
+          CFI Names cfiNames0
+          CFI StackFrame CFA R13 DATA
+          CFI Resource R0:32, R1:32, R2:32, R3:32, R4:32, R5:32, R6:32, R7:32
+          CFI Resource R8:32, R9:32, R10:32, R11:32, R12:32, R13:32, R14:32
+          CFI Resource D0:64, D1:64, D2:64, D3:64, D4:64, D5:64, D6:64, D7:64
+          CFI Resource D8:64, D9:64, D10:64, D11:64, D12:64, D13:64, D14:64
+          CFI Resource D15:64
+          CFI EndNames cfiNames0
+        
+          CFI Common cfiCommon0 Using cfiNames0
+          CFI CodeAlign 2
+          CFI DataAlign 4
+          CFI ReturnAddress R14 CODE
+          CFI CFA R13+0
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI R8 SameValue
+          CFI R9 SameValue
+          CFI R10 SameValue
+          CFI R11 SameValue
+          CFI R12 Undefined
+          CFI R14 SameValue
+          CFI D0 Undefined
+          CFI D1 Undefined
+          CFI D2 Undefined
+          CFI D3 Undefined
+          CFI D4 Undefined
+          CFI D5 Undefined
+          CFI D6 Undefined
+          CFI D7 Undefined
+          CFI D8 SameValue
+          CFI D9 SameValue
+          CFI D10 SameValue
+          CFI D11 SameValue
+          CFI D12 SameValue
+          CFI D13 SameValue
+          CFI D14 SameValue
+          CFI D15 SameValue
+          CFI EndCommon cfiCommon0
+        
+// C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\ssl_ciphersuites.c
+//    1 /**
+//    2  * \file ssl_ciphersuites.c
+//    3  *
+//    4  * \brief SSL ciphersuites for mbed TLS
+//    5  *
+//    6  *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+//    7  *  SPDX-License-Identifier: Apache-2.0
+//    8  *
+//    9  *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+//   10  *  not use this file except in compliance with the License.
+//   11  *  You may obtain a copy of the License at
+//   12  *
+//   13  *  http://www.apache.org/licenses/LICENSE-2.0
+//   14  *
+//   15  *  Unless required by applicable law or agreed to in writing, software
+//   16  *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+//   17  *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   18  *  See the License for the specific language governing permissions and
+//   19  *  limitations under the License.
+//   20  *
+//   21  *  This file is part of mbed TLS (https://tls.mbed.org)
+//   22  */
+//   23 
+//   24 #if !defined(MBEDTLS_CONFIG_FILE)
+//   25 #include "mbedtls/config.h"
+//   26 #else
+//   27 #include MBEDTLS_CONFIG_FILE
+//   28 #endif
+//   29 
+//   30 #if defined(MBEDTLS_SSL_TLS_C)
+//   31 
+//   32 #include "mbedtls/ssl_ciphersuites.h"
+//   33 #include "mbedtls/ssl.h"
+//   34 
+//   35 // #include <stdlib.h>
+//   36 #include <string.h>
+//   37 
+//   38 /*
+//   39  * Ordered from most preferred to least preferred in terms of security.
+//   40  *
+//   41  * Current rule (except rc4, weak and null which come last):
+//   42  * 1. By key exchange:
+//   43  *    Forward-secure non-PSK > forward-secure PSK > other non-PSK > other PSK
+//   44  * 2. By key length and cipher:
+//   45  *    AES-256 > Camellia-256 > AES-128 > Camellia-128 > 3DES
+//   46  * 3. By cipher mode when relevant GCM > CCM > CBC > CCM_8
+//   47  * 4. By hash function used when relevant
+//   48  * 5. By key exchange/auth again: EC > non-EC
+//   49  */
+//   50 static const int ciphersuite_preference[] =
+//   51 {
+//   52 #if defined(MBEDTLS_SSL_CIPHERSUITES)
+//   53     MBEDTLS_SSL_CIPHERSUITES,
+//   54 #else
+//   55     /* All AES-256 ephemeral suites */
+//   56     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,
+//   57     MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
+//   58     MBEDTLS_TLS_DHE_RSA_WITH_AES_256_GCM_SHA384,
+//   59     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CCM,
+//   60     MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CCM,
+//   61     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384,
+//   62     MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
+//   63     MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CBC_SHA256,
+//   64     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA,
+//   65     MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,
+//   66     MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CBC_SHA,
+//   67     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CCM_8,
+//   68     MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CCM_8,
+//   69 
+//   70     /* All CAMELLIA-256 ephemeral suites */
+//   71     MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384,
+//   72     MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384,
+//   73     MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384,
+//   74     MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384,
+//   75     MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384,
+//   76     MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256,
+//   77     MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA,
+//   78 
+//   79     /* All AES-128 ephemeral suites */
+//   80     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,
+//   81     MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,
+//   82     MBEDTLS_TLS_DHE_RSA_WITH_AES_128_GCM_SHA256,
+//   83     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CCM,
+//   84     MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CCM,
+//   85     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,
+//   86     MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,
+//   87     MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CBC_SHA256,
+//   88     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA,
+//   89     MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,
+//   90     MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CBC_SHA,
+//   91     MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8,
+//   92     MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CCM_8,
+//   93 
+//   94     /* All CAMELLIA-128 ephemeral suites */
+//   95     MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256,
+//   96     MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256,
+//   97     MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256,
+//   98     MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256,
+//   99     MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256,
+//  100     MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256,
+//  101     MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA,
+//  102 
+//  103     /* All remaining >= 128-bit ephemeral suites */
+//  104     MBEDTLS_TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA,
+//  105     MBEDTLS_TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA,
+//  106     MBEDTLS_TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA,
+//  107 
+//  108     /* The PSK ephemeral suites */
+//  109     MBEDTLS_TLS_DHE_PSK_WITH_AES_256_GCM_SHA384,
+//  110     MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CCM,
+//  111     MBEDTLS_TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384,
+//  112     MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CBC_SHA384,
+//  113     MBEDTLS_TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA,
+//  114     MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CBC_SHA,
+//  115     MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384,
+//  116     MBEDTLS_TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384,
+//  117     MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384,
+//  118     MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CCM_8,
+//  119 
+//  120     MBEDTLS_TLS_DHE_PSK_WITH_AES_128_GCM_SHA256,
+//  121     MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CCM,
+//  122     MBEDTLS_TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256,
+//  123     MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CBC_SHA256,
+//  124     MBEDTLS_TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA,
+//  125     MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CBC_SHA,
+//  126     MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256,
+//  127     MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256,
+//  128     MBEDTLS_TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256,
+//  129     MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CCM_8,
+//  130 
+//  131     MBEDTLS_TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA,
+//  132     MBEDTLS_TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA,
+//  133 
+//  134     /* All AES-256 suites */
+//  135     MBEDTLS_TLS_RSA_WITH_AES_256_GCM_SHA384,
+//  136     MBEDTLS_TLS_RSA_WITH_AES_256_CCM,
+//  137     MBEDTLS_TLS_RSA_WITH_AES_256_CBC_SHA256,
+//  138     MBEDTLS_TLS_RSA_WITH_AES_256_CBC_SHA,
+//  139     MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384,
+//  140     MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384,
+//  141     MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA,
+//  142     MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384,
+//  143     MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384,
+//  144     MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA,
+//  145     MBEDTLS_TLS_RSA_WITH_AES_256_CCM_8,
+//  146 
+//  147     /* All CAMELLIA-256 suites */
+//  148     MBEDTLS_TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384,
+//  149     MBEDTLS_TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256,
+//  150     MBEDTLS_TLS_RSA_WITH_CAMELLIA_256_CBC_SHA,
+//  151     MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384,
+//  152     MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384,
+//  153     MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384,
+//  154     MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384,
+//  155 
+//  156     /* All AES-128 suites */
+//  157     MBEDTLS_TLS_RSA_WITH_AES_128_GCM_SHA256,
+//  158     MBEDTLS_TLS_RSA_WITH_AES_128_CCM,
+//  159     MBEDTLS_TLS_RSA_WITH_AES_128_CBC_SHA256,
+//  160     MBEDTLS_TLS_RSA_WITH_AES_128_CBC_SHA,
+//  161     MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256,
+//  162     MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256,
+//  163     MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA,
+//  164     MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256,
+//  165     MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256,
+//  166     MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA,
+//  167     MBEDTLS_TLS_RSA_WITH_AES_128_CCM_8,
+//  168 
+//  169     /* All CAMELLIA-128 suites */
+//  170     MBEDTLS_TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256,
+//  171     MBEDTLS_TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256,
+//  172     MBEDTLS_TLS_RSA_WITH_CAMELLIA_128_CBC_SHA,
+//  173     MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256,
+//  174     MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256,
+//  175     MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256,
+//  176     MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256,
+//  177 
+//  178     /* All remaining >= 128-bit suites */
+//  179     MBEDTLS_TLS_RSA_WITH_3DES_EDE_CBC_SHA,
+//  180     MBEDTLS_TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA,
+//  181     MBEDTLS_TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA,
+//  182 
+//  183     /* The RSA PSK suites */
+//  184     MBEDTLS_TLS_RSA_PSK_WITH_AES_256_GCM_SHA384,
+//  185     MBEDTLS_TLS_RSA_PSK_WITH_AES_256_CBC_SHA384,
+//  186     MBEDTLS_TLS_RSA_PSK_WITH_AES_256_CBC_SHA,
+//  187     MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384,
+//  188     MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384,
+//  189 
+//  190     MBEDTLS_TLS_RSA_PSK_WITH_AES_128_GCM_SHA256,
+//  191     MBEDTLS_TLS_RSA_PSK_WITH_AES_128_CBC_SHA256,
+//  192     MBEDTLS_TLS_RSA_PSK_WITH_AES_128_CBC_SHA,
+//  193     MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256,
+//  194     MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256,
+//  195 
+//  196     MBEDTLS_TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA,
+//  197 
+//  198     /* The PSK suites */
+//  199     MBEDTLS_TLS_PSK_WITH_AES_256_GCM_SHA384,
+//  200     MBEDTLS_TLS_PSK_WITH_AES_256_CCM,
+//  201     MBEDTLS_TLS_PSK_WITH_AES_256_CBC_SHA384,
+//  202     MBEDTLS_TLS_PSK_WITH_AES_256_CBC_SHA,
+//  203     MBEDTLS_TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384,
+//  204     MBEDTLS_TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384,
+//  205     MBEDTLS_TLS_PSK_WITH_AES_256_CCM_8,
+//  206 
+//  207     MBEDTLS_TLS_PSK_WITH_AES_128_GCM_SHA256,
+//  208     MBEDTLS_TLS_PSK_WITH_AES_128_CCM,
+//  209     MBEDTLS_TLS_PSK_WITH_AES_128_CBC_SHA256,
+//  210     MBEDTLS_TLS_PSK_WITH_AES_128_CBC_SHA,
+//  211     MBEDTLS_TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256,
+//  212     MBEDTLS_TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256,
+//  213     MBEDTLS_TLS_PSK_WITH_AES_128_CCM_8,
+//  214 
+//  215     MBEDTLS_TLS_PSK_WITH_3DES_EDE_CBC_SHA,
+//  216 
+//  217     /* RC4 suites */
+//  218     MBEDTLS_TLS_ECDHE_ECDSA_WITH_RC4_128_SHA,
+//  219     MBEDTLS_TLS_ECDHE_RSA_WITH_RC4_128_SHA,
+//  220     MBEDTLS_TLS_ECDHE_PSK_WITH_RC4_128_SHA,
+//  221     MBEDTLS_TLS_DHE_PSK_WITH_RC4_128_SHA,
+//  222     MBEDTLS_TLS_RSA_WITH_RC4_128_SHA,
+//  223     MBEDTLS_TLS_RSA_WITH_RC4_128_MD5,
+//  224     MBEDTLS_TLS_ECDH_RSA_WITH_RC4_128_SHA,
+//  225     MBEDTLS_TLS_ECDH_ECDSA_WITH_RC4_128_SHA,
+//  226     MBEDTLS_TLS_RSA_PSK_WITH_RC4_128_SHA,
+//  227     MBEDTLS_TLS_PSK_WITH_RC4_128_SHA,
+//  228 
+//  229     /* Weak suites */
+//  230     MBEDTLS_TLS_DHE_RSA_WITH_DES_CBC_SHA,
+//  231     MBEDTLS_TLS_RSA_WITH_DES_CBC_SHA,
+//  232 
+//  233     /* NULL suites */
+//  234     MBEDTLS_TLS_ECDHE_ECDSA_WITH_NULL_SHA,
+//  235     MBEDTLS_TLS_ECDHE_RSA_WITH_NULL_SHA,
+//  236     MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA384,
+//  237     MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA256,
+//  238     MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA,
+//  239     MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA384,
+//  240     MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA256,
+//  241     MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA,
+//  242 
+//  243     MBEDTLS_TLS_RSA_WITH_NULL_SHA256,
+//  244     MBEDTLS_TLS_RSA_WITH_NULL_SHA,
+//  245     MBEDTLS_TLS_RSA_WITH_NULL_MD5,
+//  246     MBEDTLS_TLS_ECDH_RSA_WITH_NULL_SHA,
+//  247     MBEDTLS_TLS_ECDH_ECDSA_WITH_NULL_SHA,
+//  248     MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA384,
+//  249     MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA256,
+//  250     MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA,
+//  251     MBEDTLS_TLS_PSK_WITH_NULL_SHA384,
+//  252     MBEDTLS_TLS_PSK_WITH_NULL_SHA256,
+//  253     MBEDTLS_TLS_PSK_WITH_NULL_SHA,
+//  254 
+//  255 #endif /* MBEDTLS_SSL_CIPHERSUITES */
+//  256     0
+//  257 };
+//  258 
+//  259 static const mbedtls_ssl_ciphersuite_t ciphersuite_definitions[] =
+//  260 {
+//  261 #if defined(MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED)
+//  262 #if defined(MBEDTLS_AES_C)
+//  263 #if defined(MBEDTLS_SHA1_C)
+//  264 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  265     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, "TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA",
+//  266       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  267       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  268       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  269       0 },
+//  270     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, "TLS-ECDHE-ECDSA-WITH-AES-256-CBC-SHA",
+//  271       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  272       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  273       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  274       0 },
+//  275 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  276 #endif /* MBEDTLS_SHA1_C */
+//  277 #if defined(MBEDTLS_SHA256_C)
+//  278 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  279     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, "TLS-ECDHE-ECDSA-WITH-AES-128-CBC-SHA256",
+//  280       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  281       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  282       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  283       0 },
+//  284 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  285 #if defined(MBEDTLS_GCM_C)
+//  286     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, "TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256",
+//  287       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  288       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  289       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  290       0 },
+//  291 #endif /* MBEDTLS_GCM_C */
+//  292 #endif /* MBEDTLS_SHA256_C */
+//  293 #if defined(MBEDTLS_SHA512_C)
+//  294 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  295     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, "TLS-ECDHE-ECDSA-WITH-AES-256-CBC-SHA384",
+//  296       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  297       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  298       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  299       0 },
+//  300 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  301 #if defined(MBEDTLS_GCM_C)
+//  302     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, "TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384",
+//  303       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  304       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  305       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  306       0 },
+//  307 #endif /* MBEDTLS_GCM_C */
+//  308 #endif /* MBEDTLS_SHA512_C */
+//  309 #if defined(MBEDTLS_CCM_C)
+//  310     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CCM, "TLS-ECDHE-ECDSA-WITH-AES-256-CCM",
+//  311       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  312       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  313       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  314       0 },
+//  315     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_256_CCM_8, "TLS-ECDHE-ECDSA-WITH-AES-256-CCM-8",
+//  316       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  317       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  318       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  319       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+//  320     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CCM, "TLS-ECDHE-ECDSA-WITH-AES-128-CCM",
+//  321       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  322       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  323       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  324       0 },
+//  325     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8, "TLS-ECDHE-ECDSA-WITH-AES-128-CCM-8",
+//  326       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  327       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  328       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  329       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+//  330 #endif /* MBEDTLS_CCM_C */
+//  331 #endif /* MBEDTLS_AES_C */
+//  332 
+//  333 #if defined(MBEDTLS_CAMELLIA_C)
+//  334 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  335 #if defined(MBEDTLS_SHA256_C)
+//  336     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256, "TLS-ECDHE-ECDSA-WITH-CAMELLIA-128-CBC-SHA256",
+//  337       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  338       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  339       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  340       0 },
+//  341 #endif /* MBEDTLS_SHA256_C */
+//  342 #if defined(MBEDTLS_SHA512_C)
+//  343     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384, "TLS-ECDHE-ECDSA-WITH-CAMELLIA-256-CBC-SHA384",
+//  344       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  345       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  346       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  347       0 },
+//  348 #endif /* MBEDTLS_SHA512_C */
+//  349 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  350 
+//  351 #if defined(MBEDTLS_GCM_C)
+//  352 #if defined(MBEDTLS_SHA256_C)
+//  353     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256, "TLS-ECDHE-ECDSA-WITH-CAMELLIA-128-GCM-SHA256",
+//  354       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  355       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  356       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  357       0 },
+//  358 #endif /* MBEDTLS_SHA256_C */
+//  359 #if defined(MBEDTLS_SHA512_C)
+//  360     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384, "TLS-ECDHE-ECDSA-WITH-CAMELLIA-256-GCM-SHA384",
+//  361       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  362       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  363       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  364       0 },
+//  365 #endif /* MBEDTLS_SHA512_C */
+//  366 #endif /* MBEDTLS_GCM_C */
+//  367 #endif /* MBEDTLS_CAMELLIA_C */
+//  368 
+//  369 #if defined(MBEDTLS_DES_C)
+//  370 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  371 #if defined(MBEDTLS_SHA1_C)
+//  372     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, "TLS-ECDHE-ECDSA-WITH-3DES-EDE-CBC-SHA",
+//  373       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  374       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  375       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  376       0 },
+//  377 #endif /* MBEDTLS_SHA1_C */
+//  378 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  379 #endif /* MBEDTLS_DES_C */
+//  380 
+//  381 #if defined(MBEDTLS_ARC4_C)
+//  382 #if defined(MBEDTLS_SHA1_C)
+//  383     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_RC4_128_SHA, "TLS-ECDHE-ECDSA-WITH-RC4-128-SHA",
+//  384       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  385       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  386       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  387       MBEDTLS_CIPHERSUITE_NODTLS },
+//  388 #endif /* MBEDTLS_SHA1_C */
+//  389 #endif /* MBEDTLS_ARC4_C */
+//  390 
+//  391 #if defined(MBEDTLS_CIPHER_NULL_CIPHER)
+//  392 #if defined(MBEDTLS_SHA1_C)
+//  393     { MBEDTLS_TLS_ECDHE_ECDSA_WITH_NULL_SHA, "TLS-ECDHE-ECDSA-WITH-NULL-SHA",
+//  394       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA,
+//  395       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  396       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  397       MBEDTLS_CIPHERSUITE_WEAK },
+//  398 #endif /* MBEDTLS_SHA1_C */
+//  399 #endif /* MBEDTLS_CIPHER_NULL_CIPHER */
+//  400 #endif /* MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED */
+//  401 
+//  402 #if defined(MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED)
+//  403 #if defined(MBEDTLS_AES_C)
+//  404 #if defined(MBEDTLS_SHA1_C)
+//  405 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  406     { MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, "TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA",
+//  407       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  408       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  409       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  410       0 },
+//  411     { MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, "TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA",
+//  412       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  413       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  414       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  415       0 },
+//  416 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  417 #endif /* MBEDTLS_SHA1_C */
+//  418 #if defined(MBEDTLS_SHA256_C)
+//  419 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  420     { MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, "TLS-ECDHE-RSA-WITH-AES-128-CBC-SHA256",
+//  421       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  422       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  423       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  424       0 },
+//  425 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  426 #if defined(MBEDTLS_GCM_C)
+//  427     { MBEDTLS_TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, "TLS-ECDHE-RSA-WITH-AES-128-GCM-SHA256",
+//  428       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  429       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  430       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  431       0 },
+//  432 #endif /* MBEDTLS_GCM_C */
+//  433 #endif /* MBEDTLS_SHA256_C */
+//  434 #if defined(MBEDTLS_SHA512_C)
+//  435 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  436     { MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, "TLS-ECDHE-RSA-WITH-AES-256-CBC-SHA384",
+//  437       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  438       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  439       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  440       0 },
+//  441 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  442 #if defined(MBEDTLS_GCM_C)
+//  443     { MBEDTLS_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, "TLS-ECDHE-RSA-WITH-AES-256-GCM-SHA384",
+//  444       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  445       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  446       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  447       0 },
+//  448 #endif /* MBEDTLS_GCM_C */
+//  449 #endif /* MBEDTLS_SHA512_C */
+//  450 #endif /* MBEDTLS_AES_C */
+//  451 
+//  452 #if defined(MBEDTLS_CAMELLIA_C)
+//  453 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  454 #if defined(MBEDTLS_SHA256_C)
+//  455     { MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256, "TLS-ECDHE-RSA-WITH-CAMELLIA-128-CBC-SHA256",
+//  456       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  457       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  458       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  459       0 },
+//  460 #endif /* MBEDTLS_SHA256_C */
+//  461 #if defined(MBEDTLS_SHA512_C)
+//  462     { MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384, "TLS-ECDHE-RSA-WITH-CAMELLIA-256-CBC-SHA384",
+//  463       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  464       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  465       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  466       0 },
+//  467 #endif /* MBEDTLS_SHA512_C */
+//  468 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  469 
+//  470 #if defined(MBEDTLS_GCM_C)
+//  471 #if defined(MBEDTLS_SHA256_C)
+//  472     { MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256, "TLS-ECDHE-RSA-WITH-CAMELLIA-128-GCM-SHA256",
+//  473       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  474       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  475       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  476       0 },
+//  477 #endif /* MBEDTLS_SHA256_C */
+//  478 #if defined(MBEDTLS_SHA512_C)
+//  479     { MBEDTLS_TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384, "TLS-ECDHE-RSA-WITH-CAMELLIA-256-GCM-SHA384",
+//  480       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  481       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  482       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  483       0 },
+//  484 #endif /* MBEDTLS_SHA512_C */
+//  485 #endif /* MBEDTLS_GCM_C */
+//  486 #endif /* MBEDTLS_CAMELLIA_C */
+//  487 
+//  488 #if defined(MBEDTLS_DES_C)
+//  489 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  490 #if defined(MBEDTLS_SHA1_C)
+//  491     { MBEDTLS_TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, "TLS-ECDHE-RSA-WITH-3DES-EDE-CBC-SHA",
+//  492       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  493       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  494       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  495       0 },
+//  496 #endif /* MBEDTLS_SHA1_C */
+//  497 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  498 #endif /* MBEDTLS_DES_C */
+//  499 
+//  500 #if defined(MBEDTLS_ARC4_C)
+//  501 #if defined(MBEDTLS_SHA1_C)
+//  502     { MBEDTLS_TLS_ECDHE_RSA_WITH_RC4_128_SHA, "TLS-ECDHE-RSA-WITH-RC4-128-SHA",
+//  503       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  504       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  505       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  506       MBEDTLS_CIPHERSUITE_NODTLS },
+//  507 #endif /* MBEDTLS_SHA1_C */
+//  508 #endif /* MBEDTLS_ARC4_C */
+//  509 
+//  510 #if defined(MBEDTLS_CIPHER_NULL_CIPHER)
+//  511 #if defined(MBEDTLS_SHA1_C)
+//  512     { MBEDTLS_TLS_ECDHE_RSA_WITH_NULL_SHA, "TLS-ECDHE-RSA-WITH-NULL-SHA",
+//  513       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_RSA,
+//  514       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  515       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  516       MBEDTLS_CIPHERSUITE_WEAK },
+//  517 #endif /* MBEDTLS_SHA1_C */
+//  518 #endif /* MBEDTLS_CIPHER_NULL_CIPHER */
+//  519 #endif /* MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED */
+//  520 
+//  521 #if defined(MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED)
+//  522 #if defined(MBEDTLS_AES_C)
+//  523 #if defined(MBEDTLS_SHA512_C) && defined(MBEDTLS_GCM_C)
+//  524     { MBEDTLS_TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, "TLS-DHE-RSA-WITH-AES-256-GCM-SHA384",
+//  525       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  526       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  527       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  528       0 },
+//  529 #endif /* MBEDTLS_SHA512_C && MBEDTLS_GCM_C */
+//  530 
+//  531 #if defined(MBEDTLS_SHA256_C)
+//  532 #if defined(MBEDTLS_GCM_C)
+//  533     { MBEDTLS_TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, "TLS-DHE-RSA-WITH-AES-128-GCM-SHA256",
+//  534       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  535       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  536       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  537       0 },
+//  538 #endif /* MBEDTLS_GCM_C */
+//  539 
+//  540 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  541     { MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, "TLS-DHE-RSA-WITH-AES-128-CBC-SHA256",
+//  542       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  543       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  544       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  545       0 },
+//  546 
+//  547     { MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, "TLS-DHE-RSA-WITH-AES-256-CBC-SHA256",
+//  548       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  549       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  550       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  551       0 },
+//  552 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  553 #endif /* MBEDTLS_SHA256_C */
+//  554 
+//  555 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  556 #if defined(MBEDTLS_SHA1_C)
+//  557     { MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CBC_SHA, "TLS-DHE-RSA-WITH-AES-128-CBC-SHA",
+//  558       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  559       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  560       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  561       0 },
+//  562 
+//  563     { MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CBC_SHA, "TLS-DHE-RSA-WITH-AES-256-CBC-SHA",
+//  564       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  565       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  566       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  567       0 },
+//  568 #endif /* MBEDTLS_SHA1_C */
+//  569 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  570 #if defined(MBEDTLS_CCM_C)
+//  571     { MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CCM, "TLS-DHE-RSA-WITH-AES-256-CCM",
+//  572       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  573       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  574       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  575       0 },
+//  576     { MBEDTLS_TLS_DHE_RSA_WITH_AES_256_CCM_8, "TLS-DHE-RSA-WITH-AES-256-CCM-8",
+//  577       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  578       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  579       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  580       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+//  581     { MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CCM, "TLS-DHE-RSA-WITH-AES-128-CCM",
+//  582       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  583       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  584       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  585       0 },
+//  586     { MBEDTLS_TLS_DHE_RSA_WITH_AES_128_CCM_8, "TLS-DHE-RSA-WITH-AES-128-CCM-8",
+//  587       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  588       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  589       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  590       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+//  591 #endif /* MBEDTLS_CCM_C */
+//  592 #endif /* MBEDTLS_AES_C */
+//  593 
+//  594 #if defined(MBEDTLS_CAMELLIA_C)
+//  595 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  596 #if defined(MBEDTLS_SHA256_C)
+//  597     { MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256, "TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA256",
+//  598       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  599       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  600       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  601       0 },
+//  602 
+//  603     { MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256, "TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA256",
+//  604       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  605       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  606       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  607       0 },
+//  608 #endif /* MBEDTLS_SHA256_C */
+//  609 
+//  610 #if defined(MBEDTLS_SHA1_C)
+//  611     { MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA, "TLS-DHE-RSA-WITH-CAMELLIA-128-CBC-SHA",
+//  612       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  613       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  614       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  615       0 },
+//  616 
+//  617     { MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA, "TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA",
+//  618       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  619       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  620       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  621       0 },
+//  622 #endif /* MBEDTLS_SHA1_C */
+//  623 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  624 #if defined(MBEDTLS_GCM_C)
+//  625 #if defined(MBEDTLS_SHA256_C)
+//  626     { MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256, "TLS-DHE-RSA-WITH-CAMELLIA-128-GCM-SHA256",
+//  627       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  628       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  629       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  630       0 },
+//  631 #endif /* MBEDTLS_SHA256_C */
+//  632 
+//  633 #if defined(MBEDTLS_SHA512_C)
+//  634     { MBEDTLS_TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384, "TLS-DHE-RSA-WITH-CAMELLIA-256-GCM-SHA384",
+//  635       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  636       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  637       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  638       0 },
+//  639 #endif /* MBEDTLS_SHA512_C */
+//  640 #endif /* MBEDTLS_GCM_C */
+//  641 #endif /* MBEDTLS_CAMELLIA_C */
+//  642 
+//  643 #if defined(MBEDTLS_DES_C)
+//  644 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  645 #if defined(MBEDTLS_SHA1_C)
+//  646     { MBEDTLS_TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA, "TLS-DHE-RSA-WITH-3DES-EDE-CBC-SHA",
+//  647       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+//  648       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  649       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  650       0 },
+//  651 #endif /* MBEDTLS_SHA1_C */
+//  652 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  653 #endif /* MBEDTLS_DES_C */
+//  654 #endif /* MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED */
+//  655 
+//  656 #if defined(MBEDTLS_KEY_EXCHANGE_RSA_ENABLED)
+//  657 #if defined(MBEDTLS_AES_C)
+//  658 #if defined(MBEDTLS_SHA512_C) && defined(MBEDTLS_GCM_C)
+//  659     { MBEDTLS_TLS_RSA_WITH_AES_256_GCM_SHA384, "TLS-RSA-WITH-AES-256-GCM-SHA384",
+//  660       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_RSA,
+//  661       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  662       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  663       0 },
+//  664 #endif /* MBEDTLS_SHA512_C && MBEDTLS_GCM_C */
+//  665 
+//  666 #if defined(MBEDTLS_SHA256_C)
+//  667 #if defined(MBEDTLS_GCM_C)
+//  668     { MBEDTLS_TLS_RSA_WITH_AES_128_GCM_SHA256, "TLS-RSA-WITH-AES-128-GCM-SHA256",
+//  669       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  670       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  671       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  672       0 },
+//  673 #endif /* MBEDTLS_GCM_C */
+//  674 
+//  675 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  676     { MBEDTLS_TLS_RSA_WITH_AES_128_CBC_SHA256, "TLS-RSA-WITH-AES-128-CBC-SHA256",
+//  677       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  678       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  679       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  680       0 },
+//  681 
+//  682     { MBEDTLS_TLS_RSA_WITH_AES_256_CBC_SHA256, "TLS-RSA-WITH-AES-256-CBC-SHA256",
+//  683       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  684       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  685       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  686       0 },
+//  687 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  688 #endif /* MBEDTLS_SHA256_C */
+//  689 
+//  690 #if defined(MBEDTLS_SHA1_C)
+//  691 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  692     { MBEDTLS_TLS_RSA_WITH_AES_128_CBC_SHA, "TLS-RSA-WITH-AES-128-CBC-SHA",
+//  693       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+//  694       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  695       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  696       0 },
+//  697 
+//  698     { MBEDTLS_TLS_RSA_WITH_AES_256_CBC_SHA, "TLS-RSA-WITH-AES-256-CBC-SHA",
+//  699       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+//  700       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  701       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  702       0 },
+//  703 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  704 #endif /* MBEDTLS_SHA1_C */
+//  705 #if defined(MBEDTLS_CCM_C)
+//  706     { MBEDTLS_TLS_RSA_WITH_AES_256_CCM, "TLS-RSA-WITH-AES-256-CCM",
+//  707       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  708       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  709       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  710       0 },
+//  711     { MBEDTLS_TLS_RSA_WITH_AES_256_CCM_8, "TLS-RSA-WITH-AES-256-CCM-8",
+//  712       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  713       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  714       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  715       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+//  716     { MBEDTLS_TLS_RSA_WITH_AES_128_CCM, "TLS-RSA-WITH-AES-128-CCM",
+//  717       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  718       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  719       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  720       0 },
+//  721     { MBEDTLS_TLS_RSA_WITH_AES_128_CCM_8, "TLS-RSA-WITH-AES-128-CCM-8",
+//  722       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  723       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  724       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  725       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+//  726 #endif /* MBEDTLS_CCM_C */
+//  727 #endif /* MBEDTLS_AES_C */
+//  728 
+//  729 #if defined(MBEDTLS_CAMELLIA_C)
+//  730 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  731 #if defined(MBEDTLS_SHA256_C)
+//  732     { MBEDTLS_TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256, "TLS-RSA-WITH-CAMELLIA-128-CBC-SHA256",
+//  733       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  734       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  735       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  736       0 },
+//  737 
+//  738     { MBEDTLS_TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256, "TLS-RSA-WITH-CAMELLIA-256-CBC-SHA256",
+//  739       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  740       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  741       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  742       0 },
+//  743 #endif /* MBEDTLS_SHA256_C */
+//  744 
+//  745 #if defined(MBEDTLS_SHA1_C)
+//  746     { MBEDTLS_TLS_RSA_WITH_CAMELLIA_128_CBC_SHA, "TLS-RSA-WITH-CAMELLIA-128-CBC-SHA",
+//  747       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+//  748       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  749       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  750       0 },
+//  751 
+//  752     { MBEDTLS_TLS_RSA_WITH_CAMELLIA_256_CBC_SHA, "TLS-RSA-WITH-CAMELLIA-256-CBC-SHA",
+//  753       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+//  754       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  755       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  756       0 },
+//  757 #endif /* MBEDTLS_SHA1_C */
+//  758 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  759 
+//  760 #if defined(MBEDTLS_GCM_C)
+//  761 #if defined(MBEDTLS_SHA256_C)
+//  762     { MBEDTLS_TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256, "TLS-RSA-WITH-CAMELLIA-128-GCM-SHA256",
+//  763       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+//  764       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  765       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  766       0 },
+//  767 #endif /* MBEDTLS_SHA256_C */
+//  768 
+//  769 #if defined(MBEDTLS_SHA1_C)
+//  770     { MBEDTLS_TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384, "TLS-RSA-WITH-CAMELLIA-256-GCM-SHA384",
+//  771       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_RSA,
+//  772       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  773       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  774       0 },
+//  775 #endif /* MBEDTLS_SHA1_C */
+//  776 #endif /* MBEDTLS_GCM_C */
+//  777 #endif /* MBEDTLS_CAMELLIA_C */
+//  778 
+//  779 #if defined(MBEDTLS_DES_C)
+//  780 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  781 #if defined(MBEDTLS_SHA1_C)
+//  782     { MBEDTLS_TLS_RSA_WITH_3DES_EDE_CBC_SHA, "TLS-RSA-WITH-3DES-EDE-CBC-SHA",
+//  783       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+//  784       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  785       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  786       0 },
+//  787 #endif /* MBEDTLS_SHA1_C */
+//  788 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  789 #endif /* MBEDTLS_DES_C */
+//  790 
+//  791 #if defined(MBEDTLS_ARC4_C)
+//  792 #if defined(MBEDTLS_MD5_C)
+//  793     { MBEDTLS_TLS_RSA_WITH_RC4_128_MD5, "TLS-RSA-WITH-RC4-128-MD5",
+//  794       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_MD5, MBEDTLS_KEY_EXCHANGE_RSA,
+//  795       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  796       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  797       MBEDTLS_CIPHERSUITE_NODTLS },
+//  798 #endif
+//  799 
+//  800 #if defined(MBEDTLS_SHA1_C)
+//  801     { MBEDTLS_TLS_RSA_WITH_RC4_128_SHA, "TLS-RSA-WITH-RC4-128-SHA",
+//  802       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+//  803       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+//  804       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  805       MBEDTLS_CIPHERSUITE_NODTLS },
+//  806 #endif
+//  807 #endif /* MBEDTLS_ARC4_C */
+//  808 #endif /* MBEDTLS_KEY_EXCHANGE_RSA_ENABLED */
+//  809 
+//  810 #if defined(MBEDTLS_KEY_EXCHANGE_ECDH_RSA_ENABLED)
+//  811 #if defined(MBEDTLS_AES_C)
+//  812 #if defined(MBEDTLS_SHA1_C)
+//  813 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  814     { MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, "TLS-ECDH-RSA-WITH-AES-128-CBC-SHA",
+//  815       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  816       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  817       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  818       0 },
+//  819     { MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, "TLS-ECDH-RSA-WITH-AES-256-CBC-SHA",
+//  820       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  821       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  822       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  823       0 },
+//  824 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  825 #endif /* MBEDTLS_SHA1_C */
+//  826 #if defined(MBEDTLS_SHA256_C)
+//  827 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  828     { MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, "TLS-ECDH-RSA-WITH-AES-128-CBC-SHA256",
+//  829       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  830       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  831       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  832       0 },
+//  833 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  834 #if defined(MBEDTLS_GCM_C)
+//  835     { MBEDTLS_TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, "TLS-ECDH-RSA-WITH-AES-128-GCM-SHA256",
+//  836       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  837       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  838       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  839       0 },
+//  840 #endif /* MBEDTLS_GCM_C */
+//  841 #endif /* MBEDTLS_SHA256_C */
+//  842 #if defined(MBEDTLS_SHA512_C)
+//  843 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  844     { MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, "TLS-ECDH-RSA-WITH-AES-256-CBC-SHA384",
+//  845       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  846       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  847       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  848       0 },
+//  849 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  850 #if defined(MBEDTLS_GCM_C)
+//  851     { MBEDTLS_TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, "TLS-ECDH-RSA-WITH-AES-256-GCM-SHA384",
+//  852       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  853       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  854       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  855       0 },
+//  856 #endif /* MBEDTLS_GCM_C */
+//  857 #endif /* MBEDTLS_SHA512_C */
+//  858 #endif /* MBEDTLS_AES_C */
+//  859 
+//  860 #if defined(MBEDTLS_CAMELLIA_C)
+//  861 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  862 #if defined(MBEDTLS_SHA256_C)
+//  863     { MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256, "TLS-ECDH-RSA-WITH-CAMELLIA-128-CBC-SHA256",
+//  864       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  865       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  866       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  867       0 },
+//  868 #endif /* MBEDTLS_SHA256_C */
+//  869 #if defined(MBEDTLS_SHA512_C)
+//  870     { MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384, "TLS-ECDH-RSA-WITH-CAMELLIA-256-CBC-SHA384",
+//  871       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  872       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  873       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  874       0 },
+//  875 #endif /* MBEDTLS_SHA512_C */
+//  876 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  877 
+//  878 #if defined(MBEDTLS_GCM_C)
+//  879 #if defined(MBEDTLS_SHA256_C)
+//  880     { MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256, "TLS-ECDH-RSA-WITH-CAMELLIA-128-GCM-SHA256",
+//  881       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  882       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  883       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  884       0 },
+//  885 #endif /* MBEDTLS_SHA256_C */
+//  886 #if defined(MBEDTLS_SHA512_C)
+//  887     { MBEDTLS_TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384, "TLS-ECDH-RSA-WITH-CAMELLIA-256-GCM-SHA384",
+//  888       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  889       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  890       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  891       0 },
+//  892 #endif /* MBEDTLS_SHA512_C */
+//  893 #endif /* MBEDTLS_GCM_C */
+//  894 #endif /* MBEDTLS_CAMELLIA_C */
+//  895 
+//  896 #if defined(MBEDTLS_DES_C)
+//  897 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  898 #if defined(MBEDTLS_SHA1_C)
+//  899     { MBEDTLS_TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, "TLS-ECDH-RSA-WITH-3DES-EDE-CBC-SHA",
+//  900       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  901       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  902       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  903       0 },
+//  904 #endif /* MBEDTLS_SHA1_C */
+//  905 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  906 #endif /* MBEDTLS_DES_C */
+//  907 
+//  908 #if defined(MBEDTLS_ARC4_C)
+//  909 #if defined(MBEDTLS_SHA1_C)
+//  910     { MBEDTLS_TLS_ECDH_RSA_WITH_RC4_128_SHA, "TLS-ECDH-RSA-WITH-RC4-128-SHA",
+//  911       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  912       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  913       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  914       MBEDTLS_CIPHERSUITE_NODTLS },
+//  915 #endif /* MBEDTLS_SHA1_C */
+//  916 #endif /* MBEDTLS_ARC4_C */
+//  917 
+//  918 #if defined(MBEDTLS_CIPHER_NULL_CIPHER)
+//  919 #if defined(MBEDTLS_SHA1_C)
+//  920     { MBEDTLS_TLS_ECDH_RSA_WITH_NULL_SHA, "TLS-ECDH-RSA-WITH-NULL-SHA",
+//  921       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_RSA,
+//  922       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  923       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  924       MBEDTLS_CIPHERSUITE_WEAK },
+//  925 #endif /* MBEDTLS_SHA1_C */
+//  926 #endif /* MBEDTLS_CIPHER_NULL_CIPHER */
+//  927 #endif /* MBEDTLS_KEY_EXCHANGE_ECDH_RSA_ENABLED */
+//  928 
+//  929 #if defined(MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA_ENABLED)
+//  930 #if defined(MBEDTLS_AES_C)
+//  931 #if defined(MBEDTLS_SHA1_C)
+//  932 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  933     { MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, "TLS-ECDH-ECDSA-WITH-AES-128-CBC-SHA",
+//  934       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  935       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  936       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  937       0 },
+//  938     { MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, "TLS-ECDH-ECDSA-WITH-AES-256-CBC-SHA",
+//  939       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  940       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  941       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  942       0 },
+//  943 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  944 #endif /* MBEDTLS_SHA1_C */
+//  945 #if defined(MBEDTLS_SHA256_C)
+//  946 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  947     { MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, "TLS-ECDH-ECDSA-WITH-AES-128-CBC-SHA256",
+//  948       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  949       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  950       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  951       0 },
+//  952 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  953 #if defined(MBEDTLS_GCM_C)
+//  954     { MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, "TLS-ECDH-ECDSA-WITH-AES-128-GCM-SHA256",
+//  955       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  956       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  957       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  958       0 },
+//  959 #endif /* MBEDTLS_GCM_C */
+//  960 #endif /* MBEDTLS_SHA256_C */
+//  961 #if defined(MBEDTLS_SHA512_C)
+//  962 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  963     { MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, "TLS-ECDH-ECDSA-WITH-AES-256-CBC-SHA384",
+//  964       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  965       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  966       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  967       0 },
+//  968 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  969 #if defined(MBEDTLS_GCM_C)
+//  970     { MBEDTLS_TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, "TLS-ECDH-ECDSA-WITH-AES-256-GCM-SHA384",
+//  971       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  972       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  973       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  974       0 },
+//  975 #endif /* MBEDTLS_GCM_C */
+//  976 #endif /* MBEDTLS_SHA512_C */
+//  977 #endif /* MBEDTLS_AES_C */
+//  978 
+//  979 #if defined(MBEDTLS_CAMELLIA_C)
+//  980 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+//  981 #if defined(MBEDTLS_SHA256_C)
+//  982     { MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256, "TLS-ECDH-ECDSA-WITH-CAMELLIA-128-CBC-SHA256",
+//  983       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  984       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  985       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  986       0 },
+//  987 #endif /* MBEDTLS_SHA256_C */
+//  988 #if defined(MBEDTLS_SHA512_C)
+//  989     { MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384, "TLS-ECDH-ECDSA-WITH-CAMELLIA-256-CBC-SHA384",
+//  990       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+//  991       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+//  992       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+//  993       0 },
+//  994 #endif /* MBEDTLS_SHA512_C */
+//  995 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+//  996 
+//  997 #if defined(MBEDTLS_GCM_C)
+//  998 #if defined(MBEDTLS_SHA256_C)
+//  999     { MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256, "TLS-ECDH-ECDSA-WITH-CAMELLIA-128-GCM-SHA256",
+// 1000       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+// 1001       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1002       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1003       0 },
+// 1004 #endif /* MBEDTLS_SHA256_C */
+// 1005 #if defined(MBEDTLS_SHA512_C)
+// 1006     { MBEDTLS_TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384, "TLS-ECDH-ECDSA-WITH-CAMELLIA-256-GCM-SHA384",
+// 1007       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+// 1008       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1009       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1010       0 },
+// 1011 #endif /* MBEDTLS_SHA512_C */
+// 1012 #endif /* MBEDTLS_GCM_C */
+// 1013 #endif /* MBEDTLS_CAMELLIA_C */
+// 1014 
+// 1015 #if defined(MBEDTLS_DES_C)
+// 1016 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1017 #if defined(MBEDTLS_SHA1_C)
+// 1018     { MBEDTLS_TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, "TLS-ECDH-ECDSA-WITH-3DES-EDE-CBC-SHA",
+// 1019       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+// 1020       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1021       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1022       0 },
+// 1023 #endif /* MBEDTLS_SHA1_C */
+// 1024 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1025 #endif /* MBEDTLS_DES_C */
+// 1026 
+// 1027 #if defined(MBEDTLS_ARC4_C)
+// 1028 #if defined(MBEDTLS_SHA1_C)
+// 1029     { MBEDTLS_TLS_ECDH_ECDSA_WITH_RC4_128_SHA, "TLS-ECDH-ECDSA-WITH-RC4-128-SHA",
+// 1030       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+// 1031       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1032       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1033       MBEDTLS_CIPHERSUITE_NODTLS },
+// 1034 #endif /* MBEDTLS_SHA1_C */
+// 1035 #endif /* MBEDTLS_ARC4_C */
+// 1036 
+// 1037 #if defined(MBEDTLS_CIPHER_NULL_CIPHER)
+// 1038 #if defined(MBEDTLS_SHA1_C)
+// 1039     { MBEDTLS_TLS_ECDH_ECDSA_WITH_NULL_SHA, "TLS-ECDH-ECDSA-WITH-NULL-SHA",
+// 1040       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
+// 1041       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1042       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1043       MBEDTLS_CIPHERSUITE_WEAK },
+// 1044 #endif /* MBEDTLS_SHA1_C */
+// 1045 #endif /* MBEDTLS_CIPHER_NULL_CIPHER */
+// 1046 #endif /* MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA_ENABLED */
+// 1047 
+// 1048 #if defined(MBEDTLS_KEY_EXCHANGE_PSK_ENABLED)
+// 1049 #if defined(MBEDTLS_AES_C)
+// 1050 #if defined(MBEDTLS_GCM_C)
+// 1051 #if defined(MBEDTLS_SHA256_C)
+// 1052     { MBEDTLS_TLS_PSK_WITH_AES_128_GCM_SHA256, "TLS-PSK-WITH-AES-128-GCM-SHA256",
+// 1053       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1054       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1055       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1056       0 },
+// 1057 #endif /* MBEDTLS_SHA256_C */
+// 1058 
+// 1059 #if defined(MBEDTLS_SHA512_C)
+// 1060     { MBEDTLS_TLS_PSK_WITH_AES_256_GCM_SHA384, "TLS-PSK-WITH-AES-256-GCM-SHA384",
+// 1061       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1062       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1063       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1064       0 },
+// 1065 #endif /* MBEDTLS_SHA512_C */
+// 1066 #endif /* MBEDTLS_GCM_C */
+// 1067 
+// 1068 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1069 #if defined(MBEDTLS_SHA256_C)
+// 1070     { MBEDTLS_TLS_PSK_WITH_AES_128_CBC_SHA256, "TLS-PSK-WITH-AES-128-CBC-SHA256",
+// 1071       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1072       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1073       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1074       0 },
+// 1075 #endif /* MBEDTLS_SHA256_C */
+// 1076 
+// 1077 #if defined(MBEDTLS_SHA512_C)
+// 1078     { MBEDTLS_TLS_PSK_WITH_AES_256_CBC_SHA384, "TLS-PSK-WITH-AES-256-CBC-SHA384",
+// 1079       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1080       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1081       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1082       0 },
+// 1083 #endif /* MBEDTLS_SHA512_C */
+// 1084 
+// 1085 #if defined(MBEDTLS_SHA1_C)
+// 1086     { MBEDTLS_TLS_PSK_WITH_AES_128_CBC_SHA, "TLS-PSK-WITH-AES-128-CBC-SHA",
+// 1087       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1088       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1089       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1090       0 },
+// 1091 
+// 1092     { MBEDTLS_TLS_PSK_WITH_AES_256_CBC_SHA, "TLS-PSK-WITH-AES-256-CBC-SHA",
+// 1093       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1094       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1095       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1096       0 },
+// 1097 #endif /* MBEDTLS_SHA1_C */
+// 1098 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1099 #if defined(MBEDTLS_CCM_C)
+// 1100     { MBEDTLS_TLS_PSK_WITH_AES_256_CCM, "TLS-PSK-WITH-AES-256-CCM",
+// 1101       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1102       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1103       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1104       0 },
+// 1105     { MBEDTLS_TLS_PSK_WITH_AES_256_CCM_8, "TLS-PSK-WITH-AES-256-CCM-8",
+// 1106       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1107       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1108       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1109       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+// 1110     { MBEDTLS_TLS_PSK_WITH_AES_128_CCM, "TLS-PSK-WITH-AES-128-CCM",
+// 1111       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1112       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1113       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1114       0 },
+// 1115     { MBEDTLS_TLS_PSK_WITH_AES_128_CCM_8, "TLS-PSK-WITH-AES-128-CCM-8",
+// 1116       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1117       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1118       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1119       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+// 1120 #endif /* MBEDTLS_CCM_C */
+// 1121 #endif /* MBEDTLS_AES_C */
+// 1122 
+// 1123 #if defined(MBEDTLS_CAMELLIA_C)
+// 1124 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1125 #if defined(MBEDTLS_SHA256_C)
+// 1126     { MBEDTLS_TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256, "TLS-PSK-WITH-CAMELLIA-128-CBC-SHA256",
+// 1127       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1128       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1129       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1130       0 },
+// 1131 #endif /* MBEDTLS_SHA256_C */
+// 1132 
+// 1133 #if defined(MBEDTLS_SHA512_C)
+// 1134     { MBEDTLS_TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384, "TLS-PSK-WITH-CAMELLIA-256-CBC-SHA384",
+// 1135       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1136       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1137       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1138       0 },
+// 1139 #endif /* MBEDTLS_SHA512_C */
+// 1140 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1141 
+// 1142 #if defined(MBEDTLS_GCM_C)
+// 1143 #if defined(MBEDTLS_SHA256_C)
+// 1144     { MBEDTLS_TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256, "TLS-PSK-WITH-CAMELLIA-128-GCM-SHA256",
+// 1145       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1146       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1147       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1148       0 },
+// 1149 #endif /* MBEDTLS_SHA256_C */
+// 1150 
+// 1151 #if defined(MBEDTLS_SHA512_C)
+// 1152     { MBEDTLS_TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384, "TLS-PSK-WITH-CAMELLIA-256-GCM-SHA384",
+// 1153       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1154       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1155       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1156       0 },
+// 1157 #endif /* MBEDTLS_SHA512_C */
+// 1158 #endif /* MBEDTLS_GCM_C */
+// 1159 #endif /* MBEDTLS_CAMELLIA_C */
+// 1160 
+// 1161 #if defined(MBEDTLS_DES_C)
+// 1162 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1163 #if defined(MBEDTLS_SHA1_C)
+// 1164     { MBEDTLS_TLS_PSK_WITH_3DES_EDE_CBC_SHA, "TLS-PSK-WITH-3DES-EDE-CBC-SHA",
+// 1165       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1166       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1167       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1168       0 },
+// 1169 #endif /* MBEDTLS_SHA1_C */
+// 1170 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1171 #endif /* MBEDTLS_DES_C */
+// 1172 
+// 1173 #if defined(MBEDTLS_ARC4_C)
+// 1174 #if defined(MBEDTLS_SHA1_C)
+// 1175     { MBEDTLS_TLS_PSK_WITH_RC4_128_SHA, "TLS-PSK-WITH-RC4-128-SHA",
+// 1176       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1177       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1178       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1179       MBEDTLS_CIPHERSUITE_NODTLS },
+// 1180 #endif /* MBEDTLS_SHA1_C */
+// 1181 #endif /* MBEDTLS_ARC4_C */
+// 1182 #endif /* MBEDTLS_KEY_EXCHANGE_PSK_ENABLED */
+// 1183 
+// 1184 #if defined(MBEDTLS_KEY_EXCHANGE_DHE_PSK_ENABLED)
+// 1185 #if defined(MBEDTLS_AES_C)
+// 1186 #if defined(MBEDTLS_GCM_C)
+// 1187 #if defined(MBEDTLS_SHA256_C)
+// 1188     { MBEDTLS_TLS_DHE_PSK_WITH_AES_128_GCM_SHA256, "TLS-DHE-PSK-WITH-AES-128-GCM-SHA256",
+// 1189       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1190       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1191       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1192       0 },
+// 1193 #endif /* MBEDTLS_SHA256_C */
+// 1194 
+// 1195 #if defined(MBEDTLS_SHA512_C)
+// 1196     { MBEDTLS_TLS_DHE_PSK_WITH_AES_256_GCM_SHA384, "TLS-DHE-PSK-WITH-AES-256-GCM-SHA384",
+// 1197       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1198       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1199       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1200       0 },
+// 1201 #endif /* MBEDTLS_SHA512_C */
+// 1202 #endif /* MBEDTLS_GCM_C */
+// 1203 
+// 1204 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1205 #if defined(MBEDTLS_SHA256_C)
+// 1206     { MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CBC_SHA256, "TLS-DHE-PSK-WITH-AES-128-CBC-SHA256",
+// 1207       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1208       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1209       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1210       0 },
+// 1211 #endif /* MBEDTLS_SHA256_C */
+// 1212 
+// 1213 #if defined(MBEDTLS_SHA512_C)
+// 1214     { MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CBC_SHA384, "TLS-DHE-PSK-WITH-AES-256-CBC-SHA384",
+// 1215       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1216       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1217       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1218       0 },
+// 1219 #endif /* MBEDTLS_SHA512_C */
+// 1220 
+// 1221 #if defined(MBEDTLS_SHA1_C)
+// 1222     { MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CBC_SHA, "TLS-DHE-PSK-WITH-AES-128-CBC-SHA",
+// 1223       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1224       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1225       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1226       0 },
+// 1227 
+// 1228     { MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CBC_SHA, "TLS-DHE-PSK-WITH-AES-256-CBC-SHA",
+// 1229       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1230       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1231       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1232       0 },
+// 1233 #endif /* MBEDTLS_SHA1_C */
+// 1234 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1235 #if defined(MBEDTLS_CCM_C)
+// 1236     { MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CCM, "TLS-DHE-PSK-WITH-AES-256-CCM",
+// 1237       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1238       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1239       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1240       0 },
+// 1241     { MBEDTLS_TLS_DHE_PSK_WITH_AES_256_CCM_8, "TLS-DHE-PSK-WITH-AES-256-CCM-8",
+// 1242       MBEDTLS_CIPHER_AES_256_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1243       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1244       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1245       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+// 1246     { MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CCM, "TLS-DHE-PSK-WITH-AES-128-CCM",
+// 1247       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1248       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1249       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1250       0 },
+// 1251     { MBEDTLS_TLS_DHE_PSK_WITH_AES_128_CCM_8, "TLS-DHE-PSK-WITH-AES-128-CCM-8",
+// 1252       MBEDTLS_CIPHER_AES_128_CCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1253       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1254       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1255       MBEDTLS_CIPHERSUITE_SHORT_TAG },
+// 1256 #endif /* MBEDTLS_CCM_C */
+// 1257 #endif /* MBEDTLS_AES_C */
+// 1258 
+// 1259 #if defined(MBEDTLS_CAMELLIA_C)
+// 1260 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1261 #if defined(MBEDTLS_SHA256_C)
+// 1262     { MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256, "TLS-DHE-PSK-WITH-CAMELLIA-128-CBC-SHA256",
+// 1263       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1264       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1265       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1266       0 },
+// 1267 #endif /* MBEDTLS_SHA256_C */
+// 1268 
+// 1269 #if defined(MBEDTLS_SHA512_C)
+// 1270     { MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384, "TLS-DHE-PSK-WITH-CAMELLIA-256-CBC-SHA384",
+// 1271       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1272       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1273       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1274       0 },
+// 1275 #endif /* MBEDTLS_SHA512_C */
+// 1276 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1277 
+// 1278 #if defined(MBEDTLS_GCM_C)
+// 1279 #if defined(MBEDTLS_SHA256_C)
+// 1280     { MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256, "TLS-DHE-PSK-WITH-CAMELLIA-128-GCM-SHA256",
+// 1281       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1282       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1283       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1284       0 },
+// 1285 #endif /* MBEDTLS_SHA256_C */
+// 1286 
+// 1287 #if defined(MBEDTLS_SHA512_C)
+// 1288     { MBEDTLS_TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384, "TLS-DHE-PSK-WITH-CAMELLIA-256-GCM-SHA384",
+// 1289       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1290       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1291       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1292       0 },
+// 1293 #endif /* MBEDTLS_SHA512_C */
+// 1294 #endif /* MBEDTLS_GCM_C */
+// 1295 #endif /* MBEDTLS_CAMELLIA_C */
+// 1296 
+// 1297 #if defined(MBEDTLS_DES_C)
+// 1298 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1299 #if defined(MBEDTLS_SHA1_C)
+// 1300     { MBEDTLS_TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA, "TLS-DHE-PSK-WITH-3DES-EDE-CBC-SHA",
+// 1301       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1302       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1303       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1304       0 },
+// 1305 #endif /* MBEDTLS_SHA1_C */
+// 1306 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1307 #endif /* MBEDTLS_DES_C */
+// 1308 
+// 1309 #if defined(MBEDTLS_ARC4_C)
+// 1310 #if defined(MBEDTLS_SHA1_C)
+// 1311     { MBEDTLS_TLS_DHE_PSK_WITH_RC4_128_SHA, "TLS-DHE-PSK-WITH-RC4-128-SHA",
+// 1312       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1313       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1314       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1315       MBEDTLS_CIPHERSUITE_NODTLS },
+// 1316 #endif /* MBEDTLS_SHA1_C */
+// 1317 #endif /* MBEDTLS_ARC4_C */
+// 1318 #endif /* MBEDTLS_KEY_EXCHANGE_DHE_PSK_ENABLED */
+// 1319 
+// 1320 #if defined(MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED)
+// 1321 #if defined(MBEDTLS_AES_C)
+// 1322 
+// 1323 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1324 #if defined(MBEDTLS_SHA256_C)
+// 1325     { MBEDTLS_TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256, "TLS-ECDHE-PSK-WITH-AES-128-CBC-SHA256",
+// 1326       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1327       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1328       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1329       0 },
+// 1330 #endif /* MBEDTLS_SHA256_C */
+// 1331 
+// 1332 #if defined(MBEDTLS_SHA512_C)
+// 1333     { MBEDTLS_TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384, "TLS-ECDHE-PSK-WITH-AES-256-CBC-SHA384",
+// 1334       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1335       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1336       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1337       0 },
+// 1338 #endif /* MBEDTLS_SHA512_C */
+// 1339 
+// 1340 #if defined(MBEDTLS_SHA1_C)
+// 1341     { MBEDTLS_TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA, "TLS-ECDHE-PSK-WITH-AES-128-CBC-SHA",
+// 1342       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1343       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1344       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1345       0 },
+// 1346 
+// 1347     { MBEDTLS_TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA, "TLS-ECDHE-PSK-WITH-AES-256-CBC-SHA",
+// 1348       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1349       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1350       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1351       0 },
+// 1352 #endif /* MBEDTLS_SHA1_C */
+// 1353 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1354 #endif /* MBEDTLS_AES_C */
+// 1355 
+// 1356 #if defined(MBEDTLS_CAMELLIA_C)
+// 1357 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1358 #if defined(MBEDTLS_SHA256_C)
+// 1359     { MBEDTLS_TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256, "TLS-ECDHE-PSK-WITH-CAMELLIA-128-CBC-SHA256",
+// 1360       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1361       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1362       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1363       0 },
+// 1364 #endif /* MBEDTLS_SHA256_C */
+// 1365 
+// 1366 #if defined(MBEDTLS_SHA512_C)
+// 1367     { MBEDTLS_TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384, "TLS-ECDHE-PSK-WITH-CAMELLIA-256-CBC-SHA384",
+// 1368       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1369       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1370       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1371       0 },
+// 1372 #endif /* MBEDTLS_SHA512_C */
+// 1373 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1374 #endif /* MBEDTLS_CAMELLIA_C */
+// 1375 
+// 1376 #if defined(MBEDTLS_DES_C)
+// 1377 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1378 #if defined(MBEDTLS_SHA1_C)
+// 1379     { MBEDTLS_TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA, "TLS-ECDHE-PSK-WITH-3DES-EDE-CBC-SHA",
+// 1380       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1381       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1382       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1383       0 },
+// 1384 #endif /* MBEDTLS_SHA1_C */
+// 1385 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1386 #endif /* MBEDTLS_DES_C */
+// 1387 
+// 1388 #if defined(MBEDTLS_ARC4_C)
+// 1389 #if defined(MBEDTLS_SHA1_C)
+// 1390     { MBEDTLS_TLS_ECDHE_PSK_WITH_RC4_128_SHA, "TLS-ECDHE-PSK-WITH-RC4-128-SHA",
+// 1391       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1392       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1393       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1394       MBEDTLS_CIPHERSUITE_NODTLS },
+// 1395 #endif /* MBEDTLS_SHA1_C */
+// 1396 #endif /* MBEDTLS_ARC4_C */
+// 1397 #endif /* MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED */
+// 1398 
+// 1399 #if defined(MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED)
+// 1400 #if defined(MBEDTLS_AES_C)
+// 1401 #if defined(MBEDTLS_GCM_C)
+// 1402 #if defined(MBEDTLS_SHA256_C)
+// 1403     { MBEDTLS_TLS_RSA_PSK_WITH_AES_128_GCM_SHA256, "TLS-RSA-PSK-WITH-AES-128-GCM-SHA256",
+// 1404       MBEDTLS_CIPHER_AES_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1405       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1406       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1407       0 },
+// 1408 #endif /* MBEDTLS_SHA256_C */
+// 1409 
+// 1410 #if defined(MBEDTLS_SHA512_C)
+// 1411     { MBEDTLS_TLS_RSA_PSK_WITH_AES_256_GCM_SHA384, "TLS-RSA-PSK-WITH-AES-256-GCM-SHA384",
+// 1412       MBEDTLS_CIPHER_AES_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1413       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1414       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1415       0 },
+// 1416 #endif /* MBEDTLS_SHA512_C */
+// 1417 #endif /* MBEDTLS_GCM_C */
+// 1418 
+// 1419 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1420 #if defined(MBEDTLS_SHA256_C)
+// 1421     { MBEDTLS_TLS_RSA_PSK_WITH_AES_128_CBC_SHA256, "TLS-RSA-PSK-WITH-AES-128-CBC-SHA256",
+// 1422       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1423       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1424       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1425       0 },
+// 1426 #endif /* MBEDTLS_SHA256_C */
+// 1427 
+// 1428 #if defined(MBEDTLS_SHA512_C)
+// 1429     { MBEDTLS_TLS_RSA_PSK_WITH_AES_256_CBC_SHA384, "TLS-RSA-PSK-WITH-AES-256-CBC-SHA384",
+// 1430       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1431       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1432       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1433       0 },
+// 1434 #endif /* MBEDTLS_SHA512_C */
+// 1435 
+// 1436 #if defined(MBEDTLS_SHA1_C)
+// 1437     { MBEDTLS_TLS_RSA_PSK_WITH_AES_128_CBC_SHA, "TLS-RSA-PSK-WITH-AES-128-CBC-SHA",
+// 1438       MBEDTLS_CIPHER_AES_128_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1439       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1440       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1441       0 },
+// 1442 
+// 1443     { MBEDTLS_TLS_RSA_PSK_WITH_AES_256_CBC_SHA, "TLS-RSA-PSK-WITH-AES-256-CBC-SHA",
+// 1444       MBEDTLS_CIPHER_AES_256_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1445       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1446       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1447       0 },
+// 1448 #endif /* MBEDTLS_SHA1_C */
+// 1449 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1450 #endif /* MBEDTLS_AES_C */
+// 1451 
+// 1452 #if defined(MBEDTLS_CAMELLIA_C)
+// 1453 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1454 #if defined(MBEDTLS_SHA256_C)
+// 1455     { MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256, "TLS-RSA-PSK-WITH-CAMELLIA-128-CBC-SHA256",
+// 1456       MBEDTLS_CIPHER_CAMELLIA_128_CBC, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1457       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1458       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1459       0 },
+// 1460 #endif /* MBEDTLS_SHA256_C */
+// 1461 
+// 1462 #if defined(MBEDTLS_SHA512_C)
+// 1463     { MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384, "TLS-RSA-PSK-WITH-CAMELLIA-256-CBC-SHA384",
+// 1464       MBEDTLS_CIPHER_CAMELLIA_256_CBC, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1465       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1466       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1467       0 },
+// 1468 #endif /* MBEDTLS_SHA512_C */
+// 1469 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1470 
+// 1471 #if defined(MBEDTLS_GCM_C)
+// 1472 #if defined(MBEDTLS_SHA256_C)
+// 1473     { MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256, "TLS-RSA-PSK-WITH-CAMELLIA-128-GCM-SHA256",
+// 1474       MBEDTLS_CIPHER_CAMELLIA_128_GCM, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1475       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1476       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1477       0 },
+// 1478 #endif /* MBEDTLS_SHA256_C */
+// 1479 
+// 1480 #if defined(MBEDTLS_SHA512_C)
+// 1481     { MBEDTLS_TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384, "TLS-RSA-PSK-WITH-CAMELLIA-256-GCM-SHA384",
+// 1482       MBEDTLS_CIPHER_CAMELLIA_256_GCM, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1483       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1484       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1485       0 },
+// 1486 #endif /* MBEDTLS_SHA512_C */
+// 1487 #endif /* MBEDTLS_GCM_C */
+// 1488 #endif /* MBEDTLS_CAMELLIA_C */
+// 1489 
+// 1490 #if defined(MBEDTLS_DES_C)
+// 1491 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1492 #if defined(MBEDTLS_SHA1_C)
+// 1493     { MBEDTLS_TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA, "TLS-RSA-PSK-WITH-3DES-EDE-CBC-SHA",
+// 1494       MBEDTLS_CIPHER_DES_EDE3_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1495       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1496       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1497       0 },
+// 1498 #endif /* MBEDTLS_SHA1_C */
+// 1499 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1500 #endif /* MBEDTLS_DES_C */
+// 1501 
+// 1502 #if defined(MBEDTLS_ARC4_C)
+// 1503 #if defined(MBEDTLS_SHA1_C)
+// 1504     { MBEDTLS_TLS_RSA_PSK_WITH_RC4_128_SHA, "TLS-RSA-PSK-WITH-RC4-128-SHA",
+// 1505       MBEDTLS_CIPHER_ARC4_128, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1506       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1507       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1508       MBEDTLS_CIPHERSUITE_NODTLS },
+// 1509 #endif /* MBEDTLS_SHA1_C */
+// 1510 #endif /* MBEDTLS_ARC4_C */
+// 1511 #endif /* MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED */
+// 1512 
+// 1513 #if defined(MBEDTLS_ENABLE_WEAK_CIPHERSUITES)
+// 1514 #if defined(MBEDTLS_CIPHER_NULL_CIPHER)
+// 1515 #if defined(MBEDTLS_KEY_EXCHANGE_RSA_ENABLED)
+// 1516 #if defined(MBEDTLS_MD5_C)
+// 1517     { MBEDTLS_TLS_RSA_WITH_NULL_MD5, "TLS-RSA-WITH-NULL-MD5",
+// 1518       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_MD5, MBEDTLS_KEY_EXCHANGE_RSA,
+// 1519       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1520       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1521       MBEDTLS_CIPHERSUITE_WEAK },
+// 1522 #endif
+// 1523 
+// 1524 #if defined(MBEDTLS_SHA1_C)
+// 1525     { MBEDTLS_TLS_RSA_WITH_NULL_SHA, "TLS-RSA-WITH-NULL-SHA",
+// 1526       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+// 1527       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1528       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1529       MBEDTLS_CIPHERSUITE_WEAK },
+// 1530 #endif
+// 1531 
+// 1532 #if defined(MBEDTLS_SHA256_C)
+// 1533     { MBEDTLS_TLS_RSA_WITH_NULL_SHA256, "TLS-RSA-WITH-NULL-SHA256",
+// 1534       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA,
+// 1535       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1536       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1537       MBEDTLS_CIPHERSUITE_WEAK },
+// 1538 #endif
+// 1539 #endif /* MBEDTLS_KEY_EXCHANGE_RSA_ENABLED */
+// 1540 
+// 1541 #if defined(MBEDTLS_KEY_EXCHANGE_PSK_ENABLED)
+// 1542 #if defined(MBEDTLS_SHA1_C)
+// 1543     { MBEDTLS_TLS_PSK_WITH_NULL_SHA, "TLS-PSK-WITH-NULL-SHA",
+// 1544       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1545       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1546       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1547       MBEDTLS_CIPHERSUITE_WEAK },
+// 1548 #endif /* MBEDTLS_SHA1_C */
+// 1549 
+// 1550 #if defined(MBEDTLS_SHA256_C)
+// 1551     { MBEDTLS_TLS_PSK_WITH_NULL_SHA256, "TLS-PSK-WITH-NULL-SHA256",
+// 1552       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1553       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1554       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1555       MBEDTLS_CIPHERSUITE_WEAK },
+// 1556 #endif
+// 1557 
+// 1558 #if defined(MBEDTLS_SHA512_C)
+// 1559     { MBEDTLS_TLS_PSK_WITH_NULL_SHA384, "TLS-PSK-WITH-NULL-SHA384",
+// 1560       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_PSK,
+// 1561       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1562       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1563       MBEDTLS_CIPHERSUITE_WEAK },
+// 1564 #endif
+// 1565 #endif /* MBEDTLS_KEY_EXCHANGE_PSK_ENABLED */
+// 1566 
+// 1567 #if defined(MBEDTLS_KEY_EXCHANGE_DHE_PSK_ENABLED)
+// 1568 #if defined(MBEDTLS_SHA1_C)
+// 1569     { MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA, "TLS-DHE-PSK-WITH-NULL-SHA",
+// 1570       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1571       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1572       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1573       MBEDTLS_CIPHERSUITE_WEAK },
+// 1574 #endif /* MBEDTLS_SHA1_C */
+// 1575 
+// 1576 #if defined(MBEDTLS_SHA256_C)
+// 1577     { MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA256, "TLS-DHE-PSK-WITH-NULL-SHA256",
+// 1578       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1579       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1580       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1581       MBEDTLS_CIPHERSUITE_WEAK },
+// 1582 #endif
+// 1583 
+// 1584 #if defined(MBEDTLS_SHA512_C)
+// 1585     { MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA384, "TLS-DHE-PSK-WITH-NULL-SHA384",
+// 1586       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_DHE_PSK,
+// 1587       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1588       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1589       MBEDTLS_CIPHERSUITE_WEAK },
+// 1590 #endif
+// 1591 #endif /* MBEDTLS_KEY_EXCHANGE_DHE_PSK_ENABLED */
+// 1592 
+// 1593 #if defined(MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED)
+// 1594 #if defined(MBEDTLS_SHA1_C)
+// 1595     { MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA, "TLS-ECDHE-PSK-WITH-NULL-SHA",
+// 1596       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1597       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1598       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1599       MBEDTLS_CIPHERSUITE_WEAK },
+// 1600 #endif /* MBEDTLS_SHA1_C */
+// 1601 
+// 1602 #if defined(MBEDTLS_SHA256_C)
+// 1603     { MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA256, "TLS-ECDHE-PSK-WITH-NULL-SHA256",
+// 1604       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1605       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1606       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1607       MBEDTLS_CIPHERSUITE_WEAK },
+// 1608 #endif
+// 1609 
+// 1610 #if defined(MBEDTLS_SHA512_C)
+// 1611     { MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA384, "TLS-ECDHE-PSK-WITH-NULL-SHA384",
+// 1612       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_ECDHE_PSK,
+// 1613       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1614       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1615       MBEDTLS_CIPHERSUITE_WEAK },
+// 1616 #endif
+// 1617 #endif /* MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED */
+// 1618 
+// 1619 #if defined(MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED)
+// 1620 #if defined(MBEDTLS_SHA1_C)
+// 1621     { MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA, "TLS-RSA-PSK-WITH-NULL-SHA",
+// 1622       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1623       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1624       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1625       MBEDTLS_CIPHERSUITE_WEAK },
+// 1626 #endif /* MBEDTLS_SHA1_C */
+// 1627 
+// 1628 #if defined(MBEDTLS_SHA256_C)
+// 1629     { MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA256, "TLS-RSA-PSK-WITH-NULL-SHA256",
+// 1630       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA256, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1631       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1632       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1633       MBEDTLS_CIPHERSUITE_WEAK },
+// 1634 #endif
+// 1635 
+// 1636 #if defined(MBEDTLS_SHA512_C)
+// 1637     { MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA384, "TLS-RSA-PSK-WITH-NULL-SHA384",
+// 1638       MBEDTLS_CIPHER_NULL, MBEDTLS_MD_SHA384, MBEDTLS_KEY_EXCHANGE_RSA_PSK,
+// 1639       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_1,
+// 1640       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1641       MBEDTLS_CIPHERSUITE_WEAK },
+// 1642 #endif
+// 1643 #endif /* MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED */
+// 1644 #endif /* MBEDTLS_CIPHER_NULL_CIPHER */
+// 1645 
+// 1646 #if defined(MBEDTLS_DES_C)
+// 1647 #if defined(MBEDTLS_CIPHER_MODE_CBC)
+// 1648 #if defined(MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED)
+// 1649 #if defined(MBEDTLS_SHA1_C)
+// 1650     { MBEDTLS_TLS_DHE_RSA_WITH_DES_CBC_SHA, "TLS-DHE-RSA-WITH-DES-CBC-SHA",
+// 1651       MBEDTLS_CIPHER_DES_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_DHE_RSA,
+// 1652       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1653       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1654       MBEDTLS_CIPHERSUITE_WEAK },
+// 1655 #endif /* MBEDTLS_SHA1_C */
+// 1656 #endif /* MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED */
+// 1657 
+// 1658 #if defined(MBEDTLS_KEY_EXCHANGE_RSA_ENABLED)
+// 1659 #if defined(MBEDTLS_SHA1_C)
+// 1660     { MBEDTLS_TLS_RSA_WITH_DES_CBC_SHA, "TLS-RSA-WITH-DES-CBC-SHA",
+// 1661       MBEDTLS_CIPHER_DES_CBC, MBEDTLS_MD_SHA1, MBEDTLS_KEY_EXCHANGE_RSA,
+// 1662       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_0,
+// 1663       MBEDTLS_SSL_MAJOR_VERSION_3, MBEDTLS_SSL_MINOR_VERSION_3,
+// 1664       MBEDTLS_CIPHERSUITE_WEAK },
+// 1665 #endif /* MBEDTLS_SHA1_C */
+// 1666 #endif /* MBEDTLS_KEY_EXCHANGE_RSA_ENABLED */
+// 1667 #endif /* MBEDTLS_CIPHER_MODE_CBC */
+// 1668 #endif /* MBEDTLS_DES_C */
+// 1669 #endif /* MBEDTLS_ENABLE_WEAK_CIPHERSUITES */
+// 1670 
+// 1671     { 0, "",
+// 1672       MBEDTLS_CIPHER_NONE, MBEDTLS_MD_NONE, MBEDTLS_KEY_EXCHANGE_NONE,
+// 1673       0, 0, 0, 0, 0 }
+// 1674 };
+// 1675 
+// 1676 #if defined(MBEDTLS_SSL_CIPHERSUITES)
+// 1677 const int *mbedtls_ssl_list_ciphersuites( void )
+// 1678 {
+// 1679     return( ciphersuite_preference );
+// 1680 }
+// 1681 #else
+// 1682 #define MAX_CIPHERSUITES    sizeof( ciphersuite_definitions     ) /         \ 
+// 1683                             sizeof( ciphersuite_definitions[0]  )
+
+        SECTION `.bss`:DATA:REORDER:NOROOT(2)
+        DATA
+// 1684 static int supported_ciphersuites[MAX_CIPHERSUITES];
+// 1685 static int supported_init = 0;
+supported_init:
+        DS8 4
+        DS8 56
+// 1686 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock0 Using cfiCommon0
+          CFI Function mbedtls_ssl_list_ciphersuites
+        THUMB
+// 1687 const int *mbedtls_ssl_list_ciphersuites( void )
+// 1688 {
+mbedtls_ssl_list_ciphersuites:
+        PUSH     {R4-R6,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R6 Frame(CFA, -8)
+          CFI R5 Frame(CFA, -12)
+          CFI R4 Frame(CFA, -16)
+          CFI CFA R13+16
+// 1689     /*
+// 1690      * On initial call filter out all ciphersuites not supported by current
+// 1691      * build based on presence in the ciphersuite_definitions.
+// 1692      */
+// 1693     if( supported_init == 0 )
+        LDR.N    R4,??DataTable17
+        LDR      R0,[R4, #+0]
+        CMP      R0,#+0
+        BNE.N    ??mbedtls_ssl_list_ciphersuites_0
+// 1694     {
+// 1695         const int *p;
+// 1696         int *q;
+// 1697 
+// 1698         for( p = ciphersuite_preference, q = supported_ciphersuites;
+        ADR.W    R5,ciphersuite_preference
+        ADDS     R6,R4,#+4
+        B.N      ??mbedtls_ssl_list_ciphersuites_1
+// 1699              *p != 0 && q < supported_ciphersuites + MAX_CIPHERSUITES - 1;
+// 1700              p++ )
+// 1701         {
+// 1702 #if defined(MBEDTLS_REMOVE_ARC4_CIPHERSUITES)
+// 1703             const mbedtls_ssl_ciphersuite_t *cs_info;
+// 1704             if( ( cs_info = mbedtls_ssl_ciphersuite_from_id( *p ) ) != NULL &&
+// 1705                 cs_info->cipher != MBEDTLS_CIPHER_ARC4_128 )
+// 1706 #else
+// 1707             if( mbedtls_ssl_ciphersuite_from_id( *p ) != NULL )
+??mbedtls_ssl_list_ciphersuites_2:
+          CFI FunCall mbedtls_ssl_ciphersuite_from_id
+        BL       mbedtls_ssl_ciphersuite_from_id
+        CMP      R0,#+0
+        BEQ.N    ??mbedtls_ssl_list_ciphersuites_3
+// 1708 #endif
+// 1709                 *(q++) = *p;
+        LDR      R0,[R5, #+0]
+        STR      R0,[R6], #+4
+// 1710         }
+??mbedtls_ssl_list_ciphersuites_3:
+        ADDS     R5,R5,#+4
+??mbedtls_ssl_list_ciphersuites_1:
+        LDR      R0,[R5, #+0]
+        CMP      R0,#+0
+        BEQ.N    ??mbedtls_ssl_list_ciphersuites_4
+        ADD      R1,R4,#+56
+        CMP      R6,R1
+        BCC.N    ??mbedtls_ssl_list_ciphersuites_2
+// 1711         *q = 0;
+??mbedtls_ssl_list_ciphersuites_4:
+        MOVS     R0,#+0
+        STR      R0,[R6, #+0]
+// 1712 
+// 1713         supported_init = 1;
+        MOVS     R0,#+1
+        STR      R0,[R4, #+0]
+// 1714     }
+// 1715 
+// 1716     return( supported_ciphersuites );
+??mbedtls_ssl_list_ciphersuites_0:
+        ADDS     R0,R4,#+4
+        POP      {R4-R6,PC}       ;; return
+// 1717 }
+          CFI EndBlock cfiBlock0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+??DataTable17:
+        DC32     supported_init
+// 1718 #endif /* MBEDTLS_SSL_CIPHERSUITES */
+// 1719 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function mbedtls_ssl_ciphersuite_from_string
+        THUMB
+// 1720 const mbedtls_ssl_ciphersuite_t *mbedtls_ssl_ciphersuite_from_string(
+// 1721                                                 const char *ciphersuite_name )
+// 1722 {
+mbedtls_ssl_ciphersuite_from_string:
+        PUSH     {R3-R5,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI R5 Frame(CFA, -8)
+          CFI R4 Frame(CFA, -12)
+          CFI CFA R13+16
+        MOVS     R4,R0
+// 1723     const mbedtls_ssl_ciphersuite_t *cur = ciphersuite_definitions;
+        ADR.W    R5,ciphersuite_definitions
+// 1724 
+// 1725     if( NULL == ciphersuite_name )
+        BNE.N    ??mbedtls_ssl_ciphersuite_from_string_0
+// 1726         return( NULL );
+// 1727 
+// 1728     while( cur->id != 0 )
+// 1729     {
+// 1730         if( 0 == strcmp( cur->name, ciphersuite_name ) )
+// 1731             return( cur );
+// 1732 
+// 1733         cur++;
+// 1734     }
+// 1735 
+// 1736     return( NULL );
+??mbedtls_ssl_ciphersuite_from_string_1:
+        MOVS     R0,#+0
+        POP      {R1,R4,R5,PC}    ;; return
+??mbedtls_ssl_ciphersuite_from_string_2:
+        ADDS     R5,R5,#+32
+??mbedtls_ssl_ciphersuite_from_string_0:
+        LDR      R0,[R5, #+0]
+        CMP      R0,#+0
+        BEQ.N    ??mbedtls_ssl_ciphersuite_from_string_1
+        MOV      R1,R4
+        LDR      R0,[R5, #+4]
+          CFI FunCall strcmp
+        BL       strcmp
+        CMP      R0,#+0
+        BNE.N    ??mbedtls_ssl_ciphersuite_from_string_2
+        MOV      R0,R5
+        POP      {R1,R4,R5,PC}
+// 1737 }
+          CFI EndBlock cfiBlock1
+// 1738 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Function mbedtls_ssl_ciphersuite_from_id
+          CFI NoCalls
+        THUMB
+// 1739 const mbedtls_ssl_ciphersuite_t *mbedtls_ssl_ciphersuite_from_id( int ciphersuite )
+// 1740 {
+// 1741     const mbedtls_ssl_ciphersuite_t *cur = ciphersuite_definitions;
+mbedtls_ssl_ciphersuite_from_id:
+        ADR.W    R1,ciphersuite_definitions
+        B.N      ??mbedtls_ssl_ciphersuite_from_id_0
+// 1742 
+// 1743     while( cur->id != 0 )
+// 1744     {
+// 1745         if( cur->id == ciphersuite )
+// 1746             return( cur );
+// 1747 
+// 1748         cur++;
+??mbedtls_ssl_ciphersuite_from_id_1:
+        ADDS     R1,R1,#+32
+??mbedtls_ssl_ciphersuite_from_id_0:
+        LDR      R2,[R1, #+0]
+        CMP      R2,#+0
+        BEQ.N    ??mbedtls_ssl_ciphersuite_from_id_2
+        CMP      R2,R0
+        BNE.N    ??mbedtls_ssl_ciphersuite_from_id_1
+        MOV      R0,R1
+        BX       LR
+// 1749     }
+// 1750 
+// 1751     return( NULL );
+??mbedtls_ssl_ciphersuite_from_id_2:
+        MOVS     R0,#+0
+        BX       LR               ;; return
+// 1752 }
+          CFI EndBlock cfiBlock2
+// 1753 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Function mbedtls_ssl_get_ciphersuite_name
+        THUMB
+// 1754 const char *mbedtls_ssl_get_ciphersuite_name( const int ciphersuite_id )
+// 1755 {
+mbedtls_ssl_get_ciphersuite_name:
+        PUSH     {R7,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI CFA R13+8
+// 1756     const mbedtls_ssl_ciphersuite_t *cur;
+// 1757 
+// 1758     cur = mbedtls_ssl_ciphersuite_from_id( ciphersuite_id );
+          CFI FunCall mbedtls_ssl_ciphersuite_from_id
+        BL       mbedtls_ssl_ciphersuite_from_id
+// 1759 
+// 1760     if( cur == NULL )
+        CMP      R0,#+0
+        BNE.N    ??mbedtls_ssl_get_ciphersuite_name_0
+// 1761         return( "unknown" );
+        ADR.W    R0,?_14
+        POP      {R1,PC}
+// 1762 
+// 1763     return( cur->name );
+??mbedtls_ssl_get_ciphersuite_name_0:
+        LDR      R0,[R0, #+4]
+        POP      {R1,PC}          ;; return
+// 1764 }
+          CFI EndBlock cfiBlock3
+// 1765 
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Function mbedtls_ssl_get_ciphersuite_id
+        THUMB
+// 1766 int mbedtls_ssl_get_ciphersuite_id( const char *ciphersuite_name )
+// 1767 {
+mbedtls_ssl_get_ciphersuite_id:
+        PUSH     {R7,LR}
+          CFI R14 Frame(CFA, -4)
+          CFI CFA R13+8
+// 1768     const mbedtls_ssl_ciphersuite_t *cur;
+// 1769 
+// 1770     cur = mbedtls_ssl_ciphersuite_from_string( ciphersuite_name );
+          CFI FunCall mbedtls_ssl_ciphersuite_from_string
+        BL       mbedtls_ssl_ciphersuite_from_string
+// 1771 
+// 1772     if( cur == NULL )
+        CMP      R0,#+0
+        BNE.N    ??mbedtls_ssl_get_ciphersuite_id_0
+// 1773         return( 0 );
+        MOVS     R0,#+0
+        POP      {R1,PC}
+// 1774 
+// 1775     return( cur->id );
+??mbedtls_ssl_get_ciphersuite_id_0:
+        LDR      R0,[R0, #+0]
+        POP      {R1,PC}          ;; return
+// 1776 }
+          CFI EndBlock cfiBlock4
+// 1777 
+// 1778 #if defined(MBEDTLS_PK_C)
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Function mbedtls_ssl_get_ciphersuite_sig_pk_alg
+          CFI NoCalls
+        THUMB
+// 1779 mbedtls_pk_type_t mbedtls_ssl_get_ciphersuite_sig_pk_alg( const mbedtls_ssl_ciphersuite_t *info )
+// 1780 {
+// 1781     switch( info->key_exchange )
+mbedtls_ssl_get_ciphersuite_sig_pk_alg:
+        LDRB     R0,[R0, #+10]
+        SUBS     R0,R0,#+1
+        CMP      R0,#+2
+        BLS.N    ??mbedtls_ssl_get_ciphersuite_sig_pk_alg_0
+        SUBS     R0,R0,#+3
+        BEQ.N    ??mbedtls_ssl_get_ciphersuite_sig_pk_alg_1
+        SUBS     R0,R0,#+3
+        BEQ.N    ??mbedtls_ssl_get_ciphersuite_sig_pk_alg_0
+        SUBS     R0,R0,#+2
+        CMP      R0,#+1
+        BLS.N    ??mbedtls_ssl_get_ciphersuite_sig_pk_alg_2
+        B.N      ??mbedtls_ssl_get_ciphersuite_sig_pk_alg_3
+// 1782     {
+// 1783         case MBEDTLS_KEY_EXCHANGE_RSA:
+// 1784         case MBEDTLS_KEY_EXCHANGE_DHE_RSA:
+// 1785         case MBEDTLS_KEY_EXCHANGE_ECDHE_RSA:
+// 1786         case MBEDTLS_KEY_EXCHANGE_RSA_PSK:
+// 1787             return( MBEDTLS_PK_RSA );
+??mbedtls_ssl_get_ciphersuite_sig_pk_alg_0:
+        MOVS     R0,#+1
+        BX       LR
+// 1788 
+// 1789         case MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA:
+// 1790             return( MBEDTLS_PK_ECDSA );
+??mbedtls_ssl_get_ciphersuite_sig_pk_alg_1:
+        MOVS     R0,#+4
+        BX       LR
+// 1791 
+// 1792         case MBEDTLS_KEY_EXCHANGE_ECDH_RSA:
+// 1793         case MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA:
+// 1794             return( MBEDTLS_PK_ECKEY );
+??mbedtls_ssl_get_ciphersuite_sig_pk_alg_2:
+        MOVS     R0,#+2
+        BX       LR
+// 1795 
+// 1796         default:
+// 1797             return( MBEDTLS_PK_NONE );
+??mbedtls_ssl_get_ciphersuite_sig_pk_alg_3:
+        MOVS     R0,#+0
+        BX       LR               ;; return
+// 1798     }
+// 1799 }
+          CFI EndBlock cfiBlock5
+// 1800 #endif /* MBEDTLS_PK_C */
+// 1801 
+// 1802 #if defined(MBEDTLS_ECDH_C) || defined(MBEDTLS_ECDSA_C)
+// 1803 int mbedtls_ssl_ciphersuite_uses_ec( const mbedtls_ssl_ciphersuite_t *info )
+// 1804 {
+// 1805     switch( info->key_exchange )
+// 1806     {
+// 1807         case MBEDTLS_KEY_EXCHANGE_ECDHE_RSA:
+// 1808         case MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA:
+// 1809         case MBEDTLS_KEY_EXCHANGE_ECDHE_PSK:
+// 1810         case MBEDTLS_KEY_EXCHANGE_ECDH_RSA:
+// 1811         case MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA:
+// 1812             return( 1 );
+// 1813 
+// 1814         default:
+// 1815             return( 0 );
+// 1816     }
+// 1817 }
+// 1818 #endif /* MBEDTLS_ECDH_C || MBEDTLS_ECDSA_C */
+// 1819 
+// 1820 #if defined(MBEDTLS_KEY_EXCHANGE__SOME__PSK_ENABLED)
+
+        SECTION `.text`:CODE:NOROOT(1)
+          CFI Block cfiBlock6 Using cfiCommon0
+          CFI Function mbedtls_ssl_ciphersuite_uses_psk
+          CFI NoCalls
+        THUMB
+// 1821 int mbedtls_ssl_ciphersuite_uses_psk( const mbedtls_ssl_ciphersuite_t *info )
+// 1822 {
+// 1823     switch( info->key_exchange )
+mbedtls_ssl_ciphersuite_uses_psk:
+        LDRB     R0,[R0, #+10]
+        SUBS     R0,R0,#+5
+        CMP      R0,#+3
+        BHI.N    ??mbedtls_ssl_ciphersuite_uses_psk_0
+// 1824     {
+// 1825         case MBEDTLS_KEY_EXCHANGE_PSK:
+// 1826         case MBEDTLS_KEY_EXCHANGE_RSA_PSK:
+// 1827         case MBEDTLS_KEY_EXCHANGE_DHE_PSK:
+// 1828         case MBEDTLS_KEY_EXCHANGE_ECDHE_PSK:
+// 1829             return( 1 );
+        MOVS     R0,#+1
+        BX       LR
+// 1830 
+// 1831         default:
+// 1832             return( 0 );
+??mbedtls_ssl_ciphersuite_uses_psk_0:
+        MOVS     R0,#+0
+        BX       LR               ;; return
+// 1833     }
+// 1834 }
+          CFI EndBlock cfiBlock6
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+?_14:
+        DC8 "unknown"
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+ciphersuite_preference:
+        DC32 49196, 49200, 159, 49325, 49311, 49188, 49192, 107, 49162, 49172
+        DC32 57, 49327, 49315, 49287, 49291, 49277, 49267, 49271, 196, 136
+        DC32 49195, 49199, 158, 49324, 49310, 49187, 49191, 103, 49161, 49171
+        DC32 51, 49326, 49314, 49286, 49290, 49276, 49266, 49270, 190, 69
+        DC32 49160, 49170, 22, 171, 49319, 49208, 179, 49206, 145, 49297, 49307
+        DC32 49303, 49323, 170, 49318, 49207, 178, 49205, 144, 49296, 49302
+        DC32 49306, 49322, 49204, 143, 157, 49309, 61, 53, 49202, 49194, 49167
+        DC32 49198, 49190, 49157, 49313, 49275, 192, 132, 49293, 49273, 49289
+        DC32 49269, 156, 49308, 60, 47, 49201, 49193, 49166, 49197, 49189
+        DC32 49156, 49312, 49274, 186, 65, 49292, 49272, 49288, 49268, 10
+        DC32 49165, 49155, 173, 183, 149, 49299, 49305, 172, 182, 148, 49298
+        DC32 49304, 147, 169, 49317, 175, 141, 49295, 49301, 49321, 168, 49316
+        DC32 174, 140, 49294, 49300, 49320, 139, 49159, 49169, 49203, 142, 5, 4
+        DC32 49164, 49154, 146, 138, 21, 9, 49158, 49168, 49211, 49210, 49209
+        DC32 181, 180, 45, 59, 2, 1, 49163, 49153, 185, 184, 46, 177, 176, 44
+        DC32 0
+
+        SECTION `.text`:CODE:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+ciphersuite_definitions:
+        DC32 60, ?_0
+        DC8 5, 6, 1, 0
+        DC32 3, 3, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 61, ?_1
+        DC8 7, 6, 1, 0
+        DC32 3, 3, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 47, ?_2
+        DC8 5, 4, 1, 0
+        DC32 3, 0, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 53, ?_3
+        DC8 7, 4, 1, 0
+        DC32 3, 0, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 10, ?_4
+        DC8 37, 4, 1, 0
+        DC32 3, 0, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 4, ?_5
+        DC8 42, 3, 1, 0
+        DC32 3, 0, 3, 3
+        DC8 4, 0, 0, 0
+        DC32 5, ?_6
+        DC8 42, 4, 1, 0
+        DC32 3, 0, 3, 3
+        DC8 4, 0, 0, 0
+        DC32 174, ?_7
+        DC8 5, 6, 5, 0
+        DC32 3, 1, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 175, ?_8
+        DC8 7, 7, 5, 0
+        DC32 3, 1, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 140, ?_9
+        DC8 5, 4, 5, 0
+        DC32 3, 0, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 141, ?_10
+        DC8 7, 4, 5, 0
+        DC32 3, 0, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 139, ?_11
+        DC8 37, 4, 5, 0
+        DC32 3, 0, 3, 3
+        DC8 0, 0, 0, 0
+        DC32 138, ?_12
+        DC8 42, 4, 5, 0
+        DC32 3, 0, 3, 3
+        DC8 4, 0, 0, 0
+        DC32 0, ?_13
+        DC8 0, 0, 0, 0
+        DC32 0, 0, 0, 0
+        DC8 0, 0, 0, 0
+
+        SECTION `.iar_vfe_header`:DATA:NOALLOC:NOROOT(2)
+        SECTION_TYPE SHT_PROGBITS, 0
+        DATA
+        DC32 0
+
+        SECTION __DLIB_PERTHREAD:DATA:REORDER:NOROOT(0)
+        SECTION_TYPE SHT_PROGBITS, 0
+
+        SECTION __DLIB_PERTHREAD_init:DATA:REORDER:NOROOT(0)
+        SECTION_TYPE SHT_PROGBITS, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_0:
+        DC8 "TLS-RSA-WITH-AES-128-CBC-SHA256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_1:
+        DC8 "TLS-RSA-WITH-AES-256-CBC-SHA256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_2:
+        DC8 "TLS-RSA-WITH-AES-128-CBC-SHA"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_3:
+        DC8 "TLS-RSA-WITH-AES-256-CBC-SHA"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_4:
+        DC8 "TLS-RSA-WITH-3DES-EDE-CBC-SHA"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_5:
+        DC8 "TLS-RSA-WITH-RC4-128-MD5"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_6:
+        DC8 "TLS-RSA-WITH-RC4-128-SHA"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_7:
+        DC8 "TLS-PSK-WITH-AES-128-CBC-SHA256"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_8:
+        DC8 "TLS-PSK-WITH-AES-256-CBC-SHA384"
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_9:
+        DC8 "TLS-PSK-WITH-AES-128-CBC-SHA"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_10:
+        DC8 "TLS-PSK-WITH-AES-256-CBC-SHA"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_11:
+        DC8 "TLS-PSK-WITH-3DES-EDE-CBC-SHA"
+        DC8 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(2)
+        DATA
+?_12:
+        DC8 "TLS-PSK-WITH-RC4-128-SHA"
+        DC8 0, 0, 0
+
+        SECTION `.rodata`:CONST:NOROOT(0)
+        DATA
+?_13:
+        DC8 ""
+
+        END
+// 1835 #endif /* MBEDTLS_KEY_EXCHANGE__SOME__PSK_ENABLED */
+// 1836 
+// 1837 #endif /* MBEDTLS_SSL_TLS_C */
+// 
+//    60 bytes in section .bss
+//   405 bytes in section .rodata
+// 1 326 bytes in section .text
+// 
+// 1 326 bytes of CODE  memory
+//   405 bytes of CONST memory
+//    60 bytes of DATA  memory
+//
+//Errors: none
+//Warnings: none

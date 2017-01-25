@@ -1,0 +1,370 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:07
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\hal_spim.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\hal_spim.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_spim.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_spim.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\hal_spim.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_spi_master.h"
+     36          #ifdef HAL_SPI_MASTER_MODULE_ENABLED
+     37          
+     38          #include <stdio.h>
+     39          #include "type_def.h"
+     40          //#include "mem_util.h"
+     41          #include "timer.h"
+     42          #include "top.h"
+     43          #include "hal_spim.h"
+     44          #include "nvic.h"
+     45          //#include "dma_hw.h"
+     46          #include "pinmux.h"
+     47          #include "hal_gpio_7687.h"
+     48          #include "mt7687.h"
+     49          #include "hal_nvic.h"
+     50          
+     51          HALSPIM_ISR halspim_isr;
+     52          void spim_irqhandler(hal_nvic_irq_t irq_number)
+     53          {
+     54              volatile UINT32 reg;
+     55              //printf("SPIM IRQ!!\n");
+     56              halspim_isr();
+     57              reg = spi_reg_inl(SPI_REG_STATUS);  // read to clear interrupt
+     58              reg = reg;
+     59              return;
+     60          }
+     61          
+     62          void spim_isr_Register(HALSPIM_ISR spim_isr)
+     63          {
+     64              halspim_isr = spim_isr;
+     65          }
+     66          
+     67          /*
+     68          In real chip, spi module clock is 120Mhz
+     69          Use below define can generate 4, 6, 8, 10, 12Mhz
+     70          SPI_4M_DIV_VALUE, SPI_6M_DIV_VALUE
+     71          SPI_8M_DIV_VALUE, SPI_10M_DIV_VALUE
+     72          SPI_12M_DIV_VALUE
+     73          */
+     74          
+     75          INT32 halSpim_init(ULONG setting, ULONG clock)
+     76          {
+     77              /* TODO: reset SPI */
+     78              volatile UINT32 reg;
+     79              volatile UINT32 *pTopCfgCM4PWRCtl = (volatile UINT32 *)TOP_CFG_CM4_PWR_CTL_CR;
+     80              reg = cmnReadRegister32(pTopCfgCM4PWRCtl);
+     81              reg = (reg >>  CM4_MPLL_EN_SHIFT) & CM4_MPLL_EN_MASK;
+     82          
+     83              if (reg != CM4_MPLL_EN_PLL1_ON_PLL2_ON) {
+     84                  cmnPLL1ON_PLL2ON(KAL_TRUE);
+     85              }
+     86          
+     87              DRV_Reg32(TOP_CFG_HCLK_2M_CKGEN) &= ~(1 << 17);
+     88              delay_ms(500);
+     89          
+     90              hal_nvic_register_isr_handler(CM4_SPIM_IRQ, spim_irqhandler);
+     91              NVIC_SetPriority(CM4_SPIM_IRQ, CM4_SPIM_PRI);
+     92          
+     93              NVIC_EnableIRQ(CM4_SPIM_IRQ); /* TODO: use irq save */
+     94          
+     95              /* Currently use default value: prefetch, spi_start_sel, cs_dsel_cnt, clock, clk_mode */
+     96              spi_reg_and(SPI_REG_MASTER, ~0xEFFF067B);
+     97              spi_reg_or(SPI_REG_MASTER, setting | (clock << SPI_MASTER_CLOCK_DIV_SHIFT));
+     98              return 0;
+     99          }
+    100          
+    101          
+    102          
+    103          INT32 spim_busy_wait(void)
+    104          {
+    105              int n = 60000;
+    106              do {
+    107                  if ((spi_reg_inl(SPI_REG_CTL) & SPI_CTL_BUSY) == 0) {
+    108                      return 0;
+    109                  }
+    110              } while (--n > 0);
+    111          
+    112              //printf("%s: fail \n", __func__);
+    113              return -1;
+    114          }
+    115          
+    116          INT32 spim_more_buf_trans_gpio(const UINT32 op_addr, const size_t n_cmd_byte, UINT8 *buf, const size_t buf_cnt, const ULONG flag)
+    117          {
+    118              UINT32 reg;
+    119              int i, q, r;
+    120              int rc = -1;
+    121          
+    122              /* step 0. enable more byte mode */
+    123              spi_reg_or(SPI_REG_MASTER, SPI_MASTER_MB_MODE_ENABLE);
+    124          
+    125              spi_reg_outl(SPI_REG_OPCODE, op_addr);
+    126              spi_reg_outl(SPI_REG_MOREBUF, ((n_cmd_byte * 8) << 24));
+    127          
+    128              /*Clear data register*/
+    129              for (i = 0; i < 8; i++) {
+    130                  spi_reg_outl(SPI_REG_DATA(i), 0);
+    131              }
+    132          
+    133              /* step 2. write DI/DO data #0 ~ #7 */
+    134              if (flag & SPI_WRITE_FLAG) {
+    135                  if (buf == NULL) {
+    136                      goto RET_MB_TRANS;
+    137                  }
+    138          
+    139                  for (i = 0; i < buf_cnt; i++) {
+    140                      q = i / 4;
+    141                      r = i % 4;
+    142                      if (r == 0) {
+    143                          spi_reg_outl(SPI_REG_DATA(q), 0);
+    144                      }
+    145          
+    146                      spi_reg_or(SPI_REG_DATA(q), (*(buf + i) << (r * 8)));
+    147                  }
+    148              }
+    149          
+    150              /* step 3. set rx (miso_bit_cnt) and tx (mosi_bit_cnt) bit count */
+    151              spi_reg_and(SPI_REG_MOREBUF, ~SPI_MBCTL_TX_RX_CNT_MASK);
+    152              if (flag & SPI_WRITE_FLAG) {
+    153                  spi_reg_or(SPI_REG_MOREBUF, buf_cnt << 3);
+    154              } else {
+    155                  spi_reg_or(SPI_REG_MOREBUF, (buf_cnt << 3 << 12));
+    156              }
+    157          
+    158          
+    159              /* step 4. kick */
+    160              DRV_WriteReg32(IOT_GPIO_AON_BASE + IOT_GPIO_DOUT2_RESET, (1 << 0));  //cs pull low
+    161              spi_reg_or(SPI_REG_CTL, SPI_CTL_START);
+    162              /* step 5. wait spi_master_busy */
+    163              spim_busy_wait();
+    164              //DRV_WriteReg32(IOT_GPIO_AON_BASE + IOT_GPIO_DOUT2_SET, (1 << 0));
+    165          
+    166              if (flag & SPI_WRITE_FLAG) {
+    167                  rc = 0;
+    168                  goto RET_MB_TRANS;
+    169              }
+    170          
+    171              /* step 6. read DI/DO data #0 */
+    172              if (flag & SPI_READ_FLAG) {
+    173                  if (buf == NULL) {
+    174                      //printf("%s: read null buf\n", __func__);
+    175                      return -1;
+    176                  }
+    177          
+    178                  for (i = 0; i < buf_cnt; i++) {
+    179                      q = i / 4;
+    180                      r = i % 4;
+    181                      reg = spi_reg_inl(SPI_REG_DATA(q));
+    182                      *(buf + i) = (UINT8)(reg >> (r * 8));
+    183                  }
+    184              }
+    185          
+    186              rc = 0;
+    187          
+    188          RET_MB_TRANS:
+    189              /* disable more-buf mode */
+    190              spi_reg_and(SPI_REG_MASTER, ~(SPI_MASTER_MB_MODE_ENABLE));
+    191              return rc;
+    192          }
+    193          
+    194          #endif /* HAL_SPI_MASTER_MODULE_ENABLED */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_EnableIRQ
+       0   NVIC_SetPriority
+       0   cmnReadRegister32
+      16   halSpim_init
+        16   -> NVIC_EnableIRQ
+        16   -> NVIC_SetPriority
+        16   -> cmnPLL1ON_PLL2ON
+        16   -> cmnReadRegister32
+        16   -> delay_ms
+        16   -> hal_nvic_register_isr_handler
+       0   spim_busy_wait
+       8   spim_irqhandler
+         8   -- Indirect call
+       0   spim_isr_Register
+      24   spim_more_buf_trans_gpio
+        24   -> spim_busy_wait
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_10
+       4  ??DataTable5_11
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  ??DataTable5_9
+      18  NVIC_EnableIRQ
+      26  NVIC_SetPriority
+       4  cmnReadRegister32
+      98  halSpim_init
+       4  halspim_isr
+      30  spim_busy_wait
+      20  spim_irqhandler
+       6  spim_isr_Register
+     226  spim_more_buf_trans_gpio
+
+ 
+   4 bytes in section .bss
+ 476 bytes in section .text
+ 
+ 476 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

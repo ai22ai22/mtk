@@ -1,0 +1,602 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:34:45
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\ble_gpio_client.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\ble_gpio_client.c"
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\ble_gpio_client.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\ble_gpio_client.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\ble_gpio_client.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "bt_gattc_srv.h"
+     36          #include "hrc.h"
+     37          #include <stdlib.h>
+     38          
+     39          #define APP_QUEUE_SIZE      10
+     40          #if 1
+     41          QueueHandle_t app_queue = NULL;
+     42          #endif
+     43          hear_rate_message_struct app_queue_data;
+     44          
+     45          static void heart_rate_connect_cb(gattc_user_connect_struct *conn, uint16_t connected, bt_addr_t *bd_addr);
+     46          
+     47          static void heart_rate_update_notify_cb(gattc_user_connect_struct *conn,
+     48                                                  uint16_t handle, gattc_value_t *value);
+     49          
+     50          static void heart_rate_callback_init(app_callback_struct *app_gattc_cb);
+     51          
+     52          static	void heart_rate_write_descr(uint16_t conn_id, uint16_t handle);
+     53          static app_hrp_context_struct *heart_rate_get_cntx(void);
+     54          static void bt_hrc_app_show_data(bt_msg_type_t event_id, const void *param);
+     55          void bt_hrc_app_callback(hear_rate_message_struct * msg);
+     56          
+     57          app_callback_struct g_hrcp_gatt_cb;
+     58          app_hrp_context_struct g_hrcp_cntx;
+     59          
+     60          
+     61          uint8_t  g_hr_srv_uuid[] =  {
+     62              0xFB, 0x34, 0x9B, 0x5F, 0x80, 0x00, 0x00, 0x80,
+     63              0x00, 0x10, 0x00, 0x00, 0x0D, 0x18, 0x00, 0x00,
+     64          };
+     65          
+     66          
+     67          uint16_t  g_hr_char_uuid[HRART_RATE_TYPE_TOTAL] = {
+     68              HRM_CHAR_UUID, HBL_CHAR_UUID, HCP_CHAR_UUID
+     69          };
+     70          
+     71          uint16_t g_desc_uuid[] = {
+     72              CLIENT_CONFI_DESCRI
+     73          };
+     74          
+     75          
+     76          void heart_rate_init(void)
+     77          {
+     78              /*----------------------------------------------------------------*/
+     79              /* Local Variables                                                */
+     80              /*----------------------------------------------------------------*/
+     81          
+     82              //bt_hci_cmd_le_set_scan_enable_t enable;
+     83          
+     84              /*----------------------------------------------------------------*/
+     85              /* Code Body                                                      */
+     86              /*----------------------------------------------------------------*/
+     87              /*----------------------------------------------------------------*/
+     88              /* Local Variables                                                */
+     89              /*----------------------------------------------------------------*/
+     90          
+     91              app_hrp_context_struct *hrc_cntx;
+     92              gattc_register_req_struct req;
+     93          
+     94              /*----------------------------------------------------------------*/
+     95              /* Code Body                                                      */
+     96              /*----------------------------------------------------------------*/
+     97          
+     98              hrc_cntx = heart_rate_get_cntx();
+     99              BT_LOGI("hrc", "[HRC]heartrate app init: -- start");
+    100              heart_rate_callback_init(&g_hrcp_gatt_cb);
+    101              memset(&req, 0, sizeof(gattc_register_req_struct));
+    102              req.uuid_count = 1;
+    103              req.uuid = g_hr_srv_uuid;
+    104              hrc_cntx->reg_ctx = gattc_register(&req, &g_hrcp_gatt_cb);
+    105              if (!hrc_cntx->reg_ctx) {
+    106                  /*reg is  null*/
+    107                  BT_LOGI("APPS", "[GATTC]heart_rate_init: -- register failed");
+    108              }
+    109              BT_LOGI("hrc", "[HRC]heartrate app init: -- end");
+    110          }
+    111          
+    112          
+    113          void heart_rate_deinit()
+    114          {
+    115              /*----------------------------------------------------------------*/
+    116              /* Local Variables                                                */
+    117              /*----------------------------------------------------------------*/
+    118          
+    119              app_hrp_context_struct *hrc_cntx;
+    120          
+    121              /*----------------------------------------------------------------*/
+    122              /* Code Body                                                      */
+    123              /*----------------------------------------------------------------*/
+    124          
+    125              hrc_cntx = heart_rate_get_cntx();
+    126              gattc_deregister((gattc_user_context_t *)hrc_cntx->reg_ctx);
+    127          }
+    128          
+    129          
+    130          static void heart_rate_scan_cb(void *reg_cntx, bt_gap_le_advertising_report_ind_t *param)
+    131          {
+    132              /*----------------------------------------------------------------*/
+    133              /* Local Variables                                                */
+    134              /*----------------------------------------------------------------*/
+    135              uint8_t scan_data[31] = {0};
+    136              /*----------------------------------------------------------------*/
+    137              /* Code Body                                                      */
+    138              /*----------------------------------------------------------------*/
+    139          
+    140              //uint8_t srv_addr[6] = { 0xe6, 0xfd, 0x8b, 0x19, 0xa6, 0xeb};
+    141              //uint8_t srv_addr[6] = {0x5d, 0xfc, 0x2b, 0x37, 0x9f, 0xee};
+    142              BT_LOGI("hrc", "[HRAPP]heart_rate_scan_cb: -- start: type = %d", param->event_type);
+    143              BT_LOGI("hrc", "[HRAPP]heart_rate_scan_cb: -- start: addr[0] = %x, addr[1] = %x, addr[2] = %x, addr[3] = %x, addr[4] = %x, addr[5] = %x\r\n",
+    144                      param->address.addr[0], param->address.addr[1],
+    145                      param->address.addr[2], param->address.addr[3], param->address.addr[4], param->address.addr[5]);
+    146              memcpy(scan_data, param->data, param->data_length);
+    147              printf("scan data : %s\n\r", scan_data);
+    148          
+    149          }
+    150          
+    151          
+    152          static void heart_rate_connect_cb(gattc_user_connect_struct * conn, uint16_t connected, bt_addr_t *bd_addr) 
+    153          {
+    154              /*----------------------------------------------------------------*/
+    155              /* Local Variables                                                */
+    156              /*----------------------------------------------------------------*/
+    157              app_hrp_context_struct *hrc_cntx;
+    158          
+    159              /*----------------------------------------------------------------*/
+    160              /* Code Body                                                      */
+    161              /*----------------------------------------------------------------*/
+    162          
+    163              hrc_cntx = heart_rate_get_cntx();
+    164              BT_LOGI("hrc", "[HRAPP]heart_rate_connect_cb:start--reg =%x, con_reg = %x", hrc_cntx->reg_ctx, conn->reg_cntx);
+    165              BT_LOGI("hrc", "[HRAPP]heart_rate_connect_cb:connected =%d", connected);
+    166              if (hrc_cntx->reg_ctx == conn->reg_cntx) {
+    167          
+    168                  BT_LOGI("hrc", "[HRAPP]heart_rate_connect_cb: dev_info = %x");
+    169                  if (connected) {
+    170                      bt_gattc_start_discover_service(conn->conn_id);/*start search service remote*/
+    171                  }
+    172              }
+    173          }
+    174          
+    175          
+    176          static void heart_rate_search_complete_cb(gattc_user_connect_struct * conn, int32_t result, bt_gatt_service_t *service)
+    177          {
+    178          
+    179              uint32_t i, j;
+    180              bt_gatt_char_t  *chara;
+    181              bt_gatt_descriptor_t *descr;
+    182              app_hrp_context_struct *hrc_cntx;
+    183          
+    184              /*----------------------------------------------------------------*/
+    185              /* Code Body                                                      */
+    186              /*----------------------------------------------------------------*/
+    187              hrc_cntx = heart_rate_get_cntx();
+    188          
+    189              BT_LOGI("hrc", "[HRAPP]heart_rate_search_complete_cb:start--dev = %x, result = %d", result);
+    190              if (hrc_cntx->reg_ctx == conn->reg_cntx) {
+    191                  if (result == BT_STATUS_SUCCESS) {
+    192                      if (service->uuid == SRV_HRM_SER_UUID) {
+    193                          for (i = 0; i < service->num_of_char; i++) {
+    194                              chara = service->chara + i;
+    195                              if (chara->uuid == g_hr_char_uuid[0]) {
+    196                                  for (j = 0; j < 3; j++) {
+    197                                      descr = chara->descr + j;
+    198                                      if (descr->uuid == CLIENT_CONFI_DESCRI) {
+    199                                          heart_rate_write_descr(conn->conn_id, descr->handle);
+    200                                          break;
+    201                                      }
+    202                                  }
+    203                                  break;
+    204                              }
+    205                          }
+    206                      }
+    207                  } else {
+    208          
+    209                      BT_LOGI("hrc", "[HRAPP]heart_rate_search_complete_cb:fail");
+    210                  }
+    211              }
+    212          
+    213          }
+    214          
+    215          
+    216          static void heart_rate_write_descr(uint16_t conn_id, uint16_t handle) 
+    217          {
+    218              bt_gattc_write_descr_req_t req;
+    219              uint8_t buffer[16];
+    220              uint16_t notify;
+    221          
+    222              memset(&req, 0, sizeof(bt_gattc_write_descr_req_t));
+    223              req.handle = handle;
+    224              req.value = buffer;
+    225              req.size = 2;
+    226          
+    227              notify = 0x0001;
+    228              memcpy(req.value, &notify, 2);
+    229              bt_gattc_write_descr(conn_id, &req);
+    230          
+    231          }
+    232          
+    233          
+    234          static void heart_rate_callback_init(app_callback_struct * app_gattc_cb) 
+    235          {
+    236              app_gattc_cb->scan_cb = heart_rate_scan_cb;
+    237              app_gattc_cb->connect_cb = heart_rate_connect_cb;
+    238              app_gattc_cb->search_complete_cb = heart_rate_search_complete_cb;
+    239              app_gattc_cb->notify_cb = heart_rate_update_notify_cb;
+    240          }
+    241          
+    242          
+    243          
+    244          static app_hrp_context_struct *heart_rate_get_cntx(void) 
+    245          {
+    246              return &g_hrcp_cntx;
+    247          }
+    248          
+    249          
+    250          static void heart_rate_update_notify_cb(gattc_user_connect_struct * conn,
+    251                                                      uint16_t handle, gattc_value_t *value) 
+    252          {
+    253              /*----------------------------------------------------------------*/
+    254              /* Local Variables                                                */
+    255              /*----------------------------------------------------------------*/
+    256              app_hrp_context_struct *hrc_cntx;
+    257          
+    258              /*----------------------------------------------------------------*/
+    259              /* Code Body                                                      */
+    260              /*----------------------------------------------------------------*/
+    261          
+    262              hrc_cntx = heart_rate_get_cntx();
+    263          
+    264          
+    265              BT_LOGI("hrc", "[HRAPP]heart_rate_update_notify_cb:start--handle= %x", handle);
+    266          
+    267              if (conn->reg_cntx == hrc_cntx->reg_ctx) {
+    268                  bt_gatt_char_t *chara = bt_gattc_get_char_by_handle(conn->conn_id, handle);
+    269                  if (chara->uuid == HRM_CHAR_UUID) {
+    270                      hear_rate_message_struct msg;
+    271                      msg.event_id = BT_GATTC_CHARC_VALUE_NOTIFICATION;
+    272                      memcpy(msg.param, value, sizeof(gattc_value_t));
+    273                      bt_hrc_app_callback(&msg);
+    274                  }
+    275          
+    276              }
+    277          }
+    278          
+    279          void bt_hrc_app_callback(hear_rate_message_struct * msg) 
+    280          {
+    281          
+    282              /*----------------------------------------------------------------*/
+    283              /* Local Variables                                                */
+    284              /*----------------------------------------------------------------*/
+    285          
+    286              /*----------------------------------------------------------------*/
+    287              /* Code Body                                                      */
+    288              /*----------------------------------------------------------------*/
+    289          #if 0 //MTK_BLE_GPIO_SERVICE
+    290              BaseType_t ret = 0;
+    291              ret = xQueueSend(app_queue, (void *)msg, 0);  //if queue is full ,the new notifications will be dropped
+    292          
+    293              BT_LOGI("hrc", "[HRapp]send ret = %d\r\n", ret);
+    294              //bt_hrc_app_show_data(msg->event_id, msg->param);
+    295          #else
+    296              bt_hrc_app_show_data(msg->event_id, msg->param);
+    297          
+    298          #endif
+    299          }
+    300          
+    301          extern QueueHandle_t g_mcs_status_xQueue;
+    302          static void bt_hrc_app_show_data(bt_msg_type_t event_id, const void *param) 
+    303          {
+    304              BT_LOGI("hrc", "[HRAPP]bt_hrc_app_show_data:start--event_id = %d", event_id);
+    305          
+    306              if (event_id == BT_GATTC_CHARC_VALUE_NOTIFICATION) {
+    307                  gattc_value_t *value;
+    308                  hr_data_t data;
+    309                  value = (gattc_value_t *)param;
+    310                  BT_LOGI("hrc", "[HRAPP]bt_hrc_app_show_data:start--len = %d", value->len);
+    311                  gattc_decode_char_data(value, &data);
+    312          #ifdef MTK_MCS_ENABLE
+    313                  if (value->len) {
+    314                      BT_LOGI("hrc", "[HRAPP]heart_rate_update_notify_cb:start--heart_value = %d", data.val);
+    315                      int on_off = data.val;
+    316                      xQueueSend(g_mcs_status_xQueue, &on_off, 0);
+    317                  }
+    318          #else
+    319                  if (data.val) {
+    320                      BT_LOGI("hrc", "[HRAPP]heart_rate_update_notify_cb:start--heart_value = %d", data.val);
+    321                  }
+    322          #endif
+    323              }
+    324          }
+    325          
+    326          
+    327          void heart_rate_task(void *arg) 
+    328          {
+    329          
+    330              BT_LOGI("hrc", "[HRAPP]App test task begin\r\n");
+    331              /*queue ring buffer*/
+    332              gattc_service_init();
+    333              heart_rate_init();
+    334          
+    335              app_queue = xQueueCreate(APP_QUEUE_SIZE, sizeof(hear_rate_message_struct));
+    336              if ( app_queue == NULL ) {
+    337                  BT_LOGI("hrc", "[HRAPP]create queue failed!\r\n");
+    338                  return;
+    339              }
+    340              memset((void *)&app_queue_data, 0, sizeof(hear_rate_message_struct));
+    341          
+    342              while (1) {
+    343                  BT_LOGI("hrc", "[HRAPP]try to get one msg\r\n");
+    344                  if (xQueueReceive(app_queue, (void *)&app_queue_data, portMAX_DELAY)) {
+    345                      bt_hrc_app_show_data(app_queue_data.event_id, app_queue_data.param);
+    346                  }
+    347              }
+    348          }
+    349          
+    350          
+    351          void heart_rate_task_init(void) 
+    352          {
+    353              TaskHandle_t xCreatedTask;
+    354              BT_LOGI("hrc", "[HRAPP]create task!\r\n");
+    355              xTaskCreate(heart_rate_task, "heart_rate_test_task", 1024, NULL, 1, &xCreatedTask);
+    356          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   bt_hrc_app_callback
+         0   -> bt_hrc_app_show_data
+      24   bt_hrc_app_show_data
+        24   -> bt_debug_log
+        24   -> gattc_decode_char_data
+        24   -> xQueueGenericSend
+       0   heart_rate_callback_init
+      16   heart_rate_connect_cb
+        16   -> bt_debug_log
+         0   -> bt_gattc_start_discover_service
+        16   -> heart_rate_get_cntx
+       8   heart_rate_deinit
+         0   -> gattc_deregister
+         8   -> heart_rate_get_cntx
+       0   heart_rate_get_cntx
+      24   heart_rate_init
+        24   -> __aeabi_memset4
+        24   -> bt_debug_log
+        24   -> gattc_register
+        24   -> heart_rate_callback_init
+        24   -> heart_rate_get_cntx
+      56   heart_rate_scan_cb
+        56   -> __aeabi_memclr4
+        56   -> __aeabi_memcpy
+        56   -> bt_debug_log
+        56   -> printf
+      24   heart_rate_search_complete_cb
+         0   -> bt_debug_log
+        24   -> bt_debug_log
+        24   -> heart_rate_get_cntx
+         0   -> heart_rate_write_descr
+       8   heart_rate_task
+         8   -> __aeabi_memset4
+         0   -> bt_debug_log
+         8   -> bt_debug_log
+         8   -> bt_hrc_app_show_data
+         8   -> gattc_service_init
+         8   -> heart_rate_init
+         8   -> xQueueGenericCreate
+         8   -> xQueueGenericReceive
+      24   heart_rate_task_init
+        24   -> bt_debug_log
+        24   -> xTaskGenericCreate
+     544   heart_rate_update_notify_cb
+       544   -> __aeabi_memcpy
+       544   -> bt_debug_log
+       544   -> bt_gattc_get_char_by_handle
+       544   -> bt_hrc_app_callback
+       544   -> heart_rate_get_cntx
+      40   heart_rate_write_descr
+        40   -> __aeabi_memcpy
+        40   -> __aeabi_memset4
+        40   -> bt_gattc_write_descr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable28
+       4  ??DataTable28_1
+       4  ??DataTable28_2
+       4  ??DataTable28_3
+       4  ??DataTable28_4
+       4  ??DataTable28_5
+       4  ??DataTable28_6
+       4  ??DataTable28_7
+       4  ??DataTable28_8
+       4  ??DataTable28_9
+      44  ?_0
+      56  ?_1
+      76  ?_10
+      52  ?_11
+      64  ?_12
+      60  ?_13
+      56  ?_14
+      72  ?_15
+      40  ?_16
+      40  ?_17
+      40  ?_18
+      32  ?_19
+      44  ?_2
+      24  ?_20
+      32  ?_3
+      60  ?_4
+     132  ?_5
+      20  ?_6
+      68  ?_7
+      56  ?_8
+      56  ?_9
+     524  app_queue
+          app_queue_data
+       6  bt_hrc_app_callback
+      80  bt_hrc_app_show_data
+       2  g_desc_uuid
+       8  g_hr_char_uuid
+       4  g_hrcp_cntx
+      32  g_hrcp_gatt_cb
+          g_hr_srv_uuid
+      20  heart_rate_callback_init
+      66  heart_rate_connect_cb
+      16  heart_rate_deinit
+       4  heart_rate_get_cntx
+      80  heart_rate_init
+      76  heart_rate_scan_cb
+     128  heart_rate_search_complete_cb
+     102  heart_rate_task
+      46  heart_rate_task_init
+      82  heart_rate_update_notify_cb
+      60  heart_rate_write_descr
+
+ 
+   528 bytes in section .bss
+    42 bytes in section .data
+    32 bytes in section .rodata
+ 1 898 bytes in section .text
+ 
+ 1 898 bytes of CODE  memory
+    32 bytes of CONST memory
+   570 bytes of DATA  memory
+
+Errors: none
+Warnings: none

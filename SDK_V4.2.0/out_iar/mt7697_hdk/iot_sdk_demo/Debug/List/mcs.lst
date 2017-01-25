@@ -1,0 +1,1562 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:16
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\mcs.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\mcs.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\mcs.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\mcs.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\mcs.c
+      1          /* Copyright Statement:
+      2          *
+      3          * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4          *
+      5          * This software/firmware and related documentation ("MediaTek Software") are
+      6          * protected under relevant copyright laws. The information contained herein
+      7          * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8          * Without the prior written permission of MediaTek and/or its licensors,
+      9          * any reproduction, modification, use or disclosure of MediaTek Software,
+     10          * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11          * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12          * if you have agreed to and been bound by the applicable license agreement with
+     13          * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14          * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15          * please cease any access or use of MediaTek Software immediately.
+     16          * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17          * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18          * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19          * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20          * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21          * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22          * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23          * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24          * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25          * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26          * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27          * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28          * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29          * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30          * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31          * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32          * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33          */
+     34          
+     35          #include <stdint.h>
+     36          #include <stdio.h>
+     37          #include <string.h>
+     38          
+     39          //#include "network_init.h"
+     40          #include "lwip/netif.h"
+     41          #include "lwip/tcpip.h"
+     42          #include "lwip/sockets.h"
+     43          #include "ethernetif.h"
+     44          #include "lwip/sockets.h"
+     45          #include "netif/etharp.h"
+     46          #include "timers.h"
+     47          #include "os.h"
+     48          #include "httpclient.h"
+     49          #include "mcs.h"
+     50          //#include "MQTTClient.h"
+     51          #include "nvdm.h"
+     52          #include "hal_md5.h"
+     53          #include "hal_gpio.h"
+     54          #include "hal_eint.h"
+     55          #include "wifi_lwip_helper.h"
+     56          #include "hal_gpt.h"
+     57          #include "ut_app.h"
+     58          #ifdef MTK_BLE_GPIO_SERVICE
+     59          #include "ble_smtcn.h"
+     60          #endif
+     61          #ifdef MTK_FOTA_ENABLE
+     62          #include "fota_download_interface.h"
+     63          #endif
+     64          
+     65          extern int g_supplicant_ready;
+     66          
+     67          /* mcs setting */
+     68          #define MAX_DATA_SIZE 1024
+     69          #define ENCODE_MD5_CHANNEL "encodeByMD5"
+     70          #define DECODE_MD5_CHANNEL "decodeByMD5"
+     71          #define DEVICE_ID  "DNftuC0n"
+     72          #define DEVICE_KEY "0K4SOnOZaLuvuEC2"
+     73          #define HOST       "com"
+     74          #define CTRL_LED   "id_led_ctrl"
+     75          #define STATUS_LED "id_led_sta"
+     76          #define CTRL_BLE   "id_bt_ctrl"
+     77          #define STATUS_BLE "id_bt_sta"
+     78          #define CTRL_SCAN  "id_scan_ctrl"
+     79          #define BLE_SCAN_TAB "id_show_bt_scan_tab"
+     80          
+     81          /* button setting */
+     82          QueueSetHandle_t g_btn_queue = NULL;
+     83          #define BTN_QUEUE_LEN 2
+     84          
+     85          
+     86          /* tcp config */
+     87          #define SOCK_TCP_SRV_PORT 443
+     88          
+     89          #define MAX_STRING_SIZE 200
+     90          TimerHandle_t heartbeat_timer;
+     91          
+     92          /* RESTful config */
+     93          #define BUF_SIZE   (1024 * 1)
+     94          /* Now only .com , must do for china */
+     95          #define HTTPS_MTK_CLOUD_URL_COM "http://api.mediatek.com/mcs/v2/devices/"
+     96          #define HTTPS_MTK_CLOUD_URL_CN "http://api.mediatek.cn/mcs/v2/devices/"
+     97          
+     98          /* MQTT HOST */
+     99          #define MQTT_HOST_COM "mqtt.mcs.mediatek.com"
+    100          #define MQTT_HOST_CN "mqtt.mcs.mediatek.cn"
+    101          
+    102          char TCP_ip [20] = {0};
+    103          char g_device_id[20] = {0};
+    104          char g_device_key[20] = {0};
+    105          char g_host[20] = {0};
+    106          char g_id_ctrl_led[20] = {0};
+    107          char g_id_status_led[20] = {0};
+    108          char g_id_ctrl_ble[20] = {0};
+    109          char g_id_status_ble[20] = {0};
+    110          char g_id_ctrl_scan[20] = {0};
+    111          char g_id_ble_scan_tab[20] = {0};
+    112          
+    113          log_create_module(MCS, PRINT_LEVEL_INFO);
+    114          
+    115          
+    116          /* utils */
+    117          void mcs_split(char **arr, char *str, const char *del) {
+    118            char *s = strtok(str, del);
+    119            while(s != NULL) {
+    120              *arr++ = s;
+    121              s = strtok(NULL, del);
+    122            }
+    123          }
+    124          /**
+    125           * @brief Split MCS response into limited splits
+    126           * @details There two difference between mcs_split:
+    127           *          1. This function can avoid burst of MCS data
+    128           *          (for now, two MCS response data concatnates sometimes when sending requests in high frequency)
+    129           *          2. This function is reentrant version of mcs_split
+    130           *          (use strtok_r instead of strtok)
+    131           *
+    132           * @param dst output buffer
+    133           * @param src input buffer
+    134           * @param delimiter
+    135           * @param max_split max number of splits
+    136           */
+    137          void mcs_splitn(char ** dst, char * src, const char * delimiter, uint32_t max_split)
+    138          {
+    139              uint32_t split_cnt = 0;
+    140              char *saveptr = NULL;
+    141              char *s = strtok_r(src, delimiter, &saveptr);
+    142              while (s != NULL && split_cnt < max_split) {
+    143                  *dst++ = s;
+    144                  s = strtok_r(NULL, delimiter, &saveptr);
+    145                  split_cnt++;
+    146              }
+    147          }
+    148          
+    149          char *mcs_replace(char *st, char *orig, char *repl) {
+    150            static char buffer[1024];
+    151            char *ch = strstr(st, orig);
+    152            if (!(ch))
+    153             return st;
+    154            strncpy(buffer, st, ch-st);
+    155            buffer[ch-st] = 0;
+    156            sprintf(buffer+(ch-st), "%s%s", repl, ch+strlen(orig));
+    157            return buffer;
+    158          }
+    159          
+    160          /* to get TCP IP */
+    161          HTTPCLIENT_RESULT getInitialTCPIP () {
+    162              HTTPCLIENT_RESULT ret = HTTPCLIENT_ERROR_CONN;
+    163              httpclient_t client = {0};
+    164              char *buf = NULL;
+    165          
+    166              httpclient_data_t client_data = {0};
+    167          
+    168              /* deviceKey */
+    169              //char deviceKey[20];
+    170              //int nvdm_deviceKey_len = sizeof(deviceKey);
+    171              //nvdm_read_data_item("mcs", "deviceKey", (uint8_t *)deviceKey, (uint32_t *)&nvdm_deviceKey_len);
+    172          
+    173              /* deviceId */
+    174              //char deviceId[20];
+    175              //int nvdm_deviceId_len = sizeof(deviceId);
+    176              //nvdm_read_data_item("mcs", "deviceId", (uint8_t *)deviceId, (uint32_t *)&nvdm_deviceId_len);
+    177          
+    178              /* set Url */
+    179              char get_url[70] ={0};
+    180          
+    181              //char host[5];
+    182              //int nvdm_host_len = sizeof(host);
+    183              //nvdm_read_data_item("mcs", "host", (uint8_t *)host, (uint32_t *)&nvdm_host_len);
+    184          
+    185              if (strcmp(g_host, "com") == 0) {
+    186                  strcat(get_url, HTTPS_MTK_CLOUD_URL_COM);
+    187              } else {
+    188                  strcat(get_url, HTTPS_MTK_CLOUD_URL_CN);
+    189              }
+    190          
+    191              strcat(get_url, g_device_id);
+    192              strcat(get_url, "/connections.csv");
+    193          
+    194              /* Set header */
+    195              char header[40] = {0};
+    196              strcat(header, "deviceKey:");
+    197              strcat(header, g_device_key);
+    198              strcat(header, "\r\n");
+    199          
+    200              buf = pvPortMalloc(BUF_SIZE);
+    201              if (buf == NULL) {
+    202                  return ret;
+    203              }
+    204              buf[0] = '\0';
+    205              //sky modified for sdk 4.0.0
+    206              //ret = httpclient_connect(&client, get_url, HTTPS_PORT);
+    207              ret = httpclient_connect(&client, get_url);
+    208          
+    209              client_data.response_buf = buf;
+    210              client_data.response_buf_len = BUF_SIZE;
+    211              httpclient_set_custom_header(&client, header);
+    212          
+    213              //sky modified for sdk 4.0.0
+    214              //ret = httpclient_get(&client, get_url, HTTP_PORT, &client_data);
+    215              ret = httpclient_get(&client, get_url, &client_data);
+    216              if (ret < 0) {
+    217                  return ret;
+    218              }
+    219          
+    220              LOG_I(MCS, "content:%s", client_data.response_buf);
+    221          
+    222              if (200 == httpclient_get_response_code(&client)) {
+    223                  char split_buf[MAX_STRING_SIZE] = {0};
+    224                  strcpy(split_buf, client_data.response_buf);
+    225          
+    226                  char *arr[1];
+    227                  char *del = ",";
+    228                  mcs_split(arr, split_buf, del);
+    229                  strcpy(TCP_ip, arr[0]);
+    230              }
+    231              vPortFree(buf);
+    232              //sky modified for sdk 4.0.0
+    233              //httpclient_close(&client, HTTPS_PORT);
+    234              httpclient_close(&client);
+    235              return ret;
+    236          }
+    237          
+    238          void mcs_upload_datapoint(char *value)
+    239          {
+    240              /* upload mcs datapoint */
+    241              httpclient_t client = {0};
+    242              char *buf = NULL;
+    243          
+    244              int ret = HTTPCLIENT_ERROR_CONN;
+    245              httpclient_data_t client_data = {0};
+    246              char *content_type = "text/csv";
+    247              // char post_data[32];
+    248          
+    249              /* deviceKey */
+    250              //char deviceKey[20] = {0};
+    251              //int nvdm_deviceKey_len = sizeof(deviceKey);
+    252              //nvdm_read_data_item("mcs", "deviceKey", (uint8_t *)deviceKey, (uint32_t *)&nvdm_deviceKey_len);
+    253          
+    254              /* deviceId */
+    255              //char deviceId[20] = {0};
+    256              //int nvdm_deviceId_len = sizeof(deviceId);
+    257              //nvdm_read_data_item("mcs", "deviceId", (uint8_t *)deviceId, (uint32_t *)&nvdm_deviceId_len);
+    258          
+    259              /* Set post_url */
+    260              char post_url[70] ={0};
+    261          
+    262              //char host[5] = {0};
+    263              //int nvdm_host_len = sizeof(host);
+    264              //nvdm_read_data_item("mcs", "host", (uint8_t *)host, (uint32_t *)&nvdm_host_len);
+    265          
+    266              if (strcmp(g_host, "com") == 0) {
+    267                  strcat(post_url, HTTPS_MTK_CLOUD_URL_COM);
+    268              } else {
+    269                  strcat(post_url, HTTPS_MTK_CLOUD_URL_CN);
+    270              }
+    271          
+    272              strcat(post_url, g_device_id);
+    273              strcat(post_url, "/datapoints.csv");
+    274          
+    275              /* Set header */
+    276              char header[40] = {0};
+    277              strcat(header, "deviceKey:");
+    278              strcat(header, g_device_key);
+    279              strcat(header, "\r\n");
+    280          
+    281              LOG_I(MCS, "header: %s", header);
+    282              LOG_I(MCS, "url: %s", post_url);
+    283              LOG_I(MCS, "data: %s", value);
+    284          
+    285              buf = pvPortMalloc(BUF_SIZE);
+    286              if (buf == NULL) {
+    287                  LOG_E(MCS, "buf malloc failed.");
+    288                  return;// ret;
+    289              }
+    290              buf[0] = '\0';
+    291              //sky modified for sdk 4.0.0
+    292              //ret = httpclient_connect(&client, post_url, HTTPS_PORT);
+    293              ret = httpclient_connect(&client, post_url);
+    294              client_data.response_buf = buf;
+    295              client_data.response_buf_len = BUF_SIZE;
+    296              client_data.post_content_type = content_type;
+    297              // sprintf(post_data, data);
+    298              client_data.post_buf = value;
+    299              client_data.post_buf_len = strlen(value);
+    300              httpclient_set_custom_header(&client, header);
+    301              ret = httpclient_send_request(&client, post_url, HTTPCLIENT_POST, &client_data);
+    302              if (ret < 0) {
+    303                  return;// ret;
+    304              }
+    305              ret = httpclient_recv_response(&client, &client_data);
+    306              if (ret < 0) {
+    307                  return;// ret;
+    308              }
+    309              LOG_I(MCS, "************************");
+    310              LOG_I(MCS, "httpclient_test_keepalive post data every 5 sec, http status:%d, response data: %s", httpclient_get_response_code(&client), client_data.response_buf);
+    311              LOG_I(MCS, "************************");
+    312              vPortFree(buf);
+    313              //sky modified for sdk 4.0.0
+    314              //httpclient_close(&client, HTTPS_PORT);
+    315              httpclient_close(&client);
+    316              return;// ret;
+    317          }
+    318          
+    319          #if 0
+    320          void mqttMessageArrived(MessageData *md) {
+    321              char rcv_buf_old[100] = {0};
+    322          
+    323              MQTTMessage *message = md->message;
+    324              char rcv_buf[100] = {0};
+    325              strcpy(rcv_buf, message->payload);
+    326          
+    327              char split_buf[MAX_STRING_SIZE] = {0};
+    328              strcpy(split_buf, rcv_buf);
+    329          
+    330              char *arr[7];
+    331              char *del = ",";
+    332              mcs_split(arr, split_buf, del);
+    333          
+    334              if (0 == strncmp (arr[3], "FOTA", 4)) {
+    335                  char *s = mcs_replace(arr[6], "https", "http");
+    336                  LOG_E(MCS, "fota url: %s", s);
+    337                  fota_download_by_http(s);
+    338              } else {
+    339                  if (strcmp(rcv_buf_old, rcv_buf) != 0) {
+    340                      rcv_buf[(size_t)(message->payloadlen)] = '\0';
+    341                      * rcv_buf_old = "";
+    342                      strcpy(*rcv_buf_old, rcv_buf);
+    343                      mcs_mqtt_callback(rcv_buf);
+    344                  }
+    345              }
+    346          
+    347          }
+    348          
+    349          void mcs_mqtt_init(void (*mcs_mqtt_callback)(char *)) {
+    350              //static int arrivedcount = 0;
+    351              Client c;   //MQTT client
+    352              //MQTTMessage message;
+    353              int rc = 0;
+    354          
+    355              char topic[50];
+    356              int nvdm_topic_len = sizeof(topic);
+    357              nvdm_read_data_item("mcs", "topic", (uint8_t *)topic, (uint32_t *)&nvdm_topic_len);
+    358          
+    359              char clientId[50];
+    360              int nvdm_clientId_len = sizeof(clientId);
+    361              nvdm_read_data_item("mcs", "clientId", (uint8_t *)clientId, (uint32_t *)&nvdm_clientId_len);
+    362          
+    363              char port[5];
+    364              int nvdm_port_len = sizeof(port);
+    365              nvdm_read_data_item("mcs", "port", (uint8_t *)port, (uint32_t *)&nvdm_port_len);
+    366          
+    367              // char qos_method[1] = {0};
+    368              // int nvdm_qos_method_len = sizeof(qos_method);
+    369              // nvdm_read_data_item("common", "qos", (uint8_t *)qos_method, (uint32_t *)&nvdm_qos_method_len);
+    370          
+    371              LOG_I(MCS, "topic: %s !", topic);
+    372              LOG_I(MCS, "clientId: %s !", clientId);
+    373              LOG_I(MCS, "port: %s !", port);
+    374              // LOG_I(MCS, "qos: %s\n", qos_method);
+    375          
+    376              //arrivedcount = 0;
+    377          
+    378              unsigned char msg_buf[100];     //generate messages such as unsubscrube
+    379              unsigned char msg_readbuf[100]; //receive messages such as unsubscrube ack
+    380          
+    381              Network n;  //TCP network
+    382              MQTTPacket_connectData data = MQTTPacket_connectData_initializer;
+    383          
+    384              //init mqtt network structure
+    385              NewNetwork(&n);
+    386          
+    387              char host[5];
+    388              int nvdm_host_len = sizeof(host);
+    389              nvdm_read_data_item("mcs", "host", (uint8_t *)host, (uint32_t *)&nvdm_host_len);
+    390          
+    391              if (strcmp(host, "com") == 0) {
+    392                  rc = ConnectNetwork(&n, MQTT_HOST_COM, port);
+    393              } else {
+    394                  rc = ConnectNetwork(&n, MQTT_HOST_CN, port);
+    395              }
+    396          
+    397              if (rc != 0) {
+    398                  LOG_E(MCS, "TCP connect fail,status -%4X !", -rc);
+    399                  return true;
+    400              }
+    401          
+    402              //init mqtt client structure
+    403              MQTTClient(&c, &n, 12000, msg_buf, 100, msg_readbuf, 100);
+    404          
+    405              //mqtt connect req packet header
+    406              data.willFlag = 0;
+    407              data.MQTTVersion = 3;
+    408              data.clientID.cstring = clientId;
+    409              data.username.cstring = NULL;
+    410              data.password.cstring = NULL;
+    411              data.keepAliveInterval = 10;
+    412              data.cleansession = 1;
+    413          
+    414              //send mqtt connect req to remote mqtt server
+    415              rc = MQTTConnect(&c, &data);
+    416          
+    417              if (rc != 0) {
+    418                  LOG_E(MCS, "MQTT connect fail,status%d !", rc);
+    419              }
+    420          
+    421              LOG_I(MCS, "Subscribing to %s !", topic);
+    422          
+    423              // if (strcmp(qos_method, "0") == 0) {
+    424                  rc = MQTTSubscribe(&c, topic, QOS0, mqttMessageArrived);
+    425              // } else if (strcmp(qos_method, "1") == 0) {
+    426              //     rc = MQTTSubscribe(&c, topic, QOS1, mqttMessageArrived);
+    427              // } else if (strcmp(qos_method, "2") == 0) {
+    428              //     rc = MQTTSubscribe(&c, topic, QOS2, mqttMessageArrived);
+    429              // }
+    430          
+    431              LOG_I(MCS, "Client Subscribed %d !", rc);
+    432          
+    433              for(;;) {
+    434                  MQTTYield(&c, 1000);
+    435              }
+    436              return true;
+    437          }
+    438          #endif
+    439          
+    440          int g_socket_id = -1;
+    441          char g_cmd_buf [50]= {0};
+    442              /* timer */
+    443          void tcpTimerCallback( TimerHandle_t pxTimer )
+    444          {
+    445            if ( g_socket_id >= 0 )
+    446              lwip_write(g_socket_id, g_cmd_buf, sizeof(g_cmd_buf));
+    447          }
+    448          
+    449          /* tcp connection */
+    450          int32_t mcs_tcp_init(void (*mcs_tcp_callback)(char *))
+    451          {
+    452              //int s;
+    453              //int c;
+    454              int ret;
+    455              struct sockaddr_in addr;
+    456              int count = 0;
+    457              int rcv_len, rlen;
+    458          
+    459              //int32_t mcs_ret = MCS_TCP_DISCONNECT;
+    460          
+    461              /* Setting the TCP ip */
+    462              if (HTTPCLIENT_OK != getInitialTCPIP()) {
+    463                  return MCS_TCP_INIT_ERROR;
+    464              }
+    465          
+    466              /* deviceId */
+    467              //char deviceId[20] = {0};
+    468              //int nvdm_deviceId_len = sizeof(deviceId);
+    469              //nvdm_read_data_item("mcs", "deviceId", (uint8_t *)deviceId, (uint32_t *)&nvdm_deviceId_len);
+    470          
+    471              /* deviceKey */
+    472              //char deviceKey[20] = {0};
+    473              //int nvdm_deviceKey_len = sizeof(deviceKey);
+    474              //nvdm_read_data_item("mcs", "deviceKey", (uint8_t *)deviceKey, (uint32_t *)&nvdm_deviceKey_len);
+    475          
+    476              /* command buffer */
+    477              //char cmd_buf [50]= {0};
+    478              strcat(g_cmd_buf, g_device_id);
+    479              strcat(g_cmd_buf, ",");
+    480              strcat(g_cmd_buf, g_device_key);
+    481              strcat(g_cmd_buf, ",0");
+    482          
+    483          mcs_tcp_connect:
+    484              os_memset(&addr, 0, sizeof(addr));
+    485              addr.sin_len = sizeof(addr);
+    486              addr.sin_family = AF_INET;
+    487              addr.sin_port = htons(SOCK_TCP_SRV_PORT);
+    488              addr.sin_addr.s_addr =inet_addr(TCP_ip);
+    489          
+    490              /* create the socket */
+    491              g_socket_id = lwip_socket(AF_INET, SOCK_STREAM, 0);
+    492              if (g_socket_id < 0) {
+    493                  //mcs_ret = MCS_TCP_SOCKET_INIT_ERROR;
+    494                  LOG_E(MCS, "tcp client create fail 0 !");
+    495                  goto idle;
+    496              }
+    497          
+    498              ret = lwip_connect(g_socket_id, (struct sockaddr *)&addr, sizeof(addr));
+    499          
+    500              if (ret < 0) {
+    501                  lwip_close(g_socket_id);
+    502                  LOG_E(MCS, "tcp client connect fail 1 !");
+    503                  goto mcs_tcp_connect;
+    504              }
+    505          
+    506              heartbeat_timer = xTimerCreate("TimerMain", (30*1000 / portTICK_RATE_MS), pdTRUE, (void *)0, tcpTimerCallback);
+    507              xTimerStart( heartbeat_timer, 0 );
+    508          
+    509              for (;;) {
+    510                  char rcv_buf[MAX_STRING_SIZE] = {0};
+    511          
+    512                  if (0 == count) {
+    513                      ret = lwip_write(g_socket_id, g_cmd_buf, sizeof(g_cmd_buf));
+    514                  }
+    515          
+    516                  LOG_I(MCS, "MCS tcp-client waiting for data...");
+    517                  rcv_len = 0;
+    518                  rlen = lwip_recv(g_socket_id, &rcv_buf[rcv_len], sizeof(rcv_buf) - 1 - rcv_len, 0);
+    519                  rcv_len += rlen;
+    520          
+    521                  if ( 0 == rcv_len ) {
+    522                      return MCS_TCP_DISCONNECT;
+    523                  }
+    524          
+    525                  LOG_I(MCS, "MCS tcp-client received data:%s", rcv_buf);
+    526          
+    527                  /* split the string of rcv_buffer */
+    528                  char split_buf[MAX_STRING_SIZE] = {0};
+    529                  strcpy(split_buf, rcv_buf);
+    530          
+    531                  char *arr[7];
+    532                  char *del = ",";
+    533                  mcs_splitn(arr, split_buf, del, 7);
+    534          #ifdef MTK_FOTA_ENABLE           
+    535                  if (0 == strncmp (arr[3], "FOTA", 4)) {
+    536                      char *s = mcs_replace(arr[6], "https", "http");
+    537                      LOG_I(MCS, "fota url: %s\n", s);
+    538                      char data_buf [100] = {0};
+    539                      strcat(data_buf, "status");
+    540                      strcat(data_buf, ",,fotaing");
+    541                      mcs_upload_datapoint(data_buf);
+    542                      fota_download_by_http(s);
+    543                  } else {
+    544          #endif
+    545                    mcs_tcp_callback(rcv_buf);
+    546          #ifdef MTK_FOTA_ENABLE           
+    547                  }
+    548          #endif
+    549                  count ++;
+    550              }
+    551          
+    552          idle:
+    553              LOG_I(MCS, "MCS tcp-client end");
+    554              return MCS_TCP_DISCONNECT;
+    555          }
+    556          
+    557          /* 0 : off, 1: on */
+    558          int get_gpio33_led(void)
+    559          {
+    560              hal_gpio_data_t data_up_down = HAL_GPIO_DATA_LOW;
+    561              hal_gpio_status_t ret;
+    562              ret = hal_gpio_init(HAL_GPIO_33);
+    563          
+    564              if (HAL_GPIO_STATUS_OK != ret) {
+    565                  LOG_E(MCS, "hal_gpio_init failed !");
+    566                  hal_gpio_deinit(HAL_GPIO_33);
+    567                  return 0;
+    568              }
+    569          
+    570              ret = hal_gpio_get_input(HAL_GPIO_33, &data_up_down);
+    571              if (HAL_GPIO_STATUS_OK != ret) {
+    572                  LOG_E(MCS, "hal_gpio_get_input failed !");
+    573                  hal_gpio_deinit(HAL_GPIO_33);
+    574                  return 0;
+    575              }
+    576          
+    577              hal_gpio_deinit(HAL_GPIO_33);
+    578          
+    579              if (data_up_down == HAL_GPIO_DATA_HIGH)//on
+    580                  return 1;
+    581              else
+    582                  return 0;
+    583          }
+    584              
+    585          void set_gpio33_led(int on_off)
+    586          {
+    587              hal_gpio_data_t data_pull_up;
+    588              hal_gpio_data_t data_pull_down;
+    589              hal_gpio_status_t ret;
+    590              hal_pinmux_status_t ret_pinmux_status;
+    591          
+    592              ret = hal_gpio_init(HAL_GPIO_33);
+    593              if (HAL_GPIO_STATUS_OK != ret) {
+    594                  LOG_E(MCS, "hal_gpio_init failed !");
+    595                  hal_gpio_deinit(HAL_GPIO_33);
+    596                  return;
+    597              }
+    598          
+    599              /* Set pin as GPIO mode.*/
+    600              ret_pinmux_status = hal_pinmux_set_function(HAL_GPIO_33, HAL_GPIO_33_GPIO33);
+    601              if (HAL_PINMUX_STATUS_OK != ret_pinmux_status) {
+    602                  LOG_E(MCS, "hal_pinmux_set_function failed !");
+    603                  hal_gpio_deinit(HAL_GPIO_33);
+    604                  return;
+    605              }
+    606          
+    607              /* Set GPIO as input.*/
+    608              ret = hal_gpio_set_direction(HAL_GPIO_33, HAL_GPIO_DIRECTION_INPUT);
+    609              if (HAL_GPIO_STATUS_OK != ret) {
+    610                  LOG_E(MCS, "hal_gpio_set_direction failed !");
+    611                  hal_gpio_deinit(HAL_GPIO_33);
+    612                  return;
+    613              }
+    614          
+    615          
+    616              if ( on_off == 1 )
+    617              {
+    618                  /* Configure the pull state to pull-up. */
+    619                  ret = hal_gpio_pull_up(HAL_GPIO_33);
+    620                  if (HAL_GPIO_STATUS_OK != ret) {
+    621                      LOG_E(MCS, "hal_gpio_pull_up failed !");
+    622                      hal_gpio_deinit(HAL_GPIO_33);
+    623                      return;
+    624                  }
+    625          
+    626                  /* Read the input data of the pin for further validation.*/
+    627                  ret = hal_gpio_get_input(HAL_GPIO_33, &data_pull_up);
+    628                  if (HAL_GPIO_STATUS_OK != ret) {
+    629                      LOG_E(MCS, "hal_gpio_get_input failed !");
+    630                      hal_gpio_deinit(HAL_GPIO_33);
+    631                      return;
+    632                  }
+    633              }
+    634              else
+    635              {
+    636                  /* Configure the pull state to pull-down.*/
+    637                  ret = hal_gpio_pull_down(HAL_GPIO_33);
+    638                  if (HAL_GPIO_STATUS_OK != ret) {
+    639                      LOG_E(MCS, "hal_gpio_pull_down failed !");
+    640                      hal_gpio_deinit(HAL_GPIO_33);
+    641                      return;
+    642                  }
+    643          
+    644                  /* Read the input data of the pin for further validation.*/
+    645                  ret = hal_gpio_get_input(HAL_GPIO_33, &data_pull_down);
+    646                  if (HAL_GPIO_STATUS_OK != ret) {
+    647                      LOG_E(MCS, "hal_gpio_get_input failed !");
+    648                      hal_gpio_deinit(HAL_GPIO_33);
+    649                      return;
+    650                  }
+    651              }
+    652              
+    653              /* Verify whether the configuration of pull state is susccessful.*/
+    654              /*if ((data_pull_down == HAL_GPIO_DATA_LOW) && (data_pull_up == HAL_GPIO_DATA_HIGH)) {
+    655                  printf("GPIO pull state configuration is successful\r\n");
+    656              } else {
+    657                  printf("GPIO pull state configuration failed\r\n");
+    658              }*/
+    659          
+    660              ret = hal_gpio_deinit(HAL_GPIO_33);
+    661              if (HAL_GPIO_STATUS_OK != ret) {
+    662                  LOG_E(MCS, "hal_gpio_deinit failed !");
+    663                  return;
+    664              }
+    665          }
+    666          
+    667          void mcs_set_gpio33_led(int on_off)
+    668          {
+    669              set_gpio33_led(on_off);
+    670          }
+    671          
+    672          int mcs_get_gpio33_led(void)
+    673          {
+    674              return get_gpio33_led();
+    675          }
+    676          
+    677          /*
+    678          1 : led status
+    679          2 : ble status
+    680          3 : ble scan table
+    681          */
+    682          void mcs_update(int status_id, int onoff, char* displaystr)
+    683          {
+    684              if ( is_lwip_net_ready() == 0 )
+    685                  return; //ip is not ready
+    686                  
+    687              char statusbuf[1024] = {0};
+    688              switch(status_id)
+    689              {
+    690                  case 1://led status
+    691                  {
+    692                      strcat(statusbuf, g_id_status_led);
+    693                      strcat(statusbuf,",,");
+    694                      if ( onoff == 1 )
+    695                          strcat(statusbuf,"1");
+    696                      else
+    697                          strcat(statusbuf,"0");
+    698                      strcat(statusbuf,"\n");           
+    699                  }break;
+    700          
+    701                  case 2://ble status
+    702                  {
+    703                      strcat(statusbuf, g_id_status_ble);
+    704                      strcat(statusbuf,",,");
+    705                      if ( onoff == 1 )
+    706                          strcat(statusbuf,"1");
+    707                      else
+    708                          strcat(statusbuf,"0");
+    709                      strcat(statusbuf,"\n");           
+    710                  }break;
+    711          
+    712                  case 3://scan table
+    713                  //just update string to cloud by using g_id_ble_scan_tab
+    714                  break;
+    715          
+    716                  default:
+    717                  break;
+    718              }
+    719          
+    720              //update string to string list 
+    721              strcat(statusbuf,g_id_ble_scan_tab);
+    722              strcat(statusbuf,",,");
+    723              strcat(statusbuf,displaystr);
+    724              
+    725              mcs_upload_datapoint(statusbuf);
+    726          }
+    727          
+    728          void eint_irq_handle(void *user_data)
+    729          {
+    730              static uint32_t btn_down_count = 0;
+    731              static uint32_t btn_up_count = 0;
+    732              static uint32_t press_step = 0;
+    733          
+    734              press_step++;
+    735              if(press_step%2 != 0) {
+    736                  hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &btn_down_count);
+    737              }
+    738              else {
+    739                  portBASE_TYPE time_monitor_wake = pdFALSE;
+    740                  uint32_t press_period;
+    741          
+    742                  hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &btn_up_count);
+    743                  if(btn_up_count > btn_down_count) {
+    744                      press_period = (uint32_t)(((uint64_t)(btn_up_count - btn_down_count)*1000) / 32768);
+    745                  }
+    746                  else {
+    747                      press_period = (uint32_t)((((uint64_t)(btn_up_count + (0xFFFFFFFF - btn_down_count))) * 1000) / 32768);
+    748                  }
+    749          
+    750                  if(!g_supplicant_ready)
+    751                      return;
+    752          
+    753                  xQueueSendToBackFromISR(g_btn_queue, &press_period, &time_monitor_wake);
+    754              }
+    755          }
+    756          
+    757          void press_time_monitor(void *args)
+    758          {
+    759              for(;;) {
+    760                  uint32_t press_period;
+    761                  xQueueReceive(g_btn_queue, (void *)&press_period, portMAX_DELAY);
+    762          
+    763                  if(press_period < 1000) {
+    764                      // <1000ms reboot and aws start
+    765                      LOG_I(MCS, "Button period:%ud ----> Turn on/off GPIO 33 LED <----", (unsigned int)press_period);
+    766                      int led_status = get_gpio33_led();
+    767                      if ( led_status )//on
+    768                      {
+    769                          set_gpio33_led(0);
+    770                          mcs_update(1,0,"Turn off GPIO 33 LED !");
+    771                      }
+    772                      else
+    773                      {
+    774                          set_gpio33_led(1);
+    775                          mcs_update(1,1,"Turn on GPIO 33 LED !");
+    776                      }
+    777                      
+    778                  } else {
+    779                      // >=1000ms only factory reset alink
+    780                      /* Does not use this, it just registers wifi callback event function on BT smart connection.
+    781                                 We need connection event and ip ready so we do not call this init function */
+    782                      //ble_smtcn_stop_adv();
+    783                      ble_smtcn_init2();
+    784                      ble_smtcn_set_adv();
+    785                      LOG_I(MCS, "Button period:%ud ----> Start BLE smart connection <----", (unsigned int)press_period);            
+    786                  }
+    787              }
+    788          }
+    789          
+    790          void register_action_btn_proc(void)
+    791          {
+    792              hal_eint_number_t irq_num = HAL_EINT_NUMBER_0;
+    793              hal_eint_config_t eint_config;
+    794          
+    795              LOG_I(MCS, "Register BLE and LED button");
+    796          
+    797              eint_config.debounce_time = 5;
+    798              eint_config.trigger_mode = HAL_EINT_EDGE_FALLING_AND_RISING;
+    799          
+    800              hal_eint_init(irq_num, &eint_config);
+    801              hal_eint_register_callback(irq_num, eint_irq_handle, NULL);
+    802          
+    803              g_btn_queue = xQueueCreate(BTN_QUEUE_LEN, sizeof(uint32_t));
+    804              if(g_btn_queue == NULL)
+    805                  return;
+    806          
+    807              if(xTaskCreate(press_time_monitor, "press_time_monitor", 4096/sizeof(portSTACK_TYPE), NULL, 3, NULL) != pdPASS){
+    808                  vQueueDelete(g_btn_queue);
+    809                  g_btn_queue = NULL;
+    810                  return;
+    811              }
+    812          }
+    813          
+    814          #ifdef MTK_BLE_GPIO_SERVICE
+    815          #include "bt_type.h"
+    816          extern bt_handle_t g_bt_conn_handle;
+    817          #endif
+    818          void mcs_tcp_callback(char *rcv_buf) {
+    819              char *arr[7];
+    820              char *del = ",";
+    821          
+    822              mcs_split(arr, rcv_buf, del);
+    823              if (0 == strncmp (arr[3], g_id_ctrl_led, strlen(g_id_ctrl_led))) {
+    824                  if (0 == strncmp (arr[4], "1", 1))
+    825                  {
+    826                      LOG_I(MCS, "Turn on GPIO 33 LED !");
+    827          #ifdef MTK_BLE_GPIO_SERVICE
+    828                      if (g_bt_conn_handle)
+    829                      {
+    830                          char op_buf[32] = {0};
+    831                          char bt_handle_id[8] = {0};
+    832                          os_snprintf(bt_handle_id, sizeof(bt_handle_id),"%04x", g_bt_conn_handle);
+    833                          strcat(op_buf,"gpio client w ");
+    834                          strcat(op_buf,bt_handle_id);                
+    835                          strcat(op_buf," ");                    
+    836                          strcat(op_buf,"0703 ON");
+    837                          LOG_I(MCS, "BT operation : %s", op_buf);
+    838                          bt_app_io_callback(op_buf, NULL);
+    839                      }
+    840          #else
+    841                      set_gpio33_led(1);
+    842                      mcs_update(1,1,"Turn on GPIO 33 LED !");
+    843          #endif
+    844                  }
+    845                  else
+    846                  {
+    847                      LOG_I(MCS, "Turn off GPIO 33 LED !");
+    848          #ifdef MTK_BLE_GPIO_SERVICE
+    849                  if (g_bt_conn_handle)
+    850                  {
+    851                      char op_buf[32] = {0};
+    852                      char bt_handle_id[8] = {0};
+    853                      os_snprintf(bt_handle_id, sizeof(bt_handle_id),"%04x", g_bt_conn_handle);
+    854                      strcat(op_buf,"gpio client w ");
+    855                      strcat(op_buf,bt_handle_id);                
+    856                      strcat(op_buf," ");                    
+    857                      strcat(op_buf,"0703 OFF");
+    858                      LOG_I(MCS, "BT operation : %s", op_buf);
+    859                      bt_app_io_callback(op_buf, NULL);
+    860                  }
+    861          #else
+    862                      set_gpio33_led(0);
+    863                      mcs_update(1,0,"Turn off GPIO 33 LED !");
+    864          #endif      
+    865                  }          
+    866              }
+    867              else if (0 == strncmp (arr[3], g_id_ctrl_ble, strlen(g_id_ctrl_ble))) {
+    868                  if (0 == strncmp (arr[4], "1", 1))
+    869                  {
+    870                      LOG_I(MCS, "Connect to BLE !");
+    871          #ifdef MTK_BLE_GPIO_SERVICE            
+    872                      bt_app_io_callback("gpio client g", NULL);
+    873                      bt_app_io_callback("gpio client c 1 AAAAAAAAAAAA", NULL);
+    874          #else
+    875                      mcs_update(2,1,"Connect to BLE !");
+    876          #endif
+    877                  }
+    878                  else
+    879                  {
+    880                      LOG_I(MCS, "Disconnect to BLE !");
+    881          #ifdef MTK_BLE_GPIO_SERVICE
+    882                      char op_buf[32] = {0};
+    883                      char bt_handle_id[8] = {0};
+    884                      os_snprintf(bt_handle_id, sizeof(bt_handle_id),"%04x", g_bt_conn_handle);
+    885                      strcat(op_buf,"gpio client d ");
+    886                      strcat(op_buf,bt_handle_id);
+    887                      LOG_I(MCS, "BT operation : %s", op_buf);
+    888                      bt_app_io_callback(op_buf, NULL);
+    889          #else
+    890                      mcs_update(2,0,"Disconnect to BLE !");
+    891          #endif
+    892                  }          
+    893              }
+    894              else if (0 == strncmp (arr[3], g_id_ctrl_scan, strlen(g_id_ctrl_scan))) {
+    895                  if (0 == strncmp (arr[4], "1", 1))
+    896                  {
+    897                      LOG_I(MCS, "Start to scan !");
+    898          #ifdef MTK_BLE_GPIO_SERVICE            
+    899                      bt_app_io_callback("gpio client s", NULL);
+    900          #endif
+    901                      mcs_update(3,1,"Start to scan !");//just update string to list
+    902                  }
+    903                  else
+    904                  {
+    905                      LOG_I(MCS, "Stop to scan !");
+    906          #ifdef MTK_BLE_GPIO_SERVICE            
+    907                      bt_app_io_callback("gpio client e", NULL);
+    908          #endif 
+    909                      mcs_update(3,0,"Stop to scan !");//just update string to list
+    910                  }          
+    911              }
+    912          
+    913          #if 0
+    914              // Dln7lL0G,zLfxhiabFnCEZZJc,1459307476444,encodeByMD5,test
+    915              if (0 == strncmp (arr[3], ENCODE_MD5_CHANNEL, strlen(ENCODE_MD5_CHANNEL))) {
+    916                  /* encode BY MD5 */
+    917                  uint8_t digest[HAL_MD5_DIGEST_SIZE] = {0};
+    918                  printf("User give: %s \n", arr[4]);
+    919                  hal_md5_context_t context = {0};
+    920                  hal_md5_init(&context);
+    921                  hal_md5_append(&context, arr[4], strlen(arr[4]));
+    922                  hal_md5_end(&context, digest);
+    923          
+    924                  uint8_t i;
+    925                  char str_buffer [50] = {0};
+    926                  strcpy(str_buffer, "");
+    927                  for (i = 0; i < sizeof(digest); i++) {
+    928                    if (i % 16 == 0) {
+    929                        printf("\r\n");
+    930                    }
+    931                    char buffer [2];
+    932                    sprintf (buffer, "%02x", digest[i]);
+    933                    strcat(str_buffer, buffer);
+    934                  }
+    935          
+    936                  /* send to MCS */
+    937                  char data_buf [MAX_DATA_SIZE] = {0};
+    938                  strcat(data_buf, DECODE_MD5_CHANNEL);
+    939                  strcat(data_buf, ",,");
+    940                  strcat(data_buf, str_buffer);
+    941                  mcs_upload_datapoint(data_buf);
+    942              }
+    943          #endif
+    944          }
+    945          
+    946          void mcs_setting_print(void)
+    947          {
+    948              LOG_I(MCS, "********** mcs setting **********");
+    949              LOG_I(MCS, "Device ID         : %s", g_device_id);
+    950              LOG_I(MCS, "Device Key        : %s", g_device_key);
+    951              LOG_I(MCS, "Control LED ID    : %s", g_id_ctrl_led);
+    952              LOG_I(MCS, "LED Status ID     : %s", g_id_status_led);
+    953              LOG_I(MCS, "Control BLE ID    : %s", g_id_ctrl_ble);
+    954              LOG_I(MCS, "BLE Status ID     : %s", g_id_status_ble);
+    955              LOG_I(MCS, "Control Scan ID   : %s", g_id_ctrl_scan);
+    956              LOG_I(MCS, "BLE Scan Table ID : %s", g_id_ble_scan_tab);
+    957              LOG_I(MCS, "************** End **************");
+    958          }
+    959          void mcs_initial_task(void * arg) {
+    960            //check connection and ip is ready then go
+    961            lwip_net_ready();
+    962            LOG_I(MCS, "mcs_initial_task : get ip ready !");
+    963            mcs_tcp_init(mcs_tcp_callback);
+    964            vTaskDelete(NULL);
+    965          }
+    966          
+    967          void mcs_nvdm_initial(void)
+    968          {
+    969              int nvdm_deviceKey_len = sizeof(g_device_key);
+    970              int nvdm_deviceId_len = sizeof(g_device_id);
+    971              int nvdm_host_len = sizeof(g_host);
+    972              int nvdm_ctrlLed_len = sizeof(g_id_ctrl_led);
+    973              int nvdm_statusLed_len = sizeof(g_id_status_led);
+    974              int nvdm_ctrlBle_len = sizeof(g_id_ctrl_ble);
+    975              int nvdm_statusBle_len = sizeof(g_id_status_ble);
+    976              int nvdm_ctrlscan_len = sizeof(g_id_ctrl_scan);
+    977              int nvdm_ble_scan_tab_len = sizeof(g_id_ble_scan_tab);
+    978          
+    979              nvdm_status_t isfound = NVDM_STATUS_OK;
+    980              //deviceID
+    981              isfound = nvdm_read_data_item("mcs", "deviceId", (uint8_t *)g_device_id, (uint32_t *)&nvdm_deviceId_len);
+    982              if ( isfound != NVDM_STATUS_OK )
+    983              {
+    984                  LOG_I(MCS, "cannot find item name **deviceId** in nvdm, write it first !\n");
+    985                  nvdm_write_data_item("mcs", "deviceId", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)DEVICE_ID, sizeof(DEVICE_ID));
+    986                  strcpy(g_device_id, DEVICE_ID);
+    987              }
+    988          
+    989              //deviceKey
+    990              isfound = nvdm_read_data_item("mcs", "deviceKey", (uint8_t *)g_device_key, (uint32_t *)&nvdm_deviceKey_len);
+    991              if ( isfound != NVDM_STATUS_OK )
+    992              {
+    993                  LOG_I(MCS, "cannot find item name **deviceKey** in nvdm, write it first !\n");
+    994                  nvdm_write_data_item("mcs", "deviceKey", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)DEVICE_KEY, sizeof(DEVICE_KEY));
+    995                  strcpy(g_device_key, DEVICE_KEY);        
+    996              }
+    997          
+    998              //host
+    999              isfound = nvdm_read_data_item("mcs", "host", (uint8_t *)g_host, (uint32_t *)&nvdm_host_len);
+   1000              if ( isfound != NVDM_STATUS_OK )
+   1001              {
+   1002                  LOG_I(MCS, "cannot find item name **host** in nvdm, write it first !\n");
+   1003                  nvdm_write_data_item("mcs", "host", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)HOST, sizeof(HOST));
+   1004                  strcpy(g_host, HOST);
+   1005              }
+   1006          
+   1007              //led control
+   1008              isfound = nvdm_read_data_item("mcs", "id_led", (uint8_t *)g_id_ctrl_led, (uint32_t *)&nvdm_ctrlLed_len);
+   1009              if ( isfound != NVDM_STATUS_OK )
+   1010              {
+   1011                  LOG_I(MCS, "cannot find item name **id_led** in nvdm, write it first !\n");
+   1012                  nvdm_write_data_item("mcs", "id_led", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)CTRL_LED, sizeof(CTRL_LED));
+   1013                  strcpy(g_id_ctrl_led, CTRL_LED);
+   1014              }
+   1015          
+   1016              //led status
+   1017              isfound = nvdm_read_data_item("mcs", "id_status_led", (uint8_t *)g_id_status_led, (uint32_t *)&nvdm_statusLed_len);
+   1018              if ( isfound != NVDM_STATUS_OK )
+   1019              {
+   1020                  LOG_I(MCS, "cannot find item name **id_status_led** in nvdm, write it first !\n");
+   1021                  nvdm_write_data_item("mcs", "id_status_led", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)STATUS_LED, sizeof(STATUS_LED));
+   1022                  strcpy(g_id_status_led, STATUS_LED);
+   1023              }
+   1024          
+   1025              //ble control
+   1026              isfound = nvdm_read_data_item("mcs", "id_ble", (uint8_t *)g_id_ctrl_ble, (uint32_t *)&nvdm_ctrlBle_len);
+   1027              if ( isfound != NVDM_STATUS_OK )
+   1028              {
+   1029                  LOG_I(MCS, "cannot find item name **id_ble** in nvdm, write it first !\n");
+   1030                  nvdm_write_data_item("mcs", "id_ble", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)CTRL_BLE, sizeof(CTRL_BLE));
+   1031                  strcpy(g_id_ctrl_ble, CTRL_BLE);
+   1032              }
+   1033          
+   1034              //ble status
+   1035              isfound = nvdm_read_data_item("mcs", "id_status_ble", (uint8_t *)g_id_status_ble, (uint32_t *)&nvdm_statusBle_len);
+   1036              if ( isfound != NVDM_STATUS_OK )
+   1037              {
+   1038                  LOG_I(MCS, "cannot find item name **id_status_ble** in nvdm, write it first !\n");
+   1039                  nvdm_write_data_item("mcs", "id_status_ble", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)STATUS_BLE, sizeof(STATUS_BLE));
+   1040                  strcpy(g_id_status_ble, STATUS_BLE);
+   1041              }
+   1042          
+   1043              //ble scan control
+   1044              isfound = nvdm_read_data_item("mcs", "id_scan", (uint8_t *)g_id_ctrl_scan, (uint32_t *)&nvdm_ctrlscan_len);
+   1045              if ( isfound != NVDM_STATUS_OK )
+   1046              {
+   1047                  LOG_I(MCS, "cannot find item name **ble_scan_table** in nvdm, write it first !\n");
+   1048                  nvdm_write_data_item("mcs", "id_scan", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)CTRL_SCAN, sizeof(CTRL_SCAN));
+   1049                  strcpy(g_id_ctrl_scan, CTRL_SCAN);
+   1050              }
+   1051          
+   1052             
+   1053              //ble scan table id
+   1054              isfound = nvdm_read_data_item("mcs", "ble_scan_table", (uint8_t *)g_id_ble_scan_tab, (uint32_t *)&nvdm_ble_scan_tab_len);
+   1055              if ( isfound != NVDM_STATUS_OK )
+   1056              {
+   1057                  LOG_I(MCS, "cannot find item name **ble_scan_table** in nvdm, write it first !\n");
+   1058                  nvdm_write_data_item("mcs", "ble_scan_table", NVDM_DATA_ITEM_TYPE_STRING, (uint8_t *)BLE_SCAN_TAB, sizeof(BLE_SCAN_TAB));
+   1059                  strcpy(g_id_ble_scan_tab, BLE_SCAN_TAB);
+   1060              }
+   1061              mcs_setting_print();
+   1062          }
+   1063          
+   1064          void mcs_init(void)
+   1065          {
+   1066              register_action_btn_proc();
+   1067              mcs_nvdm_initial();
+   1068              xTaskCreate(mcs_initial_task, "MCS initial", 2048, NULL, 4, NULL);
+   1069          }
+   1070          
+   1071          #ifdef MTK_BLE_GPIO_SERVICE
+   1072          QueueHandle_t g_mcs_status_xQueue = NULL;
+   1073          void mcs_update_task(void * arg) 
+   1074          {
+   1075              int mcs_data;
+   1076              while (1) {
+   1077                  LOG_I(MCS, "123Update BT device status to MCS");
+   1078                  #if 1
+   1079                  if (xQueueReceive(g_mcs_status_xQueue, &mcs_data, portMAX_DELAY)) {
+   1080                      if (mcs_data)
+   1081                          mcs_update(1,1,"LED is on !");
+   1082                      else
+   1083                          mcs_update(1,0,"LED is off !");
+   1084                  }
+   1085                  #endif
+   1086              }
+   1087          
+   1088          }
+   1089          
+   1090          void mcs_status_updata_init(void)
+   1091          {
+   1092              /* Create a queue capable of containing 2 unsigned long values. */
+   1093              g_mcs_status_xQueue = xQueueCreate(2, sizeof(int));
+   1094              xTaskCreate(mcs_update_task, "mcs status update", 2048, NULL, 4, NULL);
+   1095          }
+   1096          #endif
+   1097          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   eint_irq_handle
+        24   -> hal_gpt_get_free_run_count
+        24   -> xQueueGenericSendFromISR
+     440   getInitialTCPIP
+       440   -- Indirect call
+       440   -> __aeabi_memclr4
+       440   -> httpclient_close
+       440   -> httpclient_connect
+       440   -> httpclient_get
+       440   -> httpclient_get_response_code
+       440   -> httpclient_set_custom_header
+       440   -> mcs_split
+       440   -> pvPortMalloc
+       440   -> strcat
+       440   -> strcmp
+       440   -> strcpy
+       440   -> vPortFree
+      16   get_gpio33_led
+        16   -- Indirect call
+        16   -> hal_gpio_deinit
+        16   -> hal_gpio_get_input
+        16   -> hal_gpio_init
+       0   mcs_get_gpio33_led
+         0   -> get_gpio33_led
+      24   mcs_init
+        24   -> mcs_nvdm_initial
+        24   -> register_action_btn_proc
+        24   -> xTaskGenericCreate
+      16   mcs_initial_task
+        16   -- Indirect call
+        16   -> lwip_net_ready
+        16   -> mcs_tcp_init
+         0   -> vTaskDelete
+      72   mcs_nvdm_initial
+        72   -- Indirect call
+        72   -> __aeabi_memcpy4
+        72   -> mcs_setting_print
+        72   -> nvdm_read_data_item
+        72   -> nvdm_write_data_item
+      32   mcs_replace
+        32   -> sprintf
+        32   -> strlen
+        32   -> strncpy
+        32   -> strstr
+       0   mcs_set_gpio33_led
+         0   -> set_gpio33_led
+      24   mcs_setting_print
+        24   -- Indirect call
+      16   mcs_split
+        16   -> strtok
+      24   mcs_splitn
+        24   -> strtok_r
+      24   mcs_status_updata_init
+        24   -> xQueueGenericCreate
+        24   -> xTaskGenericCreate
+     104   mcs_tcp_callback
+       104   -- Indirect call
+       104   -> __aeabi_memclr4
+       104   -> bt_app_io_callback
+       104   -> mcs_split
+       104   -> mcs_update
+       104   -> os_snprintf
+       104   -> strcat
+       104   -> strlen
+       104   -> strncmp
+     480   mcs_tcp_init
+       480   -- Indirect call
+       480   -> __aeabi_memclr4
+       480   -> getInitialTCPIP
+       480   -> ipaddr_addr
+       480   -> lwip_close
+       480   -> lwip_connect
+       480   -> lwip_htons
+       480   -> lwip_recv
+       480   -> lwip_socket
+       480   -> lwip_write
+       480   -> mcs_splitn
+       480   -> os_memset
+       480   -> strcat
+       480   -> strcpy
+       480   -> xTaskGetTickCount
+       480   -> xTimerCreate
+       480   -> xTimerGenericCommand
+    1040   mcs_update
+      1040   -> __aeabi_memclr4
+      1040   -> is_lwip_net_ready
+      1040   -> mcs_upload_datapoint
+      1040   -> strcat
+      24   mcs_update_task
+        24   -- Indirect call
+        24   -> mcs_update
+        24   -> xQueueGenericReceive
+     240   mcs_upload_datapoint
+       240   -- Indirect call
+       240   -> __aeabi_memclr4
+       240   -> httpclient_close
+       240   -> httpclient_connect
+       240   -> httpclient_get_response_code
+       240   -> httpclient_recv_response
+       240   -> httpclient_send_request
+       240   -> httpclient_set_custom_header
+       240   -> pvPortMalloc
+       240   -> strcat
+       240   -> strcmp
+       240   -> strlen
+       240   -> vPortFree
+      24   press_time_monitor
+        24   -- Indirect call
+        24   -> ble_smtcn_init2
+        24   -> ble_smtcn_set_adv
+        24   -> get_gpio33_led
+        24   -> mcs_update
+        24   -> set_gpio33_led
+        24   -> xQueueGenericReceive
+      40   register_action_btn_proc
+        40   -- Indirect call
+        40   -> hal_eint_init
+        40   -> hal_eint_register_callback
+        40   -> vQueueDelete
+        40   -> xQueueGenericCreate
+        40   -> xTaskGenericCreate
+      16   set_gpio33_led
+        16   -- Indirect call
+        16   -> hal_gpio_deinit
+        16   -> hal_gpio_get_input
+        16   -> hal_gpio_init
+        16   -> hal_gpio_pull_down
+        16   -> hal_gpio_pull_up
+        16   -> hal_gpio_set_direction
+        16   -> hal_pinmux_set_function
+       0   strstr
+         0   -> __iar_Strstr
+       0   tcpTimerCallback
+         0   -> lwip_write
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable131
+       4  ??DataTable132
+       4  ??DataTable132_1
+       4  ??DataTable134
+       4  ??DataTable134_1
+       4  ??DataTable139
+       4  ??DataTable139_1
+       4  ??DataTable139_2
+       4  ??DataTable139_3
+       4  ??DataTable139_4
+       4  ??DataTable139_5
+       4  ??DataTable140
+       4  ??DataTable140_1
+       4  ??DataTable140_2
+       4  ??DataTable142
+       4  ??DataTable146
+       4  ??DataTable146_1
+       4  ??DataTable146_10
+       4  ??DataTable146_11
+       4  ??DataTable146_12
+       4  ??DataTable146_2
+       4  ??DataTable146_3
+       4  ??DataTable146_4
+       4  ??DataTable146_5
+       4  ??DataTable146_6
+       4  ??DataTable146_7
+       4  ??DataTable146_8
+       4  ??DataTable146_9
+       4  ?_0
+       8  ?_1
+      12  ?_10
+      16  ?_100
+      68  ?_101
+      12  ?_102
+       8  ?_103
+      68  ?_104
+      16  ?_105
+      16  ?_106
+      20  ?_107
+      12  ?_108
+      36  ?_109
+     200  ?_11
+      12  ?_110
+      16  ?_111
+      20  ?_112
+      56  ?_113
+      40  ?_114
+      56  ?_115
+      40  ?_116
+       2  ?_12
+      12  ?_13
+      72  ?_14
+      16  ?_15
+      40  ?_16
+      12  ?_17
+       8  ?_18
+      12  ?_19
+      72  ?_2
+      20  ?_20
+      28  ?_21
+      84  ?_22
+       4  ?_23
+      28  ?_24
+      28  ?_25
+      12  ?_26
+     200  ?_27
+      36  ?_28
+      32  ?_29
+       4  ?_3
+     200  ?_30
+      20  ?_31
+      24  ?_32
+      28  ?_33
+      36  ?_34
+      32  ?_35
+      28  ?_36
+      28  ?_37
+      28  ?_38
+    1024  ?_39
+      40  ?_4
+       4  ?_40
+       2  ?_41
+       2  ?_42
+       2  ?_43
+      56  ?_44
+      24  ?_45
+      24  ?_46
+      60  ?_47
+      28  ?_48
+      20  ?_49
+      40  ?_5
+      32  ?_50
+       8  ?_51
+       8  ?_52
+      16  ?_53
+       2  ?_54
+       8  ?_55
+      20  ?_56
+      32  ?_57
+       8  ?_58
+      12  ?_59
+      20  ?_6
+      20  ?_60
+      16  ?_61
+      32  ?_62
+      20  ?_63
+      32  ?_64
+       8  ?_65
+      16  ?_66
+      16  ?_67
+      16  ?_68
+      16  ?_69
+      40  ?_7
+      16  ?_70
+      36  ?_71
+      24  ?_72
+      24  ?_73
+      24  ?_74
+      24  ?_75
+      24  ?_76
+      24  ?_77
+      24  ?_78
+      24  ?_79
+      12  ?_8
+      36  ?_80
+      36  ?_81
+       4  ?_82
+      12  ?_83
+      64  ?_84
+      12  ?_85
+      12  ?_86
+      64  ?_87
+      20  ?_88
+       8  ?_89
+       4  ?_9
+      60  ?_90
+       8  ?_91
+      60  ?_92
+      12  ?_93
+      16  ?_94
+      68  ?_95
+      12  ?_96
+       8  ?_97
+      60  ?_98
+      12  ?_99
+    1024  buffer
+     118  eint_irq_handle
+     270  getInitialTCPIP
+     120  get_gpio33_led
+     296  log_control_block_MCS
+          g_btn_queue
+          heartbeat_timer
+          g_socket_id
+          btn_down_count
+          btn_up_count
+          press_step
+          g_mcs_status_xQueue
+          TCP_ip
+          g_device_id
+          g_device_key
+          g_host
+          g_id_ctrl_led
+          g_id_status_led
+          g_id_ctrl_ble
+          g_id_status_ble
+          g_id_ctrl_scan
+          g_id_ble_scan_tab
+          g_cmd_buf
+       2  mcs_get_gpio33_led
+      44  mcs_init
+      48  mcs_initial_task
+     726  mcs_nvdm_initial
+      74  mcs_replace
+       2  mcs_set_gpio33_led
+     260  mcs_setting_print
+      34  mcs_split
+      52  mcs_splitn
+      50  mcs_status_updata_init
+     638  mcs_tcp_callback
+     398  mcs_tcp_init
+     160  mcs_update
+      80  mcs_update_task
+     388  mcs_upload_datapoint
+     136  press_time_monitor
+     122  register_action_btn_proc
+     348  set_gpio33_led
+       4  strstr
+      20  tcpTimerCallback
+     232  -- Other
+
+ 
+ 1 024 bytes in section .bss
+   296 bytes in section .data
+ 2 194 bytes in section .rodata
+ 6 694 bytes in section .text
+ 
+ 6 690 bytes of CODE  memory (+ 4 bytes shared)
+ 2 194 bytes of CONST memory
+ 1 320 bytes of DATA  memory
+
+Errors: none
+Warnings: 5

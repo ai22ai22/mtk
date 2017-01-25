@@ -1,0 +1,509 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:07
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_pwm.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_pwm.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_pwm.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_pwm.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_pwm.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_pwm.h"
+     36          
+     37          #ifdef HAL_PWM_MODULE_ENABLED
+     38          #include "hal_log.h"
+     39          #include "pwm.h"
+     40          #include "low_hal_pwm.h"
+     41          #include <string.h>
+     42          
+     43          
+     44          /* PWM source clock */
+     45          static hal_pwm_source_clock_t g_source_clock;
+     46          static int32_t init_time = 0;
+     47          
+     48          
+     49          static bool hal_pwm_is_channel_valid(hal_pwm_channel_t pwm_channel)
+     50          {
+     51              return pwm_channel < HAL_PWM_MAX;
+     52          }
+     53          
+     54          static uint8_t hal_pwm_translate_source_clock(hal_pwm_source_clock_t source_clock)
+     55          {
+     56              if (HAL_PWM_CLOCK_32KHZ == source_clock) {
+     57                  return PWM_CLK_SRC_32K;
+     58              } else if (HAL_PWM_CLOCK_2MHZ == source_clock) {
+     59                  return PWM_CLK_SRC_2M;
+     60              } else {
+     61                  return PWM_CLK_SRC_XTAL;
+     62              }
+     63          }
+     64          
+     65          static hal_pwm_status_t hal_pwm_calc_total_count(hal_pwm_source_clock_t source_clock,
+     66                  uint32_t frequency,
+     67                  uint32_t *total_count)
+     68          {
+     69              static const uint32_t source_clock_table[] = {
+     70                  32700, 2 * 1000 * 1000, 20 * 1000 * 1000, 26 * 1000 * 1000, 40 * 1000 * 1000, 52 * 1000 * 1000
+     71              };
+     72              uint32_t source_clock_rate = source_clock_table[source_clock];
+     73              if (frequency > source_clock_rate) {
+     74                  log_hal_error("target frequency %lu cannot be generated with source clock %lu.",
+     75                                frequency, source_clock_rate);
+     76                  return HAL_PWM_STATUS_ERROR;
+     77              }
+     78              *total_count = source_clock_rate / frequency;
+     79              return HAL_PWM_STATUS_OK;
+     80          }
+     81          
+     82          hal_pwm_status_t hal_pwm_init(hal_pwm_source_clock_t source_clock)
+     83          {
+     84          
+     85              int32_t ret_val;
+     86              if (init_time > 0) {
+     87                  log_hal_error(" Second init,which is abnormal behavior");
+     88                  return HAL_PWM_STATUS_ERROR;
+     89              }
+     90          
+     91              ret_val = pwm_init(hal_pwm_translate_source_clock(source_clock));
+     92              if (ret_val < 0) {
+     93                  log_hal_error("pwm_init fail.");
+     94                  return HAL_PWM_STATUS_ERROR;
+     95              }
+     96              if (source_clock >= HAL_PWM_CLOCK_MAX) {
+     97                  log_hal_error("invalid source clock: %d.", source_clock);
+     98                  return HAL_PWM_STATUS_ERROR;
+     99              }
+    100              g_source_clock = source_clock;
+    101              init_time = 1;
+    102              return HAL_PWM_STATUS_OK;
+    103          }
+    104          
+    105          hal_pwm_status_t hal_pwm_deinit(void)
+    106          {
+    107          
+    108              g_source_clock = HAL_PWM_CLOCK_MAX;
+    109              init_time = 0;
+    110              return HAL_PWM_STATUS_OK;
+    111          }
+    112          
+    113          hal_pwm_status_t hal_pwm_set_frequency(hal_pwm_channel_t pwm_channel,
+    114                                                 uint32_t frequency,
+    115                                                 uint32_t *total_count)
+    116          {
+    117              uint32_t smallest_frequency = 0;
+    118              if (!hal_pwm_is_channel_valid(pwm_channel)) {
+    119                  log_hal_error("Invalid channel: %d", pwm_channel);
+    120                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    121              }
+    122              if (g_source_clock >= HAL_PWM_CLOCK_MAX) {
+    123                  log_hal_error("pwm not initilized.");
+    124                  return HAL_PWM_STATUS_ERROR;
+    125              }
+    126              if (0 == frequency) {
+    127                  log_hal_error("frequency cannot be %lu", frequency);
+    128                  return HAL_PWM_STATUS_ERROR;
+    129              }
+    130              uint32_t calculated = 0;
+    131              if (HAL_PWM_STATUS_OK != hal_pwm_calc_total_count(g_source_clock, frequency, &calculated)) {
+    132                  log_hal_error("hal_pwm_calc_total_count fail.");
+    133                  return HAL_PWM_STATUS_ERROR;
+    134              }
+    135              smallest_frequency = calculated * frequency / 0XFFFF;
+    136              if (frequency < smallest_frequency) {
+    137                  return HAL_PWM_STATUS_INVALID_FREQUENCY;
+    138              }
+    139              int32_t ret_val = pwm_set((uint8_t)pwm_channel,
+    140                                        frequency,
+    141                                        0,
+    142                                        1);
+    143              if (ret_val < 0) {
+    144                  log_hal_error("pwm_set fail.");
+    145                  return HAL_PWM_STATUS_ERROR;
+    146              }
+    147              *total_count = calculated;
+    148              return HAL_PWM_STATUS_OK;
+    149          }
+    150          
+    151          
+    152          hal_pwm_status_t hal_pwm_set_duty_cycle(hal_pwm_channel_t pwm_channel, uint32_t duty_cycle)
+    153          {
+    154              int32_t ret_val;
+    155          
+    156              if (!hal_pwm_is_channel_valid(pwm_channel)) {
+    157                  log_hal_error("Invalid channel: %d", pwm_channel);
+    158                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    159              }
+    160              if (g_source_clock >= HAL_PWM_CLOCK_MAX) {
+    161                  log_hal_error("pwm not initilized.");
+    162                  return HAL_PWM_STATUS_ERROR;
+    163              }
+    164              uint32_t frequency = 0;
+    165              uint16_t internal_duty = 0;
+    166              uint8_t pwm_enable = 0;
+    167              pwm_get((uint8_t)pwm_channel, &frequency, &internal_duty, &pwm_enable);
+    168          
+    169              if (0 == frequency) {
+    170                  log_hal_error("frequency is invalid.");
+    171                  return HAL_PWM_STATUS_ERROR;
+    172              }
+    173              uint32_t total_count = 0;
+    174              if (HAL_PWM_STATUS_OK != hal_pwm_calc_total_count(g_source_clock, frequency, &total_count)) {
+    175                  log_hal_error("hal_pwm_calc_total_count fail.");
+    176                  return HAL_PWM_STATUS_ERROR;
+    177              }
+    178              ret_val = pwm_set((uint8_t)pwm_channel,
+    179                                frequency,
+    180                                (uint16_t)duty_cycle,
+    181                                pwm_enable);
+    182              if (ret_val < 0) {
+    183                  log_hal_error("pwm_set fail.");
+    184                  return HAL_PWM_STATUS_ERROR;
+    185              }
+    186              return HAL_PWM_STATUS_OK;
+    187          }
+    188          
+    189          hal_pwm_status_t hal_pwm_start(hal_pwm_channel_t pwm_channel)
+    190          {
+    191          
+    192              int32_t ret_val;
+    193              if (!hal_pwm_is_channel_valid(pwm_channel)) {
+    194                  log_hal_error("Invalid channel: %d", pwm_channel);
+    195                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    196              }
+    197              uint32_t frequency = 0;
+    198              uint16_t duty_cycle = 0;
+    199              uint8_t pwm_enable = 0;
+    200              pwm_get((uint8_t)pwm_channel, &frequency, &duty_cycle, &pwm_enable);
+    201          
+    202              if (0 == frequency) {
+    203                  log_hal_error("frequency is invalid.");
+    204                  return HAL_PWM_STATUS_ERROR;
+    205              }
+    206              ret_val = pwm_set((uint8_t)pwm_channel,
+    207                                frequency,
+    208                                duty_cycle,
+    209                                1);
+    210              if (ret_val < 0) {
+    211                  log_hal_error("pwm_set fail.");
+    212                  return HAL_PWM_STATUS_ERROR;
+    213              }
+    214              return HAL_PWM_STATUS_OK;
+    215          }
+    216          
+    217          hal_pwm_status_t hal_pwm_stop(hal_pwm_channel_t pwm_channel)
+    218          {
+    219              int32_t ret_val;
+    220              if (!hal_pwm_is_channel_valid(pwm_channel)) {
+    221                  log_hal_error("Invalid channel: %d", pwm_channel);
+    222                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    223              }
+    224              uint32_t frequency = 0;
+    225              uint16_t duty_cycle = 0;
+    226              uint8_t pwm_enable = false;
+    227              pwm_get((uint8_t)pwm_channel, &frequency, &duty_cycle, &pwm_enable);
+    228          
+    229              if (0 == frequency) {
+    230                  log_hal_error("frequency is invalid.");
+    231                  return HAL_PWM_STATUS_ERROR;
+    232              }
+    233              ret_val = pwm_set((uint8_t)pwm_channel,
+    234                                frequency,
+    235                                duty_cycle,
+    236                                0);
+    237              if (ret_val < 0) {
+    238                  log_hal_error("pwm_set fail.");
+    239                  return HAL_PWM_STATUS_ERROR;
+    240              }
+    241              return HAL_PWM_STATUS_OK;
+    242          }
+    243          
+    244          hal_pwm_status_t hal_pwm_get_frequency(hal_pwm_channel_t pwm_channel, uint32_t *frequency)
+    245          {
+    246              if (!hal_pwm_is_channel_valid(pwm_channel)) {
+    247                  log_hal_error("Invalid channel: %d", pwm_channel);
+    248                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    249              }
+    250              if (NULL == frequency) {
+    251                  log_hal_error("frequency is null");
+    252                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    253              }
+    254              uint16_t duty_cycle = 0;
+    255              uint8_t pwm_enable = false;
+    256              pwm_get((uint8_t)pwm_channel, frequency, &duty_cycle, &pwm_enable);
+    257          
+    258              return HAL_PWM_STATUS_OK;
+    259          }
+    260          
+    261          hal_pwm_status_t hal_pwm_get_duty_cycle(hal_pwm_channel_t pwm_channel, uint32_t *duty_cycle)
+    262          {
+    263              if (!hal_pwm_is_channel_valid(pwm_channel)) {
+    264                  log_hal_error("Invalid channel: %d", pwm_channel);
+    265                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    266              }
+    267              uint32_t frequency = 0;
+    268              uint16_t working_duty_cycle = 0;
+    269              uint8_t pwm_enable = 0;
+    270              pwm_get((uint8_t)pwm_channel, &frequency, &working_duty_cycle, &pwm_enable);
+    271          
+    272              if (0 == frequency) {
+    273                  log_hal_error("frequency is invalid.");
+    274                  return HAL_PWM_STATUS_ERROR;
+    275              }
+    276              uint32_t total_count = 0;
+    277              if (HAL_PWM_STATUS_OK != hal_pwm_calc_total_count(g_source_clock, frequency, &total_count)) {
+    278                  log_hal_error("hal_pwm_calc_total_count fail.");
+    279                  return HAL_PWM_STATUS_ERROR;
+    280              }
+    281              *duty_cycle = working_duty_cycle;
+    282              return HAL_PWM_STATUS_OK;
+    283          }
+    284          
+    285          hal_pwm_status_t hal_pwm_get_running_status(hal_pwm_channel_t pwm_channel,
+    286                  hal_pwm_running_status_t *running_status)
+    287          {
+    288              if (!hal_pwm_is_channel_valid(pwm_channel)) {
+    289                  log_hal_error("Invalid channel: %d", pwm_channel);
+    290                  return HAL_PWM_STATUS_ERROR_CHANNEL;
+    291              }
+    292              uint32_t frequency = 0;
+    293              uint16_t duty_cycle = 0;
+    294              uint8_t pwm_enable = false;
+    295              pwm_get((uint8_t)pwm_channel, &frequency, &duty_cycle, &pwm_enable);
+    296              *running_status = pwm_enable ? HAL_PWM_BUSY : HAL_PWM_IDLE;
+    297              return HAL_PWM_STATUS_OK;
+    298          }
+    299          
+    300          #endif
+    301          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   hal_pwm_calc_total_count
+         8   -> log_hal_error_internal
+       0   hal_pwm_deinit
+      24   hal_pwm_get_duty_cycle
+        24   -> hal_pwm_calc_total_count
+        24   -> hal_pwm_is_channel_valid
+        24   -> log_hal_error_internal
+        24   -> pwm_get
+      16   hal_pwm_get_frequency
+        16   -> hal_pwm_is_channel_valid
+        16   -> log_hal_error_internal
+        16   -> pwm_get
+      24   hal_pwm_get_running_status
+        24   -> hal_pwm_is_channel_valid
+        24   -> log_hal_error_internal
+        24   -> pwm_get
+      16   hal_pwm_init
+        16   -> hal_pwm_translate_source_clock
+        16   -> log_hal_error_internal
+        16   -> pwm_init
+       0   hal_pwm_is_channel_valid
+      32   hal_pwm_set_duty_cycle
+        32   -> hal_pwm_calc_total_count
+        32   -> hal_pwm_is_channel_valid
+        32   -> log_hal_error_internal
+        32   -> pwm_get
+        32   -> pwm_set
+      24   hal_pwm_set_frequency
+        24   -> hal_pwm_calc_total_count
+        24   -> hal_pwm_is_channel_valid
+        24   -> log_hal_error_internal
+        24   -> pwm_set
+      16   hal_pwm_start
+        16   -> hal_pwm_is_channel_valid
+        16   -> log_hal_error_internal
+        16   -> pwm_get
+        16   -> pwm_set
+      16   hal_pwm_stop
+        16   -> hal_pwm_is_channel_valid
+        16   -> log_hal_error_internal
+        16   -> pwm_get
+        16   -> pwm_set
+       0   hal_pwm_translate_source_clock
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable25
+      64  ?_0
+      40  ?_1
+      20  ?_10
+      16  ?_2
+      28  ?_3
+      20  ?_4
+      20  ?_5
+      24  ?_6
+      32  ?_7
+      16  ?_8
+      24  ?_9
+       8  g_source_clock
+          init_time
+      48  hal_pwm_calc_total_count
+      14  hal_pwm_deinit
+     144  hal_pwm_get_duty_cycle
+      88  hal_pwm_get_frequency
+      84  hal_pwm_get_running_status
+     104  hal_pwm_init
+      12  hal_pwm_is_channel_valid
+     202  hal_pwm_set_duty_cycle
+     196  hal_pwm_set_frequency
+     128  hal_pwm_start
+     128  hal_pwm_stop
+      20  hal_pwm_translate_source_clock
+      24  source_clock_table
+     200  -- Other
+
+ 
+     8 bytes in section .bss
+ 1 700 bytes in section .text
+ 
+ 1 700 bytes of CODE memory
+     8 bytes of DATA memory
+
+Errors: none
+Warnings: none

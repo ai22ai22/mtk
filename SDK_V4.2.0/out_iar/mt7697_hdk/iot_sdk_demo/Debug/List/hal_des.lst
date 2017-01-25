@@ -1,0 +1,524 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:02
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_des.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_des.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_des.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_des.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_des.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_des.h"
+     36          
+     37          #ifdef HAL_DES_MODULE_ENABLED
+     38          
+     39          #include <string.h>
+     40          #include "mt7687.h"
+     41          #include "crypt_des.h"
+     42          #include "hal_log.h"
+     43          #include "hal_crypt_internal.h"
+     44          #include "hal_nvic.h"
+     45          
+     46          #define HAL_DES_MIN_SIZE (16)
+     47          
+     48          /* It's about 10s at 192MHz CPU clock */
+     49          #define HAL_DES_MAX_WAIT_COUNT (0x10000000)
+     50          
+     51          volatile static uint32_t g_des_op_done = false;
+     52          
+     53          static void des_operation_done(hal_nvic_irq_t irq_number)
+     54          {
+     55              NVIC_DisableIRQ((IRQn_Type)CM4_MTK_CRYPTO_IRQ);
+     56              NVIC_ClearPendingIRQ((IRQn_Type)CM4_MTK_CRYPTO_IRQ);
+     57          
+     58              g_des_op_done = true;
+     59          
+     60              NVIC_EnableIRQ((IRQn_Type)CM4_MTK_CRYPTO_IRQ);
+     61          }
+     62          
+     63          static hal_des_status_t do_des_encrypt(uint8_t *encrypt_buffer,
+     64                                                 uint32_t encrypt_buffer_length,
+     65                                                 uint8_t *plain_buffer,
+     66                                                 uint32_t plain_buffer_length,
+     67                                                 uint8_t init_vector[HAL_DES_CBC_IV_LENGTH])
+     68          {
+     69              g_des_op_done = false;
+     70              int32_t ret_val = des_operate(encrypt_buffer,
+     71                                            encrypt_buffer_length,
+     72                                            plain_buffer,
+     73                                            plain_buffer_length,
+     74                                            init_vector,
+     75                                            DES_MODE_ENCRYPT);
+     76              if (ret_val < 0) {
+     77                  log_hal_error("des_operate fail.");
+     78                  return HAL_DES_STATUS_ERROR;
+     79              }
+     80              uint32_t wait_count = 0;
+     81              while (!g_des_op_done) {
+     82                  //simple wait
+     83                  wait_count++;
+     84                  if (wait_count > HAL_DES_MAX_WAIT_COUNT) {
+     85                      log_hal_error("wait for encrypt timeout.");
+     86                      return HAL_DES_STATUS_ERROR;
+     87                  }
+     88              }
+     89              return HAL_DES_STATUS_OK;
+     90          }
+     91          
+     92          static hal_des_status_t do_des_decrypt(hal_des_buffer_t *plain_text,
+     93                                                 hal_des_buffer_t *encrypted_text,
+     94                                                 uint8_t init_vector[HAL_DES_CBC_IV_LENGTH])
+     95          {
+     96              g_des_op_done = false;
+     97          
+     98              int32_t ret_val = des_operate(encrypted_text->buffer,
+     99                                            encrypted_text->length,
+    100                                            plain_text->buffer,
+    101                                            plain_text->length,
+    102                                            init_vector,
+    103                                            DES_MODE_DECRYPT);
+    104              if (ret_val < 0) {
+    105                  log_hal_error("des_operate fail.");
+    106                  return HAL_DES_STATUS_ERROR;
+    107              }
+    108              uint32_t wait_count = 0;
+    109              while (!g_des_op_done) {
+    110                  //simple wait
+    111                  wait_count++;
+    112                  if (wait_count > HAL_DES_MAX_WAIT_COUNT) {
+    113                      log_hal_error("wait for decrypt timeout.");
+    114                      return HAL_DES_STATUS_ERROR;
+    115                  }
+    116              }
+    117              return HAL_DES_STATUS_OK;
+    118          }
+    119          
+    120          
+    121          hal_des_status_t hal_des_encrypt_with_padding(hal_des_buffer_t *encrypted_text,
+    122                  hal_des_buffer_t *plain_text,
+    123                  hal_des_buffer_t *key,
+    124                  uint8_t init_vector[HAL_DES_CBC_IV_LENGTH],
+    125                  uint8_t mode)
+    126          {
+    127          
+    128              if ((NULL == encrypted_text)
+    129                      || (NULL == plain_text)
+    130                      || (NULL == key)
+    131                      || (NULL == init_vector)) {
+    132                  log_hal_error("NULL input.");
+    133                  return HAL_DES_STATUS_ERROR;
+    134              }
+    135          
+    136              uint32_t last_block_size = plain_text->length % HAL_DES_MIN_SIZE;
+    137              uint32_t padding_size = HAL_DES_MIN_SIZE - last_block_size;
+    138              uint32_t block_num = plain_text->length / HAL_DES_MIN_SIZE;
+    139              uint8_t *iv;
+    140          
+    141              if (encrypted_text->length < (plain_text->length + padding_size)) {
+    142                  log_hal_error("Inadequate encrypted buffer.");
+    143                  return HAL_DES_STATUS_ERROR;
+    144              }
+    145          
+    146              hal_crypt_lock_take();
+    147          
+    148              hal_nvic_register_isr_handler((IRQn_Type)CM4_MTK_CRYPTO_IRQ, des_operation_done);
+    149              NVIC_SetPriority((IRQn_Type)CM4_MTK_CRYPTO_IRQ, CM4_MTK_CRYPTO_PRI);
+    150              NVIC_EnableIRQ((IRQn_Type)CM4_MTK_CRYPTO_IRQ);
+    151          
+    152              des_set_key(key->length, key->buffer);
+    153              if (DES_TYPE_CBC == mode) { /* DES_TYPE_CBC */
+    154                  des_configure(1, 1);  /* 0:efuse and 1:software   0:ECB and 1:CBC */
+    155              } else {  /* DES_TYPE_ECB */
+    156                  des_configure(1, 0);  /* 0:efuse and 1:software   0:ECB and 1:CBC */
+    157              }
+    158          
+    159              if (block_num > 0) {
+    160                  uint32_t first_encypt_size = block_num * HAL_DES_MIN_SIZE;
+    161                  if (HAL_DES_STATUS_OK != do_des_encrypt(encrypted_text->buffer,
+    162                                                          encrypted_text->length,
+    163                                                          plain_text->buffer,
+    164                                                          first_encypt_size,
+    165                                                          init_vector)) {
+    166                      log_hal_error("do_des_encrypt fail.");
+    167                      hal_crypt_lock_give();
+    168                      return HAL_DES_STATUS_ERROR;
+    169                  }
+    170          
+    171                  uint8_t data_block[HAL_DES_MIN_SIZE] = {0};
+    172                  memcpy(data_block, plain_text->buffer + first_encypt_size, last_block_size);
+    173                  memset(data_block + last_block_size, padding_size, padding_size);
+    174          
+    175                  uint8_t *init_vector2;
+    176                  if (DES_TYPE_CBC == mode) { /* DES_TYPE_CBC */
+    177                      init_vector2 = encrypted_text->buffer + first_encypt_size - HAL_DES_CBC_IV_LENGTH;
+    178                      iv = init_vector2;
+    179                  } else {
+    180                      iv = init_vector;
+    181                  }
+    182          
+    183                  if (HAL_DES_STATUS_OK != do_des_encrypt(encrypted_text->buffer + first_encypt_size,
+    184                                                          encrypted_text->length,
+    185                                                          data_block,
+    186                                                          HAL_DES_MIN_SIZE,
+    187                                                          iv)) {
+    188                      log_hal_error("do_des_encrypt fail.");
+    189                      hal_crypt_lock_give();
+    190                      return HAL_DES_STATUS_ERROR;
+    191                  }
+    192              } else {
+    193                  uint8_t data_block[HAL_DES_MIN_SIZE] = {0};
+    194                  memcpy(data_block, plain_text->buffer, plain_text->length);
+    195                  memset(data_block + last_block_size, padding_size, padding_size);
+    196          
+    197                  if (HAL_DES_STATUS_OK != do_des_encrypt(encrypted_text->buffer,
+    198                                                          encrypted_text->length,
+    199                                                          data_block,
+    200                                                          HAL_DES_MIN_SIZE,
+    201                                                          init_vector)) {
+    202                      log_hal_error("do_des_encrypt fail.");
+    203                      hal_crypt_lock_give();
+    204                      return HAL_DES_STATUS_ERROR;
+    205                  }
+    206              }
+    207          
+    208              encrypted_text->length = (block_num + 1) * HAL_DES_MIN_SIZE;
+    209          
+    210              hal_crypt_lock_give();
+    211              return HAL_DES_STATUS_OK;
+    212          }
+    213          
+    214          hal_des_status_t hal_des_decrypt(hal_des_buffer_t *plain_text,
+    215                                           hal_des_buffer_t *encrypted_text,
+    216                                           hal_des_buffer_t *key,
+    217                                           uint8_t init_vector[HAL_DES_CBC_IV_LENGTH],
+    218                                           uint8_t mode)
+    219          {
+    220              if ((NULL == plain_text)
+    221                      || (NULL == encrypted_text)
+    222                      || (NULL == key)
+    223                      || (NULL == init_vector)) {
+    224                  log_hal_error("NULL input.");
+    225                  return HAL_DES_STATUS_ERROR;
+    226              }
+    227              if ((encrypted_text->length % HAL_DES_BLOCK_SIZES) != 0) {
+    228                  log_hal_error("Invalid encrypted text length: %lu.", encrypted_text->length);
+    229                  return HAL_DES_STATUS_ERROR;
+    230              }
+    231              if (plain_text->length < (encrypted_text->length - HAL_DES_BLOCK_SIZES)) {
+    232                  log_hal_error("Plain text buffer lengthL %lu is too small, encrypted length is: %lu",
+    233                                plain_text->length, encrypted_text->length);
+    234                  return HAL_DES_STATUS_ERROR;
+    235              }
+    236              if ((key->length != HAL_DES_KEY_LENGTH_128)
+    237                      && (key->length != HAL_DES_KEY_LENGTH_192)
+    238                      && (key->length != HAL_DES_KEY_LENGTH_64)) {
+    239                  log_hal_error("Invalid key length: %lu", key->length);
+    240                  return HAL_DES_STATUS_ERROR;
+    241              }
+    242          
+    243              hal_crypt_lock_take();
+    244          
+    245              hal_nvic_register_isr_handler((IRQn_Type)CM4_MTK_CRYPTO_IRQ, des_operation_done);
+    246              NVIC_SetPriority((IRQn_Type)CM4_MTK_CRYPTO_IRQ, CM4_MTK_CRYPTO_PRI);
+    247              NVIC_EnableIRQ((IRQn_Type)CM4_MTK_CRYPTO_IRQ);
+    248          
+    249              des_set_key(key->length, key->buffer);
+    250              if (DES_TYPE_CBC == mode) { /* DES_TYPE_CBC */
+    251                  des_configure(1, 1);  /* 0:efuse and 1:software   0:ECB and 1:CBC */
+    252              } else {  /* DES_TYPE_ECB */
+    253                  des_configure(1, 0);  /* 0:efuse and 1:software   0:ECB and 1:CBC */
+    254              }
+    255          
+    256              if (HAL_DES_STATUS_OK != do_des_decrypt(plain_text, encrypted_text, init_vector)) {
+    257                  log_hal_error("do_des_decrypt fail.");
+    258                  hal_crypt_lock_give();
+    259                  return HAL_DES_STATUS_ERROR;
+    260              }
+    261          
+    262              uint32_t padding_size = plain_text->buffer[encrypted_text->length - 1];
+    263              plain_text->length = encrypted_text->length - padding_size;
+    264          
+    265              hal_crypt_lock_give();
+    266              return HAL_DES_STATUS_OK;
+    267          }
+    268          
+    269          hal_des_status_t hal_des_cbc_encrypt(hal_des_buffer_t *encrypted_text,
+    270                                               hal_des_buffer_t *plain_text,
+    271                                               hal_des_buffer_t *key,
+    272                                               uint8_t init_vector[HAL_DES_CBC_IV_LENGTH])
+    273          {
+    274              return hal_des_encrypt_with_padding(encrypted_text, plain_text, key, init_vector, DES_TYPE_CBC);
+    275          }
+    276          
+    277          hal_des_status_t hal_des_cbc_decrypt(hal_des_buffer_t *plain_text,
+    278                                               hal_des_buffer_t *encrypted_text,
+    279                                               hal_des_buffer_t *key,
+    280                                               uint8_t init_vector[HAL_DES_CBC_IV_LENGTH])
+    281          {
+    282              return hal_des_decrypt(plain_text, encrypted_text, key, init_vector, DES_TYPE_CBC);
+    283          }
+    284          
+    285          hal_des_status_t hal_des_ecb_encrypt(hal_des_buffer_t *encrypted_text,
+    286                                               hal_des_buffer_t *plain_text,
+    287                                               hal_des_buffer_t *key)
+    288          {
+    289              uint8_t init_vector[8] = {0};
+    290          
+    291              return hal_des_encrypt_with_padding(encrypted_text, plain_text, key, init_vector, DES_TYPE_ECB);
+    292          }
+    293          
+    294          hal_des_status_t hal_des_ecb_decrypt(hal_des_buffer_t *plain_text,
+    295                                               hal_des_buffer_t *encrypted_text,
+    296                                               hal_des_buffer_t *key)
+    297          {
+    298              uint8_t init_vector[8] = {0};
+    299          
+    300              return hal_des_decrypt(plain_text, encrypted_text, key, init_vector, DES_TYPE_ECB);
+    301          }
+    302          
+    303          #endif /* HAL_DES_MODULE_ENABLED */
+    304          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_ClearPendingIRQ
+       0   NVIC_DisableIRQ
+       0   NVIC_EnableIRQ
+       0   NVIC_SetPriority
+       8   des_operation_done
+         8   -> NVIC_ClearPendingIRQ
+         8   -> NVIC_DisableIRQ
+         0   -> NVIC_EnableIRQ
+      24   do_des_decrypt
+        24   -> des_operate
+        24   -> log_hal_error_internal
+      24   do_des_encrypt
+        24   -> des_operate
+        24   -> log_hal_error_internal
+      16   hal_des_cbc_decrypt
+        16   -> hal_des_decrypt
+      16   hal_des_cbc_encrypt
+        16   -> hal_des_encrypt_with_padding
+      24   hal_des_decrypt
+        24   -> NVIC_EnableIRQ
+        24   -> NVIC_SetPriority
+        24   -> des_configure
+        24   -> des_set_key
+        24   -> do_des_decrypt
+        24   -> hal_crypt_lock_give
+        24   -> hal_crypt_lock_take
+        24   -> hal_nvic_register_isr_handler
+        24   -> log_hal_error_internal
+      24   hal_des_ecb_decrypt
+        24   -> hal_des_decrypt
+      24   hal_des_ecb_encrypt
+        24   -> hal_des_encrypt_with_padding
+      56   hal_des_encrypt_with_padding
+        56   -> NVIC_EnableIRQ
+        56   -> NVIC_SetPriority
+        56   -> __aeabi_memclr4
+        56   -> __aeabi_memcpy
+        56   -> __aeabi_memset
+        56   -> des_configure
+        56   -> des_set_key
+        56   -> do_des_encrypt
+        56   -> hal_crypt_lock_give
+        56   -> hal_crypt_lock_take
+        56   -> hal_nvic_register_isr_handler
+        56   -> log_hal_error_internal
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable26
+       4  ??DataTable26_1
+       4  ??DataTable26_2
+       4  ??DataTable26_3
+       4  ??DataTable26_4
+       4  ??DataTable26_5
+       4  ??DataTable26_6
+      20  ?_0
+      28  ?_1
+      24  ?_10
+      24  ?_11
+       8  ?_12
+       8  ?_13
+      28  ?_2
+      12  ?_3
+      32  ?_4
+      24  ?_5
+      16  ?_6
+      16  ?_7
+      36  ?_8
+      72  ?_9
+      20  NVIC_ClearPendingIRQ
+      20  NVIC_DisableIRQ
+      20  NVIC_EnableIRQ
+      26  NVIC_SetPriority
+      28  des_operation_done
+      96  do_des_decrypt
+      90  do_des_encrypt
+       4  g_des_op_done
+      14  hal_des_cbc_decrypt
+      14  hal_des_cbc_encrypt
+     264  hal_des_decrypt
+      24  hal_des_ecb_decrypt
+      24  hal_des_ecb_encrypt
+     394  hal_des_encrypt_with_padding
+      80  -- Other
+
+ 
+     4 bytes in section .bss
+    48 bytes in section .rodata
+ 1 442 bytes in section .text
+ 
+ 1 442 bytes of CODE  memory
+    48 bytes of CONST memory
+     4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

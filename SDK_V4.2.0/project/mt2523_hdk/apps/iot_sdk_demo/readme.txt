@@ -26,7 +26,7 @@
 
 @par Overview
   - Application description
-    - This application demonstrates seven key features of the LinkIt 2523 HDK
+    - This application demonstrates six key features of the LinkIt 2523 HDK
       with UI.
   - Application features
     - GNSS. Measures and displays location information continuously.
@@ -34,10 +34,6 @@
       including music control and call control.
     - Bluetooth LE proximity profile (PXP). Demonstrates PXP profile's
       functionality, such as out of range alert.
-    - Sensor Subsystem. Demonstrates how to obtain sensor data from physical
-      sensors and virtual sensors on a sensor daughterboard, and then display
-      the sensor data. MediaTek MT2511 biosensor daughterboard is required to
-      demonstrate this feature.
     - Watch face. Demonstrates the low power consumption option of LCM
       partial update.
     - Low power. Demonstrates the low power consumption of Bluetooth, GNSS
