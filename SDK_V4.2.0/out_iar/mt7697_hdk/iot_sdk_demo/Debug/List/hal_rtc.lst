@@ -1,0 +1,540 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:07
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_rtc.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_rtc.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_rtc.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_rtc.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_rtc.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_rtc.h"
+     36          #ifdef HAL_RTC_MODULE_ENABLED
+     37          
+     38          #include "low_hal_rtc.h"
+     39          #include "mt7687.h"
+     40          #include "hal_nvic.h"
+     41          #include "hal_gpio.h"
+     42          
+     43          volatile uint32_t *FRE_DET_CR = (volatile uint32_t *)0x80021120;
+     44          static hal_rtc_alarm_callback_t s_hal_rtc_alarm_callback = NULL;
+     45          static void                     *s_hal_rtc_user_data     = NULL;
+     46          
+     47          
+     48          static void hal_rtc_isr(hal_nvic_irq_t irq_number)
+     49          {
+     50              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+     51          
+     52              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+     53          
+     54              // Clear interrupt status (Mandatory, or interrupt keeps raising)
+     55              (pRTCCtrlTypeDef->RTC_PMU_EN) |= BIT(RTC_ALARM_STA_OFFSET);
+     56          
+     57              if (s_hal_rtc_alarm_callback) {
+     58                  s_hal_rtc_alarm_callback(s_hal_rtc_user_data);
+     59              }
+     60          }
+     61          
+     62          static hal_rtc_status_t hal_rtc_time_sanity(const hal_rtc_time_t *rtc_time)
+     63          {
+     64              // Sanity check
+     65              if (((rtc_time->rtc_year) > 99) ||
+     66                      (((rtc_time->rtc_mon) < 1) || ((rtc_time->rtc_mon) > 12)) ||
+     67                      (((rtc_time->rtc_day) < 1) || ((rtc_time->rtc_day) > 31)) ||
+     68                      ((rtc_time->rtc_week) > 6) ||
+     69                      ((rtc_time->rtc_hour) > 23) ||
+     70                      ((rtc_time->rtc_min) > 59) ||
+     71                      ((rtc_time->rtc_sec) > 59)) {
+     72                  return HAL_RTC_STATUS_INVALID_PARAM;
+     73              }
+     74          
+     75              return HAL_RTC_STATUS_OK;
+     76          }
+     77          
+     78          hal_rtc_status_t hal_rtc_init(void)
+     79          {
+     80              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+     81          
+     82              ret = halRTCInit();
+     83          
+     84              if (HAL_RET_FAIL == ret) {
+     85                  return HAL_RTC_STATUS_ERROR;
+     86              }
+     87          
+     88              return HAL_RTC_STATUS_OK;
+     89          }
+     90          
+     91          hal_rtc_status_t hal_rtc_deinit(void)
+     92          {
+     93              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+     94          
+     95              ret = halRTCDeInit();
+     96          
+     97              if (HAL_RET_FAIL == ret) {
+     98                  return HAL_RTC_STATUS_ERROR;
+     99              }
+    100          
+    101              return HAL_RTC_STATUS_OK;
+    102          }
+    103          
+    104          hal_rtc_status_t hal_rtc_set_time(const hal_rtc_time_t *rtc_time)
+    105          {
+    106              ENUM_HAL_RET_T      ret = HAL_RET_FAIL;
+    107              hal_rtc_status_t    status;
+    108          
+    109              // Sanity check
+    110              status = hal_rtc_time_sanity(rtc_time);
+    111          
+    112              if (HAL_RTC_STATUS_INVALID_PARAM == status) {
+    113                  return HAL_RTC_STATUS_INVALID_PARAM;
+    114              }
+    115          
+    116              ret = halRTCSetTime(rtc_time->rtc_year,
+    117                                  rtc_time->rtc_mon,
+    118                                  rtc_time->rtc_day,
+    119                                  rtc_time->rtc_week,
+    120                                  rtc_time->rtc_hour,
+    121                                  rtc_time->rtc_min,
+    122                                  rtc_time->rtc_sec);
+    123          
+    124              if (HAL_RET_FAIL == ret) {
+    125                  return HAL_RTC_STATUS_ERROR;
+    126              }
+    127          
+    128              return HAL_RTC_STATUS_OK;
+    129          }
+    130          
+    131          hal_rtc_status_t hal_rtc_get_time(hal_rtc_time_t *rtc_time)
+    132          {
+    133              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    134          
+    135              ret = halRTCGetTime(&(rtc_time->rtc_year),
+    136                                  &(rtc_time->rtc_mon),
+    137                                  &(rtc_time->rtc_day),
+    138                                  &(rtc_time->rtc_week),
+    139                                  &(rtc_time->rtc_hour),
+    140                                  &(rtc_time->rtc_min),
+    141                                  &(rtc_time->rtc_sec));
+    142          
+    143              if (HAL_RET_FAIL == ret) {
+    144                  return HAL_RTC_STATUS_ERROR;
+    145              }
+    146          
+    147              return HAL_RTC_STATUS_OK;
+    148          
+    149          }
+    150          
+    151          hal_rtc_status_t hal_rtc_set_alarm(const hal_rtc_time_t *rtc_time)
+    152          {
+    153              ENUM_HAL_RET_T      ret = HAL_RET_FAIL;
+    154              hal_rtc_status_t    status;
+    155          
+    156              // Sanity check
+    157              status = hal_rtc_time_sanity(rtc_time);
+    158          
+    159              if (HAL_RTC_STATUS_INVALID_PARAM == status) {
+    160                  return HAL_RTC_STATUS_INVALID_PARAM;
+    161              }
+    162          
+    163              ret = halRTCSetAlarm(rtc_time->rtc_year,
+    164                                   rtc_time->rtc_mon,
+    165                                   rtc_time->rtc_day,
+    166                                   rtc_time->rtc_week,
+    167                                   rtc_time->rtc_hour,
+    168                                   rtc_time->rtc_min,
+    169                                   rtc_time->rtc_sec,
+    170                                   0xFE);
+    171          
+    172              if (HAL_RET_FAIL == ret) {
+    173                  return HAL_RTC_STATUS_ERROR;
+    174              }
+    175          
+    176              return HAL_RTC_STATUS_OK;
+    177          }
+    178          
+    179          hal_rtc_status_t hal_rtc_get_alarm(hal_rtc_time_t *rtc_time)
+    180          {
+    181              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    182          
+    183              ret = halRTCGetAlarm(&(rtc_time->rtc_year),
+    184                                   &(rtc_time->rtc_mon),
+    185                                   &(rtc_time->rtc_day),
+    186                                   &(rtc_time->rtc_week),
+    187                                   &(rtc_time->rtc_hour),
+    188                                   &(rtc_time->rtc_min),
+    189                                   &(rtc_time->rtc_sec));
+    190          
+    191              if (HAL_RET_FAIL == ret) {
+    192                  return HAL_RTC_STATUS_ERROR;
+    193              }
+    194          
+    195              return HAL_RTC_STATUS_OK;
+    196          }
+    197          
+    198          hal_rtc_status_t hal_rtc_enable_alarm(void)
+    199          {
+    200              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    201          
+    202              ret = halRTCEnableAlarm(true);
+    203          
+    204              if (HAL_RET_FAIL == ret) {
+    205                  return HAL_RTC_STATUS_ERROR;
+    206              }
+    207          
+    208              return HAL_RTC_STATUS_OK;
+    209          }
+    210          
+    211          hal_rtc_status_t hal_rtc_disable_alarm(void)
+    212          {
+    213              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    214          
+    215              ret = halRTCEnableAlarm(false);
+    216          
+    217              if (HAL_RET_FAIL == ret) {
+    218                  return HAL_RTC_STATUS_ERROR;
+    219              }
+    220          
+    221              return HAL_RTC_STATUS_OK;
+    222          }
+    223          
+    224          hal_rtc_status_t hal_rtc_set_alarm_callback(const hal_rtc_alarm_callback_t callback_function, void *user_data)
+    225          {
+    226          
+    227              s_hal_rtc_alarm_callback = callback_function;
+    228              s_hal_rtc_user_data      = user_data;
+    229          
+    230              // Alarm interrupt ISR
+    231              hal_nvic_register_isr_handler(RTC_ALARM_IRQ, hal_rtc_isr);
+    232              NVIC_SetPriority(RTC_ALARM_IRQ, CM4_RTC_ALARM_PRI);
+    233              NVIC_EnableIRQ(RTC_ALARM_IRQ);
+    234          
+    235              return HAL_RTC_STATUS_OK;
+    236          }
+    237          
+    238          hal_rtc_status_t hal_rtc_sleep(uint32_t magic)
+    239          {
+    240              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    241          
+    242              if (HAL_RTC_SLEEP_MAGIC == magic) {
+    243                  ret = halRTCEnterMode();
+    244                  if (HAL_RET_FAIL == ret) {
+    245                      return HAL_RTC_STATUS_ERROR;
+    246                  }
+    247              } else {
+    248                  return HAL_RTC_STATUS_INVALID_PARAM;
+    249              }
+    250          
+    251              return HAL_RTC_STATUS_OK;
+    252          }
+    253          
+    254          hal_rtc_status_t hal_rtc_set_data(uint16_t addr, const char *buf, uint16_t len)
+    255          {
+    256              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    257          
+    258              ret = halRTCSetBackup(addr, buf, len);
+    259          
+    260              if (HAL_RET_FAIL == ret) {
+    261                  return HAL_RTC_STATUS_ERROR;
+    262              }
+    263          
+    264              return HAL_RTC_STATUS_OK;
+    265          }
+    266          
+    267          hal_rtc_status_t hal_rtc_get_data(uint16_t addr, char *buf, uint16_t len)
+    268          {
+    269              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    270          
+    271              ret = halRTCGetBackup(addr, buf, len);
+    272          
+    273              if (HAL_RET_FAIL == ret) {
+    274                  return HAL_RTC_STATUS_ERROR;
+    275              }
+    276          
+    277              return HAL_RTC_STATUS_OK;
+    278          }
+    279          
+    280          hal_rtc_status_t hal_rtc_clear_data(uint16_t addr, uint16_t len)
+    281          {
+    282              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    283          
+    284              ret = halRTCClearBackup(addr, len);
+    285          
+    286              if (HAL_RET_FAIL == ret) {
+    287                  return HAL_RTC_STATUS_ERROR;
+    288              }
+    289          
+    290              return HAL_RTC_STATUS_OK;
+    291          }
+    292          
+    293          hal_rtc_status_t hal_rtc_get_f32k_frequency(uint32_t *frequency)
+    294          {
+    295              uint32_t frequency_cr = 0;
+    296              uint32_t measure_result = 0;
+    297              uint32_t cr_data = 0;
+    298              uint32_t data = 0;
+    299          
+    300              /* check 32k source with strap pin GPIO6*/
+    301              hal_gpio_init(HAL_GPIO_6);
+    302              hal_gpio_set_direction(HAL_GPIO_6, HAL_GPIO_DIRECTION_INPUT);
+    303              hal_gpio_get_input(HAL_GPIO_6, (hal_gpio_data_t *)&data);
+    304          
+    305              cr_data = *(volatile uint32_t *)0x81021100;
+    306              cr_data &= 0xfffcffff; // clear bit 17:16
+    307              if (data == 0) {
+    308                  //use internal 32k
+    309                  cr_data |= 0x20000; // bit[17:16] = 2
+    310              } else if (data == 1) {
+    311                  //use external 32k
+    312                  cr_data |= 0x10000; // bit[17:16] = 1
+    313              }
+    314              *(volatile uint32_t *)0x81021100 = cr_data;
+    315          
+    316              /* CNT_CYCLE[2:0]=6, OSC_CK */
+    317              *FRE_DET_CR = 0x000e0000;
+    318          
+    319              while (!(frequency_cr & 0x00008000)) {
+    320                  frequency_cr = *FRE_DET_CR;
+    321              }
+    322          
+    323              measure_result = *FRE_DET_CR & 0x1fff;
+    324          
+    325              *frequency = 40000000 * 6 / measure_result;
+    326          
+    327              return HAL_RTC_STATUS_OK;
+    328          }
+    329          
+    330          
+    331          #endif /* HAL_RTC_MODULE_ENABLED */
+    332          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_EnableIRQ
+       0   NVIC_SetPriority
+       8   hal_rtc_clear_data
+         8   -> halRTCClearBackup
+       8   hal_rtc_deinit
+         8   -> halRTCDeInit
+       8   hal_rtc_disable_alarm
+         8   -> halRTCEnableAlarm
+       8   hal_rtc_enable_alarm
+         8   -> halRTCEnableAlarm
+      16   hal_rtc_get_alarm
+        16   -> halRTCGetAlarm
+       8   hal_rtc_get_data
+         8   -> halRTCGetBackup
+      16   hal_rtc_get_f32k_frequency
+        16   -> hal_gpio_get_input
+        16   -> hal_gpio_init
+        16   -> hal_gpio_set_direction
+      16   hal_rtc_get_time
+        16   -> halRTCGetTime
+       8   hal_rtc_init
+         8   -> halRTCInit
+       0   hal_rtc_isr
+         0   -- Indirect call
+      24   hal_rtc_set_alarm
+        24   -> halRTCSetAlarm
+        24   -> hal_rtc_time_sanity
+       8   hal_rtc_set_alarm_callback
+         8   -> NVIC_EnableIRQ
+         8   -> NVIC_SetPriority
+         8   -> hal_nvic_register_isr_handler
+       8   hal_rtc_set_data
+         8   -> halRTCSetBackup
+      24   hal_rtc_set_time
+        24   -> halRTCSetTime
+        24   -> hal_rtc_time_sanity
+       8   hal_rtc_sleep
+         8   -> halRTCEnterMode
+       0   hal_rtc_time_sanity
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  ??DataTable5_9
+       4  FRE_DET_CR
+      18  NVIC_EnableIRQ
+      26  NVIC_SetPriority
+      20  hal_rtc_clear_data
+      20  hal_rtc_deinit
+      22  hal_rtc_disable_alarm
+      22  hal_rtc_enable_alarm
+      38  hal_rtc_get_alarm
+      20  hal_rtc_get_data
+     100  hal_rtc_get_f32k_frequency
+      38  hal_rtc_get_time
+      20  hal_rtc_init
+      24  hal_rtc_isr
+      64  hal_rtc_set_alarm
+      34  hal_rtc_set_alarm_callback
+      20  hal_rtc_set_data
+      62  hal_rtc_set_time
+      32  hal_rtc_sleep
+      60  hal_rtc_time_sanity
+       8  s_hal_rtc_alarm_callback
+          s_hal_rtc_user_data
+
+ 
+   8 bytes in section .bss
+   4 bytes in section .data
+ 680 bytes in section .text
+ 
+ 680 bytes of CODE memory
+  12 bytes of DATA memory
+
+Errors: none
+Warnings: none

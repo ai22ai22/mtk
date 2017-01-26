@@ -1,0 +1,1508 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:42
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\common\bsp_ex\src\wifi_ex_config.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\common\bsp_ex\src\wifi_ex_config.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\wifi_ex_config.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\wifi_ex_config.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\common\bsp_ex\src\wifi_ex_config.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          /**
+     35              @file       wifi_ex_config.c
+     36              @brief      WiFi - Configure API Examples
+     37          
+     38              @history    2015/08/07  Initial for 1st draft  (Michael Rong)
+     39           */
+     40          
+     41          #include <stdio.h>
+     42          #include <stdlib.h>
+     43          #include <string.h>
+     44          #include <toi.h>
+     45          
+     46          #include "os.h"
+     47          #include "os_util.h"
+     48          #include "cli.h"
+     49          #include "type_def.h"
+     50          #include "connsys_driver.h"
+     51          #include "connsys_util.h"
+     52          #include "wifi_api.h"
+     53          #include "wifi_inband.h"
+     54          #include "wifi_private_api.h"
+     55          #include "wifi_scan.h"
+     56          #include "wifi_homekit.h"
+     57          #include "ethernet_filter.h"
+     58          #include "FreeRTOS.h"
+     59          #include "task.h"
+     60          #include "nvdm.h"
+     61          #include "misc.h"
+     62          #if defined(MTK_MINICLI_ENABLE)
+     63          #include "cli_def.h"
+     64          #endif
+     65          #if defined(MTK_SMTCN_ENABLE)
+     66          #include "smt_conn.h"
+     67          #endif
+     68          #include "wifi_inband.h"
+     69          #include "inband_queue.h"
+     70          #include "get_profile_string.h"
+     71          #include "driver_inband.h"
+     72          #include "wifi_rx_desc.h"
+     73          #include "wifi_cli.h"
+     74          #include "wifi_private_cli.h"
+     75          
+     76          
+     77          #define WIFI_CLI_RETURN_STRING(ret) ((ret>=0)?"Success":"Error")
+     78          
+     79          #if 0
+     80          /**
+     81          * @brief Example of Configure MAC address for STA/AP wireless port
+     82          *
+     83          * wifi config set mac <port> <mac_addr>   00:0c:43:76:87:00   --> set port0 (STA) MAC address=00:0c:43:76:87:00
+     84          *
+     85          * @parameter
+     86          *
+     87          * @return  >=0 means success, <0 means fail
+     88          */
+     89          static uint8_t wifi_config_set_mac_address_ex(uint8_t len, char *param[])
+     90          {
+     91              int i;
+     92              uint8_t status = 0;
+     93              unsigned int  addr[WIFI_MAC_ADDRESS_LENGTH] = {0};
+     94              unsigned char addr2[WIFI_MAC_ADDRESS_LENGTH] = {0};
+     95              char port = port_sanity_check(param[0]);
+     96          
+     97              if (port < 0) {
+     98                  return 1;
+     99              }
+    100          
+    101              sscanf(param[1], "%x:%x:%x:%x:%x:%x", &addr[0], &addr[1], &addr[2], &addr[3], &addr[4], &addr[5]);
+    102          
+    103              for (i = 0; i < WIFI_MAC_ADDRESS_LENGTH; i++) {
+    104                  addr2[i] = addr[i];
+    105              }
+    106          
+    107              status = wifi_config_set_mac_address(port, addr2);
+    108          
+    109              printf("wifi_config_set_mac_address(port%d): (%02x:%02x:%02x:%02x:%02x:%02x), status:%d\n",
+    110                     port,
+    111                     addr2[0], addr2[1], addr2[2],
+    112                     addr2[3], addr2[4], addr2[5],
+    113                     status);
+    114              return 0;
+    115          }
+    116          #endif
+    117          #if 0
+    118          
+    119          int demo_rcv(unsigned char *payload, unsigned int len)
+    120          {
+    121          };
+    122          
+    123          /**
+    124          *  Example of Set the handler to receive 802.11 raw packet from network processor
+    125          *  The network processor will begin to indicate 802.11 raw packet with RXWI
+    126          *
+    127          * @parameter
+    128          *   [IN] receiver: handler routine
+    129          * @return >=0 means success, <0 means fail
+    130          * @note if handler == NULL, then network processor will stop to indicate 802.11 raw packet
+    131          */
+    132          static uint8_t wifi_set_raw_pkt_receiver_ex(uint8_t len, char *param[])
+    133          {
+    134              uint8_t status = 0;
+    135              uint32_t flag = atoi(param[0]);
+    136          
+    137              status = wifi_config_set_rx_filter(flag);
+    138              status =  wifi_set_raw_pkt_receiver(&demo_rcv);
+    139              printf("wifi_config_set_rxfilter: 0x%x, status:%d\n",
+    140                     flag,   status);
+    141          
+    142              return status;
+    143          }
+    144          
+    145          
+    146          /**
+    147          *  Example of TX 802.11 raw packet sender routine (to WiFi MAC hardware directly)
+    148          *
+    149          * @parameter
+    150          *   [IN] buf: payload of 802.11 raw packet, need to include hardware TXWI and PSE header
+    151          *   [IN] len: the length of payload
+    152          * @return =0 means success, <0 means fail
+    153          * @note Please refer to related document for TXWI and PSE header format
+    154          */
+    155          static uint8_t wifi_raw_pkt_sender_ex(uint8_t len, char *param[])
+    156          {
+    157              int ret = 0;
+    158          
+    159              ret = ethernet_raw_pkt_sender(buf, len);
+    160              return ret;
+    161          }
+    162          #endif
+    163          
+    164          
+    165          #if 0
+    166          /**
+    167          * @brief Example of Get WiFi BSSID.
+    168          * wifi config get bssid <port>
+    169          *
+    170          * @param [OUT]bssid BSSID
+    171          *
+    172          * @return  >=0 means success, <0 means fail
+    173          *
+    174          * @note Only used for WIFI_PORT_STA
+    175          */
+    176          static uint8_t wifi_config_get_bssid_ex(uint8_t len, char *param[])
+    177          {
+    178              uint8_t status = 0;
+    179              uint8_t addr[WIFI_MAC_ADDRESS_LENGTH] = {0};
+    180              /*
+    181              char port = port_sanity_check(param[0]);
+    182          
+    183              if (port < 0) return 1;
+    184          
+    185              status = wifi_config_get_bssid(port, addr);
+    186              */
+    187              status = wifi_config_get_bssid(addr);
+    188          
+    189              printf("wifi_config_get_bssid(port%d): (%02x:%02x:%02x:%02x:%02x:%02x), status:%d\n",
+    190                     WIFI_PORT_STA,
+    191                     addr[0], addr[1], addr[2],
+    192                     addr[3], addr[4], addr[5],
+    193                     status);
+    194              return 0;
+    195          }
+    196          
+    197          
+    198          /**
+    199          * @brief Example of Set WiFi BSSID.
+    200          * wifi config set bssid <port> <BSSID> --> "00:0c:43:76:87:00"
+    201          *
+    202          * @param [IN]bssid BSSID
+    203          *
+    204          * @return  >=0 means success, <0 means fail
+    205          *
+    206          * @note Only used for WIFI_PORT_STA
+    207          */
+    208          static uint8_t wifi_config_set_bssid_ex(uint8_t len, char *param[])
+    209          {
+    210              int i;
+    211              uint8_t status = 0;
+    212              unsigned int addr[WIFI_MAC_ADDRESS_LENGTH] = {0};
+    213              uint8_t addr2[WIFI_MAC_ADDRESS_LENGTH] = {0};
+    214              /*
+    215              char port = port_sanity_check(param[0]);
+    216          
+    217              if (port < 0) return 1;
+    218              */
+    219          
+    220              sscanf(param[0], "%x:%x:%x:%x:%x:%x", &addr[0], &addr[1], &addr[2], &addr[3], &addr[4], &addr[5]);
+    221          
+    222              for (i = 0; i < WIFI_MAC_ADDRESS_LENGTH; i++) {
+    223                  addr2[i] = addr[i];
+    224              }
+    225          
+    226              //status = wifi_config_set_bssid(port, addr2);
+    227              status = wifi_config_set_bssid(addr2);
+    228          
+    229              printf("wifi_config_set_bssid(port%d): (%02x:%02x:%02x:%02x:%02x:%02x), status:%d\n",
+    230                     WIFI_PORT_STA,
+    231                     addr2[0], addr2[1], addr2[2],
+    232                     addr2[3], addr2[4], addr2[5],
+    233                     status);
+    234              return 0;
+    235          }
+    236          #endif
+    237          
+    238          #ifdef MTK_MINICLI_ENABLE
+    239          extern int32_t wifi_config_get_scan_table_size(uint8_t *size);
+    240          
+    241          
+    242          /**
+    243          * @brief Example of Get WiFi Scan Table Size
+    244          * wifi config get scantabsize
+    245          * @param [OUT]num 1 ~ 255
+    246          *
+    247          * @return  =0 means success, >0 means fail
+    248          */
+    249          static uint8_t wifi_config_get_scan_tab_size_ex(uint8_t len, char *param[])
+    250          {
+    251              uint8_t status = 0;
+    252              int32_t ret = 0;
+    253              uint8_t size = 0;
+    254          
+    255              ret = wifi_config_get_scan_table_size(&size);
+    256              if (ret < 0) {
+    257                  status = 1;
+    258              }
+    259              printf("wifi_config_get_scan_tab_size size:%d, ret:%s, Code=%ld\n", size, WIFI_CLI_RETURN_STRING(ret), ret);
+    260              return status;
+    261          }
+    262          
+    263          
+    264          int32_t wifi_config_set_scan_table_size(uint8_t size);
+    265          
+    266          
+    267          /**
+    268          * @brief Example of Set WiFi Scan Table Size
+    269          * wifi config set scantabsize <size>
+    270          * @param [IN]num 1 ~ 255
+    271          *
+    272          * @return  =0 means success, >0 means fail
+    273          */
+    274          static uint8_t wifi_config_set_scan_tab_size_ex(uint8_t len, char *param[])
+    275          {
+    276              uint8_t status = 0;
+    277              int32_t ret = 0;
+    278              uint8_t size = atoi(param[0]);
+    279          
+    280              ret = wifi_config_set_scan_table_size(size);
+    281              if (ret < 0) {
+    282                  status = 1;
+    283              }
+    284              printf("wifi_config_set_scan_tab_size, size:%d, ret:%s, Code=%ld\n", size, WIFI_CLI_RETURN_STRING(ret), ret);
+    285              return status;
+    286          }
+    287          
+    288          
+    289          /**
+    290          * @brief Enable/Disable Apple Airplay
+    291          * wifi config set airplay <enable>
+    292          * @param [IN]enable
+    293          *   0: Disable
+    294          *   1: Enable
+    295          * @return  =0 means success, >0 means fail
+    296          */
+    297          static uint8_t wifi_config_set_airplay(uint8_t len, char *param[])
+    298          {
+    299              uint8_t status = 0;
+    300          #if defined(MTK_HOMEKIT_ENABLE)
+    301              int32_t ret = 0;
+    302              uint8_t enable = atoi(param[0]);
+    303          #endif
+    304          
+    305          #if defined(MTK_HOMEKIT_ENABLE)
+    306              ret = wifi_enable_airplay(enable);
+    307              if (ret < 0) {
+    308                 status = 1;
+    309              }
+    310              printf("wifi_config_set_airplay, enable = %d, ret:%s, Code=%ld\n", enable, WIFI_CLI_RETURN_STRING(ret), ret);
+    311          #else
+    312              printf("wifi_config_set_airplay, MTK_HOMEKIT_ENABLE not supported\n");
+    313          #endif
+    314              return status;
+    315          }
+    316          
+    317          /**
+    318          * @brief Update Apple IE
+    319          * wifi config set appleie <is_unconfigured>
+    320          * @param is_unconfigured
+    321          *   0: configured
+    322          *   1: unconfigured
+    323          * @return  =0 means success, >0 means fail
+    324          */
+    325          static uint8_t wifi_config_set_apple_ie(uint8_t len, char *param[])
+    326          {
+    327              uint8_t status = 0;
+    328              return status;
+    329          }
+    330          #endif
+    331          
+    332          /**
+    333          * @brief
+    334          * @param
+    335          *
+    336          * @return  =0 means success, >0 means fail
+    337          */
+    338          #ifdef MTK_MINISUPP_ENABLE
+    339          static uint8_t _cli_supp_reload(uint8_t len, char *param[])
+    340          {
+    341              uint8_t status = 0;
+    342              int32_t ret = 0;
+    343              ret = wifi_config_reload_setting();
+    344          
+    345              if (ret < 0) {
+    346                  status = 1;
+    347              }
+    348              printf("_cli_supp_reload, ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    349              return status;
+    350          }
+    351          
+    352          static uint8_t _cli_supp_show_ifaces(uint8_t len, char *param[])
+    353          {
+    354              if (__g_wpa_supplicant_api.show_ifaces) {
+    355                  __g_wpa_supplicant_api.show_ifaces();
+    356              } else {
+    357                  printf("NOT support show ifaces.\n");
+    358              }
+    359              return 0;
+    360          }
+    361          
+    362          
+    363          /**
+    364          * @brief
+    365          * @param
+    366          *
+    367          * @return  =0 means success, >0 means fail
+    368          */
+    369          static uint8_t _cli_supp_wps_pbc(uint8_t len, char *param[])
+    370          {
+    371              uint8_t status = 0;
+    372              int ret = 0;
+    373              if (__g_wpa_supplicant_api.do_wps_pbc) {
+    374                  ret = __g_wpa_supplicant_api.do_wps_pbc(param[0]);
+    375                  if (ret < 0) {
+    376                      status = 1;
+    377                  }
+    378              } else {
+    379                  printf("NOT support wps pbc.\n");
+    380                  return 1;
+    381              }
+    382              printf("_cli_supp_wps_pbc, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    383              return status;
+    384          }
+    385          
+    386          
+    387          /**
+    388          * @brief
+    389          * @param
+    390          *
+    391          * @return  =0 means success, >0 means fail
+    392          */
+    393          static uint8_t _cli_supp_wps_pin(uint8_t len, char *param[])
+    394          {
+    395              uint8_t status = 0;
+    396              int ret = 0;
+    397              char buf[9] = { 0 };
+    398              int  buf_len = 9;
+    399          
+    400              if (__g_wpa_supplicant_api.do_wps_pin) {
+    401                  ret = __g_wpa_supplicant_api.do_wps_pin((char *)param[0], &buf[0], buf_len);
+    402                  if (ret < 0) {
+    403                      status = 1;
+    404                  }
+    405              } else {
+    406                  printf("NOT support wps pin.\n");
+    407                  return 1;
+    408              }
+    409              printf("_cli_supp_wps_pin, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    410              return status;
+    411          }
+    412          
+    413          
+    414          /**
+    415          * @brief
+    416          * @param
+    417          *
+    418          * @return  =0 means success, >0 means fail
+    419          */
+    420          static uint8_t _cli_supp_wps_reg(uint8_t len, char *param[])
+    421          {
+    422              uint8_t status = 0;
+    423              int ret = 0;
+    424          
+    425              if (__g_wpa_supplicant_api.do_wps_reg_pin) {
+    426                  ret = __g_wpa_supplicant_api.do_wps_reg_pin((char *)param[0]);
+    427                  if (ret < 0) {
+    428                      status = 1;
+    429                  }
+    430              } else {
+    431                  printf("NOT support wps_reg.\n");
+    432                  return 1;
+    433              }
+    434              printf("_cli_supp_wps_reg, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    435              return status;
+    436          }
+    437          
+    438          
+    439          /**
+    440          * @brief
+    441          * @param
+    442          *
+    443          * @return  =0 means success, >0 means fail
+    444          */
+    445          static uint8_t _cli_supp_wps_ap_pin(uint8_t len, char *param[])
+    446          {
+    447              uint8_t status = 0;
+    448              int ret = 0;
+    449              char buf[9] = { 0 };
+    450              int  buf_len = 9;
+    451          
+    452              if (__g_wpa_supplicant_api.wps_ap_pin) {
+    453                  ret = __g_wpa_supplicant_api.wps_ap_pin(param[0], &buf[0], buf_len);
+    454                  if (ret >= 0) {
+    455                      printf("\n\nWPS PIN: %s\n", buf);
+    456                  } else {
+    457                      status = 1;
+    458                  }
+    459              } else {
+    460                  printf("NOT support wps pin.\n");
+    461                  return 1;
+    462              }
+    463              printf("_cli_supp_wps_ap_pin, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    464              return status;
+    465          }
+    466          
+    467          
+    468          /**
+    469          * @brief
+    470          * @param
+    471          *
+    472          * @return  =0 means success, >0 means fail
+    473          */
+    474          static uint8_t _cli_supp_wps_get_pin(uint8_t len, char *param[])
+    475          {
+    476              uint8_t status = 0;
+    477              int  ret = 0;
+    478              char buf[9] = {0};
+    479              int  buf_len = 9;
+    480          
+    481          
+    482              if (__g_wpa_supplicant_api.wps_get_pin) {
+    483                  ret = __g_wpa_supplicant_api.wps_get_pin((char *)param[0], &buf[0], buf_len);
+    484                  if (ret >= 0) {
+    485                      printf("\n\nWPS PIN: %s\n", buf);
+    486                  } else {
+    487                      status = 1;
+    488                  }
+    489              } else {
+    490                  printf("NOT support wps get pin.\n");
+    491                  return 1;
+    492              }
+    493              printf("_cli_supp_wps_get_pin, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    494              return status;
+    495          }
+    496          
+    497          
+    498          /**
+    499          * @brief
+    500          * @param
+    501          *
+    502          * @return  =0 means success, >0 means fail
+    503          */
+    504          static uint8_t _cli_supp_wps_device_info(uint8_t len, char *param[])
+    505          {
+    506              uint8_t status = 0;
+    507              int ret = 0;
+    508          
+    509          #if defined(MTK_WIFI_WPS_ENABLE)
+    510              ret = mtk_supplicant_ctrl_wps_device_info((char *)param[0]);
+    511              if (ret < 0) {
+    512                  status = 1;
+    513              }
+    514          #else
+    515              printf("NOT support wps_devinfo.\n");
+    516              status = 1;
+    517          #endif
+    518              printf("_cli_supp_wps_device_info, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    519              return status;
+    520          }
+    521          
+    522          
+    523          /**
+    524          * @brief
+    525          * @param
+    526          *
+    527          * @return  =0 means success, >0 means fail
+    528          */
+    529          static uint8_t _cli_supp_wps_crdential_handler(uint8_t len, char *param[])
+    530          {
+    531              uint8_t status = 0;
+    532              int ret = 0;
+    533          
+    534          #if defined(MTK_WIFI_WPS_ENABLE)
+    535              ret = mtk_supplicant_ctrl_wps_set_credential_handler((char *)param[0]);
+    536              if (ret < 0) {
+    537                  status = 1;
+    538              }
+    539          #else
+    540              printf("NOT support wps_cred_handler control\n");
+    541              status = 1;
+    542          #endif
+    543          
+    544              printf("_cli_supp_wps_crdential_handler, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    545              return status;
+    546          }
+    547          
+    548          /**
+    549          * @brief
+    550          * @param
+    551          *
+    552          * @return  =0 means success, >0 means fail
+    553          */
+    554          static uint8_t _cli_supp_wps_auto_connection(uint8_t len, char *param[])
+    555          {
+    556              uint8_t status = 0;
+    557              int ret = 0;
+    558          
+    559          #if defined(MTK_WIFI_WPS_ENABLE)
+    560              ret = mtk_supplicant_ctrl_wps_auto_conneciton((char *)param[0]);
+    561              if (ret < 0) {
+    562                  status = 1;
+    563              }
+    564          #else
+    565              printf("NOT support wps_auto_connection control\n");
+    566              status = 1;
+    567          #endif
+    568              printf("_cli_supp_wps_auto_connection, ret:%s, Code=%d\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    569              return status;
+    570          }
+    571          
+    572          
+    573          cmd_t   wifi_priv_cli[] = {
+    574              { "reload",         "", _cli_supp_reload,       NULL },
+    575              { "show_ifaces",    "", _cli_supp_show_ifaces,  NULL },
+    576              { "wps_pbc",        "", _cli_supp_wps_pbc,      NULL },
+    577              { "wps_pin",        "", _cli_supp_wps_pin,      NULL },
+    578              { "wps_reg",        "", _cli_supp_wps_reg,      NULL },
+    579              { "wps_ap_pin",     "", _cli_supp_wps_ap_pin,   NULL },
+    580              { "wps_get_pin",    "", _cli_supp_wps_get_pin,  NULL },
+    581              { "wps_devinfo",    "", _cli_supp_wps_device_info,  NULL },
+    582              { "wps_cred_handler",    "", _cli_supp_wps_crdential_handler,  NULL },
+    583              { "wps_auto_connection",   "", _cli_supp_wps_auto_connection,  NULL },
+    584              { NULL, NULL, NULL, NULL },
+    585          };
+    586          #endif
+    587          
+    588          #ifdef MTK_MINICLI_ENABLE
+    589          static void dump_scan_param(CMD_IOT_START_SCAN_T *scan_param)
+    590          {
+    591              int i;
+    592          
+    593              printf("partial=0x%02X\n", scan_param->partial);
+    594              printf("scan_mode=0x%02X\n", scan_param->scan_mode);
+    595              printf("partial_bcn_cnt=0x%02X\n", scan_param->partial_bcn_cnt);
+    596              printf("periodic_bcn_cnt=0x%02X\n", scan_param->periodic_bcn_cnt);
+    597          
+    598              printf("BSSID=");
+    599              for (i = 0; i < 5; i++) {
+    600                  printf("%02X:", scan_param->BSSID[i]);
+    601              }
+    602              printf("%02X\n", scan_param->BSSID[i]);
+    603              printf("enable_bssid =0x%02X\n", scan_param->enable_bssid);
+    604          
+    605              printf("SSID='%s'\n", scan_param->SSID);
+    606              printf("enable_ssid =0x%02X'\n", scan_param->enable_ssid);
+    607          
+    608              if (((scan_param->channel_list).num_bg_band_triplet) > 0) {
+    609                  printf("num_bg_band_triplet=%d\n", ((scan_param->channel_list).num_bg_band_triplet));
+    610                  printf("1st_Ch\tNum_Ch\tCh_Prop\tReserve\n");
+    611                  for (i = 0; i < ((scan_param->channel_list).num_bg_band_triplet); i++) {
+    612                      printf("%d\t%d\t0x%02X\t0x%02X\n", ((scan_param->channel_list).triplet[i].first_channel),
+    613                             ((scan_param->channel_list).triplet[i].num_of_ch),
+    614                             ((scan_param->channel_list).triplet[i].channel_prop),
+    615                             ((scan_param->channel_list).triplet[i].tx_power));
+    616                  }
+    617              }
+    618          
+    619              if (((scan_param->channel_list).num_a_band_triplet) > 0) {
+    620                  printf("num_a_band_triplet=%d\n", ((scan_param->channel_list).num_a_band_triplet));
+    621                  printf("1st_Ch\tNum_Ch\tCh_Prop\tReserve\n");
+    622                  for (i = 0; i < ((scan_param->channel_list).num_a_band_triplet); i++) {
+    623                      printf("%d\t%d\t0x%02X\t0x%02X\n", ((scan_param->channel_list).triplet[i + ((scan_param->channel_list).num_bg_band_triplet)].first_channel),
+    624                             ((scan_param->channel_list).triplet[i + ((scan_param->channel_list).num_bg_band_triplet)].num_of_ch),
+    625                             ((scan_param->channel_list).triplet[i + ((scan_param->channel_list).num_bg_band_triplet)].channel_prop),
+    626                             ((scan_param->channel_list).triplet[i + ((scan_param->channel_list).num_bg_band_triplet)].tx_power));
+    627                  }
+    628              }
+    629          }
+    630          
+    631          uint8_t _cli_scan(uint8_t len, char *param[])
+    632          {
+    633          #ifdef DEF_HELP_MSG
+    634          #undef DEF_HELP_MSG
+    635          #endif
+    636          #define DEF_HELP_MSG "Usage:\n scan <partial> <scan_mode> <partial_bcn_cnt> <periodic_bcn_cnt> <BSSID/StayTime> <SSID> <BG_channel_list> <A_channel_list>\n"
+    637              CMD_IOT_START_SCAN_T scan_param;
+    638              CMD_IOT_START_SCAN_T *p_scan_param = &scan_param;
+    639              unsigned int length = sizeof(scan_param);
+    640              uint16_t  stay_time = 0;
+    641          
+    642              ch_desc_t bg_triplet[10];
+    643              ch_desc_t a_triplet[10];
+    644          
+    645          
+    646              os_memset(&scan_param, 0x0, sizeof(scan_param));
+    647          
+    648              switch (len) {
+    649                  case 8:
+    650                      if (os_strcmp(param[6] , "0")){
+    651                          scan_param.channel_list.num_bg_band_triplet = wifi_conf_get_ch_table_from_str((ch_desc_t *)bg_triplet, 10, (const char *)param[6], os_strlen(param[6]));
+    652                      }else{
+    653                          printf("Ignore Parameter 6: BGChannelTable\n");
+    654                      }
+    655          
+    656                      if (os_strcmp(param[7] , "0")){
+    657                          scan_param.channel_list.num_a_band_triplet = wifi_conf_get_ch_table_from_str((ch_desc_t *)a_triplet, 10, (const char *)param[7], os_strlen(param[7]));
+    658                      }else{
+    659                          printf("Ignore Parameter 7: AChannelTable\n");
+    660                      }
+    661          
+    662                      length = (sizeof(scan_param) + (sizeof(ch_desc_t) * (scan_param.channel_list.num_bg_band_triplet + scan_param.channel_list.num_a_band_triplet)));
+    663                      p_scan_param = (CMD_IOT_START_SCAN_T *)os_malloc(length);
+    664                      os_memset((unsigned char *)(p_scan_param), 0x0, length);
+    665          
+    666                      p_scan_param->partial = strtol(param[0], NULL, 16);
+    667                      p_scan_param->scan_mode = strtol(param[1], NULL, 16);
+    668                      p_scan_param->partial_bcn_cnt = strtol(param[2], NULL, 16);
+    669                      p_scan_param->periodic_bcn_cnt = strtol(param[3], NULL, 16);
+    670          
+    671          
+    672                      if (os_strcmp(param[5] , "0")){
+    673                          p_scan_param->enable_ssid = (0x80 | os_strlen(param[5]));
+    674                          os_memcpy(p_scan_param->SSID, param[5], os_strlen(param[5]));
+    675                      }else{
+    676                          printf("Ignore Parameter 5: SSID\n");
+    677                      }
+    678          
+    679                      if (os_strcmp(param[4] , "0")){  /*if BSSID is 0,   not set bssid filed*/
+    680                          if (os_strlen(param[4]) == 17)  { /*match the BSSID mac address length*/
+    681                              p_scan_param->enable_bssid = 1;
+    682                              wifi_conf_get_mac_from_str((char *)p_scan_param->BSSID, param[4]);
+    683                              printf("Parameter 4 is BSSID\n");
+    684                          }else{
+    685                              stay_time = (uint16_t)strtol(param[4], NULL, 16);
+    686                              if(stay_time != 0){
+    687                                  p_scan_param->enable_ssid |= BIT(6);
+    688                                  p_scan_param->BSSID[0] = 0xff & stay_time;
+    689                                  p_scan_param->BSSID[1] = stay_time >> 8;
+    690                                  printf("Parameter 4 is StayTime\n");
+    691                              }
+    692                          }
+    693                      }else{
+    694                          printf("Ignore Parameter 4: BSSID/StayTime\n");
+    695                      }
+    696          
+    697          
+    698                      if (os_strcmp(param[6] , "0")){
+    699                          (p_scan_param->channel_list).num_bg_band_triplet = scan_param.channel_list.num_bg_band_triplet;
+    700                          os_memcpy((p_scan_param->channel_list).triplet, bg_triplet, sizeof(ch_desc_t) * (scan_param.channel_list.num_bg_band_triplet));
+    701                      }else{
+    702                          printf("Ignore Parameter 6: BGChannelTable\n");
+    703                      }
+    704          
+    705                      if (os_strcmp(param[7] , "0")){
+    706                      (p_scan_param->channel_list).num_a_band_triplet = scan_param.channel_list.num_a_band_triplet;
+    707                      os_memcpy(&((p_scan_param->channel_list).triplet[(scan_param.channel_list.num_bg_band_triplet)]), a_triplet, sizeof(ch_desc_t) * (scan_param.channel_list.num_a_band_triplet));
+    708                      }else{
+    709                          printf("Ignore Parameter 7: AChannelTable\n");
+    710                      }
+    711          
+    712                      break;
+    713          
+    714                  default:
+    715                      printf(DEF_HELP_MSG);
+    716                      return 1;
+    717              }
+    718              dump_scan_param(p_scan_param);
+    719              hex_dump("p_scan_param", (unsigned char *)p_scan_param, length);
+    720              inband_queue_exec(WIFI_COMMAND_ID_IOT_START_SCAN, (unsigned char *)(p_scan_param), length, TRUE, FALSE);
+    721              //wifi_inband_scan_custom(p_scan_param, sizeof(*p_scan_param));
+    722          
+    723              if ((&scan_param) != p_scan_param) {
+    724                  os_free((void *)p_scan_param);
+    725              }
+    726          
+    727              return 0;
+    728          }
+    729          #endif
+    730          
+    731          #ifdef MTK_AP_SNIFFER_ENABLE
+    732          uint8_t _cli_ap_sniffer(uint8_t len, char *param[])
+    733          {
+    734              switch (len) {
+    735              case 1:
+    736                  if (!os_strcmp(param[0], "stop")) {
+    737                      wifi_exit_ap_sniffer_mode();
+    738                  } else {
+    739                      printf("unknown cli\n");
+    740                  }
+    741                  break;
+    742              case 3:
+    743                  if (!os_strcmp(param[0], "start")) {
+    744                      uint16_t stay_time, optime;
+    745                      stay_time = atoi(param[1]);
+    746                      optime = atoi(param[2]);
+    747                      ap_sniffer_test(stay_time, optime);
+    748                  } else {
+    749                      printf("unknown cli\n");
+    750                  }
+    751                      break;
+    752              }
+    753          }
+    754          #endif
+    755          
+    756          #ifdef MTK_MINICLI_ENABLE
+    757          /**
+    758          * @brief
+    759          * @param
+    760          *
+    761          * @return  =0 means success, >0 means fail
+    762          */
+    763          uint8_t _cli_wow(uint8_t len, char *param[])
+    764          {
+    765              uint8_t status = 0;
+    766              int32_t ret = 0;
+    767          
+    768              if (len < 1) {
+    769                  printf("Usage: \n");
+    770                  printf("wow enable <enable ex.0/1>\n");
+    771                  printf("wow magic <enable ex.0/1> <bss_index ex.1/3...>\n");
+    772                  printf("wow bitmap <16 bytes bitmap mask> <128 bytes bitmap pattern>\n");
+    773                  printf("wow arp <ip_addr ex.192> <ip_addr ex.168> <ip_addr ex.0> <ip_addr ex.1>\n");
+    774                  printf("wow rekey <64 bytes ptk>\n");
+    775                  return 1;
+    776              }
+    777          
+    778              if (!os_strcmp((char *)param[0], "enable")) {
+    779                  wifi_wow_enable_t wow_param;
+    780                  wow_param.enable = atoi(param[1]);
+    781          
+    782                  ret = wifi_inband_wow_enable(&wow_param);
+    783              } else if (!os_strcmp((char *)param[0], "magic")) {
+    784                  wifi_wow_magic_packet_t wow_param;
+    785                  wow_param.enable = atoi(param[1]);
+    786                  wow_param.bss_index = strtol(param[2], NULL, 16);
+    787          
+    788                  ret = wifi_inband_wow_set_magic_packet(&wow_param);
+    789              } else if (!os_strcmp((char *)param[0], "bitmap")) {
+    790                  wifi_wow_bitmap_pattern_t wow_param;
+    791                  os_memcpy(wow_param.bitmap_mask, param[1], sizeof(wow_param.bitmap_mask));
+    792                  os_memcpy(wow_param.bitmap_pattern, param[2], sizeof(wow_param.bitmap_pattern));
+    793          
+    794                  ret = wifi_inband_wow_set_bitmap_pattern(&wow_param);
+    795              } else if (!os_strcmp((char *)param[0], "arp")) {
+    796                  wifi_wow_arp_offload_t wow_param;
+    797                  wow_param.ip_address[0] = atoi(param[1]);
+    798                  wow_param.ip_address[1] = atoi(param[2]);
+    799                  wow_param.ip_address[2] = atoi(param[3]);
+    800                  wow_param.ip_address[3] = atoi(param[4]);
+    801          
+    802                  ret = wifi_inband_wow_set_arp_offload(&wow_param);
+    803              } else if (!os_strcmp((char *)param[0], "rekey")) {
+    804                  wifi_wow_rekey_offload_t wow_param;
+    805                  os_memcpy(wow_param.ptk, param[1], sizeof(wow_param.ptk));
+    806          
+    807                  ret = wifi_inband_wow_set_rekey_offload(&wow_param);
+    808              } else {
+    809                  printf("Not support cmd\n");
+    810                  return 1;
+    811              }
+    812          
+    813              if (ret < 0) {
+    814                  status = 1;
+    815              }
+    816              printf("_cli_wow, ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    817          
+    818              return status;
+    819          }
+    820          #endif
+    821          
+    822          #ifdef MTK_MINICLI_ENABLE
+    823          uint8_t _cli_connsys_related(uint8_t len, char *param[])
+    824          {
+    825              return connsys_util_cli_handler(len, param);
+    826          }
+    827          #endif
+    828          
+    829          #if 0
+    830          uint8_t _cli_wifi_auto_connect(uint8_t len, char *param[])
+    831          {
+    832              char ssid[32] = "MTK_AP";
+    833              int sz = sizeof(ssid);
+    834              nvdm_read_data_item("STA", "Ssid", (uint8_t *)ssid, (uint32_t *)&sz);
+    835              /* TODO: call inband commands
+    836              wifi_connect_connection(ssid, os_strlen(ssid));
+    837              */
+    838              //wifi_connect_start_scan_from_isr();
+    839              wifi_connection_start_scan(NULL, 0, NULL, 0, 0);
+    840          
+    841              return 0;
+    842          }
+    843          #endif
+    844          
+    845          
+    846          /**
+    847          * @brief
+    848          * @parameter
+    849          * @return =0 means success, >0 means fail
+    850          */
+    851          #if defined(MTK_AWS_ENABLE)
+    852          extern void aws_test_start(void);
+    853          uint8_t _aws_test(uint8_t len, char *param[])
+    854          {
+    855              if (len == 1) {
+    856                  if (!os_strcmp(param[0], "start")){
+    857                      aws_test_start();
+    858                  }/* else if(!os_strcmp(param[0], "stop")){
+    859                      mtk_smart_stop();
+    860                  } */else{
+    861                      printf("Not supported cmd\n");
+    862                      return 1;
+    863                  }
+    864              } else {
+    865                  printf("Not supported cmd\n");
+    866                  return 1;
+    867              }
+    868              return 0;
+    869          }
+    870          #endif
+    871          #ifdef MTK_MINISUPP_ENABLE
+    872          extern void wpa_supplicant_entry_debug_level(int debug_level);
+    873          #endif
+    874          
+    875          #ifdef MTK_MINISUPP_ENABLE
+    876          extern int wpa_debug_level;
+    877          #endif
+    878          
+    879          #define REG32(x)                (*(volatile unsigned int *)(x))
+    880          
+    881          #ifdef MTK_MINICLI_ENABLE
+    882          uint8_t _cli_wifi(uint8_t len, char *param[])
+    883          {
+    884              switch (atoi(param[0])) {
+    885                  case 0: {
+    886                      uint8_t link_status = 0;
+    887                      wifi_connection_get_link_status(&link_status);
+    888                      printf("wifi_conn_get_link_status() %d\n", link_status);
+    889                      break;
+    890                  }
+    891          
+    892                  case 1: {
+    893                      printf("wifi_conn_start_scan()\n");
+    894                      //wifi_connect_start_scan_from_isr();
+    895                      wifi_connection_start_scan(NULL, 0, NULL, 0, 0);
+    896                      break;
+    897                  }
+    898          
+    899                  case 2: {
+    900                      printf("wifi_conn_stop_scan()\n");
+    901                      wifi_connection_stop_scan();
+    902                      break;
+    903                  }
+    904          
+    905                  case 3: {
+    906                      size_t length = os_strlen(param[2]);
+    907                      uint8_t  buf[WIFI_MAX_LENGTH_OF_SSID + 2] = {0};
+    908                      printf("wifi_conn_connect(port:%s, ssid:%s), len(%d)\n", param[1], param[2], length);
+    909          
+    910                      buf[0] = atoi(param[1]);
+    911                      buf[1] = length;  /* bit7 - 0: normal connection, 1: wps connection  */
+    912                      os_memcpy(buf + 2, param[2], (length & 0x7F));
+    913                      inband_queue_exec(WIFI_COMMAND_ID_IOT_SSID, (unsigned char *)buf, length + 2, TRUE, FALSE);
+    914                      /* TODO: call inband command             */
+    915                      //wifi_connect_connection(param[1], len);
+    916                      break;
+    917                  }
+    918          
+    919                  case 4: {
+    920                      printf("wifi_conn_disconnect()\n");
+    921                      wifi_connection_disconnect_ap();
+    922                      break;
+    923                  }
+    924          
+    925                  case 5: {
+    926                      inband_queue_exec(WIFI_COMMAND_ID_IOT_SWITCH_MODE, (unsigned char *)param[1], 1, TRUE, FALSE);
+    927                      break;
+    928                  }
+    929          
+    930                  case 7: {
+    931                      uint8_t  type;
+    932                      uint32_t reg, value;
+    933          
+    934                      reg = toi(param[1], &type);
+    935          
+    936                      if (type == TOI_ERR) {
+    937                          printf("Connsys Read fail!\n");
+    938                      } else {
+    939                          connsys_cr_read(reg, &value);
+    940                          printf("CR[0x%x]=0x%x\n", (unsigned int)reg, (unsigned int)value);
+    941                      }
+    942                      break;
+    943                  }
+    944          
+    945                  case 8: {
+    946                      uint8_t  type;
+    947                      uint32_t reg, value;
+    948          
+    949                      reg = toi(param[1], &type);
+    950                      if (type == TOI_ERR) {
+    951                          printf("Connsys write addr fail!\n");
+    952                      } else {
+    953                          value = toi(param[2], &type);
+    954                          if (type == TOI_ERR) {
+    955                              printf("Connsys write value fail!\n");
+    956                          }
+    957          
+    958                          connsys_cr_write(reg, value);
+    959                          printf("Write CR[0x%x]=0x%x\n", (unsigned int)reg, (unsigned int)value);
+    960                      }
+    961                      break;
+    962                  }
+    963          
+    964                  case 9: {
+    965                      uint8_t  type;
+    966                      uint32_t reg, value;
+    967          
+    968                      reg = toi(param[1], &type);
+    969          
+    970                      if (type == TOI_ERR) {
+    971                          printf("CM4 Read fail!\n");
+    972                      } else {
+    973                          value = REG32(0x50200000 + reg);
+    974                          printf("CR[0x%x]=0x%x\n", (unsigned int)(0x50200000 + reg), (unsigned int)value);
+    975                      }
+    976                      break;
+    977                  }
+    978          
+    979                  case 10: {
+    980                      /*
+    981                      //unsigned char addr[6]={0x00, 0x0c, 0x43, 0x76, 0x87, 0x30};
+    982                      int ret = wifi_config_set_mac_address(WIFI_PORT_STA, g_sta_own_addr);
+    983                      printf("Set MAC ADDR(0x%02X, 0x%02X, 0x%02X, 0x%02X, 0x%02X, 0x%02X) Done, ret=%d\n",
+    984                          g_sta_own_addr[0], g_sta_own_addr[1], g_sta_own_addr[2],
+    985                          g_sta_own_addr[3], g_sta_own_addr[4], g_sta_own_addr[5], ret);
+    986                      */
+    987                      printf("Not support change MAC ADDR dynamically!\n");
+    988                      break;
+    989                  }
+    990          
+    991          #ifdef MTK_MINISUPP_ENABLE
+    992                  case 12: {
+    993                      printf("SUPP debug level: %d\n", wpa_debug_level);
+    994                      break;
+    995                  }
+    996          
+    997                  case 13: {
+    998                      if (param[1]) {
+    999                          wpa_supplicant_entry_debug_level(atoi(param[1]));
+   1000                      } else {
+   1001                          printf("Please assign debug level(0~6).\n");
+   1002                      }
+   1003                      break;
+   1004                  }
+   1005          #endif /* MTK_MINISUPP_ENABLE */
+   1006          
+   1007          #if defined(MTK_BSP_LOOPBACK_ENABLE)
+   1008                  case 15: {
+   1009                      uint8_t link_status;
+   1010          
+   1011                      if (loopback_start()) {
+   1012                          loopback_start_set(0);
+   1013                      } else {
+   1014                          loopback_start_set(1);
+   1015                      }
+   1016          
+   1017                      /* use get link status to toggle loopback cmd for N9 */
+   1018                      wifi_inband_get_link_status(&link_status);
+   1019          
+   1020                      break;
+   1021                  }
+   1022          #endif // MTK_BSP_LOOPBACK_ENABLE
+   1023          
+   1024                  default: {
+   1025                      break;
+   1026                  }
+   1027              }
+   1028          
+   1029              return 0;
+   1030          }
+   1031          
+   1032          
+   1033          cmd_t   wifi_config_set_cli[] = {
+   1034              { "opmode",         "STA/AP/Dual",      wifi_config_set_opmode_ex },
+   1035              //{ "mac",          "MAC address",      wifi_config_set_mac_address_ex},
+   1036              { "ssid",           "SSID",             wifi_config_set_ssid_ex },
+   1037              { "bssid",          "BSSID",            wifi_config_set_bssid_ex},
+   1038              { "sec",        "WPA/WPA2PSK Authmode,EncryptType",   wifi_config_set_security_mode_ex },
+   1039              { "psk",         "WPA/WPA2PSK Key",  wifi_config_set_psk_ex },
+   1040              { "pmk",            "PMK for WPA/WPA2PSK",  wifi_config_set_pmk_ex },
+   1041              { "wep",            "WEP key",          wifi_config_set_wep_key_ex },
+   1042              { "rxfilter",       "RX filter",        wifi_config_set_rx_filter_ex },
+   1043              { "mtksmart",       "MTK smart connection", wifi_config_set_mtk_smartconnection_filter_ex },
+   1044              { "rxraw",          "set RX RAW packet",    wifi_config_set_rx_raw_pkt_ex },
+   1045              { "radio",          "RADIO on/off",     wifi_config_set_radio_on_ex },
+   1046              { "ch",             "channel",          wifi_config_set_channel_ex },
+   1047              { "bw",             "bandwidth",        wifi_config_set_bandwidth_ex },
+   1048              { "bw_extended",    "bandwidth",        wifi_config_set_bandwidth_extended_ex },
+   1049              { "wirelessmode",   "wireless mode",    wifi_config_set_wireless_mode_ex },
+   1050              { "country",        "country region",   wifi_config_set_country_region_ex },
+   1051              { "country_code",   "country code",     wifi_config_set_country_code_ex },
+   1052              { "dtim",           "DTIM interval",    wifi_config_set_dtim_interval_ex },
+   1053              { "listen",         "listen interval",  wifi_config_set_listen_interval_ex },
+   1054              { "reload",         "reload the configuration", wifi_config_set_reload_ex },
+   1055              { "txraw",          "send TX RAW packet",   wifi_tx_raw_pkt_ex},
+   1056              { "scantabsize",    "scan table size",  wifi_config_set_scan_tab_size_ex },
+   1057              { "n9dbg",          "set N9 debug level",   wifi_config_set_n9_dbg_level },
+   1058              { "airplay",        "enable apple airplay", wifi_config_set_airplay },
+   1059              { "appleie",        "update apple IE",      wifi_config_set_apple_ie },
+   1060              { "rssi_thresh",    "rssi threshold",       wifi_config_set_rssi_threshold_ex },
+   1061              { "frame_filter",   "frame_filter",         wifi_config_set_frame_filter_ex },
+   1062              { "tx_power",       "N9 tx power",          wifi_config_set_tx_power_ex },
+   1063              { NULL }
+   1064          };
+   1065          
+   1066          cmd_t   wifi_config_get_cli[] = {
+   1067              { "opmode",         "STA/AP/Dual",      wifi_config_get_opmode_ex },
+   1068              { "mac",            "MAC address",      wifi_config_get_mac_address_ex },
+   1069              { "ssid",           "SSID",             wifi_config_get_ssid_ex },
+   1070              { "bssid",          "BSSID",            wifi_config_get_bssid_ex},
+   1071              { "sec",        "WPA/WPA2PSK Authmode,Encrypt Type",   wifi_config_get_security_mode_ex },
+   1072              { "psk",         "WPA/WPA2PSK Key",  wifi_config_get_psk_ex },
+   1073              { "pmk",            "PMK for WPA/WPA2PSK",  wifi_config_get_pmk_ex },
+   1074              { "wep",            "WEP key",          wifi_config_get_wep_key_ex },
+   1075              { "rxfilter",       "RX filter",        wifi_config_get_rx_filter_ex },
+   1076              { "mtksmart",       "MTK smart connection", wifi_config_get_mtk_smartconnection_filter_ex },
+   1077              { "radio",          "RADIO on/off",     wifi_config_get_radio_on_ex },
+   1078              { "ch",             "channel",          wifi_config_get_channel_ex },
+   1079              { "bw",             "bandwidth",        wifi_config_get_bandwidth_ex },
+   1080              { "bw_extended",    "bandwidth",        wifi_config_get_bandwidth_extended_ex },
+   1081              { "wirelessmode",   "wireless mode",    wifi_config_get_wireless_mode_ex },
+   1082              { "country",        "country region",   wifi_config_get_country_region_ex },
+   1083              { "country_code",   "country code",     wifi_config_get_country_code_ex },
+   1084              { "dtim",           "DTIM interval",    wifi_config_get_dtim_interval_ex },
+   1085              { "listen",         "listen interval",  wifi_config_get_listen_interval_ex },
+   1086              { "scantabsize",    "scan table size",  wifi_config_get_scan_tab_size_ex },
+   1087              { "n9dbg",          "get N9 debug level",   wifi_config_get_n9_dbg_level },
+   1088              { "rssi_thresh",    "rssi threshold",       wifi_config_get_rssi_threshold_ex },
+   1089              { "tx_power",       "N9 tx power",          wifi_config_get_tx_power_ex },
+   1090              { NULL }
+   1091          };
+   1092          
+   1093          #if defined(MTK_WIFI_WPS_ENABLE)
+   1094          cmd_t   wifi_wps_set_cli[] = {
+   1095              { "device_info",     "set wps device information",            wifi_wps_set_device_info_ex},
+   1096              { "auto_connection", "set Enrollee auto connection on/off",   wifi_wps_set_auto_connection_ex},
+   1097              { NULL }
+   1098          };
+   1099          
+   1100          cmd_t   wifi_wps_get_cli[] = {
+   1101              { "device_info",     "get wps device information",            wifi_wps_get_device_info_ex},
+   1102              { "auto_connection", "get Enrollee auto connection on/off",   wifi_wps_get_auto_connection_ex},
+   1103              { "pin_code",        "get 8-digital PIN of AP/STA",           wifi_wps_get_pin_code_ex},
+   1104              { NULL }
+   1105          };
+   1106          
+   1107          cmd_t   wifi_wps_trigger_cli[] = {
+   1108              { "pbc",     "trigger wps pbc",       wifi_wps_connection_by_pbc_ex},
+   1109              { "pin",     "trigger wps pin",       wifi_wps_connection_by_pin_ex},
+   1110              { NULL }
+   1111          };
+   1112          #endif /*MTK_WIFI_WPS_ENABLE*/
+   1113          #endif/*MTK_MINICLI_ENABLE*/
+   1114          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   _cli_connsys_related
+         0   -> connsys_util_cli_handler
+     160   _cli_scan
+       160   -> dump_scan_param
+       160   -> hex_dump
+       160   -> inband_queue_exec
+       160   -> os_free
+       160   -> os_malloc
+       160   -> os_memcpy
+       160   -> os_memset
+       160   -> os_strcmp
+       160   -> os_strlen
+       160   -> printf
+       160   -> strtol
+       160   -> wifi_conf_get_ch_table_from_str
+       160   -> wifi_conf_get_mac_from_str
+       8   _cli_supp_reload
+         8   -> printf
+         8   -> wifi_config_reload_setting
+       8   _cli_supp_show_ifaces
+         8   -- Indirect call
+         8   -> printf
+      24   _cli_supp_wps_ap_pin
+        24   -- Indirect call
+        24   -> printf
+       8   _cli_supp_wps_auto_connection
+         8   -> printf
+       8   _cli_supp_wps_crdential_handler
+         8   -> printf
+       8   _cli_supp_wps_device_info
+         8   -> printf
+      24   _cli_supp_wps_get_pin
+        24   -- Indirect call
+        24   -> printf
+       8   _cli_supp_wps_pbc
+         8   -- Indirect call
+         8   -> printf
+      24   _cli_supp_wps_pin
+        24   -- Indirect call
+        24   -> printf
+       8   _cli_supp_wps_reg
+         8   -- Indirect call
+         8   -> printf
+      56   _cli_wifi
+        56   -> __aeabi_memclr4
+        56   -> atoi
+        56   -> connsys_cr_read
+        56   -> connsys_cr_write
+        56   -> inband_queue_exec
+        56   -> os_memcpy
+        56   -> os_strlen
+        56   -> printf
+        56   -> toi
+        56   -> wifi_connection_disconnect_ap
+        56   -> wifi_connection_get_link_status
+        56   -> wifi_connection_start_scan
+        56   -> wifi_connection_stop_scan
+        56   -> wpa_supplicant_entry_debug_level
+     224   _cli_wow
+       224   -> atoi
+       224   -> os_memcpy
+       224   -> os_strcmp
+       224   -> printf
+       224   -> strtol
+       224   -> wifi_inband_wow_enable
+       224   -> wifi_inband_wow_set_arp_offload
+       224   -> wifi_inband_wow_set_bitmap_pattern
+       224   -> wifi_inband_wow_set_magic_packet
+       224   -> wifi_inband_wow_set_rekey_offload
+      24   dump_scan_param
+        24   -> printf
+      16   wifi_config_get_scan_tab_size_ex
+        16   -> printf
+        16   -> wifi_config_get_scan_table_size
+       8   wifi_config_set_airplay
+         8   -> printf
+       0   wifi_config_set_apple_ie
+      16   wifi_config_set_scan_tab_size_ex
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_config_set_scan_table_size
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable152
+       4  ??DataTable153
+       4  ??DataTable153_1
+       4  ??DataTable153_2
+       4  ??DataTable153_3
+       8  ?_0
+       1  ?_1
+      20  ?_10
+       8  ?_100
+      24  ?_101
+      12  ?_102
+      24  ?_103
+      24  ?_104
+      32  ?_105
+      24  ?_106
+      24  ?_107
+       2  ?_108
+      36  ?_109
+       8  ?_11
+      36  ?_110
+      28  ?_111
+      24  ?_112
+      28  ?_113
+      36  ?_114
+     132  ?_115
+      16  ?_116
+      12  ?_117
+      28  ?_118
+      52  ?_119
+      12  ?_12
+      64  ?_120
+      76  ?_121
+      28  ?_122
+       8  ?_123
+       8  ?_124
+       8  ?_125
+       4  ?_126
+       8  ?_127
+      20  ?_128
+      28  ?_129
+       8  ?_13
+      32  ?_130
+      24  ?_131
+      24  ?_132
+      36  ?_133
+      48  ?_134
+      24  ?_135
+      20  ?_136
+      16  ?_137
+      28  ?_138
+      28  ?_139
+       8  ?_14
+      24  ?_140
+      16  ?_141
+      44  ?_142
+      24  ?_143
+      36  ?_144
+       8  ?_15
+       8  ?_16
+       4  ?_17
+      36  ?_18
+       4  ?_19
+      12  ?_2
+      16  ?_20
+       4  ?_21
+      20  ?_22
+       4  ?_23
+       8  ?_24
+      12  ?_25
+      12  ?_26
+      12  ?_27
+      24  ?_28
+       8  ?_29
+       8  ?_3
+      20  ?_30
+       8  ?_31
+      16  ?_32
+       4  ?_33
+       8  ?_34
+       4  ?_35
+      12  ?_36
+      12  ?_37
+      16  ?_38
+      16  ?_39
+       8  ?_4
+       8  ?_40
+      16  ?_41
+      16  ?_42
+      16  ?_43
+       8  ?_44
+      16  ?_45
+       8  ?_46
+      16  ?_47
+      28  ?_48
+       8  ?_49
+       8  ?_5
+      20  ?_50
+      12  ?_51
+      16  ?_52
+       8  ?_53
+      20  ?_54
+       8  ?_55
+      24  ?_56
+       8  ?_57
+      16  ?_58
+      12  ?_59
+      12  ?_6
+      16  ?_60
+      16  ?_61
+      12  ?_62
+      12  ?_63
+       4  ?_64
+      12  ?_65
+      36  ?_66
+      20  ?_67
+      60  ?_68
+       8  ?_69
+      12  ?_7
+       8  ?_70
+      60  ?_71
+      60  ?_72
+      36  ?_73
+      28  ?_74
+      24  ?_75
+      36  ?_76
+      12  ?_77
+      24  ?_78
+      36  ?_79
+      12  ?_8
+      24  ?_80
+      36  ?_81
+      12  ?_82
+      16  ?_83
+      40  ?_84
+      12  ?_85
+      28  ?_86
+      40  ?_87
+      28  ?_88
+      44  ?_89
+      20  ?_9
+      40  ?_90
+      52  ?_91
+      44  ?_92
+      48  ?_93
+      16  ?_94
+      20  ?_95
+      24  ?_96
+      28  ?_97
+       8  ?_98
+       8  ?_99
+       4  _cli_connsys_related
+     522  _cli_scan
+      42  _cli_supp_reload
+      28  _cli_supp_show_ifaces
+      92  _cli_supp_wps_ap_pin
+      28  _cli_supp_wps_auto_connection
+      28  _cli_supp_wps_crdential_handler
+      28  _cli_supp_wps_device_info
+      92  _cli_supp_wps_get_pin
+      64  _cli_supp_wps_pbc
+      78  _cli_supp_wps_pin
+      64  _cli_supp_wps_reg
+     432  _cli_wifi
+     346  _cli_wow
+     242  dump_scan_param
+     384  wifi_config_get_cli
+      56  wifi_config_get_scan_tab_size_ex
+      14  wifi_config_set_airplay
+       4  wifi_config_set_apple_ie
+     464  wifi_config_set_cli
+      56  wifi_config_set_scan_tab_size_ex
+     176  wifi_priv_cli
+
+ 
+ 1 024 bytes in section .data
+   943 bytes in section .rodata
+ 4 400 bytes in section .text
+ 
+ 4 400 bytes of CODE  memory
+   943 bytes of CONST memory
+ 1 024 bytes of DATA  memory
+
+Errors: none
+Warnings: none

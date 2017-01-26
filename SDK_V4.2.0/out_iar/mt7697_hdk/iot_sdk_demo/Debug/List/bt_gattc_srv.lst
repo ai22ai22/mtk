@@ -1,0 +1,422 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:34:47
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\bt_gattc_srv.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\bt_gattc_srv.c"
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\bt_gattc_srv.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\bt_gattc_srv.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\bt_gattc_srv.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "bt_gattc_srv.h"
+     36          #include "bt_gap_le.h"
+     37          
+     38          #include "bt_gattc_connect.h"
+     39          #include <FreeRTOS.h>
+     40          
+     41          /*for all op callback*/
+     42          static gattc_user_context_t *gattc_service_alloc_user(void);
+     43          
+     44          
+     45          
+     46          static void gattc_init_user_context(gattc_user_context_t *user);
+     47          
+     48          gattc_context_t g_gattc_ctx;
+     49          
+     50          
+     51          void  *gattc_register(gattc_register_req_struct *req, app_callback_struct *cb)
+     52          {
+     53              gattc_user_context_t *user;
+     54              uint8_t count, i = 0, size = 0;
+     55          
+     56              count = req->uuid_count;
+     57              BT_LOGI("GATT_SRV", "Gattc_Register: -- start: count = %d", count);
+     58          
+     59              user = gattc_service_alloc_user();
+     60              BT_LOGI("GATT_SRV", "Gattc_Register: --user = %x", user);
+     61              if (user != NULL) {
+     62                  user->appCb = cb; /*need  transfer gattc_callback_struct*/
+     63                  user->uuid_count = count;
+     64                  while (i < count) {
+     65          
+     66          #ifndef WIN32
+     67                      user->uuid =  pvPortMalloc(16);
+     68          #else
+     69                      user->uuid = malloc(16);
+     70          #endif /*alloc momery*/
+     71                      BT_LOGI("GATT_SRV", "Gattc_Register: --  useruuid = %x", user->uuid);
+     72                      if (user->uuid != NULL) {
+     73                          memcpy((user->uuid + size), req->uuid, 16);
+     74                          size += 16;
+     75                      }
+     76                      i++;
+     77                  }
+     78              }
+     79              BT_LOGI("GATT_SRV", "Gattc_Register: -- start: end = %x", user);
+     80              return (void *)user;
+     81          }
+     82          
+     83          
+     84          void gattc_deregister(gattc_user_context_t *user)
+     85          {
+     86              if (user) {
+     87                  if (user->flag) {
+     88                      if (user->uuid) {
+     89          #ifndef WIN32
+     90                          vPortFree(user->uuid);
+     91          #else
+     92                          free(user->uuid);
+     93          #endif
+     94                      }
+     95                      gattc_init_user_context(user);
+     96                  }
+     97              }
+     98          }
+     99          
+    100          
+    101          void gattc_notify_scan_info_to_all_user(bt_gap_le_advertising_report_ind_t *param)
+    102          {
+    103              gattc_user_context_t *user;
+    104              app_callback_struct *cb = NULL;
+    105              BT_LOGI("GATT_SRV", "scan_info_to_all_user: --start");
+    106          
+    107          
+    108              if (g_gattc_ctx.userContext.flag) {/*notify all user*/
+    109                  BT_LOGI("GATT_SRV", "scan_info_to_all_user: user is not null");
+    110                  user = &g_gattc_ctx.userContext;
+    111                  if (user) {
+    112                      cb = (app_callback_struct *)user->appCb;
+    113                  }
+    114                  if (cb && cb->scan_cb) {
+    115                      cb->scan_cb((void *)user, param);
+    116                  }
+    117              }
+    118              BT_LOGI("GATT_SRV", "scan_info_to_all_user: --end");
+    119          }
+    120          
+    121          
+    122          void gattc_notify_conn_info_to_all_user(gattc_conn_t *gattc_conn, bt_status_t error_code, app_bt_connection_cb_t *conn_info, uint16_t type)
+    123          {
+    124              app_callback_struct *cb;
+    125              gattc_user_context_t *user;
+    126              uint16_t  connected = 0;
+    127              gattc_user_connect_struct conn;
+    128          
+    129              conn.conn_id = gattc_conn->conn_id;
+    130              BT_LOGI("GATT_SRV", "gattc_notify_conn_info_to_all_user: --start:con_id = %d", conn.conn_id);
+    131              if (type) {
+    132                  if (error_code == BT_STATUS_SUCCESS) {
+    133                      connected = 1;
+    134                  }
+    135              }
+    136          
+    137              BT_LOGI("GATT_SRV", "gattc_notify_conn_info_to_all_user: --conn = %x, error_code = %d", gattc_conn, error_code);
+    138              if (g_gattc_ctx.userContext.flag) {/*notify all user*/
+    139                  user = &g_gattc_ctx.userContext;
+    140                  if (user) {
+    141                      cb = (app_callback_struct *)user->appCb;
+    142                  }
+    143                  if (cb && cb->connect_cb) {
+    144                      conn.reg_cntx = (void *)user;
+    145                      if (type) {
+    146                          cb->connect_cb(&conn, connected, &conn_info->peer_addr);
+    147                      } else {
+    148                          cb->connect_cb(&conn, connected, NULL);
+    149                      }
+    150                  }
+    151              }
+    152              BT_LOGI("GATT_SRV", "gattc_notify_conn_info_to_all_user: --end");
+    153          }
+    154          
+    155          
+    156          static gattc_user_context_t *gattc_service_alloc_user(void)
+    157          {
+    158              BT_LOGI("GATT_SRV", "[GATTC]gattc_service_alloc_user: -- start:");
+    159              if (!g_gattc_ctx.userContext.flag) {
+    160                  BT_LOGI("GATT_SRV", "[GATTC]gattc_service_alloc_user: -- success:");
+    161                  g_gattc_ctx.userContext.flag = 1;
+    162                  return &g_gattc_ctx.userContext;
+    163          
+    164              } else {
+    165                  BT_LOGI("GATT_SRV", "[GATTC]gattc_service_alloc_user: -- fail:");
+    166                  return NULL;
+    167              }
+    168          
+    169          }
+    170          
+    171          static void gattc_init_user_context(gattc_user_context_t *user)
+    172          {
+    173              user->appCb = NULL;
+    174              user->uuid = NULL;
+    175              user->uuid_count = 0;
+    176              user->flag = 0;
+    177          }
+    178          
+    179          void gattc_decode_char_data(gattc_value_t *value, hr_data_t *data)
+    180          {
+    181              uint8_t flag;
+    182              uint8_t start_index;
+    183              app_uuid_t uuid, uuid1, uuid2;
+    184          
+    185              flag = value->value[0];
+    186          
+    187              uuid.len = 2;
+    188              uuid.uuid[0] = value->value[1];
+    189              if (value->len < 2) {/*the min len is 2*/
+    190                  return;
+    191              }
+    192              if (flag << (8 - 1) & 1) { /*value is uint16*/
+    193          
+    194                  uuid.uuid[1] = value->value[2];
+    195                  start_index = 3;
+    196              } else { /*value is uint8*/
+    197                  uuid.uuid[1] = 0;
+    198                  start_index = 2;
+    199          
+    200              }
+    201              data->val = gattc_convert_array_to_uuid16(&uuid);/*hr value*/
+    202              uuid1.len = 2;
+    203              if ((flag >> 3) & 1) {/*check energy_expend*/
+    204                  if (value->len >= 5) {
+    205                      uuid1.uuid[0] = value->value[start_index];
+    206                      uuid1.uuid[1] = value->value[start_index + 1];
+    207                      data->en_expend = gattc_convert_array_to_uuid16(&uuid1);
+    208                  } else {
+    209                      /*there has some error*/
+    210                      data->en_expend = 0;
+    211                  }
+    212              }
+    213              start_index = start_index + 1;
+    214              uuid2.len = 2;
+    215              if ((flag >> 4) & 1) {/*check RR_interval*/
+    216                  if (value->len >= 7) {
+    217                      uuid2.uuid[0] = value->value[start_index];
+    218                      uuid2.uuid[1] = value->value[start_index + 1];
+    219                      data->RR_inteval = gattc_convert_array_to_uuid16(&uuid2);
+    220                  } else {
+    221                      /*there has some error*/
+    222                      data->RR_inteval = 0;
+    223                  }
+    224              }
+    225          }
+    226          
+    227          uint16_t gattc_convert_array_to_uuid16(app_uuid_t *uu)
+    228          {
+    229              uint16_t uuid = 0;
+    230              if (uu) {
+    231                  if (uu->len == 2) {
+    232                      uuid = ((uint16_t)uu->uuid[1]) << 8 | uu->uuid[0];
+    233          
+    234                  } else if (uu->len == 16) {
+    235                      uuid = ((uint16_t)uu->uuid[13]) << 8 | uu->uuid[12];
+    236                  }
+    237              }
+    238              return uuid;
+    239          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   gattc_convert_array_to_uuid16
+      80   gattc_decode_char_data
+        80   -> gattc_convert_array_to_uuid16
+       8   gattc_deregister
+         0   -> gattc_init_user_context
+         8   -> vPortFree
+       0   gattc_init_user_context
+      32   gattc_notify_conn_info_to_all_user
+        32   -- Indirect call
+        32   -> bt_debug_log
+      16   gattc_notify_scan_info_to_all_user
+        16   -- Indirect call
+         0   -> bt_debug_log
+        16   -> bt_debug_log
+      32   gattc_register
+        32   -> __aeabi_memcpy
+        32   -> bt_debug_log
+        32   -> gattc_service_alloc_user
+        32   -> pvPortMalloc
+       8   gattc_service_alloc_user
+         8   -> bt_debug_log
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+      52  ?_0
+      44  ?_1
+      60  ?_10
+      60  ?_11
+      60  ?_12
+      52  ?_2
+      52  ?_3
+      48  ?_4
+      56  ?_5
+      44  ?_6
+      72  ?_7
+      80  ?_8
+      60  ?_9
+     448  g_gattc_ctx
+      38  gattc_convert_array_to_uuid16
+     134  gattc_decode_char_data
+      32  gattc_deregister
+      12  gattc_init_user_context
+     110  gattc_notify_conn_info_to_all_user
+      58  gattc_notify_scan_info_to_all_user
+     126  gattc_register
+      46  gattc_service_alloc_user
+
+ 
+   448 bytes in section .bss
+ 1 300 bytes in section .text
+ 
+ 1 300 bytes of CODE memory
+   448 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,429 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:20
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\lwip\src\api\netbuf.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\lwip\src\api\netbuf.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\netbuf.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\netbuf.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\third_party\lwip\src\api\netbuf.c
+      1          /**
+      2           * @file
+      3           * Network buffer management
+      4           *
+      5           */
+      6           
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved. 
+     10           * 
+     11           * Redistribution and use in source and binary forms, with or without modification, 
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission. 
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           * 
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #if LWIP_NETCONN /* don't build if not configured for use in lwipopts.h */
+     42          
+     43          #include "lwip/netbuf.h"
+     44          #include "lwip/memp.h"
+     45          
+     46          #include <string.h>
+     47          
+     48          /**
+     49           * Create (allocate) and initialize a new netbuf.
+     50           * The netbuf doesn't yet contain a packet buffer!
+     51           *
+     52           * @return a pointer to a new netbuf
+     53           *         NULL on lack of memory
+     54           */
+     55          struct
+     56          netbuf *netbuf_new(void)
+     57          {
+     58            struct netbuf *buf;
+     59          
+     60            buf = (struct netbuf *)memp_malloc(MEMP_NETBUF);
+     61            if (buf != NULL) {
+     62              buf->p = NULL;
+     63              buf->ptr = NULL;
+     64              ip_addr_set_zero(&buf->addr);
+     65              buf->port = 0;
+     66          #if LWIP_NETBUF_RECVINFO || LWIP_CHECKSUM_ON_COPY
+     67          #if LWIP_CHECKSUM_ON_COPY
+     68              buf->flags = 0;
+     69          #endif /* LWIP_CHECKSUM_ON_COPY */
+     70              buf->toport_chksum = 0;
+     71          #if LWIP_NETBUF_RECVINFO
+     72              ip_addr_set_zero(&buf->toaddr);
+     73          #endif /* LWIP_NETBUF_RECVINFO */
+     74          #endif /* LWIP_NETBUF_RECVINFO || LWIP_CHECKSUM_ON_COPY */
+     75              return buf;
+     76            } else {
+     77              return NULL;
+     78            }
+     79          }
+     80          
+     81          /**
+     82           * Deallocate a netbuf allocated by netbuf_new().
+     83           *
+     84           * @param buf pointer to a netbuf allocated by netbuf_new()
+     85           */
+     86          void
+     87          netbuf_delete(struct netbuf *buf)
+     88          {
+     89            if (buf != NULL) {
+     90              if (buf->p != NULL) {
+     91                pbuf_free(buf->p);
+     92                buf->p = buf->ptr = NULL;
+     93              }
+     94              memp_free(MEMP_NETBUF, buf);
+     95            }
+     96          }
+     97          
+     98          /**
+     99           * Allocate memory for a packet buffer for a given netbuf.
+    100           *
+    101           * @param buf the netbuf for which to allocate a packet buffer
+    102           * @param size the size of the packet buffer to allocate
+    103           * @return pointer to the allocated memory
+    104           *         NULL if no memory could be allocated
+    105           */
+    106          void *
+    107          netbuf_alloc(struct netbuf *buf, u16_t size)
+    108          {
+    109            LWIP_ERROR("netbuf_alloc: invalid buf", (buf != NULL), return NULL;);
+    110          
+    111            /* Deallocate any previously allocated memory. */
+    112            if (buf->p != NULL) {
+    113              pbuf_free(buf->p);
+    114            }
+    115            buf->p = pbuf_alloc(PBUF_TRANSPORT, size, PBUF_RAM);
+    116            if (buf->p == NULL) {
+    117               return NULL;
+    118            }
+    119            LWIP_ASSERT("check that first pbuf can hold size",
+    120                       (buf->p->len >= size));
+    121            buf->ptr = buf->p;
+    122            return buf->p->payload;
+    123          }
+    124          
+    125          /**
+    126           * Free the packet buffer included in a netbuf
+    127           *
+    128           * @param buf pointer to the netbuf which contains the packet buffer to free
+    129           */
+    130          void
+    131          netbuf_free(struct netbuf *buf)
+    132          {
+    133            LWIP_ERROR("netbuf_free: invalid buf", (buf != NULL), return;);
+    134            if (buf->p != NULL) {
+    135              pbuf_free(buf->p);
+    136            }
+    137            buf->p = buf->ptr = NULL;
+    138          }
+    139          
+    140          /**
+    141           * Let a netbuf reference existing (non-volatile) data.
+    142           *
+    143           * @param buf netbuf which should reference the data
+    144           * @param dataptr pointer to the data to reference
+    145           * @param size size of the data
+    146           * @return ERR_OK if data is referenced
+    147           *         ERR_MEM if data couldn't be referenced due to lack of memory
+    148           */
+    149          err_t
+    150          netbuf_ref(struct netbuf *buf, const void *dataptr, u16_t size)
+    151          {
+    152            LWIP_ERROR("netbuf_ref: invalid buf", (buf != NULL), return ERR_ARG;);
+    153            if (buf->p != NULL) {
+    154              pbuf_free(buf->p);
+    155            }
+    156            buf->p = pbuf_alloc(PBUF_TRANSPORT, 0, PBUF_REF);
+    157            if (buf->p == NULL) {
+    158              buf->ptr = NULL;
+    159              return ERR_MEM;
+    160            }
+    161            ((struct pbuf_rom*)buf->p)->payload = dataptr;
+    162            buf->p->len = buf->p->tot_len = size;
+    163            buf->ptr = buf->p;
+    164            return ERR_OK;
+    165          }
+    166          
+    167          /**
+    168           * Chain one netbuf to another (@see pbuf_chain)
+    169           *
+    170           * @param head the first netbuf
+    171           * @param tail netbuf to chain after head, freed by this function, may not be reference after returning
+    172           */
+    173          void
+    174          netbuf_chain(struct netbuf *head, struct netbuf *tail)
+    175          {
+    176            LWIP_ERROR("netbuf_ref: invalid head", (head != NULL), return;);
+    177            LWIP_ERROR("netbuf_chain: invalid tail", (tail != NULL), return;);
+    178            pbuf_cat(head->p, tail->p);
+    179            head->ptr = head->p;
+    180            memp_free(MEMP_NETBUF, tail);
+    181          }
+    182          
+    183          /**
+    184           * Get the data pointer and length of the data inside a netbuf.
+    185           *
+    186           * @param buf netbuf to get the data from
+    187           * @param dataptr pointer to a void pointer where to store the data pointer
+    188           * @param len pointer to an u16_t where the length of the data is stored
+    189           * @return ERR_OK if the information was retrieved,
+    190           *         ERR_BUF on error.
+    191           */
+    192          err_t
+    193          netbuf_data(struct netbuf *buf, void **dataptr, u16_t *len)
+    194          {
+    195            LWIP_ERROR("netbuf_data: invalid buf", (buf != NULL), return ERR_ARG;);
+    196            LWIP_ERROR("netbuf_data: invalid dataptr", (dataptr != NULL), return ERR_ARG;);
+    197            LWIP_ERROR("netbuf_data: invalid len", (len != NULL), return ERR_ARG;);
+    198          
+    199            if (buf->ptr == NULL) {
+    200              return ERR_BUF;
+    201            }
+    202            *dataptr = buf->ptr->payload;
+    203            *len = buf->ptr->len;
+    204            return ERR_OK;
+    205          }
+    206          
+    207          /**
+    208           * Move the current data pointer of a packet buffer contained in a netbuf
+    209           * to the next part.
+    210           * The packet buffer itself is not modified.
+    211           *
+    212           * @param buf the netbuf to modify
+    213           * @return -1 if there is no next part
+    214           *         1  if moved to the next part but now there is no next part
+    215           *         0  if moved to the next part and there are still more parts
+    216           */
+    217          s8_t
+    218          netbuf_next(struct netbuf *buf)
+    219          {
+    220            LWIP_ERROR("netbuf_free: invalid buf", (buf != NULL), return -1;);
+    221            if (buf->ptr->next == NULL) {
+    222              return -1;
+    223            }
+    224            buf->ptr = buf->ptr->next;
+    225            if (buf->ptr->next == NULL) {
+    226              return 1;
+    227            }
+    228            return 0;
+    229          }
+    230          
+    231          /**
+    232           * Move the current data pointer of a packet buffer contained in a netbuf
+    233           * to the beginning of the packet.
+    234           * The packet buffer itself is not modified.
+    235           *
+    236           * @param buf the netbuf to modify
+    237           */
+    238          void
+    239          netbuf_first(struct netbuf *buf)
+    240          {
+    241            LWIP_ERROR("netbuf_free: invalid buf", (buf != NULL), return;);
+    242            buf->ptr = buf->p;
+    243          }
+    244          
+    245          #endif /* LWIP_NETCONN */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   netbuf_alloc
+        16   -> pbuf_alloc
+        16   -> pbuf_free
+        16   -> printf
+      16   netbuf_chain
+         0   -> mem_free
+        16   -> pbuf_cat
+         0   -> printf
+       8   netbuf_data
+         8   -> printf
+       8   netbuf_delete
+         0   -> mem_free
+         8   -> pbuf_free
+       0   netbuf_first
+         0   -> printf
+       8   netbuf_free
+         8   -> pbuf_free
+         0   -> printf
+       8   netbuf_new
+         8   -> mem_malloc
+       8   netbuf_next
+         8   -> printf
+      16   netbuf_ref
+        16   -> pbuf_alloc
+        16   -> pbuf_free
+        16   -> printf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+      40  ?_0
+      28  ?_1
+      28  ?_10
+      80  ?_2
+      36  ?_3
+      28  ?_4
+      24  ?_5
+      28  ?_6
+      28  ?_7
+      28  ?_8
+      32  ?_9
+      96  netbuf_alloc
+      84  netbuf_chain
+     112  netbuf_data
+      34  netbuf_delete
+      28  netbuf_first
+      46  netbuf_free
+      30  netbuf_new
+      60  netbuf_next
+      92  netbuf_ref
+
+ 
+ 966 bytes in section .text
+ 
+ 966 bytes of CODE memory
+
+Errors: none
+Warnings: 2

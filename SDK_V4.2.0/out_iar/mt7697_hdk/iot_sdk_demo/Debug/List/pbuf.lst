@@ -1,0 +1,1663 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:23
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\lwip\ports\pbuf.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\lwip\ports\pbuf.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\pbuf.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\pbuf.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\third_party\lwip\ports\pbuf.c
+      1          /**
+      2           * @file
+      3           * Packet buffer management
+      4           *
+      5           * Packets are built from the pbuf data structure. It supports dynamic
+      6           * memory allocation for packet contents or can reference externally
+      7           * managed packet contents both in RAM and ROM. Quick allocation for
+      8           * incoming packets is provided through pools with fixed sized pbufs.
+      9           *
+     10           * A packet may span over multiple pbufs, chained as a singly linked
+     11           * list. This is called a "pbuf chain".
+     12           *
+     13           * Multiple packets may be queued, also using this singly linked list.
+     14           * This is called a "packet queue".
+     15           * 
+     16           * So, a packet queue consists of one or more pbuf chains, each of
+     17           * which consist of one or more pbufs. CURRENTLY, PACKET QUEUES ARE
+     18           * NOT SUPPORTED!!! Use helper structs to queue multiple packets.
+     19           * 
+     20           * The differences between a pbuf chain and a packet queue are very
+     21           * precise but subtle. 
+     22           *
+     23           * The last pbuf of a packet has a ->tot_len field that equals the
+     24           * ->len field. It can be found by traversing the list. If the last
+     25           * pbuf of a packet has a ->next field other than NULL, more packets
+     26           * are on the queue.
+     27           *
+     28           * Therefore, looping through a pbuf of a single packet, has an
+     29           * loop end condition (tot_len == p->len), NOT (next == NULL).
+     30           */
+     31          
+     32          /*
+     33           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+     34           * All rights reserved.
+     35           *
+     36           * Redistribution and use in source and binary forms, with or without modification,
+     37           * are permitted provided that the following conditions are met:
+     38           *
+     39           * 1. Redistributions of source code must retain the above copyright notice,
+     40           *    this list of conditions and the following disclaimer.
+     41           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     42           *    this list of conditions and the following disclaimer in the documentation
+     43           *    and/or other materials provided with the distribution.
+     44           * 3. The name of the author may not be used to endorse or promote products
+     45           *    derived from this software without specific prior written permission.
+     46           *
+     47           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     48           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     49           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     50           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     51           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     52           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     53           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     54           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     55           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     56           * OF SUCH DAMAGE.
+     57           *
+     58           * This file is part of the lwIP TCP/IP stack.
+     59           *
+     60           * Author: Adam Dunkels <adam@sics.se>
+     61           *
+     62           */
+     63          
+     64          #include "lwip/opt.h"
+     65          
+     66          #include "lwip/stats.h"
+     67          #include "lwip/def.h"
+     68          #include "lwip/mem.h"
+     69          #include "lwip/memp.h"
+     70          #include "lwip/pbuf.h"
+     71          #include "lwip/sys.h"
+     72          #if LWIP_TCP && TCP_QUEUE_OOSEQ
+     73          #include "lwip/tcp_impl.h"
+     74          #endif
+     75          #if LWIP_CHECKSUM_ON_COPY
+     76          #include "lwip/inet_chksum.h"
+     77          #endif
+     78          
+     79          #include <string.h>
+     80          
+     81          #define SIZEOF_STRUCT_PBUF        LWIP_MEM_ALIGN_SIZE(sizeof(struct pbuf))
+     82          /* Since the pool is created in memp, PBUF_POOL_BUFSIZE will be automatically
+     83             aligned there. Therefore, PBUF_POOL_BUFSIZE_ALIGNED can be used here. */
+     84          #define PBUF_POOL_BUFSIZE_ALIGNED LWIP_MEM_ALIGN_SIZE(PBUF_POOL_BUFSIZE)
+     85          
+     86          #if !LWIP_TCP || !TCP_QUEUE_OOSEQ || !PBUF_POOL_FREE_OOSEQ
+     87          #define PBUF_POOL_IS_EMPTY()
+     88          #else /* !LWIP_TCP || !TCP_QUEUE_OOSEQ || !PBUF_POOL_FREE_OOSEQ */
+     89          
+     90          #if !NO_SYS
+     91          #ifndef PBUF_POOL_FREE_OOSEQ_QUEUE_CALL
+     92          #include "lwip/tcpip.h"
+     93          #define PBUF_POOL_FREE_OOSEQ_QUEUE_CALL()  do { \
+     94            if(tcpip_callback_with_block(pbuf_free_ooseq_callback, NULL, 0) != ERR_OK) { \
+     95                SYS_ARCH_PROTECT(old_level); \
+     96                pbuf_free_ooseq_pending = 0; \
+     97                SYS_ARCH_UNPROTECT(old_level); \
+     98            } } while(0)
+     99          #endif /* PBUF_POOL_FREE_OOSEQ_QUEUE_CALL */
+    100          #endif /* !NO_SYS */
+    101          
+    102          unsigned int __pbufAllocCount = 0;
+    103          unsigned int __pbufFreeCount = 0;
+    104          
+    105          volatile u8_t pbuf_free_ooseq_pending;
+    106          #define PBUF_POOL_IS_EMPTY() pbuf_pool_is_empty()
+    107          
+    108          /**
+    109           * Attempt to reclaim some memory from queued out-of-sequence TCP segments
+    110           * if we run out of pool pbufs. It's better to give priority to new packets
+    111           * if we're running out.
+    112           *
+    113           * This must be done in the correct thread context therefore this function
+    114           * can only be used with NO_SYS=0 and through tcpip_callback.
+    115           */
+    116          #if !NO_SYS
+    117          static
+    118          #endif /* !NO_SYS */
+    119          void
+    120          pbuf_free_ooseq(void)
+    121          {
+    122            struct tcp_pcb* pcb;
+    123            SYS_ARCH_DECL_PROTECT(old_level);
+    124          
+    125            SYS_ARCH_PROTECT(old_level);
+    126            pbuf_free_ooseq_pending = 0;
+    127            SYS_ARCH_UNPROTECT(old_level);
+    128          
+    129            for (pcb = tcp_active_pcbs; NULL != pcb; pcb = pcb->next) {
+    130              if (NULL != pcb->ooseq) {
+    131                /** Free the ooseq pbufs of one PCB only */
+    132                LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_free_ooseq: freeing out-of-sequence pbufs\n"));
+    133                tcp_segs_free(pcb->ooseq);
+    134                pcb->ooseq = NULL;
+    135                return;
+    136              }
+    137            }
+    138          }
+    139          
+    140          #if !NO_SYS
+    141          /**
+    142           * Just a callback function for tcpip_callback() that calls pbuf_free_ooseq().
+    143           */
+    144          static void
+    145          pbuf_free_ooseq_callback(void *arg)
+    146          {
+    147            LWIP_UNUSED_ARG(arg);
+    148            pbuf_free_ooseq();
+    149          }
+    150          #endif /* !NO_SYS */
+    151          
+    152          /** Queue a call to pbuf_free_ooseq if not already queued. */
+    153          static void
+    154          pbuf_pool_is_empty(void)
+    155          {
+    156          #ifndef PBUF_POOL_FREE_OOSEQ_QUEUE_CALL
+    157            SYS_ARCH_DECL_PROTECT(old_level);
+    158            SYS_ARCH_PROTECT(old_level);
+    159            pbuf_free_ooseq_pending = 1;
+    160            SYS_ARCH_UNPROTECT(old_level);
+    161          #else /* PBUF_POOL_FREE_OOSEQ_QUEUE_CALL */
+    162            u8_t queued;
+    163            SYS_ARCH_DECL_PROTECT(old_level);
+    164            SYS_ARCH_PROTECT(old_level);
+    165            queued = pbuf_free_ooseq_pending;
+    166            pbuf_free_ooseq_pending = 1;
+    167            SYS_ARCH_UNPROTECT(old_level);
+    168          
+    169            if(!queued) {
+    170              /* queue a call to pbuf_free_ooseq if not already queued */
+    171              PBUF_POOL_FREE_OOSEQ_QUEUE_CALL();
+    172            }
+    173          #endif /* PBUF_POOL_FREE_OOSEQ_QUEUE_CALL */
+    174          }
+    175          #endif /* !LWIP_TCP || !TCP_QUEUE_OOSEQ || !PBUF_POOL_FREE_OOSEQ */
+    176          
+    177          /**
+    178           * Allocates a pbuf of the given type (possibly a chain for PBUF_POOL type).
+    179           *
+    180           * The actual memory allocated for the pbuf is determined by the
+    181           * layer at which the pbuf is allocated and the requested size
+    182           * (from the size parameter).
+    183           *
+    184           * @param layer flag to define header size
+    185           * @param length size of the pbuf's payload
+    186           * @param type this parameter decides how and where the pbuf
+    187           * should be allocated as follows:
+    188           *
+    189           * - PBUF_RAM: buffer memory for pbuf is allocated as one large
+    190           *             chunk. This includes protocol headers as well.
+    191           * - PBUF_ROM: no buffer memory is allocated for the pbuf, even for
+    192           *             protocol headers. Additional headers must be prepended
+    193           *             by allocating another pbuf and chain in to the front of
+    194           *             the ROM pbuf. It is assumed that the memory used is really
+    195           *             similar to ROM in that it is immutable and will not be
+    196           *             changed. Memory which is dynamic should generally not
+    197           *             be attached to PBUF_ROM pbufs. Use PBUF_REF instead.
+    198           * - PBUF_REF: no buffer memory is allocated for the pbuf, even for
+    199           *             protocol headers. It is assumed that the pbuf is only
+    200           *             being used in a single thread. If the pbuf gets queued,
+    201           *             then pbuf_take should be called to copy the buffer.
+    202           * - PBUF_POOL: the pbuf is allocated as a pbuf chain, with pbufs from
+    203           *              the pbuf pool that is allocated during pbuf_init().
+    204           *
+    205           * @return the allocated pbuf. If multiple pbufs where allocated, this
+    206           * is the first pbuf of a pbuf chain.
+    207           */
+    208          struct pbuf *
+    209          pbuf_alloc(pbuf_layer layer, u16_t length, pbuf_type type)
+    210          {
+    211            struct pbuf *p, *q, *r;
+    212            u16_t offset;
+    213            s32_t rem_len; /* remaining length */
+    214            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_alloc(length=%"U16_F")\n", length));
+    215          
+    216            /* determine header offset */
+    217            switch (layer) {
+    218            case PBUF_TRANSPORT:
+    219              /* add room for transport (often TCP) layer header */
+    220              offset = PBUF_LINK_ENCAPSULATION_HLEN + PBUF_LINK_HLEN + PBUF_IP_HLEN + PBUF_TRANSPORT_HLEN;
+    221              break;
+    222            case PBUF_IP:
+    223              /* add room for IP layer header */
+    224              offset = PBUF_LINK_ENCAPSULATION_HLEN + PBUF_LINK_HLEN + PBUF_IP_HLEN;
+    225              break;
+    226            case PBUF_LINK:
+    227              /* add room for link layer header */
+    228              offset = PBUF_LINK_ENCAPSULATION_HLEN + PBUF_LINK_HLEN;
+    229              break;
+    230            case PBUF_RAW_TX:
+    231              /* add room for encapsulating link layer headers (e.g. 802.11) */
+    232              offset = PBUF_LINK_ENCAPSULATION_HLEN;
+    233              break;
+    234            case PBUF_RAW:
+    235              /* no offset (e.g. RX buffers or chain successors) */
+    236              offset = 0;
+    237              break;
+    238            default:
+    239              LWIP_ASSERT("pbuf_alloc: bad pbuf layer", 0);
+    240              return NULL;
+    241            }
+    242          
+    243            switch (type) {
+    244            case PBUF_POOL:
+    245              /* allocate head of pbuf chain into p */
+    246              p = (struct pbuf *)memp_malloc(MEMP_PBUF_POOL);
+    247              LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_alloc: allocated pbuf %p\n", (void *)p));
+    248              if (p == NULL) {
+    249                PBUF_POOL_IS_EMPTY();
+    250                return NULL;
+    251              }
+    252              p->type = type;
+    253              p->next = NULL;
+    254          #ifdef MTK_HIF_GDMA_ENABLE
+    255              /* make the payload pointer point 'offset' bytes into pbuf data memory */
+    256          	if (layer == PBUF_RAW_TX) /* don't 4-byte align */
+    257          	    p->payload = (void *)((u8_t *)p + (SIZEOF_STRUCT_PBUF + offset));
+    258          	else
+    259          #endif        
+    260          	    p->payload = LWIP_MEM_ALIGN((void *)((u8_t *)p + (SIZEOF_STRUCT_PBUF + offset)));
+    261          
+    262          #ifndef MTK_HIF_GDMA_ENABLE        
+    263              LWIP_ASSERT("pbuf_alloc: pbuf p->payload properly aligned",
+    264                      ((mem_ptr_t)p->payload % MEM_ALIGNMENT) == 0);
+    265          #endif /* !MTK_HIF_GDMA_ENABLE */
+    266          	
+    267              /* the total length of the pbuf chain is the requested size */
+    268              p->tot_len = length;
+    269              /* set the length of the first pbuf in the chain */
+    270          
+    271              p->len = LWIP_MIN(length, PBUF_POOL_BUFSIZE_ALIGNED - LWIP_MEM_ALIGN_SIZE(offset));
+    272          		
+    273          	//printf("[POOL]p->len=%d\n", p->len);
+    274          	
+    275              LWIP_ASSERT("check p->payload + p->len does not overflow pbuf",
+    276                          ((u8_t*)p->payload + p->len <=
+    277                           (u8_t*)p + SIZEOF_STRUCT_PBUF + PBUF_POOL_BUFSIZE_ALIGNED));
+    278              LWIP_ASSERT("PBUF_POOL_BUFSIZE must be bigger than MEM_ALIGNMENT",
+    279                (PBUF_POOL_BUFSIZE_ALIGNED - LWIP_MEM_ALIGN_SIZE(offset)) > 0 );
+    280              /* set reference count (needed here in case we fail) */
+    281              p->ref = 1;
+    282          
+    283              /* now allocate the tail of the pbuf chain */
+    284          
+    285              /* remember first pbuf for linkage in next iteration */
+    286              r = p;
+    287              /* remaining length to be allocated */
+    288              rem_len = length - p->len;
+    289              /* any remaining pbufs to be allocated? */
+    290              while (rem_len > 0) {
+    291                q = (struct pbuf *)memp_malloc(MEMP_PBUF_POOL);
+    292                if (q == NULL) {
+    293                  PBUF_POOL_IS_EMPTY();
+    294                  /* free chain so far allocated */
+    295                  pbuf_free(p);
+    296                  /* bail out unsuccessfully */
+    297                  return NULL;
+    298                }
+    299                q->type = type;
+    300                q->flags = 0;
+    301                q->next = NULL;
+    302                /* make previous pbuf point to this pbuf */
+    303                r->next = q;
+    304                /* set total length of this pbuf and next in chain */
+    305                LWIP_ASSERT("rem_len < max_u16_t", rem_len < 0xffff);
+    306                q->tot_len = (u16_t)rem_len;
+    307                /* this pbuf length is pool size, unless smaller sized tail */
+    308                q->len = LWIP_MIN((u16_t)rem_len, PBUF_POOL_BUFSIZE_ALIGNED);
+    309                q->payload = (void *)((u8_t *)q + SIZEOF_STRUCT_PBUF);
+    310                LWIP_ASSERT("pbuf_alloc: pbuf q->payload properly aligned",
+    311                        ((mem_ptr_t)q->payload % MEM_ALIGNMENT) == 0);
+    312                LWIP_ASSERT("check p->payload + p->len does not overflow pbuf",
+    313                            ((u8_t*)p->payload + p->len <=
+    314                             (u8_t*)p + SIZEOF_STRUCT_PBUF + PBUF_POOL_BUFSIZE_ALIGNED));
+    315                q->ref = 1;
+    316                /* calculate remaining length to be allocated */
+    317                rem_len -= q->len;
+    318                /* remember this pbuf for linkage in next iteration */
+    319                r = q;
+    320              }
+    321              /* end of chain */
+    322              /*r->next = NULL;*/
+    323          
+    324              break;
+    325            case PBUF_RAM:
+    326              /* If pbuf is to be allocated in RAM, allocate memory for it. */
+    327              p = (struct pbuf*)mem_malloc(LWIP_MEM_ALIGN_SIZE(SIZEOF_STRUCT_PBUF + offset) + LWIP_MEM_ALIGN_SIZE(length));
+    328              if (p == NULL) {
+    329                return NULL;
+    330              }
+    331              /* Set up internal structure of the pbuf. */
+    332          #ifdef MTK_HIF_GDMA_ENABLE
+    333          	if (layer == PBUF_RAW_TX)
+    334          	    p->payload = (void *)((u8_t *)p + SIZEOF_STRUCT_PBUF + offset);
+    335          	else
+    336          #endif        
+    337          	    p->payload = LWIP_MEM_ALIGN((void *)((u8_t *)p + SIZEOF_STRUCT_PBUF + offset));
+    338          		
+    339              p->len = p->tot_len = length;
+    340          
+    341          	//printf("[RAM]p->len=%d\n", p->len);
+    342          
+    343          	
+    344              p->next = NULL;
+    345              p->type = type;
+    346          #ifndef MTK_HIF_GDMA_ENABLE
+    347              LWIP_ASSERT("pbuf_alloc: pbuf->payload properly aligned",
+    348                     ((mem_ptr_t)p->payload % MEM_ALIGNMENT) == 0);
+    349          #endif    
+    350              break;
+    351            /* pbuf references existing (non-volatile static constant) ROM payload? */
+    352            case PBUF_ROM:
+    353            /* pbuf references existing (externally allocated) RAM payload? */
+    354            case PBUF_REF:
+    355              /* only allocate memory for the pbuf structure */
+    356              p = (struct pbuf *)memp_malloc(MEMP_PBUF);
+    357              if (p == NULL) {
+    358                LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+    359                            ("pbuf_alloc: Could not allocate MEMP_PBUF for PBUF_%s.\n",
+    360                            (type == PBUF_ROM) ? "ROM" : "REF"));
+    361                return NULL;
+    362              }
+    363              /* caller must set this field properly, afterwards */
+    364              p->payload = NULL;
+    365              p->len = p->tot_len = length;
+    366              p->next = NULL;
+    367              p->type = type;
+    368              break;
+    369            default:
+    370              LWIP_ASSERT("pbuf_alloc: erroneous type", 0);
+    371              return NULL;
+    372            }
+    373            /* set reference count */
+    374            p->ref = 1;
+    375            /* set flags */
+    376            p->flags = 0;
+    377            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_alloc(length=%"U16_F") == %p\n", length, (void *)p));
+    378            __pbufAllocCount++;
+    379            return p;
+    380          }
+    381          
+    382          #if LWIP_SUPPORT_CUSTOM_PBUF
+    383          /** Initialize a custom pbuf (already allocated).
+    384           *
+    385           * @param layer flag to define header size
+    386           * @param length size of the pbuf's payload
+    387           * @param type type of the pbuf (only used to treat the pbuf accordingly, as
+    388           *        this function allocates no memory)
+    389           * @param p pointer to the custom pbuf to initialize (already allocated)
+    390           * @param payload_mem pointer to the buffer that is used for payload and headers,
+    391           *        must be at least big enough to hold 'length' plus the header size,
+    392           *        may be NULL if set later.
+    393           *        ATTENTION: The caller is responsible for correct alignment of this buffer!!
+    394           * @param payload_mem_len the size of the 'payload_mem' buffer, must be at least
+    395           *        big enough to hold 'length' plus the header size
+    396           */
+    397          struct pbuf*
+    398          pbuf_alloced_custom(pbuf_layer l, u16_t length, pbuf_type type, struct pbuf_custom *p,
+    399                              void *payload_mem, u16_t payload_mem_len)
+    400          {
+    401            u16_t offset;
+    402            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_alloced_custom(length=%"U16_F")\n", length));
+    403          
+    404            /* determine header offset */
+    405            switch (l) {
+    406            case PBUF_TRANSPORT:
+    407              /* add room for transport (often TCP) layer header */
+    408              offset = PBUF_LINK_ENCAPSULATION_HLEN + PBUF_LINK_HLEN + PBUF_IP_HLEN + PBUF_TRANSPORT_HLEN;
+    409              break;
+    410            case PBUF_IP:
+    411              /* add room for IP layer header */
+    412              offset = PBUF_LINK_ENCAPSULATION_HLEN + PBUF_LINK_HLEN + PBUF_IP_HLEN;
+    413              break;
+    414            case PBUF_LINK:
+    415              /* add room for link layer header */
+    416              offset = PBUF_LINK_ENCAPSULATION_HLEN + PBUF_LINK_HLEN;
+    417              break;
+    418            case PBUF_RAW_TX:
+    419              /* add room for encapsulating link layer headers (e.g. 802.11) */
+    420              offset = PBUF_LINK_ENCAPSULATION_HLEN;
+    421              break;
+    422            case PBUF_RAW:
+    423              offset = 0;
+    424              break;
+    425            default:
+    426              LWIP_ASSERT("pbuf_alloced_custom: bad pbuf layer", 0);
+    427              return NULL;
+    428            }
+    429          
+    430            if (LWIP_MEM_ALIGN_SIZE(offset) + length > payload_mem_len) {
+    431              LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_LEVEL_WARNING, ("pbuf_alloced_custom(length=%"U16_F") buffer too short\n", length));
+    432              return NULL;
+    433            }
+    434          
+    435            p->pbuf.next = NULL;
+    436            if (payload_mem != NULL) {
+    437              p->pbuf.payload = (u8_t *)payload_mem + LWIP_MEM_ALIGN_SIZE(offset);
+    438            } else {
+    439              p->pbuf.payload = NULL;
+    440            }
+    441            p->pbuf.flags = PBUF_FLAG_IS_CUSTOM;
+    442            p->pbuf.len = p->pbuf.tot_len = length;
+    443            p->pbuf.type = type;
+    444            p->pbuf.ref = 1;
+    445          
+    446            __pbufAllocCount++;
+    447          
+    448            return &p->pbuf;
+    449          }
+    450          #endif /* LWIP_SUPPORT_CUSTOM_PBUF */
+    451          
+    452          /**
+    453           * Shrink a pbuf chain to a desired length.
+    454           *
+    455           * @param p pbuf to shrink.
+    456           * @param new_len desired new length of pbuf chain
+    457           *
+    458           * Depending on the desired length, the first few pbufs in a chain might
+    459           * be skipped and left unchanged. The new last pbuf in the chain will be
+    460           * resized, and any remaining pbufs will be freed.
+    461           *
+    462           * @note If the pbuf is ROM/REF, only the ->tot_len and ->len fields are adjusted.
+    463           * @note May not be called on a packet queue.
+    464           *
+    465           * @note Despite its name, pbuf_realloc cannot grow the size of a pbuf (chain).
+    466           */
+    467          void
+    468          pbuf_realloc(struct pbuf *p, u16_t new_len)
+    469          {
+    470            struct pbuf *q;
+    471            u16_t rem_len; /* remaining length */
+    472            s32_t grow;
+    473          
+    474            LWIP_ASSERT("pbuf_realloc: p != NULL", p != NULL);
+    475            LWIP_ASSERT("pbuf_realloc: sane p->type", p->type == PBUF_POOL ||
+    476                        p->type == PBUF_ROM ||
+    477                        p->type == PBUF_RAM ||
+    478                        p->type == PBUF_REF);
+    479          
+    480            /* desired length larger than current length? */
+    481            if (new_len >= p->tot_len) {
+    482              /* enlarging not yet supported */
+    483              return;
+    484            }
+    485          
+    486            /* the pbuf chain grows by (new_len - p->tot_len) bytes
+    487             * (which may be negative in case of shrinking) */
+    488            grow = new_len - p->tot_len;
+    489          
+    490            /* first, step over any pbufs that should remain in the chain */
+    491            rem_len = new_len;
+    492            q = p;
+    493            /* should this pbuf be kept? */
+    494            while (rem_len > q->len) {
+    495              /* decrease remaining length by pbuf length */
+    496              rem_len -= q->len;
+    497              /* decrease total length indicator */
+    498              LWIP_ASSERT("grow < max_u16_t", grow < 0xffff);
+    499              q->tot_len += (u16_t)grow;
+    500              /* proceed to next pbuf in chain */
+    501              q = q->next;
+    502              LWIP_ASSERT("pbuf_realloc: q != NULL", q != NULL);
+    503            }
+    504            /* we have now reached the new last pbuf (in q) */
+    505            /* rem_len == desired length for pbuf q */
+    506          
+    507            /* shrink allocated memory for PBUF_RAM */
+    508            /* (other types merely adjust their length fields */
+    509            if ((q->type == PBUF_RAM) && (rem_len != q->len)) {
+    510              /* reallocate and adjust the length of the pbuf that will be split */
+    511              q = (struct pbuf *)mem_trim(q, (u16_t)((u8_t *)q->payload - (u8_t *)q) + rem_len);
+    512              LWIP_ASSERT("mem_trim returned q == NULL", q != NULL);
+    513            }
+    514            /* adjust length fields for new last pbuf */
+    515            q->len = rem_len;
+    516            q->tot_len = q->len;
+    517          
+    518            /* any remaining pbufs in chain? */
+    519            if (q->next != NULL) {
+    520              /* free remaining pbufs in chain */
+    521              pbuf_free(q->next);
+    522            }
+    523            /* q is last packet in chain */
+    524            q->next = NULL;
+    525          
+    526          }
+    527          
+    528          /**
+    529           * Adjusts the payload pointer to hide or reveal headers in the payload.
+    530           * @see pbuf_header.
+    531           *
+    532           * @param p pbuf to change the header size.
+    533           * @param header_size_increment Number of bytes to increment header size.
+    534           * @param force Allow 'header_size_increment > 0' for PBUF_REF/PBUF_ROM types
+    535           *
+    536           * @return non-zero on failure, zero on success.
+    537           *
+    538           */
+    539          static u8_t
+    540          pbuf_header_impl(struct pbuf *p, s16_t header_size_increment, u8_t force)
+    541          {
+    542            u16_t type;
+    543            void *payload;
+    544            u16_t increment_magnitude;
+    545          
+    546            LWIP_ASSERT("p != NULL", p != NULL);
+    547            if ((header_size_increment == 0) || (p == NULL)) {
+    548              return 0;
+    549            }
+    550           
+    551            if (header_size_increment < 0){
+    552              increment_magnitude = -header_size_increment;
+    553              /* Check that we aren't going to move off the end of the pbuf */
+    554              LWIP_ERROR("increment_magnitude <= p->len", (increment_magnitude <= p->len), return 1;);
+    555            } else {
+    556              increment_magnitude = header_size_increment;
+    557          #if 0
+    558              /* Can't assert these as some callers speculatively call
+    559                   pbuf_header() to see if it's OK.  Will return 1 below instead. */
+    560              /* Check that we've got the correct type of pbuf to work with */
+    561              LWIP_ASSERT("p->type == PBUF_RAM || p->type == PBUF_POOL", 
+    562                          p->type == PBUF_RAM || p->type == PBUF_POOL);
+    563              /* Check that we aren't going to move off the beginning of the pbuf */
+    564              LWIP_ASSERT("p->payload - increment_magnitude >= p + SIZEOF_STRUCT_PBUF",
+    565                          (u8_t *)p->payload - increment_magnitude >= (u8_t *)p + SIZEOF_STRUCT_PBUF);
+    566          #endif
+    567            }
+    568          
+    569            type = p->type;
+    570            /* remember current payload pointer */
+    571            payload = p->payload;
+    572          
+    573            /* pbuf types containing payloads? */
+    574            if (type == PBUF_RAM || type == PBUF_POOL) {
+    575              /* set new payload pointer */
+    576              p->payload = (u8_t *)p->payload - header_size_increment;
+    577              /* boundary check fails? */
+    578              if ((u8_t *)p->payload < (u8_t *)p + SIZEOF_STRUCT_PBUF) {
+    579                LWIP_DEBUGF( PBUF_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+    580                  ("pbuf_header: failed as %p < %p (not enough space for new header size)\n",
+    581                  (void *)p->payload, (void *)(p + 1)));
+    582                /* restore old payload pointer */
+    583                p->payload = payload;
+    584                /* bail out unsuccessfully */
+    585                return 1;
+    586              }
+    587            /* pbuf types referring to external payloads? */
+    588            } else if (type == PBUF_REF || type == PBUF_ROM) {
+    589              /* hide a header in the payload? */
+    590              if ((header_size_increment < 0) && (increment_magnitude <= p->len)) {
+    591                /* increase payload pointer */
+    592                p->payload = (u8_t *)p->payload - header_size_increment;
+    593              } else if ((header_size_increment > 0) && force) {
+    594                p->payload = (u8_t *)p->payload - header_size_increment;
+    595              } else {
+    596                /* cannot expand payload to front (yet!)
+    597                 * bail out unsuccessfully */
+    598                return 1;
+    599              }
+    600            } else {
+    601              /* Unknown type */
+    602              LWIP_ASSERT("bad pbuf type", 0);
+    603              return 1;
+    604            }
+    605            /* modify pbuf length fields */
+    606            p->len += header_size_increment;
+    607            p->tot_len += header_size_increment;
+    608          
+    609            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_header: old %p new %p (%"S16_F")\n",
+    610              (void *)payload, (void *)p->payload, header_size_increment));
+    611          
+    612            return 0;
+    613          }
+    614          
+    615          /**
+    616           * Adjusts the payload pointer to hide or reveal headers in the payload.
+    617           *
+    618           * Adjusts the ->payload pointer so that space for a header
+    619           * (dis)appears in the pbuf payload.
+    620           *
+    621           * The ->payload, ->tot_len and ->len fields are adjusted.
+    622           *
+    623           * @param p pbuf to change the header size.
+    624           * @param header_size_increment Number of bytes to increment header size which
+    625           * increases the size of the pbuf. New space is on the front.
+    626           * (Using a negative value decreases the header size.)
+    627           * If hdr_size_inc is 0, this function does nothing and returns successful.
+    628           *
+    629           * PBUF_ROM and PBUF_REF type buffers cannot have their sizes increased, so
+    630           * the call will fail. A check is made that the increase in header size does
+    631           * not move the payload pointer in front of the start of the buffer.
+    632           * @return non-zero on failure, zero on success.
+    633           *
+    634           */
+    635          u8_t
+    636          pbuf_header(struct pbuf *p, s16_t header_size_increment)
+    637          {
+    638             return pbuf_header_impl(p, header_size_increment, 0);
+    639          }
+    640          
+    641          /**
+    642           * Same as pbuf_header but does not check if 'header_size > 0' is allowed.
+    643           * This is used internally only, to allow PBUF_REF for RX.
+    644           */
+    645          u8_t
+    646          pbuf_header_force(struct pbuf *p, s16_t header_size_increment)
+    647          {
+    648             return pbuf_header_impl(p, header_size_increment, 1);
+    649          }
+    650          
+    651          /**
+    652           * Dereference a pbuf chain or queue and deallocate any no-longer-used
+    653           * pbufs at the head of this chain or queue.
+    654           *
+    655           * Decrements the pbuf reference count. If it reaches zero, the pbuf is
+    656           * deallocated.
+    657           *
+    658           * For a pbuf chain, this is repeated for each pbuf in the chain,
+    659           * up to the first pbuf which has a non-zero reference count after
+    660           * decrementing. So, when all reference counts are one, the whole
+    661           * chain is free'd.
+    662           *
+    663           * @param p The pbuf (chain) to be dereferenced.
+    664           *
+    665           * @return the number of pbufs that were de-allocated
+    666           * from the head of the chain.
+    667           *
+    668           * @note MUST NOT be called on a packet queue (Not verified to work yet).
+    669           * @note the reference counter of a pbuf equals the number of pointers
+    670           * that refer to the pbuf (or into the pbuf).
+    671           *
+    672           * @internal examples:
+    673           *
+    674           * Assuming existing chains a->b->c with the following reference
+    675           * counts, calling pbuf_free(a) results in:
+    676           * 
+    677           * 1->2->3 becomes ...1->3
+    678           * 3->3->3 becomes 2->3->3
+    679           * 1->1->2 becomes ......1
+    680           * 2->1->1 becomes 1->1->1
+    681           * 1->1->1 becomes .......
+    682           *
+    683           */
+    684          u8_t
+    685          pbuf_free(struct pbuf *p)
+    686          {
+    687            u16_t type;
+    688            struct pbuf *q;
+    689            u8_t count;
+    690          
+    691            if (p == NULL) {
+    692              LWIP_ASSERT("p != NULL", p != NULL);
+    693              /* if assertions are disabled, proceed with debug output */
+    694              LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+    695                ("pbuf_free(p == NULL) was called.\n"));
+    696              return 0;
+    697            }
+    698            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_free(%p)\n", (void *)p));
+    699          
+    700            PERF_START;
+    701          
+    702            LWIP_ASSERT("pbuf_free: sane type",
+    703              p->type == PBUF_RAM || p->type == PBUF_ROM ||
+    704              p->type == PBUF_REF || p->type == PBUF_POOL);
+    705          
+    706            count = 0;
+    707            /* de-allocate all consecutive pbufs from the head of the chain that
+    708             * obtain a zero reference count after decrementing*/
+    709            while (p != NULL) {
+    710              u16_t ref;
+    711              SYS_ARCH_DECL_PROTECT(old_level);
+    712              /* Since decrementing ref cannot be guaranteed to be a single machine operation
+    713               * we must protect it. We put the new ref into a local variable to prevent
+    714               * further protection. */
+    715              SYS_ARCH_PROTECT(old_level);
+    716              /* all pbufs in a chain are referenced at least once */
+    717              LWIP_ASSERT("pbuf_free: p->ref > 0", p->ref > 0);
+    718              /* decrease reference count (number of pointers to pbuf) */
+    719              ref = --(p->ref);
+    720              SYS_ARCH_UNPROTECT(old_level);
+    721              /* this pbuf is no longer referenced to? */
+    722              if (ref == 0) {
+    723                /* remember next pbuf in chain for next iteration */
+    724                q = p->next;
+    725                LWIP_DEBUGF( PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_free: deallocating %p\n", (void *)p));
+    726                type = p->type;
+    727          #if LWIP_SUPPORT_CUSTOM_PBUF
+    728                /* is this a custom pbuf? */
+    729                if ((p->flags & PBUF_FLAG_IS_CUSTOM) != 0) {
+    730                  struct pbuf_custom *pc = (struct pbuf_custom*)p;
+    731                  LWIP_ASSERT("pc->custom_free_function != NULL", pc->custom_free_function != NULL);
+    732                  pc->custom_free_function(p);
+    733                } else
+    734          #endif /* LWIP_SUPPORT_CUSTOM_PBUF */
+    735                {
+    736                  /* is this a pbuf from the pool? */
+    737                  if (type == PBUF_POOL) {
+    738                    memp_free(MEMP_PBUF_POOL, p);
+    739                  /* is this a ROM or RAM referencing pbuf? */
+    740                  } else if (type == PBUF_ROM || type == PBUF_REF) {
+    741                    memp_free(MEMP_PBUF, p);
+    742                  /* type == PBUF_RAM */
+    743                  } else {
+    744                    mem_free(p);
+    745                  }
+    746                }
+    747                count++;
+    748                /* proceed to next pbuf */
+    749                p = q;
+    750              /* p->ref > 0, this pbuf is still referenced to */
+    751              /* (and so the remaining pbufs in chain as well) */
+    752              } else {
+    753                LWIP_DEBUGF( PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_free: %p has ref %"U16_F", ending here.\n", (void *)p, ref));
+    754                /* stop walking through the chain */
+    755                p = NULL;
+    756              }
+    757            }
+    758            PERF_STOP("pbuf_free");
+    759          
+    760            __pbufFreeCount+=(unsigned int)count;
+    761            /* return number of de-allocated pbufs */
+    762            return count;
+    763          }
+    764          
+    765          /**
+    766           * Count number of pbufs in a chain
+    767           *
+    768           * @param p first pbuf of chain
+    769           * @return the number of pbufs in a chain
+    770           */
+    771          
+    772          u8_t
+    773          pbuf_clen(struct pbuf *p)
+    774          {
+    775            u8_t len;
+    776          
+    777            len = 0;
+    778            while (p != NULL) {
+    779              ++len;
+    780              p = p->next;
+    781            }
+    782            return len;
+    783          }
+    784          
+    785          /**
+    786           * Increment the reference count of the pbuf.
+    787           *
+    788           * @param p pbuf to increase reference counter of
+    789           *
+    790           */
+    791          void
+    792          pbuf_ref(struct pbuf *p)
+    793          {
+    794            SYS_ARCH_DECL_PROTECT(old_level);
+    795            /* pbuf given? */
+    796            if (p != NULL) {
+    797              SYS_ARCH_PROTECT(old_level);
+    798              ++(p->ref);
+    799              SYS_ARCH_UNPROTECT(old_level);
+    800            }
+    801          }
+    802          
+    803          /**
+    804           * Concatenate two pbufs (each may be a pbuf chain) and take over
+    805           * the caller's reference of the tail pbuf.
+    806           * 
+    807           * @note The caller MAY NOT reference the tail pbuf afterwards.
+    808           * Use pbuf_chain() for that purpose.
+    809           * 
+    810           * @see pbuf_chain()
+    811           */
+    812          
+    813          void
+    814          pbuf_cat(struct pbuf *h, struct pbuf *t)
+    815          {
+    816            struct pbuf *p;
+    817          
+    818            LWIP_ERROR("(h != NULL) && (t != NULL) (programmer violates API)",
+    819                       ((h != NULL) && (t != NULL)), return;);
+    820          
+    821            /* proceed to last pbuf of chain */
+    822            for (p = h; p->next != NULL; p = p->next) {
+    823              /* add total length of second chain to all totals of first chain */
+    824              p->tot_len += t->tot_len;
+    825            }
+    826            /* { p is last pbuf of first h chain, p->next == NULL } */
+    827            LWIP_ASSERT("p->tot_len == p->len (of last pbuf in chain)", p->tot_len == p->len);
+    828            LWIP_ASSERT("p->next == NULL", p->next == NULL);
+    829            /* add total length of second chain to last pbuf total of first chain */
+    830            p->tot_len += t->tot_len;
+    831            /* chain last pbuf of head (p) with first of tail (t) */
+    832            p->next = t;
+    833            /* p->next now references t, but the caller will drop its reference to t,
+    834             * so netto there is no change to the reference count of t.
+    835             */
+    836          }
+    837          
+    838          /**
+    839           * Chain two pbufs (or pbuf chains) together.
+    840           * 
+    841           * The caller MUST call pbuf_free(t) once it has stopped
+    842           * using it. Use pbuf_cat() instead if you no longer use t.
+    843           * 
+    844           * @param h head pbuf (chain)
+    845           * @param t tail pbuf (chain)
+    846           * @note The pbufs MUST belong to the same packet.
+    847           * @note MAY NOT be called on a packet queue.
+    848           *
+    849           * The ->tot_len fields of all pbufs of the head chain are adjusted.
+    850           * The ->next field of the last pbuf of the head chain is adjusted.
+    851           * The ->ref field of the first pbuf of the tail chain is adjusted.
+    852           *
+    853           */
+    854          void
+    855          pbuf_chain(struct pbuf *h, struct pbuf *t)
+    856          {
+    857            pbuf_cat(h, t);
+    858            /* t is now referenced by h */
+    859            pbuf_ref(t);
+    860            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_chain: %p references %p\n", (void *)h, (void *)t));
+    861          }
+    862          
+    863          /**
+    864           * Dechains the first pbuf from its succeeding pbufs in the chain.
+    865           *
+    866           * Makes p->tot_len field equal to p->len.
+    867           * @param p pbuf to dechain
+    868           * @return remainder of the pbuf chain, or NULL if it was de-allocated.
+    869           * @note May not be called on a packet queue.
+    870           */
+    871          struct pbuf *
+    872          pbuf_dechain(struct pbuf *p)
+    873          {
+    874            struct pbuf *q;
+    875            u8_t tail_gone = 1;
+    876            /* tail */
+    877            q = p->next;
+    878            /* pbuf has successor in chain? */
+    879            if (q != NULL) {
+    880              /* assert tot_len invariant: (p->tot_len == p->len + (p->next? p->next->tot_len: 0) */
+    881              LWIP_ASSERT("p->tot_len == p->len + q->tot_len", q->tot_len == p->tot_len - p->len);
+    882              /* enforce invariant if assertion is disabled */
+    883              q->tot_len = p->tot_len - p->len;
+    884              /* decouple pbuf from remainder */
+    885              p->next = NULL;
+    886              /* total length of pbuf p is its own length only */
+    887              p->tot_len = p->len;
+    888              /* q is no longer referenced by p, free it */
+    889              LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_dechain: unreferencing %p\n", (void *)q));
+    890              tail_gone = pbuf_free(q);
+    891              if (tail_gone > 0) {
+    892                LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE,
+    893                            ("pbuf_dechain: deallocated %p (as it is no longer referenced)\n", (void *)q));
+    894              }
+    895              /* return remaining tail or NULL if deallocated */
+    896            }
+    897            /* assert tot_len invariant: (p->tot_len == p->len + (p->next? p->next->tot_len: 0) */
+    898            LWIP_ASSERT("p->tot_len == p->len", p->tot_len == p->len);
+    899            return ((tail_gone > 0) ? NULL : q);
+    900          }
+    901          
+    902          /**
+    903           *
+    904           * Create PBUF_RAM copies of pbufs.
+    905           *
+    906           * Used to queue packets on behalf of the lwIP stack, such as
+    907           * ARP based queueing.
+    908           *
+    909           * @note You MUST explicitly use p = pbuf_take(p);
+    910           *
+    911           * @note Only one packet is copied, no packet queue!
+    912           *
+    913           * @param p_to pbuf destination of the copy
+    914           * @param p_from pbuf source of the copy
+    915           *
+    916           * @return ERR_OK if pbuf was copied
+    917           *         ERR_ARG if one of the pbufs is NULL or p_to is not big
+    918           *                 enough to hold p_from
+    919           */
+    920          err_t
+    921          pbuf_copy(struct pbuf *p_to, struct pbuf *p_from)
+    922          {
+    923            u16_t offset_to=0, offset_from=0, len;
+    924          
+    925            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_copy(%p, %p)\n",
+    926              (void*)p_to, (void*)p_from));
+    927          
+    928            /* is the target big enough to hold the source? */
+    929            LWIP_ERROR("pbuf_copy: target not big enough to hold source", ((p_to != NULL) &&
+    930                       (p_from != NULL) && (p_to->tot_len >= p_from->tot_len)), return ERR_ARG;);
+    931          
+    932            /* iterate through pbuf chain */
+    933            do
+    934            {
+    935              /* copy one part of the original chain */
+    936              if ((p_to->len - offset_to) >= (p_from->len - offset_from)) {
+    937                /* complete current p_from fits into current p_to */
+    938                len = p_from->len - offset_from;
+    939              } else {
+    940                /* current p_from does not fit into current p_to */
+    941                len = p_to->len - offset_to;
+    942              }
+    943              MEMCPY((u8_t*)p_to->payload + offset_to, (u8_t*)p_from->payload + offset_from, len);
+    944              offset_to += len;
+    945              offset_from += len;
+    946              LWIP_ASSERT("offset_to <= p_to->len", offset_to <= p_to->len);
+    947              LWIP_ASSERT("offset_from <= p_from->len", offset_from <= p_from->len);
+    948              if (offset_from >= p_from->len) {
+    949                /* on to next p_from (if any) */
+    950                offset_from = 0;
+    951                p_from = p_from->next;
+    952              }
+    953              if (offset_to == p_to->len) {
+    954                /* on to next p_to (if any) */
+    955                offset_to = 0;
+    956                p_to = p_to->next;
+    957                LWIP_ERROR("p_to != NULL", (p_to != NULL) || (p_from == NULL) , return ERR_ARG;);
+    958              }
+    959          
+    960              if((p_from != NULL) && (p_from->len == p_from->tot_len)) {
+    961                /* don't copy more than one packet! */
+    962                LWIP_ERROR("pbuf_copy() does not allow packet queues!",
+    963                           (p_from->next == NULL), return ERR_VAL;);
+    964              }
+    965              if((p_to != NULL) && (p_to->len == p_to->tot_len)) {
+    966                /* don't copy more than one packet! */
+    967                LWIP_ERROR("pbuf_copy() does not allow packet queues!",
+    968                            (p_to->next == NULL), return ERR_VAL;);
+    969              }
+    970            } while (p_from);
+    971            LWIP_DEBUGF(PBUF_DEBUG | LWIP_DBG_TRACE, ("pbuf_copy: end of chain reached.\n"));
+    972            return ERR_OK;
+    973          }
+    974          
+    975          /**
+    976           * Copy (part of) the contents of a packet buffer
+    977           * to an application supplied buffer.
+    978           *
+    979           * @param buf the pbuf from which to copy data
+    980           * @param dataptr the application supplied buffer
+    981           * @param len length of data to copy (dataptr must be big enough). No more 
+    982           * than buf->tot_len will be copied, irrespective of len
+    983           * @param offset offset into the packet buffer from where to begin copying len bytes
+    984           * @return the number of bytes copied, or 0 on failure
+    985           */
+    986          u16_t
+    987          pbuf_copy_partial(struct pbuf *buf, void *dataptr, u16_t len, u16_t offset)
+    988          {
+    989            struct pbuf *p;
+    990            u16_t left;
+    991            u16_t buf_copy_len;
+    992            u16_t copied_total = 0;
+    993          
+    994            LWIP_ERROR("pbuf_copy_partial: invalid buf", (buf != NULL), return 0;);
+    995            LWIP_ERROR("pbuf_copy_partial: invalid dataptr", (dataptr != NULL), return 0;);
+    996          
+    997            left = 0;
+    998          
+    999            if((buf == NULL) || (dataptr == NULL)) {
+   1000              return 0;
+   1001            }
+   1002          
+   1003            /* Note some systems use byte copy if dataptr or one of the pbuf payload pointers are unaligned. */
+   1004            for(p = buf; len != 0 && p != NULL; p = p->next) {
+   1005              if ((offset != 0) && (offset >= p->len)) {
+   1006                /* don't copy from this buffer -> on to the next */
+   1007                offset -= p->len;
+   1008              } else {
+   1009                /* copy from this buffer. maybe only partially. */
+   1010                buf_copy_len = p->len - offset;
+   1011                if (buf_copy_len > len)
+   1012                    buf_copy_len = len;
+   1013                /* copy the necessary parts of the buffer */
+   1014                MEMCPY(&((char*)dataptr)[left], &((char*)p->payload)[offset], buf_copy_len);
+   1015                copied_total += buf_copy_len;
+   1016                left += buf_copy_len;
+   1017                len -= buf_copy_len;
+   1018                offset = 0;
+   1019              }
+   1020            }
+   1021            return copied_total;
+   1022          }
+   1023          
+   1024          #if LWIP_TCP && TCP_QUEUE_OOSEQ && LWIP_WND_SCALE
+   1025          /**
+   1026           * This method modifies a 'pbuf chain', so that its total length is
+   1027           * smaller than 64K. The remainder of the original pbuf chain is stored
+   1028           * in *rest.
+   1029           * This function never creates new pbufs, but splits an existing chain
+   1030           * in two parts. The tot_len of the modified packet queue will likely be
+   1031           * smaller than 64K.
+   1032           * 'packet queues' are not supported by this function.
+   1033           *
+   1034           * @param p the pbuf queue to be split
+   1035           * @param rest pointer to store the remainder (after the first 64K)
+   1036           */
+   1037          void pbuf_split_64k(struct pbuf *p, struct pbuf **rest)
+   1038          {
+   1039            *rest = NULL;
+   1040            if ((p != NULL) && (p->next != NULL)) {
+   1041              u16_t tot_len_front = p->len;
+   1042              struct pbuf *i = p;
+   1043              struct pbuf *r = p->next;
+   1044          
+   1045              /* continue until the total length (summed up as u16_t) overflows */
+   1046              while ((r != NULL) && ((u16_t)(tot_len_front + r->len) > tot_len_front)) {
+   1047                tot_len_front += r->len;
+   1048                i = r;
+   1049                r = r->next;
+   1050              }
+   1051              /* i now points to last packet of the first segment. Set next
+   1052                 pointer to NULL */
+   1053              i->next = NULL;
+   1054          
+   1055              if (r != NULL) {
+   1056                /* Update the tot_len field in the first part */
+   1057                for (i = p; i != NULL; i = i->next) {
+   1058                  i->tot_len -= r->tot_len;
+   1059                  LWIP_ASSERT("tot_len/len mismatch in last pbuf",
+   1060                              (i->next != NULL) || (i->tot_len == i->len));
+   1061                }
+   1062                if (p->flags & PBUF_FLAG_TCP_FIN) {
+   1063                  r->flags |= PBUF_FLAG_TCP_FIN;
+   1064                }
+   1065          
+   1066                /* tot_len field in rest does not need modifications */
+   1067                /* reference counters do not need modifications */
+   1068                *rest = r;
+   1069              }
+   1070            }
+   1071          }
+   1072          #endif /* LWIP_TCP && TCP_QUEUE_OOSEQ && LWIP_WND_SCALE */
+   1073          
+   1074          /**
+   1075           * Skip a number of bytes at the start of a pbuf
+   1076           *
+   1077           * @param in input pbuf
+   1078           * @param in_offset offset to skip
+   1079           * @param out_offset resulting offset in the returned pbuf
+   1080           * @return the pbuf in the queue where the offset is
+   1081           */
+   1082          static struct pbuf*
+   1083          pbuf_skip(struct pbuf* in, u16_t in_offset, u16_t* out_offset)
+   1084          {
+   1085            u16_t offset_left = in_offset;
+   1086            struct pbuf* q = in;
+   1087          
+   1088            /* get the correct pbuf */
+   1089            while ((q != NULL) && (q->len <= offset_left)) {
+   1090              offset_left -= q->len;
+   1091              q = q->next;
+   1092            }
+   1093            if (out_offset != NULL) {
+   1094              *out_offset = offset_left;
+   1095            }
+   1096            return q;
+   1097          }
+   1098          
+   1099          /**
+   1100           * Copy application supplied data into a pbuf.
+   1101           * This function can only be used to copy the equivalent of buf->tot_len data.
+   1102           *
+   1103           * @param buf pbuf to fill with data
+   1104           * @param dataptr application supplied data buffer
+   1105           * @param len length of the application supplied data buffer
+   1106           *
+   1107           * @return ERR_OK if successful, ERR_MEM if the pbuf is not big enough
+   1108           */
+   1109          err_t
+   1110          pbuf_take(struct pbuf *buf, const void *dataptr, u16_t len)
+   1111          {
+   1112            struct pbuf *p;
+   1113            u16_t buf_copy_len;
+   1114            u16_t total_copy_len = len;
+   1115            u16_t copied_total = 0;
+   1116          
+   1117            LWIP_ERROR("pbuf_take: invalid buf", (buf != NULL), return 0;);
+   1118            LWIP_ERROR("pbuf_take: invalid dataptr", (dataptr != NULL), return 0;);
+   1119          
+   1120            if ((buf == NULL) || (dataptr == NULL) || (buf->tot_len < len)) {
+   1121              return ERR_ARG;
+   1122            }
+   1123          
+   1124            /* Note some systems use byte copy if dataptr or one of the pbuf payload pointers are unaligned. */
+   1125            for(p = buf; total_copy_len != 0; p = p->next) {
+   1126              LWIP_ASSERT("pbuf_take: invalid pbuf", p != NULL);
+   1127              buf_copy_len = total_copy_len;
+   1128              if (buf_copy_len > p->len) {
+   1129                /* this pbuf cannot hold all remaining data */
+   1130                buf_copy_len = p->len;
+   1131              }
+   1132              /* copy the necessary parts of the buffer */
+   1133              MEMCPY(p->payload, &((const char*)dataptr)[copied_total], buf_copy_len);
+   1134              total_copy_len -= buf_copy_len;
+   1135              copied_total += buf_copy_len;
+   1136            }
+   1137            LWIP_ASSERT("did not copy all data", total_copy_len == 0 && copied_total == len);
+   1138            return ERR_OK;
+   1139          }
+   1140          
+   1141          /**
+   1142           * Same as pbuf_take() but puts data at an offset
+   1143           *
+   1144           * @param buf pbuf to fill with data
+   1145           * @param dataptr application supplied data buffer
+   1146           * @param len length of the application supplied data buffer
+   1147           *
+   1148           * @return ERR_OK if successful, ERR_MEM if the pbuf is not big enough
+   1149           */
+   1150          err_t
+   1151          pbuf_take_at(struct pbuf *buf, const void *dataptr, u16_t len, u16_t offset)
+   1152          {
+   1153            u16_t target_offset;
+   1154            struct pbuf* q = pbuf_skip(buf, offset, &target_offset);
+   1155          
+   1156            /* return requested data if pbuf is OK */
+   1157            if ((q != NULL) && (q->tot_len >= target_offset + len)) {
+   1158              u16_t remaining_len = len;
+   1159              const u8_t* src_ptr = (const u8_t*)dataptr;
+   1160              if (target_offset > 0) {
+   1161                /* copy the part that goes into the first pbuf */
+   1162                u16_t first_copy_len = LWIP_MIN(q->len - target_offset, len);
+   1163                MEMCPY(((u8_t*)q->payload) + target_offset, dataptr, first_copy_len);
+   1164                remaining_len -= first_copy_len;
+   1165                src_ptr += first_copy_len;
+   1166              }
+   1167              if (remaining_len > 0) {
+   1168                return pbuf_take(q->next, src_ptr, remaining_len);
+   1169              }
+   1170              return ERR_OK;
+   1171            }
+   1172            return ERR_MEM;
+   1173          }
+   1174          
+   1175          /**
+   1176           * Creates a single pbuf out of a queue of pbufs.
+   1177           *
+   1178           * @remark: Either the source pbuf 'p' is freed by this function or the original
+   1179           *          pbuf 'p' is returned, therefore the caller has to check the result!
+   1180           *
+   1181           * @param p the source pbuf
+   1182           * @param layer pbuf_layer of the new pbuf
+   1183           *
+   1184           * @return a new, single pbuf (p->next is NULL)
+   1185           *         or the old pbuf if allocation fails
+   1186           */
+   1187          struct pbuf*
+   1188          pbuf_coalesce(struct pbuf *p, pbuf_layer layer)
+   1189          {
+   1190            struct pbuf *q;
+   1191            err_t err;
+   1192            if (p->next == NULL) {
+   1193              return p;
+   1194            }
+   1195            q = pbuf_alloc(layer, p->tot_len, PBUF_RAM);
+   1196            if (q == NULL) {
+   1197              /* @todo: what do we do now? */
+   1198              return p;
+   1199            }
+   1200            err = pbuf_copy(q, p);
+   1201            LWIP_ASSERT("pbuf_copy failed", err == ERR_OK);
+   1202            pbuf_free(p);
+   1203            return q;
+   1204          }
+   1205          
+   1206          #if LWIP_CHECKSUM_ON_COPY
+   1207          /**
+   1208           * Copies data into a single pbuf (*not* into a pbuf queue!) and updates
+   1209           * the checksum while copying
+   1210           *
+   1211           * @param p the pbuf to copy data into
+   1212           * @param start_offset offset of p->payload where to copy the data to
+   1213           * @param dataptr data to copy into the pbuf
+   1214           * @param len length of data to copy into the pbuf
+   1215           * @param chksum pointer to the checksum which is updated
+   1216           * @return ERR_OK if successful, another error if the data does not fit
+   1217           *         within the (first) pbuf (no pbuf queues!)
+   1218           */
+   1219          err_t
+   1220          pbuf_fill_chksum(struct pbuf *p, u16_t start_offset, const void *dataptr,
+   1221                           u16_t len, u16_t *chksum)
+   1222          {
+   1223            u32_t acc;
+   1224            u16_t copy_chksum;
+   1225            char *dst_ptr;
+   1226            LWIP_ASSERT("p != NULL", p != NULL);
+   1227            LWIP_ASSERT("dataptr != NULL", dataptr != NULL);
+   1228            LWIP_ASSERT("chksum != NULL", chksum != NULL);
+   1229            LWIP_ASSERT("len != 0", len != 0);
+   1230          
+   1231            if ((start_offset >= p->len) || (start_offset + len > p->len)) {
+   1232              return ERR_ARG;
+   1233            }
+   1234          
+   1235            dst_ptr = ((char*)p->payload) + start_offset;
+   1236            copy_chksum = LWIP_CHKSUM_COPY(dst_ptr, dataptr, len);
+   1237            if ((start_offset & 1) != 0) {
+   1238              copy_chksum = SWAP_BYTES_IN_WORD(copy_chksum);
+   1239            }
+   1240            acc = *chksum;
+   1241            acc += copy_chksum;
+   1242            *chksum = FOLD_U32T(acc);
+   1243            return ERR_OK;
+   1244          }
+   1245          #endif /* LWIP_CHECKSUM_ON_COPY */
+   1246          
+   1247           /** Get one byte from the specified position in a pbuf
+   1248           * WARNING: returns zero for offset >= p->tot_len
+   1249           *
+   1250           * @param p pbuf to parse
+   1251           * @param offset offset into p of the byte to return
+   1252           * @return byte at an offset into p OR ZERO IF 'offset' >= p->tot_len
+   1253           */
+   1254          u8_t
+   1255          pbuf_get_at(struct pbuf* p, u16_t offset)
+   1256          {
+   1257            u16_t q_idx;
+   1258            struct pbuf* q = pbuf_skip(p, offset, &q_idx);
+   1259          
+   1260            /* return requested data if pbuf is OK */
+   1261            if ((q != NULL) && (q->len > q_idx)) {
+   1262              return ((u8_t*)q->payload)[q_idx];
+   1263            }
+   1264            return 0;
+   1265          }
+   1266          
+   1267           /** Put one byte to the specified position in a pbuf
+   1268           * WARNING: silently ignores offset >= p->tot_len
+   1269           *
+   1270           * @param p pbuf to fill
+   1271           * @param offset offset into p of the byte to write
+   1272           * @param data byte to write at an offset into p
+   1273           */
+   1274          void
+   1275          pbuf_put_at(struct pbuf* p, u16_t offset, u8_t data)
+   1276          {
+   1277            u16_t q_idx;
+   1278            struct pbuf* q = pbuf_skip(p, offset, &q_idx);
+   1279          
+   1280            /* write requested data if pbuf is OK */
+   1281            if ((q != NULL) && (q->len > q_idx)) {
+   1282              ((u8_t*)q->payload)[q_idx] = data;
+   1283            }
+   1284          }
+   1285          
+   1286          /** Compare pbuf contents at specified offset with memory s2, both of length n
+   1287           *
+   1288           * @param p pbuf to compare
+   1289           * @param offset offset into p at which to start comparing
+   1290           * @param s2 buffer to compare
+   1291           * @param n length of buffer to compare
+   1292           * @return zero if equal, nonzero otherwise
+   1293           *         (0xffff if p is too short, diffoffset+1 otherwise)
+   1294           */
+   1295          u16_t
+   1296          pbuf_memcmp(struct pbuf* p, u16_t offset, const void* s2, u16_t n)
+   1297          {
+   1298            u16_t start = offset;
+   1299            struct pbuf* q = p;
+   1300          
+   1301            /* get the correct pbuf */
+   1302            while ((q != NULL) && (q->len <= start)) {
+   1303              start -= q->len;
+   1304              q = q->next;
+   1305            }
+   1306            /* return requested data if pbuf is OK */
+   1307            if ((q != NULL) && (q->len > start)) {
+   1308              u16_t i;
+   1309              for(i = 0; i < n; i++) {
+   1310                u8_t a = pbuf_get_at(q, start + i);
+   1311                u8_t b = ((const u8_t*)s2)[i];
+   1312                if (a != b) {
+   1313                  return i+1;
+   1314                }
+   1315              }
+   1316              return 0;
+   1317            }
+   1318            return 0xffff;
+   1319          }
+   1320          
+   1321          /** Find occurrence of mem (with length mem_len) in pbuf p, starting at offset
+   1322           * start_offset.
+   1323           *
+   1324           * @param p pbuf to search, maximum length is 0xFFFE since 0xFFFF is used as
+   1325           *        return value 'not found'
+   1326           * @param mem search for the contents of this buffer
+   1327           * @param mem_len length of 'mem'
+   1328           * @param start_offset offset into p at which to start searching
+   1329           * @return 0xFFFF if substr was not found in p or the index where it was found
+   1330           */
+   1331          u16_t
+   1332          pbuf_memfind(struct pbuf* p, const void* mem, u16_t mem_len, u16_t start_offset)
+   1333          {
+   1334            u16_t i;
+   1335            u16_t max = p->tot_len - mem_len;
+   1336            if (p->tot_len >= mem_len + start_offset) {
+   1337              for(i = start_offset; i <= max; i++) {
+   1338                u16_t plus = pbuf_memcmp(p, i, mem, mem_len);
+   1339                if (plus == 0) {
+   1340                  return i;
+   1341                }
+   1342              }
+   1343            }
+   1344            return 0xFFFF;
+   1345          }
+   1346          
+   1347          /** Find occurrence of substr with length substr_len in pbuf p, start at offset
+   1348           * start_offset
+   1349           * WARNING: in contrast to strstr(), this one does not stop at the first \0 in
+   1350           * the pbuf/source string!
+   1351           *
+   1352           * @param p pbuf to search, maximum length is 0xFFFE since 0xFFFF is used as
+   1353           *        return value 'not found'
+   1354           * @param substr string to search for in p, maximum length is 0xFFFE
+   1355           * @return 0xFFFF if substr was not found in p or the index where it was found
+   1356           */
+   1357          u16_t
+   1358          pbuf_strstr(struct pbuf* p, const char* substr)
+   1359          {
+   1360            size_t substr_len;
+   1361            if ((substr == NULL) || (substr[0] == 0) || (p->tot_len == 0xFFFF)) {
+   1362              return 0xFFFF;
+   1363            }
+   1364            substr_len = strlen(substr);
+   1365            if (substr_len >= 0xFFFF) {
+   1366              return 0xFFFF;
+   1367            }
+   1368            return pbuf_memfind(p, substr, (u16_t)substr_len, 0);
+   1369          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   pbuf_alloc
+        32   -> mem_malloc
+        32   -> pbuf_free
+        32   -> pbuf_pool_is_empty
+        32   -> printf
+      16   pbuf_alloced_custom
+        16   -> printf
+      16   pbuf_cat
+         0   -> printf
+        16   -> printf
+       8   pbuf_chain
+         8   -> pbuf_cat
+         0   -> pbuf_ref
+       0   pbuf_clen
+      16   pbuf_coalesce
+        16   -> pbuf_alloc
+        16   -> pbuf_copy
+        16   -> pbuf_free
+        16   -> printf
+      24   pbuf_copy
+        24   -> __aeabi_memcpy
+        24   -> printf
+      32   pbuf_copy_partial
+        32   -> __aeabi_memcpy
+        32   -> printf
+      16   pbuf_dechain
+        16   -> pbuf_free
+        16   -> printf
+      24   pbuf_free
+        24   -- Indirect call
+        24   -> mem_free
+        24   -> printf
+        24   -> sys_arch_protect
+        24   -> sys_arch_unprotect
+       8   pbuf_free_ooseq
+         8   -> sys_arch_protect
+         8   -> sys_arch_unprotect
+         8   -> tcp_segs_free
+       0   pbuf_free_ooseq_callback
+         0   -> pbuf_free_ooseq
+       8   pbuf_get_at
+         8   -> pbuf_skip
+       0   pbuf_header
+         0   -> pbuf_header_impl
+       0   pbuf_header_force
+         0   -> pbuf_header_impl
+      24   pbuf_header_impl
+        24   -> printf
+      24   pbuf_memcmp
+        24   -> pbuf_get_at
+      24   pbuf_memfind
+        24   -> pbuf_memcmp
+      16   pbuf_pool_is_empty
+        16   -> sys_arch_protect
+         0   -> sys_arch_unprotect
+        16   -> sys_arch_unprotect
+        16   -> tcpip_callback_with_block
+      16   pbuf_put_at
+        16   -> pbuf_skip
+      16   pbuf_realloc
+        16   -> mem_trim
+        16   -> pbuf_free
+        16   -> printf
+       8   pbuf_ref
+         8   -> sys_arch_protect
+         0   -> sys_arch_unprotect
+       0   pbuf_skip
+      24   pbuf_split_64k
+        24   -> printf
+      16   pbuf_strstr
+         0   -> pbuf_memfind
+        16   -> strlen
+      32   pbuf_take
+        32   -> __aeabi_memcpy
+        32   -> printf
+      32   pbuf_take_at
+        32   -> __aeabi_memcpy
+        32   -> pbuf_skip
+        32   -> pbuf_take
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable44
+       4  ??DataTable44_1
+       4  ??DataTable44_2
+       4  ??DataTable44_3
+       4  ??DataTable44_4
+       4  ??DataTable44_5
+      40  ?_0
+      28  ?_1
+      36  ?_10
+      24  ?_11
+      28  ?_12
+      20  ?_13
+      24  ?_14
+      28  ?_15
+      12  ?_16
+      32  ?_17
+      16  ?_18
+      24  ?_19
+      76  ?_2
+      24  ?_20
+      36  ?_21
+      56  ?_22
+      48  ?_23
+      16  ?_24
+      36  ?_25
+      24  ?_26
+      48  ?_27
+      24  ?_28
+      28  ?_29
+      48  ?_3
+      16  ?_30
+      44  ?_31
+      32  ?_32
+      36  ?_33
+      36  ?_34
+      24  ?_35
+      28  ?_36
+      24  ?_37
+      24  ?_38
+      20  ?_39
+      52  ?_4
+      52  ?_5
+      20  ?_6
+      48  ?_7
+      44  ?_8
+      28  ?_9
+       4  __pbufAllocCount
+       4  __pbufFreeCount
+     600  pbuf_alloc
+     122  pbuf_alloced_custom
+     120  pbuf_cat
+      16  pbuf_chain
+      18  pbuf_clen
+      68  pbuf_coalesce
+     310  pbuf_copy
+     176  pbuf_copy_partial
+     106  pbuf_dechain
+     198  pbuf_free
+      52  pbuf_free_ooseq
+       2  pbuf_free_ooseq_callback
+       1  pbuf_free_ooseq_pending
+      32  pbuf_get_at
+       4  pbuf_header
+       4  pbuf_header_force
+     200  pbuf_header_impl
+      98  pbuf_memcmp
+      66  pbuf_memfind
+      58  pbuf_pool_is_empty
+      32  pbuf_put_at
+     224  pbuf_realloc
+      26  pbuf_ref
+      26  pbuf_skip
+     128  pbuf_split_64k
+      60  pbuf_strstr
+     180  pbuf_take
+     110  pbuf_take_at
+
+ 
+     9 bytes in section .bss
+ 4 364 bytes in section .text
+ 
+ 4 364 bytes of CODE memory
+     9 bytes of DATA memory
+
+Errors: none
+Warnings: 5

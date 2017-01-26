@@ -1,0 +1,365 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:34:48
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\bt_init.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\bt_init.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\bt_init.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\bt_init.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\src\bt_init.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdint.h>
+     36          #include <stdio.h>
+     37          #include "FreeRTOS.h"
+     38          #include "task.h"
+     39          #include "nvdm.h"
+     40          #include "bt_system.h"
+     41          #include "hal_trng.h"
+     42          #include "project_config.h"
+     43          #include <string.h>
+     44          #include <stdlib.h>
+     45          #include "task_def.h"
+     46          
+     47          
+     48          
+     49          #define BT_TIMER_BUF_SIZE (BT_TIMER_NUM * BT_CONTROL_BLOCK_SIZE_OF_TIMER)
+     50          #define BT_CONNECTION_BUF_SIZE (BT_CONNECTION_MAX* BT_CONTROL_BLOCK_SIZE_OF_LE_CONNECTION)
+     51          
+     52          BT_ALIGNMENT4(
+     53          static char timer_cb_buf[BT_TIMER_BUF_SIZE]//one timer control block is 20 bytes
+     54          );
+     55          BT_ALIGNMENT4(
+     56          static char connection_cb_buf[BT_CONNECTION_BUF_SIZE]
+     57          );
+     58          
+     59          BT_ALIGNMENT4(
+     60          static char tx_buf[BT_TX_BUF_SIZE]
+     61          );
+     62          
+     63          BT_ALIGNMENT4(
+     64          static char rx_buf[BT_RX_BUF_SIZE]
+     65          );
+     66          extern void bt_task(void * arg);
+     67          
+     68          bt_bd_addr_t local_public_addr;
+     69          
+     70          static void bt_preread_local_address(bt_bd_addr_t addr)
+     71          {
+     72              nvdm_status_t status;
+     73              int8_t i;
+     74              uint32_t random_seed;
+     75              uint32_t size = 12;
+     76              uint8_t buffer[18] = {0};
+     77              uint8_t tmp_buf[3] = {0};
+     78              bt_bd_addr_t tempaddr = {0};
+     79              hal_trng_status_t ret = HAL_TRNG_STATUS_ERROR;
+     80              if (memcmp(addr, &tempaddr, sizeof(bt_bd_addr_t)) == 0) {
+     81                  LOG_I(common, "[BT]Empty bt address after bt_gap_le_get_local_address()\n");
+     82                  LOG_I(common, "[BT]Try to read from NVDM.\n");
+     83                  status = nvdm_read_data_item("BT", "address", buffer, &size);
+     84                  if (NVDM_STATUS_OK == status) {
+     85                      LOG_I(common, "[BT]Read from NVDM:%s\n", buffer);
+     86                      for (i = 0; i < 6; ++i) {
+     87                          tmp_buf[0] = buffer[2 * i];
+     88                          tmp_buf[1] = buffer[2 * i + 1];
+     89                          addr[i] = (uint8_t)strtoul((char *)tmp_buf, NULL, 16);
+     90                      }
+     91          
+     92                      LOG_I(common, "[BT]Read address from NVDM [%02X:%02X:%02X:%02X:%02X:%02X]\n", addr[0],
+     93                            addr[1], addr[2], addr[3], addr[4], addr[5]);
+     94                      return;
+     95                  } else {
+     96                      LOG_I(common, "[BT]Failed to Read from NVDM:%d.\n", status);
+     97                      ret = hal_trng_init();
+     98                      if (HAL_TRNG_STATUS_OK != ret) {
+     99                          LOG_I(common, "[BT]generate_random_address--error 1");
+    100                      }
+    101                      for (i = 0; i < 30; ++i) {
+    102                          ret = hal_trng_get_generated_random_number(&random_seed);
+    103                          if (HAL_TRNG_STATUS_OK != ret) {
+    104                              LOG_I(common, "[BT]generate_random_address--error 2");
+    105                          }
+    106                          LOG_I(common, "[BT]generate_random_address--trn: 0x%x", random_seed);
+    107                      }
+    108                      /* randomly generate address */
+    109                      ret = hal_trng_get_generated_random_number(&random_seed);
+    110                      if (HAL_TRNG_STATUS_OK != ret) {
+    111                          LOG_I(common, "[BT]generate_random_address--error 3");
+    112                      }
+    113                      LOG_I(common, "[BT]generate_random_address--trn: 0x%x", random_seed);
+    114                      addr[0] = random_seed & 0xFF;
+    115                      addr[1] = (random_seed >> 8) & 0xFF;
+    116                      addr[2] = (random_seed >> 16) & 0xFF;
+    117                      addr[3] = (random_seed >> 24) & 0xFF;
+    118                      ret = hal_trng_get_generated_random_number(&random_seed);
+    119                      if (HAL_TRNG_STATUS_OK != ret) {
+    120                          LOG_I(common, "[BT]generate_random_address--error 3");
+    121                      }
+    122                      LOG_I(common, "[BT]generate_random_address--trn: 0x%x", random_seed);
+    123                      addr[4] = random_seed & 0xFF;
+    124                      addr[5] = (random_seed >> 8) & 0xCF;
+    125                      hal_trng_deinit();
+    126                  }
+    127              }
+    128              /* save address to NVDM */
+    129              for (i = 0; i < 6; ++i) {
+    130                  snprintf((char *)buffer + 2 * i, 3, "%02X", addr[i]);
+    131              }
+    132              LOG_I(common, "[BT]address to write:%s len:%d\n", buffer, strlen((char *)buffer));
+    133              status = nvdm_write_data_item("BT", "address", NVDM_DATA_ITEM_TYPE_STRING, buffer, strlen((char *)buffer));
+    134              if (NVDM_STATUS_OK != status) {
+    135                  LOG_I(common, "[BT]Failed to store address.\n");
+    136              } else {
+    137                  LOG_I(common, "[BT]Successfully store address to NVDM [%02X:%02X:%02X:%02X:%02X:%02X]\n", addr[0],
+    138                        addr[1], addr[2], addr[3], addr[4], addr[5]);
+    139              }
+    140          }
+    141          
+    142          void bt_mm_init()
+    143          {
+    144              bt_memory_init_packet(BT_MEMORY_TX_BUFFER, tx_buf, BT_TX_BUF_SIZE);
+    145              bt_memory_init_packet(BT_MEMORY_RX_BUFFER, rx_buf, BT_RX_BUF_SIZE);
+    146              bt_memory_init_control_block(BT_MEMORY_CONTROL_BLOCK_TIMER, timer_cb_buf, BT_TIMER_BUF_SIZE);
+    147              bt_memory_init_control_block(BT_MEMORY_CONTROL_BLOCK_LE_CONNECTION, connection_cb_buf,
+    148                                            BT_CONNECTION_BUF_SIZE);
+    149          }
+    150          
+    151          void bt_create_task(void)
+    152          {
+    153              bt_mm_init();
+    154              bt_preread_local_address(local_public_addr);
+    155              LOG_I(common, "[BT]local_public_addr [%02X:%02X:%02X:%02X:%02X:%02X]\n", local_public_addr[5],
+    156                    local_public_addr[4], local_public_addr[3], local_public_addr[2], local_public_addr[1], local_public_addr[0]);
+    157              log_config_print_switch(BT, DEBUG_LOG_OFF);
+    158              log_config_print_switch(BTMM, DEBUG_LOG_OFF);
+    159              log_config_print_switch(BTHCI, DEBUG_LOG_OFF);
+    160              log_config_print_switch(BTL2CAP, DEBUG_LOG_OFF);
+    161              if (pdPASS != xTaskCreate(bt_task, BLUETOOTH_TASK_NAME, BLUETOOTH_TASK_STACKSIZE/sizeof(StackType_t), (void *)local_public_addr, BLUETOOTH_TASK_PRIO, NULL)) {
+    162                  LOG_E(common, "cannot create bt_task.");
+    163              }
+    164          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   bt_create_task
+        48   -- Indirect call
+        48   -> bt_mm_init
+        48   -> bt_preread_local_address
+        48   -> xTaskGenericCreate
+       8   bt_mm_init
+         0   -> bt_memory_init_control_block
+         8   -> bt_memory_init_control_block
+         8   -> bt_memory_init_packet
+      88   bt_preread_local_address
+        88   -- Indirect call
+        88   -> __aeabi_memclr4
+        88   -> hal_trng_deinit
+        88   -> hal_trng_get_generated_random_number
+        88   -> hal_trng_init
+        88   -> memcmp
+        88   -> nvdm_read_data_item
+        88   -> nvdm_write_data_item
+        88   -> snprintf
+        88   -> strlen
+        88   -> strtoul
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable25
+       4  ??DataTable25_1
+       4  ??DataTable25_2
+       4  ??DataTable25_3
+       4  ??DataTable25_4
+       4  ??DataTable25_5
+       4  ??DataTable25_6
+       4  ??DataTable25_7
+       4  ??DataTable25_8
+      20  ?_0
+       4  ?_1
+      40  ?_10
+      40  ?_11
+      40  ?_12
+      40  ?_13
+       8  ?_14
+      32  ?_15
+      32  ?_16
+      72  ?_17
+      56  ?_18
+       8  ?_19
+       8  ?_2
+      24  ?_20
+      60  ?_3
+      28  ?_4
+       4  ?_5
+       8  ?_6
+      24  ?_7
+      60  ?_8
+      36  ?_9
+     136  bt_create_task
+      62  bt_mm_init
+     618  bt_preread_local_address
+       8  local_public_addr
+    3080  timer_cb_buf
+          connection_cb_buf
+          tx_buf
+          rx_buf
+      44  -- Other
+
+ 
+ 3 088 bytes in section .bss
+    36 bytes in section .rodata
+ 1 504 bytes in section .text
+ 
+ 1 504 bytes of CODE  memory
+    36 bytes of CONST memory
+ 3 088 bytes of DATA  memory
+
+Errors: none
+Warnings: none

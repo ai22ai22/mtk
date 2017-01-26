@@ -1,0 +1,380 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:22
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\kernel\service\src\os_cli.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\kernel\service\src\os_cli.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\os_cli.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\os_cli.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\kernel\service\src\os_cli.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #if defined(MTK_MINICLI_ENABLE)
+     36          
+     37          #include <stdio.h>
+     38          #include <string.h>
+     39          #include <stdlib.h>
+     40          
+     41          #include "FreeRTOS.h"
+     42          #include "task.h"
+     43          
+     44          #include "os_cli.h"
+     45          
+     46          #if defined(MTK_OS_CPU_UTILIZATION_ENABLE)
+     47          #include "task_def.h"
+     48          #endif
+     49          
+     50          /****************************************************************************
+     51           *
+     52           * Constants.
+     53           *
+     54           ****************************************************************************/
+     55          
+     56          
+     57          #define SZ_OF_TASK_LIST_BUF     (256)
+     58          
+     59          
+     60          /****************************************************************************
+     61           *
+     62           * Types.
+     63           *
+     64           ****************************************************************************/
+     65          
+     66          
+     67          /****************************************************************************
+     68           *
+     69           * Static variables.
+     70           *
+     71           ****************************************************************************/
+     72          
+     73          
+     74          #if defined(MTK_OS_CPU_UTILIZATION_ENABLE)
+     75          static uint32_t _cpu_meausre_time;
+     76          #endif
+     77          
+     78          
+     79          /****************************************************************************
+     80           *
+     81           * Local functions.
+     82           *
+     83           ****************************************************************************/
+     84          
+     85          
+     86          #if ( ( configUSE_TRACE_FACILITY == 1 ) && ( configUSE_STATS_FORMATTING_FUNCTIONS == 1 ) )
+     87          static uint8_t _os_cli_show_task_info(uint8_t len, char *param[])
+     88          {
+     89              printf("Show task info:\n");
+     90              printf("parameter meaning:\n");
+     91              printf("1: pcTaskName\n");
+     92              printf("2: cStatus\n");
+     93              printf("3: uxCurrentPriority\n");
+     94              printf("4: usStackHighWaterMark\n");
+     95              printf("5: xTaskNumber\n\n");
+     96          
+     97              char *task_list_buf;
+     98              int32_t buf_size = uxTaskGetNumberOfTasks() * (configMAX_TASK_NAME_LEN + 18);
+     99          
+    100              if ((task_list_buf = pvPortMalloc(buf_size)) == NULL) {
+    101                  printf("memory malloced failed.\n");
+    102                  return 1;
+    103              }
+    104          
+    105              vTaskList(task_list_buf);
+    106              strlen(task_list_buf);
+    107              printf("%s\n", task_list_buf);
+    108              printf("buf len: %u\n", strlen(task_list_buf));
+    109              vPortFree(task_list_buf);
+    110          
+    111              return 0;
+    112          }
+    113          #endif
+    114          
+    115          
+    116          #if defined(MTK_OS_CPU_UTILIZATION_ENABLE)
+    117          static void _cpu_utilization_task(void *arg)
+    118          {
+    119              char *task_list_buf;
+    120              int32_t buf_size = uxTaskGetNumberOfTasks() * (configMAX_TASK_NAME_LEN + 20);
+    121              if ((task_list_buf = pvPortMalloc(buf_size)) == NULL) {
+    122                  printf("memory malloced failed.\n");
+    123                  return;
+    124              }
+    125          
+    126              vConfigureTimerForRunTimeStats();
+    127              vTaskClearTaskRunTimeCounter();
+    128              vTaskDelay(_cpu_meausre_time);
+    129              vTaskGetRunTimeStats(task_list_buf);
+    130              printf("%s\n", task_list_buf);
+    131          
+    132              vPortFree(task_list_buf);
+    133              vTaskDelete(xTaskGetCurrentTaskHandle());
+    134              while (1);
+    135          }
+    136          #endif
+    137          
+    138          #if defined(MTK_OS_CPU_UTILIZATION_ENABLE)
+    139          static uint8_t _os_cli_cpu_utilization(uint8_t len, char *param[])
+    140          {
+    141              BaseType_t ret;
+    142          
+    143              if (len == 1) {
+    144                  TaskHandle_t xHandle = NULL;
+    145                  _cpu_meausre_time = atoi(param[0]);
+    146                  ret = xTaskCreate(_cpu_utilization_task, MTK_OS_CPU_UTILIZATION_TASK_NAME, MTK_OS_CPU_UTILIZATION_STACKSIZE / sizeof(StackType_t), NULL, MTK_OS_CPU_UTILIZATION_PRIO, &xHandle);
+    147                  if (ret != pdPASS) {
+    148                      configASSERT(0);
+    149                  }
+    150              } else {
+    151                  printf("os cpu <duration>\n");
+    152              }
+    153          
+    154              return 0;
+    155          }
+    156          #endif
+    157          
+    158          
+    159          static uint8_t _os_cli_mem(uint8_t len, char *param[])
+    160          {
+    161              printf("heap:\n");
+    162              printf("\ttotal: %u\n", configTOTAL_HEAP_SIZE);
+    163              printf("\tfree:  %u\n", xPortGetFreeHeapSize());
+    164              printf("\tlow:   %u\n", xPortGetMinimumEverFreeHeapSize());
+    165              return 0;
+    166          }
+    167          
+    168          static uint8_t _os_cli_crash(uint8_t len, char *param[])
+    169          {
+    170              configASSERT(0);
+    171              return 0;
+    172          }
+    173          
+    174          /****************************************************************************
+    175           *
+    176           * API variable.
+    177           *
+    178           ****************************************************************************/
+    179          
+    180          
+    181          /****************************************************************************
+    182           *
+    183           * API functions.
+    184           *
+    185           ****************************************************************************/
+    186          
+    187          cmd_t os_cli[] = {
+    188          #if defined(MTK_OS_CPU_UTILIZATION_ENABLE)
+    189              { "cpu",   "show cpu utilization", _os_cli_cpu_utilization },
+    190          #endif
+    191          #if ( ( configUSE_TRACE_FACILITY == 1 ) && ( configUSE_STATS_FORMATTING_FUNCTIONS == 1 ) )
+    192              { "task",  "show FreeRtos task",   _os_cli_show_task_info  },
+    193          #endif
+    194              { "mem",   "show heap status",     _os_cli_mem             },
+    195              { "crash", "force system crash",   _os_cli_crash         },
+    196              { NULL }
+    197          };
+    198          
+    199          #endif /* #if defined(MTK_MINICLI_ENABLE) */
+    200          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   _os_cli_crash
+         8   -> platform_assert
+       8   _os_cli_mem
+         8   -> printf
+         8   -> xPortGetFreeHeapSize
+         8   -> xPortGetMinimumEverFreeHeapSize
+       8   _os_cli_show_task_info
+         8   -> printf
+         8   -> pvPortMalloc
+         8   -> strlen
+         8   -> uxTaskGetNumberOfTasks
+         8   -> vPortFree
+         8   -> vTaskList
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable23
+       4  ??DataTable23_1
+       8  ?_0
+      20  ?_1
+      24  ?_10
+      28  ?_11
+      20  ?_12
+      28  ?_13
+       4  ?_14
+      16  ?_15
+       8  ?_16
+      12  ?_17
+      12  ?_18
+      12  ?_19
+       4  ?_2
+       2  ?_20
+      60  ?_21
+      20  ?_3
+       8  ?_4
+      20  ?_5
+      20  ?_6
+      20  ?_7
+      16  ?_8
+      12  ?_9
+      18  _os_cli_crash
+      54  _os_cli_mem
+     126  _os_cli_show_task_info
+      64  os_cli
+
+ 
+  64 bytes in section .data
+  86 bytes in section .rodata
+ 494 bytes in section .text
+ 
+ 494 bytes of CODE  memory
+  86 bytes of CONST memory
+  64 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,456 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:22
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\os_utils.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\os_utils.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\os_utils.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\os_utils.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\os_utils.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          
+     36          //#include "includes.h"
+     37          #include <stdio.h>
+     38          #include <stdlib.h>
+     39          #include <string.h>
+     40          #include <stdarg.h>
+     41          
+     42          
+     43          #include "os.h"
+     44          
+     45          #include "type_def.h"
+     46          
+     47          
+     48          TEXT_IN_RAM void * os_memcpy(void *dest, const void *src, size_t n)
+     49          {
+     50              char *d = dest;
+     51              const char *s = src;
+     52              while (n--) {
+     53                  *d++ = *s++;
+     54              }
+     55              return dest;
+     56          }
+     57          
+     58          void *os_memmove(void *dest, const void *src, size_t n)
+     59          {
+     60              if (dest < src) {
+     61                  os_memcpy(dest, src, n);
+     62              } else {
+     63                  /* overlapping areas */
+     64                  char *d = (char *) dest + n;
+     65                  const char *s = (const char *) src + n;
+     66                  while (n--) {
+     67                      *--d = *--s;
+     68                  }
+     69              }
+     70              return dest;
+     71          }
+     72          
+     73          TEXT_IN_RAM void * os_memset(void *s, int c, size_t n)
+     74          {
+     75              char *p = s;
+     76              while (n--) {
+     77                  *p++ = c;
+     78              }
+     79              return s;
+     80          }
+     81          
+     82          int os_memcmp(const void *s1, const void *s2, size_t n)
+     83          {
+     84              const unsigned char *p1 = s1, *p2 = s2;
+     85          
+     86              if (n == 0) {
+     87                  return 0;
+     88              }
+     89          
+     90              while (*p1 == *p2) {
+     91                  p1++;
+     92                  p2++;
+     93                  n--;
+     94                  if (n == 0) {
+     95                      return 0;
+     96                  }
+     97              }
+     98          
+     99              return *p1 - *p2;
+    100          }
+    101          
+    102          size_t os_strlen(const char *s)
+    103          {
+    104              const char *p = s;
+    105              while (*p) {
+    106                  p++;
+    107              }
+    108              return p - s;
+    109          }
+    110          
+    111          
+    112          
+    113          int os_strcasecmp(const char *s1, const char *s2)
+    114          {
+    115              return strcasecmp(s1, s2);
+    116          }
+    117          
+    118          int os_strncasecmp(const char *s1, const char *s2, size_t n)
+    119          {
+    120              return strncasecmp(s1, s2, n);
+    121          }
+    122          
+    123          char *os_strchr(const char *s, int c)
+    124          {
+    125              return strchr(s, c);
+    126          }
+    127          
+    128          char *os_strrchr(const char *s, int c)
+    129          {
+    130              return strrchr(s, c);
+    131          }
+    132          
+    133          int os_strcmp(const char *s1, const char *s2)
+    134          {
+    135              return strcmp(s1, s2);
+    136          }
+    137          
+    138          int os_strncmp(const char *s1, const char *s2, size_t n)
+    139          {
+    140              return strncmp(s1, s2, n);
+    141          }
+    142          
+    143          char *os_strncpy(char *dest, const char *src, size_t n)
+    144          {
+    145              return strncpy(dest, src, n);
+    146          }
+    147          
+    148          char *os_strstr(const char *haystack, const char *needle)
+    149          {
+    150              return strstr(haystack, needle);
+    151          }
+    152          
+    153          int os_snprintf(char *str, size_t size, const char *format, ...)
+    154          {
+    155              int sz;
+    156          
+    157              va_list ap;
+    158          
+    159              va_start(ap, format);
+    160              sz = vsnprintf(str, size, format, ap);
+    161              va_end(ap);
+    162          
+    163              return sz;
+    164          }
+    165          
+    166          
+    167          int os_daemonize(const char *pid_file)
+    168          {
+    169              return -1;
+    170          }
+    171          
+    172          
+    173          void os_daemonize_terminate(const char *pid_file)
+    174          {
+    175          }
+    176          
+    177          
+    178          char *os_rel2abs_path(const char *rel_path)
+    179          {
+    180              return NULL; /* strdup(rel_path) can be used here */
+    181          }
+    182          
+    183          
+    184          int os_program_init(void)
+    185          {
+    186              return 0;
+    187          }
+    188          
+    189          
+    190          void os_program_deinit(void)
+    191          {
+    192          }
+    193          
+    194          
+    195          int os_setenv(const char *name, const char *value, int overwrite)
+    196          {
+    197              return -1;
+    198          }
+    199          
+    200          
+    201          int os_unsetenv(const char *name)
+    202          {
+    203              return -1;
+    204          }
+    205          
+    206          
+    207          char *os_readfile(const char *name, size_t *len)
+    208          {
+    209              return NULL;
+    210          }
+    211          
+    212          
+    213          size_t os_strlcpy(char *dest, const char *src, size_t size)
+    214          {
+    215              const char *s = src;
+    216              size_t left = size;
+    217          
+    218              if (left) {
+    219                  /* Copy string up to the maximum size of the dest buffer */
+    220                  while (--left != 0) {
+    221                      if ((*dest++ = *s++) == '\0') {
+    222                          break;
+    223                      }
+    224                  }
+    225              }
+    226          
+    227              if (left == 0) {
+    228                  /* Not enough room for the string; force NUL-termination */
+    229                  if (size != 0) {
+    230                      *dest = '\0';
+    231                  }
+    232                  while (*s++)
+    233                      ; /* determine total src string length */
+    234              }
+    235          
+    236              return s - src - 1;
+    237          }
+    238          
+    239          
+    240          
+    241          size_t os_memrlen(const void *in_src, size_t in_max_len)
+    242          {
+    243              const unsigned char *const ptr = (const unsigned char *) in_src;
+    244              size_t                      i;
+    245          
+    246              for (i = in_max_len; (i > 0) && (ptr[ i - 1 ] == 0); --i) {}
+    247              return (i);
+    248          }
+    249          
+    250          
+    251          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   os_daemonize
+       0   os_daemonize_terminate
+      12   os_memcmp
+       4   os_memcpy
+       8   os_memmove
+         8   -> os_memcpy
+       0   os_memrlen
+       4   os_memset
+       0   os_program_deinit
+       0   os_program_init
+       0   os_readfile
+       0   os_rel2abs_path
+       0   os_setenv
+       8   os_snprintf
+         8   -> vsnprintf
+       0   os_strcasecmp
+         0   -> strcasecmp
+       0   os_strchr
+         0   -> strchr
+       0   os_strcmp
+         0   -> strcmp
+       8   os_strlcpy
+       0   os_strlen
+       0   os_strncasecmp
+         0   -> strncasecmp
+       0   os_strncmp
+         0   -> strncmp
+       0   os_strncpy
+         0   -> strncpy
+       0   os_strrchr
+         0   -> strrchr
+       0   os_strstr
+         0   -> strstr
+       0   os_unsetenv
+       0   strchr
+         0   -> __iar_Strchr
+       0   strrchr
+         0   -> __iar_Strrchr
+       0   strstr
+         0   -> __iar_Strstr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       6  os_daemonize
+       2  os_daemonize_terminate
+      36  os_memcmp
+      26  os_memcpy
+      40  os_memmove
+      22  os_memrlen
+      22  os_memset
+       2  os_program_deinit
+       4  os_program_init
+       4  os_readfile
+       4  os_rel2abs_path
+       6  os_setenv
+      14  os_snprintf
+       4  os_strcasecmp
+       4  os_strchr
+       4  os_strcmp
+      52  os_strlcpy
+      16  os_strlen
+       4  os_strncasecmp
+       4  os_strncmp
+       4  os_strncpy
+       4  os_strrchr
+       4  os_strstr
+       6  os_unsetenv
+       4  strchr
+       4  strrchr
+       4  strstr
+
+ 
+  48 bytes in section .ramTEXT
+ 258 bytes in section .text
+ 
+ 294 bytes of CODE memory (+ 12 bytes shared)
+
+Errors: none
+Warnings: none

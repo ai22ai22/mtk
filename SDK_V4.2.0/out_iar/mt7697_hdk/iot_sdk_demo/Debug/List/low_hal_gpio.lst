@@ -1,0 +1,354 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:13
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\low_hal_gpio.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\low_hal_gpio.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\low_hal_gpio.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\low_hal_gpio.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\low_hal_gpio.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /****************************************************************************
+     36              Module Name:
+     37              GPIO
+     38          
+     39              Abstract:
+     40              GPIO.
+     41          
+     42              Revision History:
+     43              Who         When            What
+     44              --------    ----------      ------------------------------------------
+     45          ***************************************************************************/
+     46          
+     47          #include "hal_eint.h"
+     48          #include "hal_gpio.h"
+     49          #if defined(HAL_EINT_MODULE_ENABLED) || defined(HAL_GPIO_MODULE_ENABLED)
+     50          
+     51          #include "type_def.h"
+     52          
+     53          #include "low_hal_gpio.h"
+     54          #include "hal_gpio_7687.h"
+     55          
+     56          
+     57          int32_t gpio_direction(ENUM_IOT_GPIO_NAME_T gpio_name, ENUM_DIR_T direction)
+     58          {
+     59              return halGPIO_ConfDirection(gpio_name, direction);
+     60          }
+     61          
+     62          
+     63          int32_t gpio_write(ENUM_IOT_GPIO_NAME_T gpio_name, uint8_t data)
+     64          {
+     65              return halGPO_Write(gpio_name, data);
+     66          }
+     67          
+     68          
+     69          
+     70          int32_t gpio_int(ENUM_IOT_GPIO_NAME_T       gpio_name,
+     71                           ENUM_NVIC_SENSE_T          edgeLevelTrig,
+     72                           ENUM_DEBOUNCE_EN_T         debounceEnable,
+     73                           ENUM_DEBOUNCE_POL_T        polarity,
+     74                           ENUM_DEBOUNCE_DUAL_T       dual,
+     75                           ENUM_DEBOUNCE_PRESCALER_T  prescaler,
+     76                           uint8_t                    u1PrescalerCount,
+     77                           void (*callback)(ENUM_IOT_GPIO_NAME_T gpio_name))
+     78          {
+     79              return halRegGPInterrupt(gpio_name, edgeLevelTrig, debounceEnable , polarity , dual , prescaler, u1PrescalerCount , callback);
+     80          }
+     81          
+     82          int32_t eint_set_trigger_mode(ENUM_IOT_GPIO_NAME_T gpio_name,
+     83                           ENUM_NVIC_SENSE_T          edgeLevelTrig,
+     84                           ENUM_DEBOUNCE_POL_T        polarity,
+     85                           ENUM_DEBOUNCE_DUAL_T       dual)
+     86          {
+     87              return halRegGPInterrupt_set_triggermode(gpio_name,edgeLevelTrig, polarity, dual);
+     88          }
+     89          
+     90          int32_t eint_set_debounce(ENUM_IOT_GPIO_NAME_T gpio_name,
+     91                           ENUM_DEBOUNCE_EN_T         debounceEnable,
+     92                            ENUM_DEBOUNCE_PRESCALER_T prescaler,
+     93                           uint8_t                    u1PrescalerCount)
+     94          {
+     95              return halRegGPInterrupt_set_debounce(gpio_name,debounceEnable, prescaler, prescaler);
+     96          }
+     97          
+     98          int32_t eint_set_mask(ENUM_IOT_GPIO_NAME_T gpio_name)
+     99          {
+    100              return halRegGPInterrupt_mask(gpio_name);
+    101          }
+    102          
+    103          int32_t eint_set_unmask(ENUM_IOT_GPIO_NAME_T gpio_name)
+    104          {
+    105              return halRegGPInterrupt_unmask(gpio_name);
+    106          }
+    107          
+    108          int32_t eint_set_software_trigger(ENUM_IOT_GPIO_NAME_T gpio_name)
+    109          {
+    110              return halRegGP_set_software_trigger(gpio_name);
+    111          }
+    112          
+    113          int32_t eint_clear_software_trigger(ENUM_IOT_GPIO_NAME_T gpio_name)
+    114          {
+    115              return halRegGP_clear_software_trigger(gpio_name);
+    116          }
+    117          
+    118          
+    119          gpio_status gpio_get_status(ENUM_IOT_GPIO_NAME_T gpio_name)
+    120          {
+    121              gpio_status p;
+    122              p.GPIO_PIN = gpio_name;
+    123              p.GPIO_OUTEN = halgetGPIO_OutEnable(gpio_name);
+    124              p.GPI_DIN = halgetGPIO_DIN(gpio_name);
+    125              p.GPO_DOUT = halgetGPIO_DOUT(gpio_name);
+    126              return p;
+    127          }
+    128          
+    129          int32_t gpio_PullUp(ENUM_IOT_GPIO_NAME_T gpio_name)
+    130          {
+    131              INT32 ret = 0;
+    132              topPAD_Control_GPIO(gpio_name, ePAD_CONTROL_BY_CM4); //let gpio control by cm4
+    133              ret = halGPIO_PullUp_SET(gpio_name);
+    134              return ret;
+    135          }
+    136          
+    137          int32_t gpio_PullDown(ENUM_IOT_GPIO_NAME_T gpio_name)
+    138          {
+    139              INT32 ret = 0;
+    140              topPAD_Control_GPIO(gpio_name, ePAD_CONTROL_BY_CM4); //let gpio control by cm4
+    141              ret = halGPIO_PullDown_SET(gpio_name);
+    142              return ret;
+    143          }
+    144          int32_t gpio_PullDisable(ENUM_IOT_GPIO_NAME_T gpio_name)
+    145          {
+    146              INT32 ret = 0;
+    147              topPAD_Control_GPIO(gpio_name, ePAD_CONTROL_BY_CM4); //let gpio control by cm4
+    148              ret = halGPIO_PullDown_RESET(gpio_name);
+    149              ret = halGPIO_PullUp_RESET(gpio_name);
+    150              return ret;
+    151          }
+    152          int32_t gpio_SetDriving(ENUM_IOT_GPIO_NAME_T gpio_name, uint8_t driving)
+    153          {
+    154              INT32 ret = 0;
+    155              ret = halGPIO_SetDriving(gpio_name, driving);
+    156              return ret;
+    157          }
+    158          
+    159          int32_t gpio_GetDriving(ENUM_IOT_GPIO_NAME_T gpio_name, uint8_t *driving)
+    160          {
+    161              INT32 ret = 0;
+    162              ret = halGPIO_GetDriving(gpio_name, driving);
+    163              return ret;
+    164          }
+    165          #endif
+    166          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   eint_clear_software_trigger
+         0   -> halRegGP_clear_software_trigger
+       0   eint_set_debounce
+         0   -> halRegGPInterrupt_set_debounce
+       0   eint_set_mask
+         0   -> halRegGPInterrupt_mask
+       0   eint_set_software_trigger
+         0   -> halRegGP_set_software_trigger
+       0   eint_set_trigger_mode
+         0   -> halRegGPInterrupt_set_triggermode
+       0   eint_set_unmask
+         0   -> halRegGPInterrupt_unmask
+       0   gpio_GetDriving
+         0   -> halGPIO_GetDriving
+       8   gpio_PullDisable
+         8   -> halGPIO_PullDown_RESET
+         0   -> halGPIO_PullUp_RESET
+         8   -> topPAD_Control_GPIO
+       8   gpio_PullDown
+         0   -> halGPIO_PullDown_SET
+         8   -> topPAD_Control_GPIO
+       8   gpio_PullUp
+         0   -> halGPIO_PullUp_SET
+         8   -> topPAD_Control_GPIO
+       0   gpio_SetDriving
+         0   -> halGPIO_SetDriving
+       0   gpio_direction
+         0   -> halGPIO_ConfDirection
+      24   gpio_get_status
+        24   -> halgetGPIO_DIN
+        24   -> halgetGPIO_DOUT
+        24   -> halgetGPIO_OutEnable
+      24   gpio_int
+        24   -> halRegGPInterrupt
+       0   gpio_write
+         0   -> halGPO_Write
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  eint_clear_software_trigger
+       6  eint_set_debounce
+       4  eint_set_mask
+       4  eint_set_software_trigger
+       4  eint_set_trigger_mode
+       4  eint_set_unmask
+       4  gpio_GetDriving
+      26  gpio_PullDisable
+      20  gpio_PullDown
+      20  gpio_PullUp
+       4  gpio_SetDriving
+       4  gpio_direction
+      52  gpio_get_status
+      26  gpio_int
+       4  gpio_write
+
+ 
+ 186 bytes in section .text
+ 
+ 186 bytes of CODE memory
+
+Errors: none
+Warnings: none

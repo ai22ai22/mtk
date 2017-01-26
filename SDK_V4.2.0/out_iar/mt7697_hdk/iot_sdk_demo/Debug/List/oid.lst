@@ -1,0 +1,1042 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:22
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\oid.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\oid.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\oid.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\oid.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\third_party\mbedtls\library\oid.c
+      1          /**
+      2           * \file oid.c
+      3           *
+      4           * \brief Object Identifier (OID) database
+      5           *
+      6           *  Copyright (C) 2006-2015, ARM Limited, All Rights Reserved
+      7           *  SPDX-License-Identifier: Apache-2.0
+      8           *
+      9           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     10           *  not use this file except in compliance with the License.
+     11           *  You may obtain a copy of the License at
+     12           *
+     13           *  http://www.apache.org/licenses/LICENSE-2.0
+     14           *
+     15           *  Unless required by applicable law or agreed to in writing, software
+     16           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     17           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     18           *  See the License for the specific language governing permissions and
+     19           *  limitations under the License.
+     20           *
+     21           *  This file is part of mbed TLS (https://tls.mbed.org)
+     22           */
+     23          
+     24          #if !defined(MBEDTLS_CONFIG_FILE)
+     25          #include "mbedtls/config.h"
+     26          #else
+     27          #include MBEDTLS_CONFIG_FILE
+     28          #endif
+     29          
+     30          #if defined(MBEDTLS_OID_C)
+     31          
+     32          #include "mbedtls/oid.h"
+     33          #include "mbedtls/rsa.h"
+     34          
+     35          #include <stdio.h>
+     36          #include <string.h>
+     37          
+     38          #if defined(MBEDTLS_PLATFORM_C)
+     39          #include "mbedtls/platform.h"
+     40          #else
+     41          #define mbedtls_snprintf snprintf
+     42          #endif
+     43          
+     44          #if defined(MBEDTLS_X509_USE_C) || defined(MBEDTLS_X509_CREATE_C)
+     45          #include "mbedtls/x509.h"
+     46          #endif
+     47          
+     48          /*
+     49           * Macro to automatically add the size of #define'd OIDs
+     50           */
+     51          #define ADD_LEN(s)      s, MBEDTLS_OID_SIZE(s)
+     52          
+     53          /*
+     54           * Macro to generate an internal function for oid_XXX_from_asn1() (used by
+     55           * the other functions)
+     56           */
+     57          #define FN_OID_TYPED_FROM_ASN1( TYPE_T, NAME, LIST )                        \
+     58          static const TYPE_T * oid_ ## NAME ## _from_asn1( const mbedtls_asn1_buf *oid )     \
+     59          {                                                                           \
+     60              const TYPE_T *p = LIST;                                                 \
+     61              const mbedtls_oid_descriptor_t *cur = (const mbedtls_oid_descriptor_t *) p;             \
+     62              if( p == NULL || oid == NULL ) return( NULL );                          \
+     63              while( cur->asn1 != NULL ) {                                            \
+     64                  if( cur->asn1_len == oid->len &&                                    \
+     65                      memcmp( cur->asn1, oid->p, oid->len ) == 0 ) {                  \
+     66                      return( p );                                                    \
+     67                  }                                                                   \
+     68                  p++;                                                                \
+     69                  cur = (const mbedtls_oid_descriptor_t *) p;                                 \
+     70              }                                                                       \
+     71              return( NULL );                                                         \
+     72          }
+     73          
+     74          /*
+     75           * Macro to generate a function for retrieving a single attribute from the
+     76           * descriptor of an mbedtls_oid_descriptor_t wrapper.
+     77           */
+     78          #define FN_OID_GET_DESCRIPTOR_ATTR1(FN_NAME, TYPE_T, TYPE_NAME, ATTR1_TYPE, ATTR1) \
+     79          int FN_NAME( const mbedtls_asn1_buf *oid, ATTR1_TYPE * ATTR1 )                  \
+     80          {                                                                       \
+     81              const TYPE_T *data = oid_ ## TYPE_NAME ## _from_asn1( oid );        \
+     82              if( data == NULL ) return( MBEDTLS_ERR_OID_NOT_FOUND );            \
+     83              *ATTR1 = data->descriptor.ATTR1;                                    \
+     84              return( 0 );                                                        \
+     85          }
+     86          
+     87          /*
+     88           * Macro to generate a function for retrieving a single attribute from an
+     89           * mbedtls_oid_descriptor_t wrapper.
+     90           */
+     91          #define FN_OID_GET_ATTR1(FN_NAME, TYPE_T, TYPE_NAME, ATTR1_TYPE, ATTR1) \
+     92          int FN_NAME( const mbedtls_asn1_buf *oid, ATTR1_TYPE * ATTR1 )                  \
+     93          {                                                                       \
+     94              const TYPE_T *data = oid_ ## TYPE_NAME ## _from_asn1( oid );        \
+     95              if( data == NULL ) return( MBEDTLS_ERR_OID_NOT_FOUND );            \
+     96              *ATTR1 = data->ATTR1;                                               \
+     97              return( 0 );                                                        \
+     98          }
+     99          
+    100          /*
+    101           * Macro to generate a function for retrieving two attributes from an
+    102           * mbedtls_oid_descriptor_t wrapper.
+    103           */
+    104          #define FN_OID_GET_ATTR2(FN_NAME, TYPE_T, TYPE_NAME, ATTR1_TYPE, ATTR1,     \
+    105                                   ATTR2_TYPE, ATTR2)                                 \
+    106          int FN_NAME( const mbedtls_asn1_buf *oid, ATTR1_TYPE * ATTR1, ATTR2_TYPE * ATTR2 )  \
+    107          {                                                                           \
+    108              const TYPE_T *data = oid_ ## TYPE_NAME ## _from_asn1( oid );            \
+    109              if( data == NULL ) return( MBEDTLS_ERR_OID_NOT_FOUND );                \
+    110              *ATTR1 = data->ATTR1;                                                   \
+    111              *ATTR2 = data->ATTR2;                                                   \
+    112              return( 0 );                                                            \
+    113          }
+    114          
+    115          /*
+    116           * Macro to generate a function for retrieving the OID based on a single
+    117           * attribute from a mbedtls_oid_descriptor_t wrapper.
+    118           */
+    119          #define FN_OID_GET_OID_BY_ATTR1(FN_NAME, TYPE_T, LIST, ATTR1_TYPE, ATTR1)   \
+    120          int FN_NAME( ATTR1_TYPE ATTR1, const char **oid, size_t *olen )             \
+    121          {                                                                           \
+    122              const TYPE_T *cur = LIST;                                               \
+    123              while( cur->descriptor.asn1 != NULL ) {                                 \
+    124                  if( cur->ATTR1 == ATTR1 ) {                                         \
+    125                      *oid = cur->descriptor.asn1;                                    \
+    126                      *olen = cur->descriptor.asn1_len;                               \
+    127                      return( 0 );                                                    \
+    128                  }                                                                   \
+    129                  cur++;                                                              \
+    130              }                                                                       \
+    131              return( MBEDTLS_ERR_OID_NOT_FOUND );                                   \
+    132          }
+    133          
+    134          /*
+    135           * Macro to generate a function for retrieving the OID based on two
+    136           * attributes from a mbedtls_oid_descriptor_t wrapper.
+    137           */
+    138          #define FN_OID_GET_OID_BY_ATTR2(FN_NAME, TYPE_T, LIST, ATTR1_TYPE, ATTR1,   \
+    139                                          ATTR2_TYPE, ATTR2)                          \
+    140          int FN_NAME( ATTR1_TYPE ATTR1, ATTR2_TYPE ATTR2, const char **oid ,         \
+    141                       size_t *olen )                                                 \
+    142          {                                                                           \
+    143              const TYPE_T *cur = LIST;                                               \
+    144              while( cur->descriptor.asn1 != NULL ) {                                 \
+    145                  if( cur->ATTR1 == ATTR1 && cur->ATTR2 == ATTR2 ) {                  \
+    146                      *oid = cur->descriptor.asn1;                                    \
+    147                      *olen = cur->descriptor.asn1_len;                               \
+    148                      return( 0 );                                                    \
+    149                  }                                                                   \
+    150                  cur++;                                                              \
+    151              }                                                                       \
+    152              return( MBEDTLS_ERR_OID_NOT_FOUND );                                   \
+    153          }
+    154          
+    155          /*
+    156           * For X520 attribute types
+    157           */
+    158          typedef struct {
+    159              mbedtls_oid_descriptor_t    descriptor;
+    160              const char          *short_name;
+    161          } oid_x520_attr_t;
+    162          
+    163          static const oid_x520_attr_t oid_x520_attr_type[] =
+    164          {
+    165              {
+    166                  { ADD_LEN( MBEDTLS_OID_AT_CN ),          "id-at-commonName",               "Common Name" },
+    167                  "CN",
+    168              },
+    169              {
+    170                  { ADD_LEN( MBEDTLS_OID_AT_COUNTRY ),     "id-at-countryName",              "Country" },
+    171                  "C",
+    172              },
+    173              {
+    174                  { ADD_LEN( MBEDTLS_OID_AT_LOCALITY ),    "id-at-locality",                 "Locality" },
+    175                  "L",
+    176              },
+    177              {
+    178                  { ADD_LEN( MBEDTLS_OID_AT_STATE ),       "id-at-state",                    "State" },
+    179                  "ST",
+    180              },
+    181              {
+    182                  { ADD_LEN( MBEDTLS_OID_AT_ORGANIZATION ),"id-at-organizationName",         "Organization" },
+    183                  "O",
+    184              },
+    185              {
+    186                  { ADD_LEN( MBEDTLS_OID_AT_ORG_UNIT ),    "id-at-organizationalUnitName",   "Org Unit" },
+    187                  "OU",
+    188              },
+    189              {
+    190                  { ADD_LEN( MBEDTLS_OID_PKCS9_EMAIL ),    "emailAddress",                   "E-mail address" },
+    191                  "emailAddress",
+    192              },
+    193              {
+    194                  { ADD_LEN( MBEDTLS_OID_AT_SERIAL_NUMBER ),"id-at-serialNumber",            "Serial number" },
+    195                  "serialNumber",
+    196              },
+    197              {
+    198                  { ADD_LEN( MBEDTLS_OID_AT_POSTAL_ADDRESS ),"id-at-postalAddress",          "Postal address" },
+    199                  "postalAddress",
+    200              },
+    201              {
+    202                  { ADD_LEN( MBEDTLS_OID_AT_POSTAL_CODE ), "id-at-postalCode",               "Postal code" },
+    203                  "postalCode",
+    204              },
+    205              {
+    206                  { ADD_LEN( MBEDTLS_OID_AT_SUR_NAME ),    "id-at-surName",                  "Surname" },
+    207                  "SN",
+    208              },
+    209              {
+    210                  { ADD_LEN( MBEDTLS_OID_AT_GIVEN_NAME ),  "id-at-givenName",                "Given name" },
+    211                  "GN",
+    212              },
+    213              {
+    214                  { ADD_LEN( MBEDTLS_OID_AT_INITIALS ),    "id-at-initials",                 "Initials" },
+    215                  "initials",
+    216              },
+    217              {
+    218                  { ADD_LEN( MBEDTLS_OID_AT_GENERATION_QUALIFIER ), "id-at-generationQualifier", "Generation qualifier" },
+    219                  "generationQualifier",
+    220              },
+    221              {
+    222                  { ADD_LEN( MBEDTLS_OID_AT_TITLE ),       "id-at-title",                    "Title" },
+    223                  "title",
+    224              },
+    225              {
+    226                  { ADD_LEN( MBEDTLS_OID_AT_DN_QUALIFIER ),"id-at-dnQualifier",              "Distinguished Name qualifier" },
+    227                  "dnQualifier",
+    228              },
+    229              {
+    230                  { ADD_LEN( MBEDTLS_OID_AT_PSEUDONYM ),   "id-at-pseudonym",                "Pseudonym" },
+    231                  "pseudonym",
+    232              },
+    233              {
+    234                  { ADD_LEN( MBEDTLS_OID_DOMAIN_COMPONENT ), "id-domainComponent",           "Domain component" },
+    235                  "DC",
+    236              },
+    237              {
+    238                  { ADD_LEN( MBEDTLS_OID_AT_UNIQUE_IDENTIFIER ), "id-at-uniqueIdentifier",    "Unique Identifier" },
+    239                  "uniqueIdentifier",
+    240              },
+    241              {
+    242                  { NULL, 0, NULL, NULL },
+    243                  NULL,
+    244              }
+    245          };
+    246          
+    247          FN_OID_TYPED_FROM_ASN1(oid_x520_attr_t, x520_attr, oid_x520_attr_type)
+    248          FN_OID_GET_ATTR1(mbedtls_oid_get_attr_short_name, oid_x520_attr_t, x520_attr, const char *, short_name)
+    249          
+    250          #if defined(MBEDTLS_X509_USE_C) || defined(MBEDTLS_X509_CREATE_C)
+    251          /*
+    252           * For X509 extensions
+    253           */
+    254          typedef struct {
+    255              mbedtls_oid_descriptor_t    descriptor;
+    256              int                 ext_type;
+    257          } oid_x509_ext_t;
+    258          
+    259          static const oid_x509_ext_t oid_x509_ext[] =
+    260          {
+    261              {
+    262                  { ADD_LEN( MBEDTLS_OID_BASIC_CONSTRAINTS ),    "id-ce-basicConstraints",   "Basic Constraints" },
+    263                  MBEDTLS_X509_EXT_BASIC_CONSTRAINTS,
+    264              },
+    265              {
+    266                  { ADD_LEN( MBEDTLS_OID_KEY_USAGE ),            "id-ce-keyUsage",           "Key Usage" },
+    267                  MBEDTLS_X509_EXT_KEY_USAGE,
+    268              },
+    269              {
+    270                  { ADD_LEN( MBEDTLS_OID_EXTENDED_KEY_USAGE ),   "id-ce-keyUsage",           "Extended Key Usage" },
+    271                  MBEDTLS_X509_EXT_EXTENDED_KEY_USAGE,
+    272              },
+    273              {
+    274                  { ADD_LEN( MBEDTLS_OID_SUBJECT_ALT_NAME ),     "id-ce-subjectAltName",     "Subject Alt Name" },
+    275                  MBEDTLS_X509_EXT_SUBJECT_ALT_NAME,
+    276              },
+    277              {
+    278                  { ADD_LEN( MBEDTLS_OID_NS_CERT_TYPE ),         "id-netscape-certtype",     "Netscape Certificate Type" },
+    279                  MBEDTLS_X509_EXT_NS_CERT_TYPE,
+    280              },
+    281              {
+    282                  { NULL, 0, NULL, NULL },
+    283                  0,
+    284              },
+    285          };
+    286          
+    287          FN_OID_TYPED_FROM_ASN1(oid_x509_ext_t, x509_ext, oid_x509_ext)
+    288          FN_OID_GET_ATTR1(mbedtls_oid_get_x509_ext_type, oid_x509_ext_t, x509_ext, int, ext_type)
+    289          
+    290          static const mbedtls_oid_descriptor_t oid_ext_key_usage[] =
+    291          {
+    292              { ADD_LEN( MBEDTLS_OID_SERVER_AUTH ),      "id-kp-serverAuth",      "TLS Web Server Authentication" },
+    293              { ADD_LEN( MBEDTLS_OID_CLIENT_AUTH ),      "id-kp-clientAuth",      "TLS Web Client Authentication" },
+    294              { ADD_LEN( MBEDTLS_OID_CODE_SIGNING ),     "id-kp-codeSigning",     "Code Signing" },
+    295              { ADD_LEN( MBEDTLS_OID_EMAIL_PROTECTION ), "id-kp-emailProtection", "E-mail Protection" },
+    296              { ADD_LEN( MBEDTLS_OID_TIME_STAMPING ),    "id-kp-timeStamping",    "Time Stamping" },
+    297              { ADD_LEN( MBEDTLS_OID_OCSP_SIGNING ),     "id-kp-OCSPSigning",     "OCSP Signing" },
+    298              { NULL, 0, NULL, NULL },
+    299          };
+    300          
+    301          FN_OID_TYPED_FROM_ASN1(mbedtls_oid_descriptor_t, ext_key_usage, oid_ext_key_usage)
+    302          FN_OID_GET_ATTR1(mbedtls_oid_get_extended_key_usage, mbedtls_oid_descriptor_t, ext_key_usage, const char *, description)
+    303          #endif /* MBEDTLS_X509_USE_C || MBEDTLS_X509_CREATE_C */
+    304          
+    305          #if defined(MBEDTLS_MD_C)
+    306          /*
+    307           * For SignatureAlgorithmIdentifier
+    308           */
+    309          typedef struct {
+    310              mbedtls_oid_descriptor_t    descriptor;
+    311              mbedtls_md_type_t           md_alg;
+    312              mbedtls_pk_type_t           pk_alg;
+    313          } oid_sig_alg_t;
+    314          
+    315          static const oid_sig_alg_t oid_sig_alg[] =
+    316          {
+    317              {
+    318                  { ADD_LEN( MBEDTLS_OID_PKCS1_MD2 ),        "md2WithRSAEncryption",     "RSA with MD2" },
+    319                  MBEDTLS_MD_MD2,      MBEDTLS_PK_RSA,
+    320              },
+    321              {
+    322                  { ADD_LEN( MBEDTLS_OID_PKCS1_MD4 ),        "md4WithRSAEncryption",     "RSA with MD4" },
+    323                  MBEDTLS_MD_MD4,      MBEDTLS_PK_RSA,
+    324              },
+    325              {
+    326                  { ADD_LEN( MBEDTLS_OID_PKCS1_MD5 ),        "md5WithRSAEncryption",     "RSA with MD5" },
+    327                  MBEDTLS_MD_MD5,      MBEDTLS_PK_RSA,
+    328              },
+    329              {
+    330                  { ADD_LEN( MBEDTLS_OID_PKCS1_SHA1 ),       "sha-1WithRSAEncryption",   "RSA with SHA1" },
+    331                  MBEDTLS_MD_SHA1,     MBEDTLS_PK_RSA,
+    332              },
+    333              {
+    334                  { ADD_LEN( MBEDTLS_OID_PKCS1_SHA224 ),     "sha224WithRSAEncryption",  "RSA with SHA-224" },
+    335                  MBEDTLS_MD_SHA224,   MBEDTLS_PK_RSA,
+    336              },
+    337              {
+    338                  { ADD_LEN( MBEDTLS_OID_PKCS1_SHA256 ),     "sha256WithRSAEncryption",  "RSA with SHA-256" },
+    339                  MBEDTLS_MD_SHA256,   MBEDTLS_PK_RSA,
+    340              },
+    341              {
+    342                  { ADD_LEN( MBEDTLS_OID_PKCS1_SHA384 ),     "sha384WithRSAEncryption",  "RSA with SHA-384" },
+    343                  MBEDTLS_MD_SHA384,   MBEDTLS_PK_RSA,
+    344              },
+    345              {
+    346                  { ADD_LEN( MBEDTLS_OID_PKCS1_SHA512 ),     "sha512WithRSAEncryption",  "RSA with SHA-512" },
+    347                  MBEDTLS_MD_SHA512,   MBEDTLS_PK_RSA,
+    348              },
+    349              {
+    350                  { ADD_LEN( MBEDTLS_OID_RSA_SHA_OBS ),      "sha-1WithRSAEncryption",   "RSA with SHA1" },
+    351                  MBEDTLS_MD_SHA1,     MBEDTLS_PK_RSA,
+    352              },
+    353              {
+    354                  { ADD_LEN( MBEDTLS_OID_ECDSA_SHA1 ),       "ecdsa-with-SHA1",      "ECDSA with SHA1" },
+    355                  MBEDTLS_MD_SHA1,     MBEDTLS_PK_ECDSA,
+    356              },
+    357              {
+    358                  { ADD_LEN( MBEDTLS_OID_ECDSA_SHA224 ),     "ecdsa-with-SHA224",    "ECDSA with SHA224" },
+    359                  MBEDTLS_MD_SHA224,   MBEDTLS_PK_ECDSA,
+    360              },
+    361              {
+    362                  { ADD_LEN( MBEDTLS_OID_ECDSA_SHA256 ),     "ecdsa-with-SHA256",    "ECDSA with SHA256" },
+    363                  MBEDTLS_MD_SHA256,   MBEDTLS_PK_ECDSA,
+    364              },
+    365              {
+    366                  { ADD_LEN( MBEDTLS_OID_ECDSA_SHA384 ),     "ecdsa-with-SHA384",    "ECDSA with SHA384" },
+    367                  MBEDTLS_MD_SHA384,   MBEDTLS_PK_ECDSA,
+    368              },
+    369              {
+    370                  { ADD_LEN( MBEDTLS_OID_ECDSA_SHA512 ),     "ecdsa-with-SHA512",    "ECDSA with SHA512" },
+    371                  MBEDTLS_MD_SHA512,   MBEDTLS_PK_ECDSA,
+    372              },
+    373              {
+    374                  { ADD_LEN( MBEDTLS_OID_RSASSA_PSS ),        "RSASSA-PSS",           "RSASSA-PSS" },
+    375                  MBEDTLS_MD_NONE,     MBEDTLS_PK_RSASSA_PSS,
+    376              },
+    377              {
+    378                  { NULL, 0, NULL, NULL },
+    379                  MBEDTLS_MD_NONE, MBEDTLS_PK_NONE,
+    380              },
+    381          };
+    382          
+    383          FN_OID_TYPED_FROM_ASN1(oid_sig_alg_t, sig_alg, oid_sig_alg)
+    384          FN_OID_GET_DESCRIPTOR_ATTR1(mbedtls_oid_get_sig_alg_desc, oid_sig_alg_t, sig_alg, const char *, description)
+    385          FN_OID_GET_ATTR2(mbedtls_oid_get_sig_alg, oid_sig_alg_t, sig_alg, mbedtls_md_type_t, md_alg, mbedtls_pk_type_t, pk_alg)
+    386          FN_OID_GET_OID_BY_ATTR2(mbedtls_oid_get_oid_by_sig_alg, oid_sig_alg_t, oid_sig_alg, mbedtls_pk_type_t, pk_alg, mbedtls_md_type_t, md_alg)
+    387          #endif /* MBEDTLS_MD_C */
+    388          
+    389          /*
+    390           * For PublicKeyInfo (PKCS1, RFC 5480)
+    391           */
+    392          typedef struct {
+    393              mbedtls_oid_descriptor_t    descriptor;
+    394              mbedtls_pk_type_t           pk_alg;
+    395          } oid_pk_alg_t;
+    396          
+    397          static const oid_pk_alg_t oid_pk_alg[] =
+    398          {
+    399              {
+    400                  { ADD_LEN( MBEDTLS_OID_PKCS1_RSA ),      "rsaEncryption",   "RSA" },
+    401                  MBEDTLS_PK_RSA,
+    402              },
+    403              {
+    404                  { ADD_LEN( MBEDTLS_OID_EC_ALG_UNRESTRICTED ),  "id-ecPublicKey",   "Generic EC key" },
+    405                  MBEDTLS_PK_ECKEY,
+    406              },
+    407              {
+    408                  { ADD_LEN( MBEDTLS_OID_EC_ALG_ECDH ),          "id-ecDH",          "EC key for ECDH" },
+    409                  MBEDTLS_PK_ECKEY_DH,
+    410              },
+    411              {
+    412                  { NULL, 0, NULL, NULL },
+    413                  MBEDTLS_PK_NONE,
+    414              },
+    415          };
+    416          
+    417          FN_OID_TYPED_FROM_ASN1(oid_pk_alg_t, pk_alg, oid_pk_alg)
+    418          FN_OID_GET_ATTR1(mbedtls_oid_get_pk_alg, oid_pk_alg_t, pk_alg, mbedtls_pk_type_t, pk_alg)
+    419          FN_OID_GET_OID_BY_ATTR1(mbedtls_oid_get_oid_by_pk_alg, oid_pk_alg_t, oid_pk_alg, mbedtls_pk_type_t, pk_alg)
+    420          
+    421          #if defined(MBEDTLS_ECP_C)
+    422          /*
+    423           * For namedCurve (RFC 5480)
+    424           */
+    425          typedef struct {
+    426              mbedtls_oid_descriptor_t    descriptor;
+    427              mbedtls_ecp_group_id        grp_id;
+    428          } oid_ecp_grp_t;
+    429          
+    430          static const oid_ecp_grp_t oid_ecp_grp[] =
+    431          {
+    432              {
+    433                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP192R1 ), "secp192r1",    "secp192r1" },
+    434                  MBEDTLS_ECP_DP_SECP192R1,
+    435              },
+    436              {
+    437                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP224R1 ), "secp224r1",    "secp224r1" },
+    438                  MBEDTLS_ECP_DP_SECP224R1,
+    439              },
+    440              {
+    441                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP256R1 ), "secp256r1",    "secp256r1" },
+    442                  MBEDTLS_ECP_DP_SECP256R1,
+    443              },
+    444              {
+    445                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP384R1 ), "secp384r1",    "secp384r1" },
+    446                  MBEDTLS_ECP_DP_SECP384R1,
+    447              },
+    448              {
+    449                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP521R1 ), "secp521r1",    "secp521r1" },
+    450                  MBEDTLS_ECP_DP_SECP521R1,
+    451              },
+    452              {
+    453                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP192K1 ), "secp192k1",    "secp192k1" },
+    454                  MBEDTLS_ECP_DP_SECP192K1,
+    455              },
+    456              {
+    457                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP224K1 ), "secp224k1",    "secp224k1" },
+    458                  MBEDTLS_ECP_DP_SECP224K1,
+    459              },
+    460              {
+    461                  { ADD_LEN( MBEDTLS_OID_EC_GRP_SECP256K1 ), "secp256k1",    "secp256k1" },
+    462                  MBEDTLS_ECP_DP_SECP256K1,
+    463              },
+    464              {
+    465                  { ADD_LEN( MBEDTLS_OID_EC_GRP_BP256R1 ),   "brainpoolP256r1","brainpool256r1" },
+    466                  MBEDTLS_ECP_DP_BP256R1,
+    467              },
+    468              {
+    469                  { ADD_LEN( MBEDTLS_OID_EC_GRP_BP384R1 ),   "brainpoolP384r1","brainpool384r1" },
+    470                  MBEDTLS_ECP_DP_BP384R1,
+    471              },
+    472              {
+    473                  { ADD_LEN( MBEDTLS_OID_EC_GRP_BP512R1 ),   "brainpoolP512r1","brainpool512r1" },
+    474                  MBEDTLS_ECP_DP_BP512R1,
+    475              },
+    476              {
+    477                  { NULL, 0, NULL, NULL },
+    478                  MBEDTLS_ECP_DP_NONE,
+    479              },
+    480          };
+    481          
+    482          FN_OID_TYPED_FROM_ASN1(oid_ecp_grp_t, grp_id, oid_ecp_grp)
+    483          FN_OID_GET_ATTR1(mbedtls_oid_get_ec_grp, oid_ecp_grp_t, grp_id, mbedtls_ecp_group_id, grp_id)
+    484          FN_OID_GET_OID_BY_ATTR1(mbedtls_oid_get_oid_by_ec_grp, oid_ecp_grp_t, oid_ecp_grp, mbedtls_ecp_group_id, grp_id)
+    485          #endif /* MBEDTLS_ECP_C */
+    486          
+    487          #if defined(MBEDTLS_CIPHER_C)
+    488          /*
+    489           * For PKCS#5 PBES2 encryption algorithm
+    490           */
+    491          typedef struct {
+    492              mbedtls_oid_descriptor_t    descriptor;
+    493              mbedtls_cipher_type_t       cipher_alg;
+    494          } oid_cipher_alg_t;
+    495          
+    496          static const oid_cipher_alg_t oid_cipher_alg[] =
+    497          {
+    498              {
+    499                  { ADD_LEN( MBEDTLS_OID_DES_CBC ),              "desCBC",       "DES-CBC" },
+    500                  MBEDTLS_CIPHER_DES_CBC,
+    501              },
+    502              {
+    503                  { ADD_LEN( MBEDTLS_OID_DES_EDE3_CBC ),         "des-ede3-cbc", "DES-EDE3-CBC" },
+    504                  MBEDTLS_CIPHER_DES_EDE3_CBC,
+    505              },
+    506              {
+    507                  { NULL, 0, NULL, NULL },
+    508                  MBEDTLS_CIPHER_NONE,
+    509              },
+    510          };
+    511          
+    512          FN_OID_TYPED_FROM_ASN1(oid_cipher_alg_t, cipher_alg, oid_cipher_alg)
+    513          FN_OID_GET_ATTR1(mbedtls_oid_get_cipher_alg, oid_cipher_alg_t, cipher_alg, mbedtls_cipher_type_t, cipher_alg)
+    514          #endif /* MBEDTLS_CIPHER_C */
+    515          
+    516          #if defined(MBEDTLS_MD_C)
+    517          /*
+    518           * For digestAlgorithm
+    519           */
+    520          typedef struct {
+    521              mbedtls_oid_descriptor_t    descriptor;
+    522              mbedtls_md_type_t           md_alg;
+    523          } oid_md_alg_t;
+    524          
+    525          static const oid_md_alg_t oid_md_alg[] =
+    526          {
+    527              {
+    528                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_MD2 ),       "id-md2",       "MD2" },
+    529                  MBEDTLS_MD_MD2,
+    530              },
+    531              {
+    532                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_MD4 ),       "id-md4",       "MD4" },
+    533                  MBEDTLS_MD_MD4,
+    534              },
+    535              {
+    536                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_MD5 ),       "id-md5",       "MD5" },
+    537                  MBEDTLS_MD_MD5,
+    538              },
+    539              {
+    540                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_SHA1 ),      "id-sha1",      "SHA-1" },
+    541                  MBEDTLS_MD_SHA1,
+    542              },
+    543              {
+    544                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_SHA224 ),    "id-sha224",    "SHA-224" },
+    545                  MBEDTLS_MD_SHA224,
+    546              },
+    547              {
+    548                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_SHA256 ),    "id-sha256",    "SHA-256" },
+    549                  MBEDTLS_MD_SHA256,
+    550              },
+    551              {
+    552                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_SHA384 ),    "id-sha384",    "SHA-384" },
+    553                  MBEDTLS_MD_SHA384,
+    554              },
+    555              {
+    556                  { ADD_LEN( MBEDTLS_OID_DIGEST_ALG_SHA512 ),    "id-sha512",    "SHA-512" },
+    557                  MBEDTLS_MD_SHA512,
+    558              },
+    559              {
+    560                  { NULL, 0, NULL, NULL },
+    561                  MBEDTLS_MD_NONE,
+    562              },
+    563          };
+    564          
+    565          FN_OID_TYPED_FROM_ASN1(oid_md_alg_t, md_alg, oid_md_alg)
+    566          FN_OID_GET_ATTR1(mbedtls_oid_get_md_alg, oid_md_alg_t, md_alg, mbedtls_md_type_t, md_alg)
+    567          FN_OID_GET_OID_BY_ATTR1(mbedtls_oid_get_oid_by_md, oid_md_alg_t, oid_md_alg, mbedtls_md_type_t, md_alg)
+    568          #endif /* MBEDTLS_MD_C */
+    569          
+    570          #if defined(MBEDTLS_PKCS12_C)
+    571          /*
+    572           * For PKCS#12 PBEs
+    573           */
+    574          typedef struct {
+    575              mbedtls_oid_descriptor_t    descriptor;
+    576              mbedtls_md_type_t           md_alg;
+    577              mbedtls_cipher_type_t       cipher_alg;
+    578          } oid_pkcs12_pbe_alg_t;
+    579          
+    580          static const oid_pkcs12_pbe_alg_t oid_pkcs12_pbe_alg[] =
+    581          {
+    582              {
+    583                  { ADD_LEN( MBEDTLS_OID_PKCS12_PBE_SHA1_DES3_EDE_CBC ), "pbeWithSHAAnd3-KeyTripleDES-CBC", "PBE with SHA1 and 3-Key 3DES" },
+    584                  MBEDTLS_MD_SHA1,      MBEDTLS_CIPHER_DES_EDE3_CBC,
+    585              },
+    586              {
+    587                  { ADD_LEN( MBEDTLS_OID_PKCS12_PBE_SHA1_DES2_EDE_CBC ), "pbeWithSHAAnd2-KeyTripleDES-CBC", "PBE with SHA1 and 2-Key 3DES" },
+    588                  MBEDTLS_MD_SHA1,      MBEDTLS_CIPHER_DES_EDE_CBC,
+    589              },
+    590              {
+    591                  { NULL, 0, NULL, NULL },
+    592                  MBEDTLS_MD_NONE, MBEDTLS_CIPHER_NONE,
+    593              },
+    594          };
+    595          
+    596          FN_OID_TYPED_FROM_ASN1(oid_pkcs12_pbe_alg_t, pkcs12_pbe_alg, oid_pkcs12_pbe_alg)
+    597          FN_OID_GET_ATTR2(mbedtls_oid_get_pkcs12_pbe_alg, oid_pkcs12_pbe_alg_t, pkcs12_pbe_alg, mbedtls_md_type_t, md_alg, mbedtls_cipher_type_t, cipher_alg)
+    598          #endif /* MBEDTLS_PKCS12_C */
+    599          
+    600          #define OID_SAFE_SNPRINTF                               \
+    601              do {                                                \
+    602                  if( ret < 0 || (size_t) ret >= n )              \
+    603                      return( MBEDTLS_ERR_OID_BUF_TOO_SMALL );    \
+    604                                                                  \
+    605                  n -= (size_t) ret;                              \
+    606                  p += (size_t) ret;                              \
+    607              } while( 0 )
+    608          
+    609          /* Return the x.y.z.... style numeric string for the given OID */
+    610          int mbedtls_oid_get_numeric_string( char *buf, size_t size,
+    611                                      const mbedtls_asn1_buf *oid )
+    612          {
+    613              int ret;
+    614              size_t i, n;
+    615              unsigned int value;
+    616              char *p;
+    617          
+    618              p = buf;
+    619              n = size;
+    620          
+    621              /* First byte contains first two dots */
+    622              if( oid->len > 0 )
+    623              {
+    624                  ret = mbedtls_snprintf( p, n, "%d.%d", oid->p[0] / 40, oid->p[0] % 40 );
+    625                  OID_SAFE_SNPRINTF;
+    626              }
+    627          
+    628              value = 0;
+    629              for( i = 1; i < oid->len; i++ )
+    630              {
+    631                  /* Prevent overflow in value. */
+    632                  if( ( ( value << 7 ) >> 7 ) != value )
+    633                      return( MBEDTLS_ERR_OID_BUF_TOO_SMALL );
+    634          
+    635                  value <<= 7;
+    636                  value += oid->p[i] & 0x7F;
+    637          
+    638                  if( !( oid->p[i] & 0x80 ) )
+    639                  {
+    640                      /* Last byte */
+    641                      ret = mbedtls_snprintf( p, n, ".%d", value );
+    642                      OID_SAFE_SNPRINTF;
+    643                      value = 0;
+    644                  }
+    645              }
+    646          
+    647              return( (int) ( size - n ) );
+    648          }
+    649          
+    650          #endif /* MBEDTLS_OID_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   mbedtls_oid_get_attr_short_name
+         8   -> oid_x520_attr_from_asn1
+       8   mbedtls_oid_get_cipher_alg
+         8   -> oid_cipher_alg_from_asn1
+       8   mbedtls_oid_get_extended_key_usage
+         8   -> oid_ext_key_usage_from_asn1
+       8   mbedtls_oid_get_md_alg
+         8   -> oid_md_alg_from_asn1
+      32   mbedtls_oid_get_numeric_string
+        32   -> snprintf
+      12   mbedtls_oid_get_oid_by_md
+      12   mbedtls_oid_get_oid_by_pk_alg
+      16   mbedtls_oid_get_oid_by_sig_alg
+       8   mbedtls_oid_get_pk_alg
+         8   -> oid_pk_alg_from_asn1
+      16   mbedtls_oid_get_sig_alg
+        16   -> oid_sig_alg_from_asn1
+       8   mbedtls_oid_get_sig_alg_desc
+         8   -> oid_sig_alg_from_asn1
+       8   mbedtls_oid_get_x509_ext_type
+         8   -> oid_x509_ext_from_asn1
+      16   oid_cipher_alg_from_asn1
+        16   -> memcmp
+      16   oid_ext_key_usage_from_asn1
+        16   -> memcmp
+      16   oid_md_alg_from_asn1
+        16   -> memcmp
+      16   oid_pk_alg_from_asn1
+        16   -> memcmp
+      16   oid_sig_alg_from_asn1
+        16   -> memcmp
+      16   oid_x509_ext_from_asn1
+        16   -> memcmp
+      16   oid_x520_attr_from_asn1
+        16   -> memcmp
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable198
+       4  ??DataTable198_1
+       4  ?_0
+      20  ?_1
+      12  ?_10
+      20  ?_100
+      12  ?_101
+      20  ?_102
+      16  ?_103
+      12  ?_104
+      20  ?_105
+      16  ?_106
+      12  ?_107
+      24  ?_108
+      16  ?_109
+       2  ?_11
+      12  ?_110
+      24  ?_111
+      16  ?_112
+      12  ?_113
+      24  ?_114
+      16  ?_115
+      12  ?_116
+      24  ?_117
+      16  ?_118
+      12  ?_119
+       4  ?_12
+      24  ?_120
+      20  ?_121
+      12  ?_122
+      24  ?_123
+      20  ?_124
+      12  ?_125
+      24  ?_126
+      20  ?_127
+      12  ?_128
+      24  ?_129
+      12  ?_13
+      20  ?_130
+       8  ?_131
+       8  ?_132
+      16  ?_133
+      16  ?_134
+      12  ?_135
+      20  ?_136
+      20  ?_137
+      12  ?_138
+      20  ?_139
+       8  ?_14
+      20  ?_140
+      12  ?_141
+      20  ?_142
+      20  ?_143
+      12  ?_144
+      20  ?_145
+      20  ?_146
+      12  ?_147
+      12  ?_148
+      12  ?_149
+       4  ?_15
+      16  ?_150
+       4  ?_151
+       8  ?_152
+      16  ?_153
+      16  ?_154
+       8  ?_155
+       8  ?_156
+      16  ?_157
+       8  ?_158
+       8  ?_159
+       4  ?_16
+       8  ?_160
+      12  ?_161
+      16  ?_162
+      16  ?_163
+      12  ?_164
+       8  ?_165
+       4  ?_166
+      12  ?_167
+       8  ?_168
+       4  ?_169
+      24  ?_17
+      12  ?_170
+       8  ?_171
+       4  ?_172
+       8  ?_173
+       8  ?_174
+       8  ?_175
+      12  ?_176
+      12  ?_177
+       8  ?_178
+      12  ?_179
+      16  ?_18
+      12  ?_180
+       8  ?_181
+      12  ?_182
+      12  ?_183
+       8  ?_184
+      12  ?_185
+      12  ?_186
+       8  ?_187
+       8  ?_188
+       4  ?_189
+       2  ?_19
+      12  ?_2
+       4  ?_20
+      32  ?_21
+      12  ?_22
+       4  ?_23
+      12  ?_24
+      16  ?_25
+      16  ?_26
+       4  ?_27
+      20  ?_28
+      16  ?_29
+       4  ?_3
+      16  ?_30
+       4  ?_31
+      20  ?_32
+      16  ?_33
+      16  ?_34
+       4  ?_35
+      20  ?_36
+      12  ?_37
+      12  ?_38
+       4  ?_39
+       4  ?_4
+      16  ?_40
+       8  ?_41
+       4  ?_42
+       4  ?_43
+      16  ?_44
+      12  ?_45
+       4  ?_46
+       4  ?_47
+      16  ?_48
+      12  ?_49
+      20  ?_5
+      12  ?_50
+       4  ?_51
+      28  ?_52
+      24  ?_53
+      20  ?_54
+       4  ?_55
+      12  ?_56
+       8  ?_57
+       8  ?_58
+       4  ?_59
+       8  ?_6
+      20  ?_60
+      32  ?_61
+      12  ?_62
+       4  ?_63
+      16  ?_64
+      12  ?_65
+      12  ?_66
+      12  ?_67
+      20  ?_68
+      20  ?_69
+       2  ?_7
+       4  ?_70
+       4  ?_71
+      24  ?_72
+      20  ?_73
+      20  ?_74
+       4  ?_75
+      24  ?_76
+      20  ?_77
+       4  ?_78
+      16  ?_79
+       4  ?_8
+      12  ?_80
+       4  ?_81
+      20  ?_82
+       4  ?_83
+      24  ?_84
+      20  ?_85
+      12  ?_86
+      24  ?_87
+      28  ?_88
+      12  ?_89
+      16  ?_9
+      20  ?_90
+      32  ?_91
+      12  ?_92
+      20  ?_93
+      32  ?_94
+      12  ?_95
+      20  ?_96
+      16  ?_97
+      12  ?_98
+      24  ?_99
+      26  mbedtls_oid_get_attr_short_name
+      26  mbedtls_oid_get_cipher_alg
+      26  mbedtls_oid_get_extended_key_usage
+      26  mbedtls_oid_get_md_alg
+     144  mbedtls_oid_get_numeric_string
+      42  mbedtls_oid_get_oid_by_md
+      42  mbedtls_oid_get_oid_by_pk_alg
+      50  mbedtls_oid_get_oid_by_sig_alg
+      26  mbedtls_oid_get_pk_alg
+      32  mbedtls_oid_get_sig_alg
+      26  mbedtls_oid_get_sig_alg_desc
+      26  mbedtls_oid_get_x509_ext_type
+      60  oid_cipher_alg
+      50  oid_cipher_alg_from_asn1
+     112  oid_ext_key_usage
+      50  oid_ext_key_usage_from_asn1
+     180  oid_md_alg
+      50  oid_md_alg_from_asn1
+      80  oid_pk_alg
+      50  oid_pk_alg_from_asn1
+     320  oid_sig_alg
+      48  oid_sig_alg_from_asn1
+     120  oid_x509_ext
+      50  oid_x509_ext_from_asn1
+      50  oid_x520_attr_from_asn1
+     400  oid_x520_attr_type
+
+ 
+ 2 550 bytes in section .rodata
+ 2 128 bytes in section .text
+ 
+ 2 128 bytes of CODE  memory
+ 2 550 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,527 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:03
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_gdma.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_gdma.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_gdma.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_gdma.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_gdma.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_gdma.h"
+     36          
+     37          #ifdef HAL_GDMA_MODULE_ENABLED
+     38          #include <string.h>
+     39          #include "dma_sw.h"
+     40          #include "dma_hw.h"
+     41          #include "hal_log.h"
+     42          #include "hal_sleep_manager.h"
+     43          #include "hal_sleep_driver.h"
+     44          
+     45          
+     46          typedef struct {
+     47              hal_gdma_callback_t callback;
+     48              void *user_data;
+     49          } hal_gdma_callback_context;
+     50          
+     51          static hal_gdma_callback_context g_gdma_callback_context[DMA_MAX_FULL_CHANNEL];
+     52          
+     53          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     54          static uint8_t gdma_sleep_handler[DMA_MAX_FULL_CHANNEL] = {0};
+     55          static char *gdma_lock_sleep_name[DMA_MAX_FULL_CHANNEL] = {"GDMA0", "GDMA1"};
+     56          #endif
+     57          
+     58          
+     59          static inline bool hal_gdma_is_channel_vaild(hal_gdma_channel_t channel)
+     60          {
+     61              return channel < HAL_GDMA_CHANNEL_MAX;
+     62          }
+     63          
+     64          static DMA_TranSize hal_gdma_calc_size(uint32_t src_addr,
+     65                                                 uint32_t dest_addr,
+     66                                                 uint32_t length,
+     67                                                 uint32_t *count)
+     68          {
+     69              if ((0 == (src_addr % 4))
+     70                      && (0 == (dest_addr % 4))
+     71                      && (0 == (length % 4))) {
+     72                  *count = length / 4;
+     73                  return DMA_LONG;
+     74              } else if ((0 == (src_addr % 2))
+     75                         && (0 == (dest_addr % 2))
+     76                         && (0 == (length % 2))) {
+     77                  *count = length / 2;
+     78                  return DMA_SHORT;
+     79              } else {
+     80                  *count = length;
+     81                  return DMA_BYTE;
+     82              }
+     83          }
+     84          
+     85          static void hal_gdma1_callback(void)
+     86          {
+     87              if (NULL != g_gdma_callback_context[0].callback) {
+     88                  g_gdma_callback_context[0].callback(HAL_GDMA_EVENT_TRANSACTION_SUCCESS,
+     89                                                      g_gdma_callback_context[0].user_data);
+     90              }
+     91          }
+     92          
+     93          static void hal_gdma2_callback(void)
+     94          {
+     95              if (NULL != g_gdma_callback_context[1].callback) {
+     96                  g_gdma_callback_context[1].callback(HAL_GDMA_EVENT_TRANSACTION_SUCCESS,
+     97                                                      g_gdma_callback_context[1].user_data);
+     98              }
+     99          }
+    100          
+    101          hal_gdma_status_t hal_gdma_init(hal_gdma_channel_t channel)
+    102          {
+    103              uint8_t channel_used = 0xff;
+    104              if (!hal_gdma_is_channel_vaild(channel)) {
+    105                  log_hal_error("channel invalid: %d", channel);
+    106                  return HAL_GDMA_STATUS_ERROR_CHANNEL;
+    107              }
+    108              /*get sleep handler*/
+    109          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    110              gdma_sleep_handler[channel] = hal_sleep_manager_set_sleep_handle(gdma_lock_sleep_name[channel]);
+    111              if (gdma_sleep_handler[channel] == INVALID_SLEEP_HANDLE) {
+    112                  log_hal_error("there's no available handle when GDMA get sleep handle");
+    113                  return HAL_GDMA_STATUS_ERROR;
+    114              }
+    115          #endif
+    116              memset(&g_gdma_callback_context[channel], 0, sizeof(g_gdma_callback_context));
+    117              channel_used = dma_set_channel_busy(channel);
+    118              if (0xff == channel_used) {
+    119                  return HAL_GDMA_STATUS_ERROR;
+    120              }
+    121              return HAL_GDMA_STATUS_OK;
+    122          }
+    123          
+    124          hal_gdma_status_t hal_gdma_deinit(hal_gdma_channel_t channel)
+    125          {
+    126          
+    127              if (!hal_gdma_is_channel_vaild(channel)) {
+    128                  log_hal_error("channel invalid: %d", channel);
+    129                  return HAL_GDMA_STATUS_ERROR_CHANNEL;
+    130              }
+    131          
+    132              /*release sleep hander*/
+    133          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    134              hal_sleep_manager_release_sleep_handle(gdma_sleep_handler[channel]);
+    135          #endif
+    136          
+    137              dma_set_channel_idle(channel);
+    138              memset(&g_gdma_callback_context[channel], 0, sizeof(g_gdma_callback_context));
+    139              return HAL_GDMA_STATUS_OK;
+    140          }
+    141          
+    142          hal_gdma_status_t hal_gdma_start_interrupt(hal_gdma_channel_t channel,
+    143                  uint32_t destination_address,
+    144                  uint32_t source_address,
+    145                  uint32_t data_length)
+    146          {
+    147              DMA_INPUT input;
+    148              uint32_t count = 0;
+    149              uint32_t size = 0;
+    150              DMA_SWCOPYMENU menu;
+    151              static const uint8_t invalid_handle = 0xff;
+    152              uint8_t handle;
+    153              if (!hal_gdma_is_channel_vaild(channel)) {
+    154                  log_hal_error("channel invalid: %d", channel);
+    155                  return HAL_GDMA_STATUS_ERROR_CHANNEL;
+    156              }
+    157              handle = DMA_FullSize_CheckIdleChannel(DMA_SW, channel);
+    158          
+    159              if (invalid_handle == handle) {
+    160                  log_hal_error("DMA_FullSize_GetChannel fail.");
+    161                  return HAL_GDMA_STATUS_ERROR;
+    162              }
+    163              if (data_length == 0) {
+    164                  return HAL_GDMA_STATUS_INVALID_PARAMETER;
+    165              }
+    166          
+    167          #ifdef  HAL_GDMA_WRAP_FLASH_ADDRESS_TO_VIRTUAL_ADDRESS
+    168              if ((destination_address & HAL_GDMA_WRAP_FLASH_ADDRESS_HIGH_BYTE_MASK) == HAL_GDMA_WRAP_FLASH_ADDRESS_MASK) {
+    169          
+    170                  destination_address |= HAL_GDMA_WRAP_FLASH_VIRTUAL_ADDRESS_MASK;
+    171              }
+    172          
+    173              if ((source_address & HAL_GDMA_WRAP_FLASH_ADDRESS_HIGH_BYTE_MASK) == HAL_GDMA_WRAP_FLASH_ADDRESS_MASK) {
+    174          
+    175                  source_address |= HAL_GDMA_WRAP_FLASH_VIRTUAL_ADDRESS_MASK;
+    176              }
+    177          #endif
+    178          
+    179              /*lock sleep mode*/
+    180          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    181              hal_sleep_manager_lock_sleep(gdma_sleep_handler[channel]);
+    182          #endif
+    183          
+    184              menu.srcaddr = source_address;
+    185              menu.dstaddr = destination_address;
+    186          
+    187              size = hal_gdma_calc_size(source_address,
+    188                                        destination_address,
+    189                                        data_length,
+    190                                        &count);
+    191          
+    192              input.type = DMA_SWCOPY;
+    193              input.size = (DMA_TranSize)size;
+    194              input.count = count;
+    195              input.menu = &menu;
+    196          
+    197              if (handle == 1) {
+    198                  input.callback = hal_gdma1_callback;
+    199              } else {
+    200                  input.callback = hal_gdma2_callback;
+    201              }
+    202          
+    203          
+    204              DMA_FullSize_Config(handle, &input, true);
+    205              return HAL_GDMA_STATUS_OK;
+    206          }
+    207          
+    208          hal_gdma_status_t hal_gdma_start_polling(hal_gdma_channel_t channel,
+    209                  uint32_t destination_address,
+    210                  uint32_t source_address,
+    211                  uint32_t data_length)
+    212          {
+    213              DMA_INPUT input;
+    214              uint32_t count = 0;
+    215              uint32_t size = 0;
+    216              DMA_SWCOPYMENU menu;
+    217              static const uint8_t invalid_handle = 0xff;
+    218              uint8_t handle;
+    219              if (!hal_gdma_is_channel_vaild(channel)) {
+    220                  log_hal_error("channel invalid: %d", channel);
+    221                  return HAL_GDMA_STATUS_ERROR_CHANNEL;
+    222              }
+    223              handle = DMA_FullSize_CheckIdleChannel(DMA_SW, channel);
+    224              if (invalid_handle == handle) {
+    225                  log_hal_error("DMA_FullSize_GetChannel fail.");
+    226                  return HAL_GDMA_STATUS_ERROR;
+    227              }
+    228              if (data_length == 0) {
+    229                  return HAL_GDMA_STATUS_INVALID_PARAMETER;
+    230              }
+    231          
+    232          #ifdef  HAL_GDMA_WRAP_FLASH_ADDRESS_TO_VIRTUAL_ADDRESS
+    233              if ((destination_address & HAL_GDMA_WRAP_FLASH_ADDRESS_HIGH_BYTE_MASK) == HAL_GDMA_WRAP_FLASH_ADDRESS_MASK) {
+    234          
+    235                  destination_address |= HAL_GDMA_WRAP_FLASH_VIRTUAL_ADDRESS_MASK;
+    236              }
+    237          
+    238              if ((source_address & HAL_GDMA_WRAP_FLASH_ADDRESS_HIGH_BYTE_MASK) == HAL_GDMA_WRAP_FLASH_ADDRESS_MASK) {
+    239          
+    240                  source_address |= HAL_GDMA_WRAP_FLASH_VIRTUAL_ADDRESS_MASK;
+    241              }
+    242          #endif
+    243          
+    244              /*lock sleep mode*/
+    245          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    246              hal_sleep_manager_lock_sleep(gdma_sleep_handler[channel]);
+    247          #endif
+    248          
+    249              menu.srcaddr = source_address;
+    250              menu.dstaddr = destination_address;
+    251          
+    252              size = hal_gdma_calc_size(source_address,
+    253                                        destination_address,
+    254                                        data_length,
+    255                                        &count);
+    256          
+    257              input.type = DMA_SWCOPY;
+    258              input.size = (DMA_TranSize)size;
+    259              input.count = count;
+    260              input.menu = &menu;
+    261              input.callback = NULL;
+    262              DMA_FullSize_Config(handle, &input, true);
+    263              while (DMA_CheckRunStat(channel + 1));
+    264              return HAL_GDMA_STATUS_OK;
+    265          }
+    266          
+    267          hal_gdma_status_t hal_gdma_register_callback(hal_gdma_channel_t channel,
+    268                  hal_gdma_callback_t callback,
+    269                  void *user_data)
+    270          {
+    271              if (!hal_gdma_is_channel_vaild(channel)) {
+    272                  log_hal_error("channel invalid: %d", channel);
+    273                  return HAL_GDMA_STATUS_ERROR_CHANNEL;
+    274              }
+    275              g_gdma_callback_context[channel].callback = callback;
+    276              g_gdma_callback_context[channel].user_data = user_data;
+    277              return HAL_GDMA_STATUS_OK;
+    278          }
+    279          
+    280          hal_gdma_status_t hal_gdma_get_running_status(hal_gdma_channel_t channel, hal_gdma_running_status_t *running_status)
+    281          
+    282          {
+    283          
+    284          
+    285              if (!hal_gdma_is_channel_vaild(channel)) {
+    286                  log_hal_error("channel invalid: %d", channel);
+    287                  return HAL_GDMA_STATUS_ERROR_CHANNEL;
+    288              }
+    289          
+    290              if (DMA_CheckRunStat(channel + 1)) {
+    291                  *running_status = HAL_GDMA_BUSY;
+    292              } else {
+    293                  *running_status = HAL_GDMA_IDLE;
+    294              }
+    295              return HAL_GDMA_STATUS_OK;
+    296          }
+    297          
+    298          
+    299          hal_gdma_status_t hal_gdma_stop(hal_gdma_channel_t channel)
+    300          {
+    301              uint8_t index = 0;
+    302          
+    303              if (!hal_gdma_is_channel_vaild(channel)) {
+    304                  log_hal_error("channel invalid: %d", channel);
+    305                  return HAL_GDMA_STATUS_ERROR_CHANNEL;
+    306              }
+    307          
+    308              index = (uint8_t)channel + 1;
+    309          
+    310              DMA_FullSize_FreeChannel(index);
+    311          
+    312              /*unlock sleep mode*/
+    313          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    314              hal_sleep_manager_unlock_sleep(gdma_sleep_handler[channel]);
+    315          #endif
+    316          
+    317              return HAL_GDMA_STATUS_OK;
+    318          
+    319          }
+    320          
+    321          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   hal_gdma1_callback
+         0   -- Indirect call
+       0   hal_gdma2_callback
+         0   -- Indirect call
+       0   hal_gdma_calc_size
+      16   hal_gdma_deinit
+        16   -> __aeabi_memset
+        16   -> dma_set_channel_idle
+        16   -> hal_gdma_is_channel_vaild
+        16   -> hal_sleep_manager_release_sleep_handle
+        16   -> log_hal_error_internal
+      16   hal_gdma_get_running_status
+        16   -> hal_gdma_is_channel_vaild
+        16   -> log_hal_error_internal
+      16   hal_gdma_init
+        16   -> __aeabi_memset
+        16   -> dma_set_channel_busy
+        16   -> hal_gdma_is_channel_vaild
+        16   -> hal_sleep_manager_set_sleep_handle
+        16   -> log_hal_error_internal
+       0   hal_gdma_is_channel_vaild
+      16   hal_gdma_register_callback
+        16   -> hal_gdma_is_channel_vaild
+        16   -> log_hal_error_internal
+      64   hal_gdma_start_interrupt
+        64   -> DMA_Config_Internal
+        64   -> DMA_FullSize_CheckIdleChannel
+        64   -> hal_gdma_calc_size
+        64   -> hal_gdma_is_channel_vaild
+        64   -> hal_sleep_manager_lock_sleep
+        64   -> log_hal_error_internal
+      64   hal_gdma_start_polling
+        64   -> DMA_Config_Internal
+        64   -> DMA_FullSize_CheckIdleChannel
+        64   -> hal_gdma_calc_size
+        64   -> hal_gdma_is_channel_vaild
+        64   -> hal_sleep_manager_lock_sleep
+        64   -> log_hal_error_internal
+      16   hal_gdma_stop
+        16   -> DMA_FullSize_FreeChannel
+        16   -> hal_gdma_is_channel_vaild
+        16   -> hal_sleep_manager_unlock_sleep
+        16   -> log_hal_error_internal
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable20
+       4  ??DataTable20_1
+       4  ??DataTable20_2
+       4  ??DataTable20_3
+       8  ?_0
+       8  ?_1
+      20  ?_2
+      56  ?_3
+      32  ?_4
+      28  gdma_sleep_handler
+          g_gdma_callback_context
+          gdma_lock_sleep_name
+      18  hal_gdma1_callback
+      18  hal_gdma2_callback
+      58  hal_gdma_calc_size
+      68  hal_gdma_deinit
+     130  hal_gdma_get_running_status
+     108  hal_gdma_init
+      12  hal_gdma_is_channel_vaild
+      54  hal_gdma_register_callback
+     208  hal_gdma_start_interrupt
+     282  hal_gdma_start_polling
+      58  hal_gdma_stop
+     156  -- Other
+
+ 
+    28 bytes in section .data
+    16 bytes in section .rodata
+ 1 294 bytes in section .text
+ 
+ 1 294 bytes of CODE  memory
+    16 bytes of CONST memory
+    28 bytes of DATA  memory
+
+Errors: none
+Warnings: none

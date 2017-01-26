@@ -1,0 +1,788 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:45
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_os_api.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_os_api.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\wifi_os_api.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\wifi_os_api.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_os_api.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /* Kernel includes. */
+     36          #include "FreeRTOS.h"
+     37          #include "task.h"
+     38          #include "semphr.h"
+     39          #include "portmacro.h"
+     40          #include "queue.h"
+     41          #include <timers.h>
+     42          #include <string.h>
+     43          
+     44          #include "wifi_os_api.h"
+     45          
+     46          /**
+     47          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+     48          * @param
+     49          * @return
+     50          */
+     51          os_queue_t wifi_os_queue_create( uint32_t queue_len, uint32_t item_size)
+     52          {
+     53              return (os_queue_t) xQueueCreate(queue_len, item_size);
+     54          }
+     55          
+     56          /**
+     57          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+     58          * @param
+     59          * @return
+     60          */
+     61          void wifi_os_queue_delete(os_queue_t queue)
+     62          {
+     63              vQueueDelete(queue);
+     64          }
+     65          
+     66          /**
+     67          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+     68          * @param
+     69          * @return
+     70          */
+     71          uint32_t wifi_os_queue_get_space( const os_queue_t queue )
+     72          {
+     73              assert(queue);
+     74          
+     75              return (uint32_t)uxQueueSpacesAvailable(queue);
+     76          }
+     77          
+     78          /**
+     79          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+     80          * @param
+     81          * @return
+     82          */
+     83          int32_t wifi_os_queue_receive(os_queue_t queue, void *buf, struct timeval *wait_time)
+     84          {
+     85              assert(queue);
+     86          
+     87              TickType_t ticks;
+     88          
+     89              if(wait_time == NULL){
+     90                  ticks = portMAX_DELAY;
+     91              }else{
+     92                  ticks = (wait_time->tv_sec * 1000 + wait_time->tv_usec / 1000) / portTICK_PERIOD_MS;
+     93              }
+     94          
+     95              if(pdTRUE == xQueueReceive(queue, buf, ticks))
+     96                  return 0;
+     97          
+     98              return -1;
+     99          }
+    100          
+    101          /**
+    102          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    103          * @param
+    104          * @return
+    105          */
+    106          int32_t wifi_os_queue_send(os_queue_t queue, void *item, struct timeval *wait_time)
+    107          {
+    108              assert(queue);
+    109          
+    110              TickType_t ticks;
+    111          
+    112              if(wait_time == NULL){
+    113                  ticks = portMAX_DELAY;
+    114              }else{
+    115                  ticks = (wait_time->tv_sec * 1000 + wait_time->tv_usec / 1000) / portTICK_PERIOD_MS;
+    116              }
+    117          
+    118              if(pdTRUE == xQueueSend(queue, item, ticks))
+    119                  return 0;
+    120          
+    121              return -1;
+    122          }
+    123          
+    124          /**
+    125          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    126          * @param
+    127          * @return
+    128          */
+    129          int32_t wifi_os_queue_send_front(os_queue_t queue, void *item, struct timeval *wait_time)
+    130          {
+    131              assert(queue);
+    132          
+    133              TickType_t ticks;
+    134          
+    135              if(wait_time == NULL){
+    136                  ticks = portMAX_DELAY;
+    137              }else{
+    138                  ticks = (wait_time->tv_sec * 1000 + wait_time->tv_usec / 1000) / portTICK_PERIOD_MS;
+    139              }
+    140          
+    141              if(pdTRUE == xQueueSendToFront(queue, item, ticks))
+    142                  return 0;
+    143          
+    144              return -1;
+    145          }
+    146          
+    147          /**
+    148          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    149          * @param
+    150          * @return
+    151          */
+    152          int32_t wifi_os_queue_send_from_isr(os_queue_t queue, void *item)
+    153          {
+    154              assert(queue);
+    155          
+    156              portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    157              if(pdPASS == xQueueSendToBackFromISR(queue, item, &xHigherPriorityTaskWoken))
+    158                  return 0;
+    159          
+    160              return -1;
+    161          }
+    162          
+    163          /**
+    164          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    165          * @param
+    166          * @return
+    167          */
+    168          int32_t wifi_os_queue_send_front_from_isr(os_queue_t queue, void *item)
+    169          {
+    170              assert(queue);
+    171          
+    172              portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    173              if(pdPASS == xQueueSendToFrontFromISR(queue, item, &xHigherPriorityTaskWoken))
+    174                  return 0;
+    175          
+    176              return -1;
+    177          }
+    178          
+    179          /**
+    180          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    181          * @param
+    182          * @return
+    183          */
+    184          int32_t wifi_os_receive_from_isr(os_queue_t queue, void *buf)
+    185          {
+    186              assert(queue);
+    187          
+    188              portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    189              if(pdPASS == xQueueReceiveFromISR( queue, buf, &xHigherPriorityTaskWoken))
+    190                  return 0;
+    191          
+    192              return -1;
+    193          }
+    194          
+    195          /**
+    196          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    197          * @param
+    198          * @return
+    199          */
+    200          os_semaphore_t wifi_os_semphr_create_mutex(void)
+    201          {
+    202              return (os_semaphore_t) xSemaphoreCreateMutex();
+    203          }
+    204          
+    205          /**
+    206          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    207          * @param
+    208          * @return
+    209          */
+    210          os_semaphore_t wifi_os_semphr_create_binary(void)
+    211          {
+    212              return (os_semaphore_t) xSemaphoreCreateBinary();
+    213          }
+    214          
+    215          /**
+    216          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    217          * @param
+    218          * @return
+    219          */
+    220          int32_t wifi_os_semphr_take(os_semaphore_t semphr, struct timeval *wait_time)
+    221          {
+    222              assert(semphr);
+    223          
+    224              TickType_t ticks;
+    225          
+    226              if(wait_time == NULL){
+    227                  ticks = portMAX_DELAY;
+    228              }else{
+    229                  ticks = (wait_time->tv_sec * 1000 + wait_time->tv_usec / 1000) / portTICK_PERIOD_MS;
+    230              }
+    231          
+    232              if(pdTRUE == xSemaphoreTake((SemaphoreHandle_t)semphr, ticks))
+    233                  return 0;
+    234          
+    235              return -1;
+    236          }
+    237          
+    238          /**
+    239          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    240          * @param
+    241          * @return
+    242          */
+    243          int32_t wifi_os_semphr_give(os_semaphore_t semphr)
+    244          {
+    245              assert(semphr);
+    246          
+    247              if(pdTRUE == xSemaphoreGive((SemaphoreHandle_t)semphr))
+    248                  return 0;
+    249          
+    250              return -1;
+    251          }
+    252          
+    253          /**
+    254          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    255          * @param
+    256          * @return
+    257          */
+    258          int32_t wifi_os_semphr_take_from_isr(os_semaphore_t semphr)
+    259          {
+    260              assert(semphr);
+    261          
+    262              portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    263              if(pdTRUE == xSemaphoreTakeFromISR((SemaphoreHandle_t)semphr, &xHigherPriorityTaskWoken))
+    264                  return 0;
+    265          
+    266              return -1;    
+    267          }
+    268          
+    269          /**
+    270          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    271          * @param
+    272          * @return
+    273          */
+    274          int32_t wifi_os_semphr_give_from_isr(os_semaphore_t semphr)
+    275          {
+    276              assert(semphr);
+    277              
+    278              portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    279              if(pdTRUE == xSemaphoreGiveFromISR((SemaphoreHandle_t)semphr, &xHigherPriorityTaskWoken))
+    280                  return 0;
+    281          
+    282              return -1;
+    283          }
+    284          
+    285          /**
+    286          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    287          * @param
+    288          * @return
+    289          */
+    290          void wifi_os_semphr_delete(os_semaphore_t semphr)
+    291          {
+    292              assert(semphr);
+    293              vSemaphoreDelete((SemaphoreHandle_t)semphr);
+    294          }
+    295          
+    296          /**
+    297          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    298          * @param
+    299          * @return
+    300          */
+    301          os_tmr_t wifi_os_timer_init(char *name, 
+    302                                         struct timeval *expires,
+    303                                         UBaseType_t auto_reload,
+    304                                         timer_handle_t handler
+    305                                         )
+    306          {
+    307              TickType_t ticks;
+    308          
+    309              if(expires == NULL){
+    310                  return NULL;
+    311              }else{
+    312                  ticks = (expires->tv_sec * 1000 + expires->tv_usec / 1000) / portTICK_PERIOD_MS;
+    313              }
+    314          
+    315              return xTimerCreate(name, ticks, auto_reload, NULL, handler);
+    316          }
+    317          
+    318          /**
+    319          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    320          * @param
+    321          * @return
+    322          */
+    323          int32_t wifi_os_timer_deinit(os_tmr_t timer)
+    324          {
+    325              assert(timer);
+    326          
+    327              if(pdPASS == xTimerDelete(timer, (TickType_t)0))
+    328                  return -1;
+    329          
+    330              return 0;
+    331          }
+    332          
+    333          /**
+    334          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    335          * @param
+    336          * @return
+    337          */
+    338          int32_t wifi_os_timer_start(os_tmr_t timer)
+    339          {
+    340              assert(timer);
+    341          
+    342              if(pdPASS == xTimerStart(timer, (TickType_t)0))
+    343                  return 0;
+    344          
+    345              return -1;
+    346          }
+    347          
+    348          /**
+    349          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    350          * @param
+    351          * @return
+    352          */
+    353          int32_t wifi_os_timer_stop(os_tmr_t timer)
+    354          {
+    355              assert(timer);
+    356          
+    357              if(pdPASS == xTimerStop(timer, (TickType_t)0))
+    358                  return 0;
+    359          
+    360              return -1;
+    361          }
+    362          
+    363          /**
+    364          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    365          * @param
+    366          * @return
+    367          */
+    368          void switch_context(void)
+    369          {
+    370              taskYIELD();
+    371          }
+    372          
+    373          /**
+    374          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    375          * @param
+    376          * @return
+    377          */
+    378          int32_t wifi_os_task_create(task_func_t handler,
+    379                                  char *name,
+    380                                  uint16_t stack_size,
+    381                                  void *params,
+    382                                  UBaseType_t prio,
+    383                                  os_task_t *task_handle
+    384                                  )
+    385          {
+    386              if(pdPASS == xTaskCreate(handler,name,stack_size/4,params,prio,task_handle))
+    387                  return 0;
+    388          
+    389              return -1;
+    390          }
+    391          
+    392          /**
+    393          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    394          * @param
+    395          * @return
+    396          */
+    397          void wifi_os_task_delete(os_task_t task)
+    398          {
+    399              vTaskDelete(task);
+    400          }
+    401          
+    402          /**
+    403          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    404          * @param
+    405          * @return
+    406          */
+    407          void wifi_os_task_sleep(uint32_t ms)
+    408          {
+    409              vTaskDelay((TickType_t) (ms/portTICK_PERIOD_MS));
+    410          }
+    411          
+    412          /**
+    413          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    414          * @param
+    415          * @return
+    416          */
+    417          void wifi_os_task_enter_critical(void)
+    418          {
+    419              taskENTER_CRITICAL();
+    420          }
+    421          
+    422          /**
+    423          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    424          * @param
+    425          * @return
+    426          */
+    427          void wifi_os_task_exit_critical(void)
+    428          {
+    429              taskEXIT_CRITICAL();
+    430          }
+    431          
+    432          /**
+    433          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    434          * @param
+    435          * @return
+    436          */
+    437          os_task_t wifi_os_task_get_handle(void)
+    438          {
+    439              return xTaskGetCurrentTaskHandle();
+    440          }
+    441          
+    442          /**
+    443          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    444          * @param
+    445          * @return
+    446          */
+    447          char * wifi_os_task_get_name(os_task_t task_handle)
+    448          {
+    449              return pcTaskGetTaskName(task_handle);
+    450          }
+    451          
+    452          /**
+    453          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    454          * @param
+    455          * @return
+    456          */
+    457          BaseType_t wifi_os_task_get_scheduler_state(void)
+    458          {
+    459              return xTaskGetSchedulerState();
+    460          }
+    461          
+    462          /**
+    463          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    464          * @param
+    465          * @return
+    466          */
+    467          void* wifi_os_malloc(size_t size)
+    468          {
+    469              return pvPortMalloc(size);
+    470          }
+    471          
+    472          /**
+    473          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    474          * @param
+    475          * @return
+    476          */
+    477          void* wifi_os_zalloc(size_t size)
+    478          {
+    479              return pvPortCalloc(1, size);
+    480          }
+    481          
+    482          /**
+    483          * @brief WiFi OS Adapter Layer API for internal usage, not open for other module or user
+    484          * @param
+    485          * @return
+    486          */
+    487          void wifi_os_free(void *mem)
+    488          {
+    489              vPortFree(mem);
+    490          }
+    491          
+    492          size_t wifi_os_get_free_heap_size(void)
+    493          {
+    494              return xPortGetFreeHeapSize();
+    495          }
+    496          
+    497          #if 0
+    498          void* wifi_os_memcpy(void* dest, const void* src, uint32_t size)
+    499          {
+    500              return memcpy(dest, src, size);
+    501          }
+    502          
+    503          int wifi_os_memcmp(const void* buf1, const void* buf2, uint32_t size)
+    504          {
+    505              return memcmp(buf1, buf2, size);
+    506          }
+    507          
+    508          void* wifi_os_memset(void* buf, uint8_t ch, uint32_t size)
+    509          {
+    510              return memset(buf, ch, size);
+    511          }
+    512          
+    513          void* wifi_os_memmove(void* dest, const void* src, uint32_t size)
+    514          {
+    515              return memmove(dest, src, size);
+    516          }
+    517          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   switch_context
+       0   wifi_os_free
+         0   -> vPortFree
+       0   wifi_os_get_free_heap_size
+         0   -> xPortGetFreeHeapSize
+       0   wifi_os_malloc
+         0   -> pvPortMalloc
+       0   wifi_os_queue_create
+         0   -> xQueueGenericCreate
+       0   wifi_os_queue_delete
+         0   -> vQueueDelete
+       8   wifi_os_queue_get_space
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         0   -> uxQueueSpacesAvailable
+      16   wifi_os_queue_receive
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueGenericReceive
+      16   wifi_os_queue_send
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueGenericSend
+      16   wifi_os_queue_send_from_isr
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueGenericSendFromISR
+      16   wifi_os_queue_send_front
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueGenericSend
+      16   wifi_os_queue_send_front_from_isr
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueGenericSendFromISR
+      16   wifi_os_receive_from_isr
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueReceiveFromISR
+       0   wifi_os_semphr_create_binary
+         0   -> xQueueGenericCreate
+       0   wifi_os_semphr_create_mutex
+         0   -> xQueueCreateMutex
+       8   wifi_os_semphr_delete
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         0   -> vQueueDelete
+       8   wifi_os_semphr_give
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         8   -> xQueueGenericSend
+      16   wifi_os_semphr_give_from_isr
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueGiveFromISR
+      16   wifi_os_semphr_take
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueGenericReceive
+      16   wifi_os_semphr_take_from_isr
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xQueueReceiveFromISR
+      24   wifi_os_task_create
+        24   -> xTaskGenericCreate
+       0   wifi_os_task_delete
+         0   -> vTaskDelete
+       0   wifi_os_task_enter_critical
+         0   -> vPortEnterCritical
+       0   wifi_os_task_exit_critical
+         0   -> vPortExitCritical
+       0   wifi_os_task_get_handle
+         0   -> xTaskGetCurrentTaskHandle
+       0   wifi_os_task_get_name
+         0   -> pcTaskGetTaskName
+       0   wifi_os_task_get_scheduler_state
+         0   -> xTaskGetSchedulerState
+       0   wifi_os_task_sleep
+         0   -> vTaskDelay
+      16   wifi_os_timer_deinit
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xTimerGenericCommand
+      24   wifi_os_timer_init
+        24   -> xTimerCreate
+      16   wifi_os_timer_start
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xTaskGetTickCount
+        16   -> xTimerGenericCommand
+      16   wifi_os_timer_stop
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> xTimerGenericCommand
+       0   wifi_os_zalloc
+         0   -> pvPortCalloc
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       8  ?_0
+      80  ?_1
+       8  ?_2
+       8  ?_3
+      18  switch_context
+       4  wifi_os_free
+       4  wifi_os_get_free_heap_size
+       4  wifi_os_malloc
+       6  wifi_os_queue_create
+       4  wifi_os_queue_delete
+      34  wifi_os_queue_get_space
+      82  wifi_os_queue_receive
+      82  wifi_os_queue_send
+      58  wifi_os_queue_send_from_isr
+      82  wifi_os_queue_send_front
+      58  wifi_os_queue_send_front_from_isr
+      56  wifi_os_receive_from_isr
+      10  wifi_os_semphr_create_binary
+       6  wifi_os_semphr_create_mutex
+      36  wifi_os_semphr_delete
+      50  wifi_os_semphr_give
+      54  wifi_os_semphr_give_from_isr
+      80  wifi_os_semphr_take
+      56  wifi_os_semphr_take_from_isr
+      38  wifi_os_task_create
+       4  wifi_os_task_delete
+       4  wifi_os_task_enter_critical
+       4  wifi_os_task_exit_critical
+       4  wifi_os_task_get_handle
+       4  wifi_os_task_get_name
+       4  wifi_os_task_get_scheduler_state
+       4  wifi_os_task_sleep
+      58  wifi_os_timer_deinit
+      40  wifi_os_timer_init
+      62  wifi_os_timer_start
+      58  wifi_os_timer_stop
+       8  wifi_os_zalloc
+
+ 
+ 1 184 bytes in section .text
+ 
+ 1 184 bytes of CODE memory
+
+Errors: none
+Warnings: none

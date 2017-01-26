@@ -8,7 +8,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"group__mt2523__band.html"
+"group__mt2523__hdk.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

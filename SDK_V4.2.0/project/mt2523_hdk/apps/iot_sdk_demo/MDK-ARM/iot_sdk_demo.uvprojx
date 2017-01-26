@@ -10,7 +10,6 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060061::V5.06 update 1 (build 61)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>MT2523x</Device>
@@ -230,7 +229,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -367,11 +365,9 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
             <VariousControls>
               <MiscControls>--c99 --diag_suppress=161 --diag_suppress=1295</MiscControls>
-              <Define>MTK_DEBUG_LEVEL_INFO,PRODUCT_VERSION=2523 MTK_SENSOR_ACCELEROMETER_USE MTK_SENSOR_ACCELEROMETER_USE_BMA255 MTK_SENSOR_BIO_USE MTK_SENSOR_BIO_USE_MT2511 FUSION_HEART_RATE_MONITOR_USE=M_INHOUSE_HEART_RATE_MONITOR FUSION_BLOOD_PRESSURE_USE=M_INHOUSE_BLOOD_PRESSURE SENSOR_FUSTION_TASK_ENABLED SENSOR_DEMO MTK_CTP_ENABLE   MTK_DEVELOPMENT_BOARD_HDK MTK_SMART_BATTERY_ENABLE MTK_ATCI_VIA_PORT_SERVICE MTK_PORT_SERVICE_ENABLE __BT_DEBUG__ MBEDTLS_CONFIG_FILE=&lt;config-mtk-md5.h&gt; MTK_USB_DEMO_ENABLED MTK_NVDM_ENABLE MTK_GNSS_ENABLE MTK_OS_CPU_UTILIZATION_ENABLE MTK_SYSTEM_AT_COMMAND_ENABLE MT2511_USE_SPI USE_EXTERNAL_BOOST</Define>
+              <Define>MTK_DEBUG_LEVEL_INFO,PRODUCT_VERSION=2523 MTK_SENSOR_ACCELEROMETER_USE MTK_SENSOR_ACCELEROMETER_USE_BMA255 MTK_SENSOR_BIO_USE MTK_SENSOR_BIO_USE_MT2511 SENSOR_FUSTION_TASK_ENABLED MTK_CTP_ENABLE   MTK_DEVELOPMENT_BOARD_HDK MTK_SMART_BATTERY_ENABLE MTK_ATCI_VIA_PORT_SERVICE MTK_PORT_SERVICE_ENABLE __BT_DEBUG__ MBEDTLS_CONFIG_FILE=&lt;config-mtk-md5.h&gt; MTK_USB_DEMO_ENABLED MTK_NVDM_ENABLE MTK_GNSS_ENABLE MTK_OS_CPU_UTILIZATION_ENABLE MTK_SYSTEM_AT_COMMAND_ENABLE</Define>
               <Undefine></Undefine>
               <IncludePath>..\inc;..\..\..\..\..\driver\CMSIS\Device\MTK\mt2523\Include;..\..\..\..\..\driver\chip\inc;..\..\..\..\..\driver\chip\mt2523\inc;..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include;..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\RVDS\ARM_CM4F;..\..\..\..\..\driver\CMSIS\Include;..\..\..\..\..\driver\chip\mt2523\src\common\include;..\..\..\..\..\kernel\service\inc;..\..\..\..\..\driver\CMSIS\Include;..\..\..\..\..\driver\board\component\common;..\..\..\..\..\driver\board\component\lcm\ST7789H2;..\inc\bt_audio;..\inc\bt_audio\sink;..\..\..\..\..\middleware\MTK\bluetooth\inc;..\..\..\..\..\middleware\MTK\nvdm\inc;..\..\..\..\..\middleware\MTK\atci\inc;..\inc\gnss_screen;..\inc\pxp_screen;..\inc\sensor_demo;..\inc\watch_face;..\..\..\..\..\driver\board\mt25x3_hdk\lcd;..\..\..\..\..\middleware\MTK\sensor_subsys\inc;..\..\..\..\..\driver\board\component\mems\inc;..\..\..\..\..\driver\board\component\mems\inc\libyas533;..\..\..\..\..\middleware\MTK\gnss\inc;..\..\..\..\..\driver\board\mt25x3_hdk\backlight;..\..\..\..\..\middleware\MTK\audio\inc;..\..\..\..\..\driver\board\component\biosensor\mt2511\inc;..\..\..\..\..\middleware\MTK\nvdm\inc;..\..\..\..\..\middleware\MTK\nvdm\src\nvdm_internal.h;..\..\..\..\..\middleware\MTK\nvdm\src\portable;..\..\..\..\..\driver\board\mt25x3_hdk\bt_codec\inc;..\..\..\..\..\driver\board\mt25x3_hdk\lcd;..\..\..\..\..\middleware\MTK\gnss\inc;..\..\..\..\..\driver\board\component\biosensor\mt2511\inc;..\..\..\..\..\driver\board\component\touch_panel\common\inc;..\..\..\..\..\middleware\MTK\audio\inc;..\..\..\..\..\driver\board\component\touch_panel\ctp_goodix_gt9xxx\gt9137;..\..\..\..\..\driver\board\component\bt_codec\inc;..\..\..\..\..\driver\board\mt25x3_hdk\touch_panel\gt9137;..\..\..\..\..\driver\board\component\biosensor\mt2511\module\default;..\..\..\..\..\driver\board\mt25x3_hdk\backlight;..\..\..\..\..\driver\board\component\mems\inc;..\..\..\..\..\driver\board\component\lcm\ST7789H2;..\..\..\..\..\driver\board\component\touch_panel\ctp_goodix_gt9xxx\gt9137;..\..\..\..\..\middleware\MTK\battery_management\inc;..\..\..\..\..\middleware\MTK\battery_management\port\mt2523\inc;..\..\..\..\..\middleware\MTK\battery_management\port\mt2523\lib\fuelgauge\inc;..\..\..\..\..\driver\board\mt76x7_hdk\init\inc;..\..\..\..\..\driver\board\component\biosensor\mt2511\inc;..\..\..\..\..\driver\board\component\biosensor\mt2511\module\default;..\..\..\..\..\driver\board\component\biosensor\mt2511\module\everlight;..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\agc\inc;..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\common\inc;..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\heart_rate\inc;..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\blood_pressure\inc;..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\ppg_control\inc;..\..\..\..\..\driver\board\mt25x3_hdk\keypad\inc;..\..\..\..\..\driver\board\component\touch_panel\ctp_ite_it7xxx\it7258;..\..\..\..\..\driver\board\mt25x3_hdk\touch_panel\it7258;..\..\..\..\..\driver\board\mt25x3_hdk\ept\inc;..\..\..\..\..\middleware\third_party\kiss_fft;..\..\..\..\..\middleware\MTK\usb\inc;..\..\..\..\..\middleware\MTK\port_service\inc;..\..\..\..\..\middleware\MTK\bt_sink\inc;..\..\..\..\..\middleware\third_party\mbedtls\include;..\..\..\..\..\middleware\third_party\mbedtls\include\mbedtls;..\..\..\..\..\middleware\third_party\mbedtls\configs;..\inc\main_screen;..\..\..\..\..\middleware\MTK\bt_callback_manager\inc;..\..\..\..\..\middleware\MTK\gdi\inc;..\inc\hogp;..\..\..\..\..\driver\board\mt25x3_hdk\mems_init;..\..\..\..\..\driver\board\mt25x3_hdk\touch_panel\config;..\..\..\..\..\driver\board\mt25x3_hdk\msdc\inc;..\..\..\..\..\middleware\MTK\bluetooth_service\inc;..\..\..\..\..\middleware\MTK\audio\port\mt2523\inc</IncludePath>
             </VariousControls>
@@ -1695,41 +1691,6 @@
               <FileName>algo_adaptor.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\src\algo_adaptor\algo_adaptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>heart_rate_monitor_adaptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\src\algo_adaptor\heart_rate_monitor_adaptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>blood_pressure_monitor_adaptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\src\algo_adaptor\blood_pressure_monitor_adaptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>libcomm_CM4_KEIL.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\common\lib_core\libcomm_CM4_KEIL.lib</FilePath>
-            </File>
-            <File>
-              <FileName>libhr_CM4_KEIL.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\heart_rate\lib_core\libhr_CM4_KEIL.lib</FilePath>
-            </File>
-            <File>
-              <FileName>libppgctrl_CM4_KEIL.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\ppg_control\lib_core\libppgctrl_CM4_KEIL.lib</FilePath>
-            </File>
-            <File>
-              <FileName>libbp_CM4_Keil.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\blood_pressure\lib_core\libbp_CM4_Keil.lib</FilePath>
-            </File>
-            <File>
-              <FileName>ppg_control_module.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\ppg_control\module\default\ppg_control_module.c</FilePath>
             </File>
           </Files>
         </Group>

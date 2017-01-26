@@ -1,0 +1,618 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:02
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_cache.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_cache.c"
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_cache.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_cache.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_cache.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_cache.h"
+     36          
+     37          #ifdef HAL_CACHE_MODULE_ENABLED
+     38          
+     39          #include "hal_cache_internal.h"
+     40          #include "hal_log.h"
+     41          #include "assert.h"
+     42          
+     43          #ifdef __cplusplus
+     44          extern "C" {
+     45          #endif
+     46          
+     47          #define CACHE_BUSY 1
+     48          #define CACHE_IDLE 0
+     49          
+     50          bool volatile g_cache_status = CACHE_IDLE;
+     51          
+     52          hal_cache_status_t hal_cache_init(void)
+     53          {
+     54              hal_cache_region_t region;
+     55              uint32_t irq_flag;
+     56          
+     57              /* In order to prevent race condition, interrupt should be disabled when query and update global variable which indicates the module status */
+     58              irq_flag = save_and_set_interrupt_mask();
+     59          
+     60              /* Check module status */
+     61              if (g_cache_status == CACHE_BUSY) {
+     62                  /* Restore the previous status of interrupt */
+     63                  restore_interrupt_mask(irq_flag);
+     64          
+     65                  return HAL_CACHE_STATUS_ERROR_BUSY;
+     66              } else {
+     67                  /* Change status to busy */
+     68                  g_cache_status = CACHE_BUSY;
+     69          
+     70                  /* Restore the previous status of interrupt */
+     71                  restore_interrupt_mask(irq_flag);
+     72              }
+     73          
+     74              /* Flush and invalidate all cache lines before use, whether CACHE is enabled or not */
+     75              CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+     76              CACHE->CACHE_OP |= ((CACHE_FLUSH_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+     77              CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+     78              CACHE->CACHE_OP |= ((CACHE_INVALIDATE_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+     79          
+     80              /* Set CACHE related registers to default value*/
+     81              CACHE->CACHE_CON = 0;
+     82              CACHE->CACHE_REGION_EN = 0;
+     83          
+     84              /* Update the global variable*/
+     85              g_cache_con.w = 0;
+     86              g_cache_region_en = 0;
+     87          
+     88              /* Set CACHE region registers to default value and update the global variable */
+     89              for (region = HAL_CACHE_REGION_0; region < HAL_CACHE_REGION_MAX; region ++) {
+     90                  /* Set CACHE related registers to default value */
+     91                  CACHE->CACHE_ENTRY_N[region] = 0;
+     92                  CACHE->CACHE_END_ENTRY_N[region] = 0;
+     93          
+     94                  /* Update the global variable */
+     95                  g_cache_entry[region].cache_entry_n.w = 0;
+     96                  g_cache_entry[region].cache_end_entry_n.w = 0;
+     97              }
+     98          
+     99              return HAL_CACHE_STATUS_OK;
+    100          }
+    101          
+    102          hal_cache_status_t hal_cache_deinit(void)
+    103          {
+    104              hal_cache_region_t region;
+    105          
+    106              /* flush and invalidate all cache lines */
+    107              CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+    108              CACHE->CACHE_OP |= ((CACHE_FLUSH_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    109              CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+    110              CACHE->CACHE_OP |= ((CACHE_INVALIDATE_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    111          
+    112              /* Set CACHE related registers to default value */
+    113              CACHE->CACHE_CON = 0;
+    114              CACHE->CACHE_REGION_EN = 0;
+    115          
+    116              /* Update the global variable*/
+    117              g_cache_con.w = 0;
+    118              g_cache_region_en = 0;
+    119          
+    120              /* Set CACHE region registers to default value and update the global variable */
+    121              for (region = HAL_CACHE_REGION_0; region < HAL_CACHE_REGION_MAX; region ++) {
+    122                  /* Set CACHE related registers to default value */
+    123                  CACHE->CACHE_ENTRY_N[region] = 0;
+    124                  CACHE->CACHE_END_ENTRY_N[region] = 0;
+    125          
+    126                  /* Update the global variable */
+    127                  g_cache_entry[region].cache_entry_n.w = 0;
+    128                  g_cache_entry[region].cache_end_entry_n.w = 0;
+    129              }
+    130          
+    131              /* Change status to idle */
+    132              g_cache_status = CACHE_IDLE;
+    133          
+    134              return HAL_CACHE_STATUS_OK;
+    135          }
+    136          
+    137          hal_cache_status_t hal_cache_enable(void)
+    138          {
+    139              /* CACHE should not be enabled when the CACHE size is 0KB */
+    140              if (HAL_CACHE_SIZE_0KB == g_cache_con.b.CACHESIZE) {
+    141                  return HAL_CACHE_STATUS_ERROR_CACHE_SIZE;
+    142              }
+    143          
+    144              /* Enable CACHE */
+    145              CACHE->CACHE_CON |= CACHE_CON_MCEN_MASK | CACHE_CON_CNTEN0_MASK | CACHE_CON_CNTEN1_MASK;
+    146          
+    147              /* Update the global variable */
+    148              g_cache_con.w = CACHE->CACHE_CON;
+    149          
+    150              return HAL_CACHE_STATUS_OK;
+    151          }
+    152          
+    153          hal_cache_status_t hal_cache_disable(void)
+    154          {
+    155              /* If CACHE is enabled, flush and invalidate all cache lines */
+    156              if (CACHE->CACHE_CON & CACHE_CON_MCEN_MASK) {
+    157                  CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+    158                  CACHE->CACHE_OP |= ((CACHE_FLUSH_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    159                  CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+    160                  CACHE->CACHE_OP |= ((CACHE_INVALIDATE_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    161              }
+    162          
+    163              /* Disable CACHE */
+    164              CACHE->CACHE_CON &= ~CACHE_CON_MCEN_MASK;
+    165          
+    166              /* Update the global variable */
+    167              g_cache_con.w = CACHE->CACHE_CON;
+    168          
+    169              return HAL_CACHE_STATUS_OK;
+    170          }
+    171          
+    172          hal_cache_status_t hal_cache_region_enable(hal_cache_region_t region)
+    173          {
+    174              /* Region is invalid */
+    175              if (region >= HAL_CACHE_REGION_MAX) {
+    176                  return HAL_CACHE_STATUS_ERROR_REGION;
+    177              }
+    178          
+    179              /* The region should be configured before region is enabled */
+    180              if (CACHE->CACHE_ENTRY_N[region] & CACHE_ENTRY_N_C_MASK) {
+    181                  CACHE->CACHE_REGION_EN |= (1 << region);
+    182              } else {
+    183                  return HAL_CACHE_STATUS_ERROR;
+    184              }
+    185          
+    186              /* Update the global variable */
+    187              g_cache_region_en = CACHE->CACHE_REGION_EN;
+    188          
+    189              return HAL_CACHE_STATUS_OK;
+    190          }
+    191          
+    192          hal_cache_status_t hal_cache_region_disable(hal_cache_region_t region)
+    193          {
+    194              /* Region is invalid */
+    195              if (region >= HAL_CACHE_REGION_MAX) {
+    196                  return HAL_CACHE_STATUS_ERROR_REGION;
+    197              }
+    198          
+    199              /* Disable the corresponding region */
+    200              CACHE->CACHE_REGION_EN &= ~(1 << region);
+    201          
+    202              /* Update the global variable */
+    203              g_cache_region_en = CACHE->CACHE_REGION_EN;
+    204          
+    205              /* The region setting information is cleard */
+    206              g_cache_entry[region].cache_entry_n.w = 0;
+    207              g_cache_entry[region].cache_end_entry_n.w = 0;
+    208          
+    209              return HAL_CACHE_STATUS_OK;
+    210          }
+    211          
+    212          hal_cache_status_t hal_cache_set_size(hal_cache_size_t cache_size)
+    213          {
+    214              /* CACHE size is invalid */
+    215              if (cache_size >= HAL_CACHE_SIZE_MAX) {
+    216                  return HAL_CACHE_STATUS_ERROR_CACHE_SIZE;
+    217              }
+    218          
+    219              /* Set CACHE size */
+    220              CACHE->CACHE_CON &= ~CACHE_CON_CACHESIZE_MASK;
+    221              CACHE->CACHE_CON |= (cache_size << CACHE_CON_CACHESIZE_OFFSET);
+    222          
+    223              /* When CACHE size is 0KB, make sure the CACHE is disabled */
+    224              if (cache_size == HAL_CACHE_SIZE_0KB) {
+    225                  CACHE->CACHE_CON = 0;
+    226              }
+    227          
+    228              /* Update the global variable */
+    229              g_cache_con.w = CACHE->CACHE_CON;
+    230          
+    231              return HAL_CACHE_STATUS_OK;
+    232          }
+    233          
+    234          hal_cache_status_t hal_cache_region_config(hal_cache_region_t region, const hal_cache_region_config_t *region_config)
+    235          {
+    236              /* Region is invalid */
+    237              if (region >= HAL_CACHE_REGION_MAX) {
+    238                  return HAL_CACHE_STATUS_ERROR_REGION;
+    239              }
+    240          
+    241              /* Parameter check */
+    242              if (region_config == NULL) {
+    243                  return HAL_CACHE_STATUS_INVALID_PARAMETER;
+    244              }
+    245          
+    246              /* The region address must be 4KB aligned */
+    247              if (region_config->cache_region_address & (MTK_CACHE_REGION_SIZE_UNIT - 1)) {
+    248                  assert(0);
+    249                  return HAL_CACHE_STATUS_ERROR_REGION_ADDRESS;
+    250              }
+    251          
+    252              /* The region size must be 4KB aligned */
+    253              if (region_config->cache_region_size & (MTK_CACHE_REGION_SIZE_UNIT - 1)) {
+    254                  assert(0);
+    255                  return HAL_CACHE_STATUS_ERROR_REGION_SIZE;
+    256              }
+    257          
+    258              /* Write the region setting to corresponding register */
+    259              CACHE->CACHE_ENTRY_N[region] = region_config->cache_region_address;
+    260              CACHE->CACHE_END_ENTRY_N[region] = region_config->cache_region_address + region_config->cache_region_size;
+    261          
+    262              /* Set this bit when region is configured, and this bit will be double checked in hal_cache_region_enable() function */
+    263              CACHE->CACHE_ENTRY_N[region] |= CACHE_ENTRY_N_C_MASK;
+    264          
+    265              /* Update the global variable */
+    266              g_cache_entry[region].cache_entry_n.w = CACHE->CACHE_ENTRY_N[region];
+    267              g_cache_entry[region].cache_end_entry_n.w = CACHE->CACHE_END_ENTRY_N[region];
+    268          
+    269              return HAL_CACHE_STATUS_OK;
+    270          }
+    271          
+    272          hal_cache_status_t hal_cache_invalidate_one_cache_line(uint32_t address)
+    273          {
+    274              uint32_t irq_flag;
+    275          
+    276              /* Make sure address is cache line size aligned */
+    277              if (address & (HAL_CACHE_LINE_SIZE - 1)) {
+    278                  assert(0);
+    279                  return HAL_CACHE_STATUS_INVALID_PARAMETER;
+    280              }
+    281              /* In order to prevent race condition, interrupt should be disabled when query and update global variable which indicates the module status */
+    282              irq_flag = save_and_set_interrupt_mask();
+    283          
+    284              /* Invalidate CACHE line by address */
+    285              CACHE->CACHE_OP = (address & CACHE_OP_TADDR_MASK);
+    286              CACHE->CACHE_OP |= ((CACHE_INVALIDATE_ONE_LINE_BY_ADDRESS << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    287          
+    288              /* Restore the previous status of interrupt */
+    289              restore_interrupt_mask(irq_flag);
+    290          
+    291              return HAL_CACHE_STATUS_OK;
+    292          }
+    293          
+    294          hal_cache_status_t hal_cache_invalidate_multiple_cache_lines(uint32_t address, uint32_t length)
+    295          {
+    296              uint32_t irq_flag;
+    297              uint32_t end_address = address + length;
+    298          
+    299              /* Make sure address and length are both cache line size aligned */
+    300              if ((address & (HAL_CACHE_LINE_SIZE - 1)) || (length & (HAL_CACHE_LINE_SIZE - 1))) {
+    301                  assert(0);
+    302                  return HAL_CACHE_STATUS_INVALID_PARAMETER;
+    303              }
+    304          
+    305              /* In order to prevent race condition, interrupt should be disabled when query and update global variable which indicates the module status */
+    306              irq_flag = save_and_set_interrupt_mask();
+    307          
+    308              /* Invalidate CACHE lines by address and length */
+    309              while (address < end_address) {
+    310                  hal_cache_invalidate_one_cache_line(address);
+    311                  address += HAL_CACHE_LINE_SIZE;
+    312              }
+    313          
+    314              /* Restore the previous status of interrupt */
+    315              restore_interrupt_mask(irq_flag);
+    316          
+    317              return HAL_CACHE_STATUS_OK;
+    318          }
+    319          
+    320          hal_cache_status_t hal_cache_invalidate_all_cache_lines(void)
+    321          {
+    322              uint32_t irq_flag;
+    323          
+    324              /* In order to prevent race condition, interrupt should be disabled when query and update global variable which indicates the module status */
+    325              irq_flag = save_and_set_interrupt_mask();
+    326          
+    327              /* Flush all CACHE lines before invalidate */
+    328              CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+    329              CACHE->CACHE_OP |= ((CACHE_FLUSH_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    330          
+    331              /* Invalidate all CACHE lines */
+    332              CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+    333              CACHE->CACHE_OP |= ((CACHE_INVALIDATE_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    334          
+    335              /* Restore the previous status of interrupt */
+    336              restore_interrupt_mask(irq_flag);
+    337          
+    338              return HAL_CACHE_STATUS_OK;
+    339          }
+    340          
+    341          hal_cache_status_t hal_cache_flush_one_cache_line(uint32_t address)
+    342          {
+    343              uint32_t irq_flag;
+    344          
+    345              /* Make sure address is cache line size aligned */
+    346              if (address & (HAL_CACHE_LINE_SIZE - 1)) {
+    347                  assert(0);
+    348                  return HAL_CACHE_STATUS_INVALID_PARAMETER;
+    349              }
+    350          
+    351              /* Interrupt is masked to make sure flush or invalidate operation can not be interrupted */
+    352              irq_flag = save_and_set_interrupt_mask();
+    353          
+    354              /* Flush CACHE line by address */
+    355              CACHE->CACHE_OP = (address & CACHE_OP_TADDR_MASK);
+    356              CACHE->CACHE_OP |= ((CACHE_FLUSH_ONE_LINE_BY_ADDRESS << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    357          
+    358              /* Restore the previous status of interrupt */
+    359              restore_interrupt_mask(irq_flag);
+    360          
+    361              return HAL_CACHE_STATUS_OK;
+    362          }
+    363          
+    364          hal_cache_status_t hal_cache_flush_multiple_cache_lines(uint32_t address, uint32_t length)
+    365          {
+    366              uint32_t irq_flag;
+    367              uint32_t end_address = address + length;
+    368          
+    369              /* Make sure address and length are both cache line size aligned */
+    370              if ((address & (HAL_CACHE_LINE_SIZE - 1)) || (length & (HAL_CACHE_LINE_SIZE - 1))) {
+    371                  assert(0);
+    372                  return HAL_CACHE_STATUS_INVALID_PARAMETER;
+    373              }
+    374          
+    375              /* Interrupt is masked to make sure flush or invalidate operation can not be interrupted */
+    376              irq_flag = save_and_set_interrupt_mask();
+    377          
+    378              /* Flush CACHE lines by address and length */
+    379              while (address < end_address) {
+    380                  hal_cache_flush_one_cache_line(address);
+    381                  address += HAL_CACHE_LINE_SIZE;
+    382              }
+    383          
+    384              /* Restore the previous status of interrupt */
+    385              restore_interrupt_mask(irq_flag);
+    386          
+    387              return HAL_CACHE_STATUS_OK;
+    388          }
+    389          
+    390          hal_cache_status_t hal_cache_flush_all_cache_lines(void)
+    391          {
+    392              uint32_t irq_flag;
+    393          
+    394              /* Interrupt is masked to make sure flush or invalidate operation can not be interrupted */
+    395              irq_flag = save_and_set_interrupt_mask();
+    396          
+    397              /* Flush all CACHE lines */
+    398              CACHE->CACHE_OP &= ~CACHE_OP_OP_MASK;
+    399              CACHE->CACHE_OP |= ((CACHE_FLUSH_ALL_LINES << CACHE_OP_OP_OFFSET) | CACHE_OP_EN_MASK);
+    400          
+    401              /* Restore the previous status of interrupt */
+    402              restore_interrupt_mask(irq_flag);
+    403          
+    404              return HAL_CACHE_STATUS_OK;
+    405          }
+    406          
+    407          
+    408          #ifdef __cplusplus
+    409          }
+    410          #endif
+    411          
+    412          #endif /* HAL_CACHE_MODULE_ENABLED */
+    413          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   hal_cache_deinit
+       0   hal_cache_disable
+       0   hal_cache_enable
+       8   hal_cache_flush_all_cache_lines
+         8   -> restore_interrupt_mask
+         8   -> save_and_set_interrupt_mask
+      16   hal_cache_flush_multiple_cache_lines
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> hal_cache_flush_one_cache_line
+        16   -> restore_interrupt_mask
+        16   -> save_and_set_interrupt_mask
+       8   hal_cache_flush_one_cache_line
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         8   -> restore_interrupt_mask
+         8   -> save_and_set_interrupt_mask
+       8   hal_cache_init
+         8   -> restore_interrupt_mask
+         8   -> save_and_set_interrupt_mask
+       8   hal_cache_invalidate_all_cache_lines
+         8   -> restore_interrupt_mask
+         8   -> save_and_set_interrupt_mask
+      16   hal_cache_invalidate_multiple_cache_lines
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> hal_cache_invalidate_one_cache_line
+        16   -> restore_interrupt_mask
+        16   -> save_and_set_interrupt_mask
+       8   hal_cache_invalidate_one_cache_line
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         8   -> restore_interrupt_mask
+         8   -> save_and_set_interrupt_mask
+       8   hal_cache_region_config
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+       4   hal_cache_region_disable
+       0   hal_cache_region_enable
+       0   hal_cache_set_size
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable15_2
+       4  ??DataTable15_3
+       4  ??DataTable15_4
+       4  ??DataTable15_5
+       4  ??DataTable15_6
+       4  ??DataTable15_7
+       4  ??DataTable15_8
+       2  ?_0
+      68  ?_1
+       1  g_cache_status
+      96  hal_cache_deinit
+      58  hal_cache_disable
+      36  hal_cache_enable
+      32  hal_cache_flush_all_cache_lines
+      72  hal_cache_flush_multiple_cache_lines
+      62  hal_cache_flush_one_cache_line
+     132  hal_cache_init
+      48  hal_cache_invalidate_all_cache_lines
+      72  hal_cache_invalidate_multiple_cache_lines
+      62  hal_cache_invalidate_one_cache_line
+     134  hal_cache_region_config
+      56  hal_cache_region_disable
+      54  hal_cache_region_enable
+      48  hal_cache_set_size
+
+ 
+     1 byte  in section .bss
+     2 bytes in section .rodata
+ 1 066 bytes in section .text
+ 
+ 1 066 bytes of CODE  memory
+     2 bytes of CONST memory
+     1 byte  of DATA  memory
+
+Errors: none
+Warnings: none

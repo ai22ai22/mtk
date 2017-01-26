@@ -1,0 +1,1558 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:43
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\common\bsp_ex\src\wifi_ex_profile.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\common\bsp_ex\src\wifi_ex_profile.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\wifi_ex_profile.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\wifi_ex_profile.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\project\common\bsp_ex\src\wifi_ex_profile.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #ifdef MTK_WIFI_PROFILE_ENABLE
+     36          
+     37          #include <stdio.h>
+     38          #include <stdlib.h>
+     39          #include <string.h>
+     40          #include "os.h"
+     41          #include "os_util.h"
+     42          #include "cli.h"
+     43          #include "wifi_api.h"
+     44          #include "nvdm.h"
+     45          #include "connsys_profile.h"
+     46          #include "wifi_ex_config.h"
+     47          #include "get_profile_string.h"
+     48          #include "misc.h"
+     49          /**
+     50              @file       wifi_ex_profile.c
+     51              @brief      WiFi - Profile API Examples
+     52          
+     53              @history    2015/08/07  Initial for 1st draft  (Michael Rong)
+     54           */
+     55          
+     56          static uint8_t wifi_profile_set_opmode_ex(uint8_t len, char *param[])
+     57          {
+     58              uint8_t status = 0;
+     59              uint8_t mode = atoi(param[0]);
+     60          
+     61              status = wifi_profile_set_opmode(mode);
+     62              status = wifi_profile_commit_setting(WIFI_PROFILE_BUFFER_COMMON);
+     63          
+     64              printf("save opmode=%d done.\n", mode);
+     65          
+     66              return status;
+     67          }
+     68          
+     69          /**
+     70           * @brief Store channel to the profile in the Flash memory.
+     71           * wifi profile set ch <port> <ch>
+     72           * @param [IN]port
+     73           * @param 0 STA / AP Client
+     74           * @param 1 AP
+     75           * @param [IN]channel    1~14 are supported for 2.4G only product.
+     76           *
+     77           * @return  >=0 means success, <0 means fail
+     78           */
+     79          static uint8_t wifi_profile_set_channel_ex(uint8_t len, char *param[])
+     80          {
+     81              uint8_t status = 0;
+     82              int32_t port = port_sanity_check(param[0]);
+     83              uint8_t ch = atoi(param[1]);
+     84              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+     85          
+     86              if (port < 0) {
+     87                  return 1;
+     88              }
+     89          
+     90              if (ch < 1) {
+     91                  printf("Invalid channel number\n");
+     92                  return 1;
+     93              }
+     94          
+     95              status = wifi_profile_set_channel((uint8_t)port, ch);
+     96          
+     97              status = wifi_profile_commit_setting(section);
+     98          
+     99              printf("[%s] save ch =%d done.\n", section, ch);
+    100          
+    101              return status;
+    102          }
+    103          
+    104          /**
+    105           * @brief Store bandwidth to the profile in the Flash memory.
+    106           * wifi profile set bw <port> <bw>
+    107           * @param [IN]port
+    108           * @param 0 STA / AP Client
+    109           * @param 1 AP
+    110           * @param [IN]bandwidth Bandwidth IOT_CMD_CBW_20MHZ, IOT_CMD_CBW_40MHZ,
+    111           *                  IOT_CMD_CBW_2040MHZ are supported.
+    112           * @return  >=0 means success, <0 means fail
+    113           */
+    114          static uint8_t wifi_profile_set_bandwidth_ex(uint8_t len, char *param[])
+    115          {
+    116              uint8_t status = 0;
+    117              int32_t port = port_sanity_check(param[0]);
+    118              uint8_t bw = atoi(param[1]);
+    119              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    120          
+    121              if (port < 0) {
+    122                  return 1;
+    123              }
+    124          
+    125              status = wifi_profile_set_bandwidth((uint8_t)port, bw);
+    126              status = wifi_profile_commit_setting(section);
+    127          
+    128              printf("[%s] save bw =%d done.\n", section, bw);
+    129          
+    130              return status;
+    131          }
+    132          
+    133          /**
+    134          * @brief Store SSID to the profile in the Flash memory.
+    135          * wifi profile set ssid <port> <ssid>
+    136          * @param [IN]port
+    137          * @param 0 STA / AP Client
+    138          * @param 1 AP
+    139          * @param [IN]ssid SSID
+    140          * @return  >=0 means success, <0 means fail
+    141          */
+    142          static uint8_t wifi_profile_set_ssid_ex(uint8_t len, char *param[])
+    143          {
+    144              uint8_t status = 0;
+    145              int32_t port = port_sanity_check(param[0]);
+    146              char *ssid = param[1];
+    147              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    148          
+    149              if (port < 0) {
+    150                  return 1;
+    151              }
+    152          
+    153              status = wifi_profile_set_ssid((uint8_t)port, (uint8_t *)ssid, strlen(ssid));
+    154              status = wifi_profile_commit_setting(section);
+    155          
+    156              printf("[%s] save ssid = %s done.\n", section, ssid);
+    157          
+    158              return status;
+    159          }
+    160          #if 0
+    161          /**
+    162          * @brief Store WiFi BSSID to the profile in the Flash memory.
+    163          * wifi profile set bssid <port> <bssid>
+    164          * ex: wifi profile set bssid 0 00:0c:43:76:87:02
+    165          * @param [IN]port
+    166          * @param 0 STA / AP Client
+    167          * @param 1 AP
+    168          * @param [IN]bssid BSSID
+    169          *
+    170          * @return  >=0 means success, <0 means fail
+    171          */
+    172          
+    173          static uint8_t wifi_profile_set_bssid_ex(uint8_t len, char *param[])
+    174          {
+    175              uint8_t status = 0;
+    176              uint8_t port = atoi(param[0]);
+    177              uint8_t bssid[6];
+    178          
+    179              __wifi_conf_get_mac_from_str((char *)bssid, param[1]);
+    180          
+    181              status = wifi_profile_set_bssid(port, bssid);
+    182          
+    183              printf("save bssid = %02x:%02x:%02x:%02x:%02x:%02x done.\n",
+    184                     bssid[0],
+    185                     bssid[1],
+    186                     bssid[2],
+    187                     bssid[3],
+    188                     bssid[4],
+    189                     bssid[5]);
+    190          
+    191              return status;
+    192          }
+    193          #endif
+    194          
+    195          /**
+    196          * @brief Store WiFi Wireless Mode to the profile in the Flash memory.
+    197          * wifi profile set wirelessmode <port> <mode>
+    198          * @param [IN]port
+    199          * @param 0 STA / AP Client
+    200          * @param 1 AP
+    201          * @param [IN]mode
+    202          * @param 1 legacy 11B only
+    203          * @param 2 legacy 11A only
+    204          * @param 3 legacy 11A/B/G mixed
+    205          * @param 4 legacy 11G only
+    206          * @param 5 11ABGN mixed
+    207          * @param 6 11N only in 2.4G
+    208          * @param 7 11GN mixed
+    209          * @param 8 11AN mixed
+    210          * @param 9 11BGN mixed
+    211          * @param 10 11AGN mixed
+    212          *
+    213          * @return  >=0 means success, <0 means fail
+    214          */
+    215          
+    216          static uint8_t wifi_profile_set_wireless_mode_ex(uint8_t len, char *param[])
+    217          {
+    218              uint8_t status = 0;
+    219              int32_t port = port_sanity_check(param[0]);
+    220              wifi_phy_mode_t mode = (wifi_phy_mode_t)atoi(param[1]);
+    221              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    222          
+    223              if (port < 0) {
+    224                  return 1;
+    225              }
+    226          
+    227              status = wifi_profile_set_wireless_mode((uint8_t)port, mode);
+    228              status = wifi_profile_commit_setting(section);
+    229          
+    230              printf("[%s] save wireless mode =%d done.\n", section, mode);
+    231          
+    232              return status;
+    233          }
+    234          static uint8_t wifi_profile_set_country_region_ex(uint8_t len, char *param[])
+    235          {
+    236              uint8_t status = 0;
+    237              uint8_t band = atoi(param[0]);
+    238              uint8_t region = atoi(param[1]);
+    239          
+    240              status = wifi_profile_set_country_region(band, region);
+    241              status = wifi_profile_commit_setting(WIFI_PROFILE_BUFFER_COMMON);
+    242          
+    243              printf("save country band(%d) region =%d done.\n", band, region);
+    244          
+    245              return status;
+    246          }
+    247          static uint8_t wifi_profile_set_dtim_interval_ex(uint8_t len, char *param[])
+    248          {
+    249              uint8_t status = 0;
+    250              uint8_t dtim = atoi(param[0]);
+    251          
+    252              status = wifi_profile_set_dtim_interval(dtim);
+    253              status = wifi_profile_commit_setting(WIFI_PROFILE_BUFFER_AP);
+    254          
+    255              printf("save dtim interval =%d done.\n", dtim);
+    256          
+    257              return status;
+    258          }
+    259          static uint8_t wifi_profile_set_listen_interval_ex(uint8_t len, char *param[])
+    260          {
+    261              uint8_t status = 0;
+    262              uint8_t interval = atoi(param[0]);
+    263          
+    264              status = wifi_profile_set_listen_interval(interval);
+    265              status = wifi_profile_commit_setting(WIFI_PROFILE_BUFFER_STA);
+    266          
+    267              printf("save listen interval =%d done.\n", interval);
+    268          
+    269              return status;
+    270          }
+    271          static uint8_t wifi_profile_set_mac_address_ex(uint8_t len, char *param[])
+    272          {
+    273              uint8_t status = 0;
+    274              int32_t port = port_sanity_check(param[0]);
+    275              uint8_t mac[6] = {0};
+    276          
+    277          #ifdef MTK_WIFI_REPEATER_ENABLE
+    278              uint8_t mode;
+    279              char *section = WIFI_PROFILE_BUFFER_STA;
+    280          
+    281              status = wifi_profile_get_opmode(&mode);
+    282              if (mode == WIFI_MODE_REPEATER) {
+    283                  strcpy(section,(port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP));
+    284              } else {
+    285                  strcpy(section, WIFI_PROFILE_BUFFER_STA);
+    286              }
+    287              //char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    288          #else
+    289              /* Use STA MAC/IP as AP MAC/IP for the time being, due to N9 dual interface not ready yet */
+    290              char *section = WIFI_PROFILE_BUFFER_STA;
+    291          #endif /* MTK_WIFI_REPEATER_ENABLE */
+    292          
+    293              if (port < 0) {
+    294                  return 1;
+    295              }
+    296          
+    297              wifi_conf_get_mac_from_str((char *)mac, param[1]);
+    298          
+    299              status = wifi_profile_set_mac_address((uint8_t)port, mac);
+    300              status = wifi_profile_commit_setting(section);
+    301          
+    302              printf("[%s] save mac address = %02x:%02x:%02x:%02x:%02x:%02x done.\n",
+    303                     section,
+    304                     mac[0],
+    305                     mac[1],
+    306                     mac[2],
+    307                     mac[3],
+    308                     mac[4],
+    309                     mac[5]);
+    310              return status;
+    311          }
+    312          
+    313          static uint8_t wifi_profile_set_security_mode_ex(uint8_t len, char *param[])
+    314          {
+    315              uint8_t status = 0;
+    316              int32_t port = port_sanity_check(param[0]);
+    317              wifi_auth_mode_t auth = (wifi_auth_mode_t)atoi(param[1]);
+    318              wifi_encrypt_type_t encryp = (wifi_encrypt_type_t)atoi(param[2]);
+    319              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    320          
+    321              if (port < 0) {
+    322                  return 1;
+    323              }
+    324          
+    325              status = wifi_profile_set_security_mode((uint8_t)port, auth, encryp);
+    326              status = wifi_profile_commit_setting(section);
+    327          
+    328              printf("[%s] save auth mode=%d, encrypt type=%d done.\n", section, auth, encryp);
+    329          
+    330              return status;
+    331          }
+    332          
+    333          static uint8_t wifi_profile_set_psk_ex(uint8_t len, char *param[])
+    334          {
+    335              int8_t status = 0;
+    336              int32_t port = port_sanity_check(param[0]);
+    337              char *password = param[1];
+    338              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    339          
+    340              if (port < 0) {
+    341                  return 1;
+    342              }
+    343          
+    344              status = wifi_profile_set_wpa_psk_key((uint8_t)port, (uint8_t *)password, strlen(password));
+    345              if (status < 0) {
+    346                  printf("[%s] ERROR! Fail to save password =%s len = %d.\n", section, password, strlen(password));
+    347                  return 1;
+    348              }
+    349              status = wifi_profile_commit_setting(section);
+    350          
+    351              printf("[%s] save password =%s len = %d done.\n", section, password, strlen(password));
+    352          
+    353              return 0;
+    354          }
+    355          
+    356          /**
+    357          * @brief Example of Store PMK for the specified STA/AP port into the Flash memory
+    358          * wifi profile set pmk <port> <PMK>
+    359          * @param [IN]port
+    360          *       0 STA / AP Client
+    361          *       1 AP
+    362          * @param  [IN] PMK (in hex)
+    363          *       00, 05, 30, ......(size 32)
+    364          * @return >=0 means success, <0 means fail
+    365          * @note Default to OPEN
+    366          */
+    367          static uint8_t wifi_profile_set_pmk_ex(uint8_t len, char *param[])
+    368          {
+    369              int8_t status = 0;
+    370              int32_t port = port_sanity_check(param[0]);
+    371              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    372              uint8_t hex[32] = {0};
+    373          
+    374              if (port < 0) {
+    375                  return 1;
+    376              }
+    377          
+    378              os_memset(hex, 0, sizeof(hex));
+    379              convert_string_to_hex_array(param[1], hex);
+    380              status = wifi_profile_set_pmk((uint8_t)port, hex);
+    381              if (status < 0) {
+    382                  printf("[%s] ERROR! Fail to save pmk.\n", section);
+    383                  return 1;
+    384              }
+    385              status = wifi_profile_commit_setting(section);
+    386          
+    387              printf("[%s] wifi_profile_set_pmk_ex: status:%d\n",
+    388                     section, status);
+    389          
+    390              return 0;
+    391          
+    392          }
+    393          
+    394          /**
+    395          * @brief Example of Get profile stored in NVRAM
+    396          *
+    397          * @param [IN]port
+    398          * @param 0 AP
+    399          * @param 1 AP Client
+    400          * @param 2 STA
+    401          * @param [OUT]profile WiFi Profile
+    402          *
+    403          * @return  >=0 means success, <0 means fail
+    404          */
+    405          int32_t wifi_config_init(sys_cfg_t *wifi_config);
+    406          uint8_t wifi_profile_get_profile_ex(uint8_t len, char *param[])
+    407          {
+    408              sys_cfg_t wifi_profile_struct = {0};
+    409              sys_cfg_t *wifi_profile = &wifi_profile_struct;
+    410              uint8_t status = wifi_config_init(&wifi_profile_struct);
+    411          
+    412              // COMMON
+    413              printf("[COMMON]\n");
+    414              printf("\tOpMode = %d\n", wifi_profile->opmode);
+    415              printf("\tCountryRegion = %d\n", wifi_profile->country_region);
+    416              printf("\tCountryRegionABand = %d\n", wifi_profile->country_region_a_band);
+    417              printf("\tCountryCode = %s\n", wifi_profile->country_code);
+    418              printf("\tRadioOff = %d\n", wifi_profile->radio_off);
+    419              printf("\tRTSThreshold = %d\n", wifi_profile->rts_threshold);
+    420              printf("\tFragThreshold = %d\n", wifi_profile->frag_threshold);
+    421              printf("\tDbgLevel = %d\n", wifi_profile->dbg_level);
+    422              printf("\tForwardingZeroCopy = %d\n", wifi_profile->forwarding_zero_copy);
+    423              // STA
+    424              printf("[STA]\n");
+    425              printf("\tLocalAdminMAC = %d\n", wifi_profile->sta_local_admin_mac);
+    426              printf("\tIpAddr = %d.%d.%d.%d\n",
+    427                     wifi_profile->sta_ip_addr[0],
+    428                     wifi_profile->sta_ip_addr[1],
+    429                     wifi_profile->sta_ip_addr[2],
+    430                     wifi_profile->sta_ip_addr[3]);
+    431              printf("\tMacAddr = %02x:%02x:%02x:%02x:%02x:%02x\n",
+    432                     wifi_profile->sta_mac_addr[0],
+    433                     wifi_profile->sta_mac_addr[1],
+    434                     wifi_profile->sta_mac_addr[2],
+    435                     wifi_profile->sta_mac_addr[3],
+    436                     wifi_profile->sta_mac_addr[4],
+    437                     wifi_profile->sta_mac_addr[5]);
+    438              printf("\tSsidLen = %d\n", wifi_profile->sta_ssid_len);
+    439              printf("\tSsid = %s\n", wifi_profile->sta_ssid);
+    440              printf("\tBssType = %d\n", wifi_profile->sta_bss_type);
+    441              printf("\tChannel = %d\n", wifi_profile->sta_channel);
+    442              printf("\tBW = %d\n", wifi_profile->sta_bw);
+    443              printf("\tWirelessMode = %d\n", wifi_profile->sta_wireless_mode);
+    444              printf("\tBADecline = %d\n", wifi_profile->sta_ba_decline);
+    445              printf("\tAutoBA = %d\n", wifi_profile->sta_auto_ba);
+    446              printf("\tHT_MCS = %d\n", wifi_profile->sta_ht_mcs);
+    447              printf("\tHT_BAWinSize = %d\n", wifi_profile->sta_ht_ba_win_size);
+    448              printf("\tHT_GI = %d\n", wifi_profile->sta_ht_gi);
+    449              printf("\tHT_PROTECT = %d\n", wifi_profile->sta_ht_protect);
+    450              printf("\tHT_EXTCHA = %d\n", wifi_profile->sta_ht_ext_ch);
+    451              printf("\tWmmCapable = %d\n", wifi_profile->sta_wmm_capable);
+    452              printf("\tListenInterval = %d\n", wifi_profile->sta_listen_interval);
+    453              printf("\tAuthMode = %d\n", wifi_profile->sta_auth_mode);
+    454              printf("\tEncrypType = %d\n", wifi_profile->sta_encryp_type);
+    455              printf("\tWpaPskLen = %d\n", wifi_profile->sta_wpa_psk_len);
+    456              printf("\tPairCipher = %d\n", wifi_profile->sta_pair_cipher);
+    457              printf("\tGroupCipher = %d\n", wifi_profile->sta_group_cipher);
+    458              printf("\tDefaultKeyId = %d\n", wifi_profile->sta_default_key_id);
+    459              printf("\tPSMode = %d\n", wifi_profile->sta_ps_mode);
+    460              printf("\tKeepAlivePeriod = %d\n", wifi_profile->sta_keep_alive_period);
+    461          
+    462              hex_dump("WpaPsk", wifi_profile->sta_wpa_psk, sizeof(wifi_profile->sta_wpa_psk));
+    463              hex_dump("PMK", wifi_profile->sta_pmk, sizeof(wifi_profile->sta_pmk));
+    464          
+    465              // AP
+    466              printf("[AP]\n");
+    467              printf("\tLocalAdminMAC = %d\n", wifi_profile->ap_local_admin_mac);
+    468              printf("\tIpAddr = %d.%d.%d.%d\n",
+    469                     wifi_profile->ap_ip_addr[0],
+    470                     wifi_profile->ap_ip_addr[1],
+    471                     wifi_profile->ap_ip_addr[2],
+    472                     wifi_profile->ap_ip_addr[3]);
+    473              printf("\tMacAddr = %02x:%02x:%02x:%02x:%02x:%02x\n",
+    474                     wifi_profile->ap_mac_addr[0],
+    475                     wifi_profile->ap_mac_addr[1],
+    476                     wifi_profile->ap_mac_addr[2],
+    477                     wifi_profile->ap_mac_addr[3],
+    478                     wifi_profile->ap_mac_addr[4],
+    479                     wifi_profile->ap_mac_addr[5]);
+    480              printf("\tSsidLen = %d\n", wifi_profile->ap_ssid_len);
+    481              printf("\tSsid = %s\n", wifi_profile->ap_ssid);
+    482              printf("\tChannel = %d\n", wifi_profile->ap_channel);
+    483              printf("\tBW = %d\n", wifi_profile->ap_bw);
+    484              printf("\tWirelessMode = %d\n", wifi_profile->ap_wireless_mode);
+    485              printf("\tAutoBA = %d\n", wifi_profile->ap_auto_ba);
+    486              printf("\tHT_MCS = %d\n", wifi_profile->ap_ht_mcs);
+    487              printf("\tHT_BAWinSize = %d\n", wifi_profile->ap_ht_ba_win_size);
+    488              printf("\tHT_GI = %d\n", wifi_profile->ap_ht_gi);
+    489              printf("\tHT_PROTECT = %d\n", wifi_profile->ap_ht_protect);
+    490              printf("\tHT_EXTCHA = %d\n", wifi_profile->ap_ht_ext_ch);
+    491              printf("\tWmmCapable = %d\n", wifi_profile->ap_wmm_capable);
+    492              printf("\tDtimPeriod = %d\n", wifi_profile->ap_dtim_period);
+    493              printf("\tHideSSID = %d\n", wifi_profile->ap_hide_ssid);
+    494              printf("\tAutoChannelSelect = %d\n", wifi_profile->ap_auto_channel_select);
+    495              printf("\tAuthMode = %d\n", wifi_profile->ap_auth_mode);
+    496              printf("\tEncrypType = %d\n", wifi_profile->ap_encryp_type);
+    497              printf("\tWpaPskLen = %d\n", wifi_profile->ap_wpa_psk_len);
+    498              printf("\tPairCipher = %d\n", wifi_profile->ap_pair_cipher);
+    499              printf("\tGroupCipher = %d\n", wifi_profile->ap_group_cipher);
+    500              printf("\tDefaultKeyId = %d\n", wifi_profile->ap_default_key_id);
+    501          
+    502              hex_dump("WpaPsk", wifi_profile->ap_wpa_psk, sizeof(wifi_profile->ap_wpa_psk));
+    503              hex_dump("PMK", wifi_profile->ap_pmk, sizeof(wifi_profile->ap_pmk));
+    504          
+    505          #if 0 // not ready
+    506              // scan channel table and regulatory table
+    507              printf("[COMMON-misc.]\n");
+    508          
+    509              printf("\tBGChannelTable:\n");
+    510              for (i = 0; i < 10; i++)
+    511                  printf("\t\t{%d,%d,%d}\n",
+    512                         wifi_profile->bg_band_triple[i].first_channel,
+    513                         wifi_profile->bg_band_triple[i].num_of_ch,
+    514                         wifi_profile->bg_band_triple[i].channel_prop);
+    515          
+    516              printf("\tAChannelTable:\n");
+    517              for (i = 0; i < 10; i++)
+    518                  printf("\t\t{%d,%d,%d}\n",
+    519                         wifi_profile->a_band_triple[i].first_channel,
+    520                         wifi_profile->a_band_triple[i].num_of_ch,
+    521                         wifi_profile->a_band_triple[i].channel_prop);
+    522          #endif
+    523              return status;
+    524          }
+    525          
+    526          /**
+    527          * @brief Example of Get PMK for the specified STA/AP port from NVRAM
+    528          * wifi profile get pmk <port>
+    529          * @param [IN]port
+    530          *       0 STA / AP Client
+    531          *       1 AP
+    532          * @return >=0 means success, <0 means fail
+    533          * @note Default to OPEN
+    534          */
+    535          static uint8_t wifi_profile_get_pmk_ex(uint8_t len, char *param[])
+    536          {
+    537              int i;
+    538              uint8_t status = 0;
+    539              uint8_t hex[32] = {0};
+    540              int32_t port = port_sanity_check(param[0]);
+    541              if (port < 0) {
+    542                  return 1;
+    543              }
+    544          
+    545              os_memset(hex, 0, sizeof(hex));
+    546              status = wifi_profile_get_pmk(port, hex);
+    547              printf("wifi_profile_get_pmk_ex: port:%ld, status:%d, key dump:\n",
+    548                     port, status);
+    549              for (i = 0; i < sizeof(hex); i++) {
+    550                  if (i % 16 == 0) {
+    551                      printf("\n\t");
+    552                  }
+    553                  printf("%02x ", (unsigned int)hex[i]);
+    554              }
+    555          
+    556              return status;
+    557          
+    558          }
+    559          
+    560          
+    561          
+    562          /**
+    563          * @brief Store WiFi WEP Keys to the profile in NVRAM.
+    564          * wifi profile set wep <port> <key id> <key>
+    565          * @param [IN]port
+    566          * @param 0 STA / AP Client
+    567          * @param 1 AP
+    568          * @param [IN]wifi_wep_key_t
+    569          *
+    570          * @return  >=0 means success, <0 means fail
+    571          */
+    572          static uint8_t wifi_profile_set_wep_key_ex(uint8_t len, char *param[])
+    573          {
+    574              uint8_t status = 0;
+    575              uint8_t index = 0;
+    576              wifi_wep_key_t wep_key;
+    577              char *ptr = NULL;
+    578              int32_t port = port_sanity_check(param[0]);
+    579              char *keys = param[2];
+    580              char *section = (port == WIFI_PORT_STA ? WIFI_PROFILE_BUFFER_STA : WIFI_PROFILE_BUFFER_AP);
+    581          
+    582              if (port < 0) {
+    583                  return 1;
+    584              }
+    585          
+    586              os_memset(&wep_key, 0, sizeof(wep_key));
+    587              wep_key.wep_tx_key_index = atoi(param[1]);
+    588          
+    589              index = 0;
+    590              for (ptr = rstrtok((char *)keys, ","); (ptr); ptr = rstrtok(NULL, ",")) {
+    591                  printf("[%d] key=%s\n", index, ptr);
+    592                  if (strlen(ptr) == 1 || strlen(ptr) == 5 || strlen(ptr) == 13 || strlen(ptr) == 10 || strlen(ptr) == 26) {
+    593                      os_memcpy(wep_key.wep_key[index], ptr, strlen(ptr));
+    594                      wep_key.wep_key_length[index] = strlen(ptr);
+    595                  } else {
+    596                      printf("invalid length of value.\n");
+    597                  }
+    598                  index++;
+    599                  if (index >= WIFI_NUMBER_WEP_KEYS) {
+    600                      break;
+    601                  }
+    602              }
+    603          
+    604          
+    605              status = wifi_profile_set_wep_key((uint8_t)port, &wep_key);
+    606              status = wifi_profile_commit_setting(section);
+    607          
+    608              printf("[%s] save wep key =(%s, %s, %s, %s) key id=%d, len=(%d, %d, %d, %d) done.\n",
+    609                     section,
+    610                     wep_key.wep_key[0],
+    611                     wep_key.wep_key[1],
+    612                     wep_key.wep_key[2],
+    613                     wep_key.wep_key[3],
+    614                     wep_key.wep_tx_key_index,
+    615                     wep_key.wep_key_length[0],
+    616                     wep_key.wep_key_length[1],
+    617                     wep_key.wep_key_length[2],
+    618                     wep_key.wep_key_length[3]);
+    619          
+    620              return status;
+    621          }
+    622          #if 0
+    623          /**
+    624           * @brief Configure packet format wanted to be received
+    625           * wifi profile set rxfilter <flag>
+    626           * @param flag [IN] flag defined in iot_rx_filter_t.
+    627           * @return >=0 means success, <0 means fail
+    628           * @note Default value will be WIFI_DEFAULT_IOT_RX_FILTER
+    629           */
+    630          static uint8_t wifi_profile_set_rx_filter_ex(uint8_t len, char *param[])
+    631          {
+    632              uint8_t status = 0;
+    633              uint32_t flag = atoi(param[0]);
+    634          
+    635              status = wifi_profile_set_rx_filter(flag);
+    636          
+    637              printf("save RX filter = 0x%x done.\n", (unsigned int)flag);
+    638          
+    639              return status;
+    640          }
+    641          
+    642          
+    643          static uint8_t wifi_profile_set_smart_connection_filter_ex(uint8_t len, char *param[])
+    644          {
+    645              uint8_t status = 0;
+    646              uint8_t flag = atoi(param[0]);
+    647          
+    648              status = wifi_profile_set_smart_connection_filter(flag);
+    649          
+    650              printf("save MTK RX filter =0x%x done.\n", flag);
+    651          
+    652              return status;
+    653          }
+    654          #endif
+    655          static uint8_t wifi_profile_get_opmode_ex(uint8_t len, char *param[])
+    656          {
+    657              uint8_t status = 0;
+    658              uint8_t mode;
+    659          
+    660              status = wifi_profile_get_opmode(&mode);
+    661          
+    662              printf("fetch opmode=%d done.\n", mode);
+    663          
+    664              return status;
+    665          }
+    666          
+    667          /**
+    668           * @brief Get channel from the profile in NVRAM.
+    669           * wifi profile get ch <port>
+    670           * @param [IN]port
+    671           * @param 0 STA / AP Client
+    672           * @param 1 AP
+    673           * @param [OUT]channel    1~14 are supported for 2.4G only product.
+    674           *
+    675           * @return  >=0 means success, <0 means fail
+    676           */
+    677          
+    678          static uint8_t wifi_profile_get_channel_ex(uint8_t len, char *param[])
+    679          {
+    680              uint8_t status = 0;
+    681              int32_t port = port_sanity_check(param[0]);
+    682              uint8_t ch;
+    683          
+    684              if (port < 0) {
+    685                  return 1;
+    686              }
+    687          
+    688              status = wifi_profile_get_channel((uint8_t)port, &ch);
+    689          
+    690              printf("fetch ch =%d done.\n", ch);
+    691          
+    692              return status;
+    693          }
+    694          
+    695          /**
+    696           * @brief  Get bandwidth from the profile in NVRAM.
+    697           * wifi profile get bw <port>
+    698           * @param [IN]port
+    699           * @param 0 STA / AP Client
+    700           * @param 1 AP
+    701           * @param [OUT]bandwidth The wirelss bandwidth.
+    702           *                       IOT_CMD_CBW_20MHZ,
+    703           *                       IOT_CMD_CBW_40MHZ, and
+    704           *                       IOT_CMD_CBW_2040MHZ are supported.
+    705           *
+    706           * @return  >=0 means success, <0 means fail
+    707           *
+    708           * @note    Default value is HT_20
+    709           */
+    710          
+    711          static uint8_t wifi_profile_get_bandwidth_ex(uint8_t len, char *param[])
+    712          {
+    713              uint8_t status = 0;
+    714              int32_t port = port_sanity_check(param[0]);
+    715              uint8_t bw;
+    716          
+    717              if (port < 0) {
+    718                  return 1;
+    719              }
+    720          
+    721              status = wifi_profile_get_bandwidth((uint8_t)port, &bw);
+    722          
+    723              printf("fetch bw =%d done.\n", bw);
+    724          
+    725              return status;
+    726          }
+    727          
+    728          /**
+    729          * @brief Get SSID from the profile in NVRAM.
+    730          * wifi profile get ssid <port>
+    731          * @param [IN]port
+    732          * @param 0 STA / AP Client
+    733          * @param 1 AP
+    734          * @param [OUT]ssid SSID
+    735          * @param [OUT]ssid_length Length of SSID
+    736          *
+    737          * @return  >=0 means success, <0 means fail
+    738          */
+    739          static uint8_t wifi_profile_get_ssid_ex(uint8_t length, char *param[])
+    740          {
+    741              uint8_t status = 0;
+    742              int32_t port = port_sanity_check(param[0]);
+    743              uint8_t ssid[32] = {0};
+    744              uint8_t len;
+    745          
+    746              if (port < 0) {
+    747                  return 1;
+    748              }
+    749          
+    750              os_memset(ssid, 0x0, sizeof(ssid));
+    751              status = wifi_profile_get_ssid((uint8_t)port, ssid, &len);
+    752          
+    753              printf("fetch ssid = %s, len=%d done.\n", ssid, len);
+    754          
+    755              return status;
+    756          }
+    757          #if 0
+    758          /**
+    759          * @brief Store WiFi BSSID to the profile in NVRAM.
+    760          * wifi profile get bssid <port>
+    761          * @param [IN]port
+    762          * @param 0 STA / AP Client
+    763          * @param 1 AP
+    764          * @param [IN]bssid BSSID
+    765          *
+    766          * @return  >=0 means success, <0 means fail
+    767          */
+    768          
+    769          static uint8_t wifi_profile_get_bssid_ex(uint8_t len, char *param[])
+    770          {
+    771              uint8_t status = 0;
+    772              uint8_t port = atoi(param[0]);
+    773              uint8_t bssid[6];
+    774          
+    775              status = wifi_profile_set_bssid(port, bssid);
+    776          
+    777              printf("fetch bssid = %02x:%02x:%02x:%02x:%02x:%02x done.\n",
+    778                     bssid[0],
+    779                     bssid[1],
+    780                     bssid[2],
+    781                     bssid[3],
+    782                     bssid[4],
+    783                     bssid[5]);
+    784          
+    785              return status;
+    786          }
+    787          #endif
+    788          
+    789          /**
+    790          * @brief Get WiFi Wireless Mode from the profile in NVRAM.
+    791          * wifi profile get wirelessmode <port>
+    792          * @param [IN]port
+    793          * @param 0 STA / AP Client
+    794          * @param 1 AP
+    795          * @param [OUT]mode
+    796          * @param 1 legacy 11B only
+    797          * @param 2 legacy 11A only
+    798          * @param 3 legacy 11A/B/G mixed
+    799          * @param 4 legacy 11G only
+    800          * @param 5 11ABGN mixed
+    801          * @param 6 11N only in 2.4G
+    802          * @param 7 11GN mixed
+    803          * @param 8 11AN mixed
+    804          * @param 9 11BGN mixed
+    805          * @param 10 11AGN mixed
+    806          */
+    807          
+    808          static uint8_t wifi_profile_get_wireless_mode_ex(uint8_t len, char *param[])
+    809          {
+    810              uint8_t status = 0;
+    811              int32_t port = port_sanity_check(param[0]);
+    812              uint8_t mode;
+    813          
+    814              if (port < 0) {
+    815                  return 1;
+    816              }
+    817          
+    818              status = wifi_profile_get_wireless_mode((uint8_t)port, (wifi_phy_mode_t *)&mode);
+    819          
+    820              printf("fetch wireless mode =%d done.\n", mode);
+    821          
+    822              return status;
+    823          }
+    824          
+    825          
+    826          static uint8_t wifi_profile_get_country_region_ex(uint8_t len, char *param[])
+    827          {
+    828              uint8_t status = 0;
+    829              uint8_t band = atoi(param[0]);
+    830              uint8_t region;
+    831          
+    832              status = wifi_profile_get_country_region(band, &region);
+    833          
+    834              printf("fetch band(%d) region =%d done.\n", band, region);
+    835          
+    836              return status;
+    837          }
+    838          
+    839          static uint8_t wifi_profile_get_dtim_interval_ex(uint8_t len, char *param[])
+    840          {
+    841              uint8_t status = 0;
+    842              uint8_t dtim;
+    843          
+    844              status = wifi_profile_get_dtim_interval(&dtim);
+    845          
+    846              printf("fetch dtim = %d done.\n", dtim);
+    847          
+    848              return status;
+    849          }
+    850          static uint8_t wifi_profile_get_listen_interval_ex(uint8_t len, char *param[])
+    851          {
+    852              uint8_t status = 0;
+    853              uint8_t interval;
+    854          
+    855              status = wifi_profile_get_listen_interval(&interval);
+    856          
+    857              printf("fetch listen interval = %d done.\n", interval);
+    858          
+    859              return status;
+    860          }
+    861          static uint8_t wifi_profile_get_mac_address_ex(uint8_t len, char *param[])
+    862          {
+    863              uint8_t status = 0;
+    864              int32_t port = port_sanity_check(param[0]);
+    865              uint8_t mac[6] = {0};
+    866          
+    867              if (port < 0) {
+    868                  return 1;
+    869              }
+    870          
+    871              status = wifi_profile_get_mac_address((uint8_t)port, mac);
+    872          
+    873              printf("fetch mac address = %02x:%02x:%02x:%02x:%02x:%02x done.\n",
+    874                     mac[0],
+    875                     mac[1],
+    876                     mac[2],
+    877                     mac[3],
+    878                     mac[4],
+    879                     mac[5]);
+    880              return status;
+    881          
+    882          }
+    883          static uint8_t wifi_profile_get_security_mode_ex(uint8_t length, char *param[])
+    884          {
+    885              uint8_t status = 0;
+    886              int32_t port = port_sanity_check(param[0]);
+    887              uint8_t auth;
+    888              uint8_t encryp;
+    889          
+    890              if (port < 0) {
+    891                  return 1;
+    892              }
+    893          
+    894              status = wifi_profile_get_security_mode((uint8_t)port, (wifi_auth_mode_t *)&auth, (wifi_encrypt_type_t *)&encryp);
+    895          
+    896              printf("fetch auth mode=%d, encrypt type=%d done.\n", auth, encryp);
+    897          
+    898              return status;
+    899          }
+    900          
+    901          static uint8_t wifi_profile_get_psk_ex(uint8_t length, char *param[])
+    902          {
+    903              uint8_t status = 0;
+    904              int32_t port = port_sanity_check(param[0]);
+    905              uint8_t password[65] = {0};
+    906              uint8_t len;
+    907          
+    908              if (port < 0) {
+    909                  return 1;
+    910              }
+    911          
+    912              os_memset(password, 0, sizeof(password));
+    913              status = wifi_profile_get_wpa_psk_key((uint8_t)port, password, &len);
+    914          
+    915              printf("fetch password =%s len=%d done.\n", password, len);
+    916          
+    917              return status;
+    918          }
+    919          
+    920          /**
+    921          * @brief Get WiFi WEP Keys from the profile in NVRAM.
+    922          * wifi profile get wep <port>
+    923          * @param [IN]port
+    924          * @param 0 STA / AP Client
+    925          * @param 1 AP
+    926          * @param [OUT]wifi_wep_key_t
+    927          *
+    928          * @return >=0 means success, <0 means fail
+    929          */
+    930          
+    931          static uint8_t wifi_profile_get_wep_key_ex(uint8_t len, char *param[])
+    932          {
+    933              uint8_t status = 0;
+    934              int32_t port = port_sanity_check(param[0]);
+    935              wifi_wep_key_t wep_key;
+    936              int index, i;
+    937          
+    938              if (port < 0) {
+    939                  return 1;
+    940              }
+    941          
+    942              os_memset(&wep_key, 0, sizeof(wep_key));
+    943              status = wifi_profile_get_wep_key((uint8_t)port, &wep_key);
+    944          
+    945              wep_key.wep_key[0][wep_key.wep_key_length[0]] = '\0';
+    946              wep_key.wep_key[1][wep_key.wep_key_length[1]] = '\0';
+    947              wep_key.wep_key[2][wep_key.wep_key_length[2]] = '\0';
+    948              wep_key.wep_key[3][wep_key.wep_key_length[3]] = '\0';
+    949          
+    950              printf("fetch wep key id =%d, len = (%d, %d, %d, %d) done.\n",
+    951                     wep_key.wep_tx_key_index,
+    952                     wep_key.wep_key_length[0],
+    953                     wep_key.wep_key_length[1],
+    954                     wep_key.wep_key_length[2],
+    955                     wep_key.wep_key_length[3]);
+    956              for (index = 0; index < WIFI_NUMBER_WEP_KEYS; index++) {
+    957                  printf("[%d]: ", index);
+    958                  for (i = 0; i < wep_key.wep_key_length[index]; i++) {
+    959                      printf("%02x", wep_key.wep_key[index][i]);
+    960                  }
+    961                  printf("\n");
+    962              }
+    963              return status;
+    964          }
+    965          
+    966          /**
+    967          * @brief Save N9 Debug Level into NVRAM
+    968          * wifi profile set n9dbg <dbg_level>
+    969          * @param [IN]dbg_level
+    970          *   0: None
+    971          *   1: ERROR
+    972          *   2. WARNING
+    973          *   3. TRACE
+    974          *   4. INFO
+    975          *   5. LAUD
+    976          *
+    977          * @return  >=0 means success, <0 means fail
+    978          */
+    979          static uint8_t wifi_profile_set_n9_dbg_level(uint8_t len, char *param[])
+    980          {
+    981              uint8_t status = 0;
+    982              uint8_t dbg_level = atoi(param[0]);
+    983          
+    984              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    985          
+    986              sprintf(buf, "%d", dbg_level);
+    987              if (nvdm_write_data_item(WIFI_PROFILE_BUFFER_COMMON, "DbgLevel",NVDM_DATA_ITEM_TYPE_STRING, (const uint8_t *)buf, os_strlen(buf)) != NVDM_STATUS_OK) {
+    988                  printf("write NVDM DbgLevel fail\n");
+    989                  status = 1;
+    990              }
+    991          
+    992          
+    993              printf("wifi_profile_set_n9_dbg_level, level = %d, status:%d\n", dbg_level, status);
+    994          
+    995              return status;
+    996          }
+    997          
+    998          
+    999          /**
+   1000          * @brief Get N9 Debug Level from NVRAM
+   1001          * wifi profile get n9dbg
+   1002          * @param [OUT]dbg_level
+   1003          *   0: None
+   1004          *   1: ERROR
+   1005          *   2. WARNING
+   1006          *   3. TRACE
+   1007          *   4. INFO
+   1008          *   5. LAUD
+   1009          *
+   1010          * @return  >=0 means success, <0 means fail
+   1011          */
+   1012          static uint8_t wifi_profile_get_n9_dbg_level(uint8_t len, char *param[])
+   1013          {
+   1014              uint8_t status = 0;
+   1015              uint8_t dbg_level = 0;
+   1016          
+   1017              // init wifi profile
+   1018              char buff[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+   1019              int buff_sz = sizeof(buff);
+   1020              // common
+   1021              nvdm_read_data_item("common", "DbgLevel", (uint8_t *)buff, (uint32_t *)&buff_sz);
+   1022              dbg_level = atoi(buff);
+   1023          
+   1024              printf("wifi_profile_get_n9_dbg_level, level = %d, status:%d\n", dbg_level, status);
+   1025          
+   1026              return status;
+   1027          }
+   1028          
+   1029          void user_data_item_reset_to_default(char *group_name);
+   1030          uint8_t wifi_profile_reset_ex(uint8_t len, char *param[])
+   1031          {
+   1032              user_data_item_reset_to_default(NULL);
+   1033              return 0;
+   1034          }
+   1035          
+   1036          cmd_t   wifi_profile_set_cli[] = {
+   1037              { "opmode",         "STA/AP/Dual",      wifi_profile_set_opmode_ex},
+   1038              { "ch",             "channel",          wifi_profile_set_channel_ex},
+   1039              { "bw",             "bandwidth",        wifi_profile_set_bandwidth_ex},
+   1040              { "ssid",           "SSID",             wifi_profile_set_ssid_ex      },
+   1041          //  { "bssid",          "BSSID",            wifi_profile_set_bssid_ex     },
+   1042              { "wirelessmode",   "wireless mode",    wifi_profile_set_wireless_mode_ex},
+   1043              { "country",        "country region",   wifi_profile_set_country_region_ex},
+   1044              { "dtim",           "DTIM interval",    wifi_profile_set_dtim_interval_ex},
+   1045              { "listen",         "listen interval",  wifi_profile_set_listen_interval_ex},
+   1046              { "mac",            "MAC address",      wifi_profile_set_mac_address_ex},
+   1047              { "sec",        "WPA/WPA2PSK Authmode, Encrypt Type",   wifi_profile_set_security_mode_ex   },
+   1048              { "psk",         "WPA/WPA2PSK Key",  wifi_profile_set_psk_ex   },
+   1049              { "pmk",            "PMK for WPA/WPA2PSK",  wifi_profile_set_pmk_ex   },
+   1050              { "wep",            "WEP key",          wifi_profile_set_wep_key_ex },
+   1051              { "n9dbg",          "set N9 debug level",   wifi_profile_set_n9_dbg_level},
+   1052              { NULL }
+   1053          };
+   1054          
+   1055          cmd_t   wifi_profile_get_cli[] = {
+   1056              { "opmode",         "STA/AP/Dual",      wifi_profile_get_opmode_ex},
+   1057              { "ch",             "channel",          wifi_profile_get_channel_ex},
+   1058              { "bw",             "bandwidth",        wifi_profile_get_bandwidth_ex},
+   1059              { "ssid",           "SSID",             wifi_profile_get_ssid_ex      },
+   1060          //  { "bssid",          "BSSID",            wifi_profile_get_bssid_ex     },
+   1061              { "wirelessmode",   "wireless mode",    wifi_profile_get_wireless_mode_ex},
+   1062              { "country",        "country region",   wifi_profile_get_country_region_ex},
+   1063              { "dtim",           "DTIM interval",    wifi_profile_get_dtim_interval_ex},
+   1064              { "listen",         "listen interval",  wifi_profile_get_listen_interval_ex},
+   1065              { "mac",            "MAC address",      wifi_profile_get_mac_address_ex},
+   1066              { "sec",        "WPA/WPA2PSK Authmode, Encrypt Type",   wifi_profile_get_security_mode_ex   },
+   1067              { "psk",         "WPA/WPA2PSK Key",  wifi_profile_get_psk_ex  },
+   1068              { "pmk",            "PMK for WPA/WPA2PSK",  wifi_profile_get_pmk_ex   },
+   1069              { "wep",            "WEP key",          wifi_profile_get_wep_key_ex },
+   1070              { "profile",            "get profile txt",      wifi_profile_get_profile_ex},
+   1071              { "n9dbg",          "get N9 debug level",   wifi_profile_get_n9_dbg_level},
+   1072              { NULL }
+   1073          };
+   1074          
+   1075          #endif //MTK_WIFI_PROFILE_ENABLE
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   wifi_profile_get_bandwidth_ex
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> wifi_profile_get_bandwidth
+      16   wifi_profile_get_channel_ex
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> wifi_profile_get_channel
+      16   wifi_profile_get_country_region_ex
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_profile_get_country_region
+      16   wifi_profile_get_dtim_interval_ex
+        16   -> printf
+        16   -> wifi_profile_get_dtim_interval
+      16   wifi_profile_get_listen_interval_ex
+        16   -> printf
+        16   -> wifi_profile_get_listen_interval
+      32   wifi_profile_get_mac_address_ex
+        32   -> port_sanity_check
+        32   -> printf
+        32   -> wifi_profile_get_mac_address
+     136   wifi_profile_get_n9_dbg_level
+       136   -> __aeabi_memclr4
+       136   -> atoi
+       136   -> nvdm_read_data_item
+       136   -> printf
+      16   wifi_profile_get_opmode_ex
+        16   -> printf
+        16   -> wifi_profile_get_opmode
+      48   wifi_profile_get_pmk_ex
+        48   -> __aeabi_memclr4
+        48   -> os_memset
+        48   -> port_sanity_check
+        48   -> printf
+        48   -> wifi_profile_get_pmk
+     544   wifi_profile_get_profile_ex
+       544   -> __aeabi_memclr4
+       544   -> hex_dump
+       544   -> printf
+       544   -> wifi_config_init
+      80   wifi_profile_get_psk_ex
+        80   -> __aeabi_memclr4
+        80   -> os_memset
+        80   -> port_sanity_check
+        80   -> printf
+        80   -> wifi_profile_get_wpa_psk_key
+      16   wifi_profile_get_security_mode_ex
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> wifi_profile_get_security_mode
+      48   wifi_profile_get_ssid_ex
+        48   -> __aeabi_memclr4
+        48   -> os_memset
+        48   -> port_sanity_check
+        48   -> printf
+        48   -> wifi_profile_get_ssid
+     136   wifi_profile_get_wep_key_ex
+       136   -> os_memset
+       136   -> port_sanity_check
+       136   -> printf
+       136   -> wifi_profile_get_wep_key
+      16   wifi_profile_get_wireless_mode_ex
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> wifi_profile_get_wireless_mode
+       8   wifi_profile_reset_ex
+         8   -> user_data_item_reset_to_default
+      16   wifi_profile_set_bandwidth_ex
+        16   -> atoi
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_bandwidth
+      16   wifi_profile_set_channel_ex
+        16   -> atoi
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_channel
+      16   wifi_profile_set_country_region_ex
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_country_region
+      16   wifi_profile_set_dtim_interval_ex
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_dtim_interval
+      16   wifi_profile_set_listen_interval_ex
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_listen_interval
+      48   wifi_profile_set_mac_address_ex
+        48   -> __aeabi_memcpy
+        48   -> port_sanity_check
+        48   -> printf
+        48   -> strcpy
+        48   -> wifi_conf_get_mac_from_str
+        48   -> wifi_profile_commit_setting
+        48   -> wifi_profile_get_opmode
+        48   -> wifi_profile_set_mac_address
+     144   wifi_profile_set_n9_dbg_level
+       144   -> __aeabi_memclr4
+       144   -> atoi
+       144   -> nvdm_write_data_item
+       144   -> os_strlen
+       144   -> printf
+       144   -> sprintf
+      16   wifi_profile_set_opmode_ex
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_opmode
+      48   wifi_profile_set_pmk_ex
+        48   -> __aeabi_memclr4
+        48   -> convert_string_to_hex_array
+        48   -> os_memset
+        48   -> port_sanity_check
+        48   -> printf
+        48   -> wifi_profile_commit_setting
+        48   -> wifi_profile_set_pmk
+      16   wifi_profile_set_psk_ex
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> strlen
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_wpa_psk_key
+      24   wifi_profile_set_security_mode_ex
+        24   -> atoi
+        24   -> port_sanity_check
+        24   -> printf
+        24   -> wifi_profile_commit_setting
+        24   -> wifi_profile_set_security_mode
+      16   wifi_profile_set_ssid_ex
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> strlen
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_ssid
+     168   wifi_profile_set_wep_key_ex
+       168   -> atoi
+       168   -> os_memcpy
+       168   -> os_memset
+       168   -> port_sanity_check
+       168   -> printf
+       168   -> rstrtok
+       168   -> strlen
+       168   -> wifi_profile_commit_setting
+       168   -> wifi_profile_set_wep_key
+      16   wifi_profile_set_wireless_mode_ex
+        16   -> atoi
+        16   -> port_sanity_check
+        16   -> printf
+        16   -> wifi_profile_commit_setting
+        16   -> wifi_profile_set_wireless_mode
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable137
+       4  ??DataTable138
+       4  ??DataTable139
+       4  ??DataTable140
+       4  ??DataTable140_1
+       4  ??DataTable142
+       4  ??DataTable142_1
+       4  ??DataTable142_2
+       4  ??DataTable142_3
+       4  ??DataTable142_4
+       4  ??DataTable144
+       4  ??DataTable144_1
+       4  ??DataTable144_10
+       4  ??DataTable144_11
+       4  ??DataTable144_12
+       4  ??DataTable144_13
+       4  ??DataTable144_2
+       4  ??DataTable144_3
+       4  ??DataTable144_4
+       4  ??DataTable144_5
+       4  ??DataTable144_6
+       4  ??DataTable144_7
+       4  ??DataTable144_8
+       4  ??DataTable144_9
+       8  ?_0
+      12  ?_1
+       8  ?_10
+      16  ?_100
+      28  ?_101
+      76  ?_102
+      24  ?_103
+      20  ?_104
+      20  ?_105
+      32  ?_106
+      32  ?_107
+      32  ?_108
+      36  ?_109
+      16  ?_11
+      24  ?_110
+      36  ?_111
+       8  ?_112
+      60  ?_113
+      44  ?_114
+      68  ?_115
+      36  ?_116
+      52  ?_117
+       8  ?_118
+       8  ?_119
+       8  ?_12
+       2  ?_120
+     128  ?_121
+       4  ?_122
+      12  ?_123
+      28  ?_124
+      56  ?_125
+     128  ?_126
+      56  ?_127
+      16  ?_13
+       8  ?_14
+      16  ?_15
+       4  ?_16
+      12  ?_17
+       4  ?_18
+      36  ?_19
+       4  ?_2
+       4  ?_20
+      16  ?_21
+       4  ?_22
+      20  ?_23
+       4  ?_24
+       8  ?_25
+       8  ?_26
+      20  ?_27
+       8  ?_28
+      16  ?_29
+       8  ?_3
+      20  ?_30
+       8  ?_31
+      24  ?_32
+       4  ?_33
+       4  ?_34
+      24  ?_35
+      24  ?_36
+      24  ?_37
+      28  ?_38
+      36  ?_39
+       4  ?_4
+      40  ?_40
+      32  ?_41
+      32  ?_42
+       8  ?_43
+      64  ?_44
+      48  ?_45
+      52  ?_46
+      40  ?_47
+      32  ?_48
+      32  ?_49
+      12  ?_5
+      44  ?_50
+     492  ?_51
+      12  ?_52
+      16  ?_53
+      24  ?_54
+      28  ?_55
+      20  ?_56
+      16  ?_57
+      20  ?_58
+      24  ?_59
+       8  ?_6
+      16  ?_60
+      28  ?_61
+       8  ?_62
+      24  ?_63
+      24  ?_64
+      44  ?_65
+      16  ?_66
+      12  ?_67
+      16  ?_68
+      16  ?_69
+       8  ?_7
+      12  ?_70
+      20  ?_71
+      20  ?_72
+      16  ?_73
+      16  ?_74
+      20  ?_75
+      16  ?_76
+      20  ?_77
+      20  ?_78
+      20  ?_79
+      16  ?_8
+      24  ?_80
+      16  ?_81
+      20  ?_82
+      20  ?_83
+      20  ?_84
+      20  ?_85
+      20  ?_86
+      16  ?_87
+      24  ?_88
+       8  ?_89
+      16  ?_9
+       4  ?_90
+       8  ?_91
+      20  ?_92
+      16  ?_93
+      28  ?_94
+      32  ?_95
+      60  ?_96
+       4  ?_97
+       8  ?_98
+       2  ?_99
+      46  wifi_profile_get_bandwidth_ex
+      46  wifi_profile_get_channel_ex
+     256  wifi_profile_get_cli
+      42  wifi_profile_get_country_region_ex
+      30  wifi_profile_get_dtim_interval_ex
+      30  wifi_profile_get_listen_interval_ex
+      82  wifi_profile_get_mac_address_ex
+      58  wifi_profile_get_n9_dbg_level
+      30  wifi_profile_get_opmode_ex
+     112  wifi_profile_get_pmk_ex
+     852  wifi_profile_get_profile_ex
+      74  wifi_profile_get_psk_ex
+      54  wifi_profile_get_security_mode_ex
+      74  wifi_profile_get_ssid_ex
+     176  wifi_profile_get_wep_key_ex
+      46  wifi_profile_get_wireless_mode_ex
+      12  wifi_profile_reset_ex
+      76  wifi_profile_set_bandwidth_ex
+      94  wifi_profile_set_channel_ex
+     240  wifi_profile_set_cli
+      64  wifi_profile_set_country_region_ex
+      42  wifi_profile_set_dtim_interval_ex
+      42  wifi_profile_set_listen_interval_ex
+     148  wifi_profile_set_mac_address_ex
+      90  wifi_profile_set_n9_dbg_level
+      44  wifi_profile_set_opmode_ex
+     112  wifi_profile_set_pmk_ex
+     108  wifi_profile_set_psk_ex
+      92  wifi_profile_set_security_mode_ex
+      74  wifi_profile_set_ssid_ex
+     282  wifi_profile_set_wep_key_ex
+      76  wifi_profile_set_wireless_mode_ex
+
+ 
+   496 bytes in section .data
+ 1 776 bytes in section .rodata
+ 4 860 bytes in section .text
+ 
+ 4 860 bytes of CODE  memory
+ 1 776 bytes of CONST memory
+   496 bytes of DATA  memory
+
+Errors: none
+Warnings: none

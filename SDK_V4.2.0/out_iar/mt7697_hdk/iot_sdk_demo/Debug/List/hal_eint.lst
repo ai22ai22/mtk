@@ -1,0 +1,590 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:02
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_eint.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_eint.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_eint.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_eint.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_eint.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_eint.h"
+     36          #ifdef HAL_EINT_MODULE_ENABLED
+     37          
+     38          #include <string.h>
+     39          #include "hal_eint.h"
+     40          #include "hal_gpio.h"
+     41          #include "hal_log.h"
+     42          #include "low_hal_gpio.h"
+     43          #include "hal_gpio_7687.h"
+     44          #include "nvic.h"
+     45          
+     46          typedef struct {
+     47              bool callback_present;
+     48              hal_eint_callback_t callback;
+     49              void *user_data;
+     50          } hal_eint_callback_context_t;
+     51          
+     52          
+     53          #define HAL_EINT_COUNT (11)
+     54          
+     55          static hal_eint_callback_context_t g_eint_callback_context[HAL_EINT_COUNT];
+     56          
+     57          typedef struct {
+     58              hal_eint_number_t eint_number;
+     59              ENUM_IOT_GPIO_NAME_T gpio_pin;
+     60          } hal_eint_gpio_map_t;
+     61          
+     62          
+     63          static const hal_eint_gpio_map_t eint_gpio_table[] = {
+     64              {HAL_EINT_NUMBER_0,  eIOT_GPIO_IDX_0},
+     65              {HAL_EINT_NUMBER_1,  eIOT_GPIO_IDX_1},
+     66              {HAL_EINT_NUMBER_2,  eIOT_GPIO_IDX_3},
+     67              {HAL_EINT_NUMBER_3,  eIOT_GPIO_IDX_4},
+     68              {HAL_EINT_NUMBER_4,  eIOT_GPIO_IDX_5},
+     69              {HAL_EINT_NUMBER_5,  eIOT_GPIO_IDX_6},
+     70              {HAL_EINT_NUMBER_6,  eIOT_GPIO_IDX_7},
+     71              {HAL_EINT_NUMBER_19, eIOT_GPIO_IDX_35},
+     72              {HAL_EINT_NUMBER_20, eIOT_GPIO_IDX_37},
+     73              {HAL_EINT_NUMBER_21, eIOT_GPIO_IDX_38},
+     74              {HAL_EINT_NUMBER_22, eIOT_GPIO_IDX_39}
+     75          };
+     76          
+     77          static uint32_t get_index_from_gpio_pin(ENUM_IOT_GPIO_NAME_T gpio_pin)
+     78          {
+     79              uint32_t count = sizeof(eint_gpio_table) / sizeof(eint_gpio_table[0]);
+     80              uint32_t index = 0;
+     81              for (index = 0; index < count; index++) {
+     82                  if (eint_gpio_table[index].gpio_pin == gpio_pin) {
+     83                      return index;
+     84                  }
+     85              }
+     86              return (0xFFFFFFFF);
+     87          }
+     88          
+     89          static int32_t hal_eint_convert_for_gpio(hal_eint_number_t eint_number, ENUM_IOT_GPIO_NAME_T *gpio_pin)
+     90          {
+     91              uint32_t count = sizeof(eint_gpio_table) / sizeof(eint_gpio_table[0]);
+     92              uint32_t index = 0;
+     93              for (index = 0; index < count; index++) {
+     94                  if (eint_gpio_table[index].eint_number == eint_number) {
+     95                      *gpio_pin = eint_gpio_table[index].gpio_pin;
+     96                      return 0;
+     97                  }
+     98              }
+     99              return -1;
+    100          }
+    101          
+    102          static void hal_eint_calc_debounce_parameters(uint32_t debounce_time,
+    103                  ENUM_DEBOUNCE_PRESCALER_T *sample_rate,
+    104                  uint32_t *sample_count)
+    105          {
+    106              /*
+    107                  We prefer a higher sample rate for debouncing, i.e. check a number of times
+    108                  to make sure any interference to be detected and filtered.
+    109                  But checking too many times doesn't help much, so a threshold is defined,
+    110                  to scale among different sample rates.
+    111              */
+    112              uint32_t const threshold = 10;
+    113              uint32_t target_count = 0;
+    114              if ((target_count = debounce_time * 8) <= threshold) {
+    115                  *sample_rate = eDebounce_Prescaler_8K;
+    116              } else if ((target_count = debounce_time * 4) <= threshold) {
+    117                  *sample_rate = eDebounce_Prescaler_4K;
+    118              } else if ((target_count = debounce_time * 2) <= threshold) {
+    119                  *sample_rate = eDebounce_Prescaler_2K;
+    120              } else if ((target_count = debounce_time * 1) <= threshold) {
+    121                  *sample_rate = eDebounce_Prescaler_1K;
+    122              } else if ((target_count = debounce_time / 2) <= threshold) {
+    123                  *sample_rate = eDebounce_Prescaler_Dot5K;
+    124              } else if ((target_count = debounce_time / 4) <= threshold) {
+    125                  *sample_rate = eDebounce_Prescaler_Dot25K;
+    126              } else if ((target_count = debounce_time / 8) <= threshold) {
+    127                  *sample_rate = eDebounce_Prescaler_Dot125K;
+    128              } else {
+    129                  *sample_rate = eDebounce_Prescaler_Dot0625K;
+    130                  *sample_count = debounce_time / 16;
+    131              }
+    132              *sample_count = target_count;
+    133          }
+    134          
+    135          static void hal_eint_isr(ENUM_IOT_GPIO_NAME_T gpio_name)
+    136          {
+    137              hal_eint_callback_context_t *callback_context = &g_eint_callback_context[get_index_from_gpio_pin(gpio_name)];
+    138              if ((true == callback_context->callback_present)
+    139                      && (NULL != callback_context->callback)) {
+    140                  callback_context->callback(callback_context->user_data);
+    141              }
+    142          }
+    143          
+    144          static hal_eint_status_t hal_eint_apply_config(ENUM_IOT_GPIO_NAME_T gpio_pin,
+    145                  const hal_eint_config_t *eint_config)
+    146          {
+    147              uint32_t sample_count;
+    148              int32_t ret_value;
+    149              ENUM_NVIC_SENSE_T trigger_mode;
+    150              ENUM_DEBOUNCE_POL_T trigger_polarity;
+    151              ENUM_DEBOUNCE_PRESCALER_T sample_rate;
+    152              ENUM_DEBOUNCE_DUAL_T dual_edge;
+    153          
+    154              dual_edge = eDebounce_Dual_No;
+    155              switch (eint_config->trigger_mode) {
+    156                  case  HAL_EINT_LEVEL_LOW : {
+    157                      trigger_mode = eLevel_Trigger;
+    158                      trigger_polarity = eDebounce_Positive_Pol;
+    159                      break;
+    160                  }
+    161                  case  HAL_EINT_LEVEL_HIGH : {
+    162                      trigger_mode = eLevel_Trigger;
+    163                      trigger_polarity = eDebounce_Negative_Pol;
+    164                      break;
+    165                  }
+    166                  case  HAL_EINT_EDGE_FALLING : {
+    167                      trigger_mode = eEdge_Trigger;
+    168                      trigger_polarity = eDebounce_Positive_Pol;
+    169                      break;
+    170                  }
+    171                  case  HAL_EINT_EDGE_RISING : {
+    172                      trigger_mode = eEdge_Trigger;
+    173                      trigger_polarity = eDebounce_Negative_Pol;
+    174                      break;
+    175                  }
+    176                  case  HAL_EINT_EDGE_FALLING_AND_RISING : {
+    177                      trigger_mode = eEdge_Trigger;
+    178                      trigger_polarity = eDebounce_Negative_Pol;
+    179                      dual_edge = eDebounce_Dual_Yes;
+    180                      break;
+    181                  }
+    182                  default :
+    183                      return HAL_EINT_STATUS_ERROR;
+    184              }
+    185          
+    186              hal_eint_calc_debounce_parameters(eint_config->debounce_time,
+    187                                                &sample_rate,
+    188                                                &sample_count);
+    189              if (sample_count == 0) {
+    190                  ret_value = gpio_int(gpio_pin,
+    191                                       trigger_mode,
+    192                                       eDebounce_Disable,
+    193                                       trigger_polarity,
+    194                                       dual_edge,
+    195                                       sample_rate,
+    196                                       sample_count,
+    197                                       hal_eint_isr);
+    198                  log_hal_error("hal_eint_init: debounce disable.");
+    199              } else {
+    200                  ret_value = gpio_int(gpio_pin,
+    201                                       trigger_mode,
+    202                                       eDebounce_Enable,
+    203                                       trigger_polarity,
+    204                                       dual_edge,
+    205                                       sample_rate,
+    206                                       sample_count,
+    207                                       hal_eint_isr);
+    208              }
+    209          
+    210              return (ret_value >= 0) ? HAL_EINT_STATUS_OK : HAL_EINT_STATUS_ERROR;
+    211          }
+    212          
+    213          hal_eint_status_t hal_eint_init(hal_eint_number_t eint_number, const hal_eint_config_t *eint_config)
+    214          {
+    215              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    216              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    217                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    218                  return HAL_EINT_STATUS_ERROR;
+    219              }
+    220              if (NULL == eint_config) {
+    221                  log_hal_error("eint_config is NULL.");
+    222                  return HAL_EINT_STATUS_INVALID_PARAMETER;
+    223              }
+    224              hal_eint_callback_context_t *callback_context = &g_eint_callback_context[get_index_from_gpio_pin(gpio_pin)];
+    225              memset(callback_context, 0, sizeof(hal_eint_callback_context_t));
+    226              return hal_eint_apply_config(gpio_pin, eint_config);
+    227          }
+    228          
+    229          hal_eint_status_t hal_eint_deinit(hal_eint_number_t eint_number)
+    230          {
+    231              return HAL_EINT_STATUS_OK;
+    232          }
+    233          
+    234          
+    235          hal_eint_status_t hal_eint_register_callback(hal_eint_number_t eint_number,
+    236                  hal_eint_callback_t callback,
+    237                  void *user_data)
+    238          {
+    239              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    240              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    241                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    242                  return HAL_EINT_STATUS_ERROR;
+    243              }
+    244              hal_eint_callback_context_t *callback_context = &g_eint_callback_context[get_index_from_gpio_pin(gpio_pin)];
+    245              callback_context->callback = callback;
+    246              callback_context->user_data = user_data;
+    247              callback_context->callback_present = true;
+    248              return HAL_EINT_STATUS_OK;
+    249          }
+    250          
+    251          hal_eint_status_t hal_eint_set_trigger_mode(hal_eint_number_t eint_number, hal_eint_trigger_mode_t trigger_mode)
+    252          {
+    253              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    254              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    255                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    256                  return HAL_EINT_STATUS_ERROR;
+    257              } else {
+    258                  ENUM_NVIC_SENSE_T trigger;
+    259                  ENUM_DEBOUNCE_POL_T pol;
+    260                  ENUM_DEBOUNCE_DUAL_T dual_en;
+    261                  
+    262                  switch (trigger_mode) {
+    263                      case  HAL_EINT_LEVEL_LOW : {
+    264                          trigger = eLevel_Trigger;
+    265                          pol = eDebounce_Positive_Pol;
+    266                          dual_en = eDebounce_Dual_No;
+    267                          break;
+    268                      }
+    269                      case  HAL_EINT_LEVEL_HIGH : {
+    270                      	   trigger = eLevel_Trigger;
+    271                          pol = eDebounce_Negative_Pol;
+    272                          dual_en = eDebounce_Dual_No;
+    273                          break;
+    274                      }
+    275                      case  HAL_EINT_EDGE_FALLING : {
+    276                      	   trigger = eEdge_Trigger;
+    277                          pol = eDebounce_Positive_Pol;
+    278                          dual_en = eDebounce_Dual_No; 
+    279                          break;
+    280                      }
+    281                      case  HAL_EINT_EDGE_RISING : {
+    282                      	   trigger = eEdge_Trigger;
+    283                          pol = eDebounce_Negative_Pol;
+    284                          dual_en = eDebounce_Dual_No; 
+    285                          break;
+    286                      }
+    287                      case  HAL_EINT_EDGE_FALLING_AND_RISING : {
+    288                      	   trigger = eLevel_Trigger;
+    289                          pol = eDebounce_Negative_Pol;
+    290                          dual_en = eDebounce_Dual_Yes;
+    291                          break;
+    292                      }
+    293                      default : {
+    294                          return HAL_EINT_STATUS_ERROR;
+    295                      }
+    296                  }
+    297                  eint_set_trigger_mode(gpio_pin, trigger, pol, dual_en);
+    298              	}
+    299          
+    300              return HAL_EINT_STATUS_OK;
+    301          
+    302          }
+    303          
+    304          hal_eint_status_t hal_eint_set_debounce_time(hal_eint_number_t eint_number, uint32_t time_ms)
+    305          {
+    306              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    307              uint32_t sample_count;
+    308              ENUM_DEBOUNCE_PRESCALER_T sample_rate;
+    309              ENUM_DEBOUNCE_EN_T debounce_en;
+    310              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    311                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    312                  return HAL_EINT_STATUS_ERROR;
+    313              }
+    314          
+    315              /*
+    316                    7687 EINT spec
+    317                     3 bit          |                      |      4bit counter(1 to 16)
+    318                     pre-scaler      clock(KHz)      |   min(ms)           max (ms)
+    319                        000                8                      0.13                  2.00
+    320                        001                4                      0.25                  4.00
+    321                        010                2                      0.50                  8.00
+    322                        011                1                      1.00                  16.00
+    323                        100                0.5                   2.00                  32.00
+    324                        101                0.25                 4.00                   64.00
+    325                        110                0.125                8.00                  128.00
+    326                        111                0.0625              16.00                 256.00
+    327              */
+    328              hal_eint_calc_debounce_parameters(time_ms, &sample_rate, &sample_count);
+    329          
+    330              if (time_ms != 0) {
+    331                  debounce_en = eDebounce_Enable;
+    332              } else {
+    333                  debounce_en = eDebounce_Disable;
+    334              }
+    335              eint_set_debounce(gpio_pin, debounce_en, sample_rate, sample_count);
+    336              return HAL_EINT_STATUS_OK;
+    337          }
+    338          
+    339          hal_eint_status_t hal_eint_mask(hal_eint_number_t eint_number)
+    340          {
+    341              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    342              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    343                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    344                  return HAL_EINT_STATUS_ERROR;
+    345              }
+    346              eint_set_mask(gpio_pin);
+    347              return HAL_EINT_STATUS_OK;
+    348          }
+    349          
+    350          hal_eint_status_t hal_eint_unmask(hal_eint_number_t eint_number)
+    351          {
+    352              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    353              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    354                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    355                  return HAL_EINT_STATUS_ERROR;
+    356              }
+    357               eint_set_unmask(gpio_pin);
+    358               return HAL_EINT_STATUS_OK;
+    359          }
+    360          
+    361          
+    362          hal_eint_status_t hal_eint_set_software_trigger(hal_eint_number_t eint_number)
+    363          {
+    364              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    365              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    366                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    367                  return HAL_EINT_STATUS_ERROR;
+    368              }
+    369              eint_set_software_trigger(gpio_pin);
+    370              return HAL_EINT_STATUS_OK;
+    371          }
+    372          
+    373          hal_eint_status_t hal_eint_clear_software_trigger(hal_eint_number_t eint_number)
+    374          {
+    375              ENUM_IOT_GPIO_NAME_T gpio_pin;
+    376              if (0 != hal_eint_convert_for_gpio(eint_number, &gpio_pin)) {
+    377                  log_hal_error("hal_eint_convert_for_gpio fail.");
+    378                  return HAL_EINT_STATUS_ERROR;
+    379              }
+    380              eint_clear_software_trigger(gpio_pin);
+    381              return HAL_EINT_STATUS_OK;
+    382          }
+    383          
+    384          #endif
+    385          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   get_index_from_gpio_pin
+      48   hal_eint_apply_config
+        48   -> gpio_int
+        48   -> hal_eint_calc_debounce_parameters
+        48   -> log_hal_error_internal
+       4   hal_eint_calc_debounce_parameters
+       8   hal_eint_clear_software_trigger
+         8   -> eint_clear_software_trigger
+         8   -> hal_eint_convert_for_gpio
+         8   -> log_hal_error_internal
+       8   hal_eint_convert_for_gpio
+       0   hal_eint_deinit
+      16   hal_eint_init
+        16   -> __aeabi_memset4
+        16   -> get_index_from_gpio_pin
+        16   -> hal_eint_apply_config
+        16   -> hal_eint_convert_for_gpio
+        16   -> log_hal_error_internal
+       8   hal_eint_isr
+         0   -- Indirect call
+         8   -> get_index_from_gpio_pin
+       8   hal_eint_mask
+         8   -> eint_set_mask
+         8   -> hal_eint_convert_for_gpio
+         8   -> log_hal_error_internal
+      16   hal_eint_register_callback
+        16   -> get_index_from_gpio_pin
+        16   -> hal_eint_convert_for_gpio
+        16   -> log_hal_error_internal
+      16   hal_eint_set_debounce_time
+        16   -> eint_set_debounce
+        16   -> hal_eint_calc_debounce_parameters
+        16   -> hal_eint_convert_for_gpio
+        16   -> log_hal_error_internal
+       8   hal_eint_set_software_trigger
+         8   -> eint_set_software_trigger
+         8   -> hal_eint_convert_for_gpio
+         8   -> log_hal_error_internal
+      16   hal_eint_set_trigger_mode
+        16   -> eint_set_trigger_mode
+        16   -> hal_eint_convert_for_gpio
+        16   -> log_hal_error_internal
+       8   hal_eint_unmask
+         8   -> eint_set_unmask
+         8   -> hal_eint_convert_for_gpio
+         8   -> log_hal_error_internal
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable16_1
+      36  ?_0
+      32  ?_1
+      24  ?_2
+      24  eint_gpio_table
+     132  g_eint_callback_context
+      36  get_index_from_gpio_pin
+     168  hal_eint_apply_config
+     100  hal_eint_calc_debounce_parameters
+      46  hal_eint_clear_software_trigger
+      46  hal_eint_convert_for_gpio
+       4  hal_eint_deinit
+      98  hal_eint_init
+      38  hal_eint_isr
+      46  hal_eint_mask
+      66  hal_eint_register_callback
+      78  hal_eint_set_debounce_time
+      46  hal_eint_set_software_trigger
+     106  hal_eint_set_trigger_mode
+      46  hal_eint_unmask
+     220  -- Other
+
+ 
+   132 bytes in section .bss
+ 1 268 bytes in section .text
+ 
+ 1 268 bytes of CODE memory
+   132 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,350 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:05
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\hal_irrx.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\hal_irrx.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_irrx.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_irrx.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\common\hal_irrx.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_irrx.h"
+     36          
+     37          
+     38          #ifdef HAL_IRRX_MODULE_ENABLED
+     39          #include "low_hal_irrx.h"
+     40          #include "hal_log.h"
+     41          #include <stdio.h>
+     42          #include <string.h>
+     43          #include "hal_sleep_manager.h"
+     44          #include "hal_sleep_driver.h"
+     45          
+     46          
+     47          static hal_irrx_running_status_t s_hal_irrx_status = HAL_IRRX_IDLE;
+     48          
+     49          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     50          static uint8_t irrx_sleep_handler = 0;
+     51          #endif
+     52          
+     53          hal_irrx_status_t hal_irrx_init(void)
+     54          {
+     55              halIrRxReset();
+     56          
+     57          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     58              /*get sleep handler*/
+     59              irrx_sleep_handler = hal_sleep_manager_set_sleep_handle("irrx");
+     60              if (irrx_sleep_handler == INVALID_SLEEP_HANDLE) {
+     61                  log_hal_error("there's no available handle when IRRX get sleep handle");
+     62                  return HAL_IRRX_STATUS_NOT_SUPPORTED;
+     63              }
+     64              /*lock sleep mode*/
+     65              hal_sleep_manager_lock_sleep(irrx_sleep_handler);
+     66          #endif
+     67              return HAL_IRRX_STATUS_OK;
+     68          }
+     69          
+     70          
+     71          
+     72          hal_irrx_status_t hal_irrx_deinit(void)
+     73          {
+     74              halIrRxReset();
+     75          
+     76          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     77              /*unlock sleep mode*/
+     78              hal_sleep_manager_unlock_sleep(irrx_sleep_handler);
+     79              /*release sleep hander*/
+     80              hal_sleep_manager_release_sleep_handle(irrx_sleep_handler);
+     81          #endif
+     82          
+     83              return HAL_IRRX_STATUS_OK;
+     84          }
+     85          
+     86          
+     87          
+     88          hal_irrx_status_t hal_irrx_receive_rc5_start(uint8_t             format,
+     89                  hal_irrx_callback_t callback,
+     90                  void                *parameter)
+     91          {
+     92              UINT8 ucInverse = 0;
+     93              UINT8 ucBitReverse = 0;
+     94              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+     95          
+     96              halIrRxReset();
+     97          
+     98              ucInverse = format & HAL_IRRX_RC5_RECEIVE_FORMAT_SIGNAL_INVERSE;
+     99              ucBitReverse = format & HAL_IRRX_RC5_RECEIVE_FORMAT_BIT_REVERSE;
+    100          
+    101              ret = halIrRxRC5(ucInverse, ucBitReverse, 1, 1600); // RC5 should use 1600(800ms) for sample_period.
+    102              if (HAL_RET_FAIL == ret) {
+    103                  return HAL_IRRX_STATUS_INVALID_PARAM;
+    104              }
+    105              halIrRxRegisterCallback(LOW_HAL_IRRX_MODE_RC5, (low_hal_irrx_callback_t)callback,parameter);
+    106          
+    107              s_hal_irrx_status = HAL_IRRX_BUSY;
+    108          
+    109              return HAL_IRRX_STATUS_OK;
+    110          }
+    111          
+    112          
+    113          hal_irrx_status_t hal_irrx_receive_rc5(hal_irrx_rc5_code_t *code)
+    114          {
+    115              if (HAL_IRRX_BUSY != s_hal_irrx_status) {
+    116                  return HAL_IRRX_STATUS_NOT_SUPPORTED;
+    117              }
+    118          
+    119              halIrRxRC5Read((PUINT8)(&(code->bits)), (PUINT32)(&(code->code[0])), (PUINT32)(&(code->code[1])));
+    120          
+    121              s_hal_irrx_status = HAL_IRRX_IDLE;
+    122          
+    123              return HAL_IRRX_STATUS_OK;
+    124          }
+    125          
+    126          
+    127          hal_irrx_status_t hal_irrx_receive_pwd_start(
+    128              const hal_irrx_pwd_config_t     *config,
+    129              hal_irrx_callback_t             callback,
+    130              uint32_t                        *precision_us)
+    131          {
+    132              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    133              void   *parameter = NULL;
+    134          
+    135              halIrRxReset();
+    136          
+    137              ret = halIrRxPulseWidthDetect(3, config->inverse, config->terminate_threshold, (unsigned int *)(precision_us));
+    138              if (HAL_RET_FAIL == ret) {
+    139                  return HAL_IRRX_STATUS_INVALID_PARAM;
+    140              }
+    141              halIrRxRegisterCallback(LOW_HAL_IRRX_MODE_PWD, (low_hal_irrx_callback_t)callback,parameter);
+    142          
+    143              s_hal_irrx_status = HAL_IRRX_BUSY;
+    144          
+    145              return HAL_IRRX_STATUS_OK;
+    146          
+    147          }
+    148          
+    149          
+    150          hal_irrx_status_t hal_irrx_receive_pwd(uint8_t  *received_length,
+    151                                                 uint8_t  *buffer,
+    152                                                 uint8_t  buffer_length)
+    153          {
+    154              if (HAL_IRRX_BUSY != s_hal_irrx_status) {
+    155                  return HAL_IRRX_STATUS_NOT_SUPPORTED;
+    156              }
+    157          
+    158              halIrRxPWDRead((PUINT8)received_length, (PUINT8)buffer, (UINT8)buffer_length);
+    159          
+    160              s_hal_irrx_status = HAL_IRRX_IDLE;
+    161          
+    162              return HAL_IRRX_STATUS_OK;
+    163          }
+    164          
+    165          
+    166          hal_irrx_status_t hal_irrx_get_running_status(hal_irrx_running_status_t *running_status)
+    167          
+    168          {
+    169              *running_status = s_hal_irrx_status;
+    170              return HAL_IRRX_STATUS_OK;
+    171          
+    172          }
+    173          
+    174          #endif
+    175          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   hal_irrx_deinit
+         8   -> halIrRxReset
+         8   -> hal_sleep_manager_release_sleep_handle
+         8   -> hal_sleep_manager_unlock_sleep
+       0   hal_irrx_get_running_status
+       8   hal_irrx_init
+         8   -> halIrRxReset
+         8   -> hal_sleep_manager_lock_sleep
+         8   -> hal_sleep_manager_set_sleep_handle
+         8   -> log_hal_error_internal
+       8   hal_irrx_receive_pwd
+         8   -> halIrRxPWDRead
+      16   hal_irrx_receive_pwd_start
+        16   -> halIrRxPulseWidthDetect
+        16   -> halIrRxRegisterCallback
+        16   -> halIrRxReset
+       8   hal_irrx_receive_rc5
+         8   -> halIrRxRC5Read
+      16   hal_irrx_receive_rc5_start
+        16   -> halIrRxRC5
+        16   -> halIrRxRegisterCallback
+        16   -> halIrRxReset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+       8  ?_0
+      56  ?_1
+      24  hal_irrx_deinit
+      10  hal_irrx_get_running_status
+      50  hal_irrx_init
+      26  hal_irrx_receive_pwd
+      54  hal_irrx_receive_pwd_start
+      32  hal_irrx_receive_rc5
+      60  hal_irrx_receive_rc5_start
+       1  irrx_sleep_handler
+       1  s_hal_irrx_status
+      16  -- Other
+
+ 
+   2 bytes in section .bss
+ 344 bytes in section .text
+ 
+ 344 bytes of CODE memory
+   2 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -187,10 +187,7 @@
           <state>MTK_SENSOR_ACCELEROMETER_USE_BMA255</state>
           <state>MTK_SENSOR_BIO_USE</state>
           <state>MTK_SENSOR_BIO_USE_MT2511</state>
-          <state>FUSION_HEART_RATE_MONITOR_USE=M_INHOUSE_HEART_RATE_MONITOR</state>
-          <state>FUSION_BLOOD_PRESSURE_USE=MI_INHOUSE_BLOOD_PRESSURE</state>
           <state>SENSOR_FUSTION_TASK_ENABLED</state>
-          <state>SENSOR_DEMO</state>
           <state>MTK_DEVELOPMENT_BOARD_HDK</state>
           <state>MTK_CTP_ENABLE</state>
           <state>configOVERRIDE_DEFAULT_TICK_CONFIGURATION</state>
@@ -206,8 +203,6 @@
           <state>MTK_GNSS_ENABLE</state>
           <state>MTK_OS_CPU_UTILIZATION_ENABLE</state>
           <state>MTK_SYSTEM_AT_COMMAND_ENABLE</state>
-          <state>MT2511_USE_SPI</state>
-          <state>USE_EXTERNAL_BOOST</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -2964,27 +2959,6 @@
     <name>sensor_fusion</name>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\src\algo_adaptor\algo_adaptor.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\src\algo_adaptor\blood_pressure_monitor_adaptor.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\src\algo_adaptor\heart_rate_monitor_adaptor.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\blood_pressure\lib_core\libbp_CM4_IAR.a</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\common\lib_core\libcomm_CM4_IAR.a</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\heart_rate\lib_core\libhr_CM4_IAR.a</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\ppg_control\lib_core\libppgctrl_CM4_IAR.a</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\sensor_subsys\fusion_algo\ppg_control\module\default\ppg_control_module.c</name>
     </file>
   </group>
   <group>

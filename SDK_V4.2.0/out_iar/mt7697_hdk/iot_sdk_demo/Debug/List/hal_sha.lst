@@ -1,0 +1,514 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:07
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_sha.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_sha.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_sha.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_sha.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_sha.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_sha.h"
+     36          
+     37          #ifdef HAL_SHA_MODULE_ENABLED
+     38          
+     39          #include "stddef.h"
+     40          #include "crypt_sha.h"
+     41          #include "hal_log.h"
+     42          #include "hal_crypt_internal.h"
+     43          
+     44          hal_sha_status_t hal_sha1_init(hal_sha1_context_t *context)
+     45          {
+     46              hal_sha_status_t status;
+     47          
+     48              hal_crypt_lock_take();
+     49              status = crypt_sha_init((SHA_CTX_STRUC *)context, HAL_SHA_INTERNAL_SHA1);
+     50              hal_crypt_lock_give();
+     51          
+     52              return status;
+     53          }
+     54          
+     55          hal_sha_status_t hal_sha1_append(hal_sha1_context_t *context, uint8_t *message, uint32_t length)
+     56          {
+     57              if (NULL == context) {
+     58                  log_hal_error("context is NULL.");
+     59                  return HAL_SHA_STATUS_ERROR;
+     60              }
+     61              if (NULL == message) {
+     62                  log_hal_error("message is NULL.");
+     63                  return HAL_SHA_STATUS_ERROR;
+     64              }
+     65          
+     66              hal_crypt_lock_take();
+     67          
+     68              while (1) {
+     69                  if (length >= MAX_APPEND_LENGTH) {
+     70                      crypt_sha_append((SHA1_CTX_STRUC *)context, message, MAX_APPEND_LENGTH, HAL_SHA_INTERNAL_SHA1);
+     71                      message += MAX_APPEND_LENGTH;
+     72                      length -= MAX_APPEND_LENGTH;
+     73                  } else {
+     74                      crypt_sha_append((SHA1_CTX_STRUC *)context, message, length, HAL_SHA_INTERNAL_SHA1);
+     75                      break;
+     76                  }
+     77              }
+     78          
+     79              hal_crypt_lock_give();
+     80              return HAL_SHA_STATUS_OK;
+     81          }
+     82          
+     83          hal_sha_status_t hal_sha1_end(hal_sha1_context_t *context, uint8_t digest_message[HAL_SHA1_DIGEST_SIZE])
+     84          {
+     85              hal_sha_status_t status;
+     86          
+     87              hal_crypt_lock_take();
+     88              status = crypt_sha_end((SHA1_CTX_STRUC *)context, digest_message, HAL_SHA_INTERNAL_SHA1);
+     89              hal_crypt_lock_give();
+     90              return status;
+     91          }
+     92          
+     93          hal_sha_status_t hal_sha224_init(hal_sha224_context_t *context)
+     94          {
+     95              hal_sha_status_t status;
+     96          
+     97              hal_crypt_lock_take();
+     98              status = crypt_sha_init((SHA_CTX_STRUC *)context, HAL_SHA_INTERNAL_SHA224);
+     99              hal_crypt_lock_give();
+    100          
+    101              return status;
+    102          
+    103          }
+    104          
+    105          hal_sha_status_t hal_sha224_append(hal_sha224_context_t *context, uint8_t *message, uint32_t length)
+    106          {
+    107              if (NULL == context) {
+    108                  log_hal_error("context is NULL.");
+    109                  return HAL_SHA_STATUS_ERROR;
+    110              }
+    111              if (NULL == message) {
+    112                  log_hal_error("message is NULL.");
+    113                  return HAL_SHA_STATUS_ERROR;
+    114              }
+    115          
+    116              hal_crypt_lock_take();
+    117          
+    118              while (1) {
+    119                  if (length >= MAX_APPEND_LENGTH) {
+    120                      crypt_sha_append((SHA224_CTX_STRUC *)context, message, MAX_APPEND_LENGTH, HAL_SHA_INTERNAL_SHA224);
+    121                      message += MAX_APPEND_LENGTH;
+    122                      length -= MAX_APPEND_LENGTH;
+    123                  } else {
+    124                      crypt_sha_append((SHA224_CTX_STRUC *)context, message, length, HAL_SHA_INTERNAL_SHA224);
+    125                      break;
+    126                  }
+    127              }
+    128          
+    129              hal_crypt_lock_give();
+    130              return HAL_SHA_STATUS_OK;
+    131          }
+    132          
+    133          hal_sha_status_t hal_sha224_end(hal_sha224_context_t *context, uint8_t digest_message[HAL_SHA224_DIGEST_SIZE])
+    134          {
+    135              hal_sha_status_t status;
+    136              hal_crypt_lock_take();
+    137          
+    138              status = crypt_sha_end((SHA224_CTX_STRUC *)context, digest_message, HAL_SHA_INTERNAL_SHA224);
+    139          
+    140              hal_crypt_lock_give();
+    141              return status;
+    142          }
+    143          
+    144          hal_sha_status_t hal_sha256_init(hal_sha256_context_t *context)
+    145          {
+    146              hal_sha_status_t status;
+    147          
+    148              hal_crypt_lock_take();
+    149              status = crypt_sha_init((SHA_CTX_STRUC *)context, HAL_SHA_INTERNAL_SHA256);
+    150              hal_crypt_lock_give();
+    151          
+    152              return status;
+    153          }
+    154          
+    155          hal_sha_status_t hal_sha256_append(hal_sha256_context_t *context, uint8_t *message, uint32_t length)
+    156          {
+    157              if (NULL == context) {
+    158                  log_hal_error("context is NULL.");
+    159                  return HAL_SHA_STATUS_ERROR;
+    160              }
+    161              if (NULL == message) {
+    162                  log_hal_error("message is NULL.");
+    163                  return HAL_SHA_STATUS_ERROR;
+    164              }
+    165          
+    166              hal_crypt_lock_take();
+    167          
+    168              while (1) {
+    169                  if (length >= MAX_APPEND_LENGTH) {
+    170                      crypt_sha_append((SHA256_CTX_STRUC *)context, message, MAX_APPEND_LENGTH, HAL_SHA_INTERNAL_SHA256);
+    171                      message += MAX_APPEND_LENGTH;
+    172                      length -= MAX_APPEND_LENGTH;
+    173                  } else {
+    174                      crypt_sha_append((SHA256_CTX_STRUC *)context, message, length, HAL_SHA_INTERNAL_SHA256);
+    175                      break;
+    176                  }
+    177              }
+    178          
+    179              hal_crypt_lock_give();
+    180              return HAL_SHA_STATUS_OK;
+    181          }
+    182          
+    183          hal_sha_status_t hal_sha256_end(hal_sha256_context_t *context, uint8_t digest_message[HAL_SHA256_DIGEST_SIZE])
+    184          {
+    185              hal_sha_status_t status;
+    186          
+    187              hal_crypt_lock_take();
+    188              status = crypt_sha_end((SHA256_CTX_STRUC *)context, digest_message, HAL_SHA_INTERNAL_SHA256);
+    189              hal_crypt_lock_give();
+    190          
+    191              return status;
+    192          }
+    193          
+    194          hal_sha_status_t hal_sha384_init(hal_sha384_context_t *context)
+    195          {
+    196              hal_sha_status_t status;
+    197          
+    198              hal_crypt_lock_take();
+    199              status = crypt_sha_init((SHA_CTX_STRUC *)context, HAL_SHA_INTERNAL_SHA384);
+    200              hal_crypt_lock_give();
+    201          
+    202              return status;
+    203          }
+    204          
+    205          hal_sha_status_t hal_sha384_append(hal_sha384_context_t *context, uint8_t *message, uint32_t length)
+    206          {
+    207              if (NULL == context) {
+    208                  log_hal_error("context is NULL.");
+    209                  return HAL_SHA_STATUS_ERROR;
+    210              }
+    211              if (NULL == message) {
+    212                  log_hal_error("message is NULL.");
+    213                  return HAL_SHA_STATUS_ERROR;
+    214              }
+    215          
+    216              hal_crypt_lock_take();
+    217          
+    218              while (1) {
+    219                  if (length >= MAX_APPEND_LENGTH) {
+    220                      crypt_sha_append((SHA384_CTX_STRUC *)context, message, MAX_APPEND_LENGTH, HAL_SHA_INTERNAL_SHA384);
+    221                      message += MAX_APPEND_LENGTH;
+    222                      length -= MAX_APPEND_LENGTH;
+    223                  } else {
+    224                      crypt_sha_append((SHA384_CTX_STRUC *)context, message, length, HAL_SHA_INTERNAL_SHA384);
+    225                      break;
+    226                  }
+    227              }
+    228          
+    229              hal_crypt_lock_give();
+    230              return HAL_SHA_STATUS_OK;
+    231          }
+    232          
+    233          hal_sha_status_t hal_sha384_end(hal_sha384_context_t *context, uint8_t digest_message[HAL_SHA384_DIGEST_SIZE])
+    234          {
+    235              hal_sha_status_t status;
+    236          
+    237              hal_crypt_lock_take();
+    238              status = crypt_sha_end((SHA384_CTX_STRUC *)context, digest_message, HAL_SHA_INTERNAL_SHA384);
+    239              hal_crypt_lock_give();
+    240          
+    241              return status;
+    242          }
+    243          
+    244          hal_sha_status_t hal_sha512_init(hal_sha512_context_t *context)
+    245          {
+    246              hal_sha_status_t status;
+    247          
+    248              hal_crypt_lock_take();
+    249              status = crypt_sha_init((SHA_CTX_STRUC *)context, HAL_SHA_INTERNAL_SHA512);
+    250              hal_crypt_lock_give();
+    251          
+    252              return status;
+    253          }
+    254          
+    255          hal_sha_status_t hal_sha512_append(hal_sha512_context_t *context, uint8_t *message, uint32_t length)
+    256          {
+    257          
+    258              if (NULL == context) {
+    259                  log_hal_error("context is NULL.");
+    260                  return HAL_SHA_STATUS_ERROR;
+    261              }
+    262              if (NULL == message) {
+    263                  log_hal_error("message is NULL.");
+    264                  return HAL_SHA_STATUS_ERROR;
+    265              }
+    266          
+    267              hal_crypt_lock_take();
+    268          
+    269              while (1) {
+    270                  if (length >= MAX_APPEND_LENGTH) {
+    271                      crypt_sha_append((SHA512_CTX_STRUC *)context, message, MAX_APPEND_LENGTH, HAL_SHA_INTERNAL_SHA512);
+    272                      message += MAX_APPEND_LENGTH;
+    273                      length -= MAX_APPEND_LENGTH;
+    274                  } else {
+    275                      crypt_sha_append((SHA512_CTX_STRUC *)context, message, length, HAL_SHA_INTERNAL_SHA512);
+    276                      break;
+    277                  }
+    278              }
+    279          
+    280              hal_crypt_lock_give();
+    281              return HAL_SHA_STATUS_OK;
+    282          }
+    283          
+    284          hal_sha_status_t hal_sha512_end(hal_sha512_context_t *context, uint8_t digest_message[HAL_SHA512_DIGEST_SIZE])
+    285          {
+    286              hal_sha_status_t status;
+    287          
+    288              hal_crypt_lock_take();
+    289              status = crypt_sha_end((SHA512_CTX_STRUC *)context, digest_message, HAL_SHA_INTERNAL_SHA512);
+    290              hal_crypt_lock_give();
+    291          
+    292              return status;
+    293          }
+    294          
+    295          #endif /* HAL_SHA_MODULE_ENABLED */
+    296          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   hal_sha1_append
+        16   -> crypt_sha_append
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+        16   -> log_hal_error_internal
+      16   hal_sha1_end
+        16   -> crypt_sha_end
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+       8   hal_sha1_init
+         8   -> crypt_sha_init
+         8   -> hal_crypt_lock_give
+         8   -> hal_crypt_lock_take
+      16   hal_sha224_append
+        16   -> crypt_sha_append
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+        16   -> log_hal_error_internal
+      16   hal_sha224_end
+        16   -> crypt_sha_end
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+       8   hal_sha224_init
+         8   -> crypt_sha_init
+         8   -> hal_crypt_lock_give
+         8   -> hal_crypt_lock_take
+      16   hal_sha256_append
+        16   -> crypt_sha_append
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+        16   -> log_hal_error_internal
+      16   hal_sha256_end
+        16   -> crypt_sha_end
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+       8   hal_sha256_init
+         8   -> crypt_sha_init
+         8   -> hal_crypt_lock_give
+         8   -> hal_crypt_lock_take
+      16   hal_sha384_append
+        16   -> crypt_sha_append
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+        16   -> log_hal_error_internal
+      16   hal_sha384_end
+        16   -> crypt_sha_end
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+       8   hal_sha384_init
+         8   -> crypt_sha_init
+         8   -> hal_crypt_lock_give
+         8   -> hal_crypt_lock_take
+      16   hal_sha512_append
+        16   -> crypt_sha_append
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+        16   -> log_hal_error_internal
+      16   hal_sha512_end
+        16   -> crypt_sha_end
+        16   -> hal_crypt_lock_give
+        16   -> hal_crypt_lock_take
+       8   hal_sha512_init
+         8   -> crypt_sha_init
+         8   -> hal_crypt_lock_give
+         8   -> hal_crypt_lock_take
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      20  ?_0
+      20  ?_1
+     110  hal_sha1_append
+      30  hal_sha1_end
+      26  hal_sha1_init
+     110  hal_sha224_append
+      30  hal_sha224_end
+      26  hal_sha224_init
+     110  hal_sha256_append
+      30  hal_sha256_end
+      26  hal_sha256_init
+     110  hal_sha384_append
+      30  hal_sha384_end
+      26  hal_sha384_init
+     114  hal_sha512_append
+      30  hal_sha512_end
+      26  hal_sha512_init
+      96  -- Other
+
+ 
+ 970 bytes in section .text
+ 
+ 970 bytes of CODE memory
+
+Errors: none
+Warnings: none

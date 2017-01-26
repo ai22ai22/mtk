@@ -1,0 +1,1001 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:45
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_private_cli.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_private_cli.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\wifi_private_cli.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\wifi_private_cli.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_private_cli.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          /**
+     35              @file       wifi_private_cli.c
+     36              @brief      WiFi - Configure API Examples, these CLI in the wifi_private_api.c
+     37                          is only for internal use, it will be removed or modified in future.
+     38          
+     39              @history    2016/07/27  Initial for 1st draft  (Pengfei Qiu)
+     40           */
+     41          #include <stdio.h>
+     42          #include <stdlib.h>
+     43          #include <string.h>
+     44          
+     45          #include "os.h"
+     46          #include "os_util.h"
+     47          #include "FreeRTOS.h"
+     48          #include "wifi_api.h"
+     49          #include "wifi_private_api.h"
+     50          #include "wifi_scan.h"
+     51          #include "ethernet_filter.h"
+     52          #include "inband_queue.h"
+     53          #include "get_profile_string.h"
+     54          #include "queue.h"
+     55          #include "task.h"
+     56          #include "task_def.h"
+     57          
+     58          #if defined(MTK_MINICLI_ENABLE)
+     59          #include "cli_def.h"
+     60          #endif
+     61          
+     62          
+     63          #define WIFI_CLI_RETURN_STRING(ret) ((ret>=0)?"Success":"Error")
+     64          
+     65          /**
+     66          * @brief
+     67          * @parameter
+     68          * @return =0 means success, >0 means fail
+     69          */
+     70          uint8_t wifi_config_get_rssi_threshold_ex(uint8_t len, char *param[])
+     71          {
+     72              uint8_t status = 0;
+     73              int32_t ret = 0;
+     74              uint8_t enable = 0;
+     75              int8_t rssi = 0;
+     76          
+     77              if((ret = wifi_inband_get_rssi_threshold(&enable, &rssi)) >= 0){
+     78                  printf("rssi threthold: [enabled: %d], [value: %d]\n", enable, rssi);
+     79              } else {
+     80                  status = 1;
+     81              }
+     82              printf("wifi_inband_get_rssi_threshold: ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+     83          
+     84              return status;
+     85          }
+     86          
+     87          
+     88          /**
+     89          * @brief
+     90          * @parameter
+     91          * @return =0 means success, >0 means fail
+     92          */
+     93          uint8_t wifi_config_set_rssi_threshold_ex(uint8_t len, char *param[])
+     94          {
+     95              uint8_t status = 0;
+     96              int32_t ret = 0;
+     97              uint8_t enable = 0;
+     98              int8_t rssi = 0;
+     99          
+    100              enable = (uint8_t)atoi(param[0]);
+    101              if((len == 1) && (enable != 0)){
+    102                  printf("usage: wifi config set rssi_threshold <enabled> <rssi value>\n");
+    103                  return 1;
+    104              }
+    105              rssi = (int8_t)atoi(param[1]);
+    106          
+    107              ret = wifi_inband_set_rssi_threshold(enable, rssi);
+    108              if (ret < 0) {
+    109                  status = 1;
+    110              }
+    111              printf("wifi_inband_set_rssi_threshold: ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    112              return status;
+    113          }
+    114          
+    115          int32_t wifi_frame_type_event_handler(wifi_event_t event,
+    116                                                              uint8_t *payload,
+    117                                                              uint32_t length)
+    118          {
+    119              uint8_t type = 0;
+    120              if(payload == NULL) {
+    121                  LOG_E(wifi, "payload is empty!");
+    122                  return -1;
+    123              }
+    124              LOG_HEXDUMP_E(wifi, "event id: %d", payload, length, event);
+    125              type = payload[0]>>4;
+    126              switch (type) {
+    127                  case 0: printf("frame type is assoc req\r\n");break;
+    128                  case 1: printf("frame type is assoc resp\r\n");break;
+    129                  case 2: printf("frame type is reassoc req\r\n");break;
+    130                  case 3: printf("frame type is reassoc resp\r\n");break;
+    131                  case 4: printf("frame type is probe req\r\n");break;
+    132                  case 5: printf("frame type is probe resp\r\n");break;
+    133                  case 8: printf("frame type is beacon\r\n");break;
+    134                  case 9: printf("frame type is atim\r\n");break;
+    135                  case 10: printf("frame type is disassoc\r\n");break;
+    136                  case 11: printf("frame type is auth\r\n");break;
+    137                  case 12: printf("frame type is deauth\r\n");break;
+    138                  default:
+    139                      printf("wrong management frame\r\n");
+    140                      break;
+    141              }
+    142              return 1;
+    143          }
+    144          
+    145          /**
+    146          * @brief Example of set frame filter for packets format wanted to be received
+    147          * wifi config set frame_filter 1 8 221 0 15 172
+    148          * @parameter
+    149          * @return =0 means success, >0 means fail
+    150          */
+    151          uint8_t wifi_config_set_frame_filter_ex(uint8_t len, char *param[])
+    152          {
+    153              uint8_t status = 0;
+    154              int32_t ret = 0;
+    155              uint8_t enable = 0;
+    156              uint16_t frame_type = 0;
+    157              extra_vender_ie_t vender_ie = {0};
+    158              wifi_connection_register_event_handler(WIFI_EVENT_IOT_REPORT_FILTERED_FRAME, wifi_frame_type_event_handler);
+    159              enable = (uint8_t)atoi(param[0]);
+    160              frame_type = (uint16_t)atoi(param[1]);
+    161              if (2 == len) {
+    162                  ret = wifi_config_set_frame_filter(enable, frame_type, NULL);
+    163              }
+    164              else {
+    165                  vender_ie.element_id = (uint8_t)atoi(param[2]);
+    166                  vender_ie.OUI[0] = (uint8_t)atoi(param[3]);
+    167                  vender_ie.OUI[1] = (uint8_t)atoi(param[4]);
+    168                  vender_ie.OUI[2] = (uint8_t)atoi(param[5]);
+    169                  ret = wifi_config_set_frame_filter(enable, frame_type, &vender_ie);
+    170              }
+    171              if (ret < 0) {
+    172                  status = 1;
+    173              }
+    174              printf("wifi_config_set_frame_filter: ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    175              return status;
+    176          }
+    177          
+    178          
+    179          #define EXT_SEC_CMD_SET_AUTH_MODE    0x00
+    180          #define EXT_SEC_CMD_SET_ENCR_TYPE    0x01
+    181          #define EXT_SEC_CMD_SET_WPAPSK       0x02
+    182          #define EXT_SEC_CMD_SET_WEP_KEY      0x03
+    183          #define EXT_SEC_CMD_MAX              0x04
+    184          
+    185          typedef struct _EXT_SECURITY_CMD_T {
+    186              UINT16     u2ExtCmdID;
+    187              UINT16     u2DataLen;
+    188              UINT      aucDataBuffer[1];
+    189          } EXT_SECURITY_CMD_T, *P_EXT_SECURITY_CMD_T;
+    190          
+    191          /**
+    192          * @brief Set N9 Debug Level
+    193          * wifi config set n9dbg <dbg_level>
+    194          * @param [IN]dbg_level
+    195          *   0: None
+    196          *   1: ERROR
+    197          *   2. WARNING
+    198          *   3. TRACE
+    199          *   4. INFO
+    200          *   5. LAUD
+    201          *
+    202          * @return  =0 means success, >0 means fail
+    203          */
+    204          uint8_t wifi_config_set_n9_dbg_level(uint8_t len, char *param[])
+    205          {
+    206              uint8_t status = 0;
+    207              int32_t ret = 0;
+    208              uint8_t dbg_level = atoi(param[0]);
+    209          
+    210              ret = wifi_inband_set_debug_level(dbg_level);
+    211              if (ret < 0) {
+    212                  status = 1;
+    213              }
+    214              printf("wifi_config_set_n9_dbg_level, level = %d, ret:%s, Code=%ld\n", dbg_level, WIFI_CLI_RETURN_STRING(ret), ret);
+    215          
+    216              return status;
+    217          }
+    218          
+    219          
+    220          /**
+    221          * @brief Get N9 Debug Level
+    222          * wifi config get n9dbg
+    223          * @param [OUT]dbg_level
+    224          *   0: None
+    225          *   1: ERROR
+    226          *   2. WARNING
+    227          *   3. TRACE
+    228          *   4. INFO
+    229          *   5. LAUD
+    230          *
+    231          * @return  =0 means success, >0 means fail
+    232          */
+    233          uint8_t wifi_config_get_n9_dbg_level(uint8_t len, char *param[])
+    234          {
+    235              uint8_t status = 0;
+    236              int32_t ret = 0;
+    237              uint8_t dbg_level = 0;
+    238          
+    239              ret = wifi_inband_get_debug_level(&dbg_level);
+    240              if (ret < 0) {
+    241                  status = 1;
+    242              }
+    243              printf("wifi_config_get_n9_dbg_level, level = %d, ret:%s, Code=%ld\n",
+    244                     dbg_level, WIFI_CLI_RETURN_STRING(ret), ret);
+    245          
+    246              return status;
+    247          }
+    248          
+    249          
+    250          extern wifi_scan_list_item_t *g_scan_list;
+    251          extern uint8_t g_scan_list_size;
+    252          
+    253          
+    254          static wifi_scan_list_item_t g_ap_list[8] = {{0}};
+    255          void parse_channel_list_from_string(const char *channel_list, ch_list_t *channel_item, uint8_t band)
+    256          {
+    257              char string_data[4] = {0};
+    258              uint32_t index = 0;
+    259              uint32_t save_index = 0;
+    260              uint32_t count = 0;
+    261              uint32_t channel_section_count = 0;
+    262          
+    263              while ('\0' != channel_list[index]) {
+    264                  if ('|' == channel_list[index]) {
+    265                      channel_item->triplet[channel_section_count + channel_item->num_bg_band_triplet].channel_prop = (char)atoi((char *)string_data);
+    266                      channel_section_count++;
+    267                      os_memset(string_data, 0, sizeof(string_data));
+    268                      save_index = 0;
+    269                      count = 0;
+    270                  } else if (',' == channel_list[index]) {
+    271                      switch(count) {
+    272                      case 0: {
+    273                          channel_item->triplet[channel_section_count + channel_item->num_bg_band_triplet].first_channel = (char)atoi((char *)string_data);
+    274                          break;
+    275                      }
+    276                      case 1: {
+    277                          channel_item->triplet[channel_section_count + channel_item->num_bg_band_triplet].num_of_ch = (char)atoi((char *)string_data);
+    278                          break;
+    279                      }
+    280                      default:
+    281                          return;
+    282                      }
+    283                      os_memset(string_data, 0, sizeof(string_data));
+    284                      save_index = 0;
+    285                      count++;
+    286                  } else {
+    287                      string_data[save_index] = channel_list[index];
+    288                      save_index++;
+    289                  }
+    290                  index++;
+    291              }
+    292              channel_item->triplet[channel_section_count].channel_prop = (char)atoi((char *)string_data);
+    293              if (WIFI_BAND_2_4_G == band) {
+    294                  channel_item->num_bg_band_triplet = channel_section_count + 1;
+    295              } else if (WIFI_BAND_5_G == band) {
+    296                  channel_item->num_a_band_triplet = channel_section_count + 1;
+    297              }
+    298          }
+    299          
+    300          
+    301          /**
+    302          * @brief Example of Start/Stop WiFi Scanning
+    303          * wifi connect set scan <start/stop> <mode> <operation> [ssid] [bssid]
+    304          * @param [IN]ssid SSID, "NULL" means not specified
+    305          * @param [IN]bssid BSSID, "NULL" means not specified
+    306          * @param [IN]flag
+    307          * @param 0 Active Scan
+    308          * @param 1 Passive Scan
+    309          *
+    310          * @return  =0 means success, >0 means fail
+    311          *
+    312          * @note When SSID/BSSID specified (not NULL)
+    313          * @note 1. ProbeReq carries SSID (for Hidden AP)
+    314          * @note 2. Scan Tab always keeps the APs of this specified SSID/BSSID
+    315          */
+    316          uint8_t wifi_connect_scan_ex(uint8_t len, char *param[])
+    317          {
+    318              uint8_t status = 0;
+    319              int32_t ret = 0;
+    320              ch_list_t *scan_channel_list = NULL;
+    321              uint8_t start = atoi(param[0]);
+    322          
+    323              int32_t len_param = 0;
+    324              P_CMD_IOT_START_SCAN_T scan_param = NULL;
+    325          
+    326              scan_channel_list=(ch_list_t *)os_malloc(sizeof(ch_list_t)+6*sizeof(ch_desc_t));
+    327              os_memset(scan_channel_list, 0, sizeof(ch_list_t)+6*sizeof(ch_desc_t));
+    328          
+    329              if (!start) {
+    330                  ret = wifi_connection_stop_scan();
+    331              } else {
+    332                  uint8_t scan_mode = atoi(param[1]);
+    333                  uint8_t scan_option = atoi(param[2]);
+    334          
+    335                  char *chanel_string_2g = NULL;
+    336                  char *chanel_string_5g = NULL;
+    337                  char *ssid = NULL;
+    338                  uint8_t ssid_len = 0;
+    339                  uint8_t bssid_val[WIFI_MAX_NUMBER_OF_STA] = {0x0, 0x0, 0x0, 0x0, 0x0, 0x0};
+    340                  uint8_t *bssid = (uint8_t *)bssid_val;
+    341          
+    342                  if (len >= 4) {
+    343                      chanel_string_2g = param[3];
+    344                      if (len == 5) {
+    345                          chanel_string_5g = param[4];
+    346                          ssid = NULL;
+    347                          ssid_len = 0;
+    348                          bssid = (uint8_t *)(NULL);
+    349                      } else if (len == 6) {
+    350                          chanel_string_5g = param[4];
+    351                          ssid = param[5];
+    352                          ssid_len = os_strlen(ssid);
+    353                          bssid = (uint8_t *)(NULL);
+    354                      } else if (len >6) {
+    355                          chanel_string_5g = param[4];
+    356                          ssid = param[5];
+    357                          ssid_len = os_strlen(ssid);
+    358                          wifi_conf_get_mac_from_str((char *)bssid_val, param[6]);
+    359                      }
+    360                  } else {
+    361                      chanel_string_2g = NULL;
+    362                      chanel_string_5g = NULL;
+    363                      ssid = NULL;
+    364                      ssid_len = 0;
+    365                      bssid = (uint8_t *)(NULL);
+    366                  }
+    367          
+    368                  if (chanel_string_2g != NULL && strlen(chanel_string_2g) > 4) {
+    369                      parse_channel_list_from_string(chanel_string_2g, scan_channel_list, WIFI_BAND_2_4_G);
+    370                  }
+    371          
+    372                  if (chanel_string_5g != NULL && strlen(chanel_string_5g) > 4) {
+    373                      parse_channel_list_from_string(chanel_string_5g, scan_channel_list, WIFI_BAND_5_G);
+    374                  }
+    375                  //hex_dump("scan_channel_list",scan_channel_list, sizeof(CH_LIST_T)+6*sizeof(CH_DESC_T));
+    376          
+    377                  len_param = (scan_channel_list->num_a_band_triplet + scan_channel_list->num_bg_band_triplet) * sizeof(ch_desc_t) + sizeof(CMD_IOT_START_SCAN_T);
+    378                  scan_param = (P_CMD_IOT_START_SCAN_T)os_malloc(len_param);
+    379                  os_memset((unsigned char *)(scan_param), 0x0, len_param);
+    380          
+    381                  /******************reset scan list*******************************/
+    382                  wifi_connection_scan_init(g_ap_list, 8);
+    383                  //printf("size = %d", sizeof(wifi_scan_list_item_t));
+    384                  /******************reset scan list*******************************/
+    385          
+    386          
+    387                  if (g_scanning && g_scan_by_supplicant) {
+    388                      wifi_connection_stop_scan();
+    389                      g_scanning = 0;
+    390                  }
+    391                  g_scan_by_supplicant = 0;
+    392                  g_scan_by_app = 1;
+    393          
+    394          
+    395                  if (ssid && (ssid_len > 0)) {
+    396                      os_memcpy(scan_param->SSID, ssid, ssid_len);
+    397                      scan_param->enable_ssid = (0x80 | ssid_len);
+    398                  }
+    399          
+    400                  if (bssid) {
+    401                      os_memcpy(scan_param->BSSID, bssid, WIFI_MAC_ADDRESS_LENGTH);
+    402                      scan_param->enable_bssid = 1;
+    403                  }
+    404          
+    405                  if (scan_mode > 0) {
+    406                      scan_param->partial = 1;
+    407                      scan_param->partial_bcn_cnt = 1;
+    408                  }
+    409                  scan_param->scan_mode = scan_option;
+    410                  os_memcpy(&scan_param->channel_list, scan_channel_list, (scan_channel_list->num_a_band_triplet + scan_channel_list->num_bg_band_triplet)* sizeof(ch_desc_t)+2);
+    411          
+    412                  ret = inband_queue_exec(WIFI_COMMAND_ID_IOT_START_SCAN, (unsigned char *)(scan_param), len_param, TRUE, FALSE);
+    413                  os_free(scan_param);
+    414                  if (ret == 0) {
+    415                      g_scanning = 1;
+    416                  }
+    417          
+    418              }
+    419          
+    420              if (ret < 0) {
+    421                  status = 1;
+    422              }
+    423              printf("wifi_connect_scan_ex(), ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    424          
+    425              return status;
+    426          }
+    427          
+    428          /**
+    429          * @brief Example of Get WiFi TX Power
+    430          * wifi config get tx_power
+    431          * @get power: 64~190
+    432          *
+    433          * @return =0 means success, >0 means fail
+    434          */
+    435          uint8_t wifi_config_get_tx_power_ex(uint8_t len, char *param[])
+    436          {
+    437              uint8_t status = 0;
+    438              int32_t ret = 0;
+    439              uint8_t tx_power = 0;
+    440          
+    441              ret = wifi_config_get_tx_power(&tx_power);
+    442              if (ret < 0) {
+    443                  status = 1;
+    444              }
+    445              printf("wifi_config_get_tx_power_ex tx_power:%d, ret:%s, Code=%ld\n", tx_power, WIFI_CLI_RETURN_STRING(ret), ret);
+    446          
+    447              return status;
+    448          }
+    449          
+    450          /**
+    451          * @brief Example of Set WiFi TX Power
+    452          * wifi config set tx_power <tx power>
+    453          * @param [IN]interval 64 ~ 190
+    454          *
+    455          * @return =0 means success, >0 means fail
+    456          */
+    457          uint8_t wifi_config_set_tx_power_ex(uint8_t len, char *param[])
+    458          {
+    459              uint8_t status = 0;
+    460              int32_t ret = 0;
+    461              uint8_t tx_power = atoi(param[0]);
+    462          
+    463              ret = wifi_config_set_tx_power(tx_power);
+    464              if (ret < 0) {
+    465                  status = 1;
+    466              }
+    467              printf("wifi_config_set_tx_power_ex tx_power:%d, ret:%s, Code=%ld\n", tx_power, WIFI_CLI_RETURN_STRING(ret), ret);
+    468          
+    469              return status;
+    470          }
+    471          
+    472          static xQueueHandle n9log_queue = NULL;
+    473          static xTaskHandle n9log_task = NULL;
+    474          
+    475          log_create_module(n9log, PRINT_LEVEL_INFO);
+    476          
+    477          int wifi_n9log_handler(unsigned char *body, int len)
+    478          {
+    479              if (len >= 1024) {
+    480                  LOG_HEXDUMP_E(n9log, "n9log packet length is longer than 1024", body, len);
+    481                  return 1;
+    482              }
+    483              xQueueSend(n9log_queue, body, 0);
+    484              return 0;
+    485          }
+    486          void n9log_task_entry(void *args)
+    487          {
+    488              uint8_t n9log_buffer[MAX_N9LOG_SIZE] = {0};
+    489              for (;;) {
+    490                  xQueueReceive(n9log_queue, n9log_buffer, portMAX_DELAY);
+    491                  LOG_I(n9log, "%s", n9log_buffer);
+    492              }
+    493          }
+    494          void n9log_queue_init(void)
+    495          {
+    496              if (n9log_queue == NULL) {
+    497                  n9log_queue = xQueueCreate(3, MAX_N9LOG_SIZE+1);
+    498                  if (NULL == n9log_queue) {
+    499                      LOG_E(n9log, "create n9log queue failed.");
+    500                  }
+    501              } else {
+    502                  LOG_I(n9log, "n9log_queue is not null, please deinit first.");
+    503              }
+    504              if (n9log_task == NULL ) {
+    505                  if (pdPASS != xTaskCreate(n9log_task_entry,
+    506                                            N9LOG_TASK_NAME,
+    507                                            N9LOG_TASK_STACKSIZE,
+    508                                            NULL,
+    509                                            N9LOG_TASK_PRIO,
+    510                                            &n9log_task)) {
+    511                      LOG_I(n9log, "create n9log task failed.");
+    512                 }
+    513              } else {
+    514                  LOG_I(n9log, "n9log_task is still running.");
+    515              }
+    516              wifi_config_register_n9log_handler((N9LOG_HANDLER)wifi_n9log_handler);
+    517          }
+    518          void n9log_queue_deinit(void)
+    519          {
+    520              if (n9log_task != NULL) {
+    521                  vTaskDelete(n9log_task);
+    522                  n9log_task = NULL;
+    523              }
+    524              if (n9log_queue != NULL) {
+    525                  vQueueDelete(n9log_queue);
+    526                  n9log_queue = NULL;
+    527              }
+    528          }
+    529          uint8_t wifi_config_set_n9log_state_ex(uint8_t len, char *param[])
+    530          {
+    531              uint8_t status = 0;
+    532              int32_t ret = 0;
+    533              if (len < 2) {
+    534                  printf("Usage: \n");
+    535                  printf("n9log set off  -> Disable n9 logs\n");
+    536                  printf("n9log set n9   -> output n9 logs to uart\n");
+    537                  printf("n9log set host -> output n9 logs to host\n");
+    538                  return 1;
+    539              }
+    540              if (!os_strcmp(param[0], "set")){
+    541                  if (!os_strcmp(param[1], "off")){
+    542                      if ((ret = wifi_inband_set_n9_consol_log_state(0)) < 0) {
+    543                          status = 1;
+    544                      } else {
+    545                           n9log_queue_deinit();
+    546                      }
+    547                  } else if (!os_strcmp(param[1], "n9")){
+    548                      if ((ret = wifi_inband_set_n9_consol_log_state(1)) < 0) {
+    549                          status = 1;
+    550                      } else {
+    551                          n9log_queue_deinit();
+    552                      }
+    553                  } else if (!os_strcmp(param[1], "host")){
+    554                      if ((ret = wifi_inband_set_n9_consol_log_state(2)) < 0) {
+    555                            status = 1;
+    556                      } else {
+    557                          n9log_queue_init();
+    558                      }
+    559                  } else {
+    560                      printf("Not Supported Cmd\n");
+    561                      return 1;
+    562                  }
+    563              } else {
+    564                  printf("Not Supported Cmd\n");
+    565                  return 1;
+    566              }
+    567              printf("wifi_config_set_n9log_state_ex, ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    568              return status;
+    569          }
+    570          
+    571          /**
+    572          * @brief Example of Set Country Code
+    573          * wifi config set country_code <code>
+    574          *
+    575          * @return =0 means success, >0 means fail
+    576          */
+    577          uint8_t wifi_config_set_country_code_ex(uint8_t len, char *param[])
+    578          {
+    579              uint8_t status = 0;
+    580              int32_t ret = 0;
+    581              wifi_country_code_t *country_code;
+    582          
+    583              printf("Set country code: %s.\n", param[0]);
+    584          
+    585              if(strlen(param[0])> 2) {
+    586                  printf("Invalid country code length: %d.\n", strlen(param[0]));
+    587                  return 1;
+    588              }
+    589          
+    590              if(os_memcmp(param[0],"CN", 2) == 0) {
+    591                  country_code = (wifi_country_code_t *)os_malloc(sizeof(wifi_country_code_t) + 2*sizeof(wifi_channel_table_t));
+    592                  os_memset(country_code, 0, sizeof(wifi_country_code_t) + 2*sizeof(wifi_channel_table_t));
+    593                  os_memcpy(country_code, param[0], 2);
+    594                  country_code->num_of_channel_table = 2;
+    595                  country_code->channel_table[0].first_channel = 1;
+    596                  country_code->channel_table[0].num_of_channel = 13;
+    597                  country_code->channel_table[0].dfs_req = 0;
+    598                  country_code->channel_table[0].max_tx_power = 20;
+    599                  country_code->channel_table[1].first_channel = 149;
+    600                  country_code->channel_table[1].num_of_channel = 4;
+    601                  country_code->channel_table[1].dfs_req = 0;
+    602                  country_code->channel_table[1].max_tx_power = 27;
+    603              }else if(os_memcmp(param[0],"US", 2) == 0) {
+    604                  country_code = (wifi_country_code_t *)os_malloc(sizeof(wifi_country_code_t) + 5*sizeof(wifi_channel_table_t));
+    605                  os_memset(country_code, 0, sizeof(wifi_country_code_t) + 5*sizeof(wifi_channel_table_t));
+    606                  os_memcpy(country_code, param[0], 2);
+    607                  country_code->num_of_channel_table = 5;
+    608                  country_code->channel_table[0].first_channel = 1;
+    609                  country_code->channel_table[0].num_of_channel = 11;
+    610                  country_code->channel_table[0].dfs_req = 0;
+    611                  country_code->channel_table[0].max_tx_power = 30;
+    612                  country_code->channel_table[1].first_channel = 36;
+    613                  country_code->channel_table[1].num_of_channel = 4;
+    614                  country_code->channel_table[1].dfs_req = 0;
+    615                  country_code->channel_table[1].max_tx_power = 17;
+    616                  country_code->channel_table[2].first_channel = 52;
+    617                  country_code->channel_table[2].num_of_channel = 4;
+    618                  country_code->channel_table[2].dfs_req = 1;
+    619                  country_code->channel_table[2].max_tx_power = 24;
+    620                  country_code->channel_table[3].first_channel = 100;
+    621                  country_code->channel_table[3].num_of_channel = 11;
+    622                  country_code->channel_table[3].dfs_req = 1;
+    623                  country_code->channel_table[3].max_tx_power = 30;
+    624                  country_code->channel_table[4].first_channel = 149;
+    625                  country_code->channel_table[4].num_of_channel = 5;
+    626                  country_code->channel_table[4].dfs_req = 0;
+    627                  country_code->channel_table[4].max_tx_power = 30;
+    628              }else if(os_memcmp(param[0],"UK", 2) == 0) {
+    629                  country_code = (wifi_country_code_t *)os_malloc(sizeof(wifi_country_code_t) + 4*sizeof(wifi_channel_table_t));
+    630                  os_memset(country_code, 0, sizeof(wifi_country_code_t) + 4*sizeof(wifi_channel_table_t));
+    631                  os_memcpy(country_code, param[0], 2);
+    632                  country_code->num_of_channel_table = 4;
+    633                  country_code->channel_table[0].first_channel = 1;
+    634                  country_code->channel_table[0].num_of_channel = 13;
+    635                  country_code->channel_table[0].dfs_req = 0;
+    636                  country_code->channel_table[0].max_tx_power = 20;
+    637                  country_code->channel_table[1].first_channel = 36;
+    638                  country_code->channel_table[1].num_of_channel = 4;
+    639                  country_code->channel_table[1].dfs_req = 0;
+    640                  country_code->channel_table[1].max_tx_power = 23;
+    641                  country_code->channel_table[2].first_channel = 52;
+    642                  country_code->channel_table[2].num_of_channel = 4;
+    643                  country_code->channel_table[2].dfs_req = 1;
+    644                  country_code->channel_table[2].max_tx_power = 23;
+    645                  country_code->channel_table[3].first_channel = 100;
+    646                  country_code->channel_table[3].num_of_channel = 11;
+    647                  country_code->channel_table[3].dfs_req = 1;
+    648                  country_code->channel_table[3].max_tx_power = 30;
+    649              } else {
+    650                  printf("Only support country code: CN, US, UK for reference design.\n");
+    651                  return 1;
+    652              }
+    653              ret = wifi_config_set_country_code(country_code);
+    654              os_free(country_code);
+    655              if (ret < 0) {
+    656                  status = 1;
+    657              }
+    658          
+    659              printf("wifi_config_set_country_code_ex, ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    660              return status;
+    661          }
+    662          
+    663          /**
+    664          * @brief Example of Get Country Code
+    665          * wifi config get country_code
+    666          *
+    667          * @return =0 means success, >0 means fail
+    668          */
+    669          uint8_t wifi_config_get_country_code_ex(uint8_t len, char *param[])
+    670          {
+    671              uint8_t status = 0;
+    672              int32_t ret = 0;
+    673              wifi_country_code_t country_code = {{0}};
+    674          
+    675              ret = wifi_config_get_country_code(&country_code);
+    676              if (ret < 0) {
+    677                  status = 1;
+    678              }
+    679              printf("country code :%s\n", (char *)country_code.country_code);
+    680          
+    681              printf("wifi_config_get_country_code_ex, ret:%s, Code=%ld\n", WIFI_CLI_RETURN_STRING(ret), ret);
+    682              return status;
+    683          }
+    684          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   n9log_queue_deinit
+         8   -> vQueueDelete
+         8   -> vTaskDelete
+      32   n9log_queue_init
+        32   -- Indirect call
+         0   -> wifi_config_register_n9log_handler
+        32   -> xQueueGenericCreate
+        32   -> xTaskGenericCreate
+    1040   n9log_task_entry
+      1040   -- Indirect call
+      1040   -> __aeabi_memclr4
+      1040   -> xQueueGenericReceive
+      32   parse_channel_list_from_string
+        32   -> atoi
+        32   -> os_memset
+      24   wifi_config_get_country_code_ex
+        24   -> printf
+        24   -> wifi_config_get_country_code
+      16   wifi_config_get_n9_dbg_level
+        16   -> printf
+        16   -> wifi_inband_get_debug_level
+      16   wifi_config_get_rssi_threshold_ex
+        16   -> printf
+        16   -> wifi_inband_get_rssi_threshold
+      16   wifi_config_get_tx_power_ex
+        16   -> printf
+        16   -> wifi_config_get_tx_power
+      16   wifi_config_set_country_code_ex
+        16   -> os_free
+        16   -> os_malloc
+        16   -> os_memcmp
+        16   -> os_memcpy
+        16   -> os_memset
+        16   -> printf
+        16   -> strlen
+        16   -> wifi_config_set_country_code
+      32   wifi_config_set_frame_filter_ex
+        32   -> atoi
+        32   -> printf
+        32   -> wifi_config_set_frame_filter
+        32   -> wifi_connection_register_event_handler
+      16   wifi_config_set_n9_dbg_level
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_inband_set_debug_level
+      16   wifi_config_set_n9log_state_ex
+        16   -> n9log_queue_deinit
+        16   -> n9log_queue_init
+        16   -> os_strcmp
+        16   -> printf
+        16   -> wifi_inband_set_n9_consol_log_state
+      24   wifi_config_set_rssi_threshold_ex
+        24   -> atoi
+        24   -> printf
+        24   -> wifi_inband_set_rssi_threshold
+      16   wifi_config_set_tx_power_ex
+        16   -> atoi
+        16   -> printf
+        16   -> wifi_config_set_tx_power
+      64   wifi_connect_scan_ex
+        64   -> __aeabi_memclr4
+        64   -> atoi
+        64   -> inband_queue_exec
+        64   -> os_free
+        64   -> os_malloc
+        64   -> os_memcpy
+        64   -> os_memset
+        64   -> os_strlen
+        64   -> parse_channel_list_from_string
+        64   -> printf
+        64   -> strlen
+        64   -> wifi_conf_get_mac_from_str
+        64   -> wifi_connection_scan_init
+        64   -> wifi_connection_stop_scan
+      32   wifi_frame_type_event_handler
+        32   -- Indirect call
+        32   -> printf
+      24   wifi_n9log_handler
+        24   -- Indirect call
+        24   -> xQueueGenericSend
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable68
+       4  ??DataTable69
+       4  ??DataTable69_1
+       4  ??DataTable69_10
+       4  ??DataTable69_11
+       4  ??DataTable69_12
+       4  ??DataTable69_13
+       4  ??DataTable69_14
+       4  ??DataTable69_2
+       4  ??DataTable69_3
+       4  ??DataTable69_4
+       4  ??DataTable69_5
+       4  ??DataTable69_6
+       4  ??DataTable69_7
+       4  ??DataTable69_8
+       4  ??DataTable69_9
+       8  ?_0
+      44  ?_1
+      28  ?_10
+      28  ?_11
+      32  ?_12
+      28  ?_13
+      28  ?_14
+      24  ?_15
+      24  ?_16
+      28  ?_17
+      24  ?_18
+      24  ?_19
+      52  ?_2
+      28  ?_20
+       8  ?_21
+      48  ?_22
+      60  ?_23
+      60  ?_24
+       4  ?_25
+      16  ?_26
+      44  ?_27
+      60  ?_28
+      60  ?_29
+       8  ?_3
+      40  ?_30
+    1024  ?_31
+       4  ?_32
+      28  ?_33
+      48  ?_34
+      28  ?_35
+      32  ?_36
+      12  ?_37
+      36  ?_38
+      44  ?_39
+       8  ?_4
+      44  ?_40
+       4  ?_41
+       4  ?_42
+       4  ?_43
+       8  ?_44
+      20  ?_45
+      52  ?_46
+      24  ?_47
+      36  ?_48
+       4  ?_49
+      64  ?_5
+       4  ?_50
+       4  ?_51
+      64  ?_52
+      52  ?_53
+      20  ?_54
+      52  ?_55
+       8  ?_56
+      52  ?_6
+      20  ?_7
+      16  ?_8
+      28  ?_9
+     464  g_ap_list
+      24  log_control_block_n9log
+          n9log_queue
+          n9log_task
+      34  n9log_queue_deinit
+     176  n9log_queue_init
+      58  n9log_task_entry
+     188  parse_channel_list_from_string
+      68  wifi_config_get_country_code_ex
+      56  wifi_config_get_n9_dbg_level
+      72  wifi_config_get_rssi_threshold_ex
+      56  wifi_config_get_tx_power_ex
+     420  wifi_config_set_country_code_ex
+     160  wifi_config_set_frame_filter_ex
+      56  wifi_config_set_n9_dbg_level
+     194  wifi_config_set_n9log_state_ex
+      88  wifi_config_set_rssi_threshold_ex
+      56  wifi_config_set_tx_power_ex
+     460  wifi_connect_scan_ex
+     208  wifi_frame_type_event_handler
+      62  wifi_n9log_handler
+      92  -- Other
+
+ 
+   464 bytes in section .bss
+    24 bytes in section .data
+ 1 072 bytes in section .rodata
+ 4 152 bytes in section .text
+ 
+ 4 152 bytes of CODE  memory
+ 1 072 bytes of CONST memory
+   488 bytes of DATA  memory
+
+Errors: none
+Warnings: none

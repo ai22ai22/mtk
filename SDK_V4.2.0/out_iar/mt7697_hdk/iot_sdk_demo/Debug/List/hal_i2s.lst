@@ -1,0 +1,929 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:04
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_i2s.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_i2s.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\hal_i2s.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\hal_i2s.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\chip\mt7687\src\hal_i2s.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_i2s.h"
+     36          #ifdef HAL_I2S_MODULE_ENABLED
+     37          #include "hal_i2s_internal.h"
+     38          #include "hal_log.h"
+     39          
+     40          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     41          #include "hal_sleep_manager.h"
+     42          #include "hal_sleep_driver.h"
+     43          static uint8_t sleep_handler = 0;
+     44          #endif
+     45          
+     46          
+     47          static i2s_internal_t      i2s_internal_cfg;
+     48          
+     49          static hal_i2s_status_t           i2s_is_sample_rate(hal_i2s_sample_rate_t sample_rate, BOOLEAN blinput);
+     50          static void                i2s_dma_callback(bool is_rx);
+     51          static void                i2x_tx_handler(void);
+     52          static void                i2x_rx_handler(void);
+     53          
+     54          
+     55          hal_i2s_status_t hal_i2s_init(hal_i2s_initial_type_t i2s_initial_type)
+     56          {
+     57          
+     58              if (i2s_internal_cfg.i2s_state != I2S_STATE_IDLE) {
+     59                  return HAL_I2S_STATUS_ERROR;
+     60              }
+     61          
+     62          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     63              /*get sleep handler*/
+     64              sleep_handler = hal_sleep_manager_set_sleep_handle("I2S");
+     65              if (sleep_handler == INVALID_SLEEP_HANDLE) {
+     66                  log_hal_info("there's no available handle when I2S get sleep handle");
+     67                  return HAL_I2S_STATUS_ERROR;
+     68              } else {
+     69                  hal_sleep_manager_lock_sleep(sleep_handler);/*lock sleep mode*/
+     70                  log_hal_info("[I2S] lock sleep successfully");
+     71              }
+     72          #endif
+     73          
+     74              DMA_Init();
+     75              DMA_Vfifo_init();
+     76          
+     77              xpllOpen();
+     78          
+     79              switch (i2s_initial_type) {
+     80          
+     81                  //---only for test case use----
+     82                  case HAL_I2S_TYPE_INTERNAL_LOOPBACK_MODE:
+     83                      i2s_internal_cfg.I2S_INITIAL_TYPE = I2S_INTERNAL_LOOPBACK_MODE;
+     84                      break;
+     85                  //external codec , i2s slave mode
+     86                  case HAL_I2S_TYPE_EXTERNAL_MODE:
+     87                      i2s_internal_cfg.I2S_INITIAL_TYPE = I2S_EXTERNAL_MODE;
+     88                      break;
+     89                  case HAL_I2S_TYPE_INTERNAL_MODE:
+     90                  case HAL_I2S_TYPE_EXTERNAL_TDM_MODE:
+     91                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+     92          
+     93                  default:
+     94                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+     95              }
+     96          
+     97          
+     98              if (I2sCfgInitialSetting(i2s_internal_cfg.I2S_INITIAL_TYPE,
+     99                                       &i2s_internal_cfg.I2SGblCfg,
+    100                                       &i2s_internal_cfg.I2SDLCfg,
+    101                                       &i2s_internal_cfg.I2SULCfg)) {
+    102                  return HAL_I2S_STATUS_OK;
+    103              } else {
+    104                  return HAL_I2S_STATUS_ERROR;
+    105              }
+    106          
+    107          }
+    108          
+    109          
+    110          hal_i2s_status_t hal_i2s_deinit(void)
+    111          {
+    112              if (i2s_internal_cfg.i2s_state != I2S_STATE_IDLE) {
+    113                  return HAL_I2S_STATUS_ERROR;
+    114              }
+    115          
+    116              xpllClose();
+    117          
+    118          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    119              /*unlock sleep mode*/
+    120              hal_sleep_manager_unlock_sleep(sleep_handler);
+    121              /*release sleep hander*/
+    122              hal_sleep_manager_release_sleep_handle(sleep_handler);
+    123          #endif
+    124          
+    125              if (I2sReset()) {
+    126                  return HAL_I2S_STATUS_OK;
+    127              } else {
+    128                  return HAL_I2S_STATUS_ERROR;
+    129              }
+    130          }
+    131          
+    132          
+    133          hal_i2s_status_t hal_i2s_get_config(hal_i2s_config_t *config)
+    134          {
+    135          
+    136              *config = i2s_internal_cfg.i2s_user_config;
+    137              return HAL_I2S_STATUS_OK;
+    138          }
+    139          
+    140          
+    141          hal_i2s_status_t hal_i2s_set_config(const hal_i2s_config_t *config)
+    142          {
+    143          
+    144              if (i2s_internal_cfg.i2s_state != I2S_STATE_IDLE) {
+    145                  return HAL_I2S_STATUS_ERROR;
+    146              }
+    147          
+    148          
+    149              if (NULL == config) {
+    150                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    151              }
+    152          
+    153          
+    154              //---check Both sample rates are same value
+    155              if ((config->i2s_out.sample_rate) != (config->i2s_in.sample_rate)) {
+    156                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    157              }
+    158          
+    159          
+    160              //----set tx sample rate----
+    161              if (i2s_is_sample_rate(config->i2s_out.sample_rate, I2S_FALSE) != HAL_I2S_STATUS_OK) {
+    162                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    163              } else {
+    164                  i2s_internal_cfg.i2s_user_config.i2s_out.sample_rate = config->i2s_out.sample_rate;
+    165              }
+    166          
+    167          
+    168              //----set rx sample rate----
+    169              if (i2s_is_sample_rate(config->i2s_in.sample_rate, I2S_TRUE) != HAL_I2S_STATUS_OK) {
+    170                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    171              } else {
+    172                  i2s_internal_cfg.i2s_user_config.i2s_in.sample_rate = config->i2s_in.sample_rate;
+    173              }
+    174          
+    175          
+    176              //---check whether both tx channerl number and tx mode are set to enable at same time
+    177              if ((config->i2s_out.channel_number == HAL_I2S_STEREO) && (config->tx_mode == HAL_I2S_TX_MONO_DUPLICATE_ENABLE)) {
+    178                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    179              }
+    180          
+    181          
+    182              //----set tx channel number----
+    183              switch (config->i2s_out.channel_number) {
+    184                  case HAL_I2S_MONO:
+    185                      i2s_internal_cfg.I2SGblCfg.ucI2SDLMonoStereoSel = I2S_DL_MONO_MODE;
+    186                      i2s_internal_cfg.i2s_user_config.i2s_out.channel_number = HAL_I2S_MONO;
+    187                      break;
+    188                  case HAL_I2S_STEREO:
+    189                      i2s_internal_cfg.I2SGblCfg.ucI2SDLMonoStereoSel = I2S_DL_STEREO_MODE;
+    190                      i2s_internal_cfg.i2s_user_config.i2s_out.channel_number = HAL_I2S_STEREO;
+    191                      break;
+    192                  default:
+    193                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+    194              }
+    195          
+    196              //----set rx channel number----
+    197              //----just set value , no any effect
+    198              switch (config->i2s_in.channel_number) {
+    199                  case HAL_I2S_MONO:
+    200                      i2s_internal_cfg.i2s_user_config.i2s_in.channel_number = HAL_I2S_MONO;
+    201                      break;
+    202                  case HAL_I2S_STEREO:
+    203                      i2s_internal_cfg.i2s_user_config.i2s_in.channel_number = HAL_I2S_STEREO;
+    204                      break;
+    205                  default:
+    206                      i2s_internal_cfg.i2s_user_config.i2s_in.channel_number = i2s_internal_cfg.i2s_user_config.i2s_out.channel_number;
+    207              }
+    208          
+    209          
+    210              //----set rx down rate mode----
+    211              switch (config->rx_down_rate) {
+    212                  case HAL_I2S_RX_DOWN_RATE_DISABLE:
+    213                      i2s_internal_cfg.I2SULCfg.bI2SDownRateEn = I2S_UL_DOWN_RATE_DIS;
+    214                      i2s_internal_cfg.i2s_user_config.rx_down_rate = HAL_I2S_RX_DOWN_RATE_DISABLE;
+    215                      break;
+    216                  case HAL_I2S_RX_DOWN_RATE_ENABLE:
+    217                      i2s_internal_cfg.I2SULCfg.bI2SDownRateEn = I2S_UL_DOWN_RATE_EN;
+    218                      i2s_internal_cfg.i2s_user_config.rx_down_rate = HAL_I2S_RX_DOWN_RATE_ENABLE;
+    219                      break;
+    220                  default:
+    221                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+    222              }
+    223          
+    224          
+    225              //----set tx mode----
+    226              switch (config->tx_mode) {
+    227                  case HAL_I2S_TX_MONO_DUPLICATE_DISABLE:
+    228                      i2s_internal_cfg.I2SGblCfg.bI2SDLMonoDupEn = I2S_DL_MONO_DUP_DIS;
+    229                      i2s_internal_cfg.i2s_user_config.tx_mode = HAL_I2S_TX_MONO_DUPLICATE_DISABLE;
+    230                      break;
+    231                  case HAL_I2S_TX_MONO_DUPLICATE_ENABLE:
+    232                      i2s_internal_cfg.I2SGblCfg.bI2SDLMonoDupEn = I2S_DL_MONO_DUP_EN;
+    233                      i2s_internal_cfg.i2s_user_config.tx_mode = HAL_I2S_TX_MONO_DUPLICATE_ENABLE;
+    234                      break;
+    235                  default:
+    236                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+    237              }
+    238          
+    239          
+    240              //----set clock mode----
+    241              //----default: slave mode
+    242              switch (config->clock_mode) {
+    243                  case HAL_I2S_MASTER:
+    244                      //reserve for internal loopback mode test
+    245                      i2s_internal_cfg.I2SDLCfg.ucI2SSRC = I2S_DL_SRC_MASTER;
+    246                      i2s_internal_cfg.I2SULCfg.ucI2SSRC = I2S_UL_SRC_MASTER;
+    247                      i2s_internal_cfg.i2s_user_config.clock_mode = HAL_I2S_MASTER;
+    248                      break;
+    249                  case HAL_I2S_SLAVE:
+    250                      i2s_internal_cfg.I2SDLCfg.ucI2SSRC = I2S_DL_SRC_SLAVE;
+    251                      i2s_internal_cfg.I2SULCfg.ucI2SSRC = I2S_UL_SRC_SLAVE;
+    252                      i2s_internal_cfg.i2s_user_config.clock_mode = HAL_I2S_SLAVE;
+    253                      break;
+    254                  default:
+    255                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+    256              }
+    257          
+    258          
+    259              //---set TX LR swap----
+    260              //---default: disable
+    261              switch (config->i2s_out.lr_swap) {
+    262                  case 0:
+    263                      i2s_internal_cfg.I2SGblCfg.ucI2SDLSwapLR = 0;
+    264                      i2s_internal_cfg.i2s_user_config.i2s_out.lr_swap = 0;
+    265                      break;
+    266                  case 1:
+    267                      i2s_internal_cfg.I2SGblCfg.ucI2SDLSwapLR = 1;
+    268                      i2s_internal_cfg.i2s_user_config.i2s_out.lr_swap = 1;
+    269                      break;
+    270                  default:
+    271                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+    272              }
+    273          
+    274          
+    275              //---set RX LR swap----
+    276              //---default: disable
+    277              switch (config->i2s_in.lr_swap) {
+    278                  case 0:
+    279                      i2s_internal_cfg.I2SULCfg.u4I2SLRSwap = 0;
+    280                      i2s_internal_cfg.i2s_user_config.i2s_in.lr_swap = 0;
+    281                      break;
+    282                  case 1:
+    283                      i2s_internal_cfg.I2SULCfg.u4I2SLRSwap = 1;
+    284                      i2s_internal_cfg.i2s_user_config.i2s_in.lr_swap = 1;
+    285                      break;
+    286                  default:
+    287                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+    288              }
+    289          
+    290              //---set BCLK clock inverse---
+    291              //Enable or disable BCLK clock inverting
+    292              //i2s_internal_cfg.I2SGblCfg.bI2SClkInvEn=config->bclk_inv;
+    293          
+    294              //---set Negative edge capture RX data---
+    295              //Enable or disable the read data can be captured either on the positive or negative edge of BCLK
+    296              //i2s_internal_cfg.I2SGblCfg.bI2SNegCapEn=config->neg_cap;
+    297          
+    298              //---set BCLK clock inverse---
+    299          
+    300              //---set TX msb_offset----
+    301              //---default: 0
+    302              i2s_internal_cfg.I2SDLCfg.u4I2SMsbOffset = config->i2s_out.msb_offset;
+    303          
+    304              //---set RX msb_offset----
+    305              //---default: 0
+    306              i2s_internal_cfg.I2SULCfg.u4I2SMsbOffset = config->i2s_in.msb_offset;
+    307          
+    308          
+    309              //---set TX word_select_inverse----
+    310              //---default: 0
+    311              i2s_internal_cfg.I2SDLCfg.ucI2SWordSelInv = config->i2s_out.word_select_inverse;
+    312          
+    313              //---set RX word_select_inverse----
+    314              //---default: 0
+    315              i2s_internal_cfg.I2SULCfg.ucI2SWordSelInv = config->i2s_in.word_select_inverse;
+    316          
+    317              I2sSetGblCfg(&i2s_internal_cfg.I2SGblCfg);
+    318              I2sSetDlCfg(&i2s_internal_cfg.I2SDLCfg);
+    319              I2sSetUlCfg(&i2s_internal_cfg.I2SULCfg);
+    320          
+    321              return HAL_I2S_STATUS_OK;
+    322          
+    323          }
+    324          
+    325          
+    326          hal_i2s_status_t  hal_i2s_enable_audio_top(void)
+    327          {
+    328          
+    329              //----Enable  audio_top----
+    330          
+    331              I2sClkFifoEn(I2S_TRUE);
+    332          
+    333              return HAL_I2S_STATUS_OK;
+    334          }
+    335          
+    336          
+    337          hal_i2s_status_t  hal_i2s_disable_audio_top(void)
+    338          {
+    339          
+    340              //----Disable audio_top----
+    341              I2sClkFifoEn(I2S_FALSE);
+    342          
+    343              return HAL_I2S_STATUS_OK;
+    344          }
+    345          
+    346          
+    347          hal_i2s_status_t  hal_i2s_enable_tx_dma_interrupt(void)
+    348          {
+    349          
+    350              if (i2s_internal_cfg.user_tx_callback_func == NULL) {
+    351                  return HAL_I2S_STATUS_ERROR;
+    352              }
+    353          
+    354              //----Enable DMA interrupt for TX----
+    355          
+    356              I2sSetVdmaTxIntrEn(I2S_DMA_INTR_EN);
+    357          
+    358              return HAL_I2S_STATUS_OK;
+    359          }
+    360          
+    361          
+    362          hal_i2s_status_t  hal_i2s_disable_tx_dma_interrupt(void)
+    363          {
+    364          
+    365              //----Disable DMA interrupt for TX----
+    366          
+    367              I2sSetVdmaTxIntrEn(I2S_DMA_INTR_DIS);
+    368          
+    369              return HAL_I2S_STATUS_OK;
+    370          }
+    371          
+    372          
+    373          hal_i2s_status_t  hal_i2s_enable_rx_dma_interrupt(void)
+    374          {
+    375          
+    376              if (i2s_internal_cfg.user_rx_callback_func == NULL) {
+    377                  return HAL_I2S_STATUS_ERROR;
+    378              }
+    379          
+    380              //----Enable  DMA interrupt for RX----
+    381          
+    382              I2sSetVdmaRxIntrEn(I2S_DMA_INTR_EN);
+    383          
+    384              return HAL_I2S_STATUS_OK;
+    385          }
+    386          
+    387          hal_i2s_status_t  hal_i2s_disable_rx_dma_interrupt(void)
+    388          {
+    389          
+    390              //----Disable DMA interrupt for RX----
+    391          
+    392              I2sSetVdmaRxIntrEn(I2S_DMA_INTR_DIS);
+    393          
+    394              return HAL_I2S_STATUS_OK;
+    395          }
+    396          
+    397          
+    398          
+    399          hal_i2s_status_t hal_i2s_get_tx_sample_count(uint32_t *sample_count)
+    400          {
+    401              if (i2s_internal_cfg.ring_buffer.tx_ring_buffer_length == 0) {
+    402                  return HAL_I2S_STATUS_ERROR;
+    403              }
+    404          
+    405              //---get free space in tx vfifo
+    406              *sample_count = i2s_internal_cfg.ring_buffer.tx_ring_buffer_length - I2sGetVdmaTxFifoCnt();
+    407          
+    408              return HAL_I2S_STATUS_OK;
+    409          }
+    410          
+    411          
+    412          hal_i2s_status_t hal_i2s_get_rx_sample_count(uint32_t *sample_count)
+    413          {
+    414              //---get the length to the received data in rx vfifo
+    415              *sample_count = I2sGetVdmaRxFifoCnt();
+    416          
+    417              return HAL_I2S_STATUS_OK;
+    418          }
+    419          
+    420          
+    421          hal_i2s_status_t hal_i2s_setup_tx_vfifo(uint32_t *buffer, uint32_t threshold, uint32_t buffer_length)
+    422          {
+    423          
+    424              if (NULL == buffer) {
+    425                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    426              }
+    427          
+    428              /*
+    429                  if ((i2s_internal_cfg.i2s_state & 1<<I2S_STATE_TX_RUNNING) != 0) {
+    430                     return HAL_I2S_STATUS_ERROR;
+    431                  }
+    432              */
+    433              if (i2s_internal_cfg.i2s_state != I2S_STATE_IDLE) {
+    434                  return HAL_I2S_STATUS_ERROR;
+    435              }
+    436          
+    437              //----Initialize I2S hardware with Virtual FIFO DMA Tx----
+    438              I2sVdmaTxStart((UINT32)buffer, buffer_length, (DMA_VFIFO_CHANNEL) 0, I2S_DMA_CVFF_DIS);
+    439          
+    440              //----Set the threshold  for Tx VDMA----
+    441              I2sSetVdmaTxThreshold(threshold);
+    442          
+    443              i2s_internal_cfg.ring_buffer.tx_ring_buffer_length = buffer_length;
+    444          
+    445          
+    446              return HAL_I2S_STATUS_OK;
+    447          }
+    448          
+    449          
+    450          hal_i2s_status_t hal_i2s_setup_rx_vfifo(uint32_t *buffer, uint32_t threshold, uint32_t buffer_length)
+    451          {
+    452          
+    453              if (NULL == buffer) {
+    454                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    455              }
+    456              /*
+    457                  if ((i2s_internal_cfg.i2s_state & 1<<I2S_STATE_RX_RUNNING) != 0) {
+    458                     return HAL_I2S_STATUS_ERROR;
+    459                  }
+    460              */
+    461              if (i2s_internal_cfg.i2s_state != I2S_STATE_IDLE) {
+    462                  return HAL_I2S_STATUS_ERROR;
+    463              }
+    464          
+    465              //----Initialize I2S hardware with Virtual FIFO DMA Rx----
+    466              I2sVdmaRxStart((UINT32)buffer, buffer_length, (DMA_VFIFO_CHANNEL)0, I2S_DMA_CVFF_DIS);
+    467          
+    468              //----Set the threshold  for Rx VDMA----
+    469              I2sSetVdmaRxThreshold(threshold);
+    470          
+    471              return HAL_I2S_STATUS_OK;
+    472          
+    473          }
+    474          
+    475          
+    476          //@brief    Stop the operation for TX VDMA
+    477          hal_i2s_status_t hal_i2s_stop_tx_vfifo(void)
+    478          {
+    479              //----Disable  the clock of the FIFOs----
+    480              DMA_Stop((UINT8)VDMA_I2S_TX_CH);
+    481          
+    482              return HAL_I2S_STATUS_OK;
+    483          }
+    484          
+    485          
+    486          //@brief      Stop the operation for RX VDMA
+    487          hal_i2s_status_t hal_i2s_stop_rx_vfifo(void)
+    488          {
+    489              //----Disable the clock of the FIFOs----
+    490              DMA_Stop((UINT8)VDMA_I2S_RX_CH);
+    491          
+    492              return HAL_I2S_STATUS_OK;
+    493          }
+    494          
+    495          
+    496          //@brief     Register the callback function for VFIFO threshold and enable ISR
+    497          hal_i2s_status_t hal_i2s_register_tx_vfifo_callback(hal_i2s_tx_callback_t tx_callback, void *user_data)
+    498          {
+    499          
+    500              if (NULL == tx_callback) {
+    501                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    502              }
+    503          
+    504              i2s_internal_cfg.user_tx_callback_func = tx_callback;
+    505              i2s_internal_cfg.user_tx_data = user_data;
+    506          
+    507              DMA_Vfifo_Register_Callback(VDMA_I2S_TX_CH, i2x_tx_handler);
+    508          
+    509              return HAL_I2S_STATUS_OK;
+    510          
+    511          }
+    512          
+    513          
+    514          //@brief     Register the callback function for VFIFO threshold and enable ISR
+    515          hal_i2s_status_t hal_i2s_register_rx_vfifo_callback(hal_i2s_rx_callback_t rx_callback, void *user_data)
+    516          {
+    517          
+    518              if (NULL == rx_callback) {
+    519                  return HAL_I2S_STATUS_INVALID_PARAMETER;
+    520              }
+    521          
+    522              i2s_internal_cfg.user_rx_callback_func = rx_callback;
+    523              i2s_internal_cfg.user_rx_data = user_data;
+    524          
+    525              DMA_Vfifo_Register_Callback(VDMA_I2S_RX_CH, i2x_rx_handler);
+    526          
+    527              return HAL_I2S_STATUS_OK;
+    528          }
+    529          
+    530          
+    531          
+    532          //@brief     Power on I2S output link.
+    533          hal_i2s_status_t  hal_i2s_enable_tx(void)
+    534          {
+    535          
+    536              i2s_internal_cfg.i2s_state |= (1 << I2S_STATE_TX_RUNNING);
+    537          
+    538              I2sDlEn(KAL_TRUE);
+    539          
+    540              return HAL_I2S_STATUS_OK;
+    541          }
+    542          
+    543          
+    544          //@brief     Power on I2S input link.
+    545          hal_i2s_status_t  hal_i2s_enable_rx(void)
+    546          {
+    547              i2s_internal_cfg.i2s_state |= (1 << I2S_STATE_RX_RUNNING);
+    548          
+    549              I2sUlEn(KAL_TRUE);
+    550          
+    551              return HAL_I2S_STATUS_OK;
+    552          
+    553          }
+    554          
+    555          
+    556          
+    557          //@brief     Power off I2S out.
+    558          hal_i2s_status_t  hal_i2s_disable_tx(void)
+    559          {
+    560              i2s_internal_cfg.i2s_state &=  ~(1 << I2S_STATE_TX_RUNNING);
+    561          
+    562              I2sDlEn(KAL_FALSE);
+    563          
+    564              return HAL_I2S_STATUS_OK;
+    565          }
+    566          
+    567          
+    568          //@brief     Power off I2S input link.
+    569          hal_i2s_status_t hal_i2s_disable_rx(void)
+    570          {
+    571          
+    572              i2s_internal_cfg.i2s_state &= ~(1 << I2S_STATE_RX_RUNNING);
+    573          
+    574              I2sUlEn(KAL_FALSE);
+    575          
+    576              return HAL_I2S_STATUS_OK;
+    577          
+    578          }
+    579          
+    580          
+    581          //@brief     Write data to I2S output link.
+    582          hal_i2s_status_t hal_i2s_tx_write(uint32_t data)
+    583          {
+    584          
+    585              DRV_Reg32(I2S_DMA_TX_FIFO) = data;
+    586          
+    587              return HAL_I2S_STATUS_OK;
+    588          }
+    589          
+    590          
+    591          //@brief     Receive data from I2S input link.
+    592          hal_i2s_status_t hal_i2s_rx_read(uint32_t *data)
+    593          {
+    594          
+    595              *data = DRV_Reg32(I2S_DMA_RX_FIFO);
+    596          
+    597              return HAL_I2S_STATUS_OK;
+    598          
+    599          }
+    600          
+    601          
+    602          // =======================================================================================
+    603          
+    604          static void i2s_dma_callback(bool is_rx)
+    605          {
+    606              if (is_rx) {
+    607                  //----notify user to get data from RX VFIFO----
+    608                  i2s_internal_cfg.user_rx_callback_func(HAL_I2S_EVENT_DATA_NOTIFICATION,
+    609                                                         i2s_internal_cfg.user_rx_data);
+    610              } else {
+    611                  //notify user to refill data to TX VFIFO
+    612                  i2s_internal_cfg.user_tx_callback_func(HAL_I2S_EVENT_DATA_REQUEST,
+    613                                                         i2s_internal_cfg.user_tx_data);
+    614              }
+    615          }
+    616          
+    617          
+    618          static void i2x_tx_handler(void)
+    619          {
+    620              i2s_dma_callback(0);
+    621          }
+    622          
+    623          
+    624          static void i2x_rx_handler(void)
+    625          {
+    626              i2s_dma_callback(1);
+    627          }
+    628          
+    629          
+    630          static hal_i2s_status_t i2s_is_sample_rate(hal_i2s_sample_rate_t sample_rate, BOOLEAN IsRx)
+    631          {
+    632              switch (sample_rate) {
+    633                  case HAL_I2S_SAMPLE_RATE_8K:
+    634                      if (IsRx) {
+    635                          i2s_internal_cfg.I2SULCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_8K;
+    636                      } else {
+    637                          i2s_internal_cfg.I2SDLCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_8K;
+    638                      }
+    639                      break;
+    640                  case HAL_I2S_SAMPLE_RATE_12K:
+    641                      if (IsRx) {
+    642                          i2s_internal_cfg.I2SULCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_12K;
+    643                      } else {
+    644                          i2s_internal_cfg.I2SDLCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_12K;
+    645                      }
+    646                      break;
+    647                  case HAL_I2S_SAMPLE_RATE_16K:
+    648                      if (IsRx) {
+    649                          i2s_internal_cfg.I2SULCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_16K;
+    650                      } else {
+    651                          i2s_internal_cfg.I2SDLCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_16K;
+    652                      }
+    653                      break;
+    654                  case HAL_I2S_SAMPLE_RATE_24K:
+    655                      if (IsRx) {
+    656                          i2s_internal_cfg.I2SULCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_24K;
+    657                      } else {
+    658                          i2s_internal_cfg.I2SDLCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_24K;
+    659                      }
+    660                      break;
+    661                  case HAL_I2S_SAMPLE_RATE_32K:
+    662                      if (IsRx) {
+    663                          i2s_internal_cfg.I2SULCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_32K;
+    664                      } else {
+    665                          i2s_internal_cfg.I2SDLCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_32K;
+    666                      }
+    667                      break;
+    668                  case HAL_I2S_SAMPLE_RATE_48K:
+    669                      if (IsRx) {
+    670                          i2s_internal_cfg.I2SULCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_48K;
+    671                      } else {
+    672                          i2s_internal_cfg.I2SDLCfg.u4I2SSampleRate = I2S_SAMPLE_RATE_48K;
+    673                      }
+    674                      break;
+    675                  default:
+    676                      return HAL_I2S_STATUS_INVALID_PARAMETER;
+    677              }
+    678          
+    679              return HAL_I2S_STATUS_OK;
+    680          }
+    681          
+    682          #endif//#ifdef HAL_I2S_MODULE_ENABLED
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   hal_i2s_deinit
+         8   -> I2sReset
+         8   -> hal_sleep_manager_release_sleep_handle
+         8   -> hal_sleep_manager_unlock_sleep
+         8   -> xpllClose
+       8   hal_i2s_disable_audio_top
+         8   -> I2sClkFifoEn
+       8   hal_i2s_disable_rx
+         8   -> I2sUlEn
+       8   hal_i2s_disable_rx_dma_interrupt
+         8   -> I2sSetVdmaRxIntrEn
+       8   hal_i2s_disable_tx
+         8   -> I2sDlEn
+       8   hal_i2s_disable_tx_dma_interrupt
+         8   -> I2sSetVdmaTxIntrEn
+       8   hal_i2s_enable_audio_top
+         8   -> I2sClkFifoEn
+       8   hal_i2s_enable_rx
+         8   -> I2sUlEn
+       8   hal_i2s_enable_rx_dma_interrupt
+         8   -> I2sSetVdmaRxIntrEn
+       8   hal_i2s_enable_tx
+         8   -> I2sDlEn
+       8   hal_i2s_enable_tx_dma_interrupt
+         8   -> I2sSetVdmaTxIntrEn
+       8   hal_i2s_get_config
+         8   -> __aeabi_memcpy4
+       8   hal_i2s_get_rx_sample_count
+         8   -> I2sGetVdmaRxFifoCnt
+      16   hal_i2s_get_tx_sample_count
+        16   -> I2sGetVdmaTxFifoCnt
+      16   hal_i2s_init
+        16   -> DMA_Init
+        16   -> DMA_Vfifo_init
+        16   -> I2sCfgInitialSetting
+        16   -> hal_sleep_manager_lock_sleep
+        16   -> hal_sleep_manager_set_sleep_handle
+        16   -> log_hal_info_internal
+        16   -> xpllOpen
+       8   hal_i2s_register_rx_vfifo_callback
+         8   -> DMA_Vfifo_Register_Callback
+       8   hal_i2s_register_tx_vfifo_callback
+         8   -> DMA_Vfifo_Register_Callback
+       0   hal_i2s_rx_read
+      16   hal_i2s_set_config
+        16   -> I2sSetDlCfg
+        16   -> I2sSetGblCfg
+        16   -> I2sSetUlCfg
+        16   -> i2s_is_sample_rate
+       8   hal_i2s_setup_rx_vfifo
+         8   -> I2sSetVdmaRxThreshold
+         8   -> I2sVdmaRxStart
+      16   hal_i2s_setup_tx_vfifo
+        16   -> I2sSetVdmaTxThreshold
+        16   -> I2sVdmaTxStart
+       8   hal_i2s_stop_rx_vfifo
+         8   -> DMA_Stop
+       8   hal_i2s_stop_tx_vfifo
+         8   -> DMA_Stop
+       0   hal_i2s_tx_write
+       0   i2s_dma_callback
+         0   -- Indirect call
+       0   i2s_is_sample_rate
+       0   i2x_rx_handler
+         0   -> i2s_dma_callback
+       0   i2x_tx_handler
+         0   -> i2s_dma_callback
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable12
+       4  ??DataTable21
+       4  ??DataTable21_1
+       4  ??DataTable21_2
+       4  ??DataTable21_3
+       4  ??DataTable21_4
+       4  ??DataTable21_5
+       4  ?_0
+      56  ?_1
+      32  ?_2
+      58  hal_i2s_deinit
+      12  hal_i2s_disable_audio_top
+      26  hal_i2s_disable_rx
+      12  hal_i2s_disable_rx_dma_interrupt
+      26  hal_i2s_disable_tx
+      12  hal_i2s_disable_tx_dma_interrupt
+      12  hal_i2s_enable_audio_top
+      26  hal_i2s_enable_rx
+      26  hal_i2s_enable_rx_dma_interrupt
+      26  hal_i2s_enable_tx
+      26  hal_i2s_enable_tx_dma_interrupt
+      16  hal_i2s_get_config
+      14  hal_i2s_get_rx_sample_count
+      32  hal_i2s_get_tx_sample_count
+     142  hal_i2s_init
+      32  hal_i2s_register_rx_vfifo_callback
+      32  hal_i2s_register_tx_vfifo_callback
+      10  hal_i2s_rx_read
+     368  hal_i2s_set_config
+      50  hal_i2s_setup_rx_vfifo
+      52  hal_i2s_setup_tx_vfifo
+      12  hal_i2s_stop_rx_vfifo
+      12  hal_i2s_stop_tx_vfifo
+      10  hal_i2s_tx_write
+      22  i2s_dma_callback
+     104  i2s_internal_cfg
+     130  i2s_is_sample_rate
+       4  i2x_rx_handler
+       4  i2x_tx_handler
+       1  sleep_handler
+      16  -- Other
+
+ 
+   105 bytes in section .bss
+     4 bytes in section .rodata
+ 1 336 bytes in section .text
+ 
+ 1 336 bytes of CODE  memory
+     4 bytes of CONST memory
+   105 bytes of DATA  memory
+
+Errors: none
+Warnings: none

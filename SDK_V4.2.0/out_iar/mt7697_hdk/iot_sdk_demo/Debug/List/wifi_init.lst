@@ -1,0 +1,1004 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:44
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_init.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_init.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\wifi_init.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\wifi_init.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\driver\board\mt76x7_hdk\wifi\src\wifi_init.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "os.h"
+     36          #include "wifi_api.h"
+     37          #include "connsys_driver.h"
+     38          #include "wifi_scan.h"
+     39          #include "inband_queue.h"
+     40          #include "net_task.h"
+     41          #include "wifi_init.h"
+     42          #include "syslog.h"
+     43          #include "nvdm.h"
+     44          #include "wifi_profile.h"
+     45          #include "get_profile_string.h"
+     46          #include "wifi_default_config.h"
+     47          #include "wifi_inband.h"
+     48          #include "wpa_supplicant_task.h"
+     49          #include "hal_efuse.h"
+     50          #include "wifi_channel.h"
+     51          
+     52          
+     53          log_create_module(wifi, PRINT_LEVEL_ERROR);
+     54          
+     55          static int32_t wifi_is_mac_address_valid(uint8_t *mac_addr)
+     56          {
+     57              uint32_t byte_sum = 0;
+     58              for (uint32_t index = 0; index < WIFI_MAC_ADDRESS_LENGTH; index++) {
+     59                  byte_sum += mac_addr[index];
+     60              }
+     61              return (byte_sum != 0);
+     62          }
+     63          
+     64          wifi_phy_mode_t wifi_change_wireless_mode_5g_to_2g(wifi_phy_mode_t wirelessmode)
+     65          {
+     66              if (WIFI_PHY_11A == wirelessmode) {
+     67                  return WIFI_PHY_11B;
+     68              } else if (WIFI_PHY_11ABG_MIXED == wirelessmode) {
+     69                  return WIFI_PHY_11BG_MIXED;
+     70              } else if (WIFI_PHY_11ABGN_MIXED == wirelessmode) {
+     71                  return WIFI_PHY_11BGN_MIXED;
+     72              } else if (WIFI_PHY_11AN_MIXED == wirelessmode) {
+     73                  return WIFI_PHY_11N_2_4G;
+     74              } else if (WIFI_PHY_11AGN_MIXED == wirelessmode) {
+     75                  return WIFI_PHY_11GN_MIXED;
+     76              } else if (WIFI_PHY_11N_5G == wirelessmode) {
+     77                  return WIFI_PHY_11N_2_4G;
+     78              } else {
+     79                  return wirelessmode;
+     80              }
+     81          }
+     82          
+     83          /**
+     84          * @brief get mac address from efuse
+     85          */
+     86          static int32_t wifi_get_mac_addr_from_efuse(uint8_t port, uint8_t *mac_addr)
+     87          {
+     88              uint8_t buf[16] = {0};//efuse is 16 byte aligned
+     89              uint16_t mac_offset = 0x00;//mac addr offset in efuse
+     90              if (HAL_EFUSE_OK != hal_efuse_read(mac_offset, buf, sizeof(buf))) {
+     91                  return -1;
+     92              }
+     93              if (!wifi_is_mac_address_valid(buf+4)) {
+     94                  LOG_HEXDUMP_W(wifi, "data in efuse is invalid", buf, sizeof(buf));
+     95                  return -1;
+     96              }
+     97              if (WIFI_PORT_STA == port) {
+     98                  /* original efuse MAC address for STA */
+     99                  os_memcpy(mac_addr, buf+4, WIFI_MAC_ADDRESS_LENGTH);
+    100              } else {
+    101                  /* original efuse MAC address with byte[5]+1 for AP */
+    102                  os_memcpy(mac_addr, buf+4, WIFI_MAC_ADDRESS_LENGTH);
+    103                  mac_addr[WIFI_MAC_ADDRESS_LENGTH-1] += 1;
+    104              }
+    105              return 0;
+    106          }
+    107          
+    108          
+    109          #ifdef MTK_NVDM_ENABLE
+    110          /**
+    111          * @brief get mac address from nvdm
+    112          */
+    113          static int32_t wifi_get_mac_addr_from_nvdm(uint8_t port, uint8_t *mac_addr)
+    114          {
+    115              uint8_t buff[PROFILE_BUF_LEN] = {0};
+    116              uint32_t len = sizeof(buff);
+    117              char *group_name = (WIFI_PORT_STA == port) ? "STA" : "AP";
+    118          
+    119              if (NVDM_STATUS_OK != nvdm_read_data_item(group_name, "MacAddr", buff, &len)) {
+    120                  return -1;
+    121              }
+    122          
+    123              wifi_conf_get_mac_from_str((char *)mac_addr, (char *)buff);
+    124              return 0;
+    125          }
+    126          #endif
+    127          
+    128          /**
+    129          * @brief Get WiFi Interface MAC Address.
+    130          *
+    131          */
+    132          int32_t wifi_config_get_mac_address(uint8_t port, uint8_t *address)
+    133          {
+    134              if (NULL == address) {
+    135                  LOG_E(wifi, "address is null.");
+    136                  return WIFI_ERR_PARA_INVALID;
+    137              }
+    138          
+    139              if (!wifi_is_port_valid(port)) {
+    140                  LOG_E(wifi, "port is invalid: %d", port);
+    141                  return WIFI_ERR_PARA_INVALID;
+    142              }
+    143          
+    144              if (0 == wifi_get_mac_addr_from_efuse(port, address)) {
+    145                  return 0;
+    146              }
+    147          
+    148              LOG_W(wifi, "wifi_get_mac_addr_from_efuse fail.");
+    149          
+    150          #ifdef MTK_NVDM_ENABLE
+    151              if (0 == wifi_get_mac_addr_from_nvdm(port, address)) {
+    152                  return 0;
+    153              }
+    154              LOG_E(wifi, "wifi_get_mac_addr_from_nvdm fail.");
+    155          #endif
+    156              return -1;
+    157          
+    158          }
+    159          
+    160          uint8_t wifi_get_ps_mode(void)
+    161          {
+    162          #ifdef MTK_WIFI_PROFILE_ENABLE
+    163              uint8_t buff[PROFILE_BUF_LEN];
+    164              uint32_t len = sizeof(buff);
+    165              nvdm_read_data_item("STA", "PSMode", buff, &len);
+    166              return (uint8_t)atoi((char *)buff);
+    167          #else
+    168              return WIFI_DEFAULT_STA_POWER_SAVE_MODE;
+    169          #endif
+    170          }
+    171          
+    172          static void wifi_save_sta_ext_config(sys_cfg_t *syscfg, wifi_config_ext_t *config_ext)
+    173          {
+    174              if (NULL != config_ext) {
+    175                  if (config_ext->sta_wep_key_index_present) {
+    176                      syscfg->sta_default_key_id = config_ext->sta_wep_key_index;
+    177                  }
+    178                  if (config_ext->sta_bandwidth_present) {
+    179                      syscfg->sta_bw = config_ext->sta_bandwidth;
+    180                  }
+    181                  if (config_ext->sta_wireless_mode_present) {
+    182                      syscfg->sta_wireless_mode = config_ext->sta_wireless_mode;
+    183                  }
+    184                  if (config_ext->sta_listen_interval_present) {
+    185                      syscfg->sta_listen_interval = config_ext->sta_listen_interval;
+    186                  }
+    187                  if (config_ext->sta_power_save_mode_present) {
+    188                      syscfg->sta_ps_mode = config_ext->sta_power_save_mode;
+    189                  }
+    190          
+    191              }
+    192          }
+    193          
+    194          static void wifi_save_ap_ext_config(sys_cfg_t *syscfg, wifi_config_ext_t *config_ext)
+    195          {
+    196              if (NULL != config_ext) {
+    197                  if (config_ext->ap_wep_key_index_present) {
+    198                      syscfg->ap_default_key_id = config_ext->ap_wep_key_index;
+    199                  }
+    200                  if (config_ext->ap_hidden_ssid_enable_present) {
+    201                      syscfg->ap_hide_ssid = config_ext->ap_hidden_ssid_enable;
+    202                  }
+    203                  if (config_ext->ap_wireless_mode_present) {
+    204                      syscfg->ap_wireless_mode = config_ext->ap_wireless_mode;
+    205                  }
+    206                  if (config_ext->ap_dtim_interval_present) {
+    207                      syscfg->ap_dtim_period = config_ext->ap_dtim_interval;
+    208                  }
+    209              }
+    210          }
+    211          
+    212          static void wifi_apply_sta_config(sys_cfg_t *syscfg, wifi_config_t *config, wifi_config_ext_t *config_ext)
+    213          {
+    214              os_memcpy(syscfg->sta_ssid, config->sta_config.ssid, WIFI_MAX_LENGTH_OF_SSID);
+    215          
+    216              syscfg->sta_ssid_len = config->sta_config.ssid_length;
+    217          
+    218              os_memcpy(syscfg->sta_wpa_psk, config->sta_config.password, WIFI_LENGTH_PASSPHRASE);
+    219          
+    220              syscfg->sta_wpa_psk_len = config->sta_config.password_length;
+    221          
+    222              /* save extension config */
+    223              wifi_save_sta_ext_config(syscfg, config_ext);
+    224          }
+    225          
+    226          static void wifi_apply_ap_config(sys_cfg_t *syscfg, wifi_config_t *config, wifi_config_ext_t *config_ext)
+    227          {
+    228              os_memcpy(syscfg->ap_ssid, config->ap_config.ssid, WIFI_MAX_LENGTH_OF_SSID);
+    229          
+    230              syscfg->ap_ssid_len = config->ap_config.ssid_length;
+    231          
+    232              os_memcpy(syscfg->ap_wpa_psk, config->ap_config.password, WIFI_LENGTH_PASSPHRASE);
+    233          
+    234              syscfg->ap_wpa_psk_len = config->ap_config.password_length;
+    235          
+    236              syscfg->ap_auth_mode = config->ap_config.auth_mode;
+    237          
+    238              syscfg->ap_encryp_type = config->ap_config.encrypt_type;
+    239          
+    240              syscfg->ap_channel = config->ap_config.channel;
+    241          
+    242              syscfg->ap_bw = config->ap_config.bandwidth;
+    243          
+    244              syscfg->ap_ht_ext_ch = (WIFI_BANDWIDTH_EXT_40MHZ_UP == config->ap_config.bandwidth_ext) ? 1 : 3;
+    245          
+    246              /* save extension config */
+    247              wifi_save_ap_ext_config(syscfg, config_ext);
+    248          }
+    249          
+    250          static void wifi_apply_repeater_config(sys_cfg_t *syscfg, wifi_config_t *config, wifi_config_ext_t *config_ext)
+    251          {
+    252              wifi_apply_sta_config(syscfg, config, config_ext);
+    253              wifi_apply_ap_config(syscfg, config, config_ext);
+    254          }
+    255          
+    256          static void wifi_apply_p2p_config(sys_cfg_t *syscfg, wifi_config_t *config, wifi_config_ext_t *config_ext)
+    257          {
+    258              /* TBD */
+    259          }
+    260          
+    261          #ifdef MTK_WIFI_PROFILE_ENABLE
+    262          static void wifi_get_config_from_nvdm(sys_cfg_t *config)
+    263          {
+    264              // init wifi profile
+    265              uint8_t buff[PROFILE_BUF_LEN];
+    266              uint32_t len = sizeof(buff);
+    267          
+    268              // common
+    269              len = sizeof(buff);
+    270              nvdm_read_data_item("common", "OpMode", buff, &len);
+    271              config->opmode = (uint8_t)atoi((char *)buff);
+    272              len = sizeof(buff);
+    273              nvdm_read_data_item("common", "CountryRegion", buff, &len);
+    274              config->country_region = (uint8_t)atoi((char *)buff);
+    275              len = sizeof(buff);
+    276              nvdm_read_data_item("common", "CountryRegionABand", buff, &len);
+    277              config->country_region_a_band = (uint8_t)atoi((char *)buff);
+    278              len = sizeof(buff);
+    279              nvdm_read_data_item("common", "CountryCode", buff, &len);
+    280              os_memcpy(config->country_code, buff, 4);
+    281              wifi_country_code_region_mapping(config->country_code, &(config->country_region), &(config->country_region_a_band));
+    282              len = sizeof(buff);
+    283              nvdm_read_data_item("common", "RadioOff", buff, &len);
+    284              config->radio_off = (uint8_t)atoi((char *)buff);
+    285              len = sizeof(buff);
+    286              nvdm_read_data_item("common", "RTSThreshold", buff, &len);
+    287              config->rts_threshold = (uint16_t)atoi((char *)buff);
+    288              len = sizeof(buff);
+    289              nvdm_read_data_item("common", "FragThreshold", buff, &len);
+    290              config->frag_threshold = (uint16_t)atoi((char *)buff);
+    291              len = sizeof(buff);
+    292              nvdm_read_data_item("common", "DbgLevel", buff, &len);
+    293              config->dbg_level = (uint8_t)atoi((char *)buff);
+    294              len = sizeof(buff);
+    295              nvdm_read_data_item("common", "IpAddr", buff, &len);
+    296              wifi_conf_get_ip_from_str(config->ap_ip_addr, (char *)buff);
+    297              wifi_conf_get_ip_from_str(config->sta_ip_addr, (char *)buff);
+    298          
+    299              // STA
+    300              len = sizeof(buff);
+    301              nvdm_read_data_item("STA", "LocalAdminMAC", buff, &len);
+    302              config->sta_local_admin_mac = (uint8_t)atoi((char *)buff);
+    303              len = sizeof(buff);
+    304          
+    305              //nvdm_read_data_item("STA", "MacAddr", buff, &len);
+    306              //wifi_conf_get_mac_from_str((char *)config->sta_mac_addr, (char *)buff);
+    307              wifi_config_get_mac_address(WIFI_PORT_STA, config->sta_mac_addr);
+    308          
+    309              len = sizeof(buff);
+    310              nvdm_read_data_item("STA", "SsidLen", buff, &len);
+    311              config->sta_ssid_len = (uint8_t)atoi((char *)buff);
+    312              len = sizeof(buff);
+    313              nvdm_read_data_item("STA", "Ssid", buff, &len);
+    314              os_memcpy(config->sta_ssid, buff, config->sta_ssid_len);
+    315              len = sizeof(buff);
+    316              nvdm_read_data_item("STA", "BssType", buff, &len);
+    317              config->sta_bss_type = (uint8_t)atoi((char *)buff);
+    318              len = sizeof(buff);
+    319              nvdm_read_data_item("STA", "Channel", buff, &len);
+    320              config->sta_channel = (uint8_t)atoi((char *)buff);
+    321              len = sizeof(buff);
+    322              nvdm_read_data_item("STA", "BW", buff, &len);
+    323              config->sta_bw = (uint8_t)atoi((char *)buff);
+    324              len = sizeof(buff);
+    325              nvdm_read_data_item("STA", "WirelessMode", buff, &len);
+    326              if (wifi_5g_support() < 0) {
+    327                  config->sta_wireless_mode = (uint8_t)wifi_change_wireless_mode_5g_to_2g((wifi_phy_mode_t)atoi((char *)buff));
+    328              }else {
+    329                  config->sta_wireless_mode = (uint8_t)atoi((char *)buff);
+    330              }
+    331              len = sizeof(buff);
+    332              nvdm_read_data_item("STA", "BADecline", buff, &len);
+    333              config->sta_ba_decline = (uint8_t)atoi((char *)buff);
+    334              len = sizeof(buff);
+    335              nvdm_read_data_item("STA", "AutoBA", buff, &len);
+    336              config->sta_auto_ba = (uint8_t)atoi((char *)buff);
+    337              len = sizeof(buff);
+    338              nvdm_read_data_item("STA", "HT_MCS", buff, &len);
+    339              config->sta_ht_mcs = (uint8_t)atoi((char *)buff);
+    340              len = sizeof(buff);
+    341              nvdm_read_data_item("STA", "HT_BAWinSize", buff, &len);
+    342              config->sta_ht_ba_win_size = (uint8_t)atoi((char *)buff);
+    343              len = sizeof(buff);
+    344              nvdm_read_data_item("STA", "HT_GI", buff, &len);
+    345              config->sta_ht_gi = (uint8_t)atoi((char *)buff);
+    346              len = sizeof(buff);
+    347              nvdm_read_data_item("STA", "HT_PROTECT", buff, &len);
+    348              config->sta_ht_protect = (uint8_t)atoi((char *)buff);
+    349              len = sizeof(buff);
+    350              nvdm_read_data_item("STA", "HT_EXTCHA", buff, &len);
+    351              config->sta_ht_ext_ch = (uint8_t)atoi((char *)buff);
+    352              len = sizeof(buff);
+    353              nvdm_read_data_item("STA", "WmmCapable", buff, &len);
+    354              config->sta_wmm_capable = (uint8_t)atoi((char *)buff);
+    355              len = sizeof(buff);
+    356              nvdm_read_data_item("STA", "ListenInterval", buff, &len);
+    357              config->sta_listen_interval = (uint8_t)atoi((char *)buff);
+    358              len = sizeof(buff);
+    359              nvdm_read_data_item("STA", "AuthMode", buff, &len);
+    360              config->sta_auth_mode = (uint8_t)atoi((char *)buff);
+    361              len = sizeof(buff);
+    362              nvdm_read_data_item("STA", "EncrypType", buff, &len);
+    363              config->sta_encryp_type = (uint8_t)atoi((char *)buff);
+    364              len = sizeof(buff);
+    365              nvdm_read_data_item("STA", "WpaPskLen", buff, &len);
+    366              config->sta_wpa_psk_len = (uint8_t)atoi((char *)buff);
+    367              len = sizeof(buff);
+    368              nvdm_read_data_item("STA", "WpaPsk", buff, &len);
+    369              os_memcpy(config->sta_wpa_psk, buff, config->sta_wpa_psk_len);
+    370              len = sizeof(buff);
+    371              nvdm_read_data_item("STA", "PMK", buff, &len);
+    372              os_memcpy(config->sta_pmk, buff, 32); // TODO: How to save binary PMK value not ending by ' ; ' ?
+    373              len = sizeof(buff);
+    374              nvdm_read_data_item("STA", "PairCipher", buff, &len);
+    375              config->sta_pair_cipher = (uint8_t)atoi((char *)buff);
+    376              len = sizeof(buff);
+    377              nvdm_read_data_item("STA", "GroupCipher", buff, &len);
+    378              config->sta_group_cipher = (uint8_t)atoi((char *)buff);
+    379              len = sizeof(buff);
+    380              nvdm_read_data_item("STA", "DefaultKeyId", buff, &len);
+    381              config->sta_default_key_id = (uint8_t)atoi((char *)buff);
+    382              len = sizeof(buff);
+    383              nvdm_read_data_item("STA", "PSMode", buff, &len);
+    384              config->sta_ps_mode = (uint8_t)atoi((char *)buff);
+    385              len = sizeof(buff);
+    386              nvdm_read_data_item("STA", "KeepAlivePeriod", buff, &len);
+    387              config->sta_keep_alive_period = (uint8_t)atoi((char *)buff);
+    388              len = sizeof(buff);
+    389              nvdm_read_data_item("STA", "BeaconLostTime", buff, &len);
+    390              config->beacon_lost_time = (uint8_t)atoi((char *)buff);
+    391              len = sizeof(buff);
+    392              nvdm_read_data_item("STA", "ApcliBWAutoUpBelow", buff, &len);
+    393              config->apcli_40mhz_auto_upbelow = (uint8_t)atoi((char *)buff);
+    394          
+    395              // AP
+    396          #ifdef MTK_WIFI_REPEATER_ENABLE
+    397              if (config->opmode == WIFI_MODE_REPEATER) {
+    398                  len = sizeof(buff);
+    399                  nvdm_read_data_item("STA", "Channel", buff, &len);
+    400                  config->ap_channel = (uint8_t)atoi((char *)buff);
+    401                  len = sizeof(buff);
+    402                  nvdm_read_data_item("STA", "BW", buff, &len);
+    403                  config->ap_bw = (uint8_t)atoi((char *)buff);
+    404                  len = sizeof(buff);
+    405                  nvdm_read_data_item("STA", "WirelessMode", buff, &len);
+    406                  config->ap_wireless_mode = (uint8_t)atoi((char *)buff);
+    407              } else
+    408          #endif
+    409              {
+    410                  /* Use STA MAC/IP as AP MAC/IP for the time being, due to N9 dual interface not ready yet */
+    411                  len = sizeof(buff);
+    412                  nvdm_read_data_item("AP", "Channel", buff, &len);
+    413                  config->ap_channel = (uint8_t)atoi((char *)buff);
+    414                  len = sizeof(buff);
+    415                  nvdm_read_data_item("AP", "BW", buff, &len);
+    416                  config->ap_bw = (uint8_t)atoi((char *)buff);
+    417                  len = sizeof(buff);
+    418                  nvdm_read_data_item("AP", "WirelessMode", buff, &len);
+    419                  if (wifi_5g_support() < 0) {
+    420                      config->ap_wireless_mode = (uint8_t)wifi_change_wireless_mode_5g_to_2g((wifi_phy_mode_t)atoi((char *)buff));
+    421                  }else {
+    422                      config->ap_wireless_mode = (uint8_t)atoi((char *)buff);
+    423                  }
+    424              }
+    425              len = sizeof(buff);
+    426              nvdm_read_data_item("AP", "LocalAdminMAC", buff, &len);
+    427              config->ap_local_admin_mac = (uint8_t)atoi((char *)buff);
+    428              len = sizeof(buff);
+    429          
+    430              //nvdm_read_data_item("AP", "MacAddr", buff, &len);
+    431              //wifi_conf_get_mac_from_str((char *)config->ap_mac_addr, (char *)buff);
+    432              wifi_config_get_mac_address(WIFI_PORT_AP, config->ap_mac_addr);
+    433          
+    434              len = sizeof(buff);
+    435              nvdm_read_data_item("AP", "SsidLen", buff, &len);
+    436              config->ap_ssid_len = (uint8_t)atoi((char *)buff);
+    437              len = sizeof(buff);
+    438              nvdm_read_data_item("AP", "Ssid", buff, &len);
+    439              os_memcpy(config->ap_ssid, buff, config->ap_ssid_len);
+    440              len = sizeof(buff);
+    441              nvdm_read_data_item("AP", "AutoBA", buff, &len);
+    442              config->ap_auto_ba = (uint8_t)atoi((char *)buff);
+    443              len = sizeof(buff);
+    444              nvdm_read_data_item("AP", "HT_MCS", buff, &len);
+    445              config->ap_ht_mcs = (uint8_t)atoi((char *)buff);
+    446              len = sizeof(buff);
+    447              nvdm_read_data_item("AP", "HT_BAWinSize", buff, &len);
+    448              config->ap_ht_ba_win_size = (uint8_t)atoi((char *)buff);
+    449              len = sizeof(buff);
+    450              nvdm_read_data_item("AP", "HT_GI", buff, &len);
+    451              config->ap_ht_gi = (uint8_t)atoi((char *)buff);
+    452              len = sizeof(buff);
+    453              nvdm_read_data_item("AP", "HT_PROTECT", buff, &len);
+    454              config->ap_ht_protect = (uint8_t)atoi((char *)buff);
+    455              len = sizeof(buff);
+    456              nvdm_read_data_item("AP", "HT_EXTCHA", buff, &len);
+    457              config->ap_ht_ext_ch = (uint8_t)atoi((char *)buff);
+    458              len = sizeof(buff);
+    459              nvdm_read_data_item("AP", "WmmCapable", buff, &len);
+    460              config->ap_wmm_capable = (uint8_t)atoi((char *)buff);
+    461              len = sizeof(buff);
+    462              nvdm_read_data_item("AP", "DtimPeriod", buff, &len);
+    463              config->ap_dtim_period = (uint8_t)atoi((char *)buff);
+    464              len = sizeof(buff);
+    465              nvdm_read_data_item("AP", "HideSSID", buff, &len);
+    466              config->ap_hide_ssid = (uint8_t)atoi((char *)buff);
+    467              len = sizeof(buff);
+    468              nvdm_read_data_item("AP", "AutoChannelSelect", buff, &len);
+    469              config->ap_auto_channel_select = (uint8_t)atoi((char *)buff);
+    470              len = sizeof(buff);
+    471              nvdm_read_data_item("AP", "AuthMode", buff, &len);
+    472              config->ap_auth_mode = (uint8_t)atoi((char *)buff);
+    473              len = sizeof(buff);
+    474              nvdm_read_data_item("AP", "EncrypType", buff, &len);
+    475              config->ap_encryp_type = (uint8_t)atoi((char *)buff);
+    476              len = sizeof(buff);
+    477              nvdm_read_data_item("AP", "WpaPskLen", buff, &len);
+    478              config->ap_wpa_psk_len = (uint8_t)atoi((char *)buff);
+    479              len = sizeof(buff);
+    480              nvdm_read_data_item("AP", "WpaPsk", buff, &len);
+    481              os_memcpy(config->ap_wpa_psk, buff, config->ap_wpa_psk_len);
+    482              len = sizeof(buff);
+    483              nvdm_read_data_item("AP", "PMK", buff, &len);
+    484              os_memcpy(config->ap_pmk, buff, 32); // TODO: How to save binary PMK value not ending by ' ; ' ?
+    485              len = sizeof(buff);
+    486              nvdm_read_data_item("AP", "PairCipher", buff, &len);
+    487              config->ap_pair_cipher = (uint8_t)atoi((char *)buff);
+    488              len = sizeof(buff);
+    489              nvdm_read_data_item("AP", "GroupCipher", buff, &len);
+    490              config->ap_group_cipher = (uint8_t)atoi((char *)buff);
+    491              len = sizeof(buff);
+    492              nvdm_read_data_item("AP", "DefaultKeyId", buff, &len);
+    493              config->ap_default_key_id = (uint8_t)atoi((char *)buff);
+    494              len = sizeof(buff);
+    495              nvdm_read_data_item("AP", "BcnDisEn", buff, &len);
+    496              config->ap_beacon_disable = (uint8_t)atoi((char *)buff);
+    497          
+    498              // scan channel table and regulatory table
+    499              len = sizeof(buff);
+    500              nvdm_read_data_item("common", "BGChannelTable", buff, &len);
+    501              config->bg_band_entry_num = wifi_conf_get_ch_table_from_str(config->bg_band_triple, 10, (char *)buff, os_strlen((char *)buff));
+    502          
+    503              len = sizeof(buff);
+    504              nvdm_read_data_item("common", "AChannelTable", buff, &len);
+    505              config->a_band_entry_num = wifi_conf_get_ch_table_from_str(config->a_band_triple, 10, (char *)buff, os_strlen((char *)buff));
+    506          
+    507              config->forwarding_zero_copy = 1;
+    508          
+    509          #ifdef MTK_WIFI_CONFIGURE_FREE_ENABLE
+    510              /* These are for MBSS support, but not exist trunk (it's customer feature), however,
+    511                      we have to add them here due to N9 FW has them (only one version of N9 FW)
+    512                   */
+    513              // TODO: How to solve it in the future...Michael
+    514              config->mbss_enable = 0;
+    515              os_memset(config->mbss_ssid1, 0x0, sizeof(config->mbss_ssid1));;
+    516              config->mbss_ssid_len1 = 0;
+    517              os_memset(config->mbss_ssid2, 0x0, sizeof(config->mbss_ssid2));;
+    518              config->mbss_ssid_len2 = 0;
+    519          
+    520              len = sizeof(buff);
+    521              nvdm_read_data_item("common", "ConfigFree_Ready", buff, &len);
+    522              config->config_free_ready = (uint8_t)atoi((char *)buff);
+    523              len = sizeof(buff);
+    524              nvdm_read_data_item("common", "ConfigFree_Enable", buff, &len);
+    525              config->config_free_enable = (uint8_t)atoi((char *)buff);
+    526          #endif /* MTK_WIFI_CONFIGURE_FREE_ENABLE */
+    527              len = sizeof(buff);
+    528              nvdm_read_data_item("common", "StaFastLink", buff, &len);
+    529              config->sta_fast_link = (uint8_t)atoi((char *)buff);
+    530          
+    531          #ifdef MTK_WIFI_PRIVILEGE_ENABLE
+    532              len = sizeof(buff);
+    533              nvdm_read_data_item("common", "WiFiPrivilegeEnable", buff, &len);
+    534              config->wifi_privilege_enable = (uint8_t)atoi((char *)buff);
+    535          #else
+    536              config->wifi_privilege_enable = 0;
+    537          #endif
+    538          }
+    539          #endif
+    540          static void wifi_apply_user_config(sys_cfg_t *syscfg, wifi_config_t *config, wifi_config_ext_t *config_ext)
+    541          {
+    542              syscfg->opmode = config->opmode;
+    543              if (config_ext->country_code_present) {
+    544                  os_memcpy(syscfg->country_code, config_ext->country_code, 4);
+    545                  wifi_country_code_region_mapping(syscfg->country_code, &(syscfg->country_region), &(syscfg->country_region_a_band));
+    546              }
+    547              if (WIFI_MODE_STA_ONLY == syscfg->opmode) {
+    548                  wifi_apply_sta_config(syscfg, config, config_ext);
+    549              } else if (WIFI_MODE_AP_ONLY == syscfg->opmode) {
+    550                  wifi_apply_ap_config(syscfg, config, config_ext);
+    551              } else if (WIFI_MODE_REPEATER == syscfg->opmode) {
+    552                  wifi_apply_repeater_config(syscfg, config, config_ext);
+    553              } else if (WIFI_MODE_P2P_ONLY == syscfg->opmode) {
+    554                  wifi_apply_p2p_config(syscfg, config, config_ext);
+    555              } else {
+    556                  /* no configuration is required for Monitor Mode */
+    557              }
+    558          }
+    559          
+    560          /**
+    561          * @brief build the whole configurations
+    562          */
+    563          static int32_t wifi_build_whole_config(sys_cfg_t *syscfg, wifi_config_t *config, wifi_config_ext_t *config_ext)
+    564          {
+    565          #ifdef MTK_WIFI_PROFILE_ENABLE
+    566              wifi_get_config_from_nvdm(syscfg);
+    567          #else
+    568              if (0 != wifi_get_default_config(syscfg)) {
+    569                  return -1;
+    570              }
+    571          #endif
+    572              wifi_apply_user_config(syscfg, config, config_ext);
+    573              return 0;
+    574          }
+    575          
+    576          void wifi_init(wifi_config_t *config, wifi_config_ext_t *config_ext)
+    577          {
+    578              sys_cfg_t syscfg = {0};
+    579          
+    580              if (NULL == config) {
+    581                  LOG_E(wifi, "config is null.");
+    582                  return;
+    583              }
+    584          
+    585              if (0 != wifi_build_whole_config(&syscfg, config, config_ext)) {
+    586                  LOG_E(wifi, "wifi_build_whole_config fail. initial aborted!");
+    587                  return;
+    588              }
+    589          
+    590              wifi_channel_list_init(&syscfg);
+    591              connsys_init(&syscfg);
+    592              wifi_scan_init(config);
+    593              inband_queue_init();
+    594              NetTaskInit();
+    595          
+    596             /*Fix if SSID length = 0, switch to repeater mode from station mode, N9 will assert*/
+    597              if(config->ap_config.ssid_length == 0) {
+    598                  config->ap_config.ssid_length = syscfg.ap_ssid_len;
+    599                  os_memcpy(config->ap_config.ssid, syscfg.ap_ssid, WIFI_MAX_LENGTH_OF_SSID);
+    600              } else if(config->sta_config.ssid_length == 0) {
+    601                  config->sta_config.ssid_length = syscfg.sta_ssid_len;
+    602                  os_memcpy(config->sta_config.ssid, syscfg.sta_ssid, WIFI_MAX_LENGTH_OF_SSID);
+    603              }
+    604          #ifdef MTK_MINISUPP_ENABLE
+    605              wpa_supplicant_task_init(config, config_ext);
+    606          #endif
+    607          }
+    608          
+    609          
+    610          static bool wifi_security_valid = false;
+    611          bool wifi_get_security_valid(void)
+    612          {
+    613              return wifi_security_valid;
+    614          }
+    615          
+    616          void wifi_set_security_valid(bool value)
+    617          {
+    618              wifi_security_valid = value;
+    619              return;
+    620          }
+    621          
+    622          /***************** Just for internal use **********************/
+    623          #include "hal_sleep_manager.h"
+    624          #include "hal_sleep_driver.h"
+    625          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    626          uint8_t locks[MAX_SLEEP_HANDLE];
+    627          #endif
+    628          uint8_t wifi_set_sleep_handle(const char *handle_name)
+    629          {
+    630          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    631              return hal_sleep_manager_set_sleep_handle(handle_name);
+    632          #else
+    633              return 0xff;
+    634          #endif
+    635          }
+    636          
+    637          int32_t wifi_lock_sleep(uint8_t handle_index)
+    638          {
+    639          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    640              locks[handle_index] = 1;
+    641              return hal_sleep_manager_lock_sleep(handle_index);
+    642          #else
+    643              return -1;
+    644          #endif
+    645          }
+    646          
+    647          int32_t wifi_unlock_sleep(uint8_t handle_index)
+    648          {
+    649          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    650              locks[handle_index] = 0;
+    651              return hal_sleep_manager_unlock_sleep(handle_index);
+    652          #else
+    653              return -1;
+    654          #endif
+    655          }
+    656          
+    657          int32_t wifi_unlock_sleep_all(void)
+    658          {
+    659          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    660              int i = 0;
+    661              for (i = 0; i < MAX_SLEEP_HANDLE; i++) {
+    662                  if (locks[i] == 1) {
+    663                      hal_sleep_manager_unlock_sleep(i);
+    664                  }
+    665              }
+    666              return 0;
+    667          #else
+    668              return -1;
+    669          #endif
+    670          }
+    671          
+    672          int32_t wifi_sleep_manager_get_lock_status(void)
+    673          {
+    674          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    675              return hal_sleep_manager_get_lock_status();
+    676          #else
+    677              return -1;
+    678          #endif
+    679          }
+    680          
+    681          int32_t wifi_release_sleep_handle(uint8_t handle)
+    682          {
+    683          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    684              return hal_sleep_manager_release_sleep_handle(handle);
+    685          #else
+    686              return -1;
+    687          #endif
+    688          }
+    689          /***************** Just for internal use **********************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   wifi_apply_ap_config
+        24   -> os_memcpy
+         0   -> wifi_save_ap_ext_config
+       0   wifi_apply_p2p_config
+      16   wifi_apply_repeater_config
+         0   -> wifi_apply_ap_config
+        16   -> wifi_apply_sta_config
+      16   wifi_apply_sta_config
+        16   -> os_memcpy
+         0   -> wifi_save_sta_ext_config
+      16   wifi_apply_user_config
+        16   -> os_memcpy
+         0   -> wifi_apply_ap_config
+         0   -> wifi_apply_p2p_config
+         0   -> wifi_apply_repeater_config
+         0   -> wifi_apply_sta_config
+        16   -> wifi_country_code_region_mapping
+      16   wifi_build_whole_config
+        16   -> wifi_apply_user_config
+        16   -> wifi_get_config_from_nvdm
+       0   wifi_change_wireless_mode_5g_to_2g
+      32   wifi_config_get_mac_address
+        32   -- Indirect call
+        32   -> wifi_get_mac_addr_from_efuse
+        32   -> wifi_get_mac_addr_from_nvdm
+        32   -> wifi_is_port_valid
+     296   wifi_get_config_from_nvdm
+       296   -> atoi
+       296   -> nvdm_read_data_item
+       296   -> os_memcpy
+       296   -> os_strlen
+       296   -> wifi_5g_support
+       296   -> wifi_change_wireless_mode_5g_to_2g
+       296   -> wifi_conf_get_ch_table_from_str
+       296   -> wifi_conf_get_ip_from_str
+       296   -> wifi_config_get_mac_address
+       296   -> wifi_country_code_region_mapping
+      40   wifi_get_mac_addr_from_efuse
+        40   -- Indirect call
+        40   -> __aeabi_memclr4
+        40   -> hal_efuse_read
+        40   -> os_memcpy
+        40   -> wifi_is_mac_address_valid
+     272   wifi_get_mac_addr_from_nvdm
+       272   -> __aeabi_memclr4
+       272   -> nvdm_read_data_item
+       272   -> wifi_conf_get_mac_from_str
+     264   wifi_get_ps_mode
+       264   -> atoi
+       264   -> nvdm_read_data_item
+       0   wifi_get_security_valid
+     512   wifi_init
+       512   -- Indirect call
+       512   -> NetTaskInit
+       512   -> __aeabi_memclr4
+       512   -> connsys_init
+       512   -> inband_queue_init
+       512   -> os_memcpy
+       512   -> wifi_build_whole_config
+       512   -> wifi_channel_list_init
+       512   -> wifi_scan_init
+       512   -> wpa_supplicant_task_init
+       0   wifi_is_mac_address_valid
+       0   wifi_lock_sleep
+         0   -> hal_sleep_manager_lock_sleep
+       0   wifi_release_sleep_handle
+         0   -> hal_sleep_manager_release_sleep_handle
+       0   wifi_save_ap_ext_config
+       0   wifi_save_sta_ext_config
+       0   wifi_set_security_valid
+       0   wifi_set_sleep_handle
+         0   -> hal_sleep_manager_set_sleep_handle
+       0   wifi_sleep_manager_get_lock_status
+         0   -> hal_sleep_manager_get_lock_status
+       0   wifi_unlock_sleep
+         0   -> hal_sleep_manager_unlock_sleep
+       8   wifi_unlock_sleep_all
+         8   -> hal_sleep_manager_unlock_sleep
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable66
+       4  ??DataTable66_1
+       4  ??DataTable67
+       4  ??DataTable73
+       4  ??DataTable73_1
+       4  ??DataTable73_2
+       4  ??DataTable73_3
+       8  ?_0
+      16  ?_1
+      36  ?_10
+       8  ?_11
+       8  ?_12
+       8  ?_13
+      16  ?_14
+      20  ?_15
+      12  ?_16
+      12  ?_17
+      16  ?_18
+      16  ?_19
+      28  ?_2
+      12  ?_20
+       8  ?_21
+      16  ?_22
+       8  ?_23
+       8  ?_24
+       8  ?_25
+       8  ?_26
+       4  ?_27
+      16  ?_28
+      12  ?_29
+     256  ?_3
+       8  ?_30
+       8  ?_31
+      16  ?_32
+       8  ?_33
+      12  ?_34
+      12  ?_35
+      12  ?_36
+      16  ?_37
+      12  ?_38
+      12  ?_39
+       4  ?_4
+      12  ?_40
+       8  ?_41
+       4  ?_42
+      12  ?_43
+      12  ?_44
+      16  ?_45
+      16  ?_46
+      16  ?_47
+      20  ?_48
+      12  ?_49
+       4  ?_5
+      12  ?_50
+      20  ?_51
+      12  ?_52
+      16  ?_53
+      16  ?_54
+      12  ?_55
+      20  ?_56
+     492  ?_57
+      16  ?_58
+      48  ?_59
+       8  ?_6
+      20  ?_7
+      20  ?_8
+      36  ?_9
+      32  locks
+      16  log_control_block_wifi
+      96  wifi_apply_ap_config
+       2  wifi_apply_p2p_config
+      24  wifi_apply_repeater_config
+      60  wifi_apply_sta_config
+     120  wifi_apply_user_config
+      26  wifi_build_whole_config
+      50  wifi_change_wireless_mode_5g_to_2g
+     164  wifi_config_get_mac_address
+    1986  wifi_get_config_from_nvdm
+     120  wifi_get_mac_addr_from_efuse
+      70  wifi_get_mac_addr_from_nvdm
+      36  wifi_get_ps_mode
+       6  wifi_get_security_valid
+     180  wifi_init
+      28  wifi_is_mac_address_valid
+      10  wifi_lock_sleep
+       4  wifi_release_sleep_handle
+      72  wifi_save_ap_ext_config
+      86  wifi_save_sta_ext_config
+       1  wifi_security_valid
+       6  wifi_set_security_valid
+       4  wifi_set_sleep_handle
+       4  wifi_sleep_manager_get_lock_status
+      10  wifi_unlock_sleep
+      32  wifi_unlock_sleep_all
+      72  -- Other
+
+ 
+    33 bytes in section .bss
+    16 bytes in section .data
+   788 bytes in section .rodata
+ 4 068 bytes in section .text
+ 
+ 4 068 bytes of CODE  memory
+   788 bytes of CONST memory
+    49 bytes of DATA  memory
+
+Errors: none
+Warnings: none

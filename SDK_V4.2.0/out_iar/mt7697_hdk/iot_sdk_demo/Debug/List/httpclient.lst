@@ -1,0 +1,1674 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.80.1.11864/W32 for ARM       25/Jan/2017  17:35:09
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\httpclient\src\httpclient.c
+#    Command line =  
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\middleware\third_party\httpclient\src\httpclient.c" -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_WIFI_TGN_VERIFY_ENABLE -D MTK_SMTCN_ENABLE -D
+#        MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D SUPPORT_MBEDTLS -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-basic.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D MTK_MCS_ENABLE -D MTK_BLE_GPIO_SERVICE -D
+#        __BT_DEBUG__ -lcN "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List" -lA
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List"
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj" --no_unroll
+#        --no_inline --no_tbaa --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 7.5\arm\INC\c\DLib_Config_Full.h"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\inc\" -I
+#        "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\service\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\CMSIS\Include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\dhcpd\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\wifi\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk_demo\src\ut_app\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\"
+#        -I "C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\project\mt7697_hdk\apps\iot_sdk_demo\EWARM\..\..\..\..\..\middleware\third_party\httpclient\inc\"
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CMSIS\Include\"
+#    Locale       =  Chinese (Simplified)_CHN.936
+#    List file    =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\List\httpclient.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK
+#        IOT\SDK_V4.2.0\out_iar\mt7697_hdk\iot_sdk_demo\Debug\Obj\httpclient.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK IOT\SDK_V4.2.0\middleware\third_party\httpclient\src\httpclient.c
+      1          /* Copyright (C) 2012 mbed.org, MIT License
+      2           *
+      3           * Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+      4           * and associated documentation files (the "Software"), to deal in the Software without restriction,
+      5           * including without limitation the rights to use, copy, modify, merge, publish, distribute,
+      6           * sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+      7           * furnished to do so, subject to the following conditions:
+      8           *
+      9           * The above copyright notice and this permission notice shall be included in all copies or
+     10           * substantial portions of the Software.
+     11           *
+     12           * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+     13           * BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+     14           * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+     15           * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+     16           * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+     17           */
+     18          
+     19          #include "httpclient.h"
+     20          #include "lwip/sockets.h"
+     21          #include "stdio.h"
+     22          #include "lwip/netdb.h"
+     23          #include "lwip/tcp.h"
+     24          #include "lwip/err.h"
+     25          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+     26          #include "mbedtls/debug.h"
+     27          #endif
+     28          
+     29          #if HTTPCLIENT_DEBUG
+     30          log_create_module(httpclient, PRINT_LEVEL_INFO);
+     31          #define ERR(fmt,arg...)   LOG_E(httpclient, "[HTTPClient]: "fmt,##arg)
+     32          #define WARN(fmt,arg...)   LOG_W(httpclient, "[HTTPClient]: "fmt,##arg)
+     33          #define DBG(fmt,arg...)   LOG_I(httpclient,"[HTTPClient]: "fmt,##arg)
+     34          #else
+     35          #define DBG(x, ...)
+     36          #define WARN(x, ...)
+     37          #define ERR(x, ...)
+     38          #endif
+     39          
+     40          #define MIN(x,y) (((x)<(y))?(x):(y))
+     41          #define MAX(x,y) (((x)>(y))?(x):(y))
+     42          
+     43          #define HTTPCLIENT_AUTHB_SIZE     128
+     44          
+     45          #define HTTPCLIENT_CHUNK_SIZE     512
+     46          #define HTTPCLIENT_SEND_BUF_SIZE  512
+     47          
+     48          #define HTTPCLIENT_MAX_HOST_LEN   64
+     49          #define HTTPCLIENT_MAX_URL_LEN    256
+     50          
+     51          #if defined(MBEDTLS_DEBUG_C)
+     52          #define DEBUG_LEVEL 2
+     53          #endif
+     54          
+     55          // static int httpclient_parse_host(char *url, char *host, size_t maxhost_len);
+     56          static int httpclient_parse_url(const char *url, char *scheme, size_t max_scheme_len, char *host, size_t maxhost_len, int *port, char *path, size_t max_path_len);
+     57          static int httpclient_tcp_send_all(int sock_fd, char *data, int length);
+     58          static int httpclient_conn(httpclient_t *client, char *host);
+     59          static int httpclient_recv(httpclient_t *client, char *buf, int min_len, int max_len, int *p_read_len);
+     60          static int httpclient_retrieve_content(httpclient_t *client, char *data, int len, httpclient_data_t *client_data);
+     61          static int httpclient_response_parse(httpclient_t *client, char *data, int len, httpclient_data_t *client_data);
+     62          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+     63          static int httpclient_ssl_conn(httpclient_t *client, char *host);
+     64          static int httpclient_ssl_send_all(mbedtls_ssl_context *ssl, const char *data, size_t length);
+     65          static int httpclient_ssl_nonblock_recv(void *ctx, unsigned char *buf, size_t len);
+     66          static int httpclient_ssl_close(httpclient_t *client);
+     67          #endif
+     68          
+     69          static void httpclient_base64enc(char *out, const char *in)
+     70          {
+     71              const char code[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=" ;
+     72              int i = 0, x = 0, l = 0;
+     73          
+     74              for (; *in; in++) {
+     75                  x = x << 8 | *in;
+     76                  for (l += 8; l >= 6; l -= 6) {
+     77                      out[i++] = code[(x >> (l - 6)) & 0x3f];
+     78                  }
+     79              }
+     80              if (l > 0) {
+     81                  x <<= 6 - l;
+     82                  out[i++] = code[x & 0x3f];
+     83              }
+     84              for (; i % 4;) {
+     85                  out[i++] = '=';
+     86              }
+     87              out[i] = '\0' ;
+     88          }
+     89          
+     90          int httpclient_conn(httpclient_t *client, char *host)
+     91          {
+     92              struct addrinfo hints, *addr_list, *cur;
+     93              int ret = 0;
+     94              char port[10] = {0};
+     95              
+     96              memset( &hints, 0, sizeof( hints ) );
+     97              hints.ai_family = AF_UNSPEC;
+     98              hints.ai_socktype = SOCK_STREAM;
+     99              hints.ai_protocol = IPPROTO_TCP;
+    100          
+    101              snprintf(port, sizeof(port), "%d", client->remote_port) ;
+    102              if ( getaddrinfo( host, port , &hints, &addr_list ) != 0 ) {
+    103                  DBG("getaddrinfo != 0, return HTTPCLIENT_UNRESOLVED_DNS");
+    104                  return HTTPCLIENT_UNRESOLVED_DNS;
+    105              }
+    106          
+    107              /* Try the sockaddrs until a connection succeeds */
+    108              ret = HTTPCLIENT_UNRESOLVED_DNS;
+    109              for ( cur = addr_list; cur != NULL; cur = cur->ai_next ) {
+    110                  client->socket = (int) socket( cur->ai_family, cur->ai_socktype,
+    111                                                  cur->ai_protocol );
+    112                  if ( client->socket < 0 ) {
+    113                      ret = HTTPCLIENT_ERROR_CONN;
+    114                      continue;
+    115                  }
+    116          
+    117                  if ( connect( client->socket, cur->ai_addr, (int)cur->ai_addrlen ) == 0 ) {
+    118                      ret = 0;
+    119                      break;
+    120                  }
+    121          
+    122                  close( client->socket );
+    123                  ret = HTTPCLIENT_ERROR_CONN;
+    124              }
+    125          
+    126              freeaddrinfo( addr_list );
+    127          
+    128              return ret;
+    129          }
+    130          
+    131          
+    132          int httpclient_parse_url(const char *url, char *scheme, size_t max_scheme_len, char *host, size_t maxhost_len, int *port, char *path, size_t max_path_len)
+    133          {
+    134              char *scheme_ptr = (char *) url;
+    135              char *host_ptr = (char *) strstr(url, "://");
+    136              size_t host_len = 0;
+    137              size_t path_len;
+    138              char *port_ptr;
+    139              char *path_ptr;
+    140              char *fragment_ptr;
+    141          
+    142              if (host_ptr == NULL) {
+    143                  WARN("Could not find host");
+    144                  return HTTPCLIENT_ERROR_PARSE; /* URL is invalid */
+    145              }
+    146          
+    147              if ( max_scheme_len < host_ptr - scheme_ptr + 1 ) { /* including NULL-terminating char */
+    148                  WARN("Scheme str is too small (%d >= %d)", max_scheme_len, host_ptr - scheme_ptr + 1);
+    149                  return HTTPCLIENT_ERROR_PARSE;
+    150              }
+    151              memcpy(scheme, scheme_ptr, host_ptr - scheme_ptr);
+    152              scheme[host_ptr - scheme_ptr] = '\0';
+    153          
+    154              host_ptr += 3;
+    155          
+    156              port_ptr = strchr(host_ptr, ':');
+    157              if ( port_ptr != NULL ) {
+    158                  uint16_t tport;
+    159                  host_len = port_ptr - host_ptr;
+    160                  port_ptr++;
+    161                  if ( sscanf(port_ptr, "%hu", &tport) != 1) {
+    162                      WARN("Could not find port");
+    163                      return HTTPCLIENT_ERROR_PARSE;
+    164                  }
+    165                  *port = (int)tport;
+    166              } else {
+    167                  *port = 0;
+    168              }
+    169              path_ptr = strchr(host_ptr, '/');
+    170              if ( host_len == 0 ) {
+    171                  host_len = path_ptr - host_ptr;
+    172              }
+    173          
+    174              if ( maxhost_len < host_len + 1 ) { /* including NULL-terminating char */
+    175                  WARN("Host str is too small (%d >= %d)", maxhost_len, host_len + 1);
+    176                  return HTTPCLIENT_ERROR_PARSE;
+    177              }
+    178              memcpy(host, host_ptr, host_len);
+    179              host[host_len] = '\0';
+    180          
+    181              fragment_ptr = strchr(host_ptr, '#');
+    182              if (fragment_ptr != NULL) {
+    183                  path_len = fragment_ptr - path_ptr;
+    184              } else {
+    185                  path_len = strlen(path_ptr);
+    186              }
+    187          
+    188              if ( max_path_len < path_len + 1 ) { /* including NULL-terminating char */
+    189                  WARN("Path str is too small (%d >= %d)", max_path_len, path_len + 1);
+    190                  return HTTPCLIENT_ERROR_PARSE;
+    191              }
+    192              memcpy(path, path_ptr, path_len);
+    193              path[path_len] = '\0';
+    194          
+    195              return HTTPCLIENT_OK;
+    196          }
+    197          
+    198          #if 0
+    199          int httpclient_parse_host(char *url, char *host, size_t maxhost_len)
+    200          {
+    201              char *host_ptr = (char *) strstr(url, "://");
+    202              size_t host_len = 0;
+    203              char *port_ptr;
+    204              char *path_ptr;
+    205          
+    206              if (host_ptr == NULL) {
+    207                  WARN("Could not find host");
+    208                  return HTTPCLIENT_ERROR_PARSE; /* URL is invalid */
+    209              }
+    210              host_ptr += 3;
+    211          
+    212              port_ptr = strchr(host_ptr, ':');
+    213              if ( port_ptr != NULL ) {
+    214                  uint16_t tport;
+    215                  host_len = port_ptr - host_ptr;
+    216                  port_ptr++;
+    217                  if ( sscanf(port_ptr, "%hu", &tport) != 1) {
+    218                      WARN("Could not find port");
+    219                      return HTTPCLIENT_ERROR_PARSE;
+    220                  }
+    221              }
+    222          
+    223              path_ptr = strchr(host_ptr, '/');
+    224              if ( host_len == 0 ) {
+    225                  host_len = path_ptr - host_ptr;
+    226              }
+    227          
+    228              if ( maxhost_len < host_len + 1 ) { /* including NULL-terminating char */
+    229                  WARN("Host str is too small (%d >= %d)", maxhost_len, host_len + 1);
+    230                  return HTTPCLIENT_ERROR_PARSE;
+    231              }
+    232              memcpy(host, host_ptr, host_len);
+    233              host[host_len] = '\0';
+    234          
+    235              return HTTPCLIENT_OK;
+    236          }
+    237          #endif
+    238          
+    239          int httpclient_get_info(httpclient_t *client, char *send_buf, int *send_idx, char *buf, size_t len)   /* 0 on success, err code on failure */
+    240          {
+    241              int ret ;
+    242              int cp_len ;
+    243              int idx = *send_idx;
+    244          
+    245              if (len == 0) {
+    246                  len = strlen(buf);
+    247              }
+    248          
+    249              do {
+    250                  if ((HTTPCLIENT_SEND_BUF_SIZE - idx) >= len) {
+    251                      cp_len = len ;
+    252                  } else {
+    253                      cp_len = HTTPCLIENT_SEND_BUF_SIZE - idx ;
+    254                  }
+    255          
+    256                  memcpy(send_buf + idx, buf, cp_len) ;
+    257                  idx += cp_len ;
+    258                  len -= cp_len ;
+    259          
+    260                  if (idx == HTTPCLIENT_SEND_BUF_SIZE) {
+    261                      if (client->is_http == false) {
+    262                          ERR("send buffer overflow");
+    263                          return HTTPCLIENT_ERROR ;
+    264                      }
+    265                      ret = httpclient_tcp_send_all(client->socket, send_buf, HTTPCLIENT_SEND_BUF_SIZE) ;
+    266                      if (ret) {
+    267                          return (ret) ;
+    268                      }
+    269                  }
+    270              } while (len) ;
+    271          
+    272              *send_idx = idx;
+    273              return HTTPCLIENT_OK ;
+    274          }
+    275          
+    276          void httpclient_set_custom_header(httpclient_t *client, char *header)
+    277          {
+    278              client->header = header ;
+    279          }
+    280          
+    281          int httpclient_basic_auth(httpclient_t *client, char *user, char *password)
+    282          {
+    283              if ((strlen(user) + strlen(password)) >= HTTPCLIENT_AUTHB_SIZE) {
+    284                  return HTTPCLIENT_ERROR ;
+    285              }
+    286              client->auth_user = user;
+    287              client->auth_password = password;
+    288              return HTTPCLIENT_OK ;
+    289          }
+    290          
+    291          int httpclient_send_auth(httpclient_t *client, char *send_buf, int *send_idx)
+    292          {
+    293              char b_auth[(int)((HTTPCLIENT_AUTHB_SIZE + 3) * 4 / 3 + 1)] ;
+    294              char base64buff[HTTPCLIENT_AUTHB_SIZE + 3] ;
+    295          
+    296              httpclient_get_info(client, send_buf, send_idx, "Authorization: Basic ", 0) ;
+    297              sprintf(base64buff, "%s:%s", client->auth_user, client->auth_password) ;
+    298              DBG("bAuth: %s", base64buff) ;
+    299              httpclient_base64enc(b_auth, base64buff) ;
+    300              b_auth[strlen(b_auth) + 1] = '\0' ;
+    301              b_auth[strlen(b_auth)] = '\n' ;
+    302              DBG("b_auth:%s", b_auth) ;
+    303              httpclient_get_info(client, send_buf, send_idx, b_auth, 0) ;
+    304              return HTTPCLIENT_OK ;
+    305          }
+    306          
+    307          
+    308          int httpclient_tcp_send_all(int sock_fd, char *data, int length)
+    309          {
+    310              int written_len = 0;
+    311          
+    312              while (written_len < length) {
+    313                  int ret = send(sock_fd, data + written_len, length - written_len, 0);
+    314                  if (ret > 0) {
+    315                      written_len += ret;
+    316                      continue;
+    317                  } else if (ret == 0) {
+    318                      return written_len;
+    319                  } else {
+    320                      return -1; /* Connnection error */
+    321                  }
+    322              }
+    323          
+    324              return written_len;
+    325          }
+    326          
+    327          int httpclient_send_header(httpclient_t *client, char *url, int method, httpclient_data_t *client_data)
+    328          {
+    329              char scheme[8] = {0};
+    330              char host[HTTPCLIENT_MAX_HOST_LEN] = {0};
+    331              char path[HTTPCLIENT_MAX_URL_LEN] = {0};
+    332              int len;
+    333              char send_buf[HTTPCLIENT_SEND_BUF_SIZE] = {0};
+    334              char buf[HTTPCLIENT_SEND_BUF_SIZE] = {0};
+    335              char *meth = (method == HTTPCLIENT_GET) ? "GET" : (method == HTTPCLIENT_POST) ? "POST" : (method == HTTPCLIENT_PUT) ? "PUT" : (method == HTTPCLIENT_DELETE) ? "DELETE" : (method == HTTPCLIENT_HEAD) ? "HEAD" : "";
+    336              int ret, port;
+    337          
+    338              /* First we need to parse the url (http[s]://host[:port][/[path]]) */
+    339              int res = httpclient_parse_url(url, scheme, sizeof(scheme), host, sizeof(host), &(port), path, sizeof(path));
+    340              if (res != HTTPCLIENT_OK) {
+    341                  ERR("httpclient_parse_url returned %d", res);
+    342                  return res;
+    343              }
+    344          
+    345              /* Send request */
+    346              memset(send_buf, 0, HTTPCLIENT_SEND_BUF_SIZE);
+    347              len = 0 ; /* Reset send buffer */
+    348          
+    349              snprintf(buf, sizeof(buf), "%s %s HTTP/1.1\r\nHost: %s\r\n", meth, path, host); /* Write request */
+    350              ret = httpclient_get_info(client, send_buf, &len, buf, strlen(buf));
+    351              if (ret) {
+    352                  ERR("Could not write request");
+    353                  return HTTPCLIENT_ERROR_CONN;
+    354              }
+    355          
+    356              /* Send all headers */
+    357              if (client->auth_user) {
+    358                  httpclient_send_auth(client, send_buf, &len) ; /* send out Basic Auth header */
+    359              }
+    360          
+    361              /* Add user header information */
+    362              if (client->header) {
+    363                  httpclient_get_info(client, send_buf, &len, (char *)client->header, strlen(client->header));
+    364              }
+    365          
+    366              if ( client_data->post_buf != NULL ) {
+    367                  snprintf(buf, sizeof(buf), "Content-Length: %d\r\n", client_data->post_buf_len);
+    368                  httpclient_get_info(client, send_buf, &len, buf, strlen(buf));
+    369          
+    370                  if (client_data->post_content_type != NULL)  {
+    371                      snprintf(buf, sizeof(buf), "Content-Type: %s\r\n", client_data->post_content_type);
+    372                      httpclient_get_info(client, send_buf, &len, buf, strlen(buf));
+    373                  }
+    374              }
+    375          
+    376              /* Close headers */
+    377              httpclient_get_info(client, send_buf, &len, "\r\n", 0);
+    378          
+    379              DBG("Trying to write %d bytes http header:%s", len, send_buf);
+    380          
+    381          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+    382              if (client->is_http == false) {
+    383                  DBG("Enter PolarSSL_write");        
+    384                  httpclient_ssl_t *ssl = (httpclient_ssl_t *)client->ssl;
+    385                  if (httpclient_ssl_send_all(&ssl->ssl_ctx, send_buf, len) != len) {
+    386                      ERR("SSL_write failed");
+    387                      return HTTPCLIENT_ERROR;
+    388                  }
+    389                  return HTTPCLIENT_OK;
+    390              }
+    391          #endif
+    392          
+    393              ret = httpclient_tcp_send_all(client->socket, send_buf, len);
+    394              if (ret > 0) {
+    395                  DBG("Written %d bytes, socket = %d", ret, client->socket);
+    396              } else if ( ret == 0 ) {
+    397                  WARN("ret == 0,Connection was closed by server");
+    398                  return HTTPCLIENT_CLOSED; /* Connection was closed by server */
+    399              } else {
+    400                  ERR("Connection error (send returned %d)", ret);
+    401                  return HTTPCLIENT_ERROR_CONN;
+    402              }
+    403          
+    404              return HTTPCLIENT_OK;
+    405          }
+    406          
+    407          int httpclient_send_userdata(httpclient_t *client, httpclient_data_t *client_data)
+    408          {
+    409              int ret = 0;
+    410          
+    411              if (client_data->post_buf && client_data->post_buf_len) {
+    412                  DBG("client_data->post_buf:%s", client_data->post_buf);
+    413          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+    414                  if (client->is_http == false) {
+    415                      httpclient_ssl_t *ssl = (httpclient_ssl_t *)client->ssl;
+    416                      if (httpclient_ssl_send_all(&ssl->ssl_ctx, client_data->post_buf, client_data->post_buf_len) != client_data->post_buf_len) {
+    417                          ERR("SSL_write failed");
+    418                          return HTTPCLIENT_ERROR;
+    419                      }
+    420                  } else
+    421          #endif
+    422                  {
+    423                      ret = httpclient_tcp_send_all(client->socket, client_data->post_buf, client_data->post_buf_len);
+    424                      if (ret > 0) {
+    425                          DBG("Written %d bytes", ret);
+    426                      } else if ( ret == 0 ) {
+    427                          WARN("ret == 0,Connection was closed by server");
+    428                          return HTTPCLIENT_CLOSED; /* Connection was closed by server */
+    429                      } else {
+    430                          ERR("Connection error (send returned %d)", ret);
+    431                          return HTTPCLIENT_ERROR_CONN;
+    432                      }
+    433                  }
+    434              }
+    435          
+    436              return HTTPCLIENT_OK;
+    437          }
+    438          
+    439          int httpclient_recv(httpclient_t *client, char *buf, int min_len, int max_len, int *p_read_len)   /* 0 on success, err code on failure */
+    440          {
+    441              int ret = 0;
+    442              size_t readLen = 0;
+    443          
+    444              while (readLen < max_len) {
+    445                  buf[readLen] = '\0';
+    446                  if (client->is_http) {
+    447                  #if 1
+    448                      if (readLen < min_len) {
+    449                          ret = recv(client->socket, buf + readLen, min_len - readLen, 0);
+    450                          DBG("recv [blocking] return:%d", ret);
+    451                      } else {
+    452                          ret = recv(client->socket, buf + readLen, max_len - readLen, MSG_DONTWAIT);
+    453                          DBG("recv [not blocking] return:%d", ret);
+    454                          if (ret == -1 && errno == EWOULDBLOCK) {
+    455                              DBG("recv [not blocking] EWOULDBLOCK");
+    456                              break;
+    457                          }
+    458                      }
+    459                  #else
+    460                      ret = recv(client->socket, buf + readLen, max_len - readLen, 0);
+    461                  #endif
+    462                  }
+    463          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+    464                  else {            
+    465                      httpclient_ssl_t *ssl = (httpclient_ssl_t *)client->ssl;
+    466                  #if 1
+    467                      if (readLen < min_len) {                
+    468                          mbedtls_ssl_set_bio(&ssl->ssl_ctx, &ssl->net_ctx, mbedtls_net_send, mbedtls_net_recv, NULL);
+    469                          ret = mbedtls_ssl_read(&ssl->ssl_ctx, (unsigned char *)buf + readLen, min_len - readLen);
+    470                          DBG("mbedtls_ssl_read [blocking] return:%d", ret);
+    471                      } else {
+    472                          mbedtls_ssl_set_bio(&ssl->ssl_ctx, &ssl->net_ctx, mbedtls_net_send, httpclient_ssl_nonblock_recv, NULL);
+    473                          ret = mbedtls_ssl_read(&ssl->ssl_ctx, (unsigned char *)buf + readLen, max_len - readLen);
+    474                          DBG("mbedtls_ssl_read [not blocking] return:%d", ret);
+    475                          if (ret == -1 && errno == EWOULDBLOCK) {
+    476                              DBG("mbedtls_ssl_read [not blocking] EWOULDBLOCK");
+    477                              break;
+    478                          }
+    479                      }
+    480                  #else         
+    481                      mbedtls_ssl_set_bio(&ssl->ssl_ctx, &ssl->net_ctx, mbedtls_net_send, mbedtls_net_recv, NULL);
+    482                      ret = mbedtls_ssl_read(&ssl->ssl_ctx, (unsigned char *)buf + readLen, max_len - readLen);
+    483                  #endif
+    484                  
+    485                      if (ret == MBEDTLS_ERR_SSL_PEER_CLOSE_NOTIFY) {/* read already complete(if call mbedtls_ssl_read again, it will return 0(eof)) */
+    486                          break;
+    487                      }
+    488                  }
+    489          #endif
+    490          
+    491                  if (ret > 0) {
+    492                      readLen += ret;
+    493                  } else if (ret == 0) {
+    494                      break;
+    495                  } else {
+    496                      ERR("Connection error (recv returned %d)", ret);
+    497                      *p_read_len = readLen;
+    498                      return HTTPCLIENT_ERROR_CONN;
+    499                  }
+    500              }
+    501          
+    502              DBG("Read %d bytes", readLen);
+    503              *p_read_len = readLen;
+    504              buf[readLen] = '\0';
+    505          
+    506              return HTTPCLIENT_OK;
+    507          }
+    508          
+    509          int httpclient_retrieve_content(httpclient_t *client, char *data, int len, httpclient_data_t *client_data)
+    510          {
+    511              int count = 0;
+    512              int templen = 0;
+    513              int crlf_pos;
+    514              /* Receive data */
+    515              DBG("Receiving data:%s", data);
+    516              client_data->is_more = true;
+    517          
+    518              if (client_data->response_content_len == -1 && client_data->is_chunked == false) {
+    519                  while(true)
+    520                  {
+    521                      int ret, max_len;
+    522                      if (count + len < client_data->response_buf_len - 1) {
+    523                          memcpy(client_data->response_buf + count, data, len);
+    524                          count += len;
+    525                          client_data->response_buf[count] = '\0';
+    526                      } else {
+    527                          memcpy(client_data->response_buf + count, data, client_data->response_buf_len - 1 - count);
+    528                          client_data->response_buf[client_data->response_buf_len - 1] = '\0';
+    529                          return HTTPCLIENT_RETRIEVE_MORE_DATA;
+    530                      }
+    531          
+    532                      max_len = MIN(HTTPCLIENT_CHUNK_SIZE - 1, client_data->response_buf_len - 1 - count);
+    533                      ret = httpclient_recv(client, data, 1, max_len, &len);
+    534          
+    535                      /* Receive data */
+    536                      DBG("data len: %d %d", len, count);
+    537          
+    538                      if (ret == HTTPCLIENT_ERROR_CONN) {
+    539                          DBG("ret == HTTPCLIENT_ERROR_CONN");
+    540                          return ret;
+    541                      }
+    542          
+    543                      if (len == 0) {/* read no more data */
+    544                          DBG("no more len == 0");
+    545                          client_data->is_more = false;
+    546                          return HTTPCLIENT_OK;
+    547                      }
+    548                  }
+    549              }
+    550          
+    551              while (true) {
+    552                  size_t readLen = 0;
+    553          
+    554                  if ( client_data->is_chunked && client_data->retrieve_len <= 0) {
+    555                      /* Read chunk header */
+    556                      bool foundCrlf;
+    557                      int n;
+    558                      do {               
+    559                          DBG("len: %d", len);
+    560                          foundCrlf = false;
+    561                          crlf_pos = 0;
+    562                          data[len] = 0;
+    563                          if (len >= 2) {
+    564                              for (; crlf_pos < len - 2; crlf_pos++) {
+    565                                  if ( data[crlf_pos] == '\r' && data[crlf_pos + 1] == '\n' ) {
+    566                                      foundCrlf = true;
+    567                                      break;
+    568                                  }
+    569                              }
+    570                          }
+    571                          if (!foundCrlf) { /* Try to read more */
+    572                              if ( len < HTTPCLIENT_CHUNK_SIZE ) {
+    573                                  int new_trf_len, ret;
+    574                                  ret = httpclient_recv(client, data + len, 0, HTTPCLIENT_CHUNK_SIZE - len - 1, &new_trf_len);
+    575                                  len += new_trf_len;
+    576                                  if (ret == HTTPCLIENT_ERROR_CONN) {
+    577                                      return ret;
+    578                                  } else {
+    579                                      continue;
+    580                                  }
+    581                              } else {
+    582                                  return HTTPCLIENT_ERROR;
+    583                              }
+    584                          }
+    585                      } while (!foundCrlf);
+    586                      data[crlf_pos] = '\0';
+    587                      n = sscanf(data, "%x", &readLen);/* chunk length */
+    588                      client_data->retrieve_len = readLen;
+    589                      client_data->response_content_len += client_data->retrieve_len;
+    590                      if (n != 1) {
+    591                          ERR("Could not read chunk length");
+    592                          return HTTPCLIENT_ERROR_PRTCL;
+    593                      }
+    594          
+    595                      memmove(data, &data[crlf_pos + 2], len - (crlf_pos + 2)); /* Not need to move NULL-terminating char any more */
+    596                      len -= (crlf_pos + 2);
+    597          
+    598                      if ( readLen == 0 ) {
+    599                          /* Last chunk */
+    600                          client_data->is_more = false;
+    601                          DBG("no more (last chunk)");
+    602                          break;
+    603                      }
+    604                  } else {
+    605                      readLen = client_data->retrieve_len;
+    606                  }
+    607          
+    608                  DBG("Retrieving %d bytes, len:%d", readLen, len);
+    609          
+    610                  do {            
+    611                      DBG("readLen %d, len:%d", readLen, len);
+    612                      templen = MIN(len, readLen);
+    613                      if (count + templen < client_data->response_buf_len - 1) {
+    614                          memcpy(client_data->response_buf + count, data, templen);
+    615                          count += templen;
+    616                          client_data->response_buf[count] = '\0';
+    617                          client_data->retrieve_len -= templen;
+    618                      } else {
+    619                          memcpy(client_data->response_buf + count, data, client_data->response_buf_len - 1 - count);
+    620                          client_data->response_buf[client_data->response_buf_len - 1] = '\0';
+    621                          client_data->retrieve_len -= (client_data->response_buf_len - 1 - count);
+    622                          return HTTPCLIENT_RETRIEVE_MORE_DATA;
+    623                      }
+    624          
+    625                      // if ( len > readLen ) {            
+    626                      if ( len >= readLen ) {
+    627                          DBG("memmove %d %d %d", readLen, len, client_data->retrieve_len);
+    628                          memmove(data, &data[readLen], len - readLen); /* chunk case, read between two chunks */
+    629                          len -= readLen;
+    630                          readLen = 0;
+    631                          client_data->retrieve_len = 0;
+    632                      } else {
+    633                          readLen -= len;
+    634                      }
+    635                      
+    636                      if (readLen) {
+    637                          int ret;
+    638                          // int max_len = MIN(HTTPCLIENT_CHUNK_SIZE - 1, client_data->response_buf_len - 1 - count);                
+    639                          int max_len = MIN(MIN(HTTPCLIENT_CHUNK_SIZE - 1, client_data->response_buf_len - 1 - count), readLen);
+    640                          ret = httpclient_recv(client, data, 1, max_len, &len);
+    641                          if (ret == HTTPCLIENT_ERROR_CONN) {
+    642                              return ret;
+    643                          }
+    644                      }
+    645                  } while (readLen);
+    646          
+    647                  if ( client_data->is_chunked ) {
+    648                      if (len < 2) {
+    649                          int new_trf_len, ret;
+    650                          /* Read missing chars to find end of chunk */
+    651                          ret = httpclient_recv(client, data + len, 2 - len, HTTPCLIENT_CHUNK_SIZE - len - 1, &new_trf_len);
+    652                          if (ret == HTTPCLIENT_ERROR_CONN) {
+    653                              return ret;
+    654                          }
+    655                          len += new_trf_len;
+    656                      }
+    657                      if ( (data[0] != '\r') || (data[1] != '\n') ) {
+    658                          ERR("Format error, %s", data); /* after memmove, the beginning of next chunk */
+    659                          return HTTPCLIENT_ERROR_PRTCL;
+    660                      }
+    661                      memmove(data, &data[2], len - 2); /* remove the \r\n */
+    662                      len -= 2;
+    663                  } else {
+    664                      DBG("no more(content-length)");
+    665                      client_data->is_more = false;
+    666                      break;
+    667                  }
+    668          
+    669              }
+    670          
+    671              return HTTPCLIENT_OK;
+    672          }
+    673          
+    674          int httpclient_response_parse(httpclient_t *client, char *data, int len, httpclient_data_t *client_data)
+    675          {
+    676              int crlf_pos;
+    677              int header_buf_len = client_data->header_buf_len;
+    678              char *header_buf = client_data->header_buf;
+    679          
+    680              // reset the header buffer
+    681              memset(header_buf, 0, header_buf_len);
+    682              
+    683              client_data->response_content_len = -1;
+    684          
+    685              char *crlf_ptr = strstr(data, "\r\n");
+    686              if (crlf_ptr == NULL) {
+    687                  ERR("\r\n not found");
+    688                  return HTTPCLIENT_ERROR_PRTCL;
+    689              }
+    690          
+    691              crlf_pos = crlf_ptr - data;
+    692              data[crlf_pos] = '\0';
+    693          
+    694              /* Parse HTTP response */
+    695              if ( sscanf(data, "HTTP/%*d.%*d %d %*[^\r\n]", &(client->response_code)) != 1 ) {
+    696                  /* Cannot match string, error */
+    697                  ERR("Not a correct HTTP answer : %s", data);
+    698                  return HTTPCLIENT_ERROR_PRTCL;
+    699              }
+    700          
+    701              if ( (client->response_code < 200) || (client->response_code >= 400) ) {
+    702                  /* Did not return a 2xx code; TODO fetch headers/(&data?) anyway and implement a mean of writing/reading headers */
+    703                  WARN("Response code %d", client->response_code);
+    704              }
+    705          
+    706              DBG("Reading headers%s", data);
+    707          
+    708              memmove(data, &data[crlf_pos + 2], len - (crlf_pos + 2) + 1); /* Be sure to move NULL-terminating char as well */
+    709              len -= (crlf_pos + 2);
+    710          
+    711              client_data->is_chunked = false;
+    712          
+    713              /* Now get headers */
+    714              while ( true ) {
+    715                  char *colon_ptr, *key_ptr, *value_ptr;
+    716                  int key_len, value_len;
+    717                  
+    718                  crlf_ptr = strstr(data, "\r\n");
+    719                  if (crlf_ptr == NULL) {
+    720                      if ( len < HTTPCLIENT_CHUNK_SIZE - 1 ) {
+    721                          int new_trf_len, ret;
+    722                          ret = httpclient_recv(client, data + len, 1, HTTPCLIENT_CHUNK_SIZE - len - 1, &new_trf_len);
+    723                          len += new_trf_len;
+    724                          data[len] = '\0';
+    725                          DBG("Read %d chars; In buf: [%s]", new_trf_len, data);
+    726                          if (ret == HTTPCLIENT_ERROR_CONN) {
+    727                              return ret;
+    728                          } else {
+    729                              continue;
+    730                          }
+    731                      } else {
+    732                          DBG("header len > chunksize");
+    733                          return HTTPCLIENT_ERROR;
+    734                      }
+    735                  }
+    736          
+    737                  crlf_pos = crlf_ptr - data;        
+    738                  if (crlf_pos == 0) { /* End of headers */
+    739                      memmove(data, &data[2], len - 2 + 1); /* Be sure to move NULL-terminating char as well */
+    740                      len -= 2;
+    741                      break;
+    742                  }
+    743                  
+    744                  colon_ptr = strstr(data, ": ");        
+    745                  if (colon_ptr) {             
+    746                      if (header_buf_len >= crlf_pos + 2) {
+    747                          /* copy response header to caller buffer */
+    748                          memcpy(header_buf, data, crlf_pos + 2);                                
+    749                          header_buf += crlf_pos + 2;
+    750                          header_buf_len -= crlf_pos + 2;
+    751                      }
+    752                      
+    753                      key_len = colon_ptr - data;
+    754                      value_len = crlf_ptr - colon_ptr - strlen(": ");            
+    755                      key_ptr = data;
+    756                      value_ptr = colon_ptr + strlen(": ");
+    757          
+    758                      DBG("Read header : %.*s: %.*s", key_len, key_ptr, value_len, value_ptr); 
+    759                      if (0 == strncasecmp(key_ptr, "Content-Length", key_len)) {
+    760                          sscanf(value_ptr, "%d[^\r]", &(client_data->response_content_len));                
+    761                          client_data->retrieve_len = client_data->response_content_len;
+    762                      } else if (0 == strncasecmp(key_ptr, "Transfer-Encoding", key_len)) {
+    763                          if (0 == strncasecmp(value_ptr, "Chunked", value_len)) {
+    764                              client_data->is_chunked = true;
+    765                              client_data->response_content_len = 0;
+    766                              client_data->retrieve_len = 0;
+    767                          }
+    768                      } 
+    769                     
+    770                      memmove(data, &data[crlf_pos + 2], len - (crlf_pos + 2) + 1); /* Be sure to move NULL-terminating char as well */
+    771                      len -= (crlf_pos + 2);
+    772                  } else {
+    773                      ERR("Could not parse header");
+    774                      return HTTPCLIENT_ERROR;
+    775                  }
+    776              }
+    777          
+    778              return httpclient_retrieve_content(client, data, len, client_data);
+    779          }
+    780          
+    781          
+    782          HTTPCLIENT_RESULT httpclient_connect(httpclient_t *client, char *url)
+    783          {
+    784              int ret = HTTPCLIENT_ERROR_CONN;
+    785              char host[HTTPCLIENT_MAX_HOST_LEN] = {0};
+    786              char scheme[8] = {0};
+    787              char path[HTTPCLIENT_MAX_URL_LEN] = {0};
+    788              
+    789              /* First we need to parse the url (http[s]://host[:port][/[path]]) */
+    790              int res = httpclient_parse_url(url, scheme, sizeof(scheme), host, sizeof(host), &(client->remote_port), path, sizeof(path));
+    791              if (res != HTTPCLIENT_OK) {
+    792                  ERR("httpclient_parse_url returned %d", res);
+    793                  return (HTTPCLIENT_RESULT)res;
+    794              }
+    795          
+    796              // http or https
+    797              if (strcmp(scheme, "https") == 0) 
+    798                  client->is_http = false;
+    799              else if (strcmp(scheme, "http") == 0)
+    800                  client->is_http = true;
+    801          
+    802              // default http 80 port, https 443 port
+    803              if (client->remote_port == 0)
+    804                  if (client->is_http) 
+    805                      client->remote_port = HTTP_PORT;
+    806                  else 
+    807                      client->remote_port = HTTPS_PORT;
+    808                  
+    809              DBG("http?:%d, port:%d, host:%s", client->is_http, client->remote_port, host);
+    810          
+    811              client->socket = -1;
+    812              if (client->is_http) 
+    813                  ret = httpclient_conn(client, host);
+    814          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+    815              else {
+    816                  ret = httpclient_ssl_conn(client, host);
+    817                  if (0 == ret) {            
+    818                      httpclient_ssl_t *ssl = (httpclient_ssl_t *)client->ssl;
+    819                      client->socket = ssl->net_ctx.fd;
+    820                  }
+    821              }
+    822          #endif
+    823          
+    824              DBG("httpclient_connect() result:%d, client:%p", ret, client);
+    825              return (HTTPCLIENT_RESULT)ret;
+    826          }
+    827          
+    828          HTTPCLIENT_RESULT httpclient_send_request(httpclient_t *client, char *url, int method, httpclient_data_t *client_data)
+    829          {
+    830              int ret = HTTPCLIENT_ERROR_CONN;
+    831          
+    832              if (client->socket < 0) {
+    833                  return (HTTPCLIENT_RESULT)ret;
+    834              }
+    835          
+    836              ret = httpclient_send_header(client, url, method, client_data);
+    837              if (ret != 0) {
+    838                  return (HTTPCLIENT_RESULT)ret;
+    839              }
+    840          
+    841              if (method == HTTPCLIENT_POST || method == HTTPCLIENT_PUT) {
+    842                  ret = httpclient_send_userdata(client, client_data);
+    843              }
+    844             
+    845              DBG("httpclient_send_request() result:%d, client:%p", ret, client);
+    846              return (HTTPCLIENT_RESULT)ret;
+    847          }
+    848          
+    849          HTTPCLIENT_RESULT httpclient_recv_response(httpclient_t *client, httpclient_data_t *client_data)
+    850          {
+    851              int reclen = 0;
+    852              int ret = HTTPCLIENT_ERROR_CONN;
+    853              // TODO: header format:  name + value must not bigger than HTTPCLIENT_CHUNK_SIZE.
+    854              char buf[HTTPCLIENT_CHUNK_SIZE] = {0}; // char buf[HTTPCLIENT_CHUNK_SIZE*2] = {0};
+    855          
+    856              if (client->socket < 0) {
+    857                  return (HTTPCLIENT_RESULT)ret;
+    858              }
+    859          
+    860              if (client_data->is_more) {
+    861                  client_data->response_buf[0] = '\0';
+    862                  ret = httpclient_retrieve_content(client, buf, reclen, client_data);
+    863              } else {
+    864                  ret = httpclient_recv(client, buf, 1, HTTPCLIENT_CHUNK_SIZE - 1, &reclen);
+    865                  if (ret != 0) {
+    866                      return (HTTPCLIENT_RESULT)ret;
+    867                  }
+    868          
+    869                  buf[reclen] = '\0';
+    870          
+    871                  if (reclen) {
+    872                      DBG("reclen:%d, buf:%s", reclen, buf);
+    873                      ret = httpclient_response_parse(client, buf, reclen, client_data);
+    874                  }
+    875              }
+    876          
+    877              DBG("httpclient_recv_response() result:%d, client:%p", ret, client);
+    878              return (HTTPCLIENT_RESULT)ret;
+    879          }
+    880          
+    881          void httpclient_close(httpclient_t *client)
+    882          {
+    883              if (client->is_http) {
+    884                  if (client->socket >= 0)
+    885                      close(client->socket);
+    886              }
+    887          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+    888              else 
+    889                  httpclient_ssl_close(client);
+    890          #endif
+    891          
+    892              client->socket = -1;
+    893              DBG("httpclient_close() client:%p", client);
+    894          }
+    895          
+    896          int httpclient_get_response_code(httpclient_t *client)
+    897          {
+    898              return client->response_code;
+    899          }
+    900          
+    901          static HTTPCLIENT_RESULT httpclient_common(httpclient_t *client, char *url, int method, httpclient_data_t *client_data)
+    902          {
+    903              HTTPCLIENT_RESULT ret = HTTPCLIENT_ERROR_CONN;
+    904          
+    905              ret = httpclient_connect(client, url);
+    906          
+    907              if (!ret) {
+    908                  ret = httpclient_send_request(client, url, method, client_data);
+    909          
+    910                  if (!ret) {
+    911                      ret = httpclient_recv_response(client, client_data);
+    912                  }
+    913              }
+    914          
+    915              httpclient_close(client);
+    916          
+    917              return ret;
+    918          }
+    919          
+    920          HTTPCLIENT_RESULT httpclient_get(httpclient_t *client, char *url, httpclient_data_t *client_data)
+    921          {
+    922              return httpclient_common(client, url, HTTPCLIENT_GET, client_data);
+    923          }
+    924          
+    925          HTTPCLIENT_RESULT httpclient_post(httpclient_t *client, char *url, httpclient_data_t *client_data)
+    926          {
+    927              return httpclient_common(client, url, HTTPCLIENT_POST, client_data);
+    928          }
+    929          
+    930          HTTPCLIENT_RESULT httpclient_put(httpclient_t *client, char *url, httpclient_data_t *client_data)
+    931          {
+    932              return httpclient_common(client, url, HTTPCLIENT_PUT, client_data);
+    933          }
+    934          
+    935          HTTPCLIENT_RESULT httpclient_delete(httpclient_t *client, char *url, httpclient_data_t *client_data)
+    936          {
+    937              return httpclient_common(client, url, HTTPCLIENT_DELETE, client_data);
+    938          }
+    939          
+    940          int httpclient_get_response_header_value(char *header_buf, char *name, int *val_pos, int *val_len)
+    941          {    
+    942              char *data = header_buf;
+    943              char *crlf_ptr, *colon_ptr, *key_ptr, *value_ptr;
+    944              int key_len, value_len;
+    945          
+    946              if (header_buf == NULL || name == NULL || val_pos == NULL  || val_len == NULL )
+    947                  return -1;
+    948              
+    949              while (true) {
+    950                  crlf_ptr = strstr(data, "\r\n");
+    951                  colon_ptr = strstr(data, ": ");        
+    952                  if (colon_ptr) {                         
+    953                      key_len = colon_ptr - data;
+    954                      value_len = crlf_ptr - colon_ptr - strlen(": ");            
+    955                      key_ptr = data;
+    956                      value_ptr = colon_ptr + strlen(": ");
+    957                      
+    958                      DBG("Response header: %.*s: %.*s", key_len, key_ptr, value_len, value_ptr);
+    959                      if (0 == strncasecmp(key_ptr, name, key_len)) {
+    960                          *val_pos = value_ptr - header_buf;
+    961                          *val_len = value_len;
+    962                          return 0;
+    963                      } else {                 
+    964                          data = crlf_ptr + 2;
+    965                          continue;
+    966                      }
+    967                  } else 
+    968                      return -1;
+    969                      
+    970              }
+    971          }
+    972          
+    973          #ifdef MTK_HTTPCLIENT_SSL_ENABLE
+    974          #if 1
+    975          static int httpclient_ssl_nonblock_recv( void *ctx, unsigned char *buf, size_t len )
+    976          {
+    977              int ret;
+    978              int fd = ((mbedtls_net_context *) ctx)->fd;
+    979              if ( fd < 0 ) {
+    980                  return ( MBEDTLS_ERR_NET_INVALID_CONTEXT );
+    981              }
+    982          
+    983              ret = (int) recv( fd, buf, len, MSG_DONTWAIT );
+    984          
+    985              if ( ret < 0 ) {
+    986          #if ( defined(_WIN32) || defined(_WIN32_WCE) ) && !defined(EFIX64) && \
+    987              !defined(EFI32)
+    988                  if ( WSAGetLastError() == WSAECONNRESET ) {
+    989                      return ( MBEDTLS_ERR_NET_CONN_RESET );
+    990                  }
+    991          #else
+    992                  if ( errno == EPIPE || errno == ECONNRESET ) {
+    993                      return ( MBEDTLS_ERR_NET_CONN_RESET );
+    994                  }
+    995          
+    996                  if ( errno == EINTR ) {
+    997                      return ( MBEDTLS_ERR_SSL_WANT_READ );
+    998                  }
+    999          #endif
+   1000                  if (ret == -1 && errno == EWOULDBLOCK) {
+   1001                      return ret;
+   1002                  }
+   1003                  return ( MBEDTLS_ERR_NET_RECV_FAILED );
+   1004              }
+   1005          
+   1006              return ( ret );
+   1007          }
+   1008          #endif
+   1009          
+   1010          static void httpclient_debug( void *ctx, int level, const char *file, int line, const char *str )
+   1011          {
+   1012              // printf("%s\n", str);    
+   1013              DBG("%s", str);
+   1014          }
+   1015          
+   1016          static int httpclient_ssl_send_all(mbedtls_ssl_context *ssl, const char *data, size_t length)
+   1017          {
+   1018              size_t written_len = 0;
+   1019          
+   1020              while (written_len < length) {
+   1021                  int ret = mbedtls_ssl_write(ssl, (unsigned char *)(data + written_len), (length - written_len));
+   1022                  if (ret > 0) {
+   1023                      written_len += ret;
+   1024                      continue;
+   1025                  } else if (ret == 0) {
+   1026                      return written_len;
+   1027                  } else {
+   1028                      return -1; /* Connnection error */
+   1029                  }
+   1030              }
+   1031          
+   1032              return written_len;
+   1033          }
+   1034          
+   1035          static int httpclient_ssl_conn(httpclient_t *client, char *host)
+   1036          {
+   1037              int authmode = MBEDTLS_SSL_VERIFY_NONE;
+   1038              const char *pers = "https";
+   1039              int value, ret = 0; 
+   1040              uint32_t flags;
+   1041              char port[10] = {0};
+   1042              httpclient_ssl_t *ssl;
+   1043              
+   1044              client->ssl = pvPortMalloc(sizeof(httpclient_ssl_t));
+   1045              if (!client->ssl) {
+   1046                  DBG("Memory malloc error.");
+   1047                  ret = -1;
+   1048                  goto exit;
+   1049              }
+   1050              ssl = (httpclient_ssl_t *)client->ssl;
+   1051              
+   1052              if (client->server_cert)
+   1053                  authmode = MBEDTLS_SSL_VERIFY_REQUIRED;
+   1054              
+   1055              /*
+   1056               * Initialize the RNG and the session data
+   1057               */
+   1058          #if defined(MBEDTLS_DEBUG_C)
+   1059              mbedtls_debug_set_threshold(DEBUG_LEVEL);
+   1060          #endif
+   1061              mbedtls_net_init(&ssl->net_ctx);
+   1062              mbedtls_ssl_init(&ssl->ssl_ctx);
+   1063              mbedtls_ssl_config_init(&ssl->ssl_conf);
+   1064              mbedtls_x509_crt_init(&ssl->cacert);
+   1065              mbedtls_x509_crt_init(&ssl->clicert);
+   1066              mbedtls_pk_init(&ssl->pkey);
+   1067              mbedtls_ctr_drbg_init(&ssl->ctr_drbg);
+   1068              mbedtls_entropy_init(&ssl->entropy);    
+   1069              if ((value = mbedtls_ctr_drbg_seed(&ssl->ctr_drbg,
+   1070                                         mbedtls_entropy_func, 
+   1071                                         &ssl->entropy,
+   1072                                         (const unsigned char*)pers,
+   1073                                         strlen(pers))) != 0) {       
+   1074                  DBG("mbedtls_ctr_drbg_seed() failed, value:-0x%x.", -value);
+   1075                  ret = -1;
+   1076                  goto exit;
+   1077              }
+   1078          
+   1079              /*
+   1080              * Load the Client certificate
+   1081              */
+   1082              if (client->client_cert && client->client_pk) {
+   1083                  ret = mbedtls_x509_crt_parse(&ssl->clicert, (const unsigned char *)client->client_cert, client->client_cert_len);        
+   1084                  if (ret < 0) {
+   1085                      DBG("Loading cli_cert failed! mbedtls_x509_crt_parse returned -0x%x.", -ret);
+   1086                      goto exit;
+   1087                  }
+   1088              
+   1089                  ret = mbedtls_pk_parse_key(&ssl->pkey, (const unsigned char *)client->client_pk, client->client_pk_len, NULL, 0);                 
+   1090                  if (ret != 0) {
+   1091                      DBG("failed! mbedtls_pk_parse_key returned -0x%x.", -ret);
+   1092                      goto exit;
+   1093                  }
+   1094              }
+   1095              
+   1096              /*
+   1097              * Load the trusted CA
+   1098              */    
+   1099              /* cert_len passed in is gotten from sizeof not strlen */
+   1100              if (client->server_cert && ((value = mbedtls_x509_crt_parse(&ssl->cacert,
+   1101                                                  (const unsigned char *)client->server_cert,
+   1102                                                  client->server_cert_len)) < 0)) {
+   1103                  DBG("mbedtls_x509_crt_parse() failed, value:-0x%x.", -value);
+   1104                  ret = -1;
+   1105                  goto exit;
+   1106              }
+   1107          
+   1108              /*
+   1109               * Start the connection
+   1110               */
+   1111              snprintf(port, sizeof(port), "%d", client->remote_port) ;
+   1112              if ((ret = mbedtls_net_connect(&ssl->net_ctx, host, port, MBEDTLS_NET_PROTO_TCP)) != 0) {
+   1113                  DBG("failed! mbedtls_net_connect returned %d, port:%s.", ret, port);
+   1114                  goto exit;
+   1115              }   
+   1116          
+   1117              /*
+   1118               * Setup stuff
+   1119               */
+   1120              if ((value = mbedtls_ssl_config_defaults(&ssl->ssl_conf,
+   1121                                                     MBEDTLS_SSL_IS_CLIENT,
+   1122                                                     MBEDTLS_SSL_TRANSPORT_STREAM,
+   1123                                                     MBEDTLS_SSL_PRESET_DEFAULT)) != 0) {        
+   1124                  DBG("mbedtls_ssl_config_defaults() failed, value:-0x%x.", -value);
+   1125                  ret = -1;
+   1126                  goto exit;
+   1127              }
+   1128          
+   1129              // TODO: add customerization encryption algorithm
+   1130              memcpy(&ssl->profile, ssl->ssl_conf.cert_profile, sizeof(mbedtls_x509_crt_profile));    
+   1131              ssl->profile.allowed_mds = ssl->profile.allowed_mds | MBEDTLS_X509_ID_FLAG(MBEDTLS_MD_MD5);
+   1132              mbedtls_ssl_conf_cert_profile(&ssl->ssl_conf, &ssl->profile);
+   1133              
+   1134              mbedtls_ssl_conf_authmode(&ssl->ssl_conf, authmode);
+   1135              mbedtls_ssl_conf_ca_chain(&ssl->ssl_conf, &ssl->cacert, NULL);
+   1136          
+   1137              if (client->client_cert && (ret = mbedtls_ssl_conf_own_cert(&ssl->ssl_conf, &ssl->clicert, &ssl->pkey)) != 0) {
+   1138                  DBG(" failed! mbedtls_ssl_conf_own_cert returned %d.", ret );
+   1139                  goto exit;
+   1140              }
+   1141          
+   1142              mbedtls_ssl_conf_rng(&ssl->ssl_conf, mbedtls_ctr_drbg_random, &ssl->ctr_drbg);
+   1143              mbedtls_ssl_conf_dbg(&ssl->ssl_conf, httpclient_debug, NULL);
+   1144          
+   1145              if ((value = mbedtls_ssl_setup(&ssl->ssl_ctx, &ssl->ssl_conf)) != 0) {
+   1146                  DBG("mbedtls_ssl_setup() failed, value:-0x%x.", -value);
+   1147                  ret = -1;
+   1148                  goto exit;
+   1149              }   
+   1150          
+   1151              mbedtls_ssl_set_bio(&ssl->ssl_ctx, &ssl->net_ctx, mbedtls_net_send, mbedtls_net_recv, NULL);    
+   1152              
+   1153              /*
+   1154              * Handshake
+   1155              */
+   1156              while ((ret = mbedtls_ssl_handshake(&ssl->ssl_ctx)) != 0) {
+   1157                  if (ret != MBEDTLS_ERR_SSL_WANT_READ && ret != MBEDTLS_ERR_SSL_WANT_WRITE) {      
+   1158                      DBG("mbedtls_ssl_handshake() failed, ret:-0x%x.", -ret);
+   1159                      ret = -1;
+   1160                      goto exit;
+   1161                  }
+   1162              }
+   1163                  
+   1164              /*
+   1165               * Verify the server certificate
+   1166               */
+   1167              /* In real life, we would have used MBEDTLS_SSL_VERIFY_REQUIRED so that the
+   1168                  * handshake would not succeed if the peer's cert is bad.  Even if we used
+   1169                  * MBEDTLS_SSL_VERIFY_OPTIONAL, we would bail out here if ret != 0 */
+   1170              if ((flags = mbedtls_ssl_get_verify_result(&ssl->ssl_ctx)) != 0) {
+   1171                  char vrfy_buf[512];
+   1172                  DBG("svr_cert varification failed.");
+   1173                  mbedtls_x509_crt_verify_info(vrfy_buf, sizeof(vrfy_buf), "  ! ", flags);
+   1174                  DBG("%s", vrfy_buf);
+   1175              }
+   1176              else
+   1177                  DBG("svr_cert varification ok."); 
+   1178              
+   1179          exit:
+   1180              DBG("ret=%d.", ret);
+   1181              return ret;
+   1182          }
+   1183          
+   1184          static int httpclient_ssl_close(httpclient_t *client)
+   1185          {
+   1186              httpclient_ssl_t *ssl = (httpclient_ssl_t *)client->ssl;
+   1187              client->client_cert = NULL;
+   1188              client->server_cert = NULL;
+   1189              client->client_pk = NULL;
+   1190          
+   1191              if (!ssl)
+   1192                  return -1;
+   1193              
+   1194              mbedtls_ssl_close_notify(&ssl->ssl_ctx);
+   1195              mbedtls_net_free(&ssl->net_ctx);
+   1196              mbedtls_x509_crt_free(&ssl->cacert);
+   1197              mbedtls_x509_crt_free(&ssl->clicert);
+   1198              mbedtls_pk_free(&ssl->pkey);
+   1199              mbedtls_ssl_free(&ssl->ssl_ctx);    
+   1200              mbedtls_ssl_config_free(&ssl->ssl_conf);
+   1201              mbedtls_ctr_drbg_free(&ssl->ctr_drbg);
+   1202              mbedtls_entropy_free(&ssl->entropy);               
+   1203              
+   1204              vPortFree(ssl);       
+   1205              return 0;
+   1206          }
+   1207          #endif
+   1208          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      88   httpclient_base64enc
+        88   -> __aeabi_memcpy4
+      24   httpclient_basic_auth
+        24   -> strlen
+      16   httpclient_close
+        16   -- Indirect call
+        16   -> httpclient_ssl_close
+        16   -> lwip_close
+      24   httpclient_common
+        24   -> httpclient_close
+        24   -> httpclient_connect
+        24   -> httpclient_recv_response
+        24   -> httpclient_send_request
+      72   httpclient_conn
+        72   -- Indirect call
+        72   -> __aeabi_memset4
+        72   -> lwip_close
+        72   -> lwip_connect
+        72   -> lwip_freeaddrinfo
+        72   -> lwip_getaddrinfo
+        72   -> lwip_socket
+        72   -> snprintf
+     368   httpclient_connect
+       368   -- Indirect call
+       368   -> __aeabi_memclr4
+       368   -> httpclient_conn
+       368   -> httpclient_parse_url
+       368   -> httpclient_ssl_conn
+       368   -> strcmp
+      16   httpclient_debug
+        16   -- Indirect call
+       0   httpclient_delete
+         0   -> httpclient_common
+       0   httpclient_get
+         0   -> httpclient_common
+      40   httpclient_get_info
+        40   -- Indirect call
+        40   -> __aeabi_memcpy
+        40   -> httpclient_tcp_send_all
+        40   -> strlen
+       0   httpclient_get_response_code
+      64   httpclient_get_response_header_value
+        64   -- Indirect call
+        64   -> strncasecmp
+        64   -> strstr
+      48   httpclient_parse_url
+        48   -- Indirect call
+        48   -> __aeabi_memcpy
+        48   -> sscanf
+        48   -> strchr
+        48   -> strlen
+        48   -> strstr
+       0   httpclient_post
+         0   -> httpclient_common
+       0   httpclient_put
+         0   -> httpclient_common
+      56   httpclient_recv
+        56   -- Indirect call
+        56   -> __aeabi_errno_addr
+        56   -> lwip_recv
+        56   -> mbedtls_ssl_read
+        56   -> mbedtls_ssl_set_bio
+     544   httpclient_recv_response
+       544   -- Indirect call
+       544   -> __aeabi_memclr4
+       544   -> httpclient_recv
+       544   -> httpclient_response_parse
+       544   -> httpclient_retrieve_content
+      80   httpclient_response_parse
+        80   -- Indirect call
+        80   -> __aeabi_memcpy
+        80   -> __aeabi_memmove
+        80   -> __aeabi_memset
+        80   -> httpclient_recv
+        80   -> httpclient_retrieve_content
+        80   -> sscanf
+        80   -> strncasecmp
+        80   -> strstr
+      64   httpclient_retrieve_content
+        64   -- Indirect call
+        64   -> __aeabi_memcpy
+        64   -> __aeabi_memmove
+        64   -> httpclient_recv
+        64   -> sscanf
+     344   httpclient_send_auth
+       344   -- Indirect call
+       344   -> httpclient_base64enc
+       344   -> httpclient_get_info
+       344   -> sprintf
+       344   -> strlen
+    1400   httpclient_send_header
+      1400   -- Indirect call
+      1400   -> __aeabi_memclr4
+      1400   -> __aeabi_memset4
+      1400   -> httpclient_get_info
+      1400   -> httpclient_parse_url
+      1400   -> httpclient_send_auth
+      1400   -> httpclient_ssl_send_all
+      1400   -> httpclient_tcp_send_all
+      1400   -> snprintf
+      1400   -> strlen
+      32   httpclient_send_request
+        32   -- Indirect call
+        32   -> httpclient_send_header
+        32   -> httpclient_send_userdata
+      32   httpclient_send_userdata
+        32   -- Indirect call
+        32   -> httpclient_ssl_send_all
+        32   -> httpclient_tcp_send_all
+       0   httpclient_set_custom_header
+       8   httpclient_ssl_close
+         8   -> mbedtls_ctr_drbg_free
+         8   -> mbedtls_entropy_free
+         8   -> mbedtls_net_free
+         8   -> mbedtls_pk_free
+         8   -> mbedtls_ssl_close_notify
+         8   -> mbedtls_ssl_config_free
+         8   -> mbedtls_ssl_free
+         8   -> mbedtls_x509_crt_free
+         8   -> vPortFree
+     576   httpclient_ssl_conn
+       576   -- Indirect call
+       576   -> __aeabi_memcpy4
+       576   -> mbedtls_ctr_drbg_init
+       576   -> mbedtls_ctr_drbg_seed
+       576   -> mbedtls_debug_set_threshold
+       576   -> mbedtls_entropy_init
+       576   -> mbedtls_net_connect
+       576   -> mbedtls_net_init
+       576   -> mbedtls_pk_init
+       576   -> mbedtls_pk_parse_key
+       576   -> mbedtls_ssl_conf_authmode
+       576   -> mbedtls_ssl_conf_ca_chain
+       576   -> mbedtls_ssl_conf_cert_profile
+       576   -> mbedtls_ssl_conf_dbg
+       576   -> mbedtls_ssl_conf_own_cert
+       576   -> mbedtls_ssl_conf_rng
+       576   -> mbedtls_ssl_config_defaults
+       576   -> mbedtls_ssl_config_init
+       576   -> mbedtls_ssl_get_verify_result
+       576   -> mbedtls_ssl_handshake
+       576   -> mbedtls_ssl_init
+       576   -> mbedtls_ssl_set_bio
+       576   -> mbedtls_ssl_setup
+       576   -> mbedtls_x509_crt_init
+       576   -> mbedtls_x509_crt_parse
+       576   -> mbedtls_x509_crt_verify_info
+       576   -> pvPortMalloc
+       576   -> snprintf
+       8   httpclient_ssl_nonblock_recv
+         8   -> __aeabi_errno_addr
+         8   -> lwip_recv
+      24   httpclient_ssl_send_all
+        24   -> mbedtls_ssl_write
+      24   httpclient_tcp_send_all
+        24   -> lwip_send
+       0   strchr
+         0   -> __iar_Strchr
+       0   strstr
+         0   -> __iar_Strstr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable123
+       4  ??DataTable124
+       4  ??DataTable125
+       4  ??DataTable126
+       4  ??DataTable126_1
+       4  ??DataTable126_2
+       4  ??DataTable127
+       4  ??DataTable128
+       4  ??DataTable129
+       4  ??DataTable131
+       4  ??DataTable132
+       4  ??DataTable134
+       4  ??DataTable136
+       4  ??DataTable136_1
+       4  ??DataTable136_2
+       4  ??DataTable136_3
+       4  ??DataTable136_4
+       4  ??DataTable137
+       4  ??DataTable138
+       4  ??DataTable138_1
+       4  ??DataTable138_2
+       4  ??DataTable138_3
+       4  ??DataTable138_4
+       4  ??DataTable138_5
+       4  ??DataTable138_6
+       4  ??DataTable138_7
+      12  ?_0
+      68  ?_1
+      48  ?_10
+      56  ?_100
+      60  ?_101
+      44  ?_102
+       8  ?_103
+      40  ?_104
+      24  ?_105
+      48  ?_11
+      36  ?_12
+      24  ?_13
+       8  ?_14
+      24  ?_15
+      24  ?_16
+       8  ?_17
+      64  ?_18
+     256  ?_19
+      12  ?_2
+     512  ?_20
+     512  ?_21
+       4  ?_22
+       8  ?_23
+       4  ?_24
+       8  ?_25
+       8  ?_26
+       1  ?_27
+      48  ?_28
+      28  ?_29
+       4  ?_3
+      40  ?_30
+      24  ?_31
+      20  ?_32
+       4  ?_33
+      56  ?_34
+      36  ?_35
+      32  ?_36
+      44  ?_37
+      56  ?_38
+      52  ?_39
+      68  ?_4
+      40  ?_40
+      32  ?_41
+      40  ?_42
+      44  ?_43
+      48  ?_44
+      52  ?_45
+      56  ?_46
+      60  ?_47
+      52  ?_48
+      28  ?_49
+       4  ?_5
+      32  ?_50
+      32  ?_51
+      44  ?_52
+      32  ?_53
+      24  ?_54
+       4  ?_55
+      44  ?_56
+      36  ?_57
+      44  ?_58
+      36  ?_59
+      36  ?_6
+      32  ?_60
+      32  ?_61
+      40  ?_62
+      28  ?_63
+      24  ?_64
+      48  ?_65
+      32  ?_66
+      32  ?_67
+      44  ?_68
+      40  ?_69
+      52  ?_7
+       4  ?_70
+      40  ?_71
+      16  ?_72
+       8  ?_73
+      20  ?_74
+       8  ?_75
+      40  ?_76
+      64  ?_77
+       8  ?_78
+     256  ?_79
+       4  ?_8
+       8  ?_80
+       8  ?_81
+      44  ?_82
+      56  ?_83
+      64  ?_84
+     512  ?_85
+      32  ?_86
+      64  ?_87
+      44  ?_88
+      44  ?_89
+      36  ?_9
+      20  ?_90
+      12  ?_91
+      36  ?_92
+      60  ?_93
+      80  ?_94
+      60  ?_95
+      60  ?_96
+      64  ?_97
+      68  ?_98
+      64  ?_99
+     122  httpclient_base64enc
+      42  httpclient_basic_auth
+      60  httpclient_close
+      62  httpclient_common
+     162  httpclient_conn
+     274  httpclient_connect
+      32  httpclient_debug
+       6  httpclient_delete
+       6  httpclient_get
+     138  httpclient_get_info
+       4  httpclient_get_response_code
+     152  httpclient_get_response_header_value
+     348  httpclient_parse_url
+       6  httpclient_post
+       6  httpclient_put
+     426  httpclient_recv
+     182  httpclient_recv_response
+     614  httpclient_response_parse
+    1000  httpclient_retrieve_content
+     156  httpclient_send_auth
+     636  httpclient_send_header
+      84  httpclient_send_request
+     190  httpclient_send_userdata
+       4  httpclient_set_custom_header
+     108  httpclient_ssl_close
+     906  httpclient_ssl_conn
+      92  httpclient_ssl_nonblock_recv
+      50  httpclient_ssl_send_all
+      52  httpclient_tcp_send_all
+      16  log_control_block_httpclient
+       4  strchr
+       4  strstr
+     380  -- Other
+
+ 
+    16 bytes in section .data
+ 2 261 bytes in section .rodata
+ 9 712 bytes in section .text
+ 
+ 9 704 bytes of CODE  memory (+ 8 bytes shared)
+ 2 261 bytes of CONST memory
+    16 bytes of DATA  memory
+
+Errors: none
+Warnings: 4
