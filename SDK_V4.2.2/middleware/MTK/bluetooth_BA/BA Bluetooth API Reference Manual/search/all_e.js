@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['pbapc',['PBAPC',['../group___b_a___bluetooth_b_t_p_b_a_p_c.html',1,'']]],
+  ['param',['param',['../structbt__audio__buffer__t.html#a13623f1d68513495c21f8b061b1a5aec',1,'bt_audio_buffer_t']]],
+  ['passkey',['passkey',['../structble__sm__display__passkey__req__t.html#afbafdc9e0c8b58c749b31e6f4e868971',1,'ble_sm_display_passkey_req_t::passkey()'],['../structbt__gap__user__passkey__notification__ind__t.html#afbafdc9e0c8b58c749b31e6f4e868971',1,'bt_gap_user_passkey_notification_ind_t::passkey()']]],
+  ['payload_5fsize',['payload_size',['../structbt__a2dp__stream__data__received__ind__t.html#a34d21baa46ca7f4b695307631457c75f',1,'bt_a2dp_stream_data_received_ind_t']]],
+  ['peer_5faddr',['peer_addr',['../structble__gap__connection__info__t.html#a3ab4537911c80a1602c610966a54b69a',1,'ble_gap_connection_info_t::peer_addr()'],['../structble__gap__advertising__ind__t.html#a3ab4537911c80a1602c610966a54b69a',1,'ble_gap_advertising_ind_t::peer_addr()']]],
+  ['peer_5faddr_5ftype',['peer_addr_type',['../structble__gap__connection__info__t.html#ad404f4c27cdd7e589f243cba0680ff45',1,'ble_gap_connection_info_t::peer_addr_type()'],['../structble__gap__advertising__ind__t.html#ad404f4c27cdd7e589f243cba0680ff45',1,'ble_gap_advertising_ind_t::peer_addr_type()']]],
+  ['peer_5fresolvable_5faddr',['peer_resolvable_addr',['../structble__gap__connection__info__t.html#aec7195f4b334c55c86989ffdd71e7b9e',1,'ble_gap_connection_info_t']]],
+  ['phone_5fbook_5fsize',['phone_book_size',['../structbt__pbapc__pull__phonebook__cnf__t.html#a128dae07bb94280bdac6c4a487db541a',1,'bt_pbapc_pull_phonebook_cnf_t::phone_book_size()'],['../structbt__pbapc__pull__vcard__list__cnf__t.html#a128dae07bb94280bdac6c4a487db541a',1,'bt_pbapc_pull_vcard_list_cnf_t::phone_book_size()']]],
+  ['play',['play',['../structbt__media__handle__s.html#a0e70dc91482fd4d8058fc403e5386ffd',1,'bt_media_handle_s']]],
+  ['play_5fstatus',['play_status',['../structbt__avrcp__get__player__status__cnf__t.html#ab4ac259b7871ffe10034840986dcfa09',1,'bt_avrcp_get_player_status_cnf_t']]],
+  ['port',['port',['../structbt__spp__connect__cnf__t.html#a6c41a67aa753b5886ceb57a7da58fa42',1,'bt_spp_connect_cnf_t::port()'],['../structbt__spp__connect__ind__t.html#a6c41a67aa753b5886ceb57a7da58fa42',1,'bt_spp_connect_ind_t::port()'],['../structbt__spp__disconnect__ind__t.html#a6c41a67aa753b5886ceb57a7da58fa42',1,'bt_spp_disconnect_ind_t::port()'],['../structbt__spp__ready__to__read__ind__t.html#a6c41a67aa753b5886ceb57a7da58fa42',1,'bt_spp_ready_to_read_ind_t::port()'],['../structbt__spp__ready__to__write__ind__t.html#a6c41a67aa753b5886ceb57a7da58fa42',1,'bt_spp_ready_to_write_ind_t::port()']]],
+  ['pos',['pos',['../structbt__avrcp__register__notification__cnf__t.html#af09611129dedc89382e4d7b6427bdb27',1,'bt_avrcp_register_notification_cnf_t']]],
+  ['process',['process',['../structbt__media__handle__s.html#a6a5c1213eb0e0b426d97419b702230d5',1,'bt_media_handle_s']]],
+  ['profile_5ftype',['profile_type',['../structbt__hf__service__connect__ind__t.html#a6444cb3c3c2965b6aea52f0cc8ee2073',1,'bt_hf_service_connect_ind_t']]],
+  ['properties',['properties',['../structble__gatt__char__t.html#a9186ef511fa792a0dec18079d57071ef',1,'ble_gatt_char_t']]],
+  ['ps_5fperiod_5fmode',['ps_period_mode',['../structbt__gap__discovery__result__ind__t.html#ab7bc05f9451466ad9980a9dde5b0a816',1,'bt_gap_discovery_result_ind_t']]],
+  ['psi',['psi',['../structbt__gap__discovery__result__ind__t.html#ac866f03ec637cc3c94bf88b522975a4c',1,'bt_gap_discovery_result_ind_t']]]
+];

@@ -1,0 +1,7 @@
+vsm_driver_write_register
+vsm_driver_update_register
+memset
+fscanf
+vsm_driver_read_register
+__wrap_printf
+memmove
