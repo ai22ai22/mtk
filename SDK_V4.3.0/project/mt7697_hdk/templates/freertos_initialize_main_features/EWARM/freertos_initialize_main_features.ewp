@@ -77,7 +77,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>7.50.1.10270</state>
+          <state>7.80.1.11865</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -127,7 +127,7 @@
         </option>
         <option>
           <name>GBECoreSlave</name>
-          <version>22</version>
+          <version>24</version>
           <state>39</state>
         </option>
         <option>
@@ -144,7 +144,7 @@
         </option>
         <option>
           <name>CoreVariant</name>
-          <version>22</version>
+          <version>24</version>
           <state>39</state>
         </option>
         <option>
@@ -167,7 +167,7 @@
         </option>
         <option>
           <name>GFPUCoreSlave2</name>
-          <version>22</version>
+          <version>24</version>
           <state>39</state>
         </option>
       </data>
@@ -187,7 +187,6 @@
           <state>PRODUCT_VERSION=7697</state>
           <state>MTK_FLASH_DIRECT_DL</state>
           <state>MTK_PATCH_DL_ENABLE</state>
-          
           <state>MTK_WIFI_REPEATER_ENABLE</state>
           <state>MTK_DEBUG_LEVEL_INFO</state>
           <state>MTK_HCI_CONSOLE_MIX_ENABLE</state>
@@ -361,7 +360,7 @@
           <state>$PROJ_DIR$\..\..\..\..\..\middleware\third_party\mbedtls\include</state>
           <state>$PROJ_DIR$\..\..\..\..\..\middleware\third_party\mbedtls\configs</state>
           <state>$PROJ_DIR$\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc</state>
-		  <state>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\connsys\inc</state>
+          <state>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\connsys\inc</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -649,7 +648,7 @@
         <option>
           <name>OOCOutputFormat</name>
           <version>3</version>
-          <state>3</state>
+          <state>1</state>
         </option>
         <option>
           <name>OCOutputOverride</name>
@@ -657,7 +656,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>freertos_initialize_main_features.bin</state>
+          <state>freertos_initialize_main_features.hex</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -695,7 +694,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>16</version>
+        <version>17</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -982,6 +981,10 @@
           <name>IlinkThreadsSlave</name>
           <state>1</state>
         </option>
+        <option>
+          <name>IlinkLogCallGraph</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -1136,7 +1139,7 @@
         </option>
         <option>
           <name>GBECoreSlave</name>
-          <version>22</version>
+          <version>24</version>
           <state>0</state>
         </option>
         <option>
@@ -1153,7 +1156,7 @@
         </option>
         <option>
           <name>CoreVariant</name>
-          <version>22</version>
+          <version>24</version>
           <state>0</state>
         </option>
         <option>
@@ -1176,7 +1179,7 @@
         </option>
         <option>
           <name>GFPUCoreSlave2</name>
-          <version>22</version>
+          <version>24</version>
           <state>0</state>
         </option>
       </data>
@@ -1653,7 +1656,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>16</version>
+        <version>17</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -1937,6 +1940,10 @@
           <name>IlinkThreadsSlave</name>
           <state>1</state>
         </option>
+        <option>
+          <name>IlinkLogCallGraph</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -2019,14 +2026,14 @@
   </group>
   <group>
     <name>bsp</name>
-	<file>
-      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\wifi_service\combo\src\inband_queue_option.c</name>
-    </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\driver\board\mt76x7_hdk\ept\src\bsp_gpio_ept_config.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\wifi_service\combo\src\get_profile_string.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\middleware\MTK\wifi_service\combo\src\inband_queue_option.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\prebuilt\middleware\MTK\wifi_service\combo\lib\wifi_supp\libwifi_CM4_IAR.a</name>
@@ -2085,9 +2092,6 @@
   </group>
   <group>
     <name>driver</name>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_misc.c</name>
-    </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\src\bsp_flash_config.c</name>
     </file>
@@ -2174,6 +2178,9 @@
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_md5.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_misc.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_nvic.c</name>
@@ -2302,16 +2309,10 @@
       <name>$PROJ_DIR$\..\..\..\..\..\kernel\service\src\context_info_save.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\kernel\service\src\exception_handler.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\kernel\service\src\syslog.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\kernel\service\src\toi.c</name>
-    </file>
-    <file>
       <name>$PROJ_DIR$\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\event_groups.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\kernel\service\src\exception_handler.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\MemMang\heap_4.c</name>
@@ -2332,10 +2333,16 @@
       <name>$PROJ_DIR$\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\queue.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\kernel\service\src\syslog.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\tasks.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\timers.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\kernel\service\src\toi.c</name>
     </file>
   </group>
   <group>
