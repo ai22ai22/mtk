@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armJET.dll" 
+
+"C:\LEO\myGit\MTK IOT\SDK_V4.3.0\project\mt7697_hdk\templates\freertos_initialize_main_features\EWARM\..\..\..\..\..\out_iar\mt7697_hdk\freertos_initialize_main_features\Debug\Exe\freertos_initialize_main_features.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armbat.dll" 
+
+--macro "C:\LEO\myGit\MTK IOT\SDK_V4.3.0\project\mt7697_hdk\templates\freertos_initialize_main_features\EWARM\..\..\..\..\..\tools\iar\mt7687\FlashMT7687.mac" 
+
+--flash_loader "C:\LEO\myGit\MTK IOT\SDK_V4.3.0\project\mt7697_hdk\templates\freertos_initialize_main_features\EWARM\..\..\..\..\..\tools\iar\mt7687\FlashMT7687.board" 
+
+
+
+
