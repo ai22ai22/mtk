@@ -1,0 +1,9 @@
+/freertos_create_thread.Debug.cspy.bat
+/freertos_create_thread.Debug.cspy.ps1
+/freertos_create_thread.Debug.driver.xcl
+/freertos_create_thread.Debug.general.xcl
+/freertos_create_thread.crun
+/freertos_create_thread.dbgdt
+/freertos_create_thread.dnx
+/freertos_create_thread.wsdt
+/freertos_create_thread_Debug.jlink
