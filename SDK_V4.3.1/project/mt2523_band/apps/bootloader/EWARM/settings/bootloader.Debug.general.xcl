@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armJET.dll" 
+
+"\\10.19.22.217\mtk10193\2523_DOC_GIT\maindev_0418_nandfs\gva\project\mt2523_band\apps\bootloader\EWARM\..\..\..\..\..\out_iar\mt2523_band\bootloader\Debug\Exe\bootloader.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armbat.dll" 
+
+--flash_loader "\\10.19.22.217\mtk10193\2523_DOC_GIT\maindev_0418_nandfs\gva\project\mt2523_band\apps\bootloader\EWARM\..\..\..\..\..\tools\iar\mt2523\FlashMT2523.board" 
+
+
+
+
