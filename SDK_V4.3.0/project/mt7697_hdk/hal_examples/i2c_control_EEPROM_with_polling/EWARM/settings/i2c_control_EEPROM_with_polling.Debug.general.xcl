@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\bin\armJET.dll" 
+
+"C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Exe\i2c_control_EEPROM_with_polling.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\bin\armbat.dll" 
+
+--macro "C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\tools\iar\mt7687\FlashMT7687.mac" 
+
+--flash_loader "C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\tools\iar\mt7687\FlashMT7687.board" 
+
+
+
+

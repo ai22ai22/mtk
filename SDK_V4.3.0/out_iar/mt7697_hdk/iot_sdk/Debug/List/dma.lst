@@ -1,0 +1,1212 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:19
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\dma.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW5E78.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\dma.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\dma.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\dma.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\dma.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_platform.h"
+     36          #ifdef HAL_GDMA_MODULE_ENABLED
+     37          
+     38          #include "mt7687.h"
+     39          #include "nvic.h"
+     40          #include "type_def.h"
+     41          #include "dma_hw.h"
+     42          #include "dma_sw.h"
+     43          #include "debug.h"
+     44          #include "hal_nvic.h"
+     45          
+     46          
+     47          
+     48          /*
+     49           * Function prototype.
+     50           */
+     51          void DMA_ERROR_LISR(void);
+     52          
+     53          /*
+     54           * Global variable.
+     55           */
+     56          VOID_FUNC DMA_LISR_FUNC[DMA_MAX_CHANNEL] = {
+     57              DMA_ERROR_LISR
+     58          };
+     59          
+     60          VOID_FUNC DMA_VFIFO_LISR_FUNC[DMA_VFIFO_CH_E - DMA_VFIFO_CH_S + 1] = {
+     61              DMA_ERROR_LISR
+     62          };
+     63          
+     64          VOID_FUNC DMA_VFIFO_TO_LISR_FUNC[DMA_VFIFO_CH_E - DMA_VFIFO_CH_S + 1] = {
+     65              DMA_ERROR_LISR
+     66          };
+     67          
+     68          static kal_uint32 DMA_Channel_Status = 0xffff;
+     69          static bool DMA_used_channel[DMA_MAX_CHANNEL] = {false};
+     70          
+     71          DMA_Master DMA_Owner[DMA_MAX_CHANNEL];
+     72          
+     73          void DMA_Stop(uint8_t channel)
+     74          {
+     75              DMA_Stop_Now(channel);
+     76              DMA_ACKI(channel);
+     77          }
+     78          
+     79          void DMA_Run(uint8_t channel)
+     80          {
+     81              DMA_Stop(channel);
+     82              DMA_Start(channel);
+     83          }
+     84          
+     85          
+     86          kal_uint8 DMA_GetChannel(DMA_Master DMA_CODE)
+     87          {
+     88              kal_uint8 index;
+     89              kal_uint8 handle = 0xff;
+     90              unsigned long flags;
+     91          
+     92          
+     93              local_irq_save(flags);
+     94          
+     95              for (index = DMA_MAX_FULL_CHANNEL + 1; index <= DMA_MAX_CHANNEL; index++) {
+     96                  if ((DMA_Channel_Status & (0x01 << index)) != 0) {
+     97          
+     98                      handle = index;
+     99          
+    100                      DMA_Channel_Status &= ~(0x01 << index);
+    101          
+    102                      break;
+    103                  }
+    104              }
+    105              local_irq_restore(flags);
+    106          
+    107          
+    108          
+    109              DMA_Owner[handle - 1] = DMA_CODE;
+    110          
+    111              return handle;
+    112          }
+    113          
+    114          void DMA_FreeChannel(uint8_t handle)
+    115          {
+    116              unsigned long flags;
+    117          
+    118              local_irq_save(flags);
+    119          
+    120          
+    121              DMA_Channel_Status |= (0x01 << handle);
+    122          
+    123              DMA_Stop(handle);
+    124          
+    125              DMA_Owner[handle - 1] = DMA_IDLE;
+    126          
+    127              local_irq_restore(flags);
+    128          
+    129          }
+    130          
+    131          uint8_t DMA_FullSize_CheckIdleChannel(DMA_Master DMA_CODE, uint8_t channel)
+    132          {
+    133              kal_uint8 index;
+    134              kal_uint8 handle = 0xff;
+    135              unsigned long flags;
+    136          
+    137              local_irq_save(flags);
+    138          
+    139              index = channel + 1 ;
+    140              if (index > DMA_MAX_FULL_CHANNEL) {
+    141                  return handle;
+    142              }
+    143          
+    144              if ((DMA_Channel_Status & (0x01 << index)) != 0) {
+    145          
+    146                  handle = index;
+    147          
+    148                  DMA_Channel_Status &= ~(0x01 << index);
+    149          
+    150              }
+    151          
+    152          
+    153              local_irq_restore(flags);
+    154          
+    155          
+    156              DMA_Owner[handle - 1] = DMA_CODE;
+    157              return handle;
+    158          }
+    159          
+    160          void DMA_FullSize_FreeChannel(uint8_t handle)
+    161          {
+    162              unsigned long flags;
+    163          
+    164              local_irq_save(flags);
+    165              DMA_Channel_Status |= (0x01 << handle);
+    166          
+    167              DMA_Stop(handle);
+    168          
+    169              DMA_Owner[handle - 1] = DMA_IDLE;
+    170          
+    171              local_irq_restore(flags);
+    172          
+    173          }
+    174          
+    175          void DMA_Config_Internal(uint8_t    dma_no,
+    176                                   DMA_INPUT  *dma_menu,
+    177                                   bool   fullsize,
+    178                                   bool   b2w, uint8_t limit,
+    179                                   bool   start)
+    180          {
+    181              kal_uint32 dma_con = 0;
+    182              kal_uint32 temp;
+    183          
+    184              DMA_Clock_Enable(dma_no);
+    185          
+    186              if (DMA_CheckRunStat(dma_no)) {
+    187                  ASSERT(0);
+    188              }
+    189          
+    190              if (DMA_CheckITStat(dma_no)) {
+    191                  ASSERT(0);
+    192              }
+    193          
+    194              ASSERT(DMA_Owner[dma_no - 1] != DMA_IDLE);
+    195          
+    196              if (fullsize == KAL_TRUE) {
+    197                  ASSERT(b2w == KAL_FALSE);
+    198              }
+    199          
+    200              ASSERT(dma_menu->count <= 0xffff);
+    201          
+    202              DMA_Stop(dma_no);
+    203          
+    204              switch (dma_menu->type) {
+    205          
+    206                  case  DMA_HWTX:
+    207          
+    208          //    #if (MTK_DEV_DMA_FIX_CHANNEL == 0) /*Comply with MT6260's HW design to fix DMA channel, Fangming, 20120809*/
+    209                      if (fullsize == KAL_TRUE)
+    210          
+    211                      {
+    212                          temp = (kal_uint32)(((DMA_FULLSIZE_HWMENU *)dma_menu->menu)->master);
+    213                      } else
+    214          
+    215                      {
+    216                          temp = (kal_uint32)(((DMA_HWMENU *)dma_menu->menu)->master);
+    217                      }
+    218          
+    219                      dma_con |= (kal_uint32)(temp << 20);
+    220          //    #endif
+    221          
+    222                      dma_con |= DMA_CON_TXCONTRL;
+    223          
+    224                      dma_con |= DMA_CON_DRQ;
+    225          
+    226                      if (fullsize == KAL_TRUE) {
+    227          
+    228                          DRV_WriteReg32(DMA_SRC(dma_no), ((DMA_FULLSIZE_HWMENU *)dma_menu->menu)->source);
+    229          
+    230                          DRV_WriteReg32(DMA_DST(dma_no), ((DMA_FULLSIZE_HWMENU *)dma_menu->menu)->destination);
+    231                      } else {
+    232          
+    233          //        #if (MTK_DEV_DMA_SHORT_SIZE == 1) /*Comply with MT6260's HW design to decrease size, Fangming, 20120724*/
+    234          //            DRV_WriteReg32(DMA_PGMADDR(dma_no), (((DMA_HWMENU *)dma_menu->menu)->addr) & DMA_SIZE_24BIT_MASK);
+    235          //        #else
+    236                          DRV_WriteReg32(DMA_PGMADDR(dma_no), ((DMA_HWMENU *)dma_menu->menu)->addr);
+    237          //        #endif
+    238          
+    239                          if (b2w == KAL_TRUE) {
+    240          
+    241                              dma_con |= DMA_CON_B2W;
+    242                          }
+    243                      }
+    244          
+    245                      break;
+    246          
+    247                  case  DMA_HWRX:
+    248          
+    249          //    #if (MTK_DEV_DMA_FIX_CHANNEL == 0) /*Comply with MT6260's HW design to fix DMA channel, Fangming, 20120809*/
+    250                      if (fullsize == KAL_TRUE)
+    251          
+    252                      {
+    253                          dma_con |= (kal_uint32)(((DMA_FULLSIZE_HWMENU *)dma_menu->menu)->master) << 20;
+    254                      } else
+    255          
+    256                      {
+    257                          dma_con |= (kal_uint32)(((DMA_HWMENU *)dma_menu->menu)->master) << 20;
+    258                      }
+    259          //    #endif
+    260          
+    261                      dma_con |= DMA_CON_RXCONTRL;
+    262          
+    263                      dma_con |= DMA_CON_DRQ;
+    264          
+    265                      if (fullsize == KAL_TRUE) {
+    266          
+    267                          DRV_WriteReg32(DMA_SRC(dma_no), ((DMA_FULLSIZE_HWMENU *)dma_menu->menu)->source);
+    268          
+    269                          DRV_WriteReg32(DMA_DST(dma_no), ((DMA_FULLSIZE_HWMENU *)dma_menu->menu)->destination);
+    270                      } else {
+    271          
+    272          //        #if (MTK_DEV_DMA_SHORT_SIZE == 1) /*Comply with MT6260's HW design to decrease size, Fangming, 20120724*/
+    273          //            DRV_WriteReg32(DMA_PGMADDR(dma_no), (((DMA_HWMENU *)dma_menu->menu)->addr) & DMA_SIZE_24BIT_MASK);
+    274          //        #else
+    275                          DRV_WriteReg32(DMA_PGMADDR(dma_no), ((DMA_HWMENU *)dma_menu->menu)->addr);
+    276          //        #endif
+    277          
+    278                          if (b2w == KAL_TRUE) {
+    279          
+    280                              dma_con |= DMA_CON_B2W;
+    281                          }
+    282                      }
+    283          
+    284                      break;
+    285          
+    286                  case DMA_SWCOPY:
+    287          
+    288                      DRV_WriteReg32(DMA_SRC(dma_no), ((DMA_SWCOPYMENU *)dma_menu->menu)->srcaddr);
+    289          
+    290                      DRV_WriteReg32(DMA_DST(dma_no), ((DMA_SWCOPYMENU *)dma_menu->menu)->dstaddr);
+    291          
+    292                      dma_con = DMA_CON_SWCOPY;
+    293          
+    294                      break;
+    295          
+    296                  case DMA_HWTX_RINGBUFF:
+    297          
+    298          //    #if (MTK_DEV_DMA_FIX_CHANNEL == 0) /*Comply with MT6260's HW design to fix DMA channel, Fangming, 20120809*/
+    299                      if (fullsize == KAL_TRUE)
+    300          
+    301                      {
+    302                          dma_con |= ((kal_uint32)((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->master) << 20;
+    303                      } else
+    304          
+    305                      {
+    306                          dma_con |= ((kal_uint32)((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->master) << 20;
+    307                      }
+    308          //    #endif
+    309          
+    310                      dma_con |= DMA_CON_TXCONTRL;
+    311          
+    312                      dma_con |= DMA_CON_DRQ;
+    313          
+    314                      dma_con |= DMA_CON_WPEN;
+    315          
+    316                      if (fullsize == KAL_TRUE) {
+    317          
+    318                          DRV_WriteReg32(DMA_WPPT(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->WPPT);
+    319          
+    320          //        #if (MTK_DEV_DMA_SHORT_SIZE == 1) /*Comply with MT6260's HW design to decrease size, Fangming, 20120724*/
+    321          //            DRV_WriteReg32(DMA_WPTO(dma_no), (kal_uint32)(((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO)& DMA_SIZE_24BIT_MASK);
+    322          //        #else
+    323                          DRV_WriteReg32(DMA_WPTO(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO);
+    324          //        #endif
+    325          
+    326                          DRV_WriteReg32(DMA_SRC(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->source);
+    327          
+    328                          DRV_WriteReg32(DMA_DST(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->destination);
+    329                      } else {
+    330          
+    331                          DRV_WriteReg32(DMA_WPPT(dma_no), ((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->WPPT);
+    332          
+    333          //        #if (MTK_DEV_DMA_SHORT_SIZE == 1)/*Comply with MT6260's HW design to decrease size, Fangming, 20120724*/
+    334          //            DRV_WriteReg32(DMA_WPTO(dma_no), (kal_uint32)(((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO) & DMA_SIZE_24BIT_MASK);
+    335          
+    336          //            DRV_WriteReg32(DMA_PGMADDR(dma_no), (((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->addr) & DMA_SIZE_24BIT_MASK);
+    337          //        #else
+    338                          DRV_WriteReg32(DMA_WPTO(dma_no), ((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO);
+    339          
+    340                          DRV_WriteReg32(DMA_PGMADDR(dma_no), ((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->addr);
+    341          //        #endif
+    342          
+    343                          if (b2w == KAL_TRUE) {
+    344          
+    345                              dma_con |= DMA_CON_B2W;
+    346                          }
+    347                      }
+    348          
+    349                      break;
+    350          
+    351                  case DMA_HWRX_RINGBUFF:
+    352          
+    353          //    #if (MTK_DEV_DMA_FIX_CHANNEL == 0) /*Comply with MT6260's HW design to fix DMA channel, Fangming, 20120809*/
+    354                      if (fullsize == KAL_TRUE)
+    355          
+    356                      {
+    357                          dma_con |= ((kal_uint32)((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->master) << 20;
+    358                      } else
+    359          
+    360                      {
+    361                          dma_con |= ((kal_uint32)((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->master) << 20;
+    362                      }
+    363          //    #endif
+    364          
+    365                      dma_con |= DMA_CON_RXCONTRL;
+    366          
+    367                      dma_con |= DMA_CON_DRQ;
+    368          
+    369                      dma_con |= DMA_CON_WPSD;
+    370          
+    371                      dma_con |= DMA_CON_WPEN;
+    372          
+    373                      if (fullsize == KAL_TRUE) {
+    374          
+    375                          DRV_WriteReg32(DMA_WPPT(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->WPPT);
+    376          
+    377          //        #if (MTK_DEV_DMA_SHORT_SIZE == 1)/*Comply with MT6260's HW design to decrease size, Fangming, 20120724*/
+    378          //            DRV_WriteReg32(DMA_WPTO(dma_no), (kal_uint32)(((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO) & DMA_SIZE_24BIT_MASK);
+    379          //        #else
+    380                          DRV_WriteReg32(DMA_WPTO(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO);
+    381          //        #endif
+    382          
+    383                          DRV_WriteReg32(DMA_SRC(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->source);
+    384          
+    385                          DRV_WriteReg32(DMA_DST(dma_no), ((DMA_FULLSIZE_HWRINGBUFF_MENU *)dma_menu->menu)->destination);
+    386                      } else {
+    387          
+    388                          DRV_WriteReg32(DMA_WPPT(dma_no), ((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->WPPT);
+    389          
+    390          //        #if (MTK_DEV_DMA_SHORT_SIZE == 1)/*Comply with MT6260's HW design to decrease size, Fangming, 20120724*/
+    391          //            DRV_WriteReg32(DMA_WPTO(dma_no), (kal_uint32)(((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO) & DMA_SIZE_24BIT_MASK);
+    392          
+    393          //            DRV_WriteReg32(DMA_PGMADDR(dma_no), (((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->addr) & DMA_SIZE_24BIT_MASK);
+    394          //        #else
+    395                          DRV_WriteReg32(DMA_WPTO(dma_no), ((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->WPTO);
+    396          
+    397                          DRV_WriteReg32(DMA_PGMADDR(dma_no), ((DMA_HWRINGBUFF_MENU *)dma_menu->menu)->addr);
+    398          //        #endif
+    399          
+    400                          if (b2w == KAL_TRUE) {
+    401          
+    402                              dma_con |= DMA_CON_B2W;
+    403                          }
+    404                      }
+    405          
+    406                      break;
+    407          
+    408                  default:
+    409          
+    410                      ASSERT(0);
+    411          
+    412          
+    413              }
+    414          
+    415              switch (dma_menu->size) {
+    416          
+    417                  case DMA_BYTE:
+    418          
+    419                      if (dma_menu->type != DMA_SWCOPY) {
+    420          
+    421                          if ((((DMA_TMODE *)(dma_menu->menu))->burst_mode == KAL_TRUE) &&
+    422                                  (((DMA_TMODE *)(dma_menu->menu))->cycle & 0xf0))
+    423          
+    424                          {
+    425                              dma_con |= DMA_CON_BURST_16BEAT;
+    426                          }
+    427          
+    428                          else if ((((DMA_TMODE *)(dma_menu->menu))->burst_mode == KAL_TRUE) &&
+    429                                   (((DMA_TMODE *)(dma_menu->menu))->cycle & 0x08))
+    430          
+    431                          {
+    432                              dma_con |= DMA_CON_BURST_8BEAT;
+    433                          }
+    434          
+    435                          else if ((((DMA_TMODE *)(dma_menu->menu))->burst_mode == KAL_TRUE) &&
+    436                                   (((DMA_TMODE *)(dma_menu->menu))->cycle & 0x04))
+    437          
+    438                          {
+    439                              dma_con |= DMA_CON_BURST_4BEAT;
+    440                          }
+    441                      }
+    442          
+    443                      break;
+    444          
+    445                  case DMA_SHORT:
+    446          
+    447                      if (dma_menu->type != DMA_SWCOPY) {
+    448          
+    449                          if ((((DMA_TMODE *)(dma_menu->menu))->burst_mode == KAL_TRUE) &&
+    450                                  (((DMA_TMODE *)(dma_menu->menu))->cycle & 0xf8))
+    451          
+    452                          {
+    453                              dma_con |= DMA_CON_BURST_8BEAT;
+    454                          }
+    455          
+    456                          else if ((((DMA_TMODE *)(dma_menu->menu))->burst_mode == KAL_TRUE) &&
+    457                                   (((DMA_TMODE *)(dma_menu->menu))->cycle & 0x04))
+    458          
+    459                          {
+    460                              dma_con |= DMA_CON_BURST_4BEAT;
+    461                          }
+    462                      }
+    463          
+    464                      dma_con |= DMA_CON_SIZE_SHORT;
+    465          
+    466                      break;
+    467          
+    468                  case DMA_LONG:
+    469          
+    470                      if (dma_menu->type != DMA_SWCOPY) {
+    471          
+    472                          if ((((DMA_TMODE *)(dma_menu->menu))->burst_mode == KAL_TRUE) &&
+    473                                  (((DMA_TMODE *)(dma_menu->menu))->cycle & 0xfc))
+    474          
+    475                          {
+    476                              dma_con |= DMA_CON_BURST_4BEAT;
+    477                          }
+    478                      }
+    479          
+    480                      dma_con |= DMA_CON_SIZE_LONG;
+    481          
+    482                      break;
+    483          
+    484                  default:
+    485          
+    486                      ASSERT(0);
+    487          
+    488          
+    489              }
+    490          
+    491              if (dma_menu->callback != NULL) {
+    492          
+    493                  dma_con |= DMA_CON_ITEN;
+    494          
+    495                  DMA_LISR_FUNC[dma_no - 1] = dma_menu->callback;
+    496              }
+    497          
+    498              DRV_WriteReg32(DMA_CON(dma_no), dma_con);
+    499          
+    500              DRV_WriteReg32(DMA_COUNT(dma_no), (kal_uint32)dma_menu->count);
+    501          
+    502              if (start) {
+    503          
+    504                  DMA_Start(dma_no);
+    505              }
+    506          }
+    507          
+    508          
+    509          void DMA_ERROR_LISR(void)
+    510          {
+    511              while (1);
+    512          }
+    513          
+    514          int DMA_Register(uint8_t dma_ch, VOID_FUNC handler)
+    515          {
+    516              if (dma_ch < 1 || dma_ch > DMA_MAX_CHANNEL) {
+    517                  printf("%s: ERROR! Register invalid DMA CH(%d)\n", __FUNCTION__, dma_ch);
+    518                  return -1;
+    519              }
+    520          
+    521              DMA_LISR_FUNC[dma_ch - 1] = handler;
+    522          
+    523              return 0;
+    524          }
+    525          
+    526          int DMA_UnRegister(uint8_t dma_ch)
+    527          {
+    528              if (dma_ch < 1 || dma_ch > DMA_MAX_CHANNEL) {
+    529                  printf("%s: ERROR! Unregister invalid DMA CH(%d)\n", __FUNCTION__, dma_ch);
+    530                  return -1;
+    531              }
+    532              DMA_LISR_FUNC[dma_ch - 1] = DMA_ERROR_LISR;
+    533              return 0;
+    534          }
+    535          
+    536          void DMA_LISR(hal_nvic_irq_t irq_number)
+    537          {
+    538              kal_uint8 index;
+    539              kal_uint32 con;
+    540              /* mask DMA intr. */
+    541          
+    542              NVIC_DisableIRQ((IRQn_Type)CM4_DMA_IRQ);
+    543          
+    544              /* find the channel of interrupt and acknowledge it */
+    545              for (index = 0; index < DMA_MAX_CHANNEL; index++) {
+    546          
+    547                  if (DRV_Reg32(DMA_INTSTA(index + 1)) & DMA_INTSTA_BIT) {
+    548          
+    549                      DMA_Stop((kal_uint8)(index + 1));
+    550          
+    551                      DMA_ACKI(index + 1);
+    552                      // James modify for new config clock control
+    553                      while (DMA_CheckRunStat(index + 1));
+    554                      DMA_Clock_Disable(index + 1);
+    555                      DMA_LISR_FUNC[index]();
+    556          
+    557                  }
+    558              }
+    559          
+    560              for (index = DMA_VFIFO_CH_S; index <= DMA_VFIFO_CH_E; index++) {
+    561          
+    562                  con = DRV_Reg32(DMA_CON(index));
+    563          
+    564                  if (DRV_Reg32(DMA_INTSTA(index)) & DMA_INTSTA_BIT) {
+    565          
+    566                      switch (con >> 20) {
+    567          
+    568                          case DMA_CON_MASTER_I2S_TX:
+    569                              if (DMA_VFIFO_LISR_FUNC[VDMA_I2S_TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    570                                  DMA_VFIFO_LISR_FUNC[VDMA_I2S_TX_CH - DMA_VFIFO_CH_S]();
+    571                              }
+    572                              break;
+    573                          case DMA_CON_MASTER_I2S_RX:
+    574                              if (DMA_VFIFO_LISR_FUNC[VDMA_I2S_RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    575                                  DMA_VFIFO_LISR_FUNC[VDMA_I2S_RX_CH - DMA_VFIFO_CH_S]();
+    576                              }
+    577                              break;
+    578                          case DMA_CON_MASTER_UART1TX:
+    579                              if (DMA_VFIFO_LISR_FUNC[VDMA_UART1TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    580                                  DMA_VFIFO_LISR_FUNC[VDMA_UART1TX_CH - DMA_VFIFO_CH_S]();
+    581                              }
+    582                              break;
+    583                          case DMA_CON_MASTER_UART1RX:
+    584                              if (DMA_VFIFO_LISR_FUNC[VDMA_UART1RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    585                                  DMA_VFIFO_LISR_FUNC[VDMA_UART1RX_CH - DMA_VFIFO_CH_S]();
+    586                              }
+    587                              break;
+    588                          case DMA_CON_MASTER_UART2TX:
+    589                              if (DMA_VFIFO_LISR_FUNC[VDMA_UART2TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    590                                  DMA_VFIFO_LISR_FUNC[VDMA_UART2TX_CH - DMA_VFIFO_CH_S]();
+    591                              }
+    592                              break;
+    593                          case DMA_CON_MASTER_UART2RX:
+    594                              if (DMA_VFIFO_LISR_FUNC[VDMA_UART2RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    595                                  DMA_VFIFO_LISR_FUNC[VDMA_UART2RX_CH - DMA_VFIFO_CH_S]();
+    596                              }
+    597                              break;
+    598                          case DMA_CON_MASTER_BTIF_TX:
+    599                              if (DMA_VFIFO_LISR_FUNC[VDMA_BTIF_TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    600                                  DMA_VFIFO_LISR_FUNC[VDMA_BTIF_TX_CH - DMA_VFIFO_CH_S]();
+    601                              }
+    602                              break;
+    603                          case DMA_CON_MASTER_BTIF_RX:
+    604                              if (DMA_VFIFO_LISR_FUNC[VDMA_BTIF_RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    605                                  DMA_VFIFO_LISR_FUNC[VDMA_BTIF_RX_CH - DMA_VFIFO_CH_S]();
+    606                              }
+    607                              break;
+    608                          case DMA_CON_MASTER_EP2O_RX:
+    609                              if (DMA_VFIFO_LISR_FUNC[VDMA_USB_EP2O_CH - DMA_VFIFO_CH_S] != NULL) {
+    610                                  DMA_VFIFO_LISR_FUNC[VDMA_USB_EP2O_CH - DMA_VFIFO_CH_S]();
+    611                              }
+    612                              break;
+    613                          case DMA_CON_MASTER_EP3I_TX:
+    614                              if (DMA_VFIFO_LISR_FUNC[VDMA_USB_EP3I_CH - DMA_VFIFO_CH_S] != NULL) {
+    615                                  DMA_VFIFO_LISR_FUNC[VDMA_USB_EP3I_CH - DMA_VFIFO_CH_S]();
+    616                              }
+    617                              break;
+    618                          case DMA_CON_MASTER_EP3O_RX:
+    619                              if (DMA_VFIFO_LISR_FUNC[VDMA_USB_EP3O_CH - DMA_VFIFO_CH_S] != NULL) {
+    620                                  DMA_VFIFO_LISR_FUNC[VDMA_USB_EP3O_CH - DMA_VFIFO_CH_S]();
+    621                              }
+    622                              break;
+    623                          case DMA_CON_MASTER_EP4I_TX:
+    624                              if (DMA_VFIFO_LISR_FUNC[VDMA_USB_EP4I_CH - DMA_VFIFO_CH_S] != NULL) {
+    625                                  DMA_VFIFO_LISR_FUNC[VDMA_USB_EP4I_CH - DMA_VFIFO_CH_S]();
+    626                              }
+    627                              break;
+    628                          case DMA_CON_MASTER_EP4O_RX:
+    629                              if (DMA_VFIFO_LISR_FUNC[VDMA_USB_EP4O_CH - DMA_VFIFO_CH_S] != NULL) {
+    630                                  DMA_VFIFO_LISR_FUNC[VDMA_USB_EP4O_CH - DMA_VFIFO_CH_S]();
+    631                              }
+    632                              break;
+    633                          case DMA_CON_MASTER_ADC_RX:
+    634                              if (DMA_VFIFO_LISR_FUNC[VDMA_ADC_RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    635                                  DMA_VFIFO_LISR_FUNC[VDMA_ADC_RX_CH - DMA_VFIFO_CH_S]();
+    636                              }
+    637                              break;
+    638          
+    639                      }
+    640                      DMA_ACKI(index);
+    641                  }
+    642              }
+    643          
+    644              for (index = DMA_VFIFO_CH_S; index <= DMA_VFIFO_CH_E; index++) {
+    645          
+    646                  con = DRV_Reg32(DMA_CON(index));
+    647          
+    648                  if (DRV_Reg32(DMA_INTSTA(index)) & DMA_TOINTSTA_BIT) {
+    649          
+    650                      switch (con >> 20) {
+    651          
+    652                          case DMA_CON_MASTER_I2S_TX:
+    653                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_I2S_TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    654                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_I2S_TX_CH - DMA_VFIFO_CH_S]();
+    655                              }
+    656                              break;
+    657                          case DMA_CON_MASTER_I2S_RX:
+    658                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_I2S_RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    659                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_I2S_RX_CH - DMA_VFIFO_CH_S]();
+    660                              }
+    661                              break;
+    662                          case DMA_CON_MASTER_UART1TX:
+    663                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_UART1TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    664                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_UART1TX_CH - DMA_VFIFO_CH_S]();
+    665                              }
+    666                              break;
+    667                          case DMA_CON_MASTER_UART1RX:
+    668                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_UART1RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    669                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_UART1RX_CH - DMA_VFIFO_CH_S]();
+    670                              }
+    671                              break;
+    672                          case DMA_CON_MASTER_UART2TX:
+    673                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_UART2TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    674                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_UART2TX_CH - DMA_VFIFO_CH_S]();
+    675                              }
+    676                              break;
+    677                          case DMA_CON_MASTER_UART2RX:
+    678                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_UART2RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    679                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_UART2RX_CH - DMA_VFIFO_CH_S]();
+    680                              }
+    681                              break;
+    682                          case DMA_CON_MASTER_BTIF_TX:
+    683                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_BTIF_TX_CH - DMA_VFIFO_CH_S] != NULL) {
+    684                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_BTIF_TX_CH - DMA_VFIFO_CH_S]();
+    685                              }
+    686                              break;
+    687                          case DMA_CON_MASTER_BTIF_RX:
+    688                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_BTIF_RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    689                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_BTIF_RX_CH - DMA_VFIFO_CH_S]();
+    690                              }
+    691                              break;
+    692                          case DMA_CON_MASTER_EP2O_RX:
+    693                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP2O_CH - DMA_VFIFO_CH_S] != NULL) {
+    694                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP2O_CH - DMA_VFIFO_CH_S]();
+    695                              }
+    696                              break;
+    697                          case DMA_CON_MASTER_EP3I_TX:
+    698                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP3I_CH - DMA_VFIFO_CH_S] != NULL) {
+    699                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP3I_CH - DMA_VFIFO_CH_S]();
+    700                              }
+    701                              break;
+    702                          case DMA_CON_MASTER_EP3O_RX:
+    703                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP3O_CH - DMA_VFIFO_CH_S] != NULL) {
+    704                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP3O_CH - DMA_VFIFO_CH_S]();
+    705                              }
+    706                              break;
+    707                          case DMA_CON_MASTER_EP4I_TX:
+    708                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP4I_CH - DMA_VFIFO_CH_S] != NULL) {
+    709                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP4I_CH - DMA_VFIFO_CH_S]();
+    710                              }
+    711                              break;
+    712                          case DMA_CON_MASTER_EP4O_RX:
+    713                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP4O_CH - DMA_VFIFO_CH_S] != NULL) {
+    714                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_USB_EP4O_CH - DMA_VFIFO_CH_S]();
+    715                              }
+    716                              break;
+    717                          case DMA_CON_MASTER_ADC_RX:
+    718                              if (DMA_VFIFO_TO_LISR_FUNC[VDMA_ADC_RX_CH - DMA_VFIFO_CH_S] != NULL) {
+    719                                  DMA_VFIFO_TO_LISR_FUNC[VDMA_ADC_RX_CH - DMA_VFIFO_CH_S]();
+    720                              }
+    721                              break;
+    722          
+    723                      }
+    724                      DMA_ACKTOI(index);
+    725                  }
+    726              }
+    727          
+    728              NVIC_EnableIRQ((IRQn_Type)CM4_DMA_IRQ);
+    729          }
+    730          
+    731          
+    732          void DMA_Init(void)
+    733          {
+    734              kal_uint8 index;
+    735          
+    736              /* Allen 20060306 , Reset DMA_Channel_Status for HCI_RESET */
+    737              //DMA_Channel_Status = 0xffff;
+    738          
+    739              for (index = 0; index < DMA_MAX_CHANNEL; index++) {
+    740                  if ((DMA_Channel_Status & (0x01 << index)) != 0) {
+    741                      DMA_Owner[index] = DMA_IDLE;
+    742                  }
+    743              }
+    744          
+    745              // James modify for new config clock control
+    746              for (index = 0; index < DMA_MAX_CHANNEL; index++) {
+    747          
+    748                  DMA_Clock_Enable(index + 1);
+    749              }
+    750          
+    751              //NVIC_Register(CM4_DMA_IRQ, DMA_LISR);
+    752              hal_nvic_register_isr_handler(CM4_DMA_IRQ, DMA_LISR);
+    753              NVIC_SetPriority((IRQn_Type)CM4_DMA_IRQ, CM4_DMA_PRI);
+    754              NVIC_EnableIRQ((IRQn_Type)CM4_DMA_IRQ);
+    755          }
+    756          
+    757          uint8_t  dma_set_channel_busy(uint8_t channel)
+    758          {
+    759              uint8_t channel_index = 0xff;
+    760              unsigned long flags;
+    761          
+    762          
+    763          
+    764              uint8_t index = channel + 1;
+    765          
+    766              local_irq_save(flags);
+    767          
+    768              if (DMA_used_channel[index] == false) {
+    769                  DMA_used_channel[index] = true;
+    770                  DMA_Clock_Enable(index);
+    771              } else {
+    772                  return channel_index;
+    773              }
+    774              local_irq_restore(flags);
+    775          
+    776              hal_nvic_register_isr_handler(CM4_DMA_IRQ, DMA_LISR);
+    777              NVIC_SetPriority((IRQn_Type)CM4_DMA_IRQ, CM4_DMA_PRI);
+    778              NVIC_EnableIRQ((IRQn_Type)CM4_DMA_IRQ);
+    779              return channel;
+    780          
+    781          }
+    782          
+    783          uint8_t  dma_set_channel_idle(uint8_t channel)
+    784          {
+    785              unsigned long flags;
+    786              uint8_t index = channel + 1;
+    787              DMA_Stop(index);
+    788              local_irq_save(flags);
+    789              DMA_used_channel[index] = false;
+    790              DMA_Channel_Status |= (0x01 << index);
+    791              DMA_Owner[index - 1] = DMA_IDLE;
+    792              local_irq_restore(flags);
+    793          
+    794              return channel;
+    795          
+    796          }
+    797          
+    798          void DMA_Vfifo_init(void)
+    799          {
+    800              kal_uint32 dma_con = 0;
+    801          
+    802              DMA_Clock_Enable(VDMA_I2S_TX_CH);
+    803              dma_con = (DMA_CON_MASTER_I2S_TX << 20) | DMA_CON_BURST_16BEAT | DMA_CON_DRQ | DMA_CON_SIZE_LONG;
+    804              DRV_WriteReg32(DMA_CON(VDMA_I2S_TX_CH), dma_con);
+    805          
+    806              DMA_Clock_Enable(VDMA_I2S_RX_CH);
+    807              dma_con = (DMA_CON_MASTER_I2S_RX << 20) | DMA_CON_DIR | DMA_CON_BURST_16BEAT | DMA_CON_DRQ | DMA_CON_SIZE_LONG;
+    808              DRV_WriteReg32(DMA_CON(VDMA_I2S_RX_CH), dma_con);
+    809          
+    810              DMA_Clock_Enable(VDMA_UART1TX_CH);
+    811              dma_con = (DMA_CON_MASTER_UART1TX << 20) | DMA_CON_BURST_SINGLE | DMA_CON_DRQ | DMA_CON_SIZE_BYTE;
+    812              DRV_WriteReg32(DMA_CON(VDMA_UART1TX_CH), dma_con);
+    813          
+    814              DMA_Clock_Enable(VDMA_UART1RX_CH);
+    815              dma_con = (DMA_CON_MASTER_UART1RX << 20) | DMA_CON_DIR | DMA_CON_ITEN | DMA_CON_TOEN | DMA_CON_BURST_SINGLE | DMA_CON_DRQ | DMA_CON_SIZE_BYTE;
+    816              DRV_WriteReg32(DMA_CON(VDMA_UART1RX_CH), dma_con);
+    817          
+    818              DMA_Clock_Enable(VDMA_UART2TX_CH);
+    819              dma_con = (DMA_CON_MASTER_UART2TX << 20) | DMA_CON_BURST_SINGLE | DMA_CON_DRQ | DMA_CON_SIZE_BYTE;
+    820              DRV_WriteReg32(DMA_CON(VDMA_UART2TX_CH), dma_con);
+    821          
+    822              DMA_Clock_Enable(VDMA_UART2RX_CH);
+    823              dma_con = (DMA_CON_MASTER_UART2RX << 20) | DMA_CON_DIR | DMA_CON_ITEN | DMA_CON_TOEN | DMA_CON_BURST_SINGLE | DMA_CON_DRQ | DMA_CON_SIZE_BYTE;
+    824              DRV_WriteReg32(DMA_CON(VDMA_UART2RX_CH), dma_con);
+    825          
+    826              DMA_Clock_Enable(VDMA_BTIF_TX_CH);
+    827              dma_con = (DMA_CON_MASTER_BTIF_TX << 20) | DMA_CON_DRQ;
+    828              DRV_WriteReg32(DMA_CON(VDMA_BTIF_TX_CH), dma_con);
+    829          
+    830              DMA_Clock_Enable(VDMA_BTIF_RX_CH);
+    831              dma_con = (DMA_CON_MASTER_BTIF_RX << 20) | DMA_CON_DIR | DMA_CON_DRQ | DMA_CON_ITEN | DMA_CON_TOEN;
+    832              DRV_WriteReg32(DMA_CON(VDMA_BTIF_RX_CH), dma_con);
+    833          
+    834              DMA_Clock_Enable(VDMA_USB_EP2O_CH);
+    835              dma_con = (DMA_CON_MASTER_EP2O_RX << 20) | DMA_CON_DIR | DMA_CON_DRQ | DMA_CON_ITEN;
+    836              DRV_WriteReg32(DMA_CON(VDMA_USB_EP2O_CH), dma_con);
+    837          
+    838              DMA_Clock_Enable(VDMA_USB_EP3I_CH);
+    839              dma_con = (DMA_CON_MASTER_EP3I_TX << 20) | DMA_CON_DIR | DMA_CON_DRQ | DMA_CON_ITEN;
+    840              DRV_WriteReg32(DMA_CON(VDMA_USB_EP3I_CH), dma_con);
+    841          
+    842              DMA_Clock_Enable(VDMA_USB_EP3O_CH);
+    843              dma_con = (DMA_CON_MASTER_EP3O_RX << 20) | DMA_CON_DIR | DMA_CON_DRQ | DMA_CON_ITEN;
+    844              DRV_WriteReg32(DMA_CON(VDMA_USB_EP3O_CH), dma_con);
+    845          
+    846              DMA_Clock_Enable(VDMA_USB_EP4I_CH);
+    847              dma_con = (DMA_CON_MASTER_EP4I_TX << 20) | DMA_CON_DIR | DMA_CON_DRQ | DMA_CON_ITEN;
+    848              DRV_WriteReg32(DMA_CON(VDMA_USB_EP4I_CH), dma_con);
+    849          
+    850              DMA_Clock_Enable(VDMA_USB_EP4O_CH);
+    851              dma_con = (DMA_CON_MASTER_EP4O_RX << 20) | DMA_CON_DIR | DMA_CON_DRQ | DMA_CON_ITEN;
+    852              DRV_WriteReg32(DMA_CON(VDMA_USB_EP4O_CH), dma_con);
+    853          
+    854              DMA_Clock_Enable(VDMA_ADC_RX_CH);
+    855              dma_con = (DMA_CON_MASTER_ADC_RX << 20) | DMA_CON_DIR | DMA_CON_DRQ | DMA_CON_BURST_SINGLE | DMA_CON_DRQ | DMA_CON_SIZE_LONG | DMA_CON_ITEN | DMA_CON_TOEN;
+    856              DRV_WriteReg32(DMA_CON(VDMA_ADC_RX_CH), dma_con);
+    857          
+    858          }
+    859          
+    860          
+    861          void DMA_Vfifo_SetAdrs(uint32_t adrs,
+    862                                 uint32_t                      len, DMA_VFIFO_CHANNEL ch,
+    863                                 uint32_t                      alt_len,
+    864                                 uint32_t                      dma_count,
+    865                                 uint32_t                      timeout_counter)
+    866          {
+    867              DRV_WriteReg32(DMA_PGMADDR(ch), adrs);
+    868              DRV_WriteReg32(DMA_FFSIZE(ch), len);
+    869              DRV_WriteReg32(DMA_ALTLEN(ch), alt_len);
+    870              DRV_Reg32(DMA_COUNT(ch)) = dma_count;
+    871              DRV_Reg32(DMA_TO(ch)) = timeout_counter;
+    872          }
+    873          
+    874          void DMA_Vfifo_Set_timeout(DMA_VFIFO_CHANNEL ch, uint32_t timeout_counter)
+    875          
+    876          {
+    877              DRV_Reg32(DMA_TO(ch)) = timeout_counter;
+    878          }
+    879          
+    880          void DMA_Vfifo_enable_interrupt(DMA_VFIFO_CHANNEL ch)
+    881          
+    882          {
+    883              DMA_EnableINT(ch);
+    884          }
+    885          
+    886          void DMA_Vfifo_disable_interrupt(DMA_VFIFO_CHANNEL ch)
+    887          
+    888          {
+    889              DMA_DisableINT(ch);
+    890          }
+    891          
+    892          
+    893          void DMA_Vfifo_Flush(DMA_VFIFO_CHANNEL ch)
+    894          {
+    895              DMA_Stop((kal_uint8)ch);
+    896          
+    897              DMA_Start(ch);
+    898          }
+    899          
+    900          void DMA_Vfifo_Register_Callback(DMA_VFIFO_CHANNEL  ch,
+    901                                           VOID_FUNC          callback_func)
+    902          {
+    903              DMA_VFIFO_LISR_FUNC[ch - DMA_VFIFO_CH_S] = callback_func;
+    904          }
+    905          
+    906          void DMA_Vfifo_Register_TO_Callback(DMA_VFIFO_CHANNEL ch,
+    907                                              VOID_FUNC         callback_func)
+    908          {
+    909              DMA_VFIFO_TO_LISR_FUNC[ch - DMA_VFIFO_CH_S] = callback_func;
+    910          }
+    911          
+    912          void DMA_Clock_Enable(uint8_t channel)
+    913          {
+    914              *(volatile kal_uint32 *)(CONFG_MCCR_CLR_ADDR) = 1 << (channel - 1);
+    915          }
+    916          
+    917          void DMA_Clock_Disable(uint8_t channel)
+    918          {
+    919              *(volatile kal_uint32 *)(CONFG_MCCR_SET_ADDR) = 1 << (channel - 1);
+    920          }
+    921          
+    922          #endif
+    923          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   DMA_Clock_Disable
+       0   DMA_Clock_Enable
+      32   DMA_Config_Internal
+        32   -> DMA_Clock_Enable
+        32   -> DMA_Stop
+        32   -> printf
+       0   DMA_ERROR_LISR
+      16   DMA_FreeChannel
+        16   -> DMA_Stop
+      12   DMA_FullSize_CheckIdleChannel
+      16   DMA_FullSize_FreeChannel
+        16   -> DMA_Stop
+      12   DMA_GetChannel
+       8   DMA_Init
+         8   -> DMA_Clock_Enable
+         0   -> NVIC_EnableIRQ
+         8   -> NVIC_SetPriority
+         8   -> hal_nvic_register_isr_handler
+      16   DMA_LISR
+        16   -- Indirect call
+        16   -> DMA_Clock_Disable
+        16   -> DMA_Stop
+        16   -> NVIC_DisableIRQ
+         0   -> NVIC_EnableIRQ
+       8   DMA_Register
+         8   -> printf
+       8   DMA_Run
+         8   -> DMA_Stop
+       0   DMA_Stop
+       8   DMA_UnRegister
+         8   -> printf
+       8   DMA_Vfifo_Flush
+         8   -> DMA_Stop
+       0   DMA_Vfifo_Register_Callback
+       0   DMA_Vfifo_Register_TO_Callback
+      12   DMA_Vfifo_SetAdrs
+       0   DMA_Vfifo_Set_timeout
+       0   DMA_Vfifo_disable_interrupt
+       0   DMA_Vfifo_enable_interrupt
+       8   DMA_Vfifo_init
+         8   -> DMA_Clock_Enable
+       0   NVIC_DisableIRQ
+       0   NVIC_EnableIRQ
+       4   NVIC_SetPriority
+      16   dma_set_channel_busy
+        16   -> DMA_Clock_Enable
+        16   -> NVIC_EnableIRQ
+        16   -> NVIC_SetPriority
+        16   -> hal_nvic_register_isr_handler
+      16   dma_set_channel_idle
+        16   -> DMA_Stop
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable31
+       4  ??DataTable31_1
+       4  ??DataTable31_10
+       4  ??DataTable31_11
+       4  ??DataTable31_12
+       4  ??DataTable31_13
+       4  ??DataTable31_14
+       4  ??DataTable31_15
+       4  ??DataTable31_16
+       4  ??DataTable31_17
+       4  ??DataTable31_18
+       4  ??DataTable31_19
+       4  ??DataTable31_2
+       4  ??DataTable31_20
+       4  ??DataTable31_21
+       4  ??DataTable31_22
+       4  ??DataTable31_23
+       4  ??DataTable31_24
+       4  ??DataTable31_25
+       4  ??DataTable31_26
+       4  ??DataTable31_27
+       4  ??DataTable31_28
+       4  ??DataTable31_29
+       4  ??DataTable31_3
+       4  ??DataTable31_30
+       4  ??DataTable31_31
+       4  ??DataTable31_32
+       4  ??DataTable31_33
+       4  ??DataTable31_34
+       4  ??DataTable31_35
+       4  ??DataTable31_36
+       4  ??DataTable31_37
+       4  ??DataTable31_38
+       4  ??DataTable31_39
+       4  ??DataTable31_4
+       4  ??DataTable31_40
+       4  ??DataTable31_41
+       4  ??DataTable31_42
+       4  ??DataTable31_43
+       4  ??DataTable31_44
+       4  ??DataTable31_45
+       4  ??DataTable31_46
+       4  ??DataTable31_47
+       4  ??DataTable31_48
+       4  ??DataTable31_49
+       4  ??DataTable31_5
+       4  ??DataTable31_50
+       4  ??DataTable31_51
+       4  ??DataTable31_52
+       4  ??DataTable31_53
+       4  ??DataTable31_54
+       4  ??DataTable31_55
+       4  ??DataTable31_6
+       4  ??DataTable31_7
+       4  ??DataTable31_8
+       4  ??DataTable31_9
+      40  ?_0
+      68  ?_1
+      40  ?_2
+      44  ?_3
+      12  DMA_Clock_Disable
+      12  DMA_Clock_Enable
+     896  DMA_Config_Internal
+       2  DMA_ERROR_LISR
+      42  DMA_FreeChannel
+      62  DMA_FullSize_CheckIdleChannel
+      42  DMA_FullSize_FreeChannel
+      64  DMA_GetChannel
+      72  DMA_Init
+     698  DMA_LISR
+      42  DMA_Register
+      24  DMA_Run
+      28  DMA_Stop
+      46  DMA_UnRegister
+      56  DMA_VFIFO_TO_LISR_FUNC
+      22  DMA_Vfifo_Flush
+      12  DMA_Vfifo_Register_Callback
+      12  DMA_Vfifo_Register_TO_Callback
+      50  DMA_Vfifo_SetAdrs
+      10  DMA_Vfifo_Set_timeout
+      16  DMA_Vfifo_disable_interrupt
+      16  DMA_Vfifo_enable_interrupt
+     172  DMA_Vfifo_init
+     128  DMA_used_channel
+          DMA_Owner
+          DMA_VFIFO_LISR_FUNC
+          DMA_LISR_FUNC
+          DMA_Channel_Status
+      20  NVIC_DisableIRQ
+      20  NVIC_EnableIRQ
+      34  NVIC_SetPriority
+      68  dma_set_channel_busy
+      50  dma_set_channel_idle
+      32  -- Other
+
+ 
+   184 bytes in section .data
+ 2 992 bytes in section .text
+ 
+ 2 992 bytes of CODE memory
+   184 bytes of DATA memory
+
+Errors: none
+Warnings: none

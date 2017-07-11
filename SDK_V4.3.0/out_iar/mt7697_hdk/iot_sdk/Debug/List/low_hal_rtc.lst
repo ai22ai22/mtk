@@ -1,0 +1,929 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:31
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\low_hal_rtc.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW8E58.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\low_hal_rtc.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\low_hal_rtc.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\low_hal_rtc.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\low_hal_rtc.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /*
+     36          ** $Log: low_hal_rtc.c $
+     37          **
+     38          **
+     39          **
+     40          **
+     41          */
+     42          
+     43          /*******************************************************************************
+     44          *                         C O M P I L E R   F L A G S
+     45          ********************************************************************************
+     46          */
+     47          
+     48          
+     49          /*******************************************************************************
+     50          *                    E X T E R N A L   R E F E R E N C E S
+     51          ********************************************************************************
+     52          */
+     53          #include "hal_rtc.h"
+     54          #ifdef HAL_RTC_MODULE_ENABLED
+     55          
+     56          #include "low_hal_rtc.h"
+     57          #include "cos_api.h"
+     58          #include "hal_gpt.h"
+     59          
+     60          /*******************************************************************************
+     61          *                              C O N S T A N T S
+     62          ********************************************************************************
+     63          */
+     64          
+     65          
+     66          /*******************************************************************************
+     67          *                             D A T A   T Y P E S
+     68          ********************************************************************************
+     69          */
+     70          
+     71          
+     72          /*******************************************************************************
+     73          *                            P U B L I C   D A T A
+     74          ********************************************************************************
+     75          */
+     76          
+     77          
+     78          /*
+     79          ========================================================================
+     80          Routine Description:
+     81          
+     82          Note:
+     83          ========================================================================
+     84          */
+     85          #if 0
+     86          ENUM_HAL_RET_T halRTCLock()
+     87          {
+     88              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+     89              UINT32 u4Val = 0;
+     90              UINT32 u4Count = 0;
+     91          
+     92              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+     93          
+     94              // Wait RTC R/W ready
+     95              // R    RTC_BASE + 0x100 [1] G_ENABLE    1'b1
+     96              do {
+     97                  u4Val = HAL_REG_32(IOT_RTC_COREPDN_ADDR);
+     98                  if ((u4Count++) > 0xFFFF) {
+     99                      // Timeout
+    100                      return HAL_RET_FAIL;
+    101                  }
+    102              } while (0 == (u4Val & BIT(RTC_COREPDN_G_ENABLE_OFFSET)));
+    103          
+    104          
+    105              // Set RTC Power Check
+    106              // W RTC_BASE + 0x04 [7:0]   RTC_PWRCHK1 8'hC6
+    107              (pRTCCtrlTypeDef->RTC_PWRCHK1) = 0x0;
+    108          
+    109              // W RTC_BASE + 0x08 [7:0]   RTC_PWRCHK2 8'h9A
+    110              (pRTCCtrlTypeDef->RTC_PWRCHK2) = 0x0;
+    111          
+    112          
+    113              // Set RTC Key
+    114              // W RTC_BASE + 0x0C [7:0]   RTC_KEY 8'h59
+    115              (pRTCCtrlTypeDef->RTC_KEY) = 0x0;
+    116          
+    117              // Set RTC Protections
+    118              // W    RTC_BASE + 0x10 [7:0]   RTC_PROT1   8'hA3
+    119              (pRTCCtrlTypeDef->RTC_PROT1) = 0x0;
+    120              // W    RTC_BASE + 0x14 [7:0]   RTC_PROT2   8'h57
+    121              (pRTCCtrlTypeDef->RTC_PROT2) = 0x0;
+    122              // W    RTC_BASE + 0x18 [7:0]   RTC_PROT3   8'h67
+    123              (pRTCCtrlTypeDef->RTC_PROT3) = 0x0;
+    124              // W    RTC_BASE + 0x1C [7:0]   RTC_PROT4   8'hD2
+    125              (pRTCCtrlTypeDef->RTC_PROT4) = 0x0;
+    126          
+    127              return HAL_RET_SUCCESS;
+    128          }
+    129          #endif
+    130          
+    131          ENUM_HAL_RET_T halRTCUnlock()
+    132          {
+    133              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    134              UINT32 u4Val = 0;
+    135              UINT32 u4Count = 0;
+    136          
+    137              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    138          
+    139              // Wait RTC R/W ready
+    140              // R    RTC_BASE + 0x100 [1] G_ENABLE    1'b1
+    141              do {
+    142                  u4Val = HAL_REG_32(IOT_RTC_COREPDN_ADDR);
+    143                  if ((u4Count++) > 0xFFFF) {
+    144                      // Timeout
+    145                      return HAL_RET_FAIL;
+    146                  }
+    147              } while (0 == (u4Val & BIT(RTC_COREPDN_G_ENABLE_OFFSET)));
+    148          
+    149          
+    150              // Set RTC Power Check
+    151              // W RTC_BASE + 0x04 [7:0]   RTC_PWRCHK1 8'hC6
+    152              (pRTCCtrlTypeDef->RTC_PWRCHK1) = IOT_RTC_RTC_PWRCHK1;
+    153          
+    154              // W RTC_BASE + 0x08 [7:0]   RTC_PWRCHK2 8'h9A
+    155              (pRTCCtrlTypeDef->RTC_PWRCHK2) = IOT_RTC_RTC_PWRCHK2;
+    156          
+    157          
+    158              // Set RTC Key
+    159              // W RTC_BASE + 0x0C [7:0]   RTC_KEY 8'h59
+    160              (pRTCCtrlTypeDef->RTC_KEY) = IOT_RTC_RTC_KEY;
+    161          
+    162              // Set RTC Protections
+    163              // W    RTC_BASE + 0x10 [7:0]   RTC_PROT1   8'hA3
+    164              (pRTCCtrlTypeDef->RTC_PROT1) = IOT_RTC_RTC_PROT1;
+    165              // W    RTC_BASE + 0x14 [7:0]   RTC_PROT2   8'h57
+    166              (pRTCCtrlTypeDef->RTC_PROT2) = IOT_RTC_RTC_PROT2;
+    167              // W    RTC_BASE + 0x18 [7:0]   RTC_PROT3   8'h67
+    168              (pRTCCtrlTypeDef->RTC_PROT3) = IOT_RTC_RTC_PROT3;
+    169              // W    RTC_BASE + 0x1C [7:0]   RTC_PROT4   8'hD2
+    170              (pRTCCtrlTypeDef->RTC_PROT4) = IOT_RTC_RTC_PROT4;
+    171          
+    172              return HAL_RET_SUCCESS;
+    173          }
+    174          #if 0
+    175          /*
+    176              000: Wait 2^5-1 ~ 2^5 cycle of RTC clock
+    177              001: Wait 2^6-4 ~ 2^6 cycle of RTC clock
+    178              010: Wait 2^8-2^4~2^8 cycle of RTC clock
+    179              011: Wait 2^10-2^6~2^10 cycle of RTC clock
+    180              100: Wait 2^12-2^8~2^12 cycle of RTC clock
+    181              101: Wait 2^13-2^9~2^13 cycle of RTC clock
+    182              110: Wait 2^14-2^10~2^14 cycle of RTC clock
+    183              111: Wait 2^15-2^11~2^15 cycle of RTC clock
+    184          */
+    185          VOID halRTCSetDebounce(UINT8 ucDebounce)
+    186          {
+    187              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    188          
+    189              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    190          
+    191              (pRTCCtrlTypeDef->RTC_DEBNCE) = (((pRTCCtrlTypeDef->RTC_DEBNCE) & (~RTC_DEBNCE_DEBOUNCE_MASK)) | (ucDebounce << RTC_DEBNCE_DEBOUNCE_OFFSET));
+    192          }
+    193          #endif
+    194          /*
+    195              Inhibit status indicator.
+    196              Before reading the registers of YEAR, MONTH, WEEK, DAY, HOUR, MIN, and SEC, read this bit first.
+    197              0: UP is OK to read/write RTC
+    198              1: RTC is updating RTC clock, inhibit UP write timer related registers and read following command YEAR, MONTH, WEEK, DAY, HOUR, MIN, SEC, TIMERCTL, TIMERH, and TIMERL.
+    199          */
+    200          ENUM_HAL_RET_T halRTCCheckInhibit()
+    201          {
+    202              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    203              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    204              UINT8 ucCnt = 0;
+    205              UINT8 ucTimeout = 0xFF;
+    206          
+    207              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    208          
+    209              do {
+    210                  ucCnt++;
+    211              } while (((pRTCCtrlTypeDef->RTC_CTL) & BIT(RTC_CTL_INHIBIT_OFFSET)) && (ucCnt < ucTimeout));
+    212          
+    213              if (ucCnt < ucTimeout) {
+    214                  ret = HAL_RET_SUCCESS;
+    215              } else {
+    216                  ret = HAL_RET_FAIL;
+    217              }
+    218          
+    219              return ret;
+    220          }
+    221          
+    222          ENUM_HAL_RET_T halRTCGetTime(
+    223              PUINT8 pucYear,
+    224              PUINT8 pucMonth,
+    225              PUINT8 pucDayofMonth,
+    226              PUINT8 pucDayofWeek,
+    227              PUINT8 pucHour,
+    228              PUINT8 pucMinute,
+    229              PUINT8 pucSecond
+    230          )
+    231          {
+    232              // TODO: read Time should be done A.S.A.P to prevent from 0h:59m:59s --> 1h:0m:0s
+    233              // interrupt handling can introduce read time error
+    234              // MAYBE read time function with interrupt MASKED is needed?
+    235              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    236              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    237          
+    238              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    239          
+    240              if (HAL_RET_SUCCESS == halRTCCheckInhibit()) {
+    241                  (*pucYear) = (pRTCCtrlTypeDef->RTC_TC_YEA);
+    242              } else {
+    243                  return HAL_RET_FAIL;
+    244              }
+    245          
+    246              if (HAL_RET_SUCCESS == halRTCCheckInhibit()) {
+    247                  (*pucMonth) = (pRTCCtrlTypeDef->RTC_TC_MON);
+    248              } else {
+    249                  return HAL_RET_FAIL;
+    250              }
+    251          
+    252              if (HAL_RET_SUCCESS == halRTCCheckInhibit()) {
+    253                  (*pucDayofMonth) = (pRTCCtrlTypeDef->RTC_TC_DOM);
+    254              } else {
+    255                  return HAL_RET_FAIL;
+    256              }
+    257          
+    258              if (HAL_RET_SUCCESS == halRTCCheckInhibit()) {
+    259                  (*pucDayofWeek) = (pRTCCtrlTypeDef->RTC_TC_DOW);
+    260              } else {
+    261                  return HAL_RET_FAIL;
+    262              }
+    263          
+    264              if (HAL_RET_SUCCESS == halRTCCheckInhibit()) {
+    265                  (*pucHour) = (pRTCCtrlTypeDef->RTC_TC_HOU);
+    266              } else {
+    267                  return HAL_RET_FAIL;
+    268              }
+    269          
+    270              if (HAL_RET_SUCCESS == halRTCCheckInhibit()) {
+    271                  (*pucMinute) = (pRTCCtrlTypeDef->RTC_TC_MIN);
+    272              } else {
+    273                  return HAL_RET_FAIL;
+    274              }
+    275          
+    276              if (HAL_RET_SUCCESS == halRTCCheckInhibit()) {
+    277                  (*pucSecond) = (pRTCCtrlTypeDef->RTC_TC_SEC);
+    278              } else {
+    279                  return HAL_RET_FAIL;
+    280              }
+    281          
+    282              return ret;
+    283          }
+    284          
+    285          ENUM_HAL_RET_T halRTCSetTime(
+    286              UINT8 ucYear,
+    287              UINT8 ucMonth,
+    288              UINT8 ucDayofMonth,
+    289              UINT8 ucDayofWeek,
+    290              UINT8 ucHour,
+    291              UINT8 ucMinute,
+    292              UINT8 ucSecond
+    293          )
+    294          {
+    295              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    296              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    297          
+    298              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    299          
+    300              ret = halRTCUnlock();
+    301          
+    302              if (HAL_RET_SUCCESS == ret) {
+    303                  // Stop RTC
+    304                  // W   RTC_BASE + 0x20 [0] RC_STOP 1'b1
+    305                  (pRTCCtrlTypeDef->RTC_CTL) |= BIT(RTC_CTL_RC_STOP_OFFSET);
+    306          
+    307                  // Set RTC time
+    308                  // W   RTC_BASE + 0x40 [7:0]   RTC_TC_YEA  USER_DEFINED    Year
+    309                  (pRTCCtrlTypeDef->RTC_TC_YEA) = ucYear;
+    310                  // W   RTC_BASE + 0x44 [7:0]   RTC_TC_MON  USER_DEFINED    Month
+    311                  (pRTCCtrlTypeDef->RTC_TC_MON) = ucMonth;
+    312                  // W   RTC_BASE + 0x48 [7:0]   RTC_TC_DOM  USER_DEFINED    Day of month
+    313                  (pRTCCtrlTypeDef->RTC_TC_DOM) = ucDayofMonth;
+    314                  // W   RTC_BASE + 0x4C [7:0]   RTC_TC_DOW  USER_DEFINED    Day of week
+    315                  (pRTCCtrlTypeDef->RTC_TC_DOW) = ucDayofWeek;
+    316                  // W   RTC_BASE + 0x50 [7:0]   RTC_TC_HOU  USER_DEFINED    Hour
+    317                  (pRTCCtrlTypeDef->RTC_TC_HOU) = ucHour;
+    318                  // W   RTC_BASE + 0x54 [7:0]   RTC_TC_MIN  USER_DEFINED    Minute
+    319                  (pRTCCtrlTypeDef->RTC_TC_MIN) = ucMinute;
+    320                  // W   RTC_BASE + 0x58 [7:0]   RTC_TC_SEC  USER_DEFINED    Second
+    321                  (pRTCCtrlTypeDef->RTC_TC_SEC) = ucSecond;
+    322          
+    323                  // Enable RTC
+    324                  // W   RTC_BASE + 0x20 [0] RC_STOP 1'b0
+    325                  (pRTCCtrlTypeDef->RTC_CTL) &= (~BIT(RTC_CTL_RC_STOP_OFFSET));
+    326              }
+    327          
+    328              return ret;
+    329          
+    330          }
+    331          
+    332          
+    333          ENUM_HAL_RET_T halRTCInit(
+    334          )
+    335          {
+    336              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    337              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    338          
+    339              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    340          
+    341              ret = halRTCUnlock();
+    342          
+    343              if (HAL_RET_SUCCESS == ret) {
+    344                  // Reduce RTC power consumption
+    345                  (pRTCCtrlTypeDef->RTC_XOSC_CFG) &= (~(BIT(RTC_XOSC_CFG_OSCPDN_OFFSET)));
+    346                  (pRTCCtrlTypeDef->RTC_XOSC_CFG) &= (~(BIT(RTC_XOSC_CFG_AMPCTL_EN_OFFSET)));
+    347                  (pRTCCtrlTypeDef->RTC_XOSC_CFG) &= (~(BIT(RTC_XOSC_CFG_AMP_GSEL_OFFSET)));
+    348                  (pRTCCtrlTypeDef->RTC_XOSC_CFG) &= (~(RTC_XOSC_CFG_OSCCALI_MASK));
+    349                  (pRTCCtrlTypeDef->RTC_XOSC_CFG) |= (BIT(RTC_XOSC_CFG_AMP_GSEL_OFFSET));
+    350          
+    351              }
+    352          
+    353              return ret;
+    354          }
+    355          
+    356          ENUM_HAL_RET_T halRTCDeInit(void)
+    357          {
+    358              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    359              ENUM_HAL_RET_T ret = HAL_RET_FAIL;
+    360          
+    361              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    362          
+    363              ret = halRTCUnlock();
+    364          
+    365              if (HAL_RET_SUCCESS == ret) {
+    366                  // Stop RTC
+    367                  // W   RTC_BASE + 0x20 [0] RC_STOP 1'b1
+    368                  (pRTCCtrlTypeDef->RTC_CTL) |= BIT(RTC_CTL_RC_STOP_OFFSET);
+    369              }
+    370          
+    371              return ret;
+    372          }
+    373          
+    374          
+    375          /*
+    376          UINT8 ucEnableMask
+    377              Bit 7   ALMYR   Alarm year enable
+    378                  0: Alarm does not compare year.
+    379                  1: Alarm compares year.
+    380              Bit 6   ALMMON  Alarm month enable
+    381                  0: Alarm does not compare month.
+    382                  1: Alarm compares month.
+    383              Bit 5   ALMDOM  Alarm day of month enable
+    384                  0: Alarm does not compare day of month.
+    385                  1: Alarm compares day of month.
+    386              Bit 4   ALMDOW  Alarm day of week enable
+    387                  0: Alarm does not compare day of week.
+    388                  1: Alarm compares day of week.
+    389              Bit 3   ALMHR   Alarm hour enable
+    390                  0: Alarm does not compare hour.
+    391                  1: Alarm compares hour.
+    392              Bit 2   ALMMIN  Alarm minute enable
+    393                  0: Alarm does not compare minute.
+    394                  1: Alarm compares minute.
+    395              Bit 1   ALMSEC  Alarm second enable
+    396                  0: Alarm does not compare second.
+    397                  1: Alarm compares second.
+    398              Bit 0   ALMEN   Alarm enable
+    399                  0: Disable alarm.
+    400                  1: Enable alarm.
+    401          */
+    402          ENUM_HAL_RET_T halRTCSetAlarm(
+    403              UINT8 ucYear,
+    404              UINT8 ucMonth,
+    405              UINT8 ucDayofMonth,
+    406              UINT8 ucDayofWeek,
+    407              UINT8 ucHour,
+    408              UINT8 ucMinute,
+    409              UINT8 ucSecond,
+    410              UINT8 ucEnableMask
+    411          )
+    412          {
+    413              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    414              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    415          
+    416          
+    417              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    418          
+    419              ret = halRTCUnlock();
+    420          
+    421              if (HAL_RET_SUCCESS == ret) {
+    422                  // Set RTC alarm
+    423                  // W    RTC_BASE + 0x60 [7:0]   RTC_AL_YEA  USER_DEFINED    Year
+    424                  (pRTCCtrlTypeDef->RTC_AL_YEAR) = ucYear;
+    425                  // W    RTC_BASE + 0x64 [7:0]   RTC_AL_MON  USER_DEFINED    Month
+    426                  (pRTCCtrlTypeDef->RTC_AL_MON) = ucMonth;
+    427                  // W    RTC_BASE + 0x68 [7:0]   RTC_AL_DOM  USER_DEFINED    Day of month
+    428                  (pRTCCtrlTypeDef->RTC_AL_DOM) = ucDayofMonth;
+    429                  // W    RTC_BASE + 0x6C [7:0]   RTC_AL_DOW  USER_DEFINED    Day of week
+    430                  (pRTCCtrlTypeDef->RTC_AL_DOW) = ucDayofWeek;
+    431                  // W    RTC_BASE + 0x70 [7:0]   RTC_AL_HOU  USER_DEFINED    Hour
+    432                  (pRTCCtrlTypeDef->RTC_AL_HOUR) = ucHour;
+    433                  // W    RTC_BASE + 0x74 [7:0]   RTC_AL_MIN  USER_DEFINED    Minute
+    434                  (pRTCCtrlTypeDef->RTC_AL_MIN) = ucMinute;
+    435                  // W    RTC_BASE + 0x78 [7:0]   RTC_AL_SEC  USER_DEFINED    Second
+    436                  (pRTCCtrlTypeDef->RTC_AL_SEC) = ucSecond;
+    437          
+    438                  // W    RTC_BASE + 0x7C [7:1]   RTC_AL_CTL  USER_DEFINED    Set alarm control
+    439                  // W    RTC_BASE + 0x7C [0]     RTC_AL_CTL/ALMEN    1'b1    Enable alarm
+    440                  (pRTCCtrlTypeDef->RTC_AL_CTL) = ucEnableMask;
+    441              }
+    442          
+    443              return ret;
+    444          }
+    445          
+    446          ENUM_HAL_RET_T halRTCGetAlarm(
+    447              PUINT8 pucYear,
+    448              PUINT8 pucMonth,
+    449              PUINT8 pucDayofMonth,
+    450              PUINT8 pucDayofWeek,
+    451              PUINT8 pucHour,
+    452              PUINT8 pucMinute,
+    453              PUINT8 pucSecond
+    454          )
+    455          {
+    456              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    457              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    458          
+    459              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    460          
+    461              (*pucYear) = (pRTCCtrlTypeDef->RTC_AL_YEAR);
+    462              (*pucMonth) = (pRTCCtrlTypeDef->RTC_AL_MON);
+    463              (*pucDayofMonth) = (pRTCCtrlTypeDef->RTC_AL_DOM);
+    464              (*pucDayofWeek) = (pRTCCtrlTypeDef->RTC_AL_DOW);
+    465              (*pucHour) = (pRTCCtrlTypeDef->RTC_AL_HOUR);
+    466              (*pucMinute) = (pRTCCtrlTypeDef->RTC_AL_MIN);
+    467              (*pucSecond) = (pRTCCtrlTypeDef->RTC_AL_SEC);
+    468          
+    469              return ret;
+    470          }
+    471          
+    472          ENUM_HAL_RET_T halRTCEnableAlarm(UINT8 ucEnable)
+    473          {
+    474              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    475              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    476          
+    477          
+    478              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    479          
+    480              ret = halRTCUnlock();
+    481          
+    482              if (HAL_RET_SUCCESS == ret) {
+    483                  if (1 == ucEnable) {
+    484                      // W    RTC_BASE + 0x7C [0]     RTC_AL_CTL/ALMEN    1'b1    Enable alarm
+    485                      (pRTCCtrlTypeDef->RTC_AL_CTL) |= BIT(0);
+    486                  } else {
+    487                      (pRTCCtrlTypeDef->RTC_AL_CTL) &= (~BIT(0));
+    488                  }
+    489              }
+    490              return ret;
+    491          }
+    492          
+    493          #if 0
+    494          ENUM_HAL_RET_T halRTCSetCountDownTimer(
+    495              UINT16 u2TimerCnt, // unit: 1/32 sec
+    496              UINT8 ucEnable
+    497          )
+    498          {
+    499              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    500              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    501          
+    502          
+    503              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    504          
+    505              ret = halRTCUnlock();
+    506          
+    507              if (HAL_RET_SUCCESS == ret) {
+    508                  // Set RTC timer
+    509                  // W   RTC_BASE + 0x90 [1] TR_INTEN    1'b0    Disalbe Timer interrupt
+    510                  (pRTCCtrlTypeDef->RTC_TIMER_CTL) &= (~BIT(RTC_TIMER_CTL_TR_INTEN_OFFSET));
+    511          
+    512                  // W   RTC_BASE + 0x94 [7:0]   RTC_TIMER_CNTH  USER_DEFINED    Upper byte of timer value
+    513                  (pRTCCtrlTypeDef->RTC_TIMER_CNTH) = (u2TimerCnt >> 8);
+    514                  // W   RTC_BASE + 0x98 [7:0]   RTC_TIMER_CNTL  USER_DEFINED    Lower byte of timer value
+    515                  (pRTCCtrlTypeDef->RTC_TIMER_CNTL) = (u2TimerCnt & 0xFF);
+    516          
+    517                  if (ucEnable) {
+    518                      // W   RTC_BASE + 0x90 [1] TR_INTEN    1'b1    Enable Timer
+    519                      (pRTCCtrlTypeDef->RTC_TIMER_CTL) |= (BIT(RTC_TIMER_CTL_TR_INTEN_OFFSET));
+    520                  }
+    521              }
+    522          
+    523              return ret;
+    524          }
+    525          #endif
+    526          
+    527          ENUM_HAL_RET_T halRTCEnterMode()
+    528          {
+    529              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    530              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    531          
+    532              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    533          
+    534              ret = halRTCUnlock();
+    535              if (HAL_RET_SUCCESS == ret) {
+    536                  //Set debounce time
+    537                  // W   RTC_BASE + 0x2C [2:0]   RTC_DEBNCE  3'b000  Less than 1 ms
+    538                  (pRTCCtrlTypeDef->RTC_DEBNCE) &= (~RTC_DEBNCE_DEBOUNCE_MASK);
+    539          
+    540                  (pRTCCtrlTypeDef->RTC_XOSC_CFG) |= (BIT(RTC_XOSC_CFG_AMP_GSEL_OFFSET));
+    541                  // Disable RTC_PMU_EN
+    542                  // W   RTC_BASE + 0x30 [0] PMU_EN  1'b0
+    543                  (pRTCCtrlTypeDef->RTC_PMU_EN) &= (~BIT(RTC_PMU_EN_OFFSET));
+    544          
+    545                  // delay 20ms for safe power down: DE simulation is 12.xxms
+    546                  hal_gpt_delay_ms(20);
+    547                  // If after 20ms chip still have power, set PMU_EN high and return fail for enter RTC mode process
+    548                  // Enable RTC_PMU_EN
+    549                  // W   RTC_BASE + 0x30 [0] PMU_EN  1'b1
+    550                  (pRTCCtrlTypeDef->RTC_PMU_EN) |= (BIT(RTC_PMU_EN_OFFSET));
+    551                  ret = HAL_RET_FAIL;
+    552              }
+    553              return ret;
+    554          }
+    555          #if 0
+    556          ENUM_HAL_RET_T halRTCSetPMUEN()
+    557          {
+    558              P_IOT_RTC_CTRL_TypeDef pRTCCtrlTypeDef = NULL;
+    559              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    560          
+    561              pRTCCtrlTypeDef = (P_IOT_RTC_CTRL_TypeDef)(CM4_RTC_BASE + 0x0004);
+    562          
+    563              ret = halRTCUnlock();
+    564              if (HAL_RET_SUCCESS == ret) {
+    565                  (pRTCCtrlTypeDef->RTC_PMU_EN) |= (BIT(RTC_PMU_EN_OFFSET));
+    566              }
+    567          
+    568              return ret;
+    569          }
+    570          #endif
+    571          
+    572          static ENUM_HAL_RET_T halRTCWriteBackup(UINT16 addr, const INT8 *buf, UINT16 len)
+    573          {
+    574              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    575              P_IOT_RTC_BACKUP_TypeDef pRTCBackupTypeDef = NULL;
+    576              volatile UINT32 *pu4RegVal = NULL;
+    577              UINT8 ucRegOffset = 0;
+    578              UINT8 ucRegIndex = 0;
+    579              UINT16 u2Residual = len;
+    580              UINT32 u4Val = 0;
+    581              UINT16 i = 0;
+    582          
+    583              pRTCBackupTypeDef = (P_IOT_RTC_BACKUP_TypeDef)(CM4_RTC_BASE + RTC_BACKUP0_OFFSET);
+    584          
+    585              // sanity check
+    586              if ((addr + len) > RTC_BACKUP_BYTE_NUM_MAX) {
+    587                  return HAL_RET_FAIL;
+    588              }
+    589          
+    590              ret = halRTCUnlock();
+    591              if (HAL_RET_SUCCESS == ret) {
+    592                  ucRegOffset = (addr & 0x3);
+    593                  ucRegIndex = (addr >> 2);
+    594                  if (0 != ucRegOffset) {
+    595                      pu4RegVal = ((&(pRTCBackupTypeDef->RTC_BACKUP0)) + ucRegIndex);
+    596                      u4Val = (*pu4RegVal);
+    597                      for (i = 0; ((i < (4 - ucRegOffset)) && (u2Residual > 0)); i++) {
+    598                          u4Val = (u4Val & (~((0xFF) << ((ucRegOffset + i) * 8))));
+    599                          if (NULL != buf) {
+    600                              u4Val = (u4Val | ((*buf) << ((ucRegOffset + i) * 8)));
+    601          
+    602                              buf = buf + 1;
+    603                          } else {
+    604                              u4Val = (u4Val | ((0x00) << ((ucRegOffset + i) * 8)));
+    605                          }
+    606                          u2Residual = u2Residual - 1;
+    607                      }
+    608                      (*pu4RegVal) = u4Val;
+    609          
+    610                      ucRegIndex += 1;
+    611                  }
+    612                  pu4RegVal = ((&(pRTCBackupTypeDef->RTC_BACKUP0)) + ucRegIndex);
+    613                  while (u2Residual >= 4) {
+    614                      if (NULL != buf) {
+    615                          u4Val = (((*buf) << 0) | ((*(buf + 1)) << 8) | ((*(buf + 2)) << 16) | ((*(buf + 3)) << 24));
+    616                          (*pu4RegVal) = u4Val;
+    617                          pu4RegVal = pu4RegVal + 1;
+    618                          buf = buf + 4;
+    619                      } else {
+    620                          u4Val = 0x0;
+    621                          (*pu4RegVal) = u4Val;
+    622                          pu4RegVal = pu4RegVal + 1;
+    623                      }
+    624                      u2Residual = u2Residual - 4;
+    625                  }
+    626          
+    627                  if (u2Residual > 0) {
+    628                      u4Val = (*pu4RegVal);
+    629                      switch (u2Residual) {
+    630                          case 1:
+    631                              u4Val = (u4Val & 0xFFFFFF00);
+    632                              if (NULL != buf) {
+    633                                  u4Val = u4Val | ((*buf) << 0);
+    634                              }
+    635                              break;
+    636                          case 2:
+    637                              u4Val = (u4Val & 0xFFFF0000);
+    638                              if (NULL != buf) {
+    639                                  u4Val = (u4Val | (((*buf) << 0) | ((*(buf + 1)) << 8)));
+    640                              }
+    641                              break;
+    642                          case 3:
+    643                              u4Val = (u4Val & 0xFF000000);
+    644                              if (NULL != buf) {
+    645                                  u4Val = (u4Val | (((*buf) << 0) | ((*(buf + 1)) << 8) | ((*(buf + 2)) << 16)));
+    646                              }
+    647                              break;
+    648                      }
+    649                      (*pu4RegVal) = u4Val;
+    650                  }
+    651          
+    652              }
+    653          
+    654              return ret;
+    655          }
+    656          ENUM_HAL_RET_T halRTCSetBackup(UINT16 addr, const INT8 *buf, UINT16 len)
+    657          {
+    658              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    659              ret = halRTCWriteBackup(addr, buf, len);
+    660          
+    661              return ret;
+    662          }
+    663          
+    664          
+    665          ENUM_HAL_RET_T halRTCClearBackup(UINT16 addr, UINT16 len)
+    666          {
+    667              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    668              ret = halRTCWriteBackup(addr, NULL, len);
+    669          
+    670              return ret;
+    671          }
+    672          
+    673          
+    674          ENUM_HAL_RET_T halRTCGetBackup(UINT16 addr, INT8 *buf, UINT16 len)
+    675          {
+    676              ENUM_HAL_RET_T ret = HAL_RET_SUCCESS;
+    677              P_IOT_RTC_BACKUP_TypeDef pRTCBackupTypeDef = NULL;
+    678              volatile UINT32 *pu4RegVal = NULL;
+    679              UINT8 ucRegOffset = 0;
+    680              UINT8 ucRegIndex = 0;
+    681              UINT16 u2Residual = len;
+    682              UINT32 u4Val = 0;
+    683              UINT16 i = 0;
+    684          
+    685              pRTCBackupTypeDef = (P_IOT_RTC_BACKUP_TypeDef)(CM4_RTC_BASE + RTC_BACKUP0_OFFSET);
+    686          
+    687              // sanity check
+    688              if ((addr + len) > RTC_BACKUP_BYTE_NUM_MAX) {
+    689                  return HAL_RET_FAIL;
+    690              }
+    691          
+    692              ret = halRTCUnlock();
+    693              if (HAL_RET_SUCCESS == ret) {
+    694                  ucRegOffset = (addr & 0x3);
+    695                  ucRegIndex = (addr >> 2);
+    696                  if (0 != ucRegOffset) {
+    697                      pu4RegVal = ((&(pRTCBackupTypeDef->RTC_BACKUP0)) + ucRegIndex);
+    698                      u4Val = (*pu4RegVal);
+    699                      for (i = 0; ((i < (4 - ucRegOffset)) && (u2Residual > 0)); i++) {
+    700                          (*buf) = ((u4Val & (((0xFF) << ((ucRegOffset + i) * 8)))) >> ((ucRegOffset + i) * 8));
+    701          
+    702                          buf = buf + 1;
+    703                          u2Residual = u2Residual - 1;
+    704                      }
+    705          
+    706                      ucRegIndex += 1;
+    707                  }
+    708                  pu4RegVal = ((&(pRTCBackupTypeDef->RTC_BACKUP0)) + ucRegIndex);
+    709                  while (u2Residual >= 4) {
+    710                      u4Val = (*pu4RegVal);
+    711          
+    712                      (*buf) = (u4Val & 0xFF);
+    713                      (*(buf + 1)) = ((u4Val & 0xFF00) >> 8);
+    714                      (*(buf + 2)) = ((u4Val & 0xFF0000) >> 16);
+    715                      (*(buf + 3)) = ((u4Val & 0xFF000000) >> 24);
+    716          
+    717                      pu4RegVal = pu4RegVal + 1;
+    718                      buf = buf + 4;
+    719                      u2Residual = u2Residual - 4;
+    720                  }
+    721          
+    722                  if (u2Residual > 0) {
+    723                      u4Val = (*pu4RegVal);
+    724          
+    725                      for (i = 0; i < u2Residual; i++) {
+    726                          (*buf) = ((u4Val & (0xFF << (i * 8))) >> (i * 8));
+    727                          buf = buf + 1;
+    728                      }
+    729                  }
+    730          
+    731              }
+    732          
+    733              return ret;
+    734          
+    735          }
+    736          
+    737          #endif /* HAL_RTC_MODULE_ENABLED */
+    738          
+    739          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   halRTCCheckInhibit
+       0   halRTCClearBackup
+         0   -> halRTCWriteBackup
+       8   halRTCDeInit
+         8   -> halRTCUnlock
+       8   halRTCEnableAlarm
+         8   -> halRTCUnlock
+       8   halRTCEnterMode
+         8   -> halRTCUnlock
+         8   -> hal_gpt_delay_ms
+      16   halRTCGetAlarm
+      24   halRTCGetBackup
+        24   -> halRTCUnlock
+      24   halRTCGetTime
+        24   -> halRTCCheckInhibit
+       8   halRTCInit
+         8   -> halRTCUnlock
+      24   halRTCSetAlarm
+        24   -> halRTCUnlock
+       0   halRTCSetBackup
+         0   -> halRTCWriteBackup
+      24   halRTCSetTime
+        24   -> halRTCUnlock
+       0   halRTCUnlock
+      24   halRTCWriteBackup
+        24   -> halRTCUnlock
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+       4  ??DataTable11_7
+      32  halRTCCheckInhibit
+       6  halRTCClearBackup
+      22  halRTCDeInit
+      36  halRTCEnableAlarm
+      54  halRTCEnterMode
+      48  halRTCGetAlarm
+     172  halRTCGetBackup
+     142  halRTCGetTime
+      54  halRTCInit
+      66  halRTCSetAlarm
+       2  halRTCSetBackup
+      82  halRTCSetTime
+      62  halRTCUnlock
+     246  halRTCWriteBackup
+
+ 
+ 1 056 bytes in section .text
+ 
+ 1 056 bytes of CODE memory
+
+Errors: none
+Warnings: none

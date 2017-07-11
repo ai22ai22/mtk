@@ -1,0 +1,843 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:32
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\lwip\src\core\lwip_timers.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW912C.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\lwip\src\core\lwip_timers.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\lwip_timers.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\lwip_timers.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\lwip\src\core\lwip_timers.c
+      1          /**
+      2           * @file
+      3           * Stack-internal timers implementation.
+      4           * This file includes timer callbacks for stack-internal timers as well as
+      5           * functions to set up or stop timers and check for expired timers.
+      6           *
+      7           */
+      8          
+      9          /*
+     10           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+     11           * All rights reserved.
+     12           *
+     13           * Redistribution and use in source and binary forms, with or without modification,
+     14           * are permitted provided that the following conditions are met:
+     15           *
+     16           * 1. Redistributions of source code must retain the above copyright notice,
+     17           *    this list of conditions and the following disclaimer.
+     18           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     19           *    this list of conditions and the following disclaimer in the documentation
+     20           *    and/or other materials provided with the distribution.
+     21           * 3. The name of the author may not be used to endorse or promote products
+     22           *    derived from this software without specific prior written permission.
+     23           *
+     24           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     25           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     26           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     27           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     28           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     29           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     30           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     31           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     32           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     33           * OF SUCH DAMAGE.
+     34           *
+     35           * This file is part of the lwIP TCP/IP stack.
+     36           *
+     37           * Author: Adam Dunkels <adam@sics.se>
+     38           *         Simon Goldschmidt
+     39           *
+     40           */
+     41          
+     42          #include "lwip/opt.h"
+     43          
+     44          #include "lwip/timers.h"
+     45          #include "lwip/tcp_impl.h"
+     46          
+     47          #if LWIP_TIMERS
+     48          
+     49          #include "lwip/def.h"
+     50          #include "lwip/memp.h"
+     51          #include "lwip/tcpip.h"
+     52          
+     53          #include "lwip/ip_frag.h"
+     54          #include "netif/etharp.h"
+     55          #include "lwip/dhcp.h"
+     56          #include "lwip/autoip.h"
+     57          #include "lwip/igmp.h"
+     58          #include "lwip/dns.h"
+     59          #include "lwip/nd6.h"
+     60          #include "lwip/ip6_frag.h"
+     61          #include "lwip/mld6.h"
+     62          #include "lwip/sys.h"
+     63          #include "lwip/pbuf.h"
+     64          
+     65          /** The one and only timeout list */
+     66          static struct sys_timeo *next_timeout;
+     67          #if NO_SYS
+     68          static u32_t timeouts_last_time;
+     69          #endif /* NO_SYS */
+     70          
+     71          #if LWIP_TCP
+     72          /** global variable that shows if the tcp timer is currently scheduled or not */
+     73          static int tcpip_tcp_timer_active;
+     74          
+     75          /**
+     76           * Timer callback function that calls tcp_tmr() and reschedules itself.
+     77           *
+     78           * @param arg unused argument
+     79           */
+     80          static void
+     81          tcpip_tcp_timer(void *arg)
+     82          {
+     83            LWIP_UNUSED_ARG(arg);
+     84          
+     85            /* call TCP timer handler */
+     86            tcp_tmr();
+     87            /* timer still needed? */
+     88            if (tcp_active_pcbs || tcp_tw_pcbs) {
+     89              /* restart timer */
+     90              sys_timeout(TCP_TMR_INTERVAL, tcpip_tcp_timer, NULL);
+     91            } else {
+     92              /* disable timer */
+     93              tcpip_tcp_timer_active = 0;
+     94            }
+     95          }
+     96          
+     97          /**
+     98           * Called from TCP_REG when registering a new PCB:
+     99           * the reason is to have the TCP timer only running when
+    100           * there are active (or time-wait) PCBs.
+    101           */
+    102          void
+    103          tcp_timer_needed(void)
+    104          {
+    105            /* timer is off but needed again? */
+    106            if (!tcpip_tcp_timer_active && (tcp_active_pcbs || tcp_tw_pcbs)) {
+    107              /* enable and start timer */
+    108              tcpip_tcp_timer_active = 1;
+    109              sys_timeout(TCP_TMR_INTERVAL, tcpip_tcp_timer, NULL);
+    110            }
+    111          }
+    112          #endif /* LWIP_TCP */
+    113          
+    114          #if LWIP_IPV4
+    115          #if IP_REASSEMBLY
+    116          extern u8_t g_ip_reass_timer_active;
+    117          /**
+    118           * Timer callback function that calls ip_reass_tmr() and reschedules itself.
+    119           *
+    120           * @param arg unused argument
+    121           */
+    122          static void
+    123          ip_reass_timer(void *arg)
+    124          {
+    125            LWIP_UNUSED_ARG(arg);
+    126            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: ip_reass_tmr()\n"));
+    127            ip_reass_tmr();
+    128            if (g_ip_reass_timer_active != 0) {
+    129              sys_timeout(IP_TMR_INTERVAL, ip_reass_timer, NULL);
+    130            }
+    131          }
+    132          
+    133          void
+    134          ip_reass_timer_needed(void)
+    135          {
+    136              if (g_ip_reass_timer_active == 0) {
+    137                  LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: ip_reass_timer_needed()\n"));
+    138                  g_ip_reass_timer_active = 1;
+    139                  sys_timeout(IP_TMR_INTERVAL, ip_reass_timer, NULL);
+    140              }
+    141          }
+    142          
+    143          #endif /* IP_REASSEMBLY */
+    144          
+    145          #if LWIP_ARP
+    146          /**
+    147           * Timer callback function that calls etharp_tmr() and reschedules itself.
+    148           *
+    149           * @param arg unused argument
+    150           */
+    151          static void
+    152          arp_timer(void *arg)
+    153          {
+    154            LWIP_UNUSED_ARG(arg);
+    155            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: etharp_tmr()\n"));
+    156            etharp_tmr();
+    157            sys_timeout(ARP_TMR_INTERVAL, arp_timer, NULL);
+    158          }
+    159          #endif /* LWIP_ARP */
+    160          
+    161          #if LWIP_DHCP
+    162          /**
+    163           * Timer callback function that calls dhcp_coarse_tmr() and reschedules itself.
+    164           *
+    165           * @param arg unused argument
+    166           */
+    167          extern u8_t  g_dhcp_timer_active;
+    168          
+    169          static void
+    170          dhcp_timer_coarse(void *arg)
+    171          {
+    172            LWIP_UNUSED_ARG(arg);
+    173            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: dhcp_coarse_tmr()\n"));
+    174            dhcp_coarse_tmr();
+    175            sys_timeout(DHCP_COARSE_TIMER_MSECS, dhcp_timer_coarse, NULL);
+    176          }
+    177          
+    178          /**
+    179           * Timer callback function that calls dhcp_fine_tmr() and reschedules itself.
+    180           *
+    181           * @param arg unused argument
+    182           */
+    183          static void
+    184          dhcp_timer_fine(void *arg)
+    185          {
+    186            LWIP_UNUSED_ARG(arg);
+    187            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: dhcp_fine_tmr()\n"));
+    188            dhcp_fine_tmr();
+    189            if (g_dhcp_timer_active != 0) {
+    190              sys_timeout(DHCP_FINE_TIMER_MSECS, dhcp_timer_fine, NULL);
+    191            }
+    192          }
+    193          
+    194          void
+    195          dhcp_timer_needed(void)
+    196          {
+    197              if (g_dhcp_timer_active == 0) {
+    198                  LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: dhcp_timer_needed()\n"));
+    199                  g_dhcp_timer_active = 1;
+    200                  sys_timeout(DHCP_FINE_TIMER_MSECS, dhcp_timer_fine, NULL);
+    201              }
+    202          }
+    203          
+    204          #endif /* LWIP_DHCP */
+    205          
+    206          #if LWIP_AUTOIP
+    207          /**
+    208           * Timer callback function that calls autoip_tmr() and reschedules itself.
+    209           *
+    210           * @param arg unused argument
+    211           */
+    212          static void
+    213          autoip_timer(void *arg)
+    214          {
+    215            LWIP_UNUSED_ARG(arg);
+    216            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: autoip_tmr()\n"));
+    217            autoip_tmr();
+    218            sys_timeout(AUTOIP_TMR_INTERVAL, autoip_timer, NULL);
+    219          }
+    220          #endif /* LWIP_AUTOIP */
+    221          
+    222          #if LWIP_IGMP
+    223          /**
+    224           * Timer callback function that calls igmp_tmr() and reschedules itself.
+    225           *
+    226           * @param arg unused argument
+    227           */
+    228          static void
+    229          igmp_timer(void *arg)
+    230          {
+    231            LWIP_UNUSED_ARG(arg);
+    232            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: igmp_tmr()\n"));
+    233            igmp_tmr();
+    234            sys_timeout(IGMP_TMR_INTERVAL, igmp_timer, NULL);
+    235          }
+    236          #endif /* LWIP_IGMP */
+    237          #endif /* LWIP_IPV4 */
+    238          
+    239          #if LWIP_DNS
+    240          /**
+    241           * Timer callback function that calls dns_tmr() and reschedules itself.
+    242           *
+    243           * @param arg unused argument
+    244           */
+    245          extern u8_t  g_dns_timer_active;
+    246          
+    247          static void
+    248          dns_timer(void *arg)
+    249          {
+    250            LWIP_UNUSED_ARG(arg);
+    251            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: dns_tmr()\n"));
+    252            dns_tmr();
+    253            if (g_dns_timer_active != 0) {
+    254              sys_timeout(DNS_TMR_INTERVAL, dns_timer, NULL);
+    255            }
+    256          }
+    257          
+    258          void
+    259          dns_timer_needed(void)
+    260          {
+    261              if (g_dns_timer_active == 0) {
+    262                  LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: dns_timer_needed()\n"));
+    263                  g_dns_timer_active = 1;
+    264                  sys_timeout(DNS_TMR_INTERVAL, dns_timer, NULL);
+    265              }
+    266          }
+    267          
+    268          #endif /* LWIP_DNS */
+    269          
+    270          #if LWIP_IPV6
+    271          /**
+    272           * Timer callback function that calls nd6_tmr() and reschedules itself.
+    273           *
+    274           * @param arg unused argument
+    275           */
+    276          static void
+    277          nd6_timer(void *arg)
+    278          {
+    279            LWIP_UNUSED_ARG(arg);
+    280            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: nd6_tmr()\n"));
+    281            nd6_tmr();
+    282            sys_timeout(ND6_TMR_INTERVAL, nd6_timer, NULL);
+    283          }
+    284          
+    285          #if LWIP_IPV6_REASS
+    286          /**
+    287           * Timer callback function that calls ip6_reass_tmr() and reschedules itself.
+    288           *
+    289           * @param arg unused argument
+    290           */
+    291          static void
+    292          ip6_reass_timer(void *arg)
+    293          {
+    294            LWIP_UNUSED_ARG(arg);
+    295            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: ip6_reass_tmr()\n"));
+    296            ip6_reass_tmr();
+    297            sys_timeout(IP6_REASS_TMR_INTERVAL, ip6_reass_timer, NULL);
+    298          }
+    299          #endif /* LWIP_IPV6_REASS */
+    300          
+    301          #if LWIP_IPV6_MLD
+    302          /**
+    303           * Timer callback function that calls mld6_tmr() and reschedules itself.
+    304           *
+    305           * @param arg unused argument
+    306           */
+    307          static void
+    308          mld6_timer(void *arg)
+    309          {
+    310            LWIP_UNUSED_ARG(arg);
+    311            LWIP_DEBUGF(TIMERS_DEBUG, ("tcpip: mld6_tmr()\n"));
+    312            mld6_tmr();
+    313            sys_timeout(MLD6_TMR_INTERVAL, mld6_timer, NULL);
+    314          }
+    315          #endif /* LWIP_IPV6_MLD */
+    316          #endif /* LWIP_IPV6 */
+    317          
+    318          /** Initialize this module */
+    319          void sys_timeouts_init(void)
+    320          {
+    321          #if LWIP_IPV4
+    322          #if IP_REASSEMBLY
+    323            sys_timeout(IP_TMR_INTERVAL, ip_reass_timer, NULL);
+    324          #endif /* IP_REASSEMBLY */
+    325          #if LWIP_ARP
+    326            sys_timeout(ARP_TMR_INTERVAL, arp_timer, NULL);
+    327          #endif /* LWIP_ARP */
+    328          #if LWIP_DHCP
+    329            sys_timeout(DHCP_COARSE_TIMER_MSECS, dhcp_timer_coarse, NULL);
+    330            sys_timeout(DHCP_FINE_TIMER_MSECS, dhcp_timer_fine, NULL);
+    331          #endif /* LWIP_DHCP */
+    332          #if LWIP_AUTOIP
+    333            sys_timeout(AUTOIP_TMR_INTERVAL, autoip_timer, NULL);
+    334          #endif /* LWIP_AUTOIP */
+    335          #if LWIP_IGMP
+    336            sys_timeout(IGMP_TMR_INTERVAL, igmp_timer, NULL);
+    337          #endif /* LWIP_IGMP */
+    338          #endif /* LWIP_IPV4 */
+    339          #if LWIP_DNS
+    340            sys_timeout(DNS_TMR_INTERVAL, dns_timer, NULL);
+    341          #endif /* LWIP_DNS */
+    342          #if LWIP_IPV6
+    343            sys_timeout(ND6_TMR_INTERVAL, nd6_timer, NULL);
+    344          #if LWIP_IPV6_REASS
+    345            sys_timeout(IP6_REASS_TMR_INTERVAL, ip6_reass_timer, NULL);
+    346          #endif /* LWIP_IPV6_REASS */
+    347          #if LWIP_IPV6_MLD
+    348            sys_timeout(MLD6_TMR_INTERVAL, mld6_timer, NULL);
+    349          #endif /* LWIP_IPV6_MLD */
+    350          #endif /* LWIP_IPV6 */
+    351          
+    352          #if NO_SYS
+    353            /* Initialise timestamp for sys_check_timeouts */
+    354            timeouts_last_time = sys_now();
+    355          #endif
+    356          }
+    357          
+    358          /**
+    359           * Create a one-shot timer (aka timeout). Timeouts are processed in the
+    360           * following cases:
+    361           * - while waiting for a message using sys_timeouts_mbox_fetch()
+    362           * - by calling sys_check_timeouts() (NO_SYS==1 only)
+    363           *
+    364           * @param msecs time in milliseconds after that the timer should expire
+    365           * @param handler callback function to call when msecs have elapsed
+    366           * @param arg argument to pass to the callback function
+    367           */
+    368          #if LWIP_DEBUG_TIMERNAMES
+    369          void
+    370          sys_timeout_debug(u32_t msecs, sys_timeout_handler handler, void *arg, const char* handler_name)
+    371          #else /* LWIP_DEBUG_TIMERNAMES */
+    372          void
+    373          sys_timeout(u32_t msecs, sys_timeout_handler handler, void *arg)
+    374          #endif /* LWIP_DEBUG_TIMERNAMES */
+    375          {
+    376            struct sys_timeo *timeout, *t;
+    377          #if NO_SYS
+    378            u32_t now, diff;
+    379          #endif
+    380          
+    381            timeout = (struct sys_timeo *)memp_malloc(MEMP_SYS_TIMEOUT);
+    382            if (timeout == NULL) {
+    383              LWIP_ASSERT("sys_timeout: timeout != NULL, pool MEMP_SYS_TIMEOUT is empty", timeout != NULL);
+    384              return;
+    385            }
+    386          
+    387          #if NO_SYS
+    388            now = sys_now();
+    389            if (next_timeout == NULL) {
+    390              diff = 0;
+    391              timeouts_last_time = now;
+    392            } else {
+    393              diff = now - timeouts_last_time;
+    394            }
+    395          #endif
+    396          
+    397            timeout->next = NULL;
+    398            timeout->h = handler;
+    399            timeout->arg = arg;
+    400          #if NO_SYS
+    401            timeout->time = msecs + diff;
+    402          #else
+    403            timeout->time = msecs;
+    404          #endif
+    405          #if LWIP_DEBUG_TIMERNAMES
+    406            timeout->handler_name = handler_name;
+    407            LWIP_DEBUGF(TIMERS_DEBUG, ("sys_timeout: %p msecs=%"U32_F" handler=%s arg=%p\n",
+    408              (void *)timeout, msecs, handler_name, (void *)arg));
+    409          #endif /* LWIP_DEBUG_TIMERNAMES */
+    410          
+    411            if (next_timeout == NULL) {
+    412              next_timeout = timeout;
+    413              return;
+    414            }
+    415          
+    416            if (next_timeout->time > msecs) {
+    417              next_timeout->time -= msecs;
+    418              timeout->next = next_timeout;
+    419              next_timeout = timeout;
+    420            } else {
+    421              for(t = next_timeout; t != NULL; t = t->next) {
+    422                timeout->time -= t->time;
+    423                if (t->next == NULL || t->next->time > timeout->time) {
+    424                  if (t->next != NULL) {
+    425                    t->next->time -= timeout->time;
+    426                  }
+    427                  timeout->next = t->next;
+    428                  t->next = timeout;
+    429                  break;
+    430                }
+    431              }
+    432            }
+    433          }
+    434          
+    435          /**
+    436           * Go through timeout list (for this task only) and remove the first matching
+    437           * entry (subsequent entries remain untouched), even though the timeout has not
+    438           * triggered yet.
+    439           *
+    440           * @param handler callback function that would be called by the timeout
+    441           * @param arg callback argument that would be passed to handler
+    442          */
+    443          void
+    444          sys_untimeout(sys_timeout_handler handler, void *arg)
+    445          {
+    446            struct sys_timeo *prev_t, *t;
+    447          
+    448            if (next_timeout == NULL) {
+    449              return;
+    450            }
+    451          
+    452            for (t = next_timeout, prev_t = NULL; t != NULL; prev_t = t, t = t->next) {
+    453              if ((t->h == handler) && (t->arg == arg)) {
+    454                /* We have a match */
+    455                /* Unlink from previous in list */
+    456                if (prev_t == NULL) {
+    457                  next_timeout = t->next;
+    458                } else {
+    459                  prev_t->next = t->next;
+    460                }
+    461                /* If not the last one, add time of this one back to next */
+    462                if (t->next != NULL) {
+    463                  t->next->time += t->time;
+    464                }
+    465                memp_free(MEMP_SYS_TIMEOUT, t);
+    466                return;
+    467              }
+    468            }
+    469            return;
+    470          }
+    471          
+    472          #if NO_SYS
+    473          
+    474          /** Handle timeouts for NO_SYS==1 (i.e. without using
+    475           * tcpip_thread/sys_timeouts_mbox_fetch(). Uses sys_now() to call timeout
+    476           * handler functions when timeouts expire.
+    477           *
+    478           * Must be called periodically from your main loop.
+    479           */
+    480          void
+    481          sys_check_timeouts(void)
+    482          {
+    483            if (next_timeout) {
+    484              struct sys_timeo *tmptimeout;
+    485              u32_t diff;
+    486              sys_timeout_handler handler;
+    487              void *arg;
+    488              u8_t had_one;
+    489              u32_t now;
+    490          
+    491              now = sys_now();
+    492              /* this cares for wraparounds */
+    493              diff = now - timeouts_last_time;
+    494              do {
+    495          #if PBUF_POOL_FREE_OOSEQ
+    496                PBUF_CHECK_FREE_OOSEQ();
+    497          #endif /* PBUF_POOL_FREE_OOSEQ */
+    498                had_one = 0;
+    499                tmptimeout = next_timeout;
+    500                if (tmptimeout && (tmptimeout->time <= diff)) {
+    501                  /* timeout has expired */
+    502                  had_one = 1;
+    503                  timeouts_last_time += tmptimeout->time;
+    504                  diff -= tmptimeout->time;
+    505                  next_timeout = tmptimeout->next;
+    506                  handler = tmptimeout->h;
+    507                  arg = tmptimeout->arg;
+    508          #if LWIP_DEBUG_TIMERNAMES
+    509                  if (handler != NULL) {
+    510                    LWIP_DEBUGF(TIMERS_DEBUG, ("sct calling h=%s arg=%p\n",
+    511                      tmptimeout->handler_name, arg));
+    512                  }
+    513          #endif /* LWIP_DEBUG_TIMERNAMES */
+    514                  memp_free(MEMP_SYS_TIMEOUT, tmptimeout);
+    515                  if (handler != NULL) {
+    516                    handler(arg);
+    517                  }
+    518                }
+    519              /* repeat until all expired timers have been called */
+    520              } while(had_one);
+    521            }
+    522          }
+    523          
+    524          /** Set back the timestamp of the last call to sys_check_timeouts()
+    525           * This is necessary if sys_check_timeouts() hasn't been called for a long
+    526           * time (e.g. while saving energy) to prevent all timer functions of that
+    527           * period being called.
+    528           */
+    529          void
+    530          sys_restart_timeouts(void)
+    531          {
+    532            timeouts_last_time = sys_now();
+    533          }
+    534          
+    535          /** Return the time left before the next timeout is due. If no timeouts are
+    536           * enqueued, returns 0xffffffff
+    537           */
+    538          u32_t
+    539          sys_timeouts_sleeptime(void)
+    540          {
+    541            u32_t diff;
+    542            if (next_timeout == NULL) {
+    543              return 0xffffffff;
+    544            }
+    545            diff = sys_now() - timeouts_last_time;
+    546            if (diff > next_timeout->time) {
+    547              return 0;
+    548            } else {
+    549              return next_timeout->time - diff;
+    550            }
+    551          }
+    552          
+    553          #else /* NO_SYS */
+    554          
+    555          /**
+    556           * Wait (forever) for a message to arrive in an mbox.
+    557           * While waiting, timeouts are processed.
+    558           *
+    559           * @param mbox the mbox to fetch the message from
+    560           * @param msg the place to store the message
+    561           */
+    562          void
+    563          sys_timeouts_mbox_fetch(sys_mbox_t *mbox, void **msg)
+    564          {
+    565            u32_t time_needed;
+    566            struct sys_timeo *tmptimeout;
+    567            sys_timeout_handler handler;
+    568            void *arg;
+    569          
+    570           again:
+    571            if (!next_timeout) {
+    572              time_needed = sys_arch_mbox_fetch(mbox, msg, 0);
+    573            } else {
+    574              if (next_timeout->time > 0) {
+    575                time_needed = sys_arch_mbox_fetch(mbox, msg, next_timeout->time);
+    576              } else {
+    577                time_needed = SYS_ARCH_TIMEOUT;
+    578              }
+    579          
+    580              if (time_needed == SYS_ARCH_TIMEOUT) {
+    581                /* If time == SYS_ARCH_TIMEOUT, a timeout occurred before a message
+    582                   could be fetched. We should now call the timeout handler and
+    583                   deallocate the memory allocated for the timeout. */
+    584                tmptimeout = next_timeout;
+    585                next_timeout = tmptimeout->next;
+    586                handler = tmptimeout->h;
+    587                arg = tmptimeout->arg;
+    588          #if LWIP_DEBUG_TIMERNAMES
+    589                if (handler != NULL) {
+    590                  LWIP_DEBUGF(TIMERS_DEBUG, ("stmf calling h=%s arg=%p\n",
+    591                    tmptimeout->handler_name, arg));
+    592                }
+    593          #endif /* LWIP_DEBUG_TIMERNAMES */
+    594                memp_free(MEMP_SYS_TIMEOUT, tmptimeout);
+    595                if (handler != NULL) {
+    596                  /* For LWIP_TCPIP_CORE_LOCKING, lock the core before calling the
+    597                     timeout handler function. */
+    598                  LOCK_TCPIP_CORE();
+    599                  handler(arg);
+    600                  UNLOCK_TCPIP_CORE();
+    601                }
+    602                LWIP_TCPIP_THREAD_ALIVE();
+    603          
+    604                /* We try again to fetch a message from the mbox. */
+    605                goto again;
+    606              } else {
+    607                /* If time != SYS_ARCH_TIMEOUT, a message was received before the timeout
+    608                   occured. The time variable is set to the number of
+    609                   milliseconds we waited for the message. */
+    610                if (time_needed < next_timeout->time) {
+    611                  next_timeout->time -= time_needed;
+    612                } else {
+    613                  next_timeout->time = 0;
+    614                }
+    615              }
+    616            }
+    617          }
+    618          
+    619          #endif /* NO_SYS */
+    620          
+    621          #else /* LWIP_TIMERS */
+    622          /* Satisfy the TCP code which calls this function */
+    623          void
+    624          tcp_timer_needed(void)
+    625          {
+    626          }
+    627          #endif /* LWIP_TIMERS */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   arp_timer
+         8   -> etharp_tmr
+         0   -> sys_timeout
+       8   dhcp_timer_coarse
+         8   -> dhcp_coarse_tmr
+         0   -> sys_timeout
+       8   dhcp_timer_fine
+         8   -> dhcp_fine_tmr
+         0   -> sys_timeout
+       0   dhcp_timer_needed
+         0   -> sys_timeout
+       8   dns_timer
+         8   -> dns_tmr
+         0   -> sys_timeout
+       0   dns_timer_needed
+         0   -> sys_timeout
+       8   ip_reass_timer
+         8   -> ip_reass_tmr
+         0   -> sys_timeout
+       0   ip_reass_timer_needed
+         0   -> sys_timeout
+      24   sys_timeout
+        24   -> mem_malloc
+         0   -> printf
+       8   sys_timeouts_init
+         0   -> sys_timeout
+         8   -> sys_timeout
+      24   sys_timeouts_mbox_fetch
+        24   -- Indirect call
+        24   -> mem_free
+         0   -> sys_arch_mbox_fetch
+        24   -> sys_arch_mbox_fetch
+      16   sys_untimeout
+         0   -> mem_free
+       0   tcp_timer_needed
+         0   -> sys_timeout
+       8   tcpip_tcp_timer
+         0   -> sys_timeout
+         8   -> tcp_tmr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable15_10
+       4  ??DataTable15_11
+       4  ??DataTable15_12
+       4  ??DataTable15_13
+       4  ??DataTable15_2
+       4  ??DataTable15_3
+       4  ??DataTable15_4
+       4  ??DataTable15_5
+       4  ??DataTable15_6
+       4  ??DataTable15_7
+       4  ??DataTable15_8
+       4  ??DataTable15_9
+      40  ?_0
+      64  ?_1
+      84  ?_2
+      20  arp_timer
+      20  dhcp_timer_coarse
+      30  dhcp_timer_fine
+      24  dhcp_timer_needed
+      30  dns_timer
+      24  dns_timer_needed
+      30  ip_reass_timer
+      24  ip_reass_timer_needed
+       4  next_timeout
+     132  sys_timeout
+      62  sys_timeouts_init
+      98  sys_timeouts_mbox_fetch
+      74  sys_untimeout
+      40  tcp_timer_needed
+      44  tcpip_tcp_timer
+       4  tcpip_tcp_timer_active
+
+ 
+   8 bytes in section .bss
+ 896 bytes in section .text
+ 
+ 896 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: 9

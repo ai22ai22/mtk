@@ -1,0 +1,316 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:16
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\bluetooth\src\bt_task.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW5329.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\bluetooth\src\bt_task.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\bt_task.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\bt_task.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\bluetooth\src\bt_task.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          #define BT_TASK_CONSUME_CHECK
+     35          #include "bt_os_layer_api.h"
+     36          #include "bt_platform.h"
+     37          #include "bt_system.h"
+     38          #include "hal_nvic.h"
+     39          #ifdef BT_TASK_CONSUME_CHECK
+     40          #include "syslog.h"
+     41          #include "hal_gpt.h"
+     42          #include "bt_hci_log.h"
+     43          #include <stdio.h>
+     44          
+     45          void bt_task_consume_hci_log(uint32_t total, uint32_t value, int32_t retvalue)
+     46          {
+     47              char hci_log_string[64] = {0, 0x1B, 0xFC, 60};
+     48              LOG_I(common, "[BT TASK]bt_task_consume_hci_log(%d, %d, %d)", total, value, retvalue);
+     49              if (total == 0) {
+     50                  snprintf(hci_log_string + 4, 60, "poweron sonsume %u ms, error %d", (unsigned int)value, (int)retvalue);
+     51              }
+     52              else {
+     53                  snprintf(hci_log_string + 4, 60, "bt task cpu usage: %u in %u ms, error: %d", (unsigned int)value, (unsigned int)total, (int)retvalue);
+     54              }
+     55              bt_hci_log(0, hci_log_string, 64);
+     56          }
+     57          #endif
+     58          
+     59          static uint32_t bt_task_semaphore = 0;
+     60          
+     61          /**
+     62           * @brief     It is a user define function, for bt task.
+     63           * @return    None.
+     64           */
+     65          void bt_task(void * arg)
+     66          {
+     67              uint32_t i;
+     68              bt_bd_addr_t random_addr;
+     69          #ifdef BT_TASK_CONSUME_CHECK
+     70              uint32_t end;
+     71              uint32_t wait;
+     72              uint32_t total;
+     73              int32_t ret;
+     74          #endif
+     75              for(i = 0; i < 6; i++) {
+     76                  * (((uint8_t*)random_addr) + i) = (uint8_t)(bt_os_layer_generate_random() & 0xFF);
+     77              }
+     78              * (((uint8_t*)random_addr) + 5) |= 0xC0;
+     79              bt_task_semaphore = bt_os_layer_create_semaphore();
+     80              bt_os_layer_sleep_task(1000);
+     81          #ifdef BT_TASK_CONSUME_CHECK
+     82              ret = (int32_t)hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &i);
+     83          #endif
+     84              if (arg != NULL) {
+     85                  // If arg is NULL means user does not want to power on BT
+     86                  bt_power_on((bt_bd_addr_ptr_t)arg, (bt_bd_addr_ptr_t)&random_addr);
+     87              }
+     88          #ifdef BT_TASK_CONSUME_CHECK
+     89              ret += (int32_t)hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &end);
+     90              bt_task_consume_hci_log(0, (end - i) * 1000 / 32768, ret);
+     91              i = end;
+     92              ret = 0;
+     93              total = 0;
+     94              wait = 0;
+     95          #endif
+     96          
+     97              /* main loop */
+     98              do {
+     99                  bt_os_layer_take_semaphore(bt_task_semaphore);
+    100          #ifdef BT_TASK_CONSUME_CHECK
+    101                  ret += (int32_t)hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &end);
+    102                  wait += end - i;
+    103          #endif
+    104                  /* handle events */
+    105                  if (BT_STATUS_SUCCESS != bt_handle_interrupt()) {
+    106                      break;
+    107                  }
+    108          #ifdef BT_TASK_CONSUME_CHECK
+    109                  ret += (int32_t)hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &end);
+    110                  total += end - i;
+    111                  if (total > (32768 << 3)) {
+    112                      if (total > (wait << 3)) {
+    113                          bt_task_consume_hci_log(total * 1000/32768, (total - wait) * 100 / total, ret);
+    114                      }
+    115                      total = 0;
+    116                      wait = 0;
+    117                  }
+    118                  ret = 0;
+    119                  i = end;
+    120          #endif
+    121              } while (1);
+    122          }
+    123          
+    124          /**
+    125           * @brief     It is a user define function for receiving bt task events.
+    126           * @return    None.
+    127           */
+    128          void bt_trigger_interrupt(uint32_t is_from_isr)
+    129          {
+    130              if (bt_task_semaphore == 0) {
+    131                  return;
+    132              }
+    133          	
+    134              /*Judge caller whether come from isr or not adaptively*/
+    135          	if( 0 == HAL_NVIC_QUERY_EXCEPTION_NUMBER)
+    136                  bt_os_layer_give_semaphore(bt_task_semaphore);
+    137          	else 
+    138                  bt_os_layer_give_semaphore_from_isr(bt_task_semaphore);
+    139          
+    140          	return;
+    141          }
+    142          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   bt_task
+        40   -> bt_handle_interrupt
+        40   -> bt_os_layer_create_semaphore
+        40   -> bt_os_layer_generate_random
+        40   -> bt_os_layer_sleep_task
+        40   -> bt_os_layer_take_semaphore
+        40   -> bt_power_on
+        40   -> bt_task_consume_hci_log
+        40   -> hal_gpt_get_free_run_count
+     104   bt_task_consume_hci_log
+       104   -- Indirect call
+       104   -> __aeabi_memcpy4
+       104   -> bt_hci_log
+       104   -> snprintf
+       0   bt_trigger_interrupt
+         0   -> bt_os_layer_give_semaphore
+         0   -> bt_os_layer_give_semaphore_from_isr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+      64  ?_0
+      48  ?_1
+      32  ?_2
+      44  ?_3
+     228  bt_task
+     102  bt_task_consume_hci_log
+       4  bt_task_semaphore
+      26  bt_trigger_interrupt
+      24  -- Other
+
+ 
+   4 bytes in section .bss
+ 584 bytes in section .text
+ 
+ 584 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

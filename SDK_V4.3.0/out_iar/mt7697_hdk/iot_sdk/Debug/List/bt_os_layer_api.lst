@@ -1,0 +1,603 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:16
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\bluetooth\src\bt_os_layer_api.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW529B.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\bluetooth\src\bt_os_layer_api.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\bt_os_layer_api.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\bt_os_layer_api.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\bluetooth\src\bt_os_layer_api.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /* Kernel includes. */
+     36          #include "bt_os_layer_api.h"
+     37          #include "FreeRTOS.h"
+     38          #include "task.h"
+     39          //#include "timer.h"
+     40          #include "semphr.h"
+     41          #include "portmacro.h"
+     42          #include "queue.h"
+     43          #include <timers.h>
+     44          #include <string.h>
+     45          #include "syslog.h"
+     46          #include "hal_aes.h"
+     47          #include "mbedtls/md5.h"
+     48          #if !defined(__GNUC__)
+     49          #include "mbedtls/aes.h"
+     50          #endif
+     51          #include "bt_debug.h"
+     52          
+     53          #ifdef MTK_PORT_SERVICE_ENABLE
+     54          #include "serial_port.h"
+     55          #endif
+     56          
+     57          static TimerHandle_t bt_rtos_timer = NULL; /**< Timer handler. */
+     58          static bt_os_layer_timer_expired_t bt_rtos_timer_cb;  /**< Timer callback function. */
+     59          
+     60          extern int rand(void);
+     61          uint16_t bt_os_layer_generate_random(void)
+     62          {
+     63              return rand();
+     64          }
+     65          
+     66          void bt_os_layer_aes_encrypt(bt_os_layer_aes_buffer_t* encrypted_data, bt_os_layer_aes_buffer_t* plain_text, bt_os_layer_aes_buffer_t* key)
+     67          {
+     68              #if defined(__GNUC__)
+     69              BT_LOGI("BT", "bt_os_layer_aes_encrypt use hal version");
+     70              hal_aes_ecb_encrypt((hal_aes_buffer_t*)encrypted_data, (hal_aes_buffer_t*)plain_text, (hal_aes_buffer_t*)key);
+     71              #else
+     72              mbedtls_aes_context context;
+     73              mbedtls_aes_init(&context);
+     74              mbedtls_aes_setkey_enc(&context, key->buffer, sizeof(bt_key_t) * 8);
+     75              mbedtls_aes_crypt_ecb(&context, MBEDTLS_AES_ENCRYPT, (unsigned char *)plain_text->buffer, (unsigned char *)encrypted_data->buffer);
+     76              mbedtls_aes_free(&context);
+     77              BT_LOGI("BT", "bt_os_layer_aes_encrypt use mbed version");
+     78              #endif
+     79          }
+     80          
+     81          static void bt_os_layer_rtos_timer_os_expire(TimerHandle_t timer)
+     82          {
+     83              if(bt_rtos_timer_cb != NULL) {
+     84                  bt_rtos_timer_cb();
+     85              }
+     86          }
+     87          
+     88          void bt_os_layer_init_timer(void)
+     89          {
+     90              if(bt_rtos_timer == NULL) {
+     91                  bt_rtos_timer = xTimerCreate( "hb timer", 0xffff, pdFALSE, NULL, bt_os_layer_rtos_timer_os_expire);
+     92                  bt_rtos_timer_cb = NULL;
+     93              }
+     94          }
+     95          
+     96          void bt_os_layer_deinit_timer(void)
+     97          {
+     98              if (bt_rtos_timer != NULL) {
+     99                  xTimerDelete(bt_rtos_timer, 0);
+    100                  bt_rtos_timer = NULL;
+    101              }
+    102          }
+    103          
+    104          void bt_os_layer_sleep_task(uint32_t ms)
+    105          {
+    106              uint32_t time_length = ms/portTICK_PERIOD_MS;
+    107              if(time_length > 0) {
+    108                  vTaskDelay(time_length);
+    109              }
+    110          }
+    111          
+    112          uint32_t bt_os_layer_get_current_task_id(void)
+    113          {
+    114              return (uint32_t)xTaskGetCurrentTaskHandle();
+    115          }
+    116          
+    117          //MUTEX LOCK
+    118          uint32_t bt_os_layer_create_mutex(void)
+    119          {
+    120              return (uint32_t)xSemaphoreCreateRecursiveMutex();
+    121          }
+    122          
+    123          void bt_os_layer_take_mutex(uint32_t mutex_id)
+    124          {
+    125              if(xTaskGetSchedulerState() == taskSCHEDULER_NOT_STARTED) {
+    126                  return;
+    127              }
+    128              xSemaphoreTakeRecursive((SemaphoreHandle_t)mutex_id, portMAX_DELAY);
+    129          }
+    130          
+    131          void bt_os_layer_give_mutex(uint32_t mutex_id)
+    132          {
+    133              if(xTaskGetSchedulerState() == taskSCHEDULER_NOT_STARTED) {
+    134                  return;
+    135              }
+    136              xSemaphoreGiveRecursive((SemaphoreHandle_t)mutex_id);
+    137          }
+    138          
+    139          void bt_os_layer_delete_mutex(uint32_t mutex_id)
+    140          {
+    141              vSemaphoreDelete((SemaphoreHandle_t)mutex_id);
+    142          }
+    143          
+    144          uint32_t bt_os_layer_create_semaphore()
+    145          {
+    146              return (uint32_t)xSemaphoreCreateBinary();
+    147          }
+    148          
+    149          void bt_os_layer_take_semaphore_from_isr(uint32_t semaphore_id)
+    150          {
+    151              BaseType_t priorityTaskWoken;
+    152              xSemaphoreTakeFromISR((SemaphoreHandle_t)semaphore_id, &priorityTaskWoken);
+    153          }
+    154          
+    155          void bt_os_layer_take_semaphore(uint32_t semaphore_id)
+    156          {
+    157              xSemaphoreTake((SemaphoreHandle_t)semaphore_id, portMAX_DELAY);
+    158          }
+    159          
+    160          void bt_os_layer_give_semaphore_from_isr(uint32_t semaphore_id)
+    161          {
+    162              BaseType_t priorityTaskWoken;
+    163              xSemaphoreGiveFromISR((SemaphoreHandle_t)semaphore_id, &priorityTaskWoken);
+    164              return;
+    165          }
+    166          
+    167          void bt_os_layer_give_semaphore(uint32_t semaphore_id)
+    168          {
+    169              xSemaphoreGive((SemaphoreHandle_t)semaphore_id);
+    170          }
+    171          
+    172          void bt_os_layer_delete_semaphore(uint32_t semaphore_id)
+    173          {
+    174              vSemaphoreDelete((SemaphoreHandle_t)semaphore_id);
+    175          }
+    176          
+    177          uint32_t bt_os_layer_get_system_tick(void)
+    178          {
+    179              return xTaskGetTickCount();
+    180          }
+    181          
+    182          void bt_os_layer_register_timer_callback(bt_os_layer_timer_expired_t callback)
+    183          {
+    184              bt_rtos_timer_cb = callback;
+    185          }
+    186          
+    187          void bt_os_layer_start_timer(uint32_t ms)
+    188          {
+    189              uint32_t time_length = ms/portTICK_PERIOD_MS + 1;
+    190              if (bt_rtos_timer == NULL) {
+    191                  return;
+    192              }
+    193              if (bt_os_layer_is_timer_active() == 1) {
+    194                  bt_os_layer_stop_timer();
+    195              }
+    196              xTimerChangePeriod(bt_rtos_timer, time_length, portMAX_DELAY);
+    197              xTimerReset(bt_rtos_timer, portMAX_DELAY);
+    198          }
+    199          
+    200          void bt_os_layer_stop_timer(void)
+    201          {
+    202              if  ((bt_rtos_timer != NULL) && (bt_os_layer_is_timer_active() == 1)) {
+    203                  xTimerStop(bt_rtos_timer, portMAX_DELAY);
+    204              }
+    205          }
+    206          
+    207          uint32_t bt_os_layer_is_timer_active(void)
+    208          {
+    209              if ((bt_rtos_timer != NULL) && (xTimerIsTimerActive(bt_rtos_timer) != pdFALSE)) {
+    210                  return 1;
+    211              }
+    212              else {
+    213                  return 0;
+    214              }
+    215          }
+    216          
+    217          void bt_os_layer_disable_interrupt(void)
+    218          {
+    219              taskDISABLE_INTERRUPTS();
+    220          }
+    221          
+    222          void bt_os_layer_enable_interrupt(void)
+    223          {
+    224              taskENABLE_INTERRUPTS();
+    225          }
+    226          
+    227          void bt_os_layer_disable_system_sleep(void)
+    228          {
+    229          
+    230          }
+    231          
+    232          void bt_os_layer_enable_system_sleep(void)
+    233          {
+    234          
+    235          }
+    236          
+    237          
+    238          void* bt_os_layer_memcpy(void* dest, const void* src, uint32_t size)
+    239          {
+    240              return memcpy(dest, src, size);                
+    241          }
+    242          
+    243          int bt_os_layer_memcmp(const void* buf1, const void* buf2, uint32_t size)
+    244          {
+    245              return memcmp(buf1, buf2, size);                
+    246          }
+    247          
+    248          void* bt_os_layer_memset(void* buf, uint8_t ch, uint32_t size)
+    249          {
+    250              return memset(buf, ch, size);                
+    251          }
+    252          
+    253          void* bt_os_layer_memmove(void* dest, const void* src, uint32_t size)
+    254          {
+    255              return memmove(dest, src, size);                
+    256          }
+    257          
+    258          
+    259          void bt_os_layer_md5_init(bt_os_md5_context *ctx)
+    260          {
+    261          #ifdef MTK_MBEDTLS_CONFIG_FILE
+    262              mbedtls_md5_init((mbedtls_md5_context *)ctx );
+    263          #endif
+    264          }
+    265          
+    266          void bt_os_layer_md5_free(bt_os_md5_context *ctx)
+    267          {
+    268          #ifdef MTK_MBEDTLS_CONFIG_FILE
+    269            mbedtls_md5_free((mbedtls_md5_context *)ctx );
+    270          #endif
+    271          }
+    272          
+    273          void bt_os_layer_md5_clone(bt_os_md5_context *dst, const bt_os_md5_context *src)
+    274          {
+    275          #ifdef MTK_MBEDTLS_CONFIG_FILE
+    276              mbedtls_md5_clone((mbedtls_md5_context *)dst, (const mbedtls_md5_context *)src );
+    277          #endif
+    278          }
+    279          
+    280          void bt_os_layer_md5_starts(bt_os_md5_context *ctx) 
+    281          {
+    282          #ifdef MTK_MBEDTLS_CONFIG_FILE
+    283              mbedtls_md5_starts((mbedtls_md5_context *)ctx );
+    284          #endif
+    285          }
+    286          
+    287          void bt_os_layer_md5_process(bt_os_md5_context *ctx, const unsigned char data[64])
+    288          {
+    289          #ifdef MTK_MBEDTLS_CONFIG_FILE
+    290             mbedtls_md5_process((mbedtls_md5_context *)ctx, data);
+    291          #endif
+    292          }
+    293          
+    294          void bt_os_layer_md5_update(bt_os_md5_context *ctx, const unsigned char *input, unsigned int ilen)
+    295          {
+    296          #ifdef MTK_MBEDTLS_CONFIG_FILE
+    297              mbedtls_md5_update((mbedtls_md5_context *)ctx, input, (size_t)ilen);
+    298          #endif
+    299          }
+    300          
+    301          void bt_os_layer_md5_finish(bt_os_md5_context *ctx, unsigned char output[16])
+    302          {
+    303          #ifdef MTK_MBEDTLS_CONFIG_FILE
+    304              mbedtls_md5_finish((mbedtls_md5_context *)ctx, output);
+    305          #endif
+    306          }
+    307          
+    308          int16_t bt_os_layer_serial_port_open(uint16_t device, void *para, uint32_t *handle)
+    309          {
+    310          #ifdef MTK_PORT_SERVICE_ENABLE
+    311          	return serial_port_open((serial_port_dev_t) device, (serial_port_open_para_t *)para, (serial_port_handle_t*)handle);
+    312          #else
+    313          	return -1;
+    314          #endif
+    315          }
+    316          
+    317          
+    318          int16_t bt_os_layer_serial_port_close(uint32_t handle)
+    319          {
+    320          #ifdef MTK_PORT_SERVICE_ENABLE
+    321              return serial_port_close((serial_port_handle_t) handle);
+    322          #else
+    323              return -1;
+    324          #endif
+    325          }
+    326          
+    327          
+    328          int16_t bt_os_layer_serial_port_control(uint32_t handle, uint8_t command, void *para)
+    329          {
+    330          #ifdef MTK_PORT_SERVICE_ENABLE
+    331              return serial_port_control((serial_port_handle_t) handle, (serial_port_ctrl_cmd_t) command, (serial_port_ctrl_para_t *)para);
+    332          #else
+    333              return -1;
+    334          #endif
+    335          }
+    336          
+    337          
+    338          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     296   bt_os_layer_aes_encrypt
+       296   -> bt_debug_log
+       296   -> mbedtls_aes_crypt_ecb
+       296   -> mbedtls_aes_free
+       296   -> mbedtls_aes_init
+       296   -> mbedtls_aes_setkey_enc
+       0   bt_os_layer_create_mutex
+         0   -> xQueueCreateMutex
+       0   bt_os_layer_create_semaphore
+         0   -> xQueueGenericCreate
+      16   bt_os_layer_deinit_timer
+        16   -> xTimerGenericCommand
+       0   bt_os_layer_delete_mutex
+         0   -> vQueueDelete
+       0   bt_os_layer_delete_semaphore
+         0   -> vQueueDelete
+       0   bt_os_layer_disable_interrupt
+       0   bt_os_layer_disable_system_sleep
+       0   bt_os_layer_enable_interrupt
+       0   bt_os_layer_enable_system_sleep
+       8   bt_os_layer_generate_random
+         8   -> rand
+       0   bt_os_layer_get_current_task_id
+         0   -> xTaskGetCurrentTaskHandle
+       0   bt_os_layer_get_system_tick
+         0   -> xTaskGetTickCount
+       8   bt_os_layer_give_mutex
+         0   -> xQueueGiveMutexRecursive
+         8   -> xTaskGetSchedulerState
+       0   bt_os_layer_give_semaphore
+         0   -> xQueueGenericSend
+       8   bt_os_layer_give_semaphore_from_isr
+         8   -> xQueueGiveFromISR
+      16   bt_os_layer_init_timer
+        16   -> xTimerCreate
+       8   bt_os_layer_is_timer_active
+         8   -> xTimerIsTimerActive
+       0   bt_os_layer_md5_clone
+       0   bt_os_layer_md5_finish
+       0   bt_os_layer_md5_free
+       0   bt_os_layer_md5_init
+       0   bt_os_layer_md5_process
+       0   bt_os_layer_md5_starts
+       0   bt_os_layer_md5_update
+       0   bt_os_layer_memcmp
+         0   -> memcmp
+       8   bt_os_layer_memcpy
+         8   -> __aeabi_memcpy
+       8   bt_os_layer_memmove
+         8   -> __aeabi_memmove
+       8   bt_os_layer_memset
+         8   -> __aeabi_memset
+       0   bt_os_layer_register_timer_callback
+       0   bt_os_layer_rtos_timer_os_expire
+         0   -- Indirect call
+       0   bt_os_layer_serial_port_close
+       0   bt_os_layer_serial_port_control
+       0   bt_os_layer_serial_port_open
+       0   bt_os_layer_sleep_task
+         0   -> vTaskDelay
+      16   bt_os_layer_start_timer
+        16   -> bt_os_layer_is_timer_active
+        16   -> bt_os_layer_stop_timer
+        16   -> xTaskGetTickCount
+        16   -> xTimerGenericCommand
+      16   bt_os_layer_stop_timer
+        16   -> bt_os_layer_is_timer_active
+        16   -> xTimerGenericCommand
+       8   bt_os_layer_take_mutex
+         0   -> xQueueTakeMutexRecursive
+         8   -> xTaskGetSchedulerState
+       0   bt_os_layer_take_semaphore
+         0   -> xQueueGenericReceive
+       8   bt_os_layer_take_semaphore_from_isr
+         8   -> xQueueReceiveFromISR
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+      52  ?_0
+      12  ?_1
+      56  bt_os_layer_aes_encrypt
+       6  bt_os_layer_create_mutex
+      10  bt_os_layer_create_semaphore
+      32  bt_os_layer_deinit_timer
+       4  bt_os_layer_delete_mutex
+       4  bt_os_layer_delete_semaphore
+      16  bt_os_layer_disable_interrupt
+       2  bt_os_layer_disable_system_sleep
+       8  bt_os_layer_enable_interrupt
+       2  bt_os_layer_enable_system_sleep
+      10  bt_os_layer_generate_random
+       4  bt_os_layer_get_current_task_id
+       4  bt_os_layer_get_system_tick
+      24  bt_os_layer_give_mutex
+      10  bt_os_layer_give_semaphore
+      10  bt_os_layer_give_semaphore_from_isr
+      40  bt_os_layer_init_timer
+      26  bt_os_layer_is_timer_active
+       2  bt_os_layer_md5_clone
+       2  bt_os_layer_md5_finish
+       2  bt_os_layer_md5_free
+       2  bt_os_layer_md5_init
+       2  bt_os_layer_md5_process
+       2  bt_os_layer_md5_starts
+       2  bt_os_layer_md5_update
+       4  bt_os_layer_memcmp
+      12  bt_os_layer_memcpy
+      12  bt_os_layer_memmove
+      20  bt_os_layer_memset
+       6  bt_os_layer_register_timer_callback
+      12  bt_os_layer_rtos_timer_os_expire
+       6  bt_os_layer_serial_port_close
+       6  bt_os_layer_serial_port_control
+       6  bt_os_layer_serial_port_open
+      10  bt_os_layer_sleep_task
+      68  bt_os_layer_start_timer
+      40  bt_os_layer_stop_timer
+      28  bt_os_layer_take_mutex
+      12  bt_os_layer_take_semaphore
+      12  bt_os_layer_take_semaphore_from_isr
+       8  bt_rtos_timer
+          bt_rtos_timer_cb
+
+ 
+   8 bytes in section .bss
+ 608 bytes in section .text
+ 
+ 608 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

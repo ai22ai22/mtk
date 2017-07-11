@@ -1,0 +1,549 @@
+###############################################################################
+#
+# IAR ELF Linker V8.11.2.13589/W32 for ARM                27/Jun/2017  22:46:51
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Exe\i2c_control_EEPROM_with_polling.out
+#    Map file     =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\i2c_control_EEPROM_with_polling.map
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWE61A.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\dma.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\gpt.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpio.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpio_7687.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpt.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_I2C.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_i2c_master.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_log.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_nvic.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_nvic_internal.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_pinmux.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_uart.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\i2c.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\low_hal_gpio.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\main.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\nvic.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\pinmux.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\startup_mt7687.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\system_mt7687.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\timer.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\top.o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\uart.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Exe\i2c_control_EEPROM_with_polling.out
+#        --keep __bootloader
+#        --image_input=C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\tools\iar\mt7697\bootloader\bootloader.bin,__bootloader,.bootloader,8
+#        --map
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\i2c_control_EEPROM_with_polling.map
+#        --config
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\flash.icf
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"P1":  place in [from 0x10000000 to 0x10008000] { section .bootloader };
+"A1":  place at start of [0x10079000-0x100790ff] { section .reset_handler };
+define block ROM_BLOCK with fixed order { section .intvec, ro };
+"A2":  place at start of [0x10079100-0x10266000] { block ROM_BLOCK };
+define block TCM_BLOCK with fixed order { section .ramTEXT, section .tcmBSS };
+"P2":  place in [from 0x00100000 to 0x00110000] { block TCM_BLOCK };
+define block RAM_BLOCK with fixed order { rw };
+"A3":  place at start of [0x20000400-0x2003fc00] { block RAM_BLOCK };
+define block CSTACK with size = 3K, alignment = 8 { };
+"A4":  place at end of [0x20000400-0x2003fc00] { block CSTACK };
+initialize by copy { section .ramTEXT };
+initialize by copy { rw };
+
+  Section               Kind        Address    Size  Object
+  -------               ----        -------    ----  ------
+"P2":                                          0xee
+  TCM_BLOCK                      0x00100000    0xee  <Block>
+    section .ramTEXT-1           0x00100000    0xee  <Init block>
+      Veneer            inited   0x00100000     0x8  - Linker created -
+      Veneer            inited   0x00100008     0x8  - Linker created -
+      Veneer            inited   0x00100010     0x8  - Linker created -
+      .ramTEXT          inited   0x00100018    0x74  hal_nvic.o [1]
+      .ramTEXT          inited   0x0010008c    0x1c  startup_mt7687.o [1]
+      .ramTEXT          inited   0x001000a8    0x1c  startup_mt7687.o [1]
+      .ramTEXT          inited   0x001000c4    0x1c  startup_mt7687.o [1]
+      .ramTEXT          inited   0x001000e0     0xe  nvic.o [1]
+                               - 0x001000ee    0xee
+
+"P1":                                        0x6880
+  .bootloader           const    0x10000000  0x6880  bootloader.bin [2]
+                               - 0x10006880  0x6880
+
+"A1":                                          0x4c
+  .reset_handler        ro code  0x10079000    0x4c  startup_mt7687.o [1]
+                               - 0x1007904c    0x4c
+
+"A2":                                        0x2b6d
+  ROM_BLOCK                      0x10079100  0x2b6d  <Block>
+    .intvec                      0x10079100   0x1c0  <Block>
+      .intvec           ro code  0x10079100   0x1c0  startup_mt7687.o [1]
+    .rodata             const    0x100792c0     0x2  xlocale_c.o [4]
+    .text               ro code  0x100792c2    0x7a  lz77_init_single.o [6]
+    .text               ro code  0x1007933c    0x58  dma.o [1]
+    .text               ro code  0x10079394   0x20c  gpt.o [1]
+    .text               ro code  0x100795a0    0x74  timer.o [1]
+    .text               ro code  0x10079614    0x28  printf.o [4]
+    Veneer              ro code  0x1007963c     0x8  - Linker created -
+    Veneer              ro code  0x10079644     0x8  - Linker created -
+    .text               ro code  0x1007964c    0x88  hal_nvic.o [1]
+    .text               ro code  0x100796d4   0x518  xprintfsmall.o [4]
+    .text               ro code  0x10079bec    0x60  xlocale_c.o [4]
+    .text               ro code  0x10079c4c    0x16  strchr.o [6]
+    .text               ro code  0x10079c64    0x44  xfail_s.o [4]
+    .text               ro code  0x10079ca8    0x36  strlen.o [6]
+    .text               ro code  0x10079ce0    0x58  memchr.o [6]
+    .text               ro code  0x10079d38     0x6  abort.o [4]
+    .text               ro code  0x10079d40     0xc  XXexit.o [6]
+    .text               ro code  0x10079d4c   0x1a0  hal_gpio_7687.o [1]
+    .text               ro code  0x10079eec   0x104  hal_gpt.o [1]
+    .text               ro code  0x10079ff0    0xa4  top.o [1]
+    .text               ro code  0x1007a094    0x20  hal_log.o [1]
+    .text               ro code  0x1007a0b4    0x90  system_mt7687.o [1]
+    .text               ro code  0x1007a144    0x20  vprintf.o [4]
+    .text               ro code  0x1007a164   0x774  hal_I2C.o [1]
+    .text               ro code  0x1007a8d8   0x424  hal_i2c_master.o [1]
+    .text               ro code  0x1007acfc    0x66  ABImemset.o [6]
+    .text               ro code  0x1007ad64   0x180  i2c.o [1]
+    .text               ro code  0x1007aee4   0x320  hal_pinmux.o [1]
+    .text               ro code  0x1007b204   0x1f4  hal_uart.o [1]
+    .text               ro code  0x1007b3f8    0xa6  ABImemcpy.o [6]
+    .text               ro code  0x1007b4a0   0x250  uart.o [1]
+    .text               ro code  0x1007b6f0   0x22c  main.o [1]
+    .text               ro code  0x1007b91c    0x30  hal_gpio.o [1]
+    .text               ro code  0x1007b94c    0xc8  pinmux.o [1]
+    .text               ro code  0x1007ba14    0x22  fpinit_M.o [5]
+    .text               ro code  0x1007ba38    0x1a  cmain.o [6]
+    .text               ro code  0x1007ba52     0x4  low_level_init.o [4]
+    .text               ro code  0x1007ba58    0x28  data_init.o [6]
+    .text               ro code  0x1007ba80     0x4  exit.o [4]
+    .text               ro code  0x1007ba84     0xa  cexit.o [6]
+    .text               ro code  0x1007ba90     0xc  putchar.o [4]
+    .text               ro code  0x1007ba9c     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007baa0     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007baa4     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007baa8     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007baac     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007bab0     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007bab4     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007bab8     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007babc     0x4  startup_mt7687.o [1]
+    .text               ro code  0x1007bac0     0xc  cstartup_M.o [6]
+    .text               ro code  0x1007bacc    0x16  xprout.o [4]
+    .text               ro code  0x1007bae2     0xc  xencoding_8859_1.o [4]
+    .text               ro code  0x1007baee    0x40  zero_init3.o [6]
+    .iar.init_table     const    0x1007bb30    0x30  - Linker created -
+    .rodata             const    0x1007bb60     0x0  zero_init3.o [6]
+    .rodata             const    0x1007bb60     0x0  lz77_init_single.o [6]
+    Initializer bytes   const    0x1007bb60    0x49  <for rw-1>
+    Initializer bytes   const    0x1007bba9    0xc4  <for section .ramTEXT-1>
+                               - 0x1007bc6d  0x2b6d
+
+"A3":                                         0x584
+  RAM_BLOCK                      0x20000400   0x584  <Block>
+    rw-1                         0x20000400   0x138  <Init block>
+      .data             inited   0x20000400    0x80  dma.o [1]
+      .data             inited   0x20000480    0x24  main.o [1]
+      .data             inited   0x200004a4     0x4  system_mt7687.o [1]
+      .data             inited   0x200004a8    0x48  xlocale_c.o [4]
+      .data             inited   0x200004f0    0x48  xfiles.o [4]
+    .bss                zero     0x20000538     0xc  gpt.o [1]
+    .bss                zero     0x20000544    0x50  hal_gpt.o [1]
+    .bss                zero     0x20000594    0x28  hal_i2c_master.o [1]
+    .bss                zero     0x200005bc   0x300  hal_nvic.o [1]
+    .bss                zero     0x200008bc    0x60  hal_uart.o [1]
+    .bss                zero     0x2000091c     0x8  top.o [1]
+    .bss                zero     0x20000924     0x4  uart.o [1]
+    .bss                zero     0x20000928     0x4  xfail_s.o [4]
+    .bss                zero     0x2000092c    0x50  xfiles.o [4]
+    .bss                zero     0x2000097c     0x2  hal_i2c_master.o [1]
+    .bss                zero     0x2000097e     0x6  i2c.o [1]
+                               - 0x20000984   0x584
+
+"A4":                                         0xc00
+  CSTACK                         0x2003f000   0xc00  <Block>
+    CSTACK              uninit   0x2003f000   0xc00  <Block tail>
+                               - 0x2003fc00   0xc00
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x44c:
+          0x20000538  0x44c
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x49 (23% of destination):
+          0x1007bb60   0x49
+    1 destination range, total size 0x138:
+          0x20000400  0x138
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0xc4 (82% of destination):
+          0x1007bba9   0xc4
+    1 destination range, total size 0xee:
+          0x00100000   0xee
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  rw code  ro data  rw data
+    ------              -------  -------  -------  -------
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj: [1]
+    dma.o                    88                29      128
+    gpt.o                   524                         12
+    hal_I2C.o             1 908
+    hal_gpio.o               48
+    hal_gpio_7687.o         416
+    hal_gpt.o               260                         80
+    hal_i2c_master.o      1 060                         42
+    hal_log.o                32
+    hal_nvic.o              136      116       96      768
+    hal_pinmux.o            800
+    hal_uart.o              500                         96
+    i2c.o                   384                          6
+    main.o                  556                 9       36
+    nvic.o                            14       12
+    pinmux.o                200
+    startup_mt7687.o        560       84       69
+    system_mt7687.o         144                 1        4
+    timer.o                 116
+    top.o                   164                          8
+    uart.o                  592                          4
+    ------------------------------------------------------
+    Total:                8 488      214      216    1 184
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\tools\iar\mt7697\bootloader: [2]
+    bootloader.bin                         26 752
+    ------------------------------------------------------
+    Total:                                 26 752
+
+command line: [3]
+    ------------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [4]
+    abort.o                   6
+    exit.o                    4
+    low_level_init.o          4
+    printf.o                 40
+    putchar.o                12
+    vprintf.o                32
+    xencoding_8859_1.o       12
+    xfail_s.o                68                          4
+    xfiles.o                                   17      152
+    xlocale_c.o              96                19       72
+    xprintfsmall.o        1 304
+    xprout.o                 22
+    ------------------------------------------------------
+    Total:                1 600                36      228
+
+m7M_tls.a: [5]
+    fpinit_M.o               34
+    ------------------------------------------------------
+    Total:                   34
+
+rt7M_tl.a: [6]
+    ABImemcpy.o             166
+    ABImemset.o             102
+    XXexit.o                 12
+    cexit.o                  10
+    cmain.o                  26
+    cstartup_M.o             12
+    data_init.o              40
+    lz77_init_single.o      122
+    memchr.o                 88
+    strchr.o                 22
+    strlen.o                 54
+    zero_init3.o             64
+    ------------------------------------------------------
+    Total:                  718
+
+    Gaps                     16                 2
+    Linker created           16       24       67    3 072
+----------------------------------------------------------
+    Grand Total:         10 872      238   27 073    4 484
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x1007bb30           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x1007bb60           --   Gb  - Linker created -
+.intvec$$Base           0x10079100           --   Gb  - Linker created -
+.intvec$$Limit          0x100792c0           --   Gb  - Linker created -
+?main                   0x1007ba39          Code  Gb  cmain.o [6]
+CM4_GPT2Init            0x10079525     0x8  Code  Gb  gpt.o [1]
+CM4_GPT4Init            0x1007952d     0x8  Code  Gb  gpt.o [1]
+CSTACK$$Base            0x2003f000           --   Gb  - Linker created -
+CSTACK$$Limit           0x2003fc00           --   Gb  - Linker created -
+CacheMore               0x10079bed    0x24  Code  Lc  xlocale_c.o [4]
+CachePreInit            0x1007a0ff    0x26  Code  Gb  system_mt7687.o [1]
+DMA_Channel_Status      0x2000047c     0x4  Data  Lc  dma.o [1]
+DMA_Clock_Enable        0x1007937f     0xc  Code  Gb  dma.o [1]
+DMA_ERROR_LISR          0x1007937d     0x2  Code  Gb  dma.o [1]
+DMA_GetChannel          0x1007933d    0x40  Code  Gb  dma.o [1]
+DMA_LISR_FUNC           0x20000450    0x2c  Data  Gb  dma.o [1]
+DMA_Owner               0x2000040c     0xc  Data  Gb  dma.o [1]
+DMA_VFIFO_LISR_FUNC     0x20000418    0x38  Data  Gb  dma.o [1]
+DMA_used_channel        0x20000400     0xc  Data  Lc  dma.o [1]
+Flash_ReturnReady       0x10079675     0x2  Code  Gb  hal_nvic.o [1]
+GPTTimer                0x20000538     0xc  Data  Lc  gpt.o [1]
+GPT_INT_Handler         0x100793c5    0x36  Code  Gb  gpt.o [1]
+GPT_init                0x100793fb    0xb4  Code  Gb  gpt.o [1]
+GPT_return_current_count
+                        0x100794af    0x56  Code  Gb  gpt.o [1]
+LoadInt                 0x10079933    0x56  Code  Lc  xprintfsmall.o [4]
+NVIC_ClearPendingIRQ    0x1007964d    0x12  Code  Lc  hal_nvic.o [1]
+NVIC_DisableIRQ         0x1007a8d9    0x14  Code  Lc  hal_i2c_master.o [1]
+NVIC_EnableIRQ          0x10079395    0x12  Code  Lc  gpt.o [1]
+NVIC_SetPriority        0x100793a7    0x1e  Code  Lc  gpt.o [1]
+RAM_BLOCK$$Base         0x20000400           --   Gb  - Linker created -
+RAM_BLOCK$$Limit        0x20000984           --   Gb  - Linker created -
+ROM_BLOCK$$Base         0x10079100           --   Gb  - Linker created -
+ROM_BLOCK$$Limit        0x1007bc6d           --   Gb  - Linker created -
+Region$$Table$$Base     0x1007bb30           --   Gb  - Linker created -
+Region$$Table$$Limit    0x1007bb60           --   Gb  - Linker created -
+SysTick_Set             0x1007a0b5    0x22  Code  Gb  system_mt7687.o [1]
+SystemClock_Config      0x1007b73f     0x4  Code  Lc  main.o [1]
+SystemCoreClock         0x200004a4     0x4  Data  Gb  system_mt7687.o [1]
+SystemCoreClockUpdate   0x1007a0d7     0xc  Code  Gb  system_mt7687.o [1]
+SystemInit              0x1007a0e3    0x1c  Code  Gb  system_mt7687.o [1]
+TCM_BLOCK$$Base         0x00100000           --   Gb  - Linker created -
+TCM_BLOCK$$Limit        0x001000ee           --   Gb  - Linker created -
+_Encoding_8859_1_Mbrlen
+                        0x1007bae3     0x2  Code  Gb  xencoding_8859_1.o [4]
+_LitobSmall             0x10079ac5    0xce  Code  Lc  xprintfsmall.o [4]
+_PrintfSmall            0x100796d5   0x252  Code  Gb  xprintfsmall.o [4]
+_Prout                  0x1007bacd    0x16  Code  Gb  xprout.o [4]
+_PutcharsSmall          0x10079b93    0x2e  Code  Lc  xprintfsmall.o [4]
+_PutfldSmall            0x10079989   0x13c  Code  Lc  xprintfsmall.o [4]
+__aeabi_memcpy          0x1007b3f9          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy4         0x1007b419          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy8         0x1007b419          Code  Gb  ABImemcpy.o [6]
+__aeabi_memset          0x1007acfd          Code  Gb  ABImemset.o [6]
+__bootloader            0x10000000  0x6880  Data  Gb  bootloader.bin [2]
+__cmain                 0x1007ba39          Code  Gb  cmain.o [6]
+__exit                  0x10079d41          Code  Gb  XXexit.o [6]
+__iar_Fail_s            0x10079c65    0x1e  Code  Gb  xfail_s.o [4]
+__iar_Memchr            0x10079ce1          Code  Gb  memchr.o [6]
+__iar_Memset            0x1007acfd          Code  Gb  ABImemset.o [6]
+__iar_Memset_word       0x1007ad05          Code  Gb  ABImemset.o [6]
+__iar_Stdout            0x200004f0    0x48  Data  Gb  xfiles.o [4]
+__iar_Strchr            0x10079c4d          Code  Gb  strchr.o [6]
+__iar_data_init3        0x1007ba59    0x28  Code  Gb  data_init.o [6]
+__iar_globLocale        0x200004a8    0x48  Data  Lc  xlocale_c.o [4]
+__iar_init_vfp          0x1007ba15          Code  Gb  fpinit_M.o [5]
+__iar_lz77_init_single3
+                        0x100792c3    0x7a  Code  Gb  lz77_init_single.o [6]
+__iar_program_start     0x1007bac1          Code  Gb  cstartup_M.o [6]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [3]
+__iar_zero_init3        0x1007baef    0x40  Code  Gb  zero_init3.o [6]
+__isr_vector            0x10079100          Data  Gb  startup_mt7687.o [1]
+__low_level_init        0x1007ba53     0x4  Code  Gb  low_level_init.o [4]
+__vector_table          0x10079100          Data  Gb  startup_mt7687.o [1]
+_call_main              0x1007ba45          Code  Gb  cmain.o [6]
+_exit                   0x1007ba85          Code  Gb  cexit.o [6]
+_gLocale_mblen          0x10079c45     0x4  Code  Gb  xlocale_c.o [4]
+_gLocale_mblenInt       0x10079c11    0x34  Code  Gb  xlocale_c.o [4]
+_main                   0x1007ba4f          Code  Gb  cmain.o [6]
+abort                   0x10079d39     0x6  Code  Gb  abort.o [4]
+clear_TMR_INT_status_bit
+                        0x100795f5    0x1a  Code  Gb  timer.o [1]
+delay_ms                0x100795c9    0x2c  Code  Gb  timer.o [1]
+delay_time              0x100795a7    0x1c  Code  Gb  timer.o [1]
+exit                    0x1007ba81     0x4  Code  Gb  exit.o [4]
+fputc                   0x1007b6f1    0x12  Code  Gb  main.o [1]
+gCpuFrequency           0x20000920     0x4  Data  Lc  top.o [1]
+gUartClkFreq            0x20000924     0x4  Data  Gb  uart.o [1]
+gXtalFreq               0x2000091c     0x4  Data  Lc  top.o [1]
+g_gpt_context           0x20000544    0x50  Data  Lc  hal_gpt.o [1]
+g_i2c_context           0x20000594    0x28  Data  Lc  hal_i2c_master.o [1]
+g_uart_context_table    0x200008bc    0x60  Data  Lc  hal_uart.o [1]
+get_current_count       0x100795a1     0x6  Code  Gb  timer.o [1]
+get_current_gpt4_count  0x100795c3     0x6  Code  Gb  timer.o [1]
+get_current_irq         0x10079669     0xc  Code  Lc  hal_nvic.o [1]
+get_pending_irq         0x1007965f     0xa  Code  Lc  hal_nvic.o [1]
+gucI2C1Enable           0x2000097e     0x1  Data  Lc  i2c.o [1]
+gucI2C1RxGDMAIdx        0x20000980     0x1  Data  Lc  i2c.o [1]
+gucI2C1TxGDMAIdx        0x20000981     0x1  Data  Lc  i2c.o [1]
+gucI2C2Enable           0x2000097f     0x1  Data  Lc  i2c.o [1]
+gucI2C2RxGDMAIdx        0x20000982     0x1  Data  Lc  i2c.o [1]
+gucI2C2TxGDMAIdx        0x20000983     0x1  Data  Lc  i2c.o [1]
+halGPIO_ConfDirection   0x10079d4d   0x196  Code  Gb  hal_gpio_7687.o [1]
+halI2CChkStatus         0x1007a5ff    0x6c  Code  Gb  hal_I2C.o [1]
+halI2CClearFIFO         0x1007a201    0x26  Code  Gb  hal_I2C.o [1]
+halI2CGetBaseAddr       0x1007a1e9    0x18  Code  Gb  hal_I2C.o [1]
+halI2CGetBusyStatus     0x1007a66b    0x1e  Code  Gb  hal_I2C.o [1]
+halI2CGetFIFOSpace      0x1007a33d    0x3c  Code  Gb  hal_I2C.o [1]
+halI2CGetFIFOStatus     0x1007a397     0xc  Code  Gb  hal_I2C.o [1]
+halI2CInit              0x1007a227    0x78  Code  Gb  hal_I2C.o [1]
+halI2CMasterCtrl        0x1007a2a1    0x9c  Code  Gb  hal_I2C.o [1]
+halI2CNormalRead        0x1007a4f1   0x10e  Code  Gb  hal_I2C.o [1]
+halI2CNormalRead::__FUNCTION__
+                        0x1007a840    0x14  Data  Lc  hal_I2C.o [1]
+halI2CNormalWrite       0x1007a3a3   0x14e  Code  Gb  hal_I2C.o [1]
+halI2CNormalWrite::__FUNCTION__
+                        0x1007a760    0x14  Data  Lc  hal_I2C.o [1]
+halI2CRxFIFOSpace       0x1007a38b     0xc  Code  Gb  hal_I2C.o [1]
+halI2CTxFIFOSpace       0x1007a379    0x12  Code  Gb  hal_I2C.o [1]
+halPinmuxTopOnPadFunc   0x1007aee5   0x320  Code  Gb  hal_pinmux.o [1]
+halUART_HWInit          0x1007b4bd    0x3c  Code  Gb  uart.o [1]
+halUART_SetFormat       0x1007b4f9   0x10e  Code  Gb  uart.o [1]
+hal_gpio_deinit         0x1007b949     0x4  Code  Gb  hal_gpio.o [1]
+hal_gpio_init           0x1007b945     0x4  Code  Gb  hal_gpio.o [1]
+hal_gpt_delay_ms        0x10079f91    0x22  Code  Gb  hal_gpt.o [1]
+hal_gpt_get_duration_count
+                        0x10079f7b    0x16  Code  Gb  hal_gpt.o [1]
+hal_gpt_get_free_run_count
+                        0x10079eed    0x8e  Code  Gb  hal_gpt.o [1]
+hal_gpt_get_free_run_count::__FUNCTION__
+                        0x10079fbc    0x1c  Data  Lc  hal_gpt.o [1]
+hal_i2c_index_irq       0x1007a905     0xc  Code  Lc  hal_i2c_master.o [1]
+hal_i2c_is_config_valid
+                        0x1007a91d    0x1a  Code  Lc  hal_i2c_master.o [1]
+hal_i2c_is_frequency_valid
+                        0x1007a911     0xc  Code  Lc  hal_i2c_master.o [1]
+hal_i2c_is_port_valid   0x1007a8ed     0xc  Code  Lc  hal_i2c_master.o [1]
+hal_i2c_master_deinit   0x1007aa23    0x4e  Code  Gb  hal_i2c_master.o [1]
+hal_i2c_master_deinit::__FUNCTION__
+                        0x1007ac28    0x18  Data  Lc  hal_i2c_master.o [1]
+hal_i2c_master_init     0x1007a937    0xec  Code  Gb  hal_i2c_master.o [1]
+hal_i2c_master_init::__FUNCTION__
+                        0x1007abc0    0x14  Data  Lc  hal_i2c_master.o [1]
+hal_i2c_master_receive_polling
+                        0x1007ab13    0xa2  Code  Gb  hal_i2c_master.o [1]
+hal_i2c_master_receive_polling::__FUNCTION__
+                        0x1007ac9c    0x20  Data  Lc  hal_i2c_master.o [1]
+hal_i2c_master_send_polling
+                        0x1007aa71    0xa2  Code  Gb  hal_i2c_master.o [1]
+hal_i2c_master_send_polling::__FUNCTION__
+                        0x1007ac40    0x1c  Data  Lc  hal_i2c_master.o [1]
+hal_i2c_translate_frequency
+                        0x1007a903     0x2  Code  Lc  hal_i2c_master.o [1]
+hal_i2c_translate_port  0x1007a8f9     0xa  Code  Lc  hal_i2c_master.o [1]
+hal_nvic_register_isr_handler
+                        0x10079677    0x3a  Code  Gb  hal_nvic.o [1]
+hal_nvic_restore_interrupt_mask
+                        0x100796cb     0xa  Code  Gb  hal_nvic.o [1]
+hal_nvic_save_and_set_interrupt_mask
+                        0x100796bd     0xe  Code  Gb  hal_nvic.o [1]
+hal_pinmux_set_function
+                        0x1007b91d    0x28  Code  Gb  hal_gpio.o [1]
+hal_uart_init           0x1007b2af    0x76  Code  Gb  hal_uart.o [1]
+hal_uart_is_config_valid
+                        0x1007b211    0x30  Code  Lc  hal_uart.o [1]
+hal_uart_is_port_valid  0x1007b205     0xc  Code  Lc  hal_uart.o [1]
+hal_uart_put_char       0x1007b325    0x1c  Code  Gb  hal_uart.o [1]
+hal_uart_set_format     0x1007b341    0x64  Code  Gb  hal_uart.o [1]
+hal_uart_translate_baudrate
+                        0x1007b24b    0x1c  Code  Lc  hal_uart.o [1]
+hal_uart_translate_parity
+                        0x1007b27f    0x18  Code  Lc  hal_uart.o [1]
+hal_uart_translate_port
+                        0x1007b241     0xa  Code  Lc  hal_uart.o [1]
+hal_uart_translate_stopbit
+                        0x1007b297    0x18  Code  Lc  hal_uart.o [1]
+hal_uart_translate_word_length
+                        0x1007b267    0x18  Code  Lc  hal_uart.o [1]
+i2c_configure           0x1007ad65    0x3c  Code  Gb  i2c.o [1]
+i2c_control_EEPROM_with_polling_example
+                        0x1007b745    0xe8  Code  Lc  main.o [1]
+i2c_control_EEPROM_with_polling_example::__FUNCTION__
+                        0x1007b85c    0x28  Data  Lc  main.o [1]
+i2c_enable              0x1007adfd    0x5e  Code  Gb  i2c.o [1]
+i2c_master_wait_transaction_finish
+                        0x1007a165    0x84  Code  Lc  hal_I2C.o [1]
+i2c_master_wait_transaction_finish::__FUNCTION__
+                        0x1007a6a4    0x24  Data  Lc  hal_I2C.o [1]
+i2c_read_via_mcu        0x1007adcf    0x2e  Code  Gb  i2c.o [1]
+i2c_read_via_mcu::__FUNCTION__
+                        0x1007aea4    0x14  Data  Lc  i2c.o [1]
+i2c_receive_data        0x20000480    0x20  Data  Lc  main.o [1]
+i2c_send_data           0x1007b8fc    0x20  Data  Gb  main.o [1]
+i2c_write_via_mcu       0x1007ada1    0x2e  Code  Gb  i2c.o [1]
+i2c_write_via_mcu::__FUNCTION__
+                        0x1007ae60    0x14  Data  Lc  i2c.o [1]
+isrC_main               0x00100019    0x48  Code  Gb  hal_nvic.o [1]
+isrC_main::__FUNCTION__
+                        0x00100064     0xc  Data  Lc  hal_nvic.o [1]
+log_hal_error_internal  0x1007a095    0x20  Code  Gb  hal_log.o [1]
+main                    0x1007b831    0x2c  Code  Gb  main.o [1]
+memchr                  0x10079ce1          Code  Gb  memchr.o [6]
+nvic_function_table     0x200005bc   0x300  Data  Gb  hal_nvic.o [1]
+obuf                    0x2000092c    0x50  Data  Lc  xfiles.o [4]
+pinmux_config           0x1007b94d    0xc8  Code  Gb  pinmux.o [1]
+plain_log_uart_init     0x1007b703    0x3c  Code  Lc  main.o [1]
+printf                  0x10079615    0x28  Code  Gb  printf.o [4]
+prvSetupHardware        0x1007b743     0x2  Code  Lc  main.o [1]
+putchar                 0x1007ba91     0xc  Code  Gb  putchar.o [4]
+restore_interrupt_mask  0x001000e9     0x6  Code  Gb  nvic.o [1]
+s_i2c_master_status     0x2000097c     0x2  Data  Lc  hal_i2c_master.o [1]
+save_and_set_interrupt_mask
+                        0x001000e1     0x8  Code  Gb  nvic.o [1]
+sec_hand                0x20000928     0x4  Data  Lc  xfail_s.o [4]
+strchr                  0x10079c4d          Code  Gb  strchr.o [6]
+strlen                  0x10079ca9          Code  Gb  strlen.o [6]
+test_length             0x200004a0     0x4  Data  Lc  main.o [1]
+top_mcu_freq_get        0x1007a073     0x6  Code  Gb  top.o [1]
+top_xtal_freq_get       0x1007a06d     0x6  Code  Gb  top.o [1]
+top_xtal_init           0x10079ff1    0x7c  Code  Gb  top.o [1]
+uart_output_char        0x1007b4a1    0x1c  Code  Gb  uart.o [1]
+uart_reset_default_value
+                        0x1007b607    0xa6  Code  Gb  uart.o [1]
+vprintf                 0x1007a145    0x20  Code  Gb  vprintf.o [4]
+
+
+[1] = C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj
+[2] = C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\tools\iar\mt7697\bootloader
+[3] = command line
+[4] = dl7M_tlf.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+
+  10 872 bytes of readonly  code memory
+     238 bytes of readwrite code memory
+  27 073 bytes of readonly  data memory
+   4 484 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

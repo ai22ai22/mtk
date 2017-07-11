@@ -1,0 +1,431 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       27/Jun/2017  22:46:50
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\i2c.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWE1BC.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\i2c.c
+#        -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\i2c.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\i2c.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\i2c.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /****************************************************************************
+     36              Module Name:
+     37              I2C
+     38          
+     39              Abstract:
+     40              Two I2C master modules and 7-bit address is supported.
+     41          
+     42              Revision History:
+     43              Who         When            What
+     44              --------    ----------      ------------------------------------------
+     45          ***************************************************************************/
+     46          #include "hal_i2c_master.h"
+     47          #if defined(HAL_I2C_MASTER_MODULE_ENABLED)
+     48          #include <stdio.h>
+     49          #include <string.h>
+     50          #include "type_def.h"
+     51          #include "mt7687.h"
+     52          #include "i2c.h"
+     53          #include "hal_I2C.h"
+     54          #include "dma_sw.h"
+     55          #include "hal_log.h"
+     56          
+     57          static UINT8 gucI2C1Enable = 0;
+     58          static UINT8 gucI2C2Enable = 0;
+     59          static UINT8 gucI2C1RxGDMAIdx = 0;
+     60          static UINT8 gucI2C1TxGDMAIdx = 0;
+     61          static UINT8 gucI2C2RxGDMAIdx = 0;
+     62          static UINT8 gucI2C2TxGDMAIdx = 0;
+     63          
+     64          int32_t i2c_configure(uint8_t index, uint8_t frequency)
+     65          {
+     66              INT32 ret = 0;
+     67              ENUM_HAL_RET_T hal_ret = HAL_RET_FAIL;
+     68          
+     69              if (index & (~(BIT(0)))) {
+     70                  // only support index 0:I2C1, 1:I2C2
+     71                  return -1;
+     72              }
+     73          
+     74              hal_ret = halI2CInit(index, 0, 0, 0, 3);
+     75              if (HAL_RET_FAIL == hal_ret) {
+     76                  return -1;
+     77              }
+     78          
+     79              hal_ret = halI2CMasterCtrl(index, (ENUM_I2C_CLK_T)frequency);
+     80              if (HAL_RET_FAIL == hal_ret) {
+     81                  return -2;
+     82              }
+     83          
+     84              return ret;
+     85          }
+     86          
+     87          int32_t i2c_write(uint8_t index, uint8_t slave_address, const uint8_t *data, uint16_t length)
+     88          {
+     89              INT32 ret = 0;
+     90              UINT8 ucTxGDMAIdx = 0;
+     91              ENUM_HAL_RET_T hal_ret = HAL_RET_FAIL;
+     92          
+     93              if (index & (~(BIT(0)))) {
+     94                  // only support index 0:I2C1, 1:I2C2
+     95          
+     96                  log_hal_error("[I2C][i2c_write] error i2c number.\r\n");
+     97                  return -1;
+     98              }
+     99          
+    100              if (0 == index) {
+    101                  ucTxGDMAIdx = gucI2C1TxGDMAIdx;
+    102              } else {
+    103                  ucTxGDMAIdx = gucI2C2TxGDMAIdx;
+    104              }
+    105              hal_ret = halI2CGDMANormalWrite(index, ucTxGDMAIdx, slave_address, data, length);
+    106          
+    107              if (HAL_RET_FAIL == hal_ret) {
+    108                  return -2;
+    109              }
+    110          
+    111              return ret;
+    112          }
+    113          
+    114          int32_t i2c_write_via_mcu(uint8_t index, uint8_t slave_address, const uint8_t *data, uint16_t length)
+    115          {
+    116              INT32 ret = 0;
+    117              ENUM_HAL_RET_T hal_ret = HAL_RET_FAIL;
+    118          
+    119              if (index & (~(BIT(0)))) {
+    120                  log_hal_error("[I2C][i2c_write_via_mcu] error i2c number.\r\n");
+    121                  // only support index 0:I2C1, 1:I2C2
+    122                  return -1;
+    123              }
+    124          
+    125              hal_ret = halI2CNormalWrite(index, slave_address, data, length);
+    126          
+    127              if (HAL_RET_FAIL == hal_ret) {
+    128                  return -2;
+    129              }
+    130          
+    131              return ret;
+    132          }
+    133          
+    134          int32_t i2c_read(uint8_t index, uint8_t slave_address, uint8_t *data, uint16_t length)
+    135          {
+    136              INT32 ret = 0;
+    137              UINT8 ucRxGDMAIdx = 0;
+    138              ENUM_HAL_RET_T hal_ret = HAL_RET_FAIL;
+    139          
+    140              if (index & (~(BIT(0)))) {
+    141                  // only support index 0:I2C1, 1:I2C2
+    142                  log_hal_error("[I2C][i2c_read] error i2c number.\r\n");
+    143                  return -1;
+    144              }
+    145          
+    146              if (0 == index) {
+    147                  ucRxGDMAIdx = gucI2C1RxGDMAIdx;
+    148              } else {
+    149                  ucRxGDMAIdx = gucI2C2RxGDMAIdx;
+    150              }
+    151              hal_ret = halI2CGDMANormalRead(index, ucRxGDMAIdx, slave_address, data, length);
+    152          
+    153              if (HAL_RET_FAIL == hal_ret) {
+    154                  return -2;
+    155              }
+    156          
+    157              return ret;
+    158          }
+    159          
+    160          int32_t i2c_read_via_mcu(uint8_t index, uint8_t slave_address, uint8_t *data, uint16_t length)
+    161          {
+    162              INT32 ret = 0;
+    163              ENUM_HAL_RET_T hal_ret = HAL_RET_FAIL;
+    164          
+    165              if (index & (~(BIT(0)))) {
+    166                  // only support index 0:I2C1, 1:I2C2
+    167                  log_hal_error("[I2C][i2c_read_via_mcu] error i2c number.\r\n");
+    168                  return -1;
+    169              }
+    170          
+    171              hal_ret = halI2CNormalRead(index, slave_address, data, length);
+    172          
+    173              if (HAL_RET_FAIL == hal_ret) {
+    174                  return -2;
+    175              }
+    176          
+    177              return ret;
+    178          }
+    179          
+    180          int32_t i2c_read_write(uint8_t index, i2c_package_information_t *package_information)
+    181          {
+    182              INT32 ret = 0;
+    183              UINT8 ucRxGDMAIdx = 0;
+    184              UINT8 ucTxGDMAIdx = 0;
+    185              ENUM_HAL_RET_T hal_ret = HAL_RET_FAIL;
+    186          
+    187              if (index & (~(BIT(0)))) {
+    188                  // only support index 0:I2C1, 1:I2C2
+    189                  log_hal_error("[I2C][i2c_read] error i2c number.\r\n");
+    190                  return -1;
+    191              }
+    192          
+    193              if (0 == index) {
+    194                  ucRxGDMAIdx = gucI2C1RxGDMAIdx;
+    195                  ucTxGDMAIdx = gucI2C1TxGDMAIdx;
+    196              } else {
+    197                  ucRxGDMAIdx = gucI2C2RxGDMAIdx;
+    198                  ucTxGDMAIdx = gucI2C2TxGDMAIdx;
+    199              }
+    200          
+    201              hal_ret = halI2CGDMAGeneralRW(index,
+    202                                            ucTxGDMAIdx,
+    203                                            ucRxGDMAIdx,
+    204                                            package_information->ucSlaveAddress,
+    205                                            package_information->pucTxData,
+    206                                            package_information->pucRxData,
+    207                                            package_information->ucPktNum,
+    208                                            package_information->ucPkt0RW,
+    209                                            package_information->u2Pkt0Len,
+    210                                            package_information->ucPkt1RW,
+    211                                            package_information->u2Pkt1Len,
+    212                                            package_information->ucPkt2RW,
+    213                                            package_information->u2Pkt2Len);
+    214          
+    215              if (HAL_RET_FAIL == hal_ret) {
+    216                  return -2;
+    217              }
+    218          
+    219              return ret;
+    220          }
+    221          
+    222          int32_t i2c_read_write_via_mcu(uint8_t index, i2c_package_information_t *package_information)
+    223          {
+    224              INT32 ret = 0;
+    225              ENUM_HAL_RET_T hal_ret = HAL_RET_FAIL;
+    226          
+    227              if (index & (~(BIT(0)))) {
+    228                  // only support index 0:I2C1, 1:I2C2
+    229                  log_hal_error("[I2C][i2c_read_via_mcu] error i2c number.\r\n");
+    230                  return -1;
+    231              }
+    232          
+    233              hal_ret = halI2CGeneralRW(index,
+    234                                        package_information->ucSlaveAddress,
+    235                                        package_information->pucTxData,
+    236                                        package_information->pucRxData,
+    237                                        package_information->ucPktNum,
+    238                                        package_information->ucPkt0RW,
+    239                                        package_information->u2Pkt0Len,
+    240                                        package_information->ucPkt1RW,
+    241                                        package_information->u2Pkt1Len,
+    242                                        package_information->ucPkt2RW,
+    243                                        package_information->u2Pkt2Len);
+    244          
+    245              if (HAL_RET_FAIL == hal_ret) {
+    246                  return -2;
+    247              }
+    248          
+    249              return ret;
+    250          }
+    251          
+    252          
+    253          
+    254          int32_t i2c_enable(uint8_t index)
+    255          {
+    256              INT32 ret = 0;
+    257          
+    258              if (index & (~(BIT(0)))) {
+    259                  // only support index 0:I2C1, 1:I2C2
+    260                  return -1;
+    261              }
+    262          
+    263              if (0 == index) {
+    264                  if (0 == gucI2C1Enable) {
+    265                      gucI2C1RxGDMAIdx = DMA_GetChannel(DMA_I2C1_RX);
+    266                      DMA_Clock_Enable(gucI2C1RxGDMAIdx);
+    267          
+    268                      gucI2C1TxGDMAIdx = DMA_GetChannel(DMA_I2C1_TX);
+    269                      DMA_Clock_Enable(gucI2C1TxGDMAIdx);
+    270                      gucI2C1Enable = 1;
+    271                  }
+    272              } else {
+    273                  if (0 == gucI2C2Enable) {
+    274                      gucI2C2RxGDMAIdx = DMA_GetChannel(DMA_I2C2_RX);
+    275                      DMA_Clock_Enable(gucI2C2RxGDMAIdx);
+    276          
+    277                      gucI2C2TxGDMAIdx = DMA_GetChannel(DMA_I2C2_TX);
+    278                      DMA_Clock_Enable(gucI2C2TxGDMAIdx);
+    279                      gucI2C2Enable = 1;
+    280                  }
+    281              }
+    282          
+    283              return ret;
+    284          }
+    285          
+    286          int32_t i2c_disable(uint8_t index)
+    287          {
+    288              INT32 ret = 0;
+    289          
+    290              if (index & (~(BIT(0)))) {
+    291                  // only support index 0:I2C1, 1:I2C2
+    292                  return -1;
+    293              }
+    294          
+    295              if (0 == index) {
+    296                  if (1 == gucI2C1Enable) {
+    297                      DMA_FreeChannel(gucI2C1RxGDMAIdx);
+    298                      DMA_Clock_Disable(gucI2C1RxGDMAIdx);
+    299          
+    300                      DMA_FreeChannel(gucI2C1TxGDMAIdx);
+    301                      DMA_Clock_Disable(gucI2C1TxGDMAIdx);
+    302                      gucI2C1Enable = 0;
+    303                  }
+    304              } else {
+    305                  if (1 == gucI2C2Enable) {
+    306                      DMA_FreeChannel(gucI2C2RxGDMAIdx);
+    307                      DMA_Clock_Disable(gucI2C2RxGDMAIdx);
+    308          
+    309                      DMA_FreeChannel(gucI2C2TxGDMAIdx);
+    310                      DMA_Clock_Disable(gucI2C2TxGDMAIdx);
+    311                      gucI2C2Enable = 0;
+    312                  }
+    313              }
+    314          
+    315              return ret;
+    316          }
+    317          
+    318          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   i2c_configure
+        16   -> halI2CInit
+        16   -> halI2CMasterCtrl
+       8   i2c_disable
+         8   -> DMA_Clock_Disable
+         8   -> DMA_FreeChannel
+       8   i2c_enable
+         8   -> DMA_Clock_Enable
+         8   -> DMA_GetChannel
+      16   i2c_read
+        16   -> halI2CGDMANormalRead
+        16   -> log_hal_error_internal
+       8   i2c_read_via_mcu
+         8   -> halI2CNormalRead
+         8   -> log_hal_error_internal
+      48   i2c_read_write
+        48   -> halI2CGDMAGeneralRW
+        48   -> log_hal_error_internal
+      32   i2c_read_write_via_mcu
+        32   -> halI2CGeneralRW
+        32   -> log_hal_error_internal
+      16   i2c_write
+        16   -> halI2CGDMANormalWrite
+        16   -> log_hal_error_internal
+       8   i2c_write_via_mcu
+         8   -> halI2CNormalWrite
+         8   -> log_hal_error_internal
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+      40  ?_0
+      48  ?_1
+      36  ?_2
+      44  ?_3
+       6  gucI2C1Enable
+          gucI2C2Enable
+          gucI2C1RxGDMAIdx
+          gucI2C1TxGDMAIdx
+          gucI2C2RxGDMAIdx
+          gucI2C2TxGDMAIdx
+      60  i2c_configure
+      94  i2c_disable
+      94  i2c_enable
+      66  i2c_read
+      46  i2c_read_via_mcu
+     106  i2c_read_write
+      84  i2c_read_write_via_mcu
+      66  i2c_write
+      46  i2c_write_via_mcu
+     104  -- Other
+
+ 
+   6 bytes in section .bss
+ 938 bytes in section .text
+ 
+ 938 bytes of CODE memory
+   6 bytes of DATA memory
+
+Errors: none
+Warnings: none

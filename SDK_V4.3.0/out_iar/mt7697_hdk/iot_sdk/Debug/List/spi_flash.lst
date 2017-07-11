@@ -1,0 +1,1459 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:39
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\spi_flash.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWADC3.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\spi_flash.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\spi_flash.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\spi_flash.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\spi_flash.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /*
+     36           *
+     37           * Almost code are derived from uboot in MTK APSoC(MT762x) SDK.
+     38           *
+     39           */
+     40          #include "hal_flash.h"
+     41          #ifdef HAL_FLASH_MODULE_ENABLED
+     42          
+     43          #include <string.h>
+     44          #include <stdio.h>
+     45          #include <assert.h>
+     46          #include "mem_util.h"
+     47          #include "sfc.h"
+     48          #include "spi_flash.h"
+     49          
+     50          #include "timer.h"
+     51          #include "debug.h"
+     52          #include "hal_nvic_internal.h"
+     53          #include "flash_sfc.h"
+     54          #include "hal_log.h"
+     55          #include "memory_attribute.h"
+     56          #include "bsp_flash_config.h"
+     57          
+     58          #define DIRECT_READ_SPI_WINBOND		0x0B0B7000
+     59          #define DIRECT_READ_SPIQ_WINBOND	0xEBFF5000
+     60          #define DIRECT_READ_QPI_WINBOND		0x0BFF1000
+     61          
+     62          #define DIRECT_READ_SPIQ_MICRON	    0xEBFF9000
+     63          
+     64          /*
+     65           *   this is SFC controller H/W GPRAM size define
+     66           */
+     67          unsigned int gSFC_max_data_size = MAX_SFC_GPRAM_SIZE - 32; /* 160 actually in MT7687 HW design */
+     68          
+     69          /* Winbond specific flash command sequences */
+     70          const unsigned char cmdlist_switchqpi_winbond[] = {
+     71              SPI, 1, 0x06, SPI, 3, 0x01, 0x00, 0x02, SPI, 1, 0x38, SF_UNDEF
+     72          };
+     73          const unsigned char cmdlist_switchspi_winbond[] = {
+     74              QPI, 1, 0xFF, SF_UNDEF
+     75          };
+     76          const unsigned char cmdlist_switchspiq_winbond[] = {
+     77              SPI, 1, 0x06, SPI, 3, 0x01, 0x00, 0x02, SF_UNDEF
+     78          };
+     79          ATTR_RODATA_IN_TCM unsigned char cmdlist_suspend_winbond[] = {
+     80              SPI, 1, 0x75, SF_UNDEF
+     81          };
+     82          ATTR_RODATA_IN_TCM unsigned char cmdlist_resume_winbond[] = {
+     83              SPI, 1, 0x7A, SF_UNDEF
+     84          };
+     85          
+     86          //don't support QPI mode on MX25L3233F
+     87          const unsigned char cmdlist_switchspiq_mxic[] = {
+     88              SPI, 1, 0x06, SPI, 2, 0x01, 0x40, SF_UNDEF
+     89          };
+     90          
+     91          const unsigned char cmdlist_switchqpi_mxic[] = {
+     92              SPI, 1, 0x06, SPI, 2, 0x01, 0x40, SF_UNDEF
+     93          };
+     94          
+     95          const unsigned char cmdlist_switchspi_mxic[] = {
+     96              SPI, 1, 0x06, SPI, 2, 0x01, 0x00, SF_UNDEF
+     97          };
+     98          
+     99          //don't support QPI mode on MX25L3223F 
+    100          const unsigned char cmdlist_switchspiq_gd[] = {
+    101              SPI, 1, 0x06, SPI, 3, 0x01, 0x0, 0x2, SF_UNDEF
+    102          };
+    103          
+    104          const unsigned char cmdlist_switchqpi_gd[] = {
+    105              SPI, 1, 0x06, SPI, 3, 0x01, 0x0, 0x2, SF_UNDEF
+    106          };
+    107          
+    108          const unsigned char cmdlist_switchspi_gd[] = {
+    109              SPI, 1, 0x06, SPI, 3, 0x01, 0x00, 0x00, SF_UNDEF
+    110          };
+    111          
+    112          const unsigned char cmdlist_switchspi_gd25q32c[] = {
+    113              SPI, 1, 0x06, SPI, 2, 0x31, 0x0, SF_UNDEF
+    114          };
+    115          const unsigned char cmdlist_switchspiq_gd25q32c[] = {
+    116              SPI, 1, 0x06, SPI, 2, 0x31, 0x2, SF_UNDEF
+    117          };
+    118          
+    119          const unsigned char cmdlist_switchqpi_gd25q32c[] = {
+    120              SPI, 1, 0x06, SPI, 2, 0x31, 0x2, SF_UNDEF
+    121          };
+    122          
+    123          const unsigned char cmdlist_switchspi_micron[] = {
+    124              SPI, 1, 0x06, SPI, 2, 0xB1, 0x1, SF_UNDEF
+    125          };
+    126          const unsigned char cmdlist_switchspiq_micron[] = {
+    127              SPI, 1, 0x06, SPI, 2, 0xB1, 0x0, SF_UNDEF
+    128          };
+    129          
+    130          const unsigned char cmdlist_switchqpi_micron[] = {
+    131              SPI, 1, 0x06, SPI, 2, 0xB1, 0x0, SF_UNDEF
+    132          };
+    133          
+    134          /* Generic Flash reset sequence --> 0x66 , 0x99 */
+    135          const unsigned char cmdlist_flash_reset_spimode[] = {
+    136              SPI, 1, 0x66, SPI, 1, 0x99, SF_UNDEF
+    137          };
+    138          const unsigned char cmdlist_flash_reset_qpimode[] = {
+    139              QPI, 1, 0x66, QPI, 1, 0x99, SF_UNDEF
+    140          };
+    141          
+    142          const struct chip_info *spi_chip_info = NULL;
+    143          
+    144          const static struct chip_info chips_data[] = {
+    145              /* REVISIT: fill in JEDEC ids, for parts that have them */
+    146              { "DEF_FLASH",  0xff, 0xFFFFFFFF, 4096,  256, 0x00, 0x00, 0x00},
+    147              { "W25Q32JV",   0xef, 0x40160000, 16384, 256, 0x32, 0x6b, 0xeb},
+    148              { "W25Q16DV",   0xef, 0x40150000, 8192,  256, 0x32, 0x6b, 0xeb},
+    149              { "W25Q80DV",   0xef, 0x40140000, 4096,  256, 0x32, 0x6b, 0xeb},
+    150              { "MX25L3233F", 0XC2, 0X20160000, 16384, 256, 0X38, 0X6B, 0XEB},
+    151              { "MX25L1635F", 0XC2, 0X20150000, 8192,  256, 0X38, 0X6B, 0XEB},
+    152              { "MX25V1635F", 0XC2, 0X20150000, 8192,  256, 0X38, 0X6B, 0XEB},
+    153              { "MX25V8035F", 0XC2, 0X20140000, 4096,  256, 0X38, 0X6B, 0XEB},
+    154              { "KH25V1635F", 0XC2, 0X23150000, 8192,  256, 0X38, 0X6B, 0XEB},
+    155              { "GD25Q32CSIG",0XC8, 0X40160000, 16384, 256, 0X32, 0X6B, 0XEB},
+    156              { "GD25Q16CSIG",0XC8, 0X40150000, 8192,  256, 0X32, 0X6B, 0XEB},
+    157              { "GD25VE32C",  0XC8, 0X42160000, 8192,  256, 0X32, 0X6B, 0XEB},
+    158              { "N25Q128A",   0X20, 0XBA180000, 65536, 256, 0X32, 0X6B, 0XEB},
+    159          };
+    160          
+    161          int gd_write_sr2_1 = 0;
+    162          SF_TYPT support_flash_id = SF_TYPE_NONE;
+    163          extern uint32_t gucFlashSFCMode;
+    164          extern SF_DRV_STATE sf_drvier_status;
+    165          
+    166          
+    167          /*
+    168           *	Reset Flash to init state
+    169           */
+    170          ATTR_TEXT_IN_TCM static void flash_reset(void)
+    171          {
+    172              sfc_Command_List(cmdlist_flash_reset_qpimode);
+    173              sfc_delay_ms(1);
+    174          
+    175          
+    176              sfc_Command_List(cmdlist_flash_reset_spimode);
+    177              sfc_delay_ms(1);
+    178          
+    179              return;
+    180          }
+    181          
+    182          
+    183          /*
+    184           *      Suspend Winbond flash programming/erasing
+    185           */
+    186          ATTR_TEXT_IN_TCM void flash_suspend_Winbond(void)
+    187          {
+    188              sfc_Command_List((const unsigned char *)cmdlist_suspend_winbond);
+    189              return;
+    190          }
+    191          
+    192          /*
+    193           *      Resume Winbond flash programming/erasing
+    194           */
+    195          ATTR_TEXT_IN_TCM void flash_resume_Winbond(void)
+    196          {
+    197              sfc_Command_List((const unsigned char *)cmdlist_resume_winbond);
+    198              return;
+    199          }
+    200          
+    201          #if 0
+    202          
+    203          /*
+    204           *	Reset Spansion flash QPI mode back to SPI mode
+    205           */
+    206          static void flash_reset_SST(void)	/* spansion */
+    207          {
+    208              sfc_Command_List(sf_cmd_sw_reset_SST);
+    209              sfc_delay_ms(1);
+    210              return;
+    211          }
+    212          
+    213          #endif
+    214          
+    215          ATTR_TEXT_IN_TCM static void flash_Switch_Device_Mode(uint32_t mode)
+    216          {
+    217              const unsigned char *ptr;
+    218          
+    219              /* TODO: winbond only currently !! */
+    220              switch (mode) {
+    221                  case SPI:
+    222                      ptr = cmdlist_switchspi_winbond;
+    223                      if (support_flash_id == SF_TYPE_MXIC) {
+    224                          ptr = cmdlist_switchspi_mxic;
+    225                      } else if(support_flash_id == SF_TYPE_GD) {
+    226                          ptr = cmdlist_switchspi_gd;
+    227                          if ( gd_write_sr2_1 == 0x31) {
+    228                              ptr = cmdlist_switchspi_gd25q32c;
+    229                          }
+    230                      } else if (support_flash_id == SF_TYPE_MICRON){
+    231                          ptr = cmdlist_switchspi_micron;
+    232                      } else if (support_flash_id == SF_TYPE_CUSTOMER){
+    233                          ptr = customer_switch_spi_mode_command();
+    234                      }            
+    235                      break;
+    236          
+    237                  case SPIQ:
+    238                      ptr = cmdlist_switchspiq_winbond;
+    239                      if (support_flash_id == SF_TYPE_MXIC) {
+    240                          ptr = cmdlist_switchspiq_mxic;
+    241                      } else if(support_flash_id == SF_TYPE_GD) {
+    242                          ptr = cmdlist_switchspiq_gd;
+    243                          if ( gd_write_sr2_1 == 0x31) {
+    244                              ptr = cmdlist_switchspiq_gd25q32c;
+    245                          }
+    246                      } else if (support_flash_id == SF_TYPE_MICRON){
+    247                              ptr = cmdlist_switchspiq_micron;
+    248                      } else if (support_flash_id == SF_TYPE_CUSTOMER){
+    249                          ptr = customer_switch_spiq_mode_command();
+    250                      }
+    251                      break;
+    252                  case QPI:
+    253                      ptr = cmdlist_switchqpi_winbond;
+    254                      if (support_flash_id == SF_TYPE_MXIC) {
+    255                          ptr = cmdlist_switchspiq_mxic;
+    256                      } else if(support_flash_id == SF_TYPE_GD) {
+    257                          ptr = cmdlist_switchspiq_gd;
+    258                          if ( gd_write_sr2_1 == 0x31) {
+    259                              ptr = cmdlist_switchqpi_gd25q32c;
+    260                          }
+    261                      } else if (support_flash_id == SF_TYPE_MICRON){
+    262                          ptr = cmdlist_switchspiq_micron;
+    263                      } else if (support_flash_id == SF_TYPE_CUSTOMER){
+    264                          ptr = customer_switch_spiq_mode_command();
+    265                      }
+    266                      break;
+    267                  default:
+    268                      ASSERT(0);
+    269              }
+    270          
+    271              //SF_DVT_Print_Command_List(ptr);
+    272              sfc_Command_List(ptr);
+    273          }
+    274          
+    275          
+    276          ATTR_TEXT_IN_TCM int flash_check_device(void)
+    277          {
+    278              int i;
+    279              unsigned long jedec;
+    280              unsigned char buf[5];
+    281              const struct chip_info *info;
+    282          
+    283              flash_read_jedec_id(buf, 3);
+    284              jedec = (unsigned long)(((unsigned long)buf[1] << 24) | ((unsigned long)buf[2] << 16));
+    285              //log_hal_info("spi device id: %x %x %x (%x)\n\r", buf[0], buf[1], buf[2], (unsigned int)jedec);
+    286              gucFlashSFCMode = sfc_GetDirectMode();
+    287          
+    288              if (support_flash_id == SF_TYPE_CUSTOMER) {
+    289              	   info = spi_chip_info;
+    290                  if (info->id == buf[0] && info->jedec_id == jedec) {
+    291                      if (info->id == SF_TYPE_MXIC) {
+    292                          support_flash_id = SF_TYPE_MXIC;
+    293                      } else if (info->id == SF_TYPE_WINBOND) {
+    294                          support_flash_id = SF_TYPE_WINBOND;
+    295                      } else if (info->id == SF_TYPE_GD) {
+    296                          gd_write_sr2_1 = 0x1;
+    297                          if(0x40160000 == info->jedec_id || 0x42160000 == info->jedec_id) {
+    298                              //GD25Q32CSIG or GD25VE32C
+    299                              gd_write_sr2_1 = 0x31;
+    300                          }
+    301                          support_flash_id = SF_TYPE_GD;
+    302                      } else if (info->id == SF_TYPE_MICRON) {
+    303                          support_flash_id = SF_TYPE_MICRON;
+    304                      }
+    305                  } else {
+    306                      log_hal_info(" Check flash device Failed !! \n\r");
+    307                      log_hal_info("spi device id: %x %x %x (%x)\n\r", buf[0], buf[1], buf[2], (unsigned int)jedec);
+    308                  }
+    309              }
+    310              
+    311              for (i = 1; i < sizeof(chips_data) / sizeof(chips_data[0]); i++) {
+    312                  info = &chips_data[i];
+    313                  if (info->id == buf[0] && info->jedec_id == jedec) {
+    314                      spi_chip_info = info;
+    315                      if (info->id == SF_TYPE_MXIC) {
+    316                          support_flash_id = SF_TYPE_MXIC;
+    317                      } else if (info->id == SF_TYPE_WINBOND) {
+    318                          support_flash_id = SF_TYPE_WINBOND;
+    319                      } else if (info->id == SF_TYPE_GD) {
+    320                          gd_write_sr2_1 = 0x1;
+    321                          if(0x40160000 == info->jedec_id || 0x42160000 == info->jedec_id) {
+    322                              //GD25Q32CSIG or GD25VE32C
+    323                              gd_write_sr2_1 = 0x31;
+    324                          }
+    325                          support_flash_id = SF_TYPE_GD;
+    326                      } else if (info->id == SF_TYPE_MICRON) {
+    327                          support_flash_id = SF_TYPE_MICRON;
+    328                      }
+    329          
+    330                      //log_hal_info("flash_check_device: %x \n\r\n\r", support_flash_id);
+    331                      sf_drvier_status = SF_DRV_READY;
+    332                      return 1;
+    333                  }
+    334              }
+    335          
+    336              spi_chip_info = &chips_data[1];
+    337              sf_drvier_status = SF_DRV_READY;
+    338              return 0;
+    339          }
+    340          
+    341          ATTR_TEXT_IN_TCM void flash_switch_mode(unsigned long mode)
+    342          {
+    343              if (customer_flash_register()!= NULL) {
+    344              	   //configured external flash
+    345                  support_flash_id = SF_TYPE_CUSTOMER;
+    346              }
+    347              
+    348              flash_check_device();
+    349              flash_Switch_Device_Mode(mode);
+    350          
+    351              if (mode == SPI) {
+    352                  sfc_direct_read_setup(DIRECT_READ_SPI_WINBOND, mode);
+    353              } else if (mode == SPIQ) {
+    354                  if(support_flash_id == SF_TYPE_MICRON) {
+    355                  	   sfc_direct_read_setup(DIRECT_READ_SPIQ_MICRON, mode);
+    356                  } else {
+    357                      sfc_direct_read_setup(DIRECT_READ_SPIQ_WINBOND, mode);
+    358                  }
+    359              } else if (mode == QPI) {
+    360                  sfc_direct_read_setup(DIRECT_READ_QPI_WINBOND, mode);
+    361              } else {
+    362                  ASSERT(0);
+    363              }
+    364              gucFlashSFCMode = mode;
+    365          }
+    366          
+    367          ATTR_TEXT_IN_TCM void flash_config()
+    368          {
+    369              // copy from flash_init() without flash_reset
+    370              int i;
+    371              unsigned long jedec;
+    372              unsigned char buf[5];
+    373              const struct chip_info *info;
+    374          
+    375          #if 0
+    376              /*
+    377               * Serial flash controller init.
+    378               * restore it to default setting
+    379               */
+    380              sfc_Init(SFC_SECURITY_DISABLE);
+    381          
+    382              /* 1, SFC and flash had been configured in BROM and bootloader;
+    383                 2, can't do sfc_init as it reset flash and sfc to default;
+    384                 3, flash_config only check used flash is invalid or not; */
+    385          #endif
+    386          
+    387              gSFC_max_data_size = sfc_getMaxGPRamSize();
+    388          
+    389              //flash_reset();
+    390          
+    391              spi_chip_info = NULL;
+    392          
+    393              flash_read_jedec_id(buf, 3);
+    394              jedec = (unsigned long)(((unsigned long)buf[1] << 24) | ((unsigned long)buf[2] << 16));
+    395          
+    396              log_hal_info("spi device id: %x %x %x (%x)\n", buf[0], buf[1], buf[2], (unsigned int)jedec);
+    397          
+    398              if (support_flash_id == SF_TYPE_CUSTOMER) {
+    399              	   info = spi_chip_info;
+    400                  if (info->id == buf[0] && info->jedec_id == jedec) {
+    401                      //device is ok
+    402                      if (info->id == SF_TYPE_MXIC) {
+    403                          support_flash_id = SF_TYPE_MXIC;
+    404                      } else if (info->id == SF_TYPE_WINBOND) {
+    405                          support_flash_id = SF_TYPE_WINBOND;
+    406                      } else if (info->id == SF_TYPE_GD) {
+    407                          gd_write_sr2_1 = 0x1;
+    408                          if(0x40160000 == info->jedec_id || 0x42160000 == info->jedec_id) {
+    409                              //GD25Q32CSIG or GD25VE32C
+    410                              gd_write_sr2_1 = 0x31;
+    411                          }
+    412                          support_flash_id = SF_TYPE_GD;
+    413                      } else if (info->id == SF_TYPE_MICRON) {
+    414                          support_flash_id = SF_TYPE_MICRON;
+    415                      }
+    416                     
+    417                  } else {
+    418                      log_hal_info(" Check flash device Failed !! \n\r");
+    419                      log_hal_info("spi device id: %x %x %x (%x)\n\r", buf[0], buf[1], buf[2], (unsigned int)jedec);
+    420                  }
+    421              }
+    422              
+    423              for (i = 1; i < sizeof(chips_data) / sizeof(chips_data[0]); i++) {
+    424                  info = &chips_data[i];
+    425                  if (info->id == buf[0] && info->jedec_id == jedec) {
+    426                      log_hal_info("find flash: %s\n", info->name);
+    427                      spi_chip_info = info;
+    428                      if (info->id == SF_TYPE_MXIC) {
+    429                          support_flash_id = SF_TYPE_MXIC;
+    430                      } else if (info->id == SF_TYPE_WINBOND) {
+    431                          support_flash_id = SF_TYPE_WINBOND;
+    432                      } else if (info->id == SF_TYPE_GD) {
+    433                          support_flash_id = SF_TYPE_GD;
+    434                      } else if (info->id == SF_TYPE_MICRON) {
+    435                          support_flash_id = SF_TYPE_MICRON;
+    436                      }
+    437                  }
+    438              }
+    439          
+    440              if (!spi_chip_info) {
+    441                  log_hal_info("Don't support flash: %s\n", (uint8_t *)jedec);
+    442                  //assert(0);
+    443                  spi_chip_info = &chips_data[1];
+    444              }
+    445              sf_drvier_status = SF_DRV_READY;
+    446          }
+    447          
+    448          
+    449          ATTR_TEXT_IN_TCM void flash_init(int security_enable)
+    450          {
+    451              int i;
+    452              unsigned long jedec;
+    453              unsigned char buf[5];
+    454              const struct chip_info *info;
+    455          
+    456              /*
+    457               * Serial flash controller init.
+    458               * restore it to default setting
+    459               */
+    460              sfc_Init(security_enable);
+    461          
+    462              gSFC_max_data_size = sfc_getMaxGPRamSize();
+    463          
+    464              flash_reset();
+    465          
+    466              spi_chip_info = NULL;
+    467          
+    468              flash_read_jedec_id(buf, 3);
+    469              jedec = (unsigned long)(((unsigned long)buf[1] << 24) | ((unsigned long)buf[2] << 16));
+    470          
+    471              log_hal_info("spi device id: %x %x %x (%x)\n", buf[0], buf[1], buf[2], (unsigned int)jedec);
+    472          
+    473              for (i = 1; i < sizeof(chips_data) / sizeof(chips_data[0]); i++) {
+    474                  info = &chips_data[i];
+    475                  if (info->id == buf[0] && info->jedec_id == jedec) {
+    476                      log_hal_info("find flash: %s\n", info->name);
+    477                      spi_chip_info = info;
+    478                  }
+    479              }
+    480          
+    481              if (!spi_chip_info) {
+    482                  log_hal_info("Don't support flash: %s\n", (uint8_t *)jedec);
+    483                  //assert(0);
+    484                  spi_chip_info = &chips_data[1];
+    485              }
+    486          }
+    487          
+    488          
+    489          /*
+    490           * Service routine to read status register until ready, or timeout occurs.
+    491           * Returns non-zero if error.
+    492           */
+    493          ATTR_TEXT_IN_TCM int flash_wait_ready(int sleep_ms)
+    494          {
+    495              int count;
+    496              unsigned char sr = 0;
+    497          
+    498              //udelay(1000 * sleep_ms);
+    499          
+    500              /* one chip guarantees max 5 msec wait here after page writes,
+    501               * but potentially three seconds (!) after page erase.
+    502               */
+    503              for (count = 0;  count < ((sleep_ms + 1) * 1000); count++) {
+    504                  if ((flash_read_sr(&sr)) < 0) {
+    505                      break;
+    506                  } else if (!(sr & SR_WIP)) {
+    507                      return 0;
+    508                  }
+    509          
+    510                  sfc_delay_ms(1);
+    511                  /* REVISIT sometimes sleeping would be best */
+    512              }
+    513          
+    514              //log_hal_info("%s: read_sr fail: %x\n", __func__, sr);
+    515              assert(0);
+    516              return -1;
+    517          }
+    518          
+    519          ATTR_TEXT_IN_TCM int flash_read_jedec_id(unsigned char *buf, int buf_size)
+    520          {
+    521              unsigned char code;
+    522              int rc;
+    523              code = OPCODE_RD_JEDEC_ID;
+    524              rc = sfc_read(&code, 1, buf, buf_size);
+    525          
+    526              return rc;
+    527          }
+    528          
+    529          ATTR_TEXT_IN_TCM int flash_read_manu_id(unsigned char *buf, int buf_size)
+    530          {
+    531              unsigned char code[4] = {0};
+    532              int rc;
+    533              code[0] = OPCODE_RD_MANU_ID;
+    534              rc = sfc_read(code, 4, buf, buf_size);
+    535          
+    536              return rc;
+    537          }
+    538          
+    539          ATTR_TEXT_IN_TCM int flash_read_manu_id_quad(unsigned char *buf, int buf_size)
+    540          {
+    541              unsigned char code[4] = {0};
+    542              int rc;
+    543              code[0] = OPCODE_RD_MANU_ID;
+    544              rc = sfc_read(code, 4, buf, buf_size);
+    545          
+    546              return rc;
+    547          }
+    548          
+    549          
+    550          ATTR_TEXT_IN_TCM int flash_read(unsigned char *buf, unsigned int from, int len)
+    551          {
+    552              unsigned char cmd[4];
+    553              int rdlen;
+    554          
+    555              /* sanity checks */
+    556              if (len == 0) {
+    557                  return 0;
+    558              }
+    559          
+    560              /* Wait till previous write/erase is done. */
+    561              if (flash_wait_ready(1)) {
+    562                  /* REVISIT status return?? */
+    563                  return -1;
+    564              }
+    565          
+    566              sf_drvier_status = SF_DRV_READING;
+    567              cmd[0] = OPCODE_READ;
+    568              cmd[1] = from >> 16;
+    569              cmd[2] = from >> 8;
+    570              cmd[3] = from;
+    571          
+    572              rdlen = sfc_read(cmd, 4, buf, len);
+    573          
+    574              //if (rdlen != len)
+    575              //log_hal_info("warning: rdlen != len\n");
+    576          
+    577              return rdlen;
+    578          }
+    579          
+    580          
+    581          ATTR_TEXT_IN_TCM int flash_fast_read(unsigned char *buf, unsigned int from, int len, int dummy_cycle)
+    582          {
+    583              unsigned char cmd[32];
+    584              int cmd_len;
+    585              int rdlen, i;
+    586          
+    587              /* sanity checks */
+    588              if (len == 0) {
+    589                  return 0;
+    590              }
+    591          
+    592              /* Wait till previous write/erase is done. */
+    593              if (flash_wait_ready(1)) {
+    594                  /* REVISIT status return?? */
+    595                  return -1;
+    596              }
+    597          
+    598              cmd[0] = OPCODE_FAST_READ;
+    599              cmd[1] = from >> 16;
+    600              cmd[2] = from >> 8;
+    601              cmd[3] = from;
+    602              cmd_len = 4;
+    603          
+    604              for (i = 0; i < dummy_cycle && i < sizeof(cmd) - 4; i++) {
+    605                  cmd[4 + i] = 0x0;
+    606                  cmd_len++;
+    607              }
+    608          
+    609              rdlen = sfc_read(cmd, cmd_len, buf, len);
+    610          
+    611              //if (rdlen != len)
+    612              //log_hal_info("warning: rdlen != len\n");
+    613          
+    614              return rdlen;
+    615          }
+    616          
+    617          
+    618          ATTR_TEXT_IN_TCM inline int  flash_direct_read(unsigned char *buf, unsigned int from, int len)
+    619          {
+    620              sf_drvier_status = SF_DRV_DIRECT_READING;
+    621              memcpy(buf, (void *)(from + CM4_EXEC_IN_PLACE_BASE) , len);
+    622              sf_drvier_status = SF_DRV_READY;
+    623              return len;
+    624          }
+    625          
+    626          ATTR_TEXT_IN_TCM inline int flash_direct_read_nocache(unsigned char *buf, unsigned int from, int len)
+    627          {
+    628              memcpy(buf, (void *)(from + CM4_SPIFLASH_BASE) , len);
+    629              return len;
+    630          }
+    631          
+    632          
+    633          ATTR_TEXT_IN_TCM static int flash_write_sr(unsigned char *val)
+    634          {
+    635              int retval;
+    636              unsigned  char code = OPCODE_WRSR;
+    637          
+    638              retval = sfc_write(&code, 1, val, 1);
+    639          
+    640              if (retval != 1) {
+    641                  //log_hal_info("%s: ret: %x\n", __func__, retval);
+    642                  return -1;
+    643              }
+    644              return 0;
+    645          }
+    646          
+    647          ATTR_TEXT_IN_TCM int flash_read_sr(unsigned char *val)
+    648          {
+    649              int retval;
+    650              unsigned char code = OPCODE_RDSR;
+    651          
+    652              retval = sfc_read(&code, 1, val, 1);
+    653              if (retval != 1) {
+    654                  //log_hal_info("%s: ret: %x\n", __func__, retval);
+    655                  return -1;
+    656              }
+    657              return 0;
+    658          }
+    659          
+    660          ATTR_TEXT_IN_TCM int flash_read_sr2(unsigned char *val)
+    661          {
+    662              int retval;
+    663              unsigned char code = OPCODE_RDSR_2;
+    664          
+    665              if (support_flash_id == SF_TYPE_WINBOND || support_flash_id == SF_TYPE_GD) {
+    666                  //windbond is 0x35
+    667                  code = OPCODE_RDSR_2;
+    668              } else if (support_flash_id == SF_TYPE_MXIC) {
+    669                  //mxic is 0x2B
+    670                  code = OPCODE_RD_SECST;
+    671              } else if (support_flash_id == SF_TYPE_MICRON) {
+    672                  //flag register 0x70
+    673                  code = 0x70;
+    674              } else if (support_flash_id == SF_TYPE_CUSTOMER) {
+    675                  //flag register
+    676                  code = customer_flash_read_SR2_comand();
+    677              }
+    678              else {
+    679                  log_hal_info("flash_read_sr2: no init flash !\n");
+    680                  code = OPCODE_RDSR;
+    681              }
+    682          
+    683              retval = sfc_read(&code, 1, val, 1);
+    684              if (retval != 1) {
+    685                  //log_hal_info("%s: ret: %x\n", __func__, retval);
+    686                  return -1;
+    687              }
+    688              return 0;
+    689          }
+    690          
+    691          ATTR_TEXT_IN_TCM int flash_unprotect(void)
+    692          {
+    693              unsigned char sr = 0;
+    694          
+    695              if (flash_read_sr(&sr) < 0) {
+    696                  //log_hal_info("%s: read_sr fail: %x\n", __func__, sr);
+    697                  return -1;
+    698              }
+    699          
+    700              if ((sr & (SR_BP0 | SR_BP1 | SR_BP2)) != 0) {
+    701                  sr = 0;
+    702                  flash_write_sr(&sr);
+    703              }
+    704              return 0;
+    705          }
+    706          
+    707          /*
+    708           * write all -- BP0, BP1, BP2 to 1
+    709           */
+    710          ATTR_TEXT_IN_TCM int flash_protect(void)
+    711          {
+    712              unsigned char sr = 0;
+    713          
+    714              if (flash_read_sr(&sr) < 0) {
+    715                  //log_hal_info("%s: read_sr fail: %x\n", __func__, sr);
+    716                  return -1;
+    717              }
+    718          
+    719              sr |= (SR_BP0 | SR_BP1 | SR_BP2);
+    720              flash_write_sr(&sr);
+    721              return 0;
+    722          }
+    723          
+    724          
+    725          ATTR_TEXT_IN_TCM int flash_write_enable(void)
+    726          {
+    727              unsigned char code = OPCODE_WREN;
+    728              return sfc_write(&code, 1, NULL, 0);
+    729          }
+    730          
+    731          ATTR_TEXT_IN_TCM int flash_write_disable(void)
+    732          {
+    733              unsigned char code = OPCODE_WRDI;
+    734              return sfc_write(&code, 1, NULL, 0);
+    735          }
+    736          
+    737          ATTR_TEXT_IN_TCM int flash_erase_sector(unsigned int offset)
+    738          {
+    739              unsigned char buf[5];
+    740              uint32_t savedMask;
+    741              int32_t result = 0;
+    742          
+    743              /* Wait until finished previous write command. */
+    744              if (flash_wait_ready(3)) {
+    745                  return -1;
+    746              }
+    747          
+    748              sf_drvier_status = SF_DRV_SECTOR_64K_ERASING;
+    749              do {
+    750                  result = SF_DAL_CheckDeviceReady(0, 0);
+    751              } while (-121 == result);
+    752          
+    753              savedMask = save_and_set_interrupt_mask();
+    754          
+    755              /* Send write enable, then erase commands. */
+    756              buf[0] = OPCODE_SE;
+    757              buf[1] = offset >> 16;
+    758              buf[2] = offset >> 8;
+    759              buf[3] = offset;
+    760              SF_DAL_FLAG_BUSY_SET();
+    761              sfc_write(buf, 4, 0 , 0);
+    762              restore_interrupt_mask(savedMask);
+    763          
+    764              do {
+    765                  result = SF_DAL_CheckDeviceReady(0, 0);
+    766              } while (-121 == result);
+    767          
+    768              flash_write_disable();
+    769              return 0;
+    770          }
+    771          
+    772          ATTR_TEXT_IN_TCM int flash_erase_sector_32k(unsigned int offset)
+    773          {
+    774              unsigned char buf[5];
+    775              uint32_t savedMask;
+    776              int32_t result = 0;
+    777          
+    778              /* Wait until finished previous write command. */
+    779              if (flash_wait_ready(3)) {
+    780                  return -1;
+    781              }
+    782          
+    783              sf_drvier_status = SF_DRV_SECTOR_32K_ERASING;
+    784              do {
+    785                  result = SF_DAL_CheckDeviceReady(0, 0);
+    786              } while (-121 == result);
+    787          
+    788              savedMask = save_and_set_interrupt_mask();
+    789              buf[0] = OPCODE_SE_32K;
+    790              buf[1] = offset >> 16;
+    791              buf[2] = offset >> 8;
+    792              buf[3] = offset;
+    793              SF_DAL_FLAG_BUSY_SET();
+    794              sfc_write(buf, 4, 0 , 0);
+    795              do {
+    796                  result = SF_DAL_CheckDeviceReady(0, 0);
+    797              } while (-121 == result);
+    798          
+    799              restore_interrupt_mask(savedMask);
+    800          
+    801              flash_write_disable();
+    802              return 0;
+    803          }
+    804          
+    805          ATTR_TEXT_IN_TCM int flash_erase_page(unsigned int offset)
+    806          {
+    807              unsigned char buf[5];
+    808              uint32_t savedMask;
+    809              int32_t result = 0;
+    810          
+    811              /* Wait until finished previous write command. */
+    812              if (flash_wait_ready(3)) {
+    813                  return -1;
+    814              }
+    815          
+    816              sf_drvier_status = SF_DRV_SECTOR_4K_ERASING;
+    817              do {
+    818                  result = SF_DAL_CheckDeviceReady(0, 0);
+    819              } while (-121 == result);
+    820          
+    821              /* Send write enable, then erase commands. */
+    822              savedMask = save_and_set_interrupt_mask();
+    823              buf[0] = OPCODE_PE;
+    824              buf[1] = offset >> 16;
+    825              buf[2] = offset >> 8;
+    826              buf[3] = offset;
+    827              SF_DAL_FLAG_BUSY_SET();
+    828          
+    829              sfc_write(buf, 4, 0 , 0);
+    830              restore_interrupt_mask(savedMask);
+    831          
+    832              do {
+    833                  result = SF_DAL_CheckDeviceReady(0, 0);
+    834              } while (-121 == result);
+    835          
+    836              flash_write_disable();
+    837              return 0;
+    838          }
+    839          
+    840          ATTR_TEXT_IN_TCM int flash_erase_chip(void)
+    841          {
+    842              unsigned char buf[5];
+    843          
+    844              /* Wait until finished previous write command. */
+    845              if (flash_wait_ready(3)) {
+    846                  return -1;
+    847              }
+    848          
+    849              sf_drvier_status = SF_DRV_CHIP_ERASING;
+    850              /* Send write enable, then erase commands. */
+    851              flash_write_enable();
+    852              flash_unprotect();
+    853          
+    854              buf[0] = OPCODE_CE;
+    855          
+    856              sfc_write(buf, 1, 0 , 0);
+    857          
+    858              if (flash_wait_ready(30000)) {
+    859                  return -1;
+    860              }
+    861          
+    862              flash_write_disable();
+    863              sf_drvier_status = SF_DRV_READY;
+    864              return 0;
+    865          }
+    866          
+    867          
+    868          ATTR_TEXT_IN_TCM int flash_erase(unsigned int offs, int len)
+    869          {
+    870              //ra_dbg("%s: offs:%x len:%x\n", __func__, offs, len);
+    871          
+    872              ///* sanity checks */
+    873              if (len == 0) {
+    874                  return 0;
+    875              }
+    876          
+    877              /* now erase those pages */
+    878              while (len > 0) {
+    879                  if (flash_erase_page(offs)) {
+    880                      return -1;
+    881                  }
+    882          
+    883                  offs += spi_chip_info->page_size;
+    884                  len -=  spi_chip_info->page_size;
+    885              }
+    886          
+    887              return 0;
+    888          }
+    889          
+    890          
+    891          
+    892          ATTR_TEXT_IN_TCM int flash_write(const unsigned char *buf, unsigned int to, int len)
+    893          {
+    894              unsigned long page_offset, /*max_size,*/ page_size;
+    895              int rc = 0, retlen = 0;
+    896              int mode;
+    897              unsigned char cmd[5];
+    898              int32_t result;
+    899              uint32_t savedMask;
+    900          
+    901              uint32_t To  = (uint32_t)to;
+    902              const uint8_t *Buf = buf;
+    903              const uint8_t *p_data_first;
+    904          
+    905              /* sanity checks */
+    906              if (len == 0) {
+    907                  return 0 ;
+    908              }
+    909          
+    910              if (to + len > spi_chip_info->page_size * spi_chip_info->n_pages) {
+    911                  return -1;
+    912              }
+    913          
+    914              /* Wait until finished previous write command. */
+    915              if (flash_wait_ready(2)) {
+    916                  return -1;
+    917              }
+    918          
+    919              do {
+    920                  result = SF_DAL_CheckDeviceReady(0, 0);
+    921              } while (-121 == result);
+    922          
+    923              sf_drvier_status = SF_DRV_PROGRAMMING;
+    924          
+    925              mode = sfc_GetDirectMode();
+    926              /* Set up the opcode in the write buffer. */
+    927              if ((mode == SPIQ) && spi_chip_info-> quad_program_cmd) {
+    928                  cmd[0] = spi_chip_info->quad_program_cmd;
+    929              } else {
+    930                  cmd[0] = OPCODE_PP;
+    931              }
+    932          
+    933              /* what page do we start with? */
+    934              page_offset = to % gSFC_max_data_size;
+    935          
+    936              /* write everything in PAGESIZE chunks */
+    937              while (len > 0) {
+    938                  page_size = min(len, (gSFC_max_data_size - page_offset));
+    939                  page_offset = 0;
+    940                  p_data_first = Buf;
+    941          
+    942                  /* write the next page to flash */
+    943                  cmd[1] = To >> 16;
+    944                  cmd[2] = To >> 8;
+    945                  cmd[3] = To;
+    946          
+    947                  if (flash_wait_ready(3)) {
+    948                      return -1;
+    949                  }
+    950          
+    951                  flash_write_enable();
+    952                  savedMask = save_and_set_interrupt_mask();
+    953                  SF_DAL_FLAG_BUSY_SET();
+    954                  rc = sfc_write(cmd, 4, p_data_first, page_size);
+    955                  restore_interrupt_mask(savedMask);
+    956          
+    957                  do {
+    958                      result = SF_DAL_CheckReadyAndResume(0, (kal_uint32)to + page_offset - 1, *(buf + page_offset - 1));
+    959                  } while (0 == result);
+    960          
+    961                  if (rc > 0) {
+    962                      retlen += rc;
+    963                      if (rc < page_size) {
+    964                          //log_hal_info("%s: rc:%x page_size:%x\n", __func__, rc, (unsigned int)page_size);
+    965                          flash_write_disable();
+    966                          assert(0);
+    967                          return retlen;
+    968                      }
+    969                  }
+    970          
+    971                  len -= page_size;
+    972                  To += page_size;
+    973                  Buf += page_size;
+    974              }
+    975          
+    976              do {
+    977                  result = SF_DAL_CheckDeviceReady(0, 0);
+    978              } while (-121 == result);
+    979          
+    980              flash_write_disable();
+    981              return retlen;
+    982          }
+    983          
+    984          /*
+    985           * Currently we assume the size of loader & freertos/mbed is 4k align.
+    986           */
+    987          ATTR_TEXT_IN_TCM int flash_erase_write_security_crc(unsigned int to)
+    988          {
+    989              int len = 4, rc = 0;
+    990              unsigned char cmd[5];
+    991          
+    992              if (to % FLASH_ERASE_4K) {
+    993                  return -1;
+    994              }
+    995          
+    996              if (to + len > spi_chip_info->page_size * spi_chip_info->n_pages) {
+    997                  return -1;
+    998              }
+    999          
+   1000              sf_drvier_status = SF_DRV_ERASE_WRITE_CRC;
+   1001          
+   1002              /* Wait until finished previous write command. */
+   1003              if (flash_wait_ready(2)) {
+   1004                  return -1;
+   1005              }
+   1006          
+   1007              flash_erase_page(to);
+   1008          
+   1009              cmd[0] = OPCODE_PP;
+   1010              cmd[1] = to >> 16;
+   1011              cmd[2] = to >> 8;
+   1012              cmd[3] = to;
+   1013          
+   1014              flash_write_enable();
+   1015              flash_unprotect();
+   1016          
+   1017              rc = sfc_security_write_crc(cmd, 4);
+   1018              sf_drvier_status = SF_DRV_READY;
+   1019              return rc;
+   1020          }
+   1021          
+   1022          ATTR_TEXT_IN_TCM int flash_erase_write(const unsigned char *buf, unsigned int offs, int count)
+   1023          {
+   1024              unsigned char block[FLASH_ERASE_4K];
+   1025          
+   1026              int blocksize = FLASH_ERASE_4K;
+   1027              int blockmask = blocksize - 1;
+   1028          
+   1029              while (count > 0) {
+   1030          #define BLOCK_ALIGNE(a) (((a) & blockmask))
+   1031                  if (BLOCK_ALIGNE(offs) || (count < blocksize)) {
+   1032                      unsigned int piece, blockaddr;
+   1033                      int piece_size;
+   1034          
+   1035                      blockaddr = offs & ~blockmask;
+   1036          
+   1037                      if (flash_direct_read_nocache(block, blockaddr, blocksize) != blocksize) {
+   1038                          return -2;
+   1039                      }
+   1040          
+   1041                      sf_drvier_status = SF_DRV_ERASE_WRITE;
+   1042                      piece = offs & blockmask;
+   1043                      piece_size = min(count, blocksize - piece);
+   1044                      memcpy(block + piece, buf, piece_size);
+   1045          
+   1046                      if (flash_erase(blockaddr, blocksize) != 0) {
+   1047                          return -3;
+   1048                      }
+   1049          
+   1050                      if (flash_write(block, blockaddr, blocksize) != blocksize) {
+   1051                          return -4;
+   1052                      }
+   1053          
+   1054                      buf += piece_size;
+   1055                      offs += piece_size;
+   1056                      count -= piece_size;
+   1057                  } else {
+   1058                      unsigned int aligned_size = count & ~blockmask;
+   1059          
+   1060                      if (flash_erase(offs, aligned_size) != 0) {
+   1061                          sf_drvier_status = SF_DRV_READY;
+   1062                          return -1;
+   1063                      }
+   1064                      if (flash_write(buf, offs, aligned_size) != aligned_size) {
+   1065                          sf_drvier_status = SF_DRV_READY;
+   1066                          return -1;
+   1067                      }
+   1068          
+   1069                      buf += aligned_size;
+   1070                      offs += aligned_size;
+   1071                      count -= aligned_size;
+   1072                  }
+   1073              }
+   1074              sf_drvier_status = SF_DRV_READY;
+   1075              return 0;
+   1076          }
+   1077          
+   1078          
+   1079          ATTR_TEXT_IN_TCM FLASH_DRV_STATE query_spi_flash_status(void)
+   1080          {
+   1081              if (sf_drvier_status == SF_DRV_NOT_READY) {
+   1082                  return FLASH_NOT_READY;
+   1083              }
+   1084          
+   1085              if (sf_drvier_status == SF_DRV_READY) {
+   1086                  return FLASH_READY;
+   1087              }
+   1088          
+   1089              if (sf_drvier_status == SF_DRV_PROGRAMMING ||
+   1090                      sf_drvier_status == SF_DRV_ERASE_WRITE ||
+   1091                      sf_drvier_status == SF_DRV_ERASE_WRITE_CRC) {
+   1092                  return FLASH_PROGRAMMING;
+   1093              } else {
+   1094                  return FLASH_ERASING;
+   1095              }
+   1096          }
+   1097          #endif
+   1098          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   flash_Switch_Device_Mode
+         8   -> customer_switch_spi_mode_command
+         8   -> customer_switch_spiq_mode_command
+         8   -> printf
+         0   -> sfc_Command_List
+      40   flash_check_device
+        40   -> flash_read_jedec_id
+        40   -> log_hal_info_internal
+        40   -> sfc_GetDirectMode
+      48   flash_config
+        48   -> flash_read_jedec_id
+        48   -> log_hal_info_internal
+        48   -> sfc_getMaxGPRamSize
+      16   flash_erase
+        16   -> flash_erase_page
+      16   flash_erase_chip
+        16   -> flash_unprotect
+        16   -> flash_wait_ready
+        16   -> flash_write_disable
+        16   -> flash_write_enable
+        16   -> sfc_write
+      24   flash_erase_page
+        24   -> SF_DAL_CheckDeviceReady
+        24   -> SF_DAL_FLAG_BUSY_SET
+        24   -> flash_wait_ready
+        24   -> flash_write_disable
+        24   -> restore_interrupt_mask
+        24   -> save_and_set_interrupt_mask
+        24   -> sfc_write
+      24   flash_erase_sector
+        24   -> SF_DAL_CheckDeviceReady
+        24   -> SF_DAL_FLAG_BUSY_SET
+        24   -> flash_wait_ready
+        24   -> flash_write_disable
+        24   -> restore_interrupt_mask
+        24   -> save_and_set_interrupt_mask
+        24   -> sfc_write
+      24   flash_erase_sector_32k
+        24   -> SF_DAL_CheckDeviceReady
+        24   -> SF_DAL_FLAG_BUSY_SET
+        24   -> flash_wait_ready
+        24   -> flash_write_disable
+        24   -> restore_interrupt_mask
+        24   -> save_and_set_interrupt_mask
+        24   -> sfc_write
+    4120   flash_erase_write
+      4120   -> __aeabi_memcpy
+      4120   -> flash_direct_read_nocache
+      4120   -> flash_erase
+      4120   -> flash_write
+      24   flash_erase_write_security_crc
+        24   -> flash_erase_page
+        24   -> flash_unprotect
+        24   -> flash_wait_ready
+        24   -> flash_write_enable
+        24   -> sfc_security_write_crc
+      56   flash_fast_read
+        56   -> flash_wait_ready
+        56   -> sfc_read
+      48   flash_init
+        48   -> flash_read_jedec_id
+        48   -> flash_reset
+        48   -> log_hal_info_internal
+        48   -> sfc_Init
+        48   -> sfc_getMaxGPRamSize
+       8   flash_protect
+         8   -> flash_read_sr
+         8   -> flash_write_sr
+      24   flash_read
+        24   -> flash_wait_ready
+        24   -> sfc_read
+       8   flash_read_jedec_id
+         8   -> sfc_read
+       8   flash_read_manu_id
+         8   -> sfc_read
+       8   flash_read_manu_id_quad
+         8   -> sfc_read
+       8   flash_read_sr
+         8   -> sfc_read
+      16   flash_read_sr2
+        16   -> customer_flash_read_SR2_comand
+        16   -> log_hal_info_internal
+        16   -> sfc_read
+       8   flash_reset
+         8   -> sfc_Command_List
+         0   -> sfc_delay_ms
+         8   -> sfc_delay_ms
+       0   flash_resume_Winbond
+         0   -> sfc_Command_List
+       0   flash_suspend_Winbond
+         0   -> sfc_Command_List
+      16   flash_switch_mode
+        16   -> customer_flash_register
+        16   -> flash_Switch_Device_Mode
+        16   -> flash_check_device
+        16   -> printf
+        16   -> sfc_direct_read_setup
+       8   flash_unprotect
+         8   -> flash_read_sr
+         8   -> flash_write_sr
+      16   flash_wait_ready
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> flash_read_sr
+        16   -> sfc_delay_ms
+      56   flash_write
+        56   -> SF_DAL_CheckDeviceReady
+        56   -> SF_DAL_CheckReadyAndResume
+        56   -> SF_DAL_FLAG_BUSY_SET
+        56   -> __aeabi_assert
+        56   -> __iar_EmptyStepPoint
+        56   -> flash_wait_ready
+        56   -> flash_write_disable
+        56   -> flash_write_enable
+        56   -> restore_interrupt_mask
+        56   -> save_and_set_interrupt_mask
+        56   -> sfc_GetDirectMode
+        56   -> sfc_write
+       8   flash_write_disable
+         8   -> sfc_write
+       8   flash_write_enable
+         8   -> sfc_write
+       8   flash_write_sr
+         8   -> sfc_write
+       4   query_spi_flash_status
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable64
+       4  ??DataTable64_1
+       4  ??DataTable64_10
+       4  ??DataTable64_2
+       4  ??DataTable64_3
+       4  ??DataTable64_4
+       4  ??DataTable64_5
+       4  ??DataTable64_6
+       4  ??DataTable64_7
+       4  ??DataTable64_8
+       4  ??DataTable64_9
+      12  ?_0
+      12  ?_1
+      12  ?_10
+      12  ?_11
+      12  ?_12
+      40  ?_13
+      76  ?_14
+      36  ?_15
+      32  ?_16
+      32  ?_17
+      16  ?_18
+      28  ?_19
+      12  ?_2
+       8  ?_20
+       4  ?_21
+       4  ?_22
+      36  ?_23
+      12  ?_3
+      12  ?_4
+      12  ?_5
+      12  ?_6
+      12  ?_7
+      12  ?_8
+      12  ?_9
+     312  chips_data
+       8  cmdlist_flash_reset_qpimode
+       8  cmdlist_flash_reset_spimode
+       4  cmdlist_resume_winbond
+       4  cmdlist_suspend_winbond
+      12  cmdlist_switchqpi_gd
+       8  cmdlist_switchqpi_gd25q32c
+       8  cmdlist_switchqpi_micron
+       8  cmdlist_switchqpi_mxic
+      12  cmdlist_switchqpi_winbond
+      12  cmdlist_switchspi_gd
+       8  cmdlist_switchspi_gd25q32c
+       8  cmdlist_switchspi_micron
+       8  cmdlist_switchspi_mxic
+       4  cmdlist_switchspi_winbond
+      12  cmdlist_switchspiq_gd
+       8  cmdlist_switchspiq_gd25q32c
+       8  cmdlist_switchspiq_micron
+       8  cmdlist_switchspiq_mxic
+      12  cmdlist_switchspiq_winbond
+     208  flash_Switch_Device_Mode
+     310  flash_check_device
+     348  flash_config
+      42  flash_erase
+      80  flash_erase_chip
+     118  flash_erase_page
+     118  flash_erase_sector
+     118  flash_erase_sector_32k
+     214  flash_erase_write
+     114  flash_erase_write_security_crc
+     102  flash_fast_read
+     168  flash_init
+      46  flash_protect
+      76  flash_read
+      22  flash_read_jedec_id
+      28  flash_read_manu_id
+      28  flash_read_manu_id_quad
+      34  flash_read_sr
+     112  flash_read_sr2
+      34  flash_reset
+       8  flash_resume_Winbond
+       8  flash_suspend_Winbond
+     126  flash_switch_mode
+      50  flash_unprotect
+      82  flash_wait_ready
+     306  flash_write
+      22  flash_write_disable
+      22  flash_write_enable
+      34  flash_write_sr
+      52  query_spi_flash_status
+      16  support_flash_id
+          gSFC_max_data_size
+          spi_chip_info
+          gd_write_sr2_1
+      64  -- Other
+
+ 
+    24 bytes in section .data
+ 3 878 bytes in section .ramTEXT
+   192 bytes in section .rodata
+ 
+ 3 878 bytes of CODE  memory
+   192 bytes of CONST memory
+    24 bytes of DATA  memory
+
+Errors: none
+Warnings: none

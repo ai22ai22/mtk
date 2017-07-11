@@ -1,0 +1,370 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:27
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_wdt.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW7D04.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_wdt.c -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\hal_wdt.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\hal_wdt.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_wdt.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_wdt.h"
+     36          #if defined(HAL_WDT_MODULE_ENABLED)
+     37          #include "low_hal_wdt.h"
+     38          #include "mt7687.h"
+     39          #include "hal_nvic.h"
+     40          #include "hal_gpt.h"
+     41          
+     42          static hal_wdt_callback_t   s_hal_wdt_callback;
+     43          static bool                 s_hal_enable;
+     44          static hal_wdt_mode_t       s_hal_mode;
+     45          
+     46          static void hal_wdt_isr(hal_nvic_irq_t irq_number)
+     47          {
+     48              if (s_hal_wdt_callback) {
+     49                  s_hal_wdt_callback(HAL_WDT_TIMEOUT_RESET);
+     50              }
+     51          
+     52          }
+     53          
+     54          
+     55          hal_wdt_status_t hal_wdt_init(hal_wdt_config_t *wdt_config)
+     56          {
+     57              if (!wdt_config) {
+     58                  return HAL_WDT_STATUS_INVALID_PARAMETER;
+     59              }
+     60          
+     61              if (wdt_config->mode != HAL_WDT_MODE_RESET &&
+     62                      wdt_config->mode != HAL_WDT_MODE_INTERRUPT) {
+     63                  return HAL_WDT_STATUS_INVALID_PARAMETER;
+     64              }
+     65          
+     66              s_hal_mode = (wdt_config->mode);
+     67          
+     68              // Call lhal WDT.
+     69              halWDTConfig((wdt_config->mode), 0, 0, 1);
+     70              halWDTSetTimeout((((wdt_config->seconds) * 1000) / 32) - 1);
+     71          
+     72              return HAL_WDT_STATUS_OK;
+     73          }
+     74          
+     75          hal_wdt_status_t hal_wdt_deinit(void)
+     76          {
+     77              /* disable wdt */
+     78              halWDTEnable(0);
+     79              s_hal_enable = false;
+     80              return HAL_WDT_STATUS_OK;
+     81          }
+     82          
+     83          
+     84          hal_wdt_status_t hal_wdt_enable(uint32_t magic)
+     85          {
+     86              if (magic != HAL_WDT_ENABLE_MAGIC) {
+     87                  return HAL_WDT_STATUS_INVALID_MAGIC;
+     88              }
+     89          
+     90              s_hal_enable = true;
+     91          
+     92              // Call lhal WDT.
+     93              halWDTEnable(1);
+     94          
+     95              return HAL_WDT_STATUS_OK;
+     96          }
+     97          
+     98          
+     99          hal_wdt_status_t hal_wdt_disable(uint32_t magic)
+    100          {
+    101              if (magic != HAL_WDT_DISABLE_MAGIC) {
+    102                  return HAL_WDT_STATUS_INVALID_MAGIC;
+    103              }
+    104          
+    105              s_hal_enable = false;
+    106          
+    107              // Call lhal WDT.
+    108              halWDTEnable(0);
+    109          
+    110              return HAL_WDT_STATUS_OK;
+    111          }
+    112          
+    113          
+    114          hal_wdt_status_t hal_wdt_feed(uint32_t magic)
+    115          {
+    116              if (magic != HAL_WDT_FEED_MAGIC) {
+    117                  return HAL_WDT_STATUS_INVALID_MAGIC;
+    118              }
+    119          
+    120              // Call lhal WDT.
+    121              halWDTRestart();
+    122              /* Wait for 4T 32k cycle for HW limitation */
+    123              hal_gpt_delay_us(123);
+    124          
+    125              return HAL_WDT_STATUS_OK;
+    126          }
+    127          
+    128          
+    129          hal_wdt_callback_t hal_wdt_register_callback(const hal_wdt_callback_t wdt_callback)
+    130          {
+    131              hal_wdt_callback_t  old_callback;
+    132          
+    133              old_callback       = s_hal_wdt_callback;
+    134              s_hal_wdt_callback = wdt_callback;
+    135          
+    136              // register ISR
+    137              hal_nvic_register_isr_handler(CM4_WDT_IRQ, hal_wdt_isr);
+    138              NVIC_SetPriority((IRQn_Type)CM4_WDT_IRQ, (uint32_t)CM4_WDT_PRI);
+    139              NVIC_EnableIRQ((IRQn_Type)CM4_WDT_IRQ);
+    140          
+    141              return old_callback;
+    142          }
+    143          
+    144          hal_wdt_status_t hal_wdt_software_reset(void)
+    145          {
+    146              halWDTSoftwareReset();
+    147              return HAL_WDT_STATUS_OK;
+    148          }
+    149          
+    150          
+    151          bool hal_wdt_get_enable_status(void)
+    152          {
+    153              return s_hal_enable;
+    154          }
+    155          
+    156          
+    157          hal_wdt_mode_t hal_wdt_get_mode(void)
+    158          {
+    159              return s_hal_mode;
+    160          }
+    161          
+    162          hal_wdt_reset_status_t hal_wdt_get_reset_status(void)
+    163          {
+    164              uint32_t return_status;
+    165              return_status = halWDTReadInterruptStatus();
+    166              if (0 != (return_status & (0x1 << WDT_STA_WDT_OFFSET))) {
+    167                  return HAL_WDT_TIMEOUT_RESET;
+    168              } else if (0 != (return_status & (0x1 << WDT_STA_SW_WDT_OFFSET))) {
+    169                  return HAL_WDT_SOFTWARE_RESET;
+    170              }
+    171              return HAL_WDT_NONE_RESET;
+    172          }
+    173          
+    174          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_EnableIRQ
+       4   NVIC_SetPriority
+       8   hal_wdt_deinit
+         8   -> halWDTEnable
+       8   hal_wdt_disable
+         8   -> halWDTEnable
+       8   hal_wdt_enable
+         8   -> halWDTEnable
+       8   hal_wdt_feed
+         8   -> halWDTRestart
+         8   -> hal_gpt_delay_us
+       0   hal_wdt_get_enable_status
+       0   hal_wdt_get_mode
+       8   hal_wdt_get_reset_status
+         8   -> halWDTReadInterruptStatus
+       8   hal_wdt_init
+         8   -> halWDTConfig
+         8   -> halWDTSetTimeout
+       0   hal_wdt_isr
+         0   -- Indirect call
+       8   hal_wdt_register_callback
+         8   -> NVIC_EnableIRQ
+         8   -> NVIC_SetPriority
+         8   -> hal_nvic_register_isr_handler
+       8   hal_wdt_software_reset
+         8   -> halWDTSoftwareReset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable10_8
+       4  ??DataTable10_9
+      18  NVIC_EnableIRQ
+      30  NVIC_SetPriority
+      16  hal_wdt_deinit
+      28  hal_wdt_disable
+      28  hal_wdt_enable
+      28  hal_wdt_feed
+       6  hal_wdt_get_enable_status
+       6  hal_wdt_get_mode
+      26  hal_wdt_get_reset_status
+      58  hal_wdt_init
+      14  hal_wdt_isr
+      34  hal_wdt_register_callback
+      10  hal_wdt_software_reset
+       1  s_hal_enable
+       1  s_hal_mode
+       4  s_hal_wdt_callback
+
+ 
+   6 bytes in section .bss
+ 342 bytes in section .text
+ 
+ 342 bytes of CODE memory
+   6 bytes of DATA memory
+
+Errors: none
+Warnings: none

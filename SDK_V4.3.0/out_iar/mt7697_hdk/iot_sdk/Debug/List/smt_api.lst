@@ -1,0 +1,1063 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:39
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\smtcn\src\smt_api.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWAD05.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\smtcn\src\smt_api.c -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\smt_api.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\smt_api.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\smtcn\src\smt_api.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdint.h>
+     36          #include <stdio.h>
+     37          #include <string.h>
+     38          #include <stdlib.h>
+     39          
+     40          #include "FreeRTOS.h"
+     41          #include "FreeRTOSConfig.h"
+     42          #include "timers.h"
+     43          #include "type_def.h"
+     44          
+     45          #include "smt_conn.h"
+     46          #include "smt_api.h"
+     47          
+     48          #include "wifi_api.h"
+     49          #include "wifi_scan.h"
+     50          #include "wifi_event.h"
+     51          #include "semphr.h"
+     52          #include "syslog.h"
+     53          #include "wifi_rx_desc.h"
+     54          #include "nvdm.h"
+     55          #include "misc.h"
+     56          #include "task_def.h"
+     57          #include "wifi_event_id.h"
+     58          
+     59          
+     60          log_create_module(smnt, PRINT_LEVEL_INFO);
+     61          
+     62          #define smtcn_debug 1
+     63          #if (smtcn_debug == 1)
+     64          uint8_t channel_times[14] = {0};
+     65          #endif
+     66          
+     67          #define SMTCN_RX_QUEUE_SIZE        4
+     68          #define USE_SMTCN_STATIC_BUF
+     69          
+     70          #ifdef USE_SMTCN_STATIC_BUF
+     71          #define SMTCN_STATIC_BUF_COUNT     (SMTCN_RX_QUEUE_SIZE + 1)
+     72          #define SMTCN_STATIC_BUF_SIZE      64
+     73          
+     74          #ifdef __ICCARM__
+     75          _Pragma("data_alignment=4") uint8_t  smtcn_rx_buf[SMTCN_STATIC_BUF_COUNT][SMTCN_STATIC_BUF_SIZE] = {{0}};
+     76          #else
+     77          uint8_t __attribute__((aligned(4))) smtcn_rx_buf[SMTCN_STATIC_BUF_COUNT][SMTCN_STATIC_BUF_SIZE] = {{0}};
+     78          #endif
+     79          
+     80          uint8_t smtcn_rx_buf_idx = 0;
+     81          #endif
+     82          
+     83          extern global_event_callback __process_global_event[MAX_INTERFACE_NUM];
+     84          
+     85          
+     86          SemaphoreHandle_t smart_config_mutex = NULL;
+     87          xQueueHandle smtcn_rx_queue = NULL;
+     88          
+     89          typedef struct {
+     90              uint8_t    *payload;
+     91              uint32_t    len;
+     92          } raw_pkt_t, *praw_pkt_t;
+     93          
+     94          smtcn_proto_ops *psmtcn_proto_ops;
+     95          smtcn_info   saved_smtcn_info;
+     96          wifi_smart_connection_callback_t smtcn_evt_cb = NULL;
+     97          
+     98          #define switch_channel_timeticks (switch_channel_timems/portTICK_PERIOD_MS)
+     99          
+    100          #if (use_smart_connection_filter == 0)
+    101          #else
+    102          static uint32_t origin_rxfilter = 0;
+    103          #endif
+    104          static uint8_t origin_opmode = 0;
+    105          static uint8_t origin_bw = 0;
+    106          
+    107          uint8_t channel_list[] = {
+    108              1, 6, 11, 2, 5, 7, 10, 12, 1, 6, 11, 3, 8, 13, 4, 9, 14
+    109          };
+    110          
+    111          
+    112          /*smart connection swtich channel timer */
+    113          static TimerHandle_t switch_channel_timer = NULL;
+    114          
+    115          static TimerHandle_t time_out_timer = NULL;
+    116          
+    117          
+    118          static struct {
+    119              uint16_t  search_idx;
+    120              uint8_t   cur_chanl;
+    121          } smt_conn_st;
+    122          
+    123          static TaskHandle_t smtcn_handle = NULL;
+    124          static bool   b_init = FALSE;
+    125          
+    126          static bool   b_debug_on = FALSE;
+    127          
+    128          
+    129          #if 1
+    130          int32_t smtcn_raw_pkt_handler(uint8_t *payload, uint32_t len)
+    131          {
+    132              P_HW_MAC_RX_DESC_T        pRxWI;
+    133              uint8_t          ucRxPktType;
+    134              uint8_t          ucMacHeaderLength;
+    135              uint16_t         u2PayloadLength;
+    136              uint8_t *pucMacHeader;       /* 802.11 header  */
+    137              uint8_t *pucPayload;         /* 802.11 payload */
+    138              uint16_t         u2RxStatusOffst;
+    139          
+    140          
+    141              pRxWI   = (P_HW_MAC_RX_DESC_T)(payload);
+    142              // =======  Process RX Vector (if any) ========
+    143          
+    144              // 1. ToDo: Cache RXStatus in SwRfb
+    145              u2RxStatusOffst = sizeof(HW_MAC_RX_DESC_T);
+    146              ucRxPktType = HAL_RX_STATUS_GET_PKT_TYPE(pRxWI);
+    147          
+    148              if ((ucRxPktType != RX_PKT_TYPE_RX_DATA) && (ucRxPktType != RX_PKT_TYPE_SW_DEFINED)) {
+    149                  return 0; // not handled
+    150              }
+    151          
+    152              if (ucRxPktType == RX_PKT_TYPE_RX_DATA ||
+    153                      ucRxPktType == RX_PKT_TYPE_DUP_RFB) {
+    154                  uint16_t          u2GrpOffst;
+    155                  uint8_t              ucGroupVLD;
+    156          
+    157                  // RX Status Group
+    158                  u2GrpOffst = sizeof(HW_MAC_RX_DESC_T);
+    159                  ucGroupVLD = HAL_RX_STATUS_GET_GROUP_VLD(pRxWI);
+    160                  if (ucGroupVLD & BIT(RX_GROUP_VLD_4)) {
+    161                      u2GrpOffst += sizeof(HW_MAC_RX_STS_GROUP_4_T);
+    162                  }
+    163          
+    164                  if (ucGroupVLD & BIT(RX_GROUP_VLD_1)) {
+    165                      u2GrpOffst += sizeof(HW_MAC_RX_STS_GROUP_1_T);
+    166                  }
+    167          
+    168                  if (ucGroupVLD & BIT(RX_GROUP_VLD_2)) {
+    169                      u2GrpOffst += sizeof(HW_MAC_RX_STS_GROUP_2_T);
+    170                  }
+    171          
+    172                  if (ucGroupVLD & BIT(RX_GROUP_VLD_3)) {
+    173                      u2GrpOffst += sizeof(HW_MAC_RX_STS_GROUP_3_T);
+    174                  }
+    175          
+    176                  u2RxStatusOffst = u2GrpOffst;
+    177              }
+    178          
+    179          
+    180              // Locate the MAC Header based on GroupVLD
+    181              pucMacHeader = (uint8_t *)(((uint32_t)pRxWI + (HAL_RX_STATUS_GET_HEADER_OFFSET(pRxWI)) + u2RxStatusOffst) & 0xFFFFFFFE);
+    182              ucMacHeaderLength = HAL_RX_STATUS_GET_HEADER_LEN(pRxWI);
+    183          
+    184              pucPayload = (uint8_t *)((uint32_t)(pucMacHeader + ucMacHeaderLength) & 0xFFFFFFFC);
+    185              u2PayloadLength = (uint16_t)(HAL_RX_STATUS_GET_RX_BYTE_CNT(pRxWI) - ((uint32_t)pucPayload - (uint32_t)pRxWI));
+    186          
+    187              //LOG_HEXDUMP_I(smnt, "mac header begin", pucMacHeader, ucMacHeaderLength+u2PayloadLength);
+    188              psmtcn_proto_ops->rx_handler((char *)pucMacHeader, ucMacHeaderLength + u2PayloadLength, pRxWI->ucChanFreq);
+    189          
+    190              return 1; /* handled */
+    191          }
+    192          #endif
+    193          
+    194          #ifdef MTK_SMTCN_V5_ENABLE
+    195          kal_uint8 bsmtcn_adapter_is_channel_locked(void);
+    196          #endif
+    197          
+    198          static void switch_next_channel(TimerHandle_t tmr)
+    199          {
+    200              uint8_t channel_list_size;
+    201          	int32_t ret = 0;
+    202          	uint16_t pre_ch_idx = 0;
+    203          
+    204          #ifdef MTK_SMTCN_V5_ENABLE
+    205          	if(bsmtcn_adapter_is_channel_locked()) {//workaround stop period time fail
+    206                  xTimerStop(switch_channel_timer, tmr_nodelay);
+    207          		return;
+    208          	}
+    209          #endif
+    210          
+    211              if (psmtcn_proto_ops && psmtcn_proto_ops->switch_channel_rst) {
+    212                  if (0 != psmtcn_proto_ops->switch_channel_rst()) {
+    213                      return;
+    214                  }
+    215              }
+    216          	
+    217          	pre_ch_idx = smt_conn_st.search_idx;
+    218          
+    219              channel_list_size = sizeof(channel_list) / sizeof(channel_list[0]);
+    220              if (++smt_conn_st.search_idx >= channel_list_size) {
+    221                  smt_conn_st.search_idx = 0;
+    222              }
+    223          
+    224              smt_conn_st.cur_chanl = channel_list[smt_conn_st.search_idx];
+    225              ret = wifi_config_set_channel(WIFI_PORT_STA, smt_conn_st.cur_chanl);
+    226          
+    227              if(ret != 0) {
+    228          		smt_conn_st.search_idx = pre_ch_idx;
+    229                  smt_conn_st.cur_chanl = channel_list[pre_ch_idx];
+    230              }
+    231          
+    232          #if (smtcn_debug == 1)
+    233          	channel_times[smt_conn_st.cur_chanl - 1]++;
+    234              /*
+    235                  uint8_t channel;
+    236                  wifi_config_get_channel(WIFI_PORT_STA, &channel);
+    237                  sc_dbg("now switched to channel :%d\n", channel);
+    238                  */
+    239          #endif
+    240          }
+    241          
+    242          
+    243          static void time_out_cb(TimerHandle_t tmr)
+    244          {
+    245              atomic_write_smtcn_flag(SMTCN_FLAG_TIME_OUT);
+    246          }
+    247          
+    248          
+    249          int32_t sc_save_smtcn_info(void)
+    250          {
+    251              
+    252          #ifdef MTK_NVDM_ENABLE
+    253              char buf[WIFI_PROFILE_BUFFER_LENGTH] = {0};
+    254          
+    255              sprintf(buf, "%d", WIFI_MODE_STA_ONLY);
+    256              nvdm_write_data_item(WIFI_PROFILE_BUFFER_COMMON, "OpMode",
+    257                                   NVDM_DATA_ITEM_TYPE_STRING,
+    258                                   (uint8_t *)buf, strlen(buf));
+    259          
+    260              memset(buf, 0, sizeof(buf));
+    261              memcpy(buf, saved_smtcn_info.ssid, saved_smtcn_info.ssid_len);
+    262              nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "Ssid",
+    263                                   NVDM_DATA_ITEM_TYPE_STRING,
+    264                                   (uint8_t *)buf, strlen(buf));
+    265          
+    266              memset(buf, 0, sizeof(buf));
+    267              sprintf(buf, "%d", saved_smtcn_info.ssid_len);
+    268              nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "SsidLen",
+    269                                   NVDM_DATA_ITEM_TYPE_STRING,
+    270                                   (uint8_t *)buf, strlen(buf));
+    271          
+    272              memset(buf, 0, sizeof(buf));
+    273              sprintf(buf, "%d", saved_smtcn_info.auth_mode);
+    274              nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "AuthMode",
+    275                                   NVDM_DATA_ITEM_TYPE_STRING,
+    276                                   (uint8_t *)buf, strlen(buf));
+    277          
+    278              memset(buf, 0, sizeof(buf));
+    279              sprintf(buf, "%d", saved_smtcn_info.encrypt_type);
+    280              nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "EncrypType",
+    281                                   NVDM_DATA_ITEM_TYPE_STRING,
+    282                                   (uint8_t *)buf, strlen(buf));
+    283          
+    284              if(saved_smtcn_info.auth_mode != WIFI_AUTH_MODE_OPEN) {
+    285                  memset(buf, 0, sizeof(buf));
+    286                  memcpy(buf, saved_smtcn_info.pwd, saved_smtcn_info.pwd_len);
+    287                  nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "WpaPsk",
+    288                                       NVDM_DATA_ITEM_TYPE_STRING,
+    289                                       (uint8_t *)buf, strlen(buf));
+    290          
+    291                  memset(buf, 0, sizeof(buf));
+    292                  sprintf(buf, "%d", saved_smtcn_info.pwd_len);
+    293                  nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "WpaPskLen",
+    294                                       NVDM_DATA_ITEM_TYPE_STRING,
+    295                                       (uint8_t *)buf, strlen(buf));
+    296              }
+    297          
+    298              if((saved_smtcn_info.auth_mode == WIFI_AUTH_MODE_OPEN) &&
+    299                      (saved_smtcn_info.encrypt_type == WIFI_ENCRYPT_TYPE_WEP_ENABLED)) {
+    300                  if (saved_smtcn_info.pwd_len == 5 ||
+    301                          saved_smtcn_info.pwd_len == 13 ||
+    302                          saved_smtcn_info.pwd_len == 10 ||
+    303                          saved_smtcn_info.pwd_len == 26) {
+    304                      wifi_wep_key_t wep_key;
+    305                      wep_key.wep_tx_key_index = 0;
+    306                      wep_key.wep_key_length[0] = saved_smtcn_info.pwd_len;
+    307                      memcpy(wep_key.wep_key[0], saved_smtcn_info.pwd, saved_smtcn_info.pwd_len);
+    308          
+    309                      memset(buf, 0, sizeof(buf));
+    310                      memcpy(buf, wep_key.wep_key[0], wep_key.wep_key_length[0]);
+    311                      buf[wep_key.wep_key_length[0]] = ',';
+    312                      nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "SharedKey",
+    313                                           NVDM_DATA_ITEM_TYPE_STRING,
+    314                                           (uint8_t *)buf, strlen(buf));
+    315          
+    316                      memset(buf, 0, sizeof(buf));
+    317                      sprintf(buf, "%d,", wep_key.wep_key_length[0]);
+    318                      nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "SharedKeyLen",
+    319                                           NVDM_DATA_ITEM_TYPE_STRING,
+    320                                           (uint8_t *)buf, strlen(buf));
+    321          
+    322                      memset(buf, 0, sizeof(buf));
+    323                      sprintf(buf, "%d", wep_key.wep_tx_key_index);
+    324                      nvdm_write_data_item(WIFI_PROFILE_BUFFER_STA, "DefaultKeyId",
+    325                                           NVDM_DATA_ITEM_TYPE_STRING,
+    326                                           (uint8_t *)buf, strlen(buf));
+    327                  }
+    328              }
+    329          #endif
+    330              return 0;
+    331          }
+    332          
+    333          
+    334          
+    335          int32_t smtcn_rx_handler(uint8_t *payload, uint32_t len)
+    336          {
+    337              raw_pkt_t     pkt;
+    338          
+    339          #ifdef USE_SMTCN_STATIC_BUF
+    340              //int32_t  freecount=0;
+    341              pkt.len = len;
+    342              pkt.payload  = smtcn_rx_buf[smtcn_rx_buf_idx];
+    343              memcpy(pkt.payload, payload, SMTCN_STATIC_BUF_SIZE);
+    344              if (xQueueSendToBack(smtcn_rx_queue, (void *)&pkt, (TickType_t)5) == pdPASS) {
+    345                  smtcn_rx_buf_idx = (smtcn_rx_buf_idx + 1) % SMTCN_STATIC_BUF_COUNT;
+    346              }
+    347          #else
+    348              /* assign pkt */
+    349              pkt.len = len;
+    350              if ((pkt.payload = pvPortMalloc(len)) == NULL) {
+    351                  LOG_E(smnt, "%s:%d,pvPortMalloc failed\n", __FILE__, __LINE__);
+    352                  return 1;
+    353              }
+    354              memcpy(pkt.payload, payload, len);
+    355          
+    356              if (xQueueSendToBack(smtcn_rx_queue, (void *)&pkt, (TickType_t)5) != pdPASS) {
+    357                  vPortFree(pkt.payload);
+    358                  //printf("can't add a job to smart connect queue\n");
+    359              }
+    360          #endif
+    361          
+    362              return 1;
+    363          }
+    364          
+    365          uint8_t smtcn_current_channel(void)
+    366          {
+    367              return smt_conn_st.cur_chanl;
+    368          }
+    369          void smtcn_stop_switch(void)
+    370          {
+    371          
+    372          	xTimerStop(switch_channel_timer, tmr_nodelay);
+    373              if(smtcn_evt_cb) {
+    374                  (*smtcn_evt_cb)(WIFI_SMART_CONNECTION_EVENT_CHANNEL_LOCKED, NULL);
+    375              }
+    376          #if (smtcn_debug == 1)
+    377              LOG_I(smnt, "channel locked at %d, scaned %d times\n",
+    378                    smt_conn_st.cur_chanl,
+    379                    channel_times[smt_conn_st.cur_chanl - 1]);
+    380          #endif
+    381          }
+    382          
+    383          void smtcn_continue_switch(void)
+    384          {
+    385              switch_next_channel(NULL);
+    386              xTimerStart(switch_channel_timer, tmr_nodelay);
+    387          }
+    388          
+    389          
+    390          int32_t smtcn_done(void)
+    391          {
+    392          #if (use_smart_connection_filter == 0)
+    393              wifi_config_set_opmode(origin_opmode);
+    394          #else
+    395              wifi_config_set_rx_filter(origin_rxfilter);
+    396              wifi_config_set_smart_connection_filter(0);
+    397          #endif
+    398              wifi_config_set_bandwidth(WIFI_PORT_STA, origin_bw);
+    399              wifi_config_unregister_rx_handler();
+    400          
+    401          #ifndef USE_SMTCN_STATIC_BUF
+    402          	raw_pkt_t pkt;
+    403          
+    404              while (xQueueReceive(smtcn_rx_queue, (void *)&pkt, (TickType_t)0) == pdPASS) {
+    405          
+    406                  vPortFree(pkt.payload);
+    407              }
+    408          #endif
+    409          
+    410              return 0;
+    411          }
+    412          
+    413          uint8_t atomic_read_smtcn_flag(void)
+    414          {
+    415              return saved_smtcn_info.smtcn_flag;;
+    416          }
+    417          
+    418          void atomic_write_smtcn_flag(uint8_t flag_value)
+    419          {
+    420              saved_smtcn_info.smtcn_flag = flag_value;
+    421          }
+    422          
+    423          
+    424          
+    425          static void smtcn_rcv_pkt_thread(void *pvParameters)
+    426          {
+    427              LOG_I(smnt,"\n>>smt begin <<\n");
+    428              
+    429              memset((void *)&saved_smtcn_info, 0, sizeof(saved_smtcn_info));
+    430          
+    431              uint8_t smtcn_flag = 0;
+    432              while ((SMTCN_FLAG_FIN != smtcn_flag) &&
+    433                      (SMTCN_FLAG_EXIT != smtcn_flag) &&
+    434                      (SMTCN_FLAG_FAIL != smtcn_flag) &&
+    435                      (SMTCN_FLAG_TIME_OUT != smtcn_flag)) {
+    436                  raw_pkt_t pkt;
+    437                  if (xQueueReceive(smtcn_rx_queue, (void *)&pkt, portMAX_DELAY) == pdPASS) {
+    438                      /* process this raw packet */
+    439                      smtcn_raw_pkt_handler(pkt.payload, pkt.len);
+    440          #ifndef USE_SMTCN_STATIC_BUF
+    441                      vPortFree(pkt.payload);
+    442          #endif
+    443                  }
+    444          
+    445                  smtcn_flag = atomic_read_smtcn_flag();
+    446              }
+    447          
+    448              smtcn_done();
+    449              LOG_I(smnt,"\n>>smt end<<\n");
+    450              if((SMTCN_FLAG_EXIT == smtcn_flag) || (SMTCN_FLAG_FAIL == smtcn_flag)) {
+    451          #ifdef MTK_WIFI_ROM_ENABLE
+    452                  wifi_event_notification(WIFI_PORT_STA, EVENT_ID_IOT_SMT_STOP, NULL, 0);
+    453          #endif
+    454                  wifi_smart_connection_deinit();
+    455                  goto thread_exit;
+    456              }
+    457                  
+    458          #ifdef MTK_WIFI_ROM_ENABLE
+    459              wifi_event_notification(WIFI_PORT_STA, EVENT_ID_IOT_SMT_STOP, NULL, 0);
+    460          #endif
+    461          
+    462              if( SMTCN_FLAG_TIME_OUT == smtcn_flag) {
+    463                  if(smtcn_evt_cb) {
+    464                      (*smtcn_evt_cb)(WIFI_SMART_CONNECTION_EVENT_TIMEOUT, NULL);
+    465                  }
+    466              } else {
+    467                  if(smtcn_evt_cb) {
+    468                      (*smtcn_evt_cb)(WIFI_SMART_CONNECTION_EVENT_INFO_COLLECTED, NULL);
+    469                  }
+    470              }
+    471          
+    472          thread_exit:
+    473              smtcn_handle = NULL;
+    474              vTaskDelete(NULL);
+    475          }
+    476          
+    477          bool smtcn_is_debug_on(void)
+    478          {
+    479              return b_debug_on;
+    480          }
+    481          
+    482          void smtcn_enable_debug(bool on)
+    483          {
+    484              b_debug_on = on;
+    485          }
+    486          
+    487          void wifi_smart_connection_deinit(void)
+    488          {
+    489              if (smtcn_rx_queue != NULL) {
+    490                  vQueueDelete(smtcn_rx_queue);
+    491                  smtcn_rx_queue = NULL;
+    492              }
+    493          
+    494              if (switch_channel_timer != NULL) {
+    495                  xTimerDelete(switch_channel_timer, tmr_nodelay);
+    496                  switch_channel_timer = NULL;
+    497              }
+    498          
+    499              if(time_out_timer != NULL) {
+    500                  xTimerDelete(time_out_timer, tmr_nodelay);
+    501                  time_out_timer = NULL;
+    502              }
+    503              if (psmtcn_proto_ops && psmtcn_proto_ops->cleanup) {
+    504                  psmtcn_proto_ops->cleanup();
+    505              }
+    506          
+    507              smtcn_evt_cb = NULL;
+    508              psmtcn_proto_ops = NULL;
+    509              b_init = FALSE;
+    510          }
+    511          
+    512          bool wifi_smart_running()
+    513          {
+    514              return  (smtcn_handle == NULL ? FALSE:TRUE);
+    515          }
+    516          
+    517          wifi_smart_connection_status_t wifi_smart_connection_init (const uint8_t *key, const uint8_t key_length, wifi_smart_connection_callback_t  callback)
+    518          {
+    519              taskENTER_CRITICAL();
+    520              
+    521              if (smart_config_mutex == NULL) {
+    522                  smart_config_mutex = xSemaphoreCreateMutex();
+    523                  if (smart_config_mutex == NULL) {
+    524                      configASSERT(0);
+    525                  }
+    526              }
+    527              taskEXIT_CRITICAL();
+    528          
+    529              xSemaphoreTake(smart_config_mutex, portMAX_DELAY);
+    530              
+    531              if(b_init) {
+    532                  LOG_E(smnt,"already init.\n");
+    533                  xSemaphoreGive(smart_config_mutex);
+    534                  return WIFI_SMART_CONNECTION_ERROR;
+    535              }
+    536          
+    537          
+    538              if(psmtcn_proto_ops == NULL) {
+    539                   psmtcn_proto_ops = smt_get_proto_ops();
+    540                   if(psmtcn_proto_ops == NULL)
+    541                   {
+    542                      LOG_E(smnt, "ops is NULL.\n");
+    543                      goto fail;
+    544                   }
+    545              }
+    546          
+    547              if (smtcn_rx_queue == NULL) {
+    548                  smtcn_rx_queue = xQueueCreate(SMTCN_RX_QUEUE_SIZE, sizeof(raw_pkt_t));
+    549                  if (smtcn_rx_queue == NULL) {
+    550                      LOG_E(smnt, "rx_queue create failed.\n");
+    551                      goto fail;
+    552                  }
+    553                  configASSERT(smtcn_rx_queue);
+    554                  vQueueAddToRegistry(smtcn_rx_queue, "smart connect");
+    555              }
+    556          
+    557              if(switch_channel_timer == NULL){
+    558                  switch_channel_timer = xTimerCreate("switch_channel_timer",
+    559                                                      switch_channel_timeticks,
+    560                                                      pdTRUE,
+    561                                                      NULL,
+    562                                                      switch_next_channel);
+    563                  if (switch_channel_timer == NULL) {
+    564                      LOG_E(smnt, "ch timer create fail.\n");
+    565                      goto fail;
+    566                  }
+    567              }
+    568              
+    569              smtcn_evt_cb = callback;
+    570              if (psmtcn_proto_ops && psmtcn_proto_ops->init)
+    571                  if (psmtcn_proto_ops->init(key, key_length) != 0) {
+    572                      goto fail;
+    573                  }
+    574              b_init = TRUE;
+    575              xSemaphoreGive(smart_config_mutex);
+    576              return WIFI_SMART_CONNECTION_OK;
+    577          
+    578          
+    579          fail:
+    580              wifi_smart_connection_deinit();
+    581              xSemaphoreGive(smart_config_mutex);
+    582              return WIFI_SMART_CONNECTION_ERROR;
+    583          }
+    584          
+    585          wifi_smart_connection_status_t wifi_smart_connection_start (uint16_t timeout_seconds)
+    586          {
+    587              eTaskState smtcn_state;
+    588              wifi_smart_connection_status_t ret = WIFI_SMART_CONNECTION_OK;
+    589              
+    590              xSemaphoreTake(smart_config_mutex, portMAX_DELAY);
+    591          
+    592              if(smtcn_handle != NULL) {
+    593                  smtcn_state = eTaskGetState(smtcn_handle);
+    594                  LOG_E(smnt,"smtcn task state:%d, cannot create it\n", smtcn_state);
+    595                  xSemaphoreGive(smart_config_mutex);
+    596                  return WIFI_SMART_CONNECTION_ERROR;
+    597              }
+    598          
+    599              do
+    600              {
+    601                  wifi_config_get_opmode(&origin_opmode);
+    602          
+    603                  if (origin_opmode == WIFI_MODE_AP_ONLY) {
+    604                      LOG_W(smnt, "opmode:[%d], smt fail\n",
+    605                            origin_opmode);
+    606                      ret = WIFI_SMART_CONNECTION_ERROR;
+    607                      break;
+    608                  }
+    609          
+    610                  if(!b_init)
+    611                  {
+    612                      ret = WIFI_SMART_CONNECTION_ERROR;
+    613                      break;
+    614                  }
+    615          
+    616                  if (xTaskCreate(smtcn_rcv_pkt_thread,
+    617                                  UNIFY_SMTCN_TASK_NAME,
+    618                                  UNIFY_SMTCN_TASK_STACKSIZE / 4,
+    619                                  NULL,
+    620                                  UNIFY_SMTCN_TASK_PRIO,
+    621                                  &smtcn_handle) != pdPASS) {
+    622                      LOG_E(smnt,"thread create failed\n");
+    623                      ret = WIFI_SMART_CONNECTION_ERROR;
+    624                      break;
+    625                  }
+    626                  
+    627                  
+    628          #ifdef MTK_WIFI_ROM_ENABLE
+    629                  wifi_event_notification(WIFI_PORT_STA, EVENT_ID_IOT_SMT_START, NULL, 0);
+    630                  /*just left a small period for processing linkdown event*/
+    631                  vTaskDelay(100);
+    632          #endif 
+    633          
+    634          #if (use_smart_connection_filter == 0)
+    635                  wifi_config_set_opmode(WIFI_MODE_MONITOR);
+    636          #else
+    637                  uint32_t rx_filter;
+    638                  wifi_config_get_rx_filter(&origin_rxfilter);
+    639              	rx_filter = origin_rxfilter;
+    640                  rx_filter &= ~BIT(WIFI_RX_FILTER_DROP_NOT_MY_BSSID);
+    641                  rx_filter &= ~BIT(WIFI_RX_FILTER_DROP_NOT_UC2ME);
+    642                  rx_filter |= BIT(WIFI_RX_FILTER_DROP_PROBE_REQ);
+    643                  rx_filter |= BIT(WIFI_RX_FILTER_DROP_BSSID_BCN);
+    644          
+    645                  
+    646          #if defined (MTK_SMTCN_V4_ENABLE) && defined (MTK_SMTCN_V5_ENABLE)
+    647                  rx_filter &= ~BIT(WIFI_RX_FILTER_DROP_BC_FRAME);
+    648                  rx_filter &= ~BIT(WIFI_RX_FILTER_DROP_MC_FRAME);
+    649          #elif defined (MTK_SMTCN_V5_ENABLE)
+    650                  rx_filter &= ~BIT(WIFI_RX_FILTER_DROP_BC_FRAME);
+    651                  rx_filter |= BIT(WIFI_RX_FILTER_DROP_MC_FRAME);
+    652          #elif defined(MTK_SMTCN_V4_ENABLE)
+    653                  rx_filter &= ~BIT(WIFI_RX_FILTER_DROP_MC_FRAME);
+    654                  rx_filter |= BIT(WIFI_RX_FILTER_DROP_BC_FRAME);
+    655          #endif
+    656                  wifi_config_set_rx_filter(rx_filter);
+    657          #endif
+    658                  wifi_config_get_bandwidth(WIFI_PORT_STA, &origin_bw);
+    659                  wifi_config_set_bandwidth(WIFI_PORT_STA, WIFI_IOT_COMMAND_CONFIG_BANDWIDTH_40MHZ);
+    660          
+    661                  wifi_config_register_rx_handler((wifi_rx_handler_t)smtcn_rx_handler);
+    662          
+    663                  memset((void *)&smt_conn_st, 0, sizeof(smt_conn_st));
+    664                  smt_conn_st.cur_chanl = channel_list[0];
+    665          
+    666                  wifi_config_set_channel(WIFI_PORT_STA, smt_conn_st.cur_chanl);
+    667          #if (smtcn_debug == 1)
+    668                  memset(channel_times, 0, sizeof(channel_times));
+    669                  channel_times[smt_conn_st.cur_chanl - 1]++;
+    670          #endif
+    671                  xTimerStart(switch_channel_timer, tmr_nodelay);
+    672          
+    673          
+    674          
+    675                  if(timeout_seconds != 0) {
+    676                      time_out_timer = xTimerCreate("timer_out_timer",
+    677                                                    timeout_seconds * 1000 / portTICK_PERIOD_MS,
+    678                                                    pdFALSE,
+    679                                                    NULL,
+    680                                                    time_out_cb);
+    681                      if (time_out_timer == NULL) {
+    682                          LOG_E(smnt, "time_out_timer create fail.\n");
+    683                          ret = WIFI_SMART_CONNECTION_ERROR;
+    684                          break;
+    685                      }
+    686                      
+    687                      xTimerStart(time_out_timer, tmr_nodelay);
+    688                  }
+    689              }
+    690              while(0);
+    691          
+    692              if(b_init && (ret == WIFI_SMART_CONNECTION_ERROR))
+    693              {
+    694                  wifi_smart_connection_deinit();
+    695              }
+    696              
+    697              xSemaphoreGive(smart_config_mutex);
+    698          
+    699              
+    700              return ret;
+    701          }
+    702          
+    703          
+    704          wifi_smart_connection_status_t wifi_smart_connection_stop(void)
+    705          {
+    706              atomic_write_smtcn_flag(SMTCN_FLAG_EXIT);
+    707              return WIFI_SMART_CONNECTION_OK;
+    708          }
+    709          
+    710          wifi_smart_connection_status_t wifi_smart_connection_get_result (uint8_t *ssid, uint8_t *ssid_length,
+    711                  uint8_t *password, uint8_t *password_length,
+    712                  uint8_t *tlv_data, uint8_t *tlv_data_length)
+    713          
+    714          {
+    715              if(saved_smtcn_info.ssid_len > 0) {
+    716                  if(ssid != NULL) {
+    717                      memcpy(ssid, saved_smtcn_info.ssid, saved_smtcn_info.ssid_len);
+    718                  }
+    719                  if(ssid_length != NULL) {
+    720                      *ssid_length = saved_smtcn_info.ssid_len;
+    721                  }
+    722              }
+    723          
+    724              if(saved_smtcn_info.pwd_len > 0) {
+    725                  if(password != NULL) {
+    726                      memcpy(password, saved_smtcn_info.pwd, saved_smtcn_info.pwd_len);
+    727                  }
+    728                  if(password_length != NULL) {
+    729                      *password_length = saved_smtcn_info.pwd_len;
+    730                  }
+    731              }
+    732          
+    733              if(saved_smtcn_info.tlv_data_len > 0) {
+    734                  if(tlv_data != NULL) {
+    735                      memcpy(tlv_data, saved_smtcn_info.tlv_data, saved_smtcn_info.tlv_data_len);
+    736                  }
+    737                  if(tlv_data_length != NULL) {
+    738                      *tlv_data_length = saved_smtcn_info.tlv_data_len;
+    739                  }
+    740              }
+    741          
+    742              return WIFI_SMART_CONNECTION_OK;
+    743          }
+    744          
+    745          
+    746          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   atomic_read_smtcn_flag
+       0   atomic_write_smtcn_flag
+     264   sc_save_smtcn_info
+       264   -> __aeabi_memclr4
+       264   -> __aeabi_memcpy4
+       264   -> __aeabi_memset4
+       264   -> nvdm_write_data_item
+       264   -> sprintf
+       264   -> strlen
+       8   smtcn_continue_switch
+         8   -> switch_next_channel
+         8   -> xTaskGetTickCount
+         8   -> xTimerGenericCommand
+       0   smtcn_current_channel
+       8   smtcn_done
+         8   -> wifi_config_set_bandwidth
+         8   -> wifi_config_set_rx_filter
+         8   -> wifi_config_set_smart_connection_filter
+         8   -> wifi_config_unregister_rx_handler
+       0   smtcn_enable_debug
+       0   smtcn_is_debug_on
+      16   smtcn_raw_pkt_handler
+        16   -- Indirect call
+      24   smtcn_rcv_pkt_thread
+        24   -- Indirect call
+        24   -> __aeabi_memset4
+        24   -> atomic_read_smtcn_flag
+        24   -> smtcn_done
+        24   -> smtcn_raw_pkt_handler
+        24   -> vTaskDelete
+        24   -> wifi_smart_connection_deinit
+        24   -> xQueueGenericReceive
+      16   smtcn_rx_handler
+        16   -> __aeabi_memcpy
+        16   -> xQueueGenericSend
+      24   smtcn_stop_switch
+        24   -- Indirect call
+        24   -> xTimerGenericCommand
+      16   switch_next_channel
+        16   -- Indirect call
+        16   -> bsmtcn_adapter_is_channel_locked
+        16   -> wifi_config_set_channel
+        16   -> xTimerGenericCommand
+       0   time_out_cb
+         0   -> atomic_write_smtcn_flag
+      16   wifi_smart_connection_deinit
+        16   -- Indirect call
+        16   -> vQueueDelete
+        16   -> xTimerGenericCommand
+      24   wifi_smart_connection_get_result
+        24   -> __aeabi_memcpy
+      24   wifi_smart_connection_init
+        24   -- Indirect call
+        24   -> platform_assert
+        24   -> smt_get_proto_ops
+        24   -> vPortEnterCritical
+        24   -> vPortExitCritical
+        24   -> vQueueAddToRegistry
+        24   -> wifi_smart_connection_deinit
+        24   -> xQueueCreateMutex
+        24   -> xQueueGenericCreate
+        24   -> xQueueGenericReceive
+        24   -> xQueueGenericSend
+        24   -> xTimerCreate
+      32   wifi_smart_connection_start
+        32   -- Indirect call
+        32   -> __aeabi_memset4
+        32   -> eTaskGetState
+        32   -> wifi_config_get_bandwidth
+        32   -> wifi_config_get_opmode
+        32   -> wifi_config_get_rx_filter
+        32   -> wifi_config_register_rx_handler
+        32   -> wifi_config_set_bandwidth
+        32   -> wifi_config_set_channel
+        32   -> wifi_config_set_rx_filter
+        32   -> wifi_smart_connection_deinit
+        32   -> xQueueGenericReceive
+        32   -> xQueueGenericSend
+        32   -> xTaskGenericCreate
+        32   -> xTaskGetTickCount
+        32   -> xTimerCreate
+        32   -> xTimerGenericCommand
+       8   wifi_smart_connection_stop
+         8   -> atomic_write_smtcn_flag
+       0   wifi_smart_running
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable46
+       4  ??DataTable46_1
+       4  ??DataTable51
+       4  ??DataTable53
+       4  ??DataTable54
+       4  ??DataTable54_1
+       4  ??DataTable54_2
+       4  ??DataTable54_3
+       4  ??DataTable54_4
+       4  ??DataTable54_5
+       4  ??DataTable54_6
+       4  ??DataTable54_7
+       8  ?_0
+     128  ?_1
+       8  ?_10
+      12  ?_11
+      12  ?_12
+       4  ?_13
+      16  ?_14
+      16  ?_15
+      40  ?_16
+      20  ?_17
+      16  ?_18
+       2  ?_19
+       4  ?_2
+      68  ?_20
+      16  ?_21
+      16  ?_22
+      28  ?_23
+      16  ?_24
+      24  ?_25
+      24  ?_26
+      40  ?_27
+      24  ?_28
+       8  ?_29
+       8  ?_3
+      24  ?_30
+      16  ?_31
+      32  ?_32
+       8  ?_4
+       4  ?_5
+       8  ?_6
+       8  ?_7
+      12  ?_8
+      12  ?_9
+      10  atomic_read_smtcn_flag
+      10  atomic_write_smtcn_flag
+       1  b_debug_on
+     780  saved_smtcn_info
+     512  sc_save_smtcn_info
+     412  smt_conn_st
+          smtcn_rx_buf_idx
+          origin_opmode
+          origin_bw
+          b_init
+          channel_list
+          channel_times
+          log_control_block_smnt
+          smart_config_mutex
+          smtcn_rx_queue
+          psmtcn_proto_ops
+          smtcn_evt_cb
+          origin_rxfilter
+          switch_channel_timer
+          time_out_timer
+          smtcn_handle
+          smtcn_rx_buf
+      34  smtcn_continue_switch
+       8  smtcn_current_channel
+      34  smtcn_done
+       8  smtcn_enable_debug
+       8  smtcn_is_debug_on
+     120  smtcn_raw_pkt_handler
+     176  smtcn_rcv_pkt_thread
+      70  smtcn_rx_handler
+      72  smtcn_stop_switch
+     108  switch_next_channel
+       4  time_out_cb
+      94  wifi_smart_connection_deinit
+     108  wifi_smart_connection_get_result
+     332  wifi_smart_connection_init
+     422  wifi_smart_connection_start
+      12  wifi_smart_connection_stop
+      18  wifi_smart_running
+     100  -- Other
+
+ 
+   781 bytes in section .bss
+   412 bytes in section .data
+   150 bytes in section .rodata
+ 2 840 bytes in section .text
+ 
+ 2 840 bytes of CODE  memory
+   150 bytes of CONST memory
+ 1 193 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,344 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:40
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\spim.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWB074.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\spim.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\spim.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\spim.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\spim.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_spi_master.h"
+     36          #ifdef HAL_SPI_MASTER_MODULE_ENABLED
+     37          
+     38          #include "stdio.h"
+     39          #include "hal_spim.h"
+     40          #include "spim.h"
+     41          #include "type_def.h"
+     42          #include "hal_pinmux.h"
+     43          #include "low_hal_gpio.h"
+     44          
+     45          #define MAX_WRITE_BUF_HALF_DUPLEX 36
+     46          
+     47          #define MAX_READ_BUF_HALF_DUPLEX  32
+     48          
+     49          #define MAX_DATA_BUF_HALF_DUPLEX  32
+     50          
+     51          volatile static int32_t spi_ok_cnt = 0;
+     52          static uint32_t quotient = 0;
+     53          
+     54          void spim_Lisr(void)
+     55          {
+     56              spi_ok_cnt++;
+     57              if (spi_ok_cnt == (quotient + 1)) {
+     58                  hal_gpio_set_output(g_spi_master_cs_n, HAL_GPIO_DATA_HIGH);
+     59                  spi_ok_cnt = 0;
+     60              }
+     61          }
+     62          
+     63          int32_t spim_init(uint32_t setting, uint32_t clock)
+     64          {
+     65              INT32 ret = 0;
+     66          
+     67              spim_isr_Register(spim_Lisr);
+     68          
+     69              hal_gpio_set_direction(g_spi_master_cs_n, HAL_GPIO_DIRECTION_OUTPUT);
+     70              setting = setting | SPI_MASTER_BIDIR_MODE_DISABLE | SPI_MASTER_SERIAL_MODE_STANDARD | SPI_MASTER_MB_MODE_ENABLE;
+     71              ret = halSpim_init(setting, clock);
+     72              hal_gpio_set_output(g_spi_master_cs_n, HAL_GPIO_DATA_HIGH);
+     73              return (int32_t)ret;
+     74          }
+     75          
+     76          static uint32_t spim_fill_in_data(uint8_t *buf, uint32_t write_buf_cnt, uint32_t regVal, uint32_t remainder)
+     77          {
+     78              uint32_t op_addr = 0;
+     79              if (regVal == SPI_MASTER_MB_MSB_FIRST) {
+     80                  if (remainder == 1) {
+     81                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 0);
+     82                  } else if (remainder == 2) {
+     83                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 8) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 1) << 0);
+     84                  } else if (remainder == 3) {
+     85                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 16) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 1) << 8) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 2) << 0);
+     86                  } else if (remainder == 4) {
+     87                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 24) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 1) << 16) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 2) << 8) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 3) << 0);
+     88                  }
+     89              } else {
+     90                  if (remainder == 1) {
+     91                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 0);
+     92                  } else if (remainder == 2) {
+     93                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 0) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 1) << 8);
+     94                  } else if (remainder == 3) {
+     95                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 0) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 1) << 8) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 2) << 16);
+     96                  } else if (remainder == 4) {
+     97                      op_addr = (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 0) << 0) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 1) << 8) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 2) << 16) | (*(buf + write_buf_cnt * MAX_WRITE_BUF_HALF_DUPLEX + 3) << 24);
+     98                  }
+     99              }
+    100              return op_addr;
+    101          }
+    102          
+    103          int32_t spim_write(uint8_t *buf, const uint32_t buf_cnt)
+    104          {
+    105              INT32 ret = 0;
+    106              uint32_t op_addr = 0;
+    107              uint32_t n_cmd_byte = 4;
+    108              uint32_t i = 0;
+    109              static uint32_t remainder, regVal;
+    110              quotient = buf_cnt / MAX_WRITE_BUF_HALF_DUPLEX;
+    111              remainder   = buf_cnt % MAX_WRITE_BUF_HALF_DUPLEX;
+    112          
+    113              regVal = DRV_Reg32(SPI_REG_MASTER);
+    114              regVal &= (1 << 3);
+    115          
+    116              if (buf_cnt < 1) {
+    117                  return -1;
+    118              }
+    119          
+    120              if (buf_cnt <= n_cmd_byte) {
+    121                  op_addr = spim_fill_in_data(buf, i, regVal, remainder);
+    122                  ret = spim_more_buf_trans_gpio(op_addr, buf_cnt, NULL, 0, 0);
+    123                  return ret;
+    124              } else {
+    125                  /*Handle the quotient*/
+    126                  for (i = 0; i < quotient; i++) {
+    127                      op_addr = spim_fill_in_data(buf, i, regVal, 4);
+    128                      ret = spim_more_buf_trans_gpio(op_addr, n_cmd_byte, (buf + i * MAX_WRITE_BUF_HALF_DUPLEX + 4), MAX_DATA_BUF_HALF_DUPLEX, SPI_WRITE);
+    129                  }
+    130                  /*Handle the remainder*/
+    131                  if (remainder <= n_cmd_byte) {
+    132                      if (remainder == 0) {
+    133                          return ret;
+    134                      }
+    135                      op_addr = spim_fill_in_data(buf, i, regVal, remainder);
+    136                      ret = spim_more_buf_trans_gpio(op_addr, remainder, NULL, 0, 0);
+    137                      return ret;
+    138                  } else {
+    139                      op_addr = spim_fill_in_data(buf, i, regVal, 4);
+    140                      ret = spim_more_buf_trans_gpio(op_addr, n_cmd_byte, (buf + quotient * MAX_WRITE_BUF_HALF_DUPLEX + n_cmd_byte), remainder - n_cmd_byte, SPI_WRITE);
+    141                      return ret;
+    142                  }
+    143              }
+    144          }
+    145          
+    146          int32_t spim_read(const uint32_t cmd, const uint32_t n_cmd_byte, uint8_t *buf, const uint32_t buf_cnt)
+    147          {
+    148              INT32 ret = 0;
+    149              uint32_t fake_op = 0;
+    150              uint32_t fake_cmd_byte = 0;
+    151              uint32_t i;
+    152              static uint32_t remainder;
+    153          
+    154              quotient = buf_cnt / MAX_READ_BUF_HALF_DUPLEX;
+    155              remainder   = buf_cnt % MAX_READ_BUF_HALF_DUPLEX;
+    156          
+    157              if (quotient == 0) {
+    158                  ret = spim_more_buf_trans_gpio(cmd, n_cmd_byte, buf, buf_cnt, SPI_READ);
+    159                  return ret;
+    160              } else {
+    161                  i = 0;
+    162                  spim_more_buf_trans_gpio(cmd, n_cmd_byte, (buf + i * MAX_READ_BUF_HALF_DUPLEX), MAX_DATA_BUF_HALF_DUPLEX, SPI_READ);
+    163                  for (i = 1; i < quotient; i++) {
+    164                      ret = spim_more_buf_trans_gpio(fake_op, fake_cmd_byte, (buf + i * MAX_READ_BUF_HALF_DUPLEX), MAX_DATA_BUF_HALF_DUPLEX, SPI_READ);
+    165                  }
+    166                  if (remainder != 0) {
+    167                      ret = spim_more_buf_trans_gpio(fake_op, fake_cmd_byte, (buf + quotient * MAX_READ_BUF_HALF_DUPLEX), remainder, SPI_READ);
+    168                  }
+    169                  return ret;
+    170              }
+    171          }
+    172          
+    173          #endif /* HAL_SPI_MASTER_MODULE_ENABLED */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   spim_Lisr
+         8   -> hal_gpio_set_output
+       4   spim_fill_in_data
+      16   spim_init
+        16   -> halSpim_init
+        16   -> hal_gpio_set_direction
+        16   -> hal_gpio_set_output
+        16   -> spim_isr_Register
+      24   spim_read
+        24   -> spim_more_buf_trans_gpio
+      32   spim_write
+        32   -> spim_fill_in_data
+        32   -> spim_more_buf_trans_gpio
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+      20  spi_ok_cnt
+          quotient
+          remainder
+          regVal
+          remainder
+      36  spim_Lisr
+     198  spim_fill_in_data
+      48  spim_init
+     106  spim_read
+     202  spim_write
+
+ 
+  20 bytes in section .bss
+ 606 bytes in section .text
+ 
+ 606 bytes of CODE memory
+  20 bytes of DATA memory
+
+Errors: none
+Warnings: none

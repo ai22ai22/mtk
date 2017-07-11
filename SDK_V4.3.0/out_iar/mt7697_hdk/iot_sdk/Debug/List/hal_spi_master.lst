@@ -1,0 +1,486 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:26
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_spi_master.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW7A3F.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_spi_master.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\hal_spi_master.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\hal_spi_master.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_spi_master.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_spi_master.h"
+     36          #ifdef HAL_SPI_MASTER_MODULE_ENABLED
+     37          
+     38          #include <string.h>
+     39          #include "hal_log.h"
+     40          #include "spim.h"
+     41          #include "low_hal_gpio.h"
+     42          #include "hal_spim.h"
+     43          #include "hal_sleep_manager.h"
+     44          
+     45          extern uint32_t save_and_set_interrupt_mask(void);
+     46          extern void restore_interrupt_mask(uint32_t mask);
+     47          
+     48          /* Only one port for 7687 */
+     49          static hal_spi_master_config_t g_spi_master_context;
+     50          
+     51          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     52          uint8_t spim_sleep_handler[HAL_SPI_MASTER_MAX] = {0};
+     53          static char *spim_lock_sleep_name[HAL_SPI_MASTER_MAX] = {"SPIM0"};
+     54          #endif
+     55          
+     56          /* status for thread safe */
+     57          volatile static uint8_t g_spi_master_status;
+     58          hal_gpio_pin_t g_spi_master_cs_n;
+     59          
+     60          static bool hal_spi_master_is_master_port_valid(hal_spi_master_port_t master_port)
+     61          {
+     62              return master_port < HAL_SPI_MASTER_MAX;
+     63          }
+     64          
+     65          static uint32_t hal_spi_master_build_settings(hal_spi_master_config_t *spi_config)
+     66          {
+     67              uint32_t settings = 0;
+     68              if (HAL_SPI_MASTER_SLAVE_0 == spi_config->slave_port) {
+     69                  settings |= SPI_MASTER_SLAVE_SEL_0;
+     70              } else {
+     71                  settings |= SPI_MASTER_SLAVE_SEL_1;
+     72              }
+     73              if (HAL_SPI_MASTER_MSB_FIRST == spi_config->bit_order) {
+     74                  settings |= SPI_MASTER_MB_MSB_FIRST;
+     75              } else {
+     76                  settings |= SPI_MASTER_MB_LSB_FIRST;
+     77              }
+     78              if (HAL_SPI_MASTER_CLOCK_POLARITY0 == spi_config->polarity) {
+     79                  settings |= SPI_MASTER_CPOL_0;
+     80              } else {
+     81                  settings |= SPI_MASTER_CPOL_1;
+     82              }
+     83              if (HAL_SPI_MASTER_CLOCK_PHASE0 == spi_config->phase) {
+     84                  settings |= SPI_MASTER_CPHA_0;
+     85              } else {
+     86                  settings |= SPI_MASTER_CPHA_1;
+     87              }
+     88              return settings;
+     89          }
+     90          
+     91          static uint32_t hal_spi_master_calc_divisor(uint32_t frequency)
+     92          {
+     93              /*
+     94                  formula: frequency = 120MHz/(n+2)
+     95              */
+     96              static const uint32_t hal_spi_source_clock = 120 * 1000 * 1000;
+     97              return hal_spi_source_clock / frequency - 2;
+     98          }
+     99          
+    100          static hal_gpio_pin_t hal_spi_master_map_cs_pin(hal_spi_master_slave_port_t slave_port)
+    101          {
+    102              /* GPIO32 or GPIO7 for slave 0,  GPIO6 for slave 1 */
+    103              if (HAL_SPI_MASTER_SLAVE_0 == slave_port) {
+    104                  if (SPI_USE_GPIO32_AS_CS) {
+    105                      g_spi_master_cs_n = HAL_GPIO_32;
+    106                      log_hal_info("[SPIM]: g_spi_master_cs_n: %d.\r\n", g_spi_master_cs_n);
+    107                  } else if (SPI_USE_GPIO7_AS_CS) {
+    108                      g_spi_master_cs_n = HAL_GPIO_7;
+    109                      log_hal_info("[SPIM]: g_spi_master_cs_n: %d.\r\n", g_spi_master_cs_n);
+    110                  } else {
+    111                      log_hal_error("[SPIM]: cannot decide the GPIO for CS_N.\r\n");
+    112                      g_spi_master_cs_n = HAL_GPIO_32;
+    113                  }
+    114              } else {
+    115                  g_spi_master_cs_n = HAL_GPIO_6;
+    116                  log_hal_info("[SPIM]: g_spi_master_cs_n: %d.\r\n", g_spi_master_cs_n);
+    117              }
+    118              return g_spi_master_cs_n;
+    119          }
+    120          
+    121          static uint32_t hal_spi_build_op_addr(const hal_spi_master_send_and_receive_config_t *config)
+    122          {
+    123              uint32_t op_addr = 0;
+    124              uint32_t index = 0;
+    125          
+    126              for (index = 0; index < config->send_length; index++) {
+    127                  op_addr |= (uint32_t)(config->send_data[index] << ((config->send_length - index - 1) * 8));
+    128              }
+    129              return op_addr;
+    130          }
+    131          
+    132          hal_spi_master_status_t hal_spi_master_init(hal_spi_master_port_t master_port,
+    133                  hal_spi_master_config_t *spi_config)
+    134          {
+    135              uint32_t settings;
+    136              int32_t ret_val;
+    137              hal_spi_master_status_t busy_status;
+    138              if (!hal_spi_master_is_master_port_valid(master_port)) {
+    139                  return HAL_SPI_MASTER_STATUS_ERROR_PORT;
+    140              }
+    141              if (NULL == spi_config) {
+    142                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    143              }
+    144              if ((spi_config->clock_frequency < HAL_SPI_MASTER_CLOCK_MIN_FREQUENCY) ||
+    145                  (spi_config->clock_frequency > HAL_SPI_MASTER_CLOCK_MAX_FREQUENCY)) {
+    146                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    147              }
+    148          
+    149              /* initialize lock protect */
+    150              spim_check_and_set_busy(busy_status);
+    151              if (busy_status != HAL_SPI_MASTER_STATUS_OK) {
+    152                  return busy_status;
+    153              }
+    154              hal_spi_master_map_cs_pin(spi_config->slave_port);
+    155          
+    156              settings = hal_spi_master_build_settings(spi_config);
+    157              ret_val = spim_init(settings,
+    158                                  hal_spi_master_calc_divisor(spi_config->clock_frequency));
+    159              if (ret_val < 0) {
+    160                  return HAL_SPI_MASTER_STATUS_ERROR;
+    161              }
+    162              memset(&g_spi_master_context, 0, sizeof(hal_spi_master_config_t));
+    163              memcpy(&g_spi_master_context, spi_config, sizeof(hal_spi_master_config_t));
+    164          
+    165          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    166              spim_sleep_handler[master_port] = hal_sleep_manager_set_sleep_handle(spim_lock_sleep_name[master_port]);
+    167          #endif
+    168          
+    169              return HAL_SPI_MASTER_STATUS_OK;
+    170          }
+    171          
+    172          hal_spi_master_status_t hal_spi_master_deinit(hal_spi_master_port_t master_port)
+    173          {
+    174              if (!hal_spi_master_is_master_port_valid(master_port)) {
+    175                  return HAL_SPI_MASTER_STATUS_ERROR_PORT;
+    176              }
+    177              memset(&g_spi_master_context, 0, sizeof(hal_spi_master_config_t));
+    178              /* initialize lock protect */
+    179              spim_set_idle();
+    180          
+    181          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    182              hal_sleep_manager_release_sleep_handle(spim_sleep_handler[master_port]);
+    183          #endif
+    184              return HAL_SPI_MASTER_STATUS_OK;
+    185          }
+    186          
+    187          
+    188          hal_spi_master_status_t hal_spi_master_send_polling(hal_spi_master_port_t master_port,
+    189                  uint8_t *data,
+    190                  uint32_t size)
+    191          {
+    192              int32_t ret_val;
+    193              if (!hal_spi_master_is_master_port_valid(master_port)) {
+    194                  return HAL_SPI_MASTER_STATUS_ERROR_PORT;
+    195              }
+    196              if (NULL == data) {
+    197                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    198              }
+    199          
+    200              /* hardware busy protect */
+    201              if ((spi_reg_inl(SPI_REG_CTL) & SPI_CTL_BUSY) != 0) {
+    202                  return HAL_SPI_MASTER_STATUS_ERROR_BUSY;
+    203              }
+    204              hal_gpio_set_output(g_spi_master_cs_n, HAL_GPIO_DATA_LOW);
+    205          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    206              hal_sleep_manager_lock_sleep(spim_sleep_handler[master_port]);
+    207          #endif
+    208              ret_val = spim_write(data, size);
+    209          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    210              hal_sleep_manager_unlock_sleep(spim_sleep_handler[master_port]);
+    211          #endif
+    212              hal_gpio_set_output(g_spi_master_cs_n, HAL_GPIO_DATA_HIGH);
+    213              return ret_val >= 0 ? HAL_SPI_MASTER_STATUS_OK : HAL_SPI_MASTER_STATUS_ERROR;
+    214          }
+    215          
+    216          /* This is full-duplex API, make sure the receiving buffer is large enough to hold
+    217             all the data received during sending period and receiving period */
+    218          hal_spi_master_status_t hal_spi_master_send_and_receive_polling(hal_spi_master_port_t master_port,
+    219                  hal_spi_master_send_and_receive_config_t *spi_send_and_receive_config)
+    220          {
+    221              int32_t ret_val = 0;
+    222              if (!hal_spi_master_is_master_port_valid(master_port)) {
+    223                  return HAL_SPI_MASTER_STATUS_ERROR_PORT;
+    224              }
+    225              if (NULL == (spi_send_and_receive_config->receive_buffer)) {
+    226                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    227              }
+    228              if (NULL == (spi_send_and_receive_config->send_data)) {
+    229                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    230              }
+    231              if (spi_send_and_receive_config->send_length > 4) {
+    232                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    233              }
+    234              if ((spi_send_and_receive_config->send_length) > (spi_send_and_receive_config->receive_length)) {
+    235                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    236              }
+    237          
+    238              /* hardware busy protect */
+    239              if ((spi_reg_inl(SPI_REG_CTL) & SPI_CTL_BUSY) != 0) {
+    240                  return HAL_SPI_MASTER_STATUS_ERROR_BUSY;
+    241              }
+    242              hal_gpio_set_output(g_spi_master_cs_n, HAL_GPIO_DATA_LOW);
+    243          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    244              hal_sleep_manager_lock_sleep(spim_sleep_handler[master_port]);
+    245          #endif
+    246              ret_val = spim_read(hal_spi_build_op_addr(spi_send_and_receive_config),
+    247                                  spi_send_and_receive_config->send_length,
+    248                                  spi_send_and_receive_config->receive_buffer + spi_send_and_receive_config->send_length,
+    249                                  spi_send_and_receive_config->receive_length - spi_send_and_receive_config->send_length);
+    250          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    251              hal_sleep_manager_unlock_sleep(spim_sleep_handler[master_port]);
+    252          #endif
+    253              hal_gpio_set_output(g_spi_master_cs_n, HAL_GPIO_DATA_HIGH);
+    254          
+    255              return ret_val >= 0 ? HAL_SPI_MASTER_STATUS_OK : HAL_SPI_MASTER_STATUS_ERROR;
+    256          }
+    257          
+    258          
+    259          hal_spi_master_status_t hal_spi_master_get_running_status(hal_spi_master_port_t master_port,
+    260                  hal_spi_master_running_status_t *running_status)
+    261          {
+    262              if (!hal_spi_master_is_master_port_valid(master_port)) {
+    263                  return HAL_SPI_MASTER_STATUS_ERROR_PORT;
+    264              }
+    265              if (NULL == running_status) {
+    266                  return HAL_SPI_MASTER_STATUS_INVALID_PARAMETER;
+    267              }
+    268          
+    269              if ((spi_reg_inl(SPI_REG_CTL) & SPI_CTL_BUSY) == 0) {
+    270                  *running_status = HAL_SPI_MASTER_IDLE;
+    271              } else {
+    272                  *running_status = HAL_SPI_MASTER_BUSY;
+    273              }
+    274          
+    275              return HAL_SPI_MASTER_STATUS_OK;
+    276          }
+    277          
+    278          #endif /* HAL_SPI_MASTER_MODULE_ENABLED */
+    279          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   hal_spi_build_op_addr
+       0   hal_spi_master_build_settings
+       0   hal_spi_master_calc_divisor
+      16   hal_spi_master_deinit
+        16   -> __aeabi_memset4
+        16   -> hal_sleep_manager_release_sleep_handle
+        16   -> hal_spi_master_is_master_port_valid
+       8   hal_spi_master_get_running_status
+         8   -> hal_spi_master_is_master_port_valid
+      24   hal_spi_master_init
+        24   -> __aeabi_memcpy4
+        24   -> __aeabi_memset4
+        24   -> hal_sleep_manager_set_sleep_handle
+        24   -> hal_spi_master_build_settings
+        24   -> hal_spi_master_calc_divisor
+        24   -> hal_spi_master_is_master_port_valid
+        24   -> hal_spi_master_map_cs_pin
+        24   -> restore_interrupt_mask
+        24   -> save_and_set_interrupt_mask
+        24   -> spim_init
+       0   hal_spi_master_is_master_port_valid
+       8   hal_spi_master_map_cs_pin
+         8   -> log_hal_error_internal
+         8   -> log_hal_info_internal
+      16   hal_spi_master_send_and_receive_polling
+        16   -> hal_gpio_set_output
+        16   -> hal_sleep_manager_lock_sleep
+        16   -> hal_sleep_manager_unlock_sleep
+        16   -> hal_spi_build_op_addr
+        16   -> hal_spi_master_is_master_port_valid
+        16   -> spim_read
+      24   hal_spi_master_send_polling
+        24   -> hal_gpio_set_output
+        24   -> hal_sleep_manager_lock_sleep
+        24   -> hal_sleep_manager_unlock_sleep
+        24   -> hal_spi_master_is_master_port_valid
+        24   -> spim_write
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       8  ?_0
+      36  ?_1
+      44  ?_2
+      36  hal_spi_build_op_addr
+      46  hal_spi_master_build_settings
+      10  hal_spi_master_calc_divisor
+      46  hal_spi_master_deinit
+      50  hal_spi_master_get_running_status
+     152  hal_spi_master_init
+       8  hal_spi_master_is_master_port_valid
+     106  hal_spi_master_map_cs_pin
+     132  hal_spi_master_send_and_receive_polling
+     102  hal_spi_master_send_polling
+      16  spim_sleep_handler
+          g_spi_master_status
+          g_spi_master_cs_n
+          spim_lock_sleep_name
+          g_spi_master_context
+      28  -- Other
+
+ 
+  16 bytes in section .data
+   8 bytes in section .rodata
+ 816 bytes in section .text
+ 
+ 816 bytes of CODE  memory
+   8 bytes of CONST memory
+  16 bytes of DATA  memory
+
+Errors: none
+Warnings: none

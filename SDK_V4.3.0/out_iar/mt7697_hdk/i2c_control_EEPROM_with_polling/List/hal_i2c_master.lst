@@ -1,0 +1,713 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       27/Jun/2017  22:46:49
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_i2c_master.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWDF16.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_i2c_master.c
+#        -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_i2c_master.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_i2c_master.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_i2c_master.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_i2c_master.h"
+     36          #if defined(HAL_I2C_MASTER_MODULE_ENABLED)
+     37          #include <stddef.h>
+     38          #include <string.h>
+     39          #include "i2c.h"
+     40          #include "mt7687.h"
+     41          #include "core_cm4.h"
+     42          #include "dma_sw.h"
+     43          #include "hal_log.h"
+     44          #include "hal_I2C.h"
+     45          #include "nvic.h"
+     46          #include "hal_nvic.h"
+     47          
+     48          
+     49          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     50          #include "hal_sleep_manager.h"
+     51          #include "hal_sleep_driver.h"
+     52          
+     53          const static char *i2c_lock_sleep_name[HAL_I2C_MASTER_MAX] = {"I2C0", "I2C1"};
+     54          static uint8_t i2c_lock_sleep_handle[HAL_I2C_MASTER_MAX];
+     55          #define I2C_GET_SLEEP_HANDLE(i2c_port) \
+     56          do{ \
+     57              i2c_lock_sleep_handle[i2c_port] = hal_sleep_manager_set_sleep_handle(i2c_lock_sleep_name[i2c_port]); \
+     58              if(i2c_lock_sleep_handle[i2c_port] == INVALID_SLEEP_HANDLE ) { \
+     59                  log_hal_error("[I2C%d][init]:get sleep handle failed\r\n",i2c_port); \
+     60                  return HAL_I2C_STATUS_ERROR; \
+     61              } \
+     62          }while(0)
+     63          
+     64          #define I2C_RELEASE_SLEEP_HANDLE(i2c_port) \
+     65          do{ \
+     66              hal_sleep_manager_release_sleep_handle(i2c_lock_sleep_handle[i2c_port]); \
+     67          }while(0)
+     68          
+     69          #define I2C_LOCK_SLEEP(i2c_port) \
+     70          do{ \
+     71              hal_sleep_manager_lock_sleep(i2c_lock_sleep_handle[i2c_port]); \
+     72          }while(0)
+     73          
+     74          #define I2C_UNLOCK_SLEEP(i2c_port) \
+     75          do{ \
+     76              hal_sleep_manager_unlock_sleep(i2c_lock_sleep_handle[i2c_port]); \
+     77          }while(0)
+     78          
+     79          #else
+     80          #define I2C_GET_SLEEP_HANDLE(i2c_port)
+     81          #define I2C_RELEASE_SLEEP_HANDLE(i2c_port)
+     82          #define I2C_LOCK_SLEEP(i2c_port)
+     83          #define I2C_UNLOCK_SLEEP(i2c_port)
+     84          #endif
+     85          
+     86          
+     87          typedef struct {
+     88              bool basic_config_present;
+     89              hal_i2c_config_t basic_config;
+     90          
+     91              bool callback_present;
+     92              hal_i2c_callback_t callback;
+     93              void *user_data;
+     94          } hal_i2c_inner_config_t;
+     95          
+     96          typedef struct {
+     97              uint8_t slave_address;
+     98              bool is_send;
+     99              uint32_t data_size;
+    100          } hal_i2c_current_user_t;
+    101          
+    102          typedef struct {
+    103              hal_i2c_current_user_t current_user[HAL_I2C_MASTER_MAX];
+    104              hal_i2c_inner_config_t config[HAL_I2C_MASTER_MAX];
+    105          } hal_i2c_context_t;
+    106          
+    107          static hal_i2c_context_t g_i2c_context;
+    108          volatile static uint8_t s_i2c_master_status[HAL_I2C_MASTER_MAX] = {0};
+    109          
+    110          
+    111          extern uint32_t save_and_set_interrupt_mask(void);
+    112          extern void restore_interrupt_mask(uint32_t mask);
+    113          
+    114          
+    115          
+    116          static inline bool hal_i2c_is_port_valid(hal_i2c_port_t port)
+    117          {
+    118              return port < HAL_I2C_MASTER_MAX;
+    119          }
+    120          
+    121          static inline uint8_t hal_i2c_translate_port(hal_i2c_port_t port)
+    122          {
+    123              return (HAL_I2C_MASTER_0 == port) ? 0 : 1;
+    124          }
+    125          
+    126          static inline uint8_t hal_i2c_translate_frequency(hal_i2c_frequency_t frequency)
+    127          {
+    128              return (uint8_t)frequency;
+    129          }
+    130          
+    131          static inline uint32_t hal_i2c_index_irq(hal_i2c_port_t port)
+    132          {
+    133              return (HAL_I2C_MASTER_0 == port) ? CM4_I2C1_IRQ : CM4_I2C2_IRQ;
+    134          }
+    135          
+    136          static void hal_i2c_callback(hal_nvic_irq_t irq_number)
+    137          {
+    138              hal_i2c_port_t current_port = (irq_number == CM4_I2C1_IRQ) ? HAL_I2C_MASTER_0 : HAL_I2C_MASTER_1;
+    139          
+    140              uint32_t ucAckLen = g_i2c_context.current_user[current_port].data_size + 1;
+    141              uint8_t current_slave_address = g_i2c_context.current_user[current_port].slave_address;
+    142              hal_i2c_callback_t callback = g_i2c_context.config[current_port].callback;
+    143              void *parameter = g_i2c_context.config[current_port].user_data;
+    144          
+    145              /* Check ACK error status */
+    146              uint32_t i;
+    147              uint32_t u4Val = 0;
+    148              uint32_t ucPktAckVal = 0;
+    149              uint32_t ucAckCheckLen = 0;
+    150              IOT_I2C_TypeDef *pI2CTypeDef = NULL;
+    151              hal_i2c_callback_event_t callback_event = HAL_I2C_EVENT_SUCCESS;
+    152          
+    153              pI2CTypeDef = halI2CGetBaseAddr(current_port);
+    154          
+    155              u4Val = (pI2CTypeDef->MM_ACK_VAL);
+    156              ucPktAckVal = (u4Val >> (I2C_ACK_PKT0_OFFSET));
+    157          
+    158              //Slave does not exits.
+    159              if (ucPktAckVal & 1) {
+    160                  callback_event = HAL_I2C_EVENT_ACK_ERROR;
+    161                  log_hal_error("[I2C][ISR] Slave Address ACK Error!!");
+    162                  //Data ACK error if MASTER send.
+    163              } else if (g_i2c_context.current_user[current_port].is_send == true) {
+    164                  if (ucAckLen > 8) {
+    165                      ucAckCheckLen = 8;
+    166                  }
+    167                  for (i = 0; i < ucAckCheckLen; i++) {
+    168                      if (u4Val & (0x1 << i)) {
+    169                          callback_event = HAL_I2C_EVENT_ACK_ERROR;
+    170                          log_hal_error("[I2C][ISR] Slave Data ACK Error!");
+    171                          break;
+    172                      }
+    173                  }
+    174              }
+    175          
+    176          
+    177              if (g_i2c_context.config[current_port].callback_present && NULL != callback) {
+    178                  callback(current_slave_address, callback_event, parameter);
+    179              }
+    180          
+    181              /* unlock sleep */
+    182              I2C_UNLOCK_SLEEP(current_port);
+    183          }
+    184          
+    185          static inline bool hal_i2c_is_frequency_valid(hal_i2c_frequency_t frequency)
+    186          {
+    187              return frequency < HAL_I2C_FREQUENCY_MAX;
+    188          }
+    189          
+    190          static inline bool hal_i2c_is_config_valid(const hal_i2c_config_t *config)
+    191          {
+    192              if (NULL == config) {
+    193                  return false;
+    194              }
+    195              if (!hal_i2c_is_frequency_valid(config->frequency)) {
+    196                  return false;
+    197              }
+    198              return true;
+    199          }
+    200          
+    201          hal_i2c_status_t hal_i2c_master_init(hal_i2c_port_t i2c_port, hal_i2c_config_t *i2c_config)
+    202          {
+    203              hal_i2c_status_t busy_status;
+    204              if (!hal_i2c_is_port_valid(i2c_port)) {
+    205                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    206                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    207              }
+    208              if (!hal_i2c_is_config_valid(i2c_config)) {
+    209                  log_hal_error("Config is invalid");
+    210                  return HAL_I2C_STATUS_INVALID_PARAMETER;
+    211              }
+    212          
+    213              i2c_check_and_set_busy(i2c_port, busy_status);
+    214              if (HAL_I2C_STATUS_ERROR_BUSY == busy_status) {
+    215                  return HAL_I2C_STATUS_ERROR_BUSY;
+    216              }
+    217          
+    218              memset(&g_i2c_context.current_user[i2c_port], 0, sizeof(hal_i2c_current_user_t));
+    219              memset(&g_i2c_context.config[i2c_port], 0, sizeof(hal_i2c_inner_config_t));
+    220              g_i2c_context.config[i2c_port].basic_config_present = true;
+    221              g_i2c_context.config[i2c_port].basic_config.frequency = i2c_config->frequency;
+    222          
+    223              int32_t ret_val = i2c_configure(hal_i2c_translate_port(i2c_port), hal_i2c_translate_frequency(i2c_config->frequency));
+    224              if (ret_val < 0) {
+    225                  log_hal_error("i2c_configure failed.");
+    226                  return HAL_I2C_STATUS_ERROR;
+    227              }
+    228              ret_val = i2c_enable(hal_i2c_translate_port(i2c_port));
+    229              if (ret_val < 0) {
+    230                  log_hal_error("i2c_enable failed.");
+    231                  return HAL_I2C_STATUS_ERROR;
+    232              }
+    233          
+    234              /*get sleep handler*/
+    235              I2C_GET_SLEEP_HANDLE(i2c_port);
+    236          
+    237          
+    238              return HAL_I2C_STATUS_OK;
+    239          }
+    240          
+    241          hal_i2c_status_t hal_i2c_master_deinit(hal_i2c_port_t i2c_port)
+    242          {
+    243              if (!hal_i2c_is_port_valid(i2c_port)) {
+    244                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    245                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    246              }
+    247          
+    248              memset(&g_i2c_context.current_user[i2c_port], 0, sizeof(hal_i2c_current_user_t));
+    249              memset(&g_i2c_context.config[i2c_port], 0, sizeof(hal_i2c_inner_config_t));
+    250          
+    251              /*release sleep hander*/
+    252              I2C_RELEASE_SLEEP_HANDLE(i2c_port);
+    253              /* unlock i2c */
+    254              i2c_set_idle(i2c_port);
+    255              return HAL_I2C_STATUS_OK;
+    256          }
+    257          
+    258          hal_i2c_status_t hal_i2c_master_register_callback(hal_i2c_port_t i2c_port, hal_i2c_callback_t i2c_callback, void *user_data)
+    259          {
+    260              if (!hal_i2c_is_port_valid(i2c_port)) {
+    261                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    262                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    263              }
+    264              g_i2c_context.config[i2c_port].callback_present = true;
+    265              g_i2c_context.config[i2c_port].callback = i2c_callback;
+    266              g_i2c_context.config[i2c_port].user_data = user_data;
+    267              hal_nvic_register_isr_handler((hal_nvic_irq_t)hal_i2c_index_irq(i2c_port), hal_i2c_callback);
+    268              NVIC_SetPriority((IRQn_Type)hal_i2c_index_irq(i2c_port), (uint32_t)DEFAULT_PRI);
+    269          //    NVIC_EnableIRQ((IRQn_Type)hal_i2c_index_irq(i2c_port));
+    270              return HAL_I2C_STATUS_OK;
+    271          }
+    272          
+    273          hal_i2c_status_t hal_i2c_master_send_dma(hal_i2c_port_t i2c_port, uint8_t slave_address, const uint8_t *data, uint32_t size)
+    274          {
+    275              if (!hal_i2c_is_port_valid(i2c_port)) {
+    276                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    277                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    278              }
+    279          
+    280              if (1 == halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port))) {
+    281                  log_hal_error("[I2C]send_dma busy\r\n");
+    282                  return HAL_I2C_STATUS_ERROR_BUSY;
+    283              }
+    284              /* lock sleep */
+    285              I2C_LOCK_SLEEP(i2c_port);
+    286          
+    287              NVIC_EnableIRQ((IRQn_Type)hal_i2c_index_irq(i2c_port));
+    288          
+    289              g_i2c_context.current_user[i2c_port].data_size = size;
+    290              g_i2c_context.current_user[i2c_port].slave_address = slave_address;
+    291              g_i2c_context.current_user[i2c_port].is_send = true;
+    292              int32_t ret_val = i2c_write(hal_i2c_translate_port(i2c_port), slave_address, data, (uint16_t)size);
+    293              return (ret_val >= 0) ? HAL_I2C_STATUS_OK : HAL_I2C_STATUS_ERROR;
+    294          }
+    295          
+    296          hal_i2c_status_t hal_i2c_master_receive_dma(hal_i2c_port_t i2c_port, uint8_t slave_address, uint8_t *buffer, uint32_t size)
+    297          {
+    298              if (!hal_i2c_is_port_valid(i2c_port)) {
+    299                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    300                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    301              }
+    302          
+    303              if (1 == halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port))) {
+    304                  log_hal_error("[I2C]read_dma busy\r\n");
+    305                  return HAL_I2C_STATUS_ERROR_BUSY;
+    306              }
+    307          
+    308              /* lock sleep */
+    309              I2C_LOCK_SLEEP(i2c_port);
+    310          
+    311              NVIC_EnableIRQ((IRQn_Type)hal_i2c_index_irq(i2c_port));
+    312          
+    313              g_i2c_context.current_user[i2c_port].data_size = size;
+    314              g_i2c_context.current_user[i2c_port].slave_address = slave_address;
+    315              g_i2c_context.current_user[i2c_port].is_send = false;
+    316              int32_t ret_val = i2c_read(hal_i2c_translate_port(i2c_port), slave_address, buffer, (uint16_t)size);
+    317              return (ret_val >= 0) ? HAL_I2C_STATUS_OK : HAL_I2C_STATUS_ERROR;
+    318          }
+    319          
+    320          hal_i2c_status_t hal_i2c_master_send_to_receive_dma(hal_i2c_port_t i2c_port, hal_i2c_send_to_receive_config_t *i2c_send_to_receive_config)
+    321          {
+    322              i2c_package_information_t package_information;
+    323          
+    324              if (!hal_i2c_is_port_valid(i2c_port)) {
+    325                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    326                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    327              }
+    328          
+    329              if (1 == halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port))) {
+    330                  log_hal_error("[I2C]read_dma busy\r\n");
+    331                  return HAL_I2C_STATUS_ERROR_BUSY;
+    332              }
+    333          
+    334              /* lock sleep */
+    335              I2C_LOCK_SLEEP(i2c_port);
+    336          
+    337              NVIC_EnableIRQ((IRQn_Type)hal_i2c_index_irq(i2c_port));
+    338          
+    339              g_i2c_context.current_user[i2c_port].data_size = i2c_send_to_receive_config->receive_length;
+    340              g_i2c_context.current_user[i2c_port].slave_address = i2c_send_to_receive_config->slave_address;
+    341              g_i2c_context.current_user[i2c_port].is_send = false;
+    342          
+    343              /* Slave address information */
+    344              package_information.ucSlaveAddress = i2c_send_to_receive_config->slave_address;
+    345              /* Package number is 2, one for sending and another for receiving */
+    346              package_information.ucPktNum = 2;
+    347              /* Package information for sending */
+    348              package_information.pucTxData = (uint8_t *)i2c_send_to_receive_config->send_data;
+    349              package_information.u2Pkt0Len = i2c_send_to_receive_config->send_length;
+    350              package_information.ucPkt0RW = 0;//send
+    351              /* Package information for receiving */
+    352              package_information.pucRxData = i2c_send_to_receive_config->receive_buffer;
+    353              package_information.u2Pkt1Len = i2c_send_to_receive_config->receive_length;
+    354              package_information.ucPkt1RW = 1;//receive
+    355              /* Package information of the unused packge */
+    356              package_information.u2Pkt2Len = 0;
+    357              package_information.ucPkt2RW = 0;
+    358          
+    359              int32_t ret_val = i2c_read_write(hal_i2c_translate_port(i2c_port), &package_information);
+    360          
+    361              return (ret_val >= 0) ? HAL_I2C_STATUS_OK : HAL_I2C_STATUS_ERROR;
+    362          }
+    363          
+    364          hal_i2c_status_t hal_i2c_master_send_polling(hal_i2c_port_t i2c_port, uint8_t slave_address, const uint8_t *data, uint32_t size)
+    365          {
+    366              if (!hal_i2c_is_port_valid(i2c_port)) {
+    367                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    368                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    369              }
+    370              if (I2C_FIFO_MAX_LEN < size) {
+    371                  log_hal_error("[I2C]send_polling length error\r\n");
+    372                  return HAL_I2C_STATUS_INVALID_PARAMETER;
+    373              }
+    374          
+    375              if (1 == halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port))) {
+    376                  log_hal_error("[I2C]send_polling busy\r\n");
+    377                  return HAL_I2C_STATUS_ERROR_BUSY;
+    378              }
+    379              /* lock sleep */
+    380              I2C_LOCK_SLEEP(i2c_port);
+    381          
+    382              NVIC_DisableIRQ((IRQn_Type)hal_i2c_index_irq(i2c_port));
+    383          
+    384              g_i2c_context.current_user[i2c_port].data_size = size;
+    385              g_i2c_context.current_user[i2c_port].slave_address = slave_address;
+    386              g_i2c_context.current_user[i2c_port].is_send = true;
+    387          
+    388              int32_t ret_val = i2c_write_via_mcu(hal_i2c_translate_port(i2c_port), slave_address, data, (uint16_t)size);
+    389              /* unlock sleep */
+    390              I2C_UNLOCK_SLEEP(i2c_port);
+    391          
+    392              return (ret_val >= 0) ? HAL_I2C_STATUS_OK : HAL_I2C_STATUS_ERROR;
+    393          }
+    394          
+    395          hal_i2c_status_t hal_i2c_master_receive_polling(hal_i2c_port_t i2c_port, uint8_t slave_address, uint8_t *buffer, uint32_t size)
+    396          {
+    397              if (!hal_i2c_is_port_valid(i2c_port)) {
+    398                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    399                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    400              }
+    401          
+    402              if (I2C_FIFO_MAX_LEN < size) {
+    403                  log_hal_error("[I2C]read_polling length error\r\n");
+    404                  return HAL_I2C_STATUS_INVALID_PARAMETER;
+    405              }
+    406          
+    407              if (1 == halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port))) {
+    408                  log_hal_error("[I2C]read_polling busy\r\n");
+    409                  return HAL_I2C_STATUS_ERROR_BUSY;
+    410              }
+    411              /* lock sleep */
+    412              I2C_LOCK_SLEEP(i2c_port);
+    413          
+    414              NVIC_DisableIRQ((IRQn_Type)hal_i2c_index_irq(i2c_port));
+    415          
+    416              g_i2c_context.current_user[i2c_port].data_size = size;
+    417              g_i2c_context.current_user[i2c_port].slave_address = slave_address;
+    418              g_i2c_context.current_user[i2c_port].is_send = false;
+    419          
+    420              int32_t ret_val = i2c_read_via_mcu(hal_i2c_translate_port(i2c_port), slave_address, buffer, (uint16_t)size);
+    421          
+    422              /* unlock sleep */
+    423              I2C_UNLOCK_SLEEP(i2c_port);
+    424          
+    425          
+    426              return (ret_val >= 0) ? HAL_I2C_STATUS_OK : HAL_I2C_STATUS_ERROR;
+    427          }
+    428          
+    429          hal_i2c_status_t hal_i2c_master_send_to_receive_polling(hal_i2c_port_t i2c_port, hal_i2c_send_to_receive_config_t *i2c_send_to_receive_config)
+    430          {
+    431              i2c_package_information_t package_information;
+    432          
+    433              if (!hal_i2c_is_port_valid(i2c_port)) {
+    434                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    435                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    436              }
+    437          
+    438              if (i2c_send_to_receive_config->send_length > I2C_FIFO_MAX_LEN || i2c_send_to_receive_config->receive_length > I2C_FIFO_MAX_LEN) {
+    439                  log_hal_error("[I2C]read_polling length error\r\n");
+    440                  return HAL_I2C_STATUS_INVALID_PARAMETER;
+    441              }
+    442          
+    443              if (1 == halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port))) {
+    444                  log_hal_error("[I2C]read_polling busy\r\n");
+    445                  return HAL_I2C_STATUS_ERROR_BUSY;
+    446              }
+    447              /* lock sleep */
+    448              I2C_LOCK_SLEEP(i2c_port);
+    449          
+    450              NVIC_DisableIRQ((IRQn_Type)hal_i2c_index_irq(i2c_port));
+    451          
+    452              g_i2c_context.current_user[i2c_port].data_size = i2c_send_to_receive_config->receive_length;
+    453              g_i2c_context.current_user[i2c_port].slave_address = i2c_send_to_receive_config->slave_address;
+    454              g_i2c_context.current_user[i2c_port].is_send = false;
+    455          
+    456              /* Slave address information */
+    457              package_information.ucSlaveAddress = i2c_send_to_receive_config->slave_address;
+    458              /* Package number is 2, one for sending and another for receiving */
+    459              package_information.ucPktNum = 2;
+    460              /* Package information for sending */
+    461              package_information.pucTxData = (uint8_t *)i2c_send_to_receive_config->send_data;
+    462              package_information.u2Pkt0Len = i2c_send_to_receive_config->send_length;
+    463              package_information.ucPkt0RW = 0;//send
+    464              /* Package information for receiving */
+    465              package_information.pucRxData = i2c_send_to_receive_config->receive_buffer;
+    466              package_information.u2Pkt1Len = i2c_send_to_receive_config->receive_length;
+    467              package_information.ucPkt1RW = 1;//receive
+    468              /* Package information of the unused packge */
+    469              package_information.u2Pkt2Len = 0;
+    470              package_information.ucPkt2RW = 0;
+    471          
+    472              int32_t ret_val = i2c_read_write_via_mcu(hal_i2c_translate_port(i2c_port), &package_information);
+    473          
+    474              /* unlock sleep */
+    475              I2C_UNLOCK_SLEEP(i2c_port);
+    476          
+    477              return (ret_val >= 0) ? HAL_I2C_STATUS_OK : HAL_I2C_STATUS_ERROR;
+    478          }
+    479          
+    480          
+    481          hal_i2c_status_t hal_i2c_master_set_frequency(hal_i2c_port_t i2c_port, hal_i2c_frequency_t frequency)
+    482          {
+    483              if (!hal_i2c_is_port_valid(i2c_port)) {
+    484                  log_hal_error("Wrong I2C port: %d", i2c_port);
+    485                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    486              }
+    487              if (!hal_i2c_is_frequency_valid(frequency)) {
+    488                  log_hal_error("Wrong frequency: %d", frequency);
+    489                  return HAL_I2C_STATUS_INVALID_PARAMETER;
+    490              }
+    491          
+    492              if (1 == halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port))) {
+    493                  return HAL_I2C_STATUS_ERROR_BUSY;
+    494              }
+    495          
+    496              int32_t ret_val = i2c_configure(hal_i2c_translate_port(i2c_port), hal_i2c_translate_frequency(frequency));
+    497              return (ret_val >= 0) ? HAL_I2C_STATUS_OK : HAL_I2C_STATUS_ERROR;
+    498          }
+    499          
+    500          hal_i2c_status_t hal_i2c_master_get_running_status(hal_i2c_port_t i2c_port, hal_i2c_running_status_t *running_status)
+    501          {
+    502              /* parameter check */
+    503              if (HAL_I2C_MASTER_MAX <= i2c_port) {
+    504                  return HAL_I2C_STATUS_INVALID_PORT_NUMBER;
+    505              }
+    506              running_status->running_status = (hal_i2c_running_type_t)halI2CGetBusyStatus(hal_i2c_translate_port(i2c_port));
+    507              return HAL_I2C_STATUS_OK;
+    508          }
+    509          
+    510          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_DisableIRQ
+       0   NVIC_EnableIRQ
+       4   NVIC_SetPriority
+      40   hal_i2c_callback
+        40   -- Indirect call
+        40   -> halI2CGetBaseAddr
+        40   -> log_hal_error_internal
+       0   hal_i2c_index_irq
+       8   hal_i2c_is_config_valid
+         8   -> hal_i2c_is_frequency_valid
+       0   hal_i2c_is_frequency_valid
+       0   hal_i2c_is_port_valid
+      16   hal_i2c_master_deinit
+        16   -> __aeabi_memset
+        16   -> hal_i2c_is_port_valid
+        16   -> log_hal_error_internal
+       8   hal_i2c_master_get_running_status
+         8   -> halI2CGetBusyStatus
+         8   -> hal_i2c_translate_port
+      24   hal_i2c_master_init
+        24   -> __aeabi_memset
+        24   -> hal_i2c_is_config_valid
+        24   -> hal_i2c_is_port_valid
+        24   -> hal_i2c_translate_frequency
+        24   -> hal_i2c_translate_port
+        24   -> i2c_configure
+        24   -> i2c_enable
+        24   -> log_hal_error_internal
+        24   -> restore_interrupt_mask
+        24   -> save_and_set_interrupt_mask
+      24   hal_i2c_master_receive_dma
+        24   -> NVIC_EnableIRQ
+        24   -> halI2CGetBusyStatus
+        24   -> hal_i2c_index_irq
+        24   -> hal_i2c_is_port_valid
+        24   -> hal_i2c_translate_port
+        24   -> i2c_read
+        24   -> log_hal_error_internal
+      24   hal_i2c_master_receive_polling
+        24   -> NVIC_DisableIRQ
+        24   -> halI2CGetBusyStatus
+        24   -> hal_i2c_index_irq
+        24   -> hal_i2c_is_port_valid
+        24   -> hal_i2c_translate_port
+        24   -> i2c_read_via_mcu
+        24   -> log_hal_error_internal
+      24   hal_i2c_master_register_callback
+        24   -> NVIC_SetPriority
+        24   -> hal_i2c_index_irq
+        24   -> hal_i2c_is_port_valid
+        24   -> hal_nvic_register_isr_handler
+        24   -> log_hal_error_internal
+      24   hal_i2c_master_send_dma
+        24   -> NVIC_EnableIRQ
+        24   -> halI2CGetBusyStatus
+        24   -> hal_i2c_index_irq
+        24   -> hal_i2c_is_port_valid
+        24   -> hal_i2c_translate_port
+        24   -> i2c_write
+        24   -> log_hal_error_internal
+      24   hal_i2c_master_send_polling
+        24   -> NVIC_DisableIRQ
+        24   -> halI2CGetBusyStatus
+        24   -> hal_i2c_index_irq
+        24   -> hal_i2c_is_port_valid
+        24   -> hal_i2c_translate_port
+        24   -> i2c_write_via_mcu
+        24   -> log_hal_error_internal
+      40   hal_i2c_master_send_to_receive_dma
+        40   -> NVIC_EnableIRQ
+        40   -> halI2CGetBusyStatus
+        40   -> hal_i2c_index_irq
+        40   -> hal_i2c_is_port_valid
+        40   -> hal_i2c_translate_port
+        40   -> i2c_read_write
+        40   -> log_hal_error_internal
+      40   hal_i2c_master_send_to_receive_polling
+        40   -> NVIC_DisableIRQ
+        40   -> halI2CGetBusyStatus
+        40   -> hal_i2c_index_irq
+        40   -> hal_i2c_is_port_valid
+        40   -> hal_i2c_translate_port
+        40   -> i2c_read_write_via_mcu
+        40   -> log_hal_error_internal
+      16   hal_i2c_master_set_frequency
+        16   -> halI2CGetBusyStatus
+        16   -> hal_i2c_is_frequency_valid
+        16   -> hal_i2c_is_port_valid
+        16   -> hal_i2c_translate_frequency
+        16   -> hal_i2c_translate_port
+        16   -> i2c_configure
+        16   -> log_hal_error_internal
+       0   hal_i2c_translate_frequency
+       0   hal_i2c_translate_port
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable36
+       4  ??DataTable36_1
+       4  ??DataTable36_2
+       4  ??DataTable36_3
+       4  ??DataTable36_4
+       4  ??DataTable36_5
+       4  ??DataTable36_6
+      40  ?_0
+      36  ?_1
+      36  ?_10
+      28  ?_11
+      20  ?_12
+      20  ?_2
+      20  ?_3
+      24  ?_4
+      20  ?_5
+      24  ?_6
+      24  ?_7
+      36  ?_8
+      28  ?_9
+      20  NVIC_DisableIRQ
+      20  NVIC_EnableIRQ
+      34  NVIC_SetPriority
+      40  g_i2c_context
+     158  hal_i2c_callback
+      12  hal_i2c_index_irq
+      26  hal_i2c_is_config_valid
+      12  hal_i2c_is_frequency_valid
+      12  hal_i2c_is_port_valid
+      78  hal_i2c_master_deinit
+      28  hal_i2c_master_get_running_status
+     236  hal_i2c_master_init
+     136  hal_i2c_master_receive_dma
+     162  hal_i2c_master_receive_polling
+      96  hal_i2c_master_register_callback
+     138  hal_i2c_master_send_dma
+     162  hal_i2c_master_send_polling
+     188  hal_i2c_master_send_to_receive_dma
+     222  hal_i2c_master_send_to_receive_polling
+     126  hal_i2c_master_set_frequency
+       2  hal_i2c_translate_frequency
+      10  hal_i2c_translate_port
+       2  s_i2c_master_status
+     320  -- Other
+
+ 
+    42 bytes in section .bss
+ 2 582 bytes in section .text
+ 
+ 2 582 bytes of CODE memory
+    42 bytes of DATA memory
+
+Errors: none
+Warnings: none

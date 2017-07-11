@@ -1,0 +1,485 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:25
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_irtx.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW7496.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_irtx.c -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\hal_irtx.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\hal_irtx.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_irtx.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_irtx.h"
+     36          
+     37          #ifdef HAL_IRTX_MODULE_ENABLED
+     38          #include <stdlib.h>
+     39          #include "mt7687.h"
+     40          #include "ir_tx.h"
+     41          #include "hal_log.h"
+     42          #include "low_hal_irtx.h"
+     43          #include "hal_nvic.h"
+     44          #include "hal_sleep_manager.h"
+     45          #include "hal_sleep_driver.h"
+     46          
+     47          
+     48          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     49          static uint8_t irtx_sleep_handler = 0;
+     50          #endif
+     51          
+     52          
+     53          static hal_irtx_pulse_data_callback_t g_pulse_data_callback = NULL;
+     54          void *g_callback_user_data = NULL;
+     55          static bool irtx_status = false;
+     56          static uint8_t hal_irtx_revert_bit_order(uint8_t half_byte)
+     57          {
+     58              uint8_t target = 0;
+     59              target |= (half_byte & 0x01) << 3;
+     60              target |= (half_byte & 0x02) << 1;
+     61              target |= (half_byte & 0x04) >> 1;
+     62              target |= (half_byte & 0x08) >> 3;
+     63              return target;
+     64          }
+     65          
+     66          static uint32_t hal_irtx_build_double_word(const uint8_t *data)
+     67          {
+     68              uint32_t target_data = 0;
+     69              target_data |= hal_irtx_revert_bit_order((data[0] >> 4) & 0x0F) << 0;
+     70              target_data |= hal_irtx_revert_bit_order(data[0] & 0x0F) << 4;
+     71              target_data |= hal_irtx_revert_bit_order((data[1] >> 4) & 0x0F) << 8;
+     72              target_data |= hal_irtx_revert_bit_order(data[1] & 0x0F) << 12;
+     73              target_data |= hal_irtx_revert_bit_order((data[2] >> 4) & 0x0F) << 16;
+     74              target_data |= hal_irtx_revert_bit_order(data[2] & 0x0F) << 20;
+     75              target_data |= hal_irtx_revert_bit_order((data[3] >> 4) & 0x0F) << 24;
+     76              target_data |= hal_irtx_revert_bit_order(data[3] & 0x0F) << 28;
+     77              return target_data;
+     78          }
+     79          
+     80          static void hal_irtx_translate_user_data(uint32_t target_data[3], const uint8_t data[HAL_IRTX_MAX_DATA_LENGTH])
+     81          {
+     82              target_data[0] = hal_irtx_build_double_word(data);
+     83              target_data[1] = hal_irtx_build_double_word(data + 4);
+     84              target_data[2] = hal_irtx_build_double_word(data + 8);
+     85          }
+     86          
+     87          static uint8_t hal_irtx_translate_repeat_code(hal_irtx_repeat_code_t repeat_code)
+     88          {
+     89              return HAL_IRTX_REPEAT_ENABLE == repeat_code ? 1 : 0;
+     90          }
+     91          
+     92          static  hal_irtx_status_t hal_irtx_check_valid_data(const uint8_t *data, uint32_t bit_length)
+     93          {
+     94              if (NULL == data) {
+     95                  log_hal_error("data is null");
+     96                  return HAL_IRTX_STATUS_ERROR;
+     97              }
+     98              if (bit_length > HAL_IRTX_MAX_DATA_LENGTH * 8) {
+     99                  log_hal_error("bit_length %lu, too many bits to send, limit is %u",
+    100                                bit_length, HAL_IRTX_MAX_DATA_LENGTH * 8);
+    101                  return HAL_IRTX_STATUS_ERROR;
+    102              }
+    103          
+    104              return HAL_IRTX_STATUS_OK;
+    105          }
+    106          
+    107          
+    108          hal_irtx_status_t hal_irtx_init(void)
+    109          {
+    110          
+    111              halIrTxInit(1, 0, 1);
+    112          
+    113              /*get sleep handler*/
+    114          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    115              irtx_sleep_handler = hal_sleep_manager_set_sleep_handle("irtx");
+    116              if (irtx_sleep_handler == INVALID_SLEEP_HANDLE) {
+    117                  log_hal_error("there's no available handle when IRTX get sleep handle");
+    118                  return HAL_IRTX_STATUS_ERROR;
+    119              }
+    120          #endif
+    121          
+    122          
+    123              return HAL_IRTX_STATUS_OK;
+    124          
+    125          }
+    126          
+    127          hal_irtx_status_t hal_irtx_deinit(void)
+    128          {
+    129              halIrTxInit(0, 0, 0);
+    130              /*release sleep hander*/
+    131          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    132              hal_sleep_manager_release_sleep_handle(irtx_sleep_handler);
+    133          #endif
+    134              return HAL_IRTX_STATUS_OK;
+    135          
+    136          }
+    137          
+    138          hal_irtx_status_t hal_irtx_do_send_data(uint8_t mode,
+    139                                                  hal_irtx_repeat_code_t repeat_code,
+    140                                                  const uint8_t data[HAL_IRTX_MAX_DATA_LENGTH],
+    141                                                  uint32_t bit_length)
+    142          {
+    143              int32_t ret_val = ir_tx_configure(mode);
+    144              if (ret_val < 0) {
+    145                  log_hal_error("ir_tx_configure fail");
+    146                  return HAL_IRTX_STATUS_ERROR;
+    147              }
+    148              uint32_t target_data[3] = {0};
+    149              hal_irtx_translate_user_data(target_data, data);
+    150              /*lock sleep mode*/
+    151          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    152              hal_sleep_manager_lock_sleep(irtx_sleep_handler);
+    153          #endif
+    154              ret_val = ir_tx_send(target_data[0],
+    155                                   target_data[1],
+    156                                   target_data[2],
+    157                                   bit_length,
+    158                                   hal_irtx_translate_repeat_code(repeat_code));
+    159              /*unlock sleep mode*/
+    160          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    161              hal_sleep_manager_unlock_sleep(irtx_sleep_handler);
+    162          #endif
+    163          
+    164              if (ret_val < 0) {
+    165                  log_hal_error("ir_tx_configure fail");
+    166                  return HAL_IRTX_STATUS_ERROR;
+    167              }
+    168              irtx_status = true;
+    169              return HAL_IRTX_STATUS_OK;
+    170          }
+    171          
+    172          hal_irtx_status_t hal_irtx_send_nec_data(hal_irtx_repeat_code_t repeat_code,
+    173                  const uint8_t data[HAL_IRTX_MAX_DATA_LENGTH],
+    174                  uint32_t bit_length)
+    175          {
+    176          
+    177              if (HAL_IRTX_STATUS_ERROR == hal_irtx_check_valid_data(data, bit_length)) {
+    178                  return HAL_IRTX_STATUS_ERROR;
+    179              }
+    180              return hal_irtx_do_send_data(IR_TX_NEC, repeat_code, data, bit_length);
+    181          }
+    182          
+    183          hal_irtx_status_t hal_irtx_send_rc5_data(hal_irtx_repeat_code_t repeat_code,
+    184                  const uint8_t data[HAL_IRTX_MAX_DATA_LENGTH],
+    185                  uint32_t bit_length)
+    186          {
+    187              if (HAL_IRTX_STATUS_ERROR == hal_irtx_check_valid_data(data, bit_length)) {
+    188                  return HAL_IRTX_STATUS_ERROR;
+    189              }
+    190          
+    191              return hal_irtx_do_send_data(IR_TX_RC5, repeat_code, data, bit_length);
+    192          }
+    193          
+    194          
+    195          hal_irtx_status_t hal_irtx_send_rc6_data(hal_irtx_repeat_code_t repeat_code,
+    196                  const uint8_t data[HAL_IRTX_MAX_DATA_LENGTH],
+    197                  uint32_t bit_length)
+    198          {
+    199              if (HAL_IRTX_STATUS_ERROR == hal_irtx_check_valid_data(data, bit_length)) {
+    200                  return HAL_IRTX_STATUS_ERROR;
+    201              }
+    202          
+    203              return hal_irtx_do_send_data(IR_TX_RC6, repeat_code, data, bit_length);
+    204          }
+    205          
+    206          hal_irtx_status_t hal_irtx_configure_pulse_data_carrier(uint32_t frequency,
+    207                  uint32_t duty_cycle)
+    208          {
+    209              int32_t ret_val = ir_tx_pulse_width_configure((uint16_t)frequency, (uint8_t)duty_cycle);
+    210              return ret_val >= 0 ? HAL_IRTX_STATUS_OK : HAL_IRTX_STATUS_ERROR;
+    211          }
+    212          
+    213          static void hal_irtx_interrupt_handle(hal_nvic_irq_t irq_number)
+    214          {
+    215              if (NULL != g_pulse_data_callback) {
+    216                  g_pulse_data_callback(HAL_IRTX_EVENT_TRANSACTION_SUCCESS, g_callback_user_data);
+    217              }
+    218              (void)ir_tx_interrupt_clear();
+    219              irtx_status = false;
+    220          }
+    221          
+    222          hal_irtx_status_t hal_irtx_register_pulse_data_callback(hal_irtx_pulse_data_callback_t callback,
+    223                  void *user_data)
+    224          {
+    225              g_pulse_data_callback = callback;
+    226              g_callback_user_data = user_data;
+    227              hal_nvic_register_isr_handler(CM4_IRDA_TX_IRQ, hal_irtx_interrupt_handle);
+    228              NVIC_EnableIRQ((IRQn_Type)CM4_IRDA_TX_IRQ);
+    229              return HAL_IRTX_STATUS_OK;
+    230          }
+    231          
+    232          hal_irtx_status_t hal_irtx_send_pulse_data(uint32_t base_period,
+    233                  uint8_t *data,
+    234                  uint32_t length)
+    235          {
+    236              int32_t ret_val = 0;
+    237              /*lock sleep mode*/
+    238          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    239              hal_sleep_manager_lock_sleep(irtx_sleep_handler);
+    240          #endif
+    241          
+    242              ret_val = ir_tx_pulse_width_send(length, data, base_period);
+    243              /*unlock sleep mode*/
+    244          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    245              hal_sleep_manager_unlock_sleep(irtx_sleep_handler);
+    246          #endif
+    247              return ret_val >= 0 ? HAL_IRTX_STATUS_OK : HAL_IRTX_STATUS_ERROR;
+    248          }
+    249          
+    250          
+    251          hal_irtx_status_t hal_irtx_get_running_status(hal_irtx_running_status_t *running_status)
+    252          {
+    253              if (irtx_status) {
+    254                  *running_status = HAL_IRTX_BUSY;
+    255              } else {
+    256                  *running_status = HAL_IRTX_IDLE;
+    257              }
+    258          
+    259              return HAL_IRTX_STATUS_OK;
+    260          }
+    261          
+    262          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_EnableIRQ
+      16   hal_irtx_build_double_word
+        16   -> hal_irtx_revert_bit_order
+       8   hal_irtx_check_valid_data
+         8   -> log_hal_error_internal
+       8   hal_irtx_configure_pulse_data_carrier
+         8   -> ir_tx_pulse_width_configure
+       8   hal_irtx_deinit
+         8   -> halIrTxInit
+         8   -> hal_sleep_manager_release_sleep_handle
+      32   hal_irtx_do_send_data
+        32   -> hal_irtx_translate_repeat_code
+        32   -> hal_irtx_translate_user_data
+        32   -> hal_sleep_manager_lock_sleep
+        32   -> hal_sleep_manager_unlock_sleep
+        32   -> ir_tx_configure
+        32   -> ir_tx_send
+        32   -> log_hal_error_internal
+       0   hal_irtx_get_running_status
+       8   hal_irtx_init
+         8   -> halIrTxInit
+         8   -> hal_sleep_manager_set_sleep_handle
+         8   -> log_hal_error_internal
+       8   hal_irtx_interrupt_handle
+         8   -- Indirect call
+         8   -> ir_tx_interrupt_clear
+       8   hal_irtx_register_pulse_data_callback
+         8   -> NVIC_EnableIRQ
+         8   -> hal_nvic_register_isr_handler
+       0   hal_irtx_revert_bit_order
+      16   hal_irtx_send_nec_data
+        16   -> hal_irtx_check_valid_data
+         0   -> hal_irtx_do_send_data
+      24   hal_irtx_send_pulse_data
+        24   -> hal_sleep_manager_lock_sleep
+        24   -> hal_sleep_manager_unlock_sleep
+        24   -> ir_tx_pulse_width_send
+      16   hal_irtx_send_rc5_data
+        16   -> hal_irtx_check_valid_data
+         0   -> hal_irtx_do_send_data
+      16   hal_irtx_send_rc6_data
+        16   -> hal_irtx_check_valid_data
+         0   -> hal_irtx_do_send_data
+       0   hal_irtx_translate_repeat_code
+      16   hal_irtx_translate_user_data
+        16   -> hal_irtx_build_double_word
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_2
+      16  ?_0
+      52  ?_1
+       8  ?_2
+      56  ?_3
+      24  ?_4
+      12  ?_5
+      18  NVIC_EnableIRQ
+     110  hal_irtx_build_double_word
+      60  hal_irtx_check_valid_data
+      24  hal_irtx_configure_pulse_data_carrier
+      24  hal_irtx_deinit
+     126  hal_irtx_do_send_data
+      18  hal_irtx_get_running_status
+      52  hal_irtx_init
+      26  hal_irtx_interrupt_handle
+      26  hal_irtx_register_pulse_data_callback
+      34  hal_irtx_revert_bit_order
+      42  hal_irtx_send_nec_data
+      52  hal_irtx_send_pulse_data
+      42  hal_irtx_send_rc5_data
+      42  hal_irtx_send_rc6_data
+       8  hal_irtx_translate_repeat_code
+      34  hal_irtx_translate_user_data
+      12  irtx_sleep_handler
+          irtx_status
+          g_pulse_data_callback
+          g_callback_user_data
+      68  -- Other
+
+ 
+  12 bytes in section .bss
+  12 bytes in section .rodata
+ 974 bytes in section .text
+ 
+ 974 bytes of CODE  memory
+  12 bytes of CONST memory
+  12 bytes of DATA  memory
+
+Errors: none
+Warnings: none

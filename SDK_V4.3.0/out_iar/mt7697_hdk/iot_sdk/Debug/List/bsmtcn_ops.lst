@@ -1,0 +1,590 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:15
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\smtcn\src\bsmtcn_ops.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW4E10.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\smtcn\src\bsmtcn_ops.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\bsmtcn_ops.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\bsmtcn_ops.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\smtcn\src\bsmtcn_ops.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdint.h>
+     36          #include <stdio.h>
+     37          #include <string.h>
+     38          
+     39          #include "FreeRTOS.h"
+     40          #include "FreeRTOSConfig.h"
+     41          #include "timers.h"
+     42          #include "type_def.h"
+     43          #include "hal_aes.h"
+     44          #include "wifi_api.h"
+     45          #include "smt_conn.h"
+     46          #include "smt_core.h"
+     47          #include "semphr.h"
+     48          #include "syslog.h"
+     49          #include "bsmtcn_adapter.h"
+     50          #include "bsmtcn_block_check.h"
+     51          #include <stdio.h>
+     52          
+     53          
+     54          static TimerHandle_t bsmtcn_rst_timer = NULL;
+     55          #define M80211_HEADER_LEN_MIN 24
+     56          #define MAC_FMT "%02x:%02x:%02x:%02x:%02x:%02x"
+     57          #define MAC_PRINT(mac) mac[0],mac[1],mac[2],mac[3],mac[4],mac[5]
+     58          #define IS_MULTICAST_ADDR(Addr) ((((Addr[0]) & 0x01) == 0x01) && ((Addr[0]) != 0xff))
+     59          #define IS_BROADCAST_ADDR(Addr) ((Addr[0] == 0xff) && (Addr[1] == 0xff) && (Addr[2] == 0xff) && (Addr[3] == 0xff) && (Addr[4] == 0xff) && (Addr[5] == 0xff))
+     60          
+     61          
+     62          #define ESUCCESS    0x0000
+     63          #define ESTATE      0x3000
+     64          #define ELOCK       0x3001
+     65          #define EMAC        0x3002
+     66          #define EPARAM      0x3003
+     67          #define ETIMEOUTRST 0x3004
+     68          #define ELENGTH     0x3005
+     69          #define ENOTREADY   0x3006
+     70          #define ENOSUCHTYPE 0x3007
+     71          #define EDROPPED    0x3008
+     72          #define EIDXOOR     0x3009
+     73          
+     74          static multi_config_evt_cb evt_cb = NULL;
+     75          
+     76          void bcsmtcn_register_evt_cb(multi_config_evt_cb cb)
+     77          {
+     78              evt_cb = cb;
+     79          }
+     80          
+     81          static void bsmtcn_start_reset_timer(void);
+     82          
+     83          static void bsmtcn_stop_reset_timer(void);
+     84          
+     85          static void bsmtcn_get_time(uint32_t *ptime)
+     86          {
+     87              *ptime = xTaskGetTickCount();
+     88          }
+     89          
+     90          static void aes128_decrypt(uint8_t *p, uint32_t len, uint8_t *key)
+     91          {
+     92              //uint8_t *pCipter, Plain[256] = {0};
+     93              uint8_t pCipter[256] = {0};
+     94              uint8_t Plain[256] = {0};
+     95              int32_t i, encrypt_data_len;
+     96              uint32_t iCipterLen = AES_BLK_SIZE;
+     97          
+     98              //pCipter = (uint8_t *)p;
+     99              memcpy(pCipter, p, len);
+    100          
+    101              encrypt_data_len = (len + AES_BLK_SIZE - 1) & (~(AES_BLK_SIZE - 1));
+    102              for (i = 0; i < encrypt_data_len / AES_BLK_SIZE; i++) {
+    103                  smtcn_aes_decrypt(pCipter + i * AES_BLK_SIZE,
+    104                                                 AES_BLK_SIZE,
+    105                                                 (uint8_t *)key,
+    106                                                 AES_BLK_SIZE,
+    107                                                 Plain + i * AES_BLK_SIZE,
+    108                                                 &iCipterLen);
+    109              }
+    110          
+    111              memcpy(p, Plain, encrypt_data_len);
+    112          
+    113              return;
+    114          }
+    115          extern smtcn_info   saved_smtcn_info;
+    116          
+    117          static void bsmtcn_get_info(uint8_t *payload, uint16_t len)
+    118          {
+    119          	struct bsmtcn_payload_struct *p = (struct bsmtcn_payload_struct *)payload;
+    120          	BSMTCN_ADAPTER_T *bsmtcn_adapter = bsmtcn_get_adapter();
+    121          	bool crc_result;
+    122              bool success = false;
+    123              do{
+    124                  
+    125          #if ENCRYTION
+    126              	uint16_t aes_len = (len-6) - (len-6)%AES_BLK_SIZE;
+    127          
+    128              	crc_result = bsmtcn_payload_crc_check(payload, len);
+    129              	if(crc_result == false) {
+    130              	   printf("payload crc error\r\n");
+    131              	   bsmtcn_adapter_reset();
+    132              	   return;
+    133              	}
+    134                  aes128_decrypt(&payload[6], aes_len, bsmtcn_adapter->key);
+    135          #endif
+    136                  if(p->total_length < (p->mix_len.ssid_len + p->mix_len.password_len + p->mix_len.extend_data_len)) {
+    137                      printf("get infor failed\n");
+    138                      break;
+    139                  }
+    140                  
+    141              	saved_smtcn_info.ssid_len = p->mix_len.ssid_len;
+    142              	saved_smtcn_info.pwd_len = p->mix_len.password_len;
+    143              	saved_smtcn_info.tlv_data_len = p->mix_len.extend_data_len;
+    144          
+    145                  if(saved_smtcn_info.ssid_len > WIFI_MAX_LENGTH_OF_SSID) {
+    146              	   printf("ssid_len error\r\n");
+    147                     break;
+    148                  }
+    149          
+    150              	if(saved_smtcn_info.pwd_len > WIFI_LENGTH_PASSPHRASE) {
+    151                      printf("pwd_len error\r\n");
+    152                      break;
+    153              	}
+    154          
+    155              	if(saved_smtcn_info.tlv_data_len > BSMTCN_MAX_CUSTOM_LEN) {
+    156                      printf("custom_len error\r\n");
+    157                      break;
+    158              	}
+    159          
+    160                  success = true;
+    161              }while(0);
+    162              if(!success)
+    163              {
+    164                  saved_smtcn_info.tlv_data_len = 0;
+    165                  saved_smtcn_info.pwd_len = 0;
+    166                  saved_smtcn_info.ssid_len = 0;
+    167              }
+    168              else
+    169              {
+    170          		memcpy(saved_smtcn_info.ssid, &payload[9], saved_smtcn_info.ssid_len);
+    171          		printf("ssid: %s\r\n", saved_smtcn_info.ssid);
+    172          		bsmtcn_hex_dump("ssid hex \r\n", saved_smtcn_info.ssid, saved_smtcn_info.ssid_len);
+    173          
+    174          		memcpy(saved_smtcn_info.pwd, &payload[9] + saved_smtcn_info.ssid_len, saved_smtcn_info.pwd_len);
+    175          		printf("pwd: %s\r\n", saved_smtcn_info.pwd);
+    176          		bsmtcn_hex_dump("pwd hex \r\n", saved_smtcn_info.pwd, saved_smtcn_info.pwd_len);
+    177          
+    178          		memcpy(saved_smtcn_info.tlv_data, &payload[9] + saved_smtcn_info.ssid_len + saved_smtcn_info.pwd_len, saved_smtcn_info.tlv_data_len);
+    179          		printf("custom: %s\r\n", saved_smtcn_info.tlv_data);
+    180          		bsmtcn_hex_dump("custom hex \r\n", saved_smtcn_info.tlv_data, saved_smtcn_info.tlv_data_len);
+    181              }
+    182          
+    183          }
+    184          
+    185          
+    186          static void mcsmt_report_env(enum eevent_id evt) 
+    187          {
+    188              switch (evt)
+    189              {
+    190                  case EVT_ID_SYNCSUC:
+    191                      smtcn_stop_switch();
+    192                      bsmtcn_start_reset_timer();
+    193                      if(evt_cb != NULL)
+    194                          evt_cb(EVT_BC_SYNC);
+    195                      break;
+    196                  case EVT_ID_INFOGET:
+    197                  {
+    198                      BSMTCN_ADAPTER_T *bsmtcn_adapter = bsmtcn_get_adapter();
+    199                      bsmtcn_stop_reset_timer();
+    200                      bsmtcn_get_info(bsmtcn_adapter->bsmtcn_payload, bsmtcn_adapter->block_count * BLOCK_DATA_COUNT);
+    201                  	atomic_write_smtcn_flag(SMTCN_FLAG_FIN);
+    202                      if(evt_cb != NULL)
+    203                          evt_cb(EVT_FINISHED);
+    204                      break;
+    205                  }
+    206                  case EVT_ID_TIMEOUT:
+    207                      if(evt_cb != NULL)
+    208                          evt_cb(EVT_SYNC_TIME_OUT);
+    209                      smtcn_continue_switch();
+    210                      break;
+    211                  case EVT_ID_SYNFAIL:
+    212                  default :
+    213                      break;
+    214              }
+    215          }
+    216          
+    217          
+    218          static struct efunc_table bcfunc_tbl = {
+    219              .report_evt     = mcsmt_report_env,
+    220              .start_timer    = NULL,
+    221              .stop_timer     = NULL,
+    222              .aes128_decrypt = smtcn_aes_decrypt,
+    223              .os_get_time = bsmtcn_get_time,
+    224          };
+    225          
+    226          
+    227          static void bsmtcn_timeout(TimerHandle_t tmr)
+    228          {
+    229              printf("bsmtcn_timeout\r\n");
+    230          	bsmtcn_adapter_reset();
+    231          	smtcn_continue_switch();
+    232          }
+    233          
+    234          
+    235          
+    236          static int32_t bsmtcn_init(const uint8_t *key, const uint8_t key_length)
+    237          {
+    238          	if(bsmtcn_adapter_init() < 0)
+    239                  return -1;
+    240          
+    241          	bsmtcn_adapter_set_key((uint8_t *)key, key_length);
+    242          
+    243              bsmtcn_register_evt_func_table(&bcfunc_tbl);
+    244          
+    245              bsmtcn_rst_timer = xTimerCreate("bsmtcn_rst_timer",
+    246                                             (locked_channel_timems / portTICK_PERIOD_MS), 
+    247                                             pdFALSE,
+    248                                             NULL,
+    249                                             bsmtcn_timeout);
+    250          
+    251              if (bsmtcn_rst_timer == NULL) {
+    252                  printf("bsmtcn_rst_timer create fail.\r\n");
+    253                  return -1;
+    254              }
+    255          
+    256              return 0;
+    257          }
+    258          
+    259          static void bsmtcn_start_reset_timer(void)
+    260          {
+    261              xTimerStart(bsmtcn_rst_timer, tmr_nodelay);
+    262          }
+    263          
+    264          
+    265          static void bsmtcn_stop_reset_timer(void)
+    266          {
+    267              xTimerStop(bsmtcn_rst_timer, tmr_nodelay);
+    268          }
+    269          
+    270          
+    271          static void bsmtcn_cleanup(void)
+    272          {
+    273          
+    274          	if (bsmtcn_rst_timer != NULL) {
+    275                  xTimerDelete(bsmtcn_rst_timer, tmr_nodelay);
+    276                  bsmtcn_rst_timer = NULL;
+    277              }
+    278          	bsmtcn_adapter_deinit();
+    279          }
+    280          
+    281          static int32_t bsmtcn_channel_reset(void)
+    282          {
+    283          
+    284          	//printf("bsmtcn_channel_reset\r\n");
+    285          	bsmtcn_adapter_channel_reset();
+    286          
+    287          	return 0;
+    288          }
+    289          
+    290          
+    291          static int32_t bsmtcn_input(char *p, int32_t len, uint8_t channel)
+    292          {
+    293          	char *s_addr,*mac1,*mac3;
+    294          
+    295              int32_t ret = EDROPPED;
+    296          
+    297          	uint8_t from_ds_flag = 0;
+    298          
+    299              /*
+    300               *TO DS:    | FC(2B) | DI(2B) |   BSSID   |    SA     |     DA    | ... |
+    301               *FROM DS:  | FC(2B) | DI(2B) |    DA     |   BSSID   |     SA    | ... |
+    302              */
+    303              
+    304              /*we drop the data if it's NOT multicast data or NOT data frame. */
+    305          
+    306              if ((p[1] & 3) == 2) {
+    307                  /* from DS. */
+    308                  s_addr = p + 16;
+    309                  from_ds_flag = 1;
+    310              } else if ((p[1] & 3) == 1) {
+    311                  /* To DS. */
+    312                  s_addr = p + 10;
+    313          		from_ds_flag = 0;
+    314              } else {
+    315                  //printf("[MSC] SC IBSS/WDS data not support. %x\n", p[1]);
+    316                  return -EPARAM;
+    317              }
+    318          
+    319          	mac1 = p + 4;
+    320          	mac3 = p + 16;
+    321              
+    322              if (p == NULL || len < M80211_HEADER_LEN_MIN ||
+    323                      (!IS_BROADCAST_ADDR((p + 4)) && !IS_BROADCAST_ADDR((p + 16))) ||
+    324                      (p[0] & 0x0C) != 0x08) {
+    325                  return -EPARAM;
+    326              }
+    327          
+    328              if(smtcn_is_debug_on()) {
+    329          		printf("channel:%d\n", channel);
+    330                  printf("Source MAC:"MAC_FMT"\r\n", MAC_PRINT(s_addr));
+    331          		printf("MAC1:"MAC_FMT"\r\n", MAC_PRINT(mac1));
+    332          		printf("MAC3:"MAC_FMT"\r\n", MAC_PRINT(mac3));
+    333              }
+    334          
+    335          	if(channel == smtcn_current_channel()) {
+    336          		bsmtcn_packet_decoder((uint8_t *)s_addr, len, from_ds_flag);
+    337          	}
+    338          
+    339              return ret;
+    340          }
+    341          
+    342          
+    343          const smtcn_proto_ops bsmtcn_proto_ops = {
+    344              .init               =   bsmtcn_init,
+    345              .cleanup            =   bsmtcn_cleanup,
+    346              .switch_channel_rst =   bsmtcn_channel_reset,
+    347              .rx_handler         =   bsmtcn_input,
+    348          };
+    349          
+    350          
+    351          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     544   aes128_decrypt
+       544   -> __aeabi_memclr4
+       544   -> __aeabi_memcpy
+       544   -> smtcn_aes_decrypt
+       0   bcsmtcn_register_evt_cb
+       8   bsmtcn_channel_reset
+         8   -> bsmtcn_adapter_channel_reset
+      16   bsmtcn_cleanup
+         0   -> bsmtcn_adapter_deinit
+        16   -> xTimerGenericCommand
+      24   bsmtcn_get_info
+        24   -> __aeabi_memcpy
+        24   -> aes128_decrypt
+         0   -> bsmtcn_adapter_reset
+        24   -> bsmtcn_get_adapter
+         0   -> bsmtcn_hex_dump
+        24   -> bsmtcn_hex_dump
+        24   -> bsmtcn_payload_crc_check
+        24   -> printf
+       8   bsmtcn_get_time
+         8   -> xTaskGetTickCount
+      16   bsmtcn_init
+        16   -> bsmtcn_adapter_init
+        16   -> bsmtcn_adapter_set_key
+        16   -> bsmtcn_register_evt_func_table
+        16   -> printf
+        16   -> xTimerCreate
+      40   bsmtcn_input
+        40   -> bsmtcn_packet_decoder
+        40   -> printf
+        40   -> smtcn_current_channel
+        40   -> smtcn_is_debug_on
+       8   bsmtcn_start_reset_timer
+         8   -> xTaskGetTickCount
+         8   -> xTimerGenericCommand
+       8   bsmtcn_stop_reset_timer
+         8   -> xTimerGenericCommand
+       8   bsmtcn_timeout
+         8   -> bsmtcn_adapter_reset
+         8   -> printf
+         0   -> smtcn_continue_switch
+      16   mcsmt_report_env
+         0   -- Indirect call
+        16   -- Indirect call
+        16   -> atomic_write_smtcn_flag
+        16   -> bsmtcn_get_adapter
+        16   -> bsmtcn_get_info
+        16   -> bsmtcn_start_reset_timer
+        16   -> bsmtcn_stop_reset_timer
+         0   -> smtcn_continue_switch
+        16   -> smtcn_stop_switch
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable28
+       4  ??DataTable28_1
+       4  ??DataTable28_2
+       4  ??DataTable28_3
+       4  ??DataTable28_4
+     256  ?_0
+     256  ?_1
+      12  ?_10
+      16  ?_11
+      16  ?_12
+      20  ?_13
+      20  ?_14
+      32  ?_15
+      12  ?_16
+      44  ?_17
+      40  ?_18
+      40  ?_19
+      20  ?_2
+      20  ?_3
+      20  ?_4
+      16  ?_5
+      20  ?_6
+      12  ?_7
+      12  ?_8
+      12  ?_9
+     118  aes128_decrypt
+       8  bcsmtcn_register_evt_cb
+      10  bsmtcn_channel_reset
+      38  bsmtcn_cleanup
+     336  bsmtcn_get_info
+      12  bsmtcn_get_time
+      80  bsmtcn_init
+     276  bsmtcn_input
+      16  bsmtcn_proto_ops
+      24  bsmtcn_rst_timer
+          bcfunc_tbl
+      26  bsmtcn_start_reset_timer
+      22  bsmtcn_stop_reset_timer
+      22  bsmtcn_timeout
+       4  evt_cb
+     114  mcsmt_report_env
+
+ 
+     4 bytes in section .bss
+    24 bytes in section .data
+   528 bytes in section .rodata
+ 1 466 bytes in section .text
+ 
+ 1 466 bytes of CODE  memory
+   528 bytes of CONST memory
+    28 bytes of DATA  memory
+
+Errors: none
+Warnings: none

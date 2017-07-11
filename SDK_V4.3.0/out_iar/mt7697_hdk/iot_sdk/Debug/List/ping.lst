@@ -1,0 +1,671 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:37
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\ping\src\ping.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWA31E.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\ping\src\ping.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\ping.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\ping.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\ping\src\ping.c
+      1          /**
+      2           * @file
+      3           * Ping sender module
+      4           *
+      5           */
+      6          
+      7          /*
+      8           * Redistribution and use in source and binary forms, with or without modification,
+      9           * are permitted provided that the following conditions are met:
+     10           *
+     11           * 1. Redistributions of source code must retain the above copyright notice,
+     12           *    this list of conditions and the following disclaimer.
+     13           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     14           *    this list of conditions and the following disclaimer in the documentation
+     15           *    and/or other materials provided with the distribution.
+     16           * 3. The name of the author may not be used to endorse or promote products
+     17           *    derived from this software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     20           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     21           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     22           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     23           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     24           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     25           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     26           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     27           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     28           * OF SUCH DAMAGE.
+     29           *
+     30           * This file is part of the lwIP TCP/IP stack.
+     31           *
+     32           */
+     33          
+     34          /**
+     35           * This is an example of a "ping" sender (with raw API and socket API).
+     36           * It can be used as a start point to maintain opened a network connection, or
+     37           * like a network "watchdog" for your device.
+     38           *
+     39           */
+     40          
+     41          #include "lwip/opt.h"
+     42          
+     43          #if LWIP_RAW /* don't build if not configured for use in lwipopts.h */
+     44          
+     45          #include "ping.h"
+     46          
+     47          #include "lwip/mem.h"
+     48          #include "lwip/raw.h"
+     49          #include "lwip/icmp.h"
+     50          #include "lwip/netif.h"
+     51          #include "lwip/sys.h"
+     52          #include "lwip/timers.h"
+     53          #include "lwip/inet_chksum.h"
+     54          
+     55          #if PING_USE_SOCKETS
+     56          #include "lwip/sockets.h"
+     57          #include "lwip/inet.h"
+     58          #endif /* PING_USE_SOCKETS */
+     59          #include "task_def.h"
+     60          #include "syslog.h"
+     61          
+     62          /**
+     63           * PING_DEBUG: Enable debugging for PING.
+     64           */
+     65          #ifndef PING_DEBUG
+     66          #define PING_DEBUG     LWIP_DBG_ON
+     67          #endif
+     68          
+     69          /** ping target - should be a "ip_addr_t" */
+     70          #ifndef PING_TARGET
+     71          #define PING_TARGET   (netif_default?netif_default->gw:ip_addr_any)
+     72          #endif
+     73          
+     74          /** ping receive timeout - in milliseconds */
+     75          #ifndef PING_RCV_TIMEO
+     76          #define PING_RCV_TIMEO 1000
+     77          #endif
+     78          
+     79          /** ping delay - in milliseconds */
+     80          #ifndef PING_DELAY
+     81          #define PING_DELAY     1000
+     82          #endif
+     83          
+     84          /** ping identifier - must fit on a u16_t */
+     85          #ifndef PING_ID
+     86          #define PING_ID        0xAFAF
+     87          #endif
+     88          
+     89          /** ping additional data size to include in the packet */
+     90          #ifndef PING_DATA_SIZE
+     91          #define PING_DATA_SIZE 32
+     92          #endif
+     93          
+     94          /** ping result action - no default action */
+     95          #ifndef PING_RESULT
+     96          #define PING_RESULT(ping_ok)
+     97          #endif
+     98          
+     99          /* ping variables */
+    100          static u32_t ping_done;
+    101          
+    102          static u32_t is_ping_ongoing = 0;
+    103          
+    104          #if !PING_USE_SOCKETS
+    105          static struct raw_pcb *ping_pcb;
+    106          #endif /* PING_USE_SOCKETS */
+    107          
+    108          typedef struct _ping_arg
+    109          {
+    110              u32_t count;
+    111              u32_t size;
+    112              ping_request_result_t callback;
+    113              u8_t addr[16];
+    114          } ping_arg_t;
+    115          ping_arg_t g_ping_arg;
+    116          
+    117          typedef struct _ping_static
+    118          {
+    119              u32_t ping_time;
+    120              u32_t ping_min_time;
+    121              u32_t ping_max_time;
+    122              u32_t ping_avg_time;
+    123              u32_t ping_done;
+    124              u32_t ping_lost_num;
+    125              u32_t ping_recv_num;
+    126              u32_t count;
+    127              u32_t size;
+    128              u16_t ping_seq_num;
+    129              u8_t addr[16];
+    130          } ping_static_t;
+    131          
+    132          #ifdef PING_MODULE_PRINTF
+    133          #define PING_LOGE(fmt,arg...)   printf(("[ping]: "fmt), ##arg)
+    134          #define PING_LOGW(fmt,arg...)   printf(("[ping]: "fmt), ##arg)
+    135          #define PING_LOGI(fmt,arg...)   printf(("[ping]: "fmt), ##arg)
+    136          #else
+    137          log_create_module(ping, PRINT_LEVEL_INFO);
+    138          #define PING_LOGE(fmt,arg...)   LOG_E(ping, "[ping]: "fmt,##arg)
+    139          #define PING_LOGW(fmt,arg...)   LOG_W(ping, "[ping]: "fmt,##arg)
+    140          #define PING_LOGI(fmt,arg...)   LOG_I(ping, "[ping]: "fmt,##arg)
+    141          #endif
+    142          
+    143          
+    144          /** Prepare a echo ICMP request */
+    145          static void
+    146          ping_prepare_echo( struct icmp_echo_hdr *iecho, u16_t len, ping_static_t *p_ping_static)
+    147          {
+    148              size_t i;
+    149              size_t data_len = len - sizeof(struct icmp_echo_hdr);
+    150          
+    151              ICMPH_TYPE_SET(iecho, ICMP_ECHO);
+    152              ICMPH_CODE_SET(iecho, 0);
+    153              iecho->chksum = 0;
+    154              iecho->id     = PING_ID;
+    155              (p_ping_static->ping_seq_num) = (p_ping_static->ping_seq_num) + 1;
+    156              iecho->seqno  = htons(p_ping_static->ping_seq_num);
+    157          
+    158              /* fill the additional data buffer with some data */
+    159              for(i = 0; i < data_len; i++)
+    160              {
+    161                  ((char*)iecho)[sizeof(struct icmp_echo_hdr) + i] = (char)i;
+    162              }
+    163          
+    164              iecho->chksum = inet_chksum(iecho, len);
+    165          }
+    166          
+    167          #if PING_USE_SOCKETS
+    168          
+    169          /* Ping using the socket ip */
+    170          static err_t
+    171          ping_send(int s, ip4_addr_t *addr, ping_static_t *p_ping_static)
+    172          {
+    173              int err;
+    174              struct icmp_echo_hdr *iecho;
+    175              struct sockaddr_in to;
+    176              size_t ping_size = sizeof(struct icmp_echo_hdr) + (p_ping_static->size);
+    177              LWIP_ASSERT("ping_size is too big", ping_size <= 0xffff);
+    178          
+    179              iecho = (struct icmp_echo_hdr *)mem_malloc((mem_size_t)ping_size);
+    180              if (!iecho)
+    181              {
+    182                  return ERR_MEM;
+    183              }
+    184          
+    185              ping_prepare_echo(iecho, (u16_t)ping_size, p_ping_static);
+    186          
+    187              PING_LOGI("ping: send seq(0x%04X) %"U16_F".%"U16_F".%"U16_F".%"U16_F,     \
+    188                                  p_ping_static->ping_seq_num,\
+    189                                  ip4_addr1_16(addr),         \
+    190                                  ip4_addr2_16(addr),         \
+    191                                  ip4_addr3_16(addr),         \
+    192                                  ip4_addr4_16(addr));
+    193          
+    194              to.sin_len = sizeof(to);
+    195              to.sin_family = AF_INET;
+    196              inet_addr_from_ipaddr(&to.sin_addr, addr);
+    197          
+    198              ping_done = 0;
+    199              err = lwip_sendto(s, iecho, ping_size, 0, (struct sockaddr*)&to, sizeof(to));
+    200          
+    201              mem_free(iecho);
+    202          
+    203              return (err ? ERR_OK : ERR_VAL);
+    204          }
+    205          
+    206          static void
+    207          ping_recv(int s, ip4_addr_t *addr, ping_static_t *p_ping_static)
+    208          {
+    209              char buf[64];
+    210              int fromlen, len;
+    211              struct sockaddr_in from;
+    212              struct ip_hdr *iphdr;
+    213              struct icmp_echo_hdr *iecho;
+    214          
+    215              fromlen = sizeof(struct sockaddr_in);
+    216              while((len = lwip_recvfrom(s, buf, sizeof(buf), 0, (struct sockaddr*)&from,
+    217                                         (socklen_t*)&fromlen)) > 0)
+    218              {
+    219                  if (len >= (int)(sizeof(struct ip_hdr) + sizeof(struct icmp_echo_hdr)))
+    220                  {
+    221                      ip4_addr_t fromaddr;
+    222                      u32_t cur_time = sys_now() - p_ping_static->ping_time;
+    223          
+    224                      inet_addr_to_ipaddr(&fromaddr, &from.sin_addr);
+    225                      /* LWIP_DEBUGF( PING_DEBUG, ("ping: recv ")); */
+    226                      iphdr = (struct ip_hdr *)buf;
+    227                      iecho = (struct icmp_echo_hdr *)(buf + (IPH_HL(iphdr) * 4));
+    228          
+    229                      /* ignore packet if it is not ping reply */
+    230                      if ((0 != (iecho->type)) || ((addr->addr) != (fromaddr.addr)))
+    231                      {
+    232                          if (cur_time > PING_RCV_TIMEO)
+    233                          {
+    234                              PING_LOGI("--- ping: timeout");
+    235                              p_ping_static->ping_lost_num = p_ping_static->ping_lost_num + 1;
+    236          
+    237                              return;
+    238                          }
+    239                          else
+    240                          {
+    241                              continue;
+    242                          }
+    243                      }
+    244          
+    245          
+    246                      if ((iecho->id == PING_ID) && (iecho->seqno == htons(p_ping_static->ping_seq_num)))
+    247                      {
+    248                          PING_LOGI("ping: recv seq(0x%04X) %"U16_F".%"U16_F".%"U16_F".%"U16_F", %"U32_F" ms", \
+    249                                              htons(iecho->seqno),             \
+    250                                              ip4_addr1_16(&fromaddr),         \
+    251                                              ip4_addr2_16(&fromaddr),         \
+    252                                              ip4_addr3_16(&fromaddr),         \
+    253                                              ip4_addr4_16(&fromaddr),         \
+    254                                              cur_time);
+    255          
+    256                          /* LWIP_DEBUGF( PING_DEBUG, (" %"U32_F" ms\n", (sys_now() - ping_time))); */
+    257                          if(p_ping_static->ping_min_time == 0 || p_ping_static->ping_min_time > cur_time)
+    258                          {
+    259                              p_ping_static->ping_min_time = cur_time;
+    260                          }
+    261                          if(p_ping_static->ping_max_time == 0 || p_ping_static->ping_max_time < cur_time)
+    262                          {
+    263                              p_ping_static->ping_max_time = cur_time;
+    264                          }
+    265                          p_ping_static->ping_avg_time = p_ping_static->ping_avg_time + cur_time;
+    266          
+    267                          ping_done = 1;
+    268                          p_ping_static->ping_recv_num = p_ping_static->ping_recv_num + 1;
+    269          
+    270                          /* do some ping result processing */
+    271                          PING_RESULT((ICMPH_TYPE(iecho) == ICMP_ER));
+    272                          return;
+    273                      }
+    274                      else
+    275                      {
+    276                          /* Treat ping ack received after timeout as success */
+    277                          p_ping_static->ping_recv_num = p_ping_static->ping_recv_num + 1;
+    278                          p_ping_static->ping_lost_num = p_ping_static->ping_lost_num - 1;
+    279                          PING_LOGI("ping: Get ping ACK seq(0x%04X), expected seq(0x%04X)", htons(iecho->seqno), p_ping_static->ping_seq_num);
+    280          
+    281                          /* Can not return, due to there could be ping ack which has matched sequence num. */
+    282                      }
+    283          
+    284                  }
+    285              }
+    286          
+    287              if (-1 ==len)
+    288              {
+    289                  PING_LOGI("ping: timeout");
+    290                  p_ping_static->ping_lost_num = p_ping_static->ping_lost_num + 1;
+    291              }
+    292          
+    293              /* do some ping result processing */
+    294              PING_RESULT(0);
+    295          }
+    296          
+    297          static void
+    298          ping_thread(void *arg)
+    299          {
+    300              int s;
+    301              //int timeout = PING_RCV_TIMEO;
+    302          
+    303              struct timeval timeout;
+    304          
+    305              ip4_addr_t ping_target;
+    306              u32_t residual_count = (((ping_arg_t *)arg)->count);
+    307              ping_request_result_t callback = ((ping_arg_t *)arg)->callback;
+    308              ping_static_t ping_static = {0};
+    309              ping_result_t ping_result = {0};
+    310          
+    311              timeout.tv_sec  = PING_RCV_TIMEO/1000; //set recvive timeout = 1(sec)
+    312              timeout.tv_usec = (PING_RCV_TIMEO%1000)*1000;
+    313          
+    314              if ((s = lwip_socket(AF_INET, SOCK_RAW, IP_PROTO_ICMP)) < 0)
+    315              {
+    316                  is_ping_ongoing = 0;
+    317                  vTaskDelete(NULL);
+    318              }
+    319          
+    320              lwip_setsockopt(s, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
+    321          
+    322              ip4addr_aton((const char *)(((ping_arg_t *)arg)->addr), &ping_target);
+    323              ping_static.size = (((ping_arg_t *)arg)->size);
+    324              ping_static.ping_seq_num = 0;
+    325              ping_static.count = (((ping_arg_t *)arg)->count);
+    326          
+    327              ping_static.ping_lost_num = 0;
+    328              ping_static.ping_recv_num = 0;
+    329              do
+    330              {
+    331          
+    332                  if (ping_send(s, &ping_target, &ping_static) == ERR_OK)
+    333                  {
+    334          #if 0
+    335                      LWIP_DEBUGF( PING_DEBUG, ("ping: send "));
+    336                      ip_addr_debug_print(PING_DEBUG, &ping_target);
+    337                      LWIP_DEBUGF( PING_DEBUG, ("\n"));
+    338          #endif
+    339                      ping_static.ping_time = sys_now();
+    340                      ping_recv(s, &ping_target, &ping_static);
+    341                  }
+    342                  else
+    343                  {
+    344                      LWIP_DEBUGF( PING_DEBUG, ("ping: send "));
+    345                      ip4_addr_debug_print(PING_DEBUG, &ping_target);
+    346                      PING_LOGI(" - error");
+    347                  }
+    348                  sys_msleep(PING_DELAY);
+    349          
+    350                  if (0 != (ping_static.count))
+    351                  {
+    352                      residual_count--;
+    353                  }
+    354                  else
+    355                  {
+    356                      residual_count = 1;
+    357                  }
+    358              }
+    359              while (residual_count > 0);
+    360              ping_static.ping_avg_time = (int)((ping_static.ping_avg_time)/ping_static.count);
+    361          
+    362              ping_result.min_time = (int)ping_static.ping_min_time;
+    363              ping_result.max_time = (int)ping_static.ping_max_time;
+    364              ping_result.avg_time = (int)ping_static.ping_avg_time;
+    365              ping_result.total_num = (int)ping_static.count;
+    366              ping_result.recv_num = (int)ping_static.ping_recv_num;
+    367              ping_result.lost_num = (int)ping_static.ping_lost_num;
+    368          
+    369              PING_LOGI("%"U16_F".%"U16_F".%"U16_F".%"U16_F", Packets: Sent = %d, Received =%d, Lost = %d (%d%% loss)",\
+    370                                  ip4_addr1_16(&ping_target),         \
+    371                                  ip4_addr2_16(&ping_target),         \
+    372                                  ip4_addr3_16(&ping_target),         \
+    373                                  ip4_addr4_16(&ping_target),         \
+    374                                  (int)ping_result.total_num,         \
+    375                                  (int)ping_result.recv_num,          \
+    376                                  (int)ping_result.lost_num,          \
+    377                                  (int)((ping_result.lost_num * 100)/ping_result.total_num));
+    378              PING_LOGI(" Packets: min = %d, max =%d, avg = %d", (int)ping_result.min_time, (int)ping_result.max_time, (int)ping_result.avg_time);
+    379              if(callback != NULL)
+    380              {
+    381                  callback(&ping_result);
+    382              }
+    383              lwip_close(s);
+    384              is_ping_ongoing = 0;
+    385              vTaskDelete(NULL);
+    386          }
+    387          
+    388          #endif //#if PING_USE_SOCKETS
+    389          
+    390          uint32_t get_ping_done()
+    391          {
+    392              return ping_done;
+    393          }
+    394          
+    395          void ping_init(uint32_t count, char *addr, uint8_t addr_len, uint32_t ping_size)
+    396          {
+    397              if(is_ping_ongoing == 1)
+    398              {
+    399                  PING_LOGI("Ping is onging, please try it later.");
+    400                  return;
+    401              }
+    402              is_ping_ongoing = 1;
+    403              g_ping_arg.count = count;
+    404              g_ping_arg.size = ping_size;
+    405              memset(g_ping_arg.addr, 0x0, sizeof(g_ping_arg.addr));
+    406              memcpy(g_ping_arg.addr, addr, addr_len);
+    407          
+    408          #if PING_USE_SOCKETS
+    409          
+    410              sys_thread_new(PING_TASK_NAME, ping_thread, (void *)(&g_ping_arg), PING_TASK_STACKSIZE / sizeof(portSTACK_TYPE), PING_TASK_PRIO);
+    411          
+    412          #else /* PING_USE_SOCKETS */
+    413              ping_raw_init();
+    414          #endif /* PING_USE_SOCKETS */
+    415          }
+    416          
+    417          
+    418          void ping_request(uint32_t count, char *addr, uint8_t addr_type, uint32_t ping_size, ping_request_result_t callback)
+    419          {
+    420              if(is_ping_ongoing == 1)
+    421              {
+    422                  PING_LOGI("Ping is onging, please try it later.");
+    423                  return;
+    424              }
+    425              is_ping_ongoing = 1;
+    426              g_ping_arg.count = count;
+    427              g_ping_arg.size = ping_size;
+    428              g_ping_arg.callback = callback;
+    429              if (addr_type == PING_IP_ADDR_V4)
+    430              {
+    431                  int addr_len;
+    432                  addr_len = strlen(addr);
+    433                  if(addr_len > 15)
+    434                  {
+    435                      addr_len = 15;
+    436                  }
+    437                  memset(g_ping_arg.addr, 0x0, sizeof(g_ping_arg.addr));
+    438                  memcpy(g_ping_arg.addr, addr, addr_len);
+    439              }
+    440              else
+    441              {
+    442                  PING_LOGI("Ping only support IPv4.");
+    443                  return;
+    444              }
+    445          #if PING_USE_SOCKETS
+    446          
+    447              sys_thread_new(PING_TASK_NAME, ping_thread, (void *)(&g_ping_arg), PING_TASK_STACKSIZE / sizeof(portSTACK_TYPE), PING_TASK_PRIO);
+    448          
+    449          #else /* PING_USE_SOCKETS */
+    450              ping_raw_init();
+    451          #endif /* PING_USE_SOCKETS */
+    452          }
+    453          
+    454          
+    455          #endif /* LWIP_RAW */
+    456          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   get_ping_done
+      24   ping_init
+        24   -- Indirect call
+        24   -> __aeabi_memcpy
+        24   -> __aeabi_memset4
+        24   -> sys_thread_new
+      16   ping_prepare_echo
+        16   -> inet_chksum
+        16   -> lwip_htons
+     144   ping_recv
+       144   -- Indirect call
+       144   -> lwip_htons
+       144   -> lwip_recvfrom
+       144   -> sys_now
+      24   ping_request
+        24   -- Indirect call
+        24   -> __aeabi_memcpy
+        24   -> __aeabi_memset4
+        24   -> strlen
+        24   -> sys_thread_new
+      72   ping_send
+        72   -- Indirect call
+        72   -> lwip_sendto
+        72   -> mem_free
+        72   -> mem_malloc
+        72   -> ping_prepare_echo
+        72   -> printf
+     152   ping_thread
+       152   -- Indirect call
+       152   -> __aeabi_memclr4
+       152   -> ip4addr_aton
+       152   -> lwip_close
+       152   -> lwip_setsockopt
+       152   -> lwip_socket
+       152   -> ping_recv
+       152   -> ping_send
+       152   -> sys_msleep
+       152   -> sys_now
+       152   -> vTaskDelete
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable27
+       4  ??DataTable27_1
+       8  ?_0
+      40  ?_1
+      24  ?_10
+      20  ?_11
+      84  ?_12
+      48  ?_13
+      48  ?_14
+      32  ?_15
+      24  ?_2
+      72  ?_3
+      48  ?_4
+      28  ?_5
+      56  ?_6
+      64  ?_7
+      24  ?_8
+      56  ?_9
+      52  g_ping_arg
+          log_control_block_ping
+          ping_done
+          is_ping_ongoing
+       6  get_ping_done
+      96  ping_init
+      66  ping_prepare_echo
+     370  ping_recv
+     142  ping_request
+     196  ping_send
+     348  ping_thread
+      64  -- Other
+
+ 
+    52 bytes in section .data
+    80 bytes in section .rodata
+ 1 892 bytes in section .text
+ 
+ 1 892 bytes of CODE  memory
+    80 bytes of CONST memory
+    52 bytes of DATA  memory
+
+Errors: none
+Warnings: 4

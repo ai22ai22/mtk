@@ -1,0 +1,438 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:29
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\iperf\src\iperf_cli.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW8739.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\iperf\src\iperf_cli.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\iperf_cli.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\iperf_cli.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\iperf\src\iperf_cli.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdio.h>
+     36          #include <stdint.h>
+     37          #include <stdlib.h>
+     38          
+     39          #include <iperf_cli.h>
+     40          #include "iperf_task.h"
+     41          #include "connsys_driver.h"
+     42          #include "task_def.h"
+     43          #include "syslog.h"
+     44          
+     45          #ifdef PING_MODULE_PRINTF
+     46          #define IPERF_LOGE(fmt,arg...)   printf(("\n[iperf]: "fmt), ##arg)
+     47          #define IPERF_LOGW(fmt,arg...)   printf(("\n[iperf]: "fmt), ##arg)
+     48          #define IPERF_LOGI(fmt,arg...)   printf(("\n[iperf]: "fmt), ##arg)
+     49          #else
+     50          #define IPERF_LOGE(fmt,arg...)   LOG_E(iperf, "[iperf]: "fmt,##arg)
+     51          #define IPERF_LOGW(fmt,arg...)   LOG_W(iperf, "[iperf]: "fmt,##arg)
+     52          #define IPERF_LOGI(fmt,arg...)   LOG_I(iperf, "[iperf]: "fmt,##arg)
+     53          #endif
+     54          
+     55          static uint8_t _cli_iperf_server(uint8_t len, char *param[])
+     56          {
+     57              int i;
+     58              char **g_iperf_param = NULL;
+     59              int is_create_task = 0;
+     60              int offset = IPERF_COMMAND_BUFFER_SIZE / sizeof(char *);
+     61              int udps_prio = 6;
+     62          
+     63              g_iperf_param = pvPortMalloc(IPERF_COMMAND_BUFFER_NUM * IPERF_COMMAND_BUFFER_SIZE);
+     64              if (g_iperf_param == NULL) {
+     65                  IPERF_LOGI("Warning: No enough memory to running iperf.");
+     66                  return 0;
+     67              }
+     68          
+     69          #if defined(IPERF_DEBUG_INTERNAL)
+     70              IPERF_LOGI("_cli_iperf_server, g_iperf_param = 0x%x, param = 0x%x", g_iperf_param, param);
+     71          #endif
+     72          
+     73              for (i = 0; i < 13 && i < len; i++) {
+     74                  strcpy((char *)&g_iperf_param[i * offset], param[i]);
+     75          #if defined(IPERF_DEBUG_INTERNAL)
+     76                  IPERF_LOGI("_cli_iperf_client, g_iperf_param[%d] is \"%s\"", i, (char *)&g_iperf_param[i * offset]);
+     77          #endif
+     78                  if (param[i][0] == 0 &&  param[i][1] == 0) {
+     79                      break;
+     80                  }
+     81              }
+     82          
+     83              for (i = 0; i < 13 && i < len; i++) {
+     84                  if (strcmp(param[i], "-u") == 0) {
+     85                      IPERF_LOGI("Iperf UDP Server: Start!");
+     86                      IPERF_LOGI("Iperf UDP Server Receive Timeout = 20 (secs)");
+     87                      xTaskCreate((TaskFunction_t)iperf_udp_run_server, IPERF_TASK_NAME, IPERF_TASK_STACKSIZE/ sizeof(portSTACK_TYPE), g_iperf_param, udps_prio , NULL);
+     88                      is_create_task = 1;
+     89                      break;
+     90                  }
+     91          
+     92              }
+     93          
+     94              if (0 == is_create_task) {
+     95                  IPERF_LOGI("Iperf TCP Server: Start!");
+     96                  IPERF_LOGI("Iperf TCP Server Receive Timeout = 20 (secs)");
+     97                  xTaskCreate((TaskFunction_t)iperf_tcp_run_server, IPERF_TASK_NAME, IPERF_TASK_STACKSIZE / sizeof(portSTACK_TYPE), g_iperf_param, IPERF_TASK_PRIO , NULL);
+     98                  is_create_task = 1;
+     99              }
+    100          
+    101              if (is_create_task == 0) {
+    102                  vPortFree(g_iperf_param);
+    103              }
+    104              return 0;
+    105          }
+    106          
+    107          static uint8_t _cli_iperf_client(uint8_t len, char *param[])
+    108          {
+    109              int i;
+    110              char **g_iperf_param = NULL;
+    111              int is_create_task = 0;
+    112              int offset = IPERF_COMMAND_BUFFER_SIZE / sizeof(char *);
+    113          
+    114              g_iperf_param = pvPortMalloc(IPERF_COMMAND_BUFFER_NUM * IPERF_COMMAND_BUFFER_SIZE);
+    115              if (g_iperf_param == NULL) {
+    116                  IPERF_LOGI("Warning: No enough memory to running iperf.");
+    117                  return 0;
+    118              }
+    119          
+    120              for (i = 0; i < 18 && i < len; i++) {
+    121                  strcpy((char *)&g_iperf_param[i * offset], param[i]);
+    122          
+    123          #if defined(IPERF_DEBUG_INTERNAL)
+    124                  IPERF_LOGI("_cli_iperf_client, g_iperf_param[%d] is \"%s\"", i, (char *)&g_iperf_param[i * offset]);
+    125          #endif
+    126          
+    127                  if (param[i][0] == 0 &&  param[i][1] == 0) {
+    128                      break;
+    129                  }
+    130              }
+    131          
+    132              for (i = 0; i < 18 && i < len; i++) {
+    133                  if (strcmp(param[i], "-u") == 0) {
+    134                      IPERF_LOGI("Iperf UDP Client: Start!");
+    135                      xTaskCreate((TaskFunction_t)iperf_udp_run_client, IPERF_TASK_NAME, IPERF_TASK_STACKSIZE / sizeof(portSTACK_TYPE), g_iperf_param, IPERF_TASK_PRIO , NULL);
+    136                      is_create_task = 1;
+    137                      break;
+    138                  }
+    139              }
+    140          
+    141              if (0 == is_create_task) {
+    142                  IPERF_LOGI("Iperf TCP Client: Start!");
+    143          #if (CFG_CONNSYS_TRX_BALANCE_EN == 1)
+    144                  xTaskCreate((TaskFunction_t)iperf_tcp_run_client, IPERF_TASK_NAME, IPERF_TASK_STACKSIZE / sizeof(portSTACK_TYPE), g_iperf_param, IPERF_TASK_PRIO , (TaskHandle_t *)&g_balance_ctr.tx_handle);
+    145          #else
+    146                  xTaskCreate((TaskFunction_t)iperf_tcp_run_client, IPERF_TASK_NAME, IPERF_TASK_STACKSIZE / sizeof(portSTACK_TYPE), g_iperf_param, IPERF_TASK_PRIO , NULL);
+    147          #endif
+    148                  is_create_task = 1;
+    149              }
+    150          
+    151              if (is_create_task == 0) {
+    152                  vPortFree(g_iperf_param);
+    153              }
+    154          
+    155              return 0;
+    156          }
+    157          
+    158          static uint8_t _cli_iperf_help(uint8_t len, char *param[])
+    159          {
+    160          
+    161              IPERF_LOGI("Usage: iperf [-s|-c] [options]");
+    162              IPERF_LOGI("       iperf [-h]\n");
+    163              IPERF_LOGI("Client/Server:");
+    164              IPERF_LOGI("  -u,        use UDP rather than TCP");
+    165              IPERF_LOGI("  -p,    #    server port to listen on/connect to (default 5001)");
+    166              IPERF_LOGI("  -n,    #[kmKM]    number of bytes to transmit ");
+    167              IPERF_LOGI("  -b,    #[kmKM]    for UDP, bandwidth to send at in bits/sec");
+    168              IPERF_LOGI("  -i,        10 seconds between periodic bandwidth reports \n");
+    169              IPERF_LOGI("Server specific:");
+    170              IPERF_LOGI("  -s,        run in server mode");
+    171              IPERF_LOGI("  -B,    <ip>    bind to <ip>, and join to a multicast group (only Support UDP)");
+    172              IPERF_LOGI("  -r,        for UDP, run iperf in tradeoff testing mode, connecting back to client\n");
+    173              IPERF_LOGI("Client specific:");
+    174              IPERF_LOGI("  -c,    <ip>    run in client mode, connecting to <ip>");
+    175              IPERF_LOGI("  -w,    #[kmKM]    TCP window size");
+    176              IPERF_LOGI("  -l,    #[kmKM]    UDP datagram size");
+    177              IPERF_LOGI("  -t,    #    time in seconds to transmit for (default 10 secs)");
+    178              IPERF_LOGI("  -S,    #    the type-of-service of outgoing packets\n");
+    179              IPERF_LOGI("Miscellaneous:");
+    180              IPERF_LOGI("  -h,        print this message and quit\n");
+    181              IPERF_LOGI("[kmKM] Indicates options that support a k/K or m/M suffix for kilo- or mega-\n");
+    182              IPERF_LOGI("TOS options for -S parameter:");
+    183              IPERF_LOGI("BE: -S 0");
+    184              IPERF_LOGI("BK: -S 32");
+    185              IPERF_LOGI("VI: -S 160");
+    186              IPERF_LOGI("VO: -S 224\n");
+    187              IPERF_LOGI("Tradeoff Testing Mode:");
+    188              IPERF_LOGI("Command: iperf -s -u -n <bits/bytes> -r \n");
+    189              IPERF_LOGI("Example:");
+    190              IPERF_LOGI("Iperf TCP Server: iperf -s");
+    191              IPERF_LOGI("Iperf UDP Server: iperf -s -u");
+    192              IPERF_LOGI("Iperf TCP Client: iperf -c <ip> -w <window size> -t <duration> -p <port>");
+    193              IPERF_LOGI("Iperf UDP Client: iperf -c <ip> -u -l <datagram size> -t <duration> -p <port>");
+    194              return 0;
+    195          }
+    196          
+    197          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    198          static uint8_t _cli_iperf_debug(uint8_t len, char *param[])
+    199          {
+    200              int debug;
+    201              debug = atoi(param[0]);
+    202              IPERF_LOGI("Set iperf debug to %d(0x%x)\n", debug, debug);
+    203              iperf_set_debug_mode(debug);
+    204              return 0;
+    205          }
+    206          #endif
+    207          
+    208          cmd_t iperf_cli[] = {
+    209              { "-s",        "iperf server",               _cli_iperf_server   },
+    210              { "-c",        "iperf client",               _cli_iperf_client   },
+    211              { "-h",                "help",               _cli_iperf_help     },
+    212          #if defined(MTK_IPERF_DEBUG_ENABLE)
+    213              { "-d",               "debug",               _cli_iperf_debug    },
+    214          #endif
+    215              { NULL }
+    216          
+    217          };
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   _cli_iperf_client
+        40   -- Indirect call
+        40   -> pvPortMalloc
+        40   -> strcmp
+        40   -> strcpy
+        40   -> vPortFree
+        40   -> xTaskGenericCreate
+      24   _cli_iperf_help
+        24   -- Indirect call
+      40   _cli_iperf_server
+        40   -- Indirect call
+        40   -> pvPortMalloc
+        40   -> strcmp
+        40   -> strcpy
+        40   -> vPortFree
+        40   -> xTaskGenericCreate
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable52
+       4  ??DataTable53
+       4  ??DataTable53_1
+       4  ??DataTable53_2
+       4  ??DataTable53_3
+       4  ??DataTable53_4
+       4  ?_0
+      16  ?_1
+       8  ?_10
+      36  ?_11
+      56  ?_12
+      36  ?_13
+      36  ?_14
+      40  ?_15
+      28  ?_16
+      24  ?_17
+      48  ?_18
+      76  ?_19
+       4  ?_2
+      60  ?_20
+      72  ?_21
+      72  ?_22
+      28  ?_23
+      44  ?_24
+      92  ?_25
+      96  ?_26
+      28  ?_27
+      68  ?_28
+      48  ?_29
+      16  ?_3
+      48  ?_30
+      76  ?_31
+      64  ?_32
+      24  ?_33
+      52  ?_34
+      88  ?_35
+      40  ?_36
+      20  ?_37
+      20  ?_38
+      20  ?_39
+       4  ?_4
+      24  ?_40
+      32  ?_41
+      52  ?_42
+      20  ?_43
+      36  ?_44
+      40  ?_45
+      84  ?_46
+      88  ?_47
+       8  ?_5
+      56  ?_6
+       4  ?_7
+      36  ?_8
+      56  ?_9
+     242  _cli_iperf_client
+     608  _cli_iperf_help
+     294  _cli_iperf_server
+      64  iperf_cli
+      56  -- Other
+
+ 
+    64 bytes in section .data
+    56 bytes in section .rodata
+ 3 196 bytes in section .text
+ 
+ 3 196 bytes of CODE  memory
+    56 bytes of CONST memory
+    64 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

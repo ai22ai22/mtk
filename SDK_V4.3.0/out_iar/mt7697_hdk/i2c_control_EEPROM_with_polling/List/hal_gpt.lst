@@ -1,0 +1,415 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       27/Jun/2017  22:46:49
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_gpt.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWDEC6.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_gpt.c -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\hal_examples\i2c_control_EEPROM_with_polling\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_gpt.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpt.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_gpt.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_gpt.h"
+     36          
+     37          #ifdef HAL_GPT_MODULE_ENABLED
+     38          #include <string.h>
+     39          #include "timer.h"
+     40          #include "gpt.h"
+     41          #include "hal_gpt.h"
+     42          #include "hal_log.h"
+     43          
+     44          
+     45          
+     46          typedef struct {
+     47              hal_gpt_callback_t callback;
+     48              void *user_data;
+     49          } hal_gpt_callback_context;
+     50          
+     51          typedef struct {
+     52              hal_gpt_running_status_t running_status;
+     53              hal_gpt_callback_context callback_context;
+     54              bool has_initlized;
+     55          } hal_gpt_context_t;
+     56          
+     57          #define HAL_GPT_DELAY_MS_PORT   HAL_GPT_2
+     58          #define HAL_GPT_DELAY_US_PORT   HAL_GPT_4
+     59          
+     60          
+     61          static hal_gpt_context_t g_gpt_context[HAL_GPT_MAX];
+     62          
+     63          static bool hal_gpt_is_port_valid(hal_gpt_port_t gpt_port)
+     64          {
+     65              if ((gpt_port < HAL_GPT_MAX) && (gpt_port != HAL_GPT_DELAY_MS_PORT)) {
+     66                  return true;
+     67              } else {
+     68                  return false;
+     69              }
+     70          }
+     71          
+     72          static uint32_t hal_gpt_translate_timeout_time(uint32_t mili_seconds)
+     73          {
+     74              return ((uint32_t)(mili_seconds * 32 + (7 * mili_seconds) / 10 + (6 * mili_seconds) / 100 + (8 * mili_seconds) / 1000));
+     75          }
+     76          
+     77          static bool hal_gpt_translate_type(hal_gpt_timer_type_t type)
+     78          {
+     79              return HAL_GPT_TIMER_TYPE_REPEAT == type;
+     80          }
+     81          
+     82          hal_gpt_status_t hal_gpt_init(hal_gpt_port_t gpt_port)
+     83          {
+     84              if (g_gpt_context[gpt_port].has_initlized != false) {
+     85                  return HAL_GPT_STATUS_ERROR;
+     86              }
+     87          
+     88              if (hal_gpt_is_port_valid(gpt_port) != true) {
+     89                  log_hal_error("Invalid port: %d.", gpt_port);
+     90                  return HAL_GPT_STATUS_ERROR_PORT;
+     91              }
+     92              memset(&g_gpt_context[gpt_port],
+     93                     0,
+     94                     sizeof(hal_gpt_context_t));
+     95          
+     96              g_gpt_context[gpt_port].has_initlized = true;
+     97          
+     98              return HAL_GPT_STATUS_OK;
+     99          }
+    100          
+    101          hal_gpt_status_t hal_gpt_deinit(hal_gpt_port_t gpt_port)
+    102          {
+    103              if (hal_gpt_is_port_valid(gpt_port) != true) {
+    104                  log_hal_error("Invalid port: %d.", gpt_port);
+    105                  return HAL_GPT_STATUS_ERROR_PORT;
+    106              }
+    107          
+    108              if (g_gpt_context[gpt_port].running_status != HAL_GPT_STOPPED) {
+    109                  log_hal_error("Should call  port: %d.", gpt_port);
+    110                  return HAL_GPT_STATUS_ERROR;
+    111              }
+    112          
+    113              memset(&g_gpt_context[gpt_port],
+    114                     0,
+    115                     sizeof(hal_gpt_context_t));
+    116              g_gpt_context[gpt_port].has_initlized = false;
+    117              return HAL_GPT_STATUS_OK;
+    118          }
+    119          
+    120          hal_gpt_status_t hal_gpt_get_free_run_count(hal_gpt_clock_source_t clock_source, uint32_t *count)
+    121          {
+    122              if (clock_source == HAL_GPT_CLOCK_SOURCE_32K) {
+    123                  if (g_gpt_context[HAL_GPT_DELAY_MS_PORT].running_status !=  HAL_GPT_RUNNING) {
+    124                      CM4_GPT2Init();
+    125                  }
+    126                  *count = get_current_count();
+    127                  g_gpt_context[HAL_GPT_2].running_status = HAL_GPT_RUNNING;
+    128              } else if (clock_source == HAL_GPT_CLOCK_SOURCE_1M) {
+    129                  if (g_gpt_context[HAL_GPT_DELAY_US_PORT].running_status !=  HAL_GPT_RUNNING) {
+    130                      CM4_GPT4Init();
+    131                  }
+    132                  *count = get_current_gpt4_count() / (top_mcu_freq_get() / 1000000);
+    133                  g_gpt_context[HAL_GPT_4].running_status = HAL_GPT_RUNNING;
+    134              } else if (clock_source == HAL_GPT_CLOCK_SOURCE_BUS) {
+    135                  if (g_gpt_context[HAL_GPT_DELAY_US_PORT].running_status !=  HAL_GPT_RUNNING) {
+    136                      CM4_GPT4Init();
+    137                  }
+    138                  *count = get_current_gpt4_count();
+    139                  g_gpt_context[HAL_GPT_4].running_status = HAL_GPT_RUNNING;
+    140              }else {
+    141                  log_hal_error("Invalid parameter: %d.", clock_source);
+    142                  return HAL_GPT_STATUS_INVALID_PARAMETER;
+    143              }
+    144          
+    145              return HAL_GPT_STATUS_OK;
+    146          }
+    147          
+    148          hal_gpt_status_t hal_gpt_get_duration_count(uint32_t start_count, uint32_t end_count, uint32_t *duration_count)
+    149          {
+    150              if (duration_count == NULL) {
+    151                  return HAL_GPT_STATUS_INVALID_PARAMETER;
+    152              }
+    153          
+    154              if (end_count > start_count) {
+    155                  *duration_count = end_count - start_count;
+    156              } else {
+    157          
+    158                  *duration_count = (0xffffffff - (start_count - end_count)) + 1;
+    159              }
+    160              return HAL_GPT_STATUS_OK;
+    161          }
+    162          
+    163          hal_gpt_status_t hal_gpt_get_running_status(hal_gpt_port_t gpt_port,
+    164                  hal_gpt_running_status_t *running_status)
+    165          {
+    166              if (gpt_port >= HAL_GPT_MAX) {
+    167                  log_hal_error("Invalid hal_gpt_stop_timer to stop port: %d.", gpt_port);
+    168                  return HAL_GPT_STATUS_ERROR_PORT;
+    169              }
+    170              *running_status = g_gpt_context[gpt_port].running_status;
+    171              return HAL_GPT_STATUS_OK;
+    172          }
+    173          
+    174          hal_gpt_status_t hal_gpt_register_callback(hal_gpt_port_t gpt_port,
+    175                  hal_gpt_callback_t callback,
+    176                  void *user_data)
+    177          {
+    178              if (hal_gpt_is_port_valid(gpt_port) != true) {
+    179                  log_hal_error("Invalid port: %d. Only port 0 or 1 works as timer.", gpt_port);
+    180                  return HAL_GPT_STATUS_ERROR_PORT;
+    181              }
+    182              if (g_gpt_context[gpt_port].has_initlized != true) {
+    183                  return HAL_GPT_STATUS_ERROR;
+    184              }
+    185              if (callback == NULL) {
+    186                  return HAL_GPT_STATUS_INVALID_PARAMETER;
+    187              }
+    188              g_gpt_context[gpt_port].callback_context.callback  = callback;
+    189              g_gpt_context[gpt_port].callback_context.user_data = user_data;
+    190              return HAL_GPT_STATUS_OK;
+    191          }
+    192          
+    193          static void hal_gpt_callback0(void)
+    194          {
+    195              hal_gpt_callback_context *context = &g_gpt_context[HAL_GPT_0].callback_context;
+    196              if (NULL != context->callback) {
+    197                  context->callback(context->user_data);
+    198              }
+    199              g_gpt_context[HAL_GPT_0].running_status = HAL_GPT_STOPPED;
+    200          }
+    201          
+    202          static void hal_gpt_callback1(void)
+    203          {
+    204              hal_gpt_callback_context *context = &g_gpt_context[HAL_GPT_1].callback_context;
+    205              if (NULL != context->callback) {
+    206                  context->callback(context->user_data);
+    207              }
+    208              g_gpt_context[HAL_GPT_1].running_status = HAL_GPT_STOPPED;
+    209          }
+    210          
+    211          typedef void (*hal_gpt_internal_callback_t)(void);
+    212          
+    213          static hal_gpt_internal_callback_t hal_gpt_map_callback(hal_gpt_port_t gpt_port)
+    214          {
+    215              return (HAL_GPT_0 == gpt_port) ? hal_gpt_callback0 : hal_gpt_callback1;
+    216          }
+    217          
+    218          hal_gpt_status_t hal_gpt_start_timer_ms(hal_gpt_port_t gpt_port, uint32_t timeout_time_ms, hal_gpt_timer_type_t timer_type)
+    219          {
+    220              if (hal_gpt_is_port_valid(gpt_port) != true) {
+    221                  log_hal_error("Invalid port: %d. Only port 0 or 1 works as timer.", gpt_port);
+    222                  return HAL_GPT_STATUS_ERROR_PORT;
+    223              }
+    224          
+    225              if (g_gpt_context[gpt_port].has_initlized != true) {
+    226                  return HAL_GPT_STATUS_ERROR;
+    227              }
+    228          
+    229              if (timeout_time_ms > HAL_GPT_MAXIMUM_MS_TIMER_TIME) {
+    230                  return HAL_GPT_STATUS_INVALID_PARAMETER;
+    231              }
+    232          
+    233              drvTMR_init((uint32_t)gpt_port,
+    234                          hal_gpt_translate_timeout_time(timeout_time_ms),
+    235                          hal_gpt_translate_type(timer_type),
+    236                          hal_gpt_map_callback(gpt_port));
+    237              TMR_Start((uint32_t)gpt_port);
+    238              g_gpt_context[gpt_port].running_status = HAL_GPT_RUNNING;
+    239              return HAL_GPT_STATUS_OK;
+    240          }
+    241          
+    242          hal_gpt_status_t hal_gpt_stop_timer(hal_gpt_port_t gpt_port)
+    243          {
+    244              if (hal_gpt_is_port_valid(gpt_port) != true) {
+    245                  log_hal_error("Invalid port: %d. Only port 0 or 1 works as timer.", gpt_port);
+    246                  return HAL_GPT_STATUS_ERROR_PORT;
+    247              }
+    248              TMR_Stop((uint32_t)(gpt_port));
+    249              g_gpt_context[gpt_port].running_status = HAL_GPT_STOPPED;
+    250              return HAL_GPT_STATUS_OK;
+    251          }
+    252          
+    253          hal_gpt_status_t hal_gpt_delay_ms(uint32_t ms)
+    254          {
+    255              if (g_gpt_context[HAL_GPT_DELAY_MS_PORT].running_status !=  HAL_GPT_RUNNING) {
+    256                  CM4_GPT2Init();
+    257              }
+    258              delay_ms(ms);
+    259              g_gpt_context[HAL_GPT_DELAY_MS_PORT].running_status = HAL_GPT_RUNNING;
+    260              return HAL_GPT_STATUS_OK;
+    261          }
+    262          
+    263          /*The max delay us time = 1/systemclock*0xffffffff */
+    264          hal_gpt_status_t hal_gpt_delay_us(uint32_t us)
+    265          {
+    266              if (g_gpt_context[HAL_GPT_DELAY_US_PORT].running_status !=  HAL_GPT_RUNNING) {
+    267                  CM4_GPT4Init();
+    268              }
+    269              delay_us(us);
+    270              g_gpt_context[HAL_GPT_DELAY_US_PORT].running_status = HAL_GPT_RUNNING;
+    271              return HAL_GPT_STATUS_OK;
+    272          }
+    273          
+    274          #endif
+    275          
+    276          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   hal_gpt_callback0
+         8   -- Indirect call
+       8   hal_gpt_callback1
+         8   -- Indirect call
+      16   hal_gpt_deinit
+        16   -> __aeabi_memset
+        16   -> hal_gpt_is_port_valid
+        16   -> log_hal_error_internal
+      16   hal_gpt_delay_ms
+        16   -> CM4_GPT2Init
+        16   -> delay_ms
+      16   hal_gpt_delay_us
+        16   -> CM4_GPT4Init
+        16   -> delay_us
+       4   hal_gpt_get_duration_count
+      24   hal_gpt_get_free_run_count
+        24   -> CM4_GPT2Init
+        24   -> CM4_GPT4Init
+        24   -> get_current_count
+        24   -> get_current_gpt4_count
+        24   -> log_hal_error_internal
+        24   -> top_mcu_freq_get
+       8   hal_gpt_get_running_status
+         8   -> log_hal_error_internal
+      16   hal_gpt_init
+        16   -> __aeabi_memset
+        16   -> hal_gpt_is_port_valid
+        16   -> log_hal_error_internal
+       0   hal_gpt_is_port_valid
+       0   hal_gpt_map_callback
+      24   hal_gpt_register_callback
+        24   -> hal_gpt_is_port_valid
+        24   -> log_hal_error_internal
+      32   hal_gpt_start_timer_ms
+        32   -> TMR_Start
+        32   -> drvTMR_init
+        32   -> hal_gpt_is_port_valid
+        32   -> hal_gpt_map_callback
+        32   -> hal_gpt_translate_timeout_time
+        32   -> hal_gpt_translate_type
+        32   -> log_hal_error_internal
+      16   hal_gpt_stop_timer
+        16   -> TMR_Stop
+        16   -> hal_gpt_is_port_valid
+        16   -> log_hal_error_internal
+       0   hal_gpt_translate_timeout_time
+       0   hal_gpt_translate_type
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable24
+       4  ??DataTable24_1
+       4  ??DataTable24_2
+       4  ??DataTable24_3
+       4  ??DataTable24_4
+      20  ?_0
+      24  ?_1
+      24  ?_2
+      48  ?_3
+      52  ?_4
+      80  g_gpt_context
+      20  hal_gpt_callback0
+      20  hal_gpt_callback1
+      86  hal_gpt_deinit
+      34  hal_gpt_delay_ms
+      34  hal_gpt_delay_us
+      22  hal_gpt_get_duration_count
+     142  hal_gpt_get_free_run_count
+      40  hal_gpt_get_running_status
+      70  hal_gpt_init
+      16  hal_gpt_is_port_valid
+      12  hal_gpt_map_callback
+      76  hal_gpt_register_callback
+     122  hal_gpt_start_timer_ms
+      52  hal_gpt_stop_timer
+      44  hal_gpt_translate_timeout_time
+      12  hal_gpt_translate_type
+     160  -- Other
+
+ 
+    80 bytes in section .bss
+ 1 150 bytes in section .text
+ 
+ 1 150 bytes of CODE memory
+    80 bytes of DATA memory
+
+Errors: none
+Warnings: none

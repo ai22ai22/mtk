@@ -1,0 +1,476 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:15
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\board\mt76x7_hdk\ept\src\bsp_gpio_ept_config.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW4E4F.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\board\mt76x7_hdk\ept\src\bsp_gpio_ept_config.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\bsp_gpio_ept_config.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\bsp_gpio_ept_config.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\board\mt76x7_hdk\ept\src\bsp_gpio_ept_config.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "hal_platform.h"
+     36          #include "bsp_gpio_ept_config.h"
+     37          #include "ept_gpio_drv.h"
+     38          
+     39          
+     40          #define GPIO_WriteReg(addr,data)    ((*(volatile uint32_t *)(addr)) = (uint32_t)(data))
+     41          #define GPIO_ReadReg(addr)          (*(volatile uint32_t *)(addr))
+     42          
+     43          
+     44          
+     45          
+     46          /* joint together the MACROs generated by EPT to 32-bits data as a result of the GPIO register is 32-bit,
+     47             the data will be written to corresponding register after jointed.
+     48          */
+     49          #define GPIO_HWORD_REG_VAL(name, port0, port1, port2, port3, port4, port5, port6, port7, port8, port9, port10, \
+     50          	                            port11, port12, port13, port14, port15, port16, port17, port18, port19, port20, port21, \
+     51                                         port22, port23, port24, port25, port26, port27, port28, port29, port30, port31)      \
+     52          ((GPIO_PORT##port0##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*0) & 0x1f)) | \
+     53          (GPIO_PORT##port1##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*1) & 0x1f)) |	\
+     54          (GPIO_PORT##port2##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*2) & 0x1f)) |   \
+     55          (GPIO_PORT##port3##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*3) & 0x1f)) |	\
+     56          (GPIO_PORT##port4##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*4) & 0x1f)) | \
+     57          (GPIO_PORT##port5##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*5) & 0x1f)) | 	\
+     58          (GPIO_PORT##port6##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*6) & 0x1f)) | \
+     59          ((uint32_t)(GPIO_PORT##port7##_##name)<<((GPIO_##name##_##ONE_CONTROL_BITS*7) & 0x1f)) | 	\
+     60          (GPIO_PORT##port8##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*8) & 0x1f)) | \
+     61          (GPIO_PORT##port9##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*9) & 0x1f)) |	\
+     62          (GPIO_PORT##port10##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*10) & 0x1f)) |\
+     63          (GPIO_PORT##port11##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*11) & 0x1f)) |	\
+     64          (GPIO_PORT##port12##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*12) & 0x1f)) | \
+     65          (GPIO_PORT##port13##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*13) & 0x1f)) | 	\
+     66          (GPIO_PORT##port14##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*14) & 0x1f)) | \
+     67          (GPIO_PORT##port15##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*15) & 0x1f)) | 	\
+     68          (GPIO_PORT##port16##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*16) & 0x1f)) | \
+     69          (GPIO_PORT##port17##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*17) & 0x1f)) |	\
+     70          (GPIO_PORT##port18##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*18) & 0x1f)) |	\
+     71          (GPIO_PORT##port19##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*19) & 0x1f)) |	\
+     72          (GPIO_PORT##port20##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*20) & 0x1f)) | \
+     73          (GPIO_PORT##port21##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*21) & 0x1f)) | 	\
+     74          (GPIO_PORT##port22##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*22) & 0x1f)) | \
+     75          (GPIO_PORT##port23##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*23) & 0x1f)) | 	\
+     76          (GPIO_PORT##port24##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*24) & 0x1f)) | \
+     77          (GPIO_PORT##port25##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*25) & 0x1f)) |	\
+     78          (GPIO_PORT##port26##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*26) & 0x1f)) |	\
+     79          (GPIO_PORT##port27##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*27) & 0x1f)) |	\
+     80          (GPIO_PORT##port28##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*28) & 0x1f)) | \
+     81          (GPIO_PORT##port29##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*29) & 0x1f)) | 	\
+     82          (GPIO_PORT##port30##_##name<<((GPIO_##name##_##ONE_CONTROL_BITS*30) & 0x1f)) | \
+     83          ((uint32_t)(GPIO_PORT##port31##_##name)<<((GPIO_##name##_##ONE_CONTROL_BITS*31) & 0x1f) ))
+     84          
+     85          
+     86          
+     87          
+     88          /**
+     89             * @brief write the joint data about GPIO mode to GPIO mode register one by one.
+     90            * @param  None
+     91            * @retval None
+     92            */
+     93          void gpio_mode_init(void)
+     94          {
+     95              uint32_t i;
+     96          
+     97          #ifdef GPIO_MODE_REG_MAX_NUM
+     98              uint32_t mode_temp[GPIO_MODE_REG_MAX_NUM + 1] = { GPIO_MODE_ALL_VALUE };
+     99          
+    100              for (i = 0; i <= GPIO_MODE_REG_MAX_NUM; i++) {
+    101                  GPIO_WriteReg(IOT_GPIO_PINMUX(i), mode_temp[i]);
+    102          
+    103              }
+    104          #endif
+    105          
+    106          }
+    107          
+    108          
+    109          /**
+    110             * @brief write the joint data about GPIO output enable configuration to GPIO output enable register one by one.
+    111            * @param  None
+    112            * @retval None
+    113            */
+    114          void gpio_oe_init(void)
+    115          {
+    116              uint32_t i;
+    117          
+    118          #ifdef GPIO_OE_REG_MAX_NUM
+    119              uint32_t oe_temp[GPIO_OE_REG_MAX_NUM + 1] = { GPIO_OE_ALL_VALUE };
+    120          
+    121              for (i = 0; i <= GPIO_OE_REG_MAX_NUM; i++) {
+    122                  GPIO_WriteReg(IOT_GPIO_OE(i), oe_temp[i]);
+    123              }
+    124          #endif
+    125          }
+    126          
+    127          
+    128          /**
+    129             * @brief write the joint data about GPIO input enable configuration to GPIO input enable register one by one.
+    130            * @param  None
+    131            * @retval None
+    132            */
+    133          void gpio_ies_init(void)
+    134          {
+    135              uint32_t i;
+    136          
+    137          #ifdef GPIO_IES_REG_MAX_NUM
+    138              uint32_t ies_temp[GPIO_IES_REG_MAX_NUM + 1] = { GPIO_IES_ALL_VALUE };
+    139          
+    140              for (i = 0; i <= GPIO_IES_REG_MAX_NUM; i++) {
+    141                  GPIO_WriteReg(IOT_GPIO_IES(i), ies_temp[i]);
+    142              }
+    143          
+    144              /* Configure GPIO27 */
+    145              GPIO_ReadReg(GPIO_SDIO_CLK) &= ~(0x2);
+    146              GPIO_ReadReg(GPIO_SDIO_CLK) |= (GPIO_PORT27_IES << 1);
+    147              GPIO_ReadReg(GPIO_SDIO_CLK) |= (1 << 11);
+    148          
+    149              /* Configure GPIO28 */
+    150              GPIO_ReadReg(GPIO_SDIO_CMD) &= ~(0x2);
+    151              GPIO_ReadReg(GPIO_SDIO_CMD) |= (GPIO_PORT28_IES << 1);
+    152              GPIO_ReadReg(GPIO_SDIO_CMD) |= (1 << 11);
+    153          
+    154              /* Configure GPIO29 */
+    155              GPIO_ReadReg(GPIO_SDIO_DATA3) &= ~(0x2);
+    156              GPIO_ReadReg(GPIO_SDIO_DATA3) |= (GPIO_PORT29_IES << 1);
+    157              GPIO_ReadReg(GPIO_SDIO_DATA3) |= (1 << 11);
+    158          
+    159              /* Configure GPIO30 */
+    160              GPIO_ReadReg(GPIO_SDIO_DATA2) &= ~(0x2);
+    161              GPIO_ReadReg(GPIO_SDIO_DATA2) |= (GPIO_PORT30_IES << 1);
+    162              GPIO_ReadReg(GPIO_SDIO_DATA2) |= (1 << 11);
+    163          
+    164              /* Configure GPIO31 */
+    165              GPIO_ReadReg(GPIO_SDIO_DATA1) &= ~(0x2);
+    166              GPIO_ReadReg(GPIO_SDIO_DATA1) |= (GPIO_PORT31_IES << 1);
+    167              GPIO_ReadReg(GPIO_SDIO_DATA1) |= (1 << 11);
+    168          
+    169              /* Configure GPIO32 */
+    170              GPIO_ReadReg(GPIO_SDIO_DATA0) &= ~(0x2);
+    171              GPIO_ReadReg(GPIO_SDIO_DATA0) |= (GPIO_PORT32_IES << 1);
+    172              GPIO_ReadReg(GPIO_SDIO_DATA0) |= (1 << 11);
+    173          #endif
+    174          }
+    175          
+    176          
+    177          /**
+    178             * @brief write the joint data about GPIO pull-up configuration to GPIO pull-up register one by one.
+    179            * @param  None
+    180            * @retval None
+    181            */
+    182          void gpio_pull_up_init(void)
+    183          {
+    184              uint32_t i;
+    185          
+    186          #ifdef GPIO_PULL_UP_REG_MAX_NUM
+    187              uint32_t pull_up_temp[GPIO_PULL_UP_REG_MAX_NUM + 1] = { GPIO_PULL_UP_ALL_VALUE };
+    188          
+    189              for (i = 0; i <= GPIO_PULL_UP_REG_MAX_NUM; i++) {
+    190                  GPIO_WriteReg(IOT_GPIO_PULL_UP(i), pull_up_temp[i]);
+    191              }
+    192          
+    193              /* Configure GPIO27 */
+    194              GPIO_ReadReg(GPIO_SDIO_CLK) &= ~(0x7 << 2);
+    195              if (GPIO_PORT27_PULL_UP) {
+    196                  GPIO_ReadReg(GPIO_SDIO_CLK) |= 0x804;
+    197              } else if (GPIO_PORT27_PULL_DOWN) {
+    198                  GPIO_ReadReg(GPIO_SDIO_CLK) |= 0x814;
+    199              }
+    200          
+    201              /* Configure GPIO28 */
+    202              GPIO_ReadReg(GPIO_SDIO_CMD) &= ~(0x7 << 2);
+    203              if (GPIO_PORT28_PULL_UP) {
+    204                  GPIO_ReadReg(GPIO_SDIO_CMD) |= 0x804;
+    205              } else if (GPIO_PORT28_PULL_DOWN) {
+    206                  GPIO_ReadReg(GPIO_SDIO_CMD) |= 0x814;
+    207              }
+    208          
+    209              /* Configure GPIO29 */
+    210              GPIO_ReadReg(GPIO_SDIO_DATA3) &= ~(0x7 << 2);
+    211              if (GPIO_PORT29_PULL_UP) {
+    212                  GPIO_ReadReg(GPIO_SDIO_DATA3) |= 0x804;
+    213              } else if (GPIO_PORT29_PULL_DOWN) {
+    214                  GPIO_ReadReg(GPIO_SDIO_DATA3) |= 0x814;
+    215              }
+    216          
+    217              /* Configure GPIO30 */
+    218              GPIO_ReadReg(GPIO_SDIO_DATA2) &= ~(0x7 << 2);
+    219              if (GPIO_PORT30_PULL_UP) {
+    220                  GPIO_ReadReg(GPIO_SDIO_DATA2) |= 0x804;
+    221              } else if (GPIO_PORT30_PULL_DOWN) {
+    222                  GPIO_ReadReg(GPIO_SDIO_DATA2) |= 0x814;
+    223              }
+    224          
+    225              /* Configure GPIO31 */
+    226              GPIO_ReadReg(GPIO_SDIO_DATA1) &= ~(0x7 << 2);
+    227              if (GPIO_PORT31_PULL_UP) {
+    228                  GPIO_ReadReg(GPIO_SDIO_DATA1) |= 0x804;
+    229              } else if (GPIO_PORT31_PULL_DOWN) {
+    230                  GPIO_ReadReg(GPIO_SDIO_DATA1) |= 0x814;
+    231              }
+    232          
+    233              /* Configure GPIO32 */
+    234              GPIO_ReadReg(GPIO_SDIO_DATA0) &= ~(0x7 << 2);
+    235              if (GPIO_PORT32_PULL_UP) {
+    236                  GPIO_ReadReg(GPIO_SDIO_DATA0) |= 0x804;
+    237              } else if (GPIO_PORT32_PULL_DOWN) {
+    238                  GPIO_ReadReg(GPIO_SDIO_DATA0) |= 0x814;
+    239              }
+    240          #endif
+    241          }
+    242          
+    243          
+    244          
+    245          /**
+    246             * @brief write the joint data about GPIO pull-down configuration to GPIO pull-down register one by one.
+    247            * @param  None
+    248            * @retval None
+    249            */
+    250          void gpio_pull_down_init(void)
+    251          {
+    252              uint32_t i;
+    253          
+    254          #ifdef GPIO_PULL_DOWN_REG_MAX_NUM
+    255              uint32_t pull_down_temp[GPIO_PULL_DOWN_REG_MAX_NUM + 1] = { GPIO_PULL_DOWN_ALL_VALUE };
+    256          
+    257              for (i = 0; i <= GPIO_PULL_DOWN_REG_MAX_NUM; i++) {
+    258                  GPIO_WriteReg(IOT_GPIO_PULL_DOWN(i), pull_down_temp[i]);
+    259              }
+    260          #endif
+    261          }
+    262          
+    263          
+    264          /**
+    265             * @brief write the joint data about GPIO output data to GPIO output data register one by one.
+    266            * @param  None
+    267            * @retval None
+    268            */
+    269          void gpio_output_init(void)
+    270          {
+    271              uint32_t i;
+    272          
+    273          #ifdef GPIO_OUTPUT_REG_MAX_NUM
+    274              uint32_t output_temp[GPIO_OUTPUT_REG_MAX_NUM + 1] = { GPIO_OUTPUT_ALL_VALUE };
+    275          
+    276              for (i = 0; i <= GPIO_OUTPUT_REG_MAX_NUM; i++) {
+    277                  GPIO_WriteReg(IOT_GPIO_OUTPUT(i), output_temp[i]);
+    278              }
+    279          
+    280          #endif
+    281          }
+    282          
+    283          
+    284          /**
+    285            * @brief  Main program to make the configuration of EPT to take effect
+    286            * @param  None
+    287            * @retval None
+    288            */
+    289          void bsp_ept_gpio_setting_init(void)
+    290          {
+    291              gpio_mode_init();
+    292              gpio_oe_init();
+    293              gpio_ies_init();
+    294              gpio_pull_up_init();
+    295              gpio_pull_down_init();
+    296              gpio_output_init();
+    297          }
+    298          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   bsp_ept_gpio_setting_init
+         8   -> gpio_ies_init
+         8   -> gpio_mode_init
+         8   -> gpio_oe_init
+         0   -> gpio_output_init
+         8   -> gpio_pull_down_init
+         8   -> gpio_pull_up_init
+      16   gpio_ies_init
+      48   gpio_mode_init
+        48   -> __aeabi_memcpy4
+      16   gpio_oe_init
+      12   gpio_output_init
+      16   gpio_pull_down_init
+      16   gpio_pull_up_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+      40  ?_0
+      12  ?_1
+      12  ?_2
+      12  ?_3
+      12  ?_4
+      12  ?_5
+      28  bsp_ept_gpio_setting_init
+     174  gpio_ies_init
+      44  gpio_mode_init
+      44  gpio_oe_init
+      42  gpio_output_init
+      44  gpio_pull_down_init
+      94  gpio_pull_up_init
+
+ 
+  12 bytes in section .rodata
+ 586 bytes in section .text
+ 
+ 586 bytes of CODE  memory
+  12 bytes of CONST memory
+
+Errors: none
+Warnings: none

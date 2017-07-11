@@ -1,0 +1,639 @@
+###############################################################################
+#                                                                             #
+#     IAR Assembler V8.11.2.13589/W32 for ARM 28/Jun/2017  11:27:12           #
+#     Copyright 1999-2017 IAR Systems AB.                                     #
+#                                                                             #
+#           Source file   =  C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\portasm.s#
+#           List file     =  C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\portasm.lst#
+#           Object file   =  C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\portasm.o#
+#           Command line  =  -f C:\Users\leo\AppData\Local\Temp\EW43D2.tmp    #
+#                            (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\portasm.s #
+#                            -OC:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj #
+#                            -s+ -M<> -w+ -r                                  #
+#                            -LC:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List #
+#                            -cO -i -t8 --cpu Cortex-M4 --fpu VFPv4_sp        #
+#                            -IC:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\) #
+#                                                                             #
+###############################################################################
+
+    1                           /*
+    2                               FreeRTOS V8.2.0 - Copyright (C) 2015 Real
+                                 Time Engineers Ltd.
+    3                               All rights reserved
+    4                           
+    5                               VISIT http://www.FreeRTOS.org TO ENSURE
+                                 YOU ARE USING THE LATEST VERSION.
+    6                           
+    7                               This file is part of the FreeRTOS
+                                 distribution.
+    8                           
+    9                               FreeRTOS is free software; you can
+                                 redistribute it and/or modify it under
+   10                               the terms of the GNU General Public
+                                 License (version 2) as published by the
+   11                               Free Software Foundation >>!AND MODIFIED
+                                 BY!<< the FreeRTOS exception.
+   12                           
+   13                                   **************************************
+                                *************************************
+   14                               >>!   NOTE: The modification to the GPL is
+                                 included to allow you to     !<<
+   15                               >>!   distribute a combined work that
+                                 includes FreeRTOS without being   !<<
+   16                               >>!   obliged to provide the source code
+                                 for proprietary components     !<<
+   17                               >>!   outside of the FreeRTOS kernel.     
+                                                              !<<
+   18                                   **************************************
+                                *************************************
+   19                           
+   20                               FreeRTOS is distributed in the hope that
+                                 it will be useful, but WITHOUT ANY
+   21                               WARRANTY; without even the implied
+                                 warranty of MERCHANTABILITY or FITNESS
+   22                               FOR A PARTICULAR PURPOSE.  Full license
+                                 text is available on the following
+   23                               link: http://www.freertos.org/a00114.html
+   24                           
+   25                               ******************************************
+                                *********************************
+   26                                *                                        
+                                                               *
+   27                                *    FreeRTOS provides completely free
+                                 yet professionally developed,    *
+   28                                *    robust, strictly quality controlled,
+                                 supported, and cross          *
+   29                                *    platform software that is more than
+                                 just the market leader, it     *
+   30                                *    is the industry's de facto standard.
+                                                               *
+   31                                *                                        
+                                                               *
+   32                                *    Help yourself get started quickly
+                                 while simultaneously helping     *
+   33                                *    to support the FreeRTOS project by
+                                 purchasing a FreeRTOS           *
+   34                                *    tutorial book, reference manual, or
+                                 both:                          *
+   35                                *    http://www.FreeRTOS.org/Documentatio
+                                n                              *
+   36                                *                                        
+                                                               *
+   37                               ******************************************
+                                *********************************
+   38                           
+   39                               http://www.FreeRTOS.org/FAQHelp.html -
+                                 Having a problem?  Start by reading
+   40                                   the FAQ page "My application does not
+                                 run, what could be wrong?".  Have you
+   41                                   defined configASSERT()?
+   42                           
+   43                                   http://www.FreeRTOS.org/support - In
+                                 return for receiving this top quality
+   44                                   embedded software for free we request
+                                 you assist our global community by
+   45                                   participating in the support
+                                 forum.
+   46                           
+   47                                   http://www.FreeRTOS.org/training -
+                                 Investing in training allows your team
+                                 to
+   48                                   be as productive as possible as early
+                                 as possible.  Now you can receive
+   49                                   FreeRTOS training directly from
+                                 Richard Barry, CEO of Real Time Engineers
+   50                                   Ltd, and the world's leading authority
+                                 on the world's leading RTOS.
+   51                           
+   52                               http://www.FreeRTOS.org/plus - A selection
+                                 of FreeRTOS ecosystem products,
+   53                               including FreeRTOS+Trace - an indispensabl
+                                e productivity tool, a DOS
+   54                               compatible FAT file system, and our tiny
+                                 thread aware UDP/IP stack.
+   55                           
+   56                               http://www.FreeRTOS.org/labs - Where new
+                                 FreeRTOS products go to incubate.
+   57                               Come and try FreeRTOS+TCP, our new open
+                                 source TCP/IP stack for FreeRTOS.
+   58                           
+   59                               http://www.OpenRTOS.com - Real Time
+                                 Engineers ltd. license FreeRTOS to High
+   60                               Integrity Systems ltd. to sell under the
+                                 OpenRTOS brand.  Low cost OpenRTOS
+   61                               licenses offer ticketed support,
+                                 indemnification and commercial middleware.
+   62                           
+   63                               http://www.SafeRTOS.com - High Integrity
+                                 Systems also provide a safety
+   64                               engineered and independently SIL3
+                                 certified version for use in safety and
+   65                               mission critical applications that require
+                                 provable dependability.
+   66                           
+   67                               1 tab == 4 spaces!
+   68                           */
+   69                           
+   70                           #include <FreeRTOSConfig.h>
+    1                           /*
+    2                               FreeRTOS V8.0.1 - Copyright (C) 2014 Real
+                                 Time Engineers Ltd.
+    3                               All rights reserved
+    4                           
+    5                               VISIT http://www.FreeRTOS.org TO ENSURE
+                                 YOU ARE USING THE LATEST VERSION.
+    6                           
+    7                               ******************************************
+                                *********************************
+    8                                *                                        
+                                                               *
+    9                                *    FreeRTOS provides completely free
+                                 yet professionally developed,    *
+   10                                *    robust, strictly quality controlled,
+                                 supported, and cross          *
+   11                                *    platform software that has become a
+                                 de facto standard.             *
+   12                                *                                        
+                                                               *
+   13                                *    Help yourself get started quickly
+                                 and support the FreeRTOS         *
+   14                                *    project by purchasing a FreeRTOS
+                                 tutorial book, reference          *
+   15                                *    manual, or both from: http://www.Fre
+                                eRTOS.org/Documentation        *
+   16                                *                                        
+                                                               *
+   17                                *    Thank you!                          
+                                                               *
+   18                                *                                        
+                                                               *
+   19                               ******************************************
+                                *********************************
+   20                           
+   21                               This file is part of the FreeRTOS
+                                 distribution.
+   22                           
+   23                               FreeRTOS is free software; you can
+                                 redistribute it and/or modify it under
+   24                               the terms of the GNU General Public
+                                 License (version 2) as published by the
+   25                               Free Software Foundation >>!AND MODIFIED
+                                 BY!<< the FreeRTOS exception.
+   26                           
+   27                               >>!   NOTE: The modification to the GPL is
+                                 included to allow you to     !<<
+   28                               >>!   distribute a combined work that
+                                 includes FreeRTOS without being   !<<
+   29                               >>!   obliged to provide the source code
+                                 for proprietary components     !<<
+   30                               >>!   outside of the FreeRTOS kernel.     
+                                                              !<<
+   31                           
+   32                               FreeRTOS is distributed in the hope that
+                                 it will be useful, but WITHOUT ANY
+   33                               WARRANTY; without even the implied
+                                 warranty of MERCHANTABILITY or FITNESS
+   34                               FOR A PARTICULAR PURPOSE.  Full license
+                                 text is available from the following
+   35                               link: http://www.freertos.org/a00114.html
+   36                           
+   37                               1 tab == 4 spaces!
+   38                           
+   39                               ******************************************
+                                *********************************
+   40                                *                                        
+                                                               *
+   41                                *    Having a problem?  Start by reading
+                                 the FAQ "My application does   *
+   42                                *    not run, what could be wrong?"      
+                                                               *
+   43                                *                                        
+                                                               *
+   44                                *    http://www.FreeRTOS.org/FAQHelp.html
+                                                               *
+   45                                *                                        
+                                                               *
+   46                               ******************************************
+                                *********************************
+   47                           
+   48                               http://www.FreeRTOS.org - Documentation,
+                                 books, training, latest versions,
+   49                               license and Real Time Engineers Ltd.
+                                 contact details.
+   50                           
+   51                               http://www.FreeRTOS.org/plus - A selection
+                                 of FreeRTOS ecosystem products,
+   52                               including FreeRTOS+Trace - an indispensabl
+                                e productivity tool, a DOS
+   53                               compatible FAT file system, and our tiny
+                                 thread aware UDP/IP stack.
+   54                           
+   55                               http://www.OpenRTOS.com - Real Time
+                                 Engineers ltd license FreeRTOS to High
+   56                               Integrity Systems to sell under the
+                                 OpenRTOS brand.  Low cost OpenRTOS
+   57                               licenses offer ticketed support,
+                                 indemnification and middleware.
+   58                           
+   59                               http://www.SafeRTOS.com - High Integrity
+                                 Systems also provide a safety
+   60                               engineered and independently SIL3
+                                 certified version for use in safety and
+   61                               mission critical applications that require
+                                 provable dependability.
+   62                           
+   63                               1 tab == 4 spaces!
+   64                           */
+   65                           
+   66                           
+   67                           #ifndef FREERTOS_CONFIG_H
+   68                           #define FREERTOS_CONFIG_H
+   69                           
+   70                           /*--------------------------------------------
+                                ---------------
+   71                            * Application specific definitions.
+   72                            *
+   73                            * These definitions should be adjusted for
+                                 your particular hardware and
+   74                            * application requirements.
+   75                            *
+   76                            * THESE PARAMETERS ARE DESCRIBED WITHIN THE
+                                 'CONFIGURATION' SECTION OF THE
+   77                            * FreeRTOS API DOCUMENTATION AVAILABLE ON THE
+                                 FreeRTOS.org WEB SITE.
+   78                            *
+   79                            * See http://www.freertos.org/a00110.html.
+   80                            *--------------------------------------------
+                                --------------*/
+   81                           
+   82                           /* Ensure stdint is only used by the compiler,
+                                 and not the assembler. */
+   83                           /*These definitions are IAR, Keil and GCC
+                                 compiler option, the sections in this scope
+                                 will not be compiled by Assembler. This module
+                                 can not be disabled.*/
+   84                           #if defined(__ICCARM__) || defined(__CC_ARM)
+                                 || defined(__GNUC__)
+   85                           #include <stdint.h>
+   86                           #include <stdio.h>
+   87                           #include "os_port_callback.h"
+   88                           #include "os_trace_callback.h"
+   91                           #endif
+   92                           
+   93                           
+   94                           #define configUSE_PREEMPTION           
+                                 1
+   95                           #define configUSE_IDLE_HOOK            
+                                 0
+   96                           #define configUSE_TICK_HOOK            
+                                 0
+   97                           #define configCPU_CLOCK_HZ              (
+                                 SystemCoreClock )
+   98                           #define configTICK_RATE_HZ              ( (
+                                 TickType_t ) 1000 )
+   99                           #define configMAX_PRIORITIES            ( 20
+                                 )
+  100                           #define configMINIMAL_STACK_SIZE        ( (
+                                 unsigned short ) 256 )
+  101                           /*This option is to enable homekit under
+                                 middleware/MTK/homekit folder. If the
+                                 MTK_HOMEKIT_ENABLE compile option is defined,
+                                 the sources and header files under middleware/
+                                MTK/homekit/inc be included by middleware/MTK/h
+                                omekit/MakeFile.*/
+  102                           #if defined(MTK_HOMEKIT_ENABLE)
+  103                           #define configTOTAL_HEAP_SIZE           ( (
+                                 size_t ) ( 140 * 1024 ) )
+  104                           #else
+  105                           #define configTOTAL_HEAP_SIZE           ( (
+                                 size_t ) ( 80 * 1024 ) )
+  106                           #endif
+  107                           
+  108                           #define configMAX_TASK_NAME_LEN         ( 6
+                                 )
+  109                           #define configUSE_TRACE_FACILITY       
+                                 1
+  110                           #define configUSE_16_BIT_TICKS         
+                                 0
+  111                           #define configIDLE_SHOULD_YIELD        
+                                 1
+  112                           #define configUSE_MUTEXES              
+                                 1
+  113                           #define configQUEUE_REGISTRY_SIZE      
+                                 8
+  114                           #define configCHECK_FOR_STACK_OVERFLOW 
+                                 2
+  115                           #define configUSE_RECURSIVE_MUTEXES    
+                                 1
+  116                           #define configUSE_MALLOC_FAILED_HOOK   
+                                 0
+  117                           #define configUSE_APPLICATION_TASK_TAG 
+                                 0
+  118                           #define configUSE_COUNTING_SEMAPHORES  
+                                 1
+  119                           #define configUSE_TICKLESS_IDLE        
+                                 2
+  120                           #define configTICKLESS_DYNAMIC_ENABLE  
+                                 1
+  121                           
+  122                           //#define configUSE_PORT_OPTIMISED_TASK_SELECT
+                                ION 1
+  123                           #define configUSE_STATS_FORMATTING_FUNCTIONS
+                                 1
+  124                           
+  125                           /*MTK_OS_CPU_UTILIZATION_ENABLE: This
+                                 definition determines whether enable CPU
+                                 utilization profiling feature, if enabled, can
+                                 use AT command on MT25x3 or CLI command on
+                                 MT76x7 to do CPU utilization profiling.*/
+  126                           #if defined(MTK_OS_CPU_UTILIZATION_ENABLE)
+  130                           #define configGENERATE_RUN_TIME_STATS  
+                                 1
+  131                           #define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS
+                                () vConfigureTimerForRunTimeStats()
+  132                           #define portGET_RUN_TIME_COUNTER_VALUE()
+                                 ulGetRunTimeCounterValue()
+  133                           #endif
+  134                           
+  135                           /* Co-routine definitions. */
+  136                           #define configUSE_CO_ROUTINES       0
+  137                           #define configMAX_CO_ROUTINE_PRIORITIES ( 2
+                                 )
+  138                           
+  139                           /* Software timer definitions. */
+  140                           #define configUSE_TIMERS               
+                                 1
+  141                           #define configTIMER_TASK_PRIORITY       (
+                                 configMAX_PRIORITIES - 1 )
+  142                           #define configTIMER_QUEUE_LENGTH       
+                                 10
+  143                           #define configTIMER_TASK_STACK_DEPTH    (
+                                 configMINIMAL_STACK_SIZE * 2 )
+  144                           
+  145                           /* Set the following definitions to 1 to
+                                 include the API function, or zero
+  146                           to exclude the API function. */
+  147                           #define INCLUDE_vTaskPrioritySet       
+                                 1
+  148                           #define INCLUDE_uxTaskPriorityGet      
+                                 1
+  149                           #define INCLUDE_vTaskDelete            
+                                 1
+  150                           #define INCLUDE_vTaskCleanUpResources  
+                                 1
+  151                           #define INCLUDE_vTaskSuspend           
+                                 1
+  152                           #define INCLUDE_vTaskDelayUntil        
+                                 1
+  153                           #define INCLUDE_vTaskDelay             
+                                 1
+  154                           #define INCLUDE_uxTaskGetStackHighWaterMark
+                                 1
+  155                           #define INCLUDE_pcTaskGetTaskName 1
+  156                           #define INCLUDE_eTaskGetState     1
+  157                           
+  158                           
+  159                           /* Cortex-M specific definitions. */
+  160                           #ifdef __NVIC_PRIO_BITS
+  162                           #define configPRIO_BITS             __NVIC_PRI
+                                O_BITS
+  163                           #else
+  164                           #define configPRIO_BITS             3       
+                                 /* 7 priority levels */
+  165                           #endif
+  166                           
+  167                           /* The lowest interrupt priority that can be
+                                 used in a call to a "set priority"
+  168                           function. */
+  169                           #define configLIBRARY_LOWEST_INTERRUPT_PRIORIT
+                                Y         0xf
+  170                           
+  171                           /* The highest interrupt priority that can be
+                                 used by any interrupt service
+  172                           routine that makes calls to interrupt safe
+                                 FreeRTOS API functions.  DO NOT CALL
+  173                           INTERRUPT SAFE FREERTOS API FUNCTIONS FROM ANY
+                                 INTERRUPT THAT HAS A HIGHER
+  174                           PRIORITY THAN THIS! (higher priorities are
+                                 lower numeric values. */
+  175                           #define configLIBRARY_MAX_SYSCALL_INTERRUPT_PR
+                                IORITY    0x4
+  176                           
+  177                           /* Interrupt priorities used by the kernel
+                                 port layer itself.  These are generic
+  178                           to all Cortex-M ports, and do not rely on any
+                                 particular library functions. */
+  179                           #define configKERNEL_INTERRUPT_PRIORITY       
+                                  (( configLIBRARY_LOWEST_INTERRUPT_PRIORITY <<
+                                 (8 - configPRIO_BITS)) & 0xFF )
+  180                           
+  181                           /* !!!! configMAX_SYSCALL_INTERRUPT_PRIORITY
+                                 must not be set to zero !!!!
+  182                           See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.
+                                html. */
+  183                           #define configMAX_SYSCALL_INTERRUPT_PRIORITY  
+                                  ( configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORIT
+                                Y << (8 - configPRIO_BITS) )
+  184                           
+  185                           /* Normal assert() semantics without relying
+                                 on the provision of an assert.h
+  186                           header file. */
+  187                           //#define configASSERT( x ) if( ( x ) == 0 ) {
+                                 taskDISABLE_INTERRUPTS(); printf("\n%s : %s
+                                 #%d\n", __FILE__, __FUNCTION__, __LINE__);for(
+                                 ;; ); }
+  188                           
+  189                           
+  190                           /* Definitions that map the FreeRTOS port
+                                 interrupt handlers to their CMSIS
+  191                           standard names. */
+  192                           #define vPortSVCHandler SVC_Handler
+  193                           #define xPortPendSVHandler PendSV_Handler
+  194                           #define xPortSysTickHandler SysTick_Handler
+  195                           
+  196                           /* configUSE_TICKLESS_IDLE = 1: enable
+                                 FreeRTOS's built in tickless idle functionalit
+                                y.
+  197                              configUSE_TICKLESS_IDLE = 2: enable
+                                 vendor's tickless idle functionality.
+  198                           */
+  199                           #if configUSE_TICKLESS_IDLE == 1
+  200                           #define portSUPPRESS_TICKS_AND_SLEEP(
+                                 xExpectedIdleTime ) vPortSuppressTicksAndSleep
+                                ( xExpectedIdleTime )
+  201                           #elif configUSE_TICKLESS_IDLE == 2
+  202                           /*These definitions are IAR, Keil and GCC
+                                 compiler option, the sections in this scope
+                                 will not be compiled by Assembler. This module
+                                 can not be disabled.*/
+  203                           #if defined(__ICCARM__) || defined(__CC_ARM)
+                                 || defined(__GNUC__)
+  205                           #endif /*#if defined(__ICCARM__) || defined(__
+                                CC_ARM) || defined(__GNUC__)*/
+  206                           #define portSUPPRESS_TICKS_AND_SLEEP(
+                                 xExpectedIdleTime ) tickless_handler(
+                                 xExpectedIdleTime )
+  207                           #endif
+  208                           
+  209                           /*These definitions are IAR, Keil and GCC
+                                 compiler option, the sections in this scope
+                                 will not be compiled by Assembler. This module
+                                 can not be disabled.*/
+  210                           #if defined(__ICCARM__) || defined(__CC_ARM)
+                                 || defined(__GNUC__)
+  212                           #include "assert.h"
+  217                           #define configASSERT( x ) if( (x) == 0 ) {
+                                 platform_assert(#x, __FILE__, __LINE__);
+                                 }
+  219                           #include "syslog.h"
+  220                           #endif /*#if defined(__ICCARM__) || defined(__
+                                CC_ARM) || defined(__GNUC__)*/
+  221                           
+  222                           #endif /* FREERTOS_CONFIG_H */
+  223                           
+   71                           
+   72                                   RSEG    CODE:CODE(2)
+   73                                   thumb
+   74                           
+   75                                   EXTERN pxCurrentTCB
+   76                                   EXTERN vTaskSwitchContext
+   77                                   EXTERN xportWdtFeed
+   78                           
+   79                                   PUBLIC xPortPendSVHandler
+   80                                   PUBLIC vPortSVCHandler
+   81                                   PUBLIC vPortStartFirstTask
+   82                                   PUBLIC vPortEnableVFP
+   83                           
+   84                           
+   85                           /*--------------------------------------------
+                                ---------------*/
+   86                           
+   87                           xPortPendSVHandler:
+   88    00000000 EFF30980              mrs r0, psp
+   89    00000004 BFF36F8F              isb
+   90                                   /* Get the location of the current
+                                 TCB. */
+   91    00000008 254B                  ldr     r3, =pxCurrentTCB
+   92    0000000A 1A68                  ldr     r2, [r3]
+   93                           
+   94                                   /* Is the task using the FPU context? 
+                                 If so, push high vfp registers. */
+   95    0000000C 1EF0100F              tst r14, #0x10
+   96    00000010 08BF                  it eq
+   97    00000012 20ED108A              vstmdbeq r0!, {s16-s31}
+   98                           
+   99                                   /* Save the core registers. */
+  100    00000016 20E9F04F              stmdb r0!, {r4-r11, r14}
+  101                           
+  102                                   /* Save the new top of stack into the
+                                 first member of the TCB. */
+  103    0000001A 1060                  str r0, [r2]
+  104                           
+  105    0000001C 08B4                  stmdb sp!, {r3}
+  106    0000001E 4FF08000              mov r0, #configMAX_SYSCALL_INTERRUPT_PR
+                                            IORITY
+  107    00000022 80F31188              msr basepri, r0
+  108    00000026 BFF34F8F              dsb
+  109    0000002A BFF36F8F              isb
+  110    0000002E ........              bl vTaskSwitchContext
+  111    00000032 ........              bl xportWdtFeed
+  112    00000036 4FF00000              mov r0, #0
+  113    0000003A 80F31188              msr basepri, r0
+  114    0000003E 08BC                  ldmia sp!, {r3}
+  115                           
+  116                                   /* The first item in pxCurrentTCB is
+                                 the task top of stack. */
+  117    00000040 1968                  ldr r1, [r3]
+  118    00000042 0868                  ldr r0, [r1]
+  119                           
+  120                                   /* Pop the core registers. */
+  121    00000044 B0E8F04F              ldmia r0!, {r4-r11, r14}
+  122                           
+  123                                   /* Is the task using the FPU context? 
+                                 If so, pop the high vfp registers
+  124                                   too. */
+  125    00000048 1EF0100F              tst r14, #0x10
+  126    0000004C 08BF                  it eq
+  127    0000004E B0EC108A              vldmiaeq r0!, {s16-s31}
+  128                           
+  129    00000052 80F30988              msr psp, r0
+  130    00000056 BFF36F8F              isb
+  131                                   #ifdef WORKAROUND_PMU_CM001 /* XMC4000
+                                 specific errata */
+  132                                           #if WORKAROUND_PMU_CM001 ==
+                                 1
+  135                                           #endif
+  136                                   #endif
+  137                           
+  138    0000005A 7047                  bx r14
+  139                           
+  140                           
+  141                           /*--------------------------------------------
+                                ---------------*/
+  142                           
+  143                           vPortSVCHandler:
+  144                                   /* Get the location of the current
+                                 TCB. */
+  145    0000005C 104B                  ldr     r3, =pxCurrentTCB
+  146    0000005E 1968                  ldr r1, [r3]
+  147    00000060 0868                  ldr r0, [r1]
+  148                                   /* Pop the core registers. */
+  149    00000062 B0E8F04F              ldmia r0!, {r4-r11, r14}
+  150    00000066 80F30988              msr psp, r0
+  151    0000006A BFF36F8F              isb
+  152    0000006E 4FF00000              mov r0, #0
+  153    00000072 80F31188              msr     basepri, r0
+  154    00000076 7047                  bx r14
+  155                           
+  156                           /*--------------------------------------------
+                                ---------------*/
+  157                           
+  158                           vPortStartFirstTask
+  159                                   /* Use the NVIC offset register to
+                                 locate the stack. */
+  160    00000078 0A48                  ldr r0, =0xE000ED08
+  161    0000007A 0068                  ldr r0, [r0]
+  162    0000007C 0068                  ldr r0, [r0]
+  163                                   /* Set the msp back to the start of
+                                 the stack. */
+  164    0000007E 80F30888              msr msp, r0
+  165                                   /* Call SVC to start the first task.
+                                 */
+  166    00000082 62B6                  cpsie i
+  167    00000084 61B6                  cpsie f
+  168    00000086 BFF34F8F              dsb
+  169    0000008A BFF36F8F              isb
+  170    0000008E 00DF                  svc 0
+  171                           
+  172                           /*--------------------------------------------
+                                ---------------*/
+  173                           
+  174                           vPortEnableVFP:
+  175                                   /* The FPU enable bits are in the
+                                 CPACR. */
+  176    00000090 DFF81400              ldr.w r0, =0xE000ED88
+  177    00000094 0168                  ldr     r1, [r0]
+  178                           
+  179                                   /* Enable CP10 and CP11 coprocessors,
+                                 then save back. */
+  180    00000096 41F47001              orr     r1, r1, #( 0xf << 20 )
+  181    0000009A 0160                  str r1, [r0]
+  182    0000009C 7047                  bx      r14
+  183                           
+  184                           
+  185                           
+  185.1                                  TABLE
+  185.2  000000A0 ........              Reference on line 91,145
+  185.3  000000A4 08ED00E0              Reference on line 160
+  185.4  000000A8 88ED00E0              Reference on line 176
+  186                                   END
+##############################
+#           CRC:0            #
+#        Errors:   0         #
+#        Warnings: 0         #
+#         Bytes: 172         #
+##############################
+
+
+
+

@@ -1,0 +1,1316 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:21
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\service\src\exception_handler.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW671F.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\service\src\exception_handler.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\exception_handler.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\exception_handler.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\service\src\exception_handler.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35           /* Includes ------------------------------------------------------------------*/
+     36          #include "stdio.h"
+     37          #include "stdarg.h"
+     38          #include "exception_handler.h"
+     39          
+     40          #if  defined ( __GNUC__ )
+     41            #ifndef __weak
+     42              #define __weak   __attribute__((weak))
+     43            #endif /* __weak */
+     44          #endif /* __GNUC__ */
+     45          
+     46          #define MAX_EXCEPTION_CONFIGURATIONS 6
+     47          
+     48          #if defined(MTK_NO_PSRAM_ENABLE)
+     49          
+     50          unsigned int *pxExceptionStack = 0;
+     51          
+     52          #else
+     53          
+     54          #define CHECK_EXCEPTION_STACK_USAGE 0
+     55          #if (CHECK_EXCEPTION_STACK_USAGE == 1)
+     56          #include <string.h>
+     57          #endif
+     58          #define EXCEPTION_STACK_WORDS 192
+     59          static unsigned int xExceptionStack[EXCEPTION_STACK_WORDS] = {0}; /* reserved as exception handler's stack */
+     60          unsigned int *pxExceptionStack = &xExceptionStack[EXCEPTION_STACK_WORDS-1];
+     61          
+     62          #endif
+     63          
+     64          typedef struct
+     65          {
+     66            int items;
+     67            exception_config_type configs[MAX_EXCEPTION_CONFIGURATIONS];
+     68          } exception_config_t;
+     69          
+     70          typedef struct
+     71          {
+     72            bool is_valid;
+     73            const char *expr;
+     74            const char *file;
+     75            int line;
+     76          } assert_expr_t;
+     77          
+     78          static exception_config_t exception_config = {0};
+     79          
+     80          static assert_expr_t assert_expr = {0};
+     81          
+     82          static int reboot_flag = 0;
+     83          
+     84          extern memory_region_type memory_regions[];
+     85          
+     86          /******************************************************************************/
+     87          /*            Cortex-M4 Processor Exceptions Handlers                         */
+     88          /******************************************************************************/
+     89          void abort(void)
+     90          {
+     91              __asm("cpsid i");
+     92              SCB->CCR |=  SCB_CCR_UNALIGN_TRP_Msk;
+     93              *((volatile unsigned int *) 0xFFFFFFF1) = 1;
+     94              for (;;);
+     95          }
+     96          
+     97          void platform_assert(const char *expr, const char *file, int line)
+     98          {
+     99              __asm("cpsid i");
+    100              SCB->CCR |=  SCB_CCR_UNALIGN_TRP_Msk;
+    101              assert_expr.is_valid = true;
+    102              assert_expr.expr = expr;
+    103              assert_expr.file = file;
+    104              assert_expr.line = line;
+    105              *((volatile unsigned int *) 0xFFFFFFF1) = 1;
+    106              for (;;);
+    107          }
+    108          
+    109          void exception_dump_config(int flag)
+    110          {
+    111              reboot_flag = flag;
+    112          }
+    113          
+    114          #if defined (__CC_ARM) || defined (__ICCARM__)
+    115          
+    116          void __aeabi_assert(const char *expr, const char *file, int line)
+    117          {
+    118              platform_assert(expr, file, line);
+    119          }
+    120          
+    121          #endif /* __CC_ARM */
+    122          
+    123          bool exception_register_callbacks(exception_config_type *cb)
+    124          {
+    125              int i;
+    126          
+    127              if (exception_config.items >= MAX_EXCEPTION_CONFIGURATIONS) {
+    128                 return false;
+    129              } else {
+    130                 /* check if it is already registered */
+    131                 for (i = 0; i < exception_config.items; i++) {
+    132                     if ( exception_config.configs[i].init_cb == cb->init_cb
+    133                       && exception_config.configs[i].dump_cb == cb->dump_cb) {
+    134                          return false;
+    135                     }
+    136                 }
+    137                 exception_config.configs[exception_config.items].init_cb = cb->init_cb;
+    138                 exception_config.configs[exception_config.items].dump_cb = cb->dump_cb;
+    139                 exception_config.items++;
+    140                 return true;
+    141              }
+    142          }
+    143          
+    144          #if defined (__ICCARM__)
+    145          
+    146          #define __EXHDLR_INIT__
+    147          #pragma location=".ram_code"
+    148          void exception_init(void);
+    149          
+    150          #else
+    151          
+    152          #if (PRODUCT_VERSION == 2523) || (PRODUCT_VERSION == 2533)
+    153          #define __EXHDLR_INIT__   __attribute__((section(".ram_code")))
+    154          #endif
+    155          
+    156          #if (PRODUCT_VERSION == 7687) || (PRODUCT_VERSION == 7697) || (PRODUCT_VERSION == 7686) || (PRODUCT_VERSION == 7682) || (PRODUCT_VERSION == 5932)
+    157          #define __EXHDLR_INIT__
+    158          #endif
+    159          
+    160          #endif
+    161          
+    162          __EXHDLR_INIT__ void exception_init(void)
+    163          {
+    164              int i;
+    165          
+    166              SCB->CCR &= ~SCB_CCR_UNALIGN_TRP_Msk;
+    167          
+    168          #if (configUSE_FLASH_SUSPEND == 1)
+    169              Flash_ReturnReady();
+    170          #endif
+    171          
+    172          #if (CHECK_EXCEPTION_STACK_USAGE == 1)
+    173              memset(xExceptionStack, (int)0xa5, (EXCEPTION_STACK_WORDS - 16)*4);
+    174          #endif
+    175          
+    176              for (i = 0; i < exception_config.items; i++) {
+    177                  if (exception_config.configs[i].init_cb) {
+    178                      exception_config.configs[i].init_cb();
+    179                  }
+    180              }
+    181          
+    182              if (assert_expr.is_valid) {
+    183                  printf("assert failed: %s, file: %s, line: %d\n\r",
+    184                         assert_expr.expr,
+    185                         assert_expr.file,
+    186                         assert_expr.line);
+    187              }
+    188          }
+    189          
+    190          /**
+    191            * @brief   This function handles NMI exception.
+    192            * @param  None
+    193            * @retval None
+    194            */
+    195          void NMI_Handler(void)
+    196          {
+    197          }
+    198          
+    199          void printUsageErrorMsg(uint32_t CFSRValue)
+    200          {
+    201              printf("Usage fault: ");
+    202              CFSRValue >>= 16; /* right shift to lsb */
+    203              if ((CFSRValue & (1 << 9)) != 0) {
+    204                  printf("Divide by zero\n\r");
+    205              }
+    206              if ((CFSRValue & (1 << 8)) != 0) {
+    207                  printf("Unaligned access\n\r");
+    208              }
+    209              if ((CFSRValue & (1 << 3)) != 0) {
+    210                  printf("Coprocessor error\n\r");
+    211              }
+    212              if ((CFSRValue & (1 << 2)) != 0) {
+    213                  printf("Invalid EXC_RETURN\n\r");
+    214              }
+    215              if ((CFSRValue & (1 << 1)) != 0) {
+    216                  printf("Invalid state\n\r");
+    217              }
+    218              if ((CFSRValue & (1 << 0)) != 0) {
+    219                  printf("Undefined instruction\n\r");
+    220              }
+    221          }
+    222          
+    223          void printMemoryManagementErrorMsg(uint32_t CFSRValue)
+    224          {
+    225              printf("Memory Management fault: ");
+    226              CFSRValue &= 0x000000FF; /* mask mem faults */
+    227              if ((CFSRValue & (1 << 5)) != 0) {
+    228                  printf("A MemManage fault occurred during FP lazy state preservation\n\r");
+    229              }
+    230              if ((CFSRValue & (1 << 4)) != 0) {
+    231                  printf("A derived MemManage fault occurred on exception entry\n\r");
+    232              }
+    233              if ((CFSRValue & (1 << 3)) != 0) {
+    234                  printf("A derived MemManage fault occurred on exception return\n\r");
+    235              }
+    236              if ((CFSRValue & (1 << 1)) != 0) { /* Need to check valid bit (bit 7 of CFSR)? */
+    237                  printf("Data access violation @0x%08x\n\r", (unsigned int)SCB->MMFAR);
+    238              }
+    239              if ((CFSRValue & (1 << 0)) != 0) {
+    240                  printf("MPU or Execute Never (XN) default memory map access violation\n\r");
+    241              }
+    242              if ((CFSRValue & (1 << 7)) != 0) { /* To review: remove this if redundant */
+    243                  printf("SCB->MMFAR = 0x%08x\n\r", (unsigned int)SCB->MMFAR );
+    244              }
+    245          }
+    246          
+    247          void printBusFaultErrorMsg(uint32_t CFSRValue)
+    248          {
+    249              printf("Bus fault: ");
+    250              CFSRValue &= 0x0000FF00; /* mask bus faults */
+    251              CFSRValue >>= 8;
+    252              if ((CFSRValue & (1 << 5)) != 0) {
+    253                  printf("A bus fault occurred during FP lazy state preservation\n\r");
+    254              }
+    255              if ((CFSRValue & (1 << 4)) != 0) {
+    256                  printf("A derived bus fault has occurred on exception entry\n\r");
+    257              }
+    258              if ((CFSRValue & (1 << 3)) != 0) {
+    259                  printf("A derived bus fault has occurred on exception return\n\r");
+    260              }
+    261              if ((CFSRValue & (1 << 2)) != 0) {
+    262                  printf("Imprecise data access error has occurred\n\r");
+    263              }
+    264              if ((CFSRValue & (1 << 1)) != 0) { /* Need to check valid bit (bit 7 of CFSR)? */
+    265                  printf("A precise data access error has occurred @x%08x\n\r", (unsigned int)SCB->BFAR);
+    266              }
+    267              if ((CFSRValue & (1 << 0)) != 0) {
+    268                  printf("A bus fault on an instruction prefetch has occurred\n\r");
+    269              }
+    270              if ((CFSRValue & (1 << 7)) != 0) { /* To review: remove this if redundant */
+    271                  printf("SCB->BFAR = 0x%08x\n\r", (unsigned int)SCB->BFAR );
+    272              }
+    273          }
+    274          
+    275          enum { r0, r1, r2, r3, r12, lr, pc, psr,
+    276                 s0, s1, s2, s3, s4, s5, s6, s7,
+    277                 s8, s9, s10, s11, s12, s13, s14, s15,
+    278                 fpscr
+    279               };
+    280          
+    281          typedef struct TaskContextType {
+    282              unsigned int r0;
+    283              unsigned int r1;
+    284              unsigned int r2;
+    285              unsigned int r3;
+    286              unsigned int r4;
+    287              unsigned int r5;
+    288              unsigned int r6;
+    289              unsigned int r7;
+    290              unsigned int r8;
+    291              unsigned int r9;
+    292              unsigned int r10;
+    293              unsigned int r11;
+    294              unsigned int r12;
+    295              unsigned int sp;              /* after pop r0-r3, lr, pc, xpsr                   */
+    296              unsigned int lr;              /* lr before exception                             */
+    297              unsigned int pc;              /* pc before exception                             */
+    298              unsigned int psr;             /* xpsr before exeption                            */
+    299              unsigned int control;         /* nPRIV bit & FPCA bit meaningful, SPSEL bit = 0  */
+    300              unsigned int exc_return;      /* current lr                                      */
+    301              unsigned int msp;             /* msp                                             */
+    302              unsigned int psp;             /* psp                                             */
+    303              unsigned int fpscr;
+    304              unsigned int s0;
+    305              unsigned int s1;
+    306              unsigned int s2;
+    307              unsigned int s3;
+    308              unsigned int s4;
+    309              unsigned int s5;
+    310              unsigned int s6;
+    311              unsigned int s7;
+    312              unsigned int s8;
+    313              unsigned int s9;
+    314              unsigned int s10;
+    315              unsigned int s11;
+    316              unsigned int s12;
+    317              unsigned int s13;
+    318              unsigned int s14;
+    319              unsigned int s15;
+    320              unsigned int s16;
+    321              unsigned int s17;
+    322              unsigned int s18;
+    323              unsigned int s19;
+    324              unsigned int s20;
+    325              unsigned int s21;
+    326              unsigned int s22;
+    327              unsigned int s23;
+    328              unsigned int s24;
+    329              unsigned int s25;
+    330              unsigned int s26;
+    331              unsigned int s27;
+    332              unsigned int s28;
+    333              unsigned int s29;
+    334              unsigned int s30;
+    335              unsigned int s31;
+    336          } TaskContext;
+    337          
+    338          static TaskContext taskContext = {0};
+    339          TaskContext *pTaskContext = &taskContext;
+    340          
+    341          __weak void exception_reboot(void)
+    342          {
+    343              /* It is defined as a weak function.
+    344               * It needs to be implemented in project.
+    345               * The default behvior is NOP, and the memory dump continues.
+    346               */
+    347              return;
+    348          }
+    349          
+    350          static bool reboot_check(void)
+    351          {
+    352              return (reboot_flag == DISABLE_MEMDUMP_MAGIC);
+    353          }
+    354          
+    355          void stackDump(uint32_t stack[])
+    356          {
+    357              taskContext.r0   = stack[r0];
+    358              taskContext.r1   = stack[r1];
+    359              taskContext.r2   = stack[r2];
+    360              taskContext.r3   = stack[r3];
+    361              taskContext.r12  = stack[r12];
+    362              taskContext.sp   = ((uint32_t)stack) + 0x20;
+    363              taskContext.lr   = stack[lr];
+    364              taskContext.pc   = stack[pc];
+    365              taskContext.psr  = stack[psr];
+    366          
+    367              /* FPU context? */
+    368              if ( (taskContext.exc_return & 0x10) == 0 ) {
+    369                  taskContext.s0 = stack[s0];
+    370                  taskContext.s1 = stack[s1];
+    371                  taskContext.s2 = stack[s2];
+    372                  taskContext.s3 = stack[s3];
+    373                  taskContext.s4 = stack[s4];
+    374                  taskContext.s5 = stack[s5];
+    375                  taskContext.s6 = stack[s6];
+    376                  taskContext.s7 = stack[s7];
+    377                  taskContext.s8 = stack[s8];
+    378                  taskContext.s9 = stack[s9];
+    379                  taskContext.s10 = stack[s10];
+    380                  taskContext.s11 = stack[s11];
+    381                  taskContext.s12 = stack[s12];
+    382                  taskContext.s13 = stack[s13];
+    383                  taskContext.s14 = stack[s14];
+    384                  taskContext.s15 = stack[s15];
+    385                  taskContext.fpscr = stack[fpscr];
+    386                  taskContext.sp += 72; /* s0-s15, fpsr, reserved */
+    387              }
+    388          
+    389              /* if CCR.STKALIGN=1, check PSR[9] to know if there is forced stack alignment */
+    390              if ( (SCB->CCR & SCB_CCR_STKALIGN_Msk) && (taskContext.psr & 0x200)) {
+    391                  taskContext.sp += 4;
+    392              }
+    393          
+    394              printf("r0  = 0x%08x\n\r", taskContext.r0);
+    395              printf("r1  = 0x%08x\n\r", taskContext.r1);
+    396              printf("r2  = 0x%08x\n\r", taskContext.r2);
+    397              printf("r3  = 0x%08x\n\r", taskContext.r3);
+    398              printf("r4  = 0x%08x\n\r", taskContext.r4);
+    399              printf("r5  = 0x%08x\n\r", taskContext.r5);
+    400              printf("r6  = 0x%08x\n\r", taskContext.r6);
+    401              printf("r7  = 0x%08x\n\r", taskContext.r7);
+    402              printf("r8  = 0x%08x\n\r", taskContext.r8);
+    403              printf("r9  = 0x%08x\n\r", taskContext.r9);
+    404              printf("r10 = 0x%08x\n\r", taskContext.r10);
+    405              printf("r11 = 0x%08x\n\r", taskContext.r11);
+    406              printf("r12 = 0x%08x\n\r", taskContext.r12);
+    407              printf("lr  = 0x%08x\n\r", taskContext.lr);
+    408              printf("pc  = 0x%08x\n\r", taskContext.pc);
+    409              printf("psr = 0x%08x\n\r", taskContext.psr);
+    410              printf("EXC_RET = 0x%08x\n\r", taskContext.exc_return);
+    411          
+    412              /* update CONTROL.SPSEL and psp if returning to thread mode */
+    413              if (taskContext.exc_return & 0x4) {
+    414                  taskContext.control |= 0x2; /* CONTROL.SPSel */
+    415                  taskContext.psp = taskContext.sp;
+    416              } else { /* update msp if returning to handler mode */
+    417                  taskContext.msp = taskContext.sp;
+    418              }
+    419          
+    420              /* FPU context? */
+    421              if ( (taskContext.exc_return & 0x10) == 0 ) {
+    422                  taskContext.control |= 0x4; /* CONTROL.FPCA */
+    423                  printf("s0  = 0x%08x\n\r", taskContext.s0);
+    424                  printf("s1  = 0x%08x\n\r", taskContext.s1);
+    425                  printf("s2  = 0x%08x\n\r", taskContext.s2);
+    426                  printf("s3  = 0x%08x\n\r", taskContext.s3);
+    427                  printf("s4  = 0x%08x\n\r", taskContext.s4);
+    428                  printf("s5  = 0x%08x\n\r", taskContext.s5);
+    429                  printf("s6  = 0x%08x\n\r", taskContext.s6);
+    430                  printf("s7  = 0x%08x\n\r", taskContext.s7);
+    431                  printf("s8  = 0x%08x\n\r", taskContext.s8);
+    432                  printf("s9  = 0x%08x\n\r", taskContext.s9);
+    433                  printf("s10 = 0x%08x\n\r", taskContext.s10);
+    434                  printf("s11 = 0x%08x\n\r", taskContext.s11);
+    435                  printf("s12 = 0x%08x\n\r", taskContext.s12);
+    436                  printf("s13 = 0x%08x\n\r", taskContext.s13);
+    437                  printf("s14 = 0x%08x\n\r", taskContext.s14);
+    438                  printf("s15 = 0x%08x\n\r", taskContext.s15);
+    439                  printf("s16 = 0x%08x\n\r", taskContext.s16);
+    440                  printf("s17 = 0x%08x\n\r", taskContext.s17);
+    441                  printf("s18 = 0x%08x\n\r", taskContext.s18);
+    442                  printf("s19 = 0x%08x\n\r", taskContext.s19);
+    443                  printf("s20 = 0x%08x\n\r", taskContext.s20);
+    444                  printf("s21 = 0x%08x\n\r", taskContext.s21);
+    445                  printf("s22 = 0x%08x\n\r", taskContext.s22);
+    446                  printf("s23 = 0x%08x\n\r", taskContext.s23);
+    447                  printf("s24 = 0x%08x\n\r", taskContext.s24);
+    448                  printf("s25 = 0x%08x\n\r", taskContext.s25);
+    449                  printf("s26 = 0x%08x\n\r", taskContext.s26);
+    450                  printf("s27 = 0x%08x\n\r", taskContext.s27);
+    451                  printf("s28 = 0x%08x\n\r", taskContext.s28);
+    452                  printf("s29 = 0x%08x\n\r", taskContext.s29);
+    453                  printf("s30 = 0x%08x\n\r", taskContext.s30);
+    454                  printf("s31 = 0x%08x\n\r", taskContext.s31);
+    455                  printf("fpscr = 0x%08x\n\r", taskContext.fpscr);
+    456              }
+    457          
+    458              printf("CONTROL = 0x%08x\n\r", taskContext.control);
+    459              printf("MSP     = 0x%08x\n\r", taskContext.msp);
+    460              printf("PSP     = 0x%08x\n\r", taskContext.psp);
+    461              printf("sp      = 0x%08x\n\r", taskContext.sp);
+    462          
+    463              if (reboot_check() == true) {
+    464                  exception_reboot();
+    465              }
+    466          }
+    467          
+    468          void memoryDumpAll(void)
+    469          {
+    470              unsigned int *current, *end;
+    471              unsigned int i;
+    472          
+    473              for (i = 0; ; i++) {
+    474          
+    475                  if ( !memory_regions[i].region_name ) {
+    476                     break;
+    477                  }
+    478          
+    479                  if ( !memory_regions[i].is_dumped ) {
+    480                     continue;
+    481                  }
+    482          
+    483                  current = memory_regions[i].start_address;
+    484                  end     = memory_regions[i].end_address;
+    485          
+    486                  for (; current < end; current += 4) {
+    487          
+    488                      if (*(current + 0) == 0 &&
+    489                          *(current + 1) == 0 &&
+    490                          *(current + 2) == 0 &&
+    491                          *(current + 3) == 0 ) {
+    492                              continue;
+    493                      }
+    494          
+    495                      printf("0x%08x: %08x %08x %08x %08x\n\r",
+    496                             (unsigned int)current,
+    497                             *(current + 0),
+    498                             *(current + 1),
+    499                             *(current + 2),
+    500                             *(current + 3));
+    501                   }
+    502              }
+    503          
+    504              for (i = 0; i < exception_config.items; i++) {
+    505                  if (exception_config.configs[i].dump_cb) {
+    506                      exception_config.configs[i].dump_cb();
+    507                  }
+    508              }
+    509          
+    510              printf("\n\rmemory dump completed.\n\r");
+    511          
+    512          #if (CHECK_EXCEPTION_STACK_USAGE == 1)
+    513              for (i = 0; i < EXCEPTION_STACK_WORDS; i++) {
+    514                  if (xExceptionStack[i] != 0xa5a5a5a5) {
+    515                      break;
+    516                  }
+    517              }
+    518              printf("\n\rException Stack: used = %d, left = %d\n\r", (EXCEPTION_STACK_WORDS - i)*4, i*4);
+    519          #endif
+    520          
+    521          }
+    522          
+    523          /*
+    524           * Debug scenarios:
+    525           *
+    526           * (1) debug with debugger, stop in first exception.
+    527           *     Print the exception context, and halt cpu.
+    528           *
+    529           *     DEBUGGER_ON: 1
+    530           *
+    531           * (2) debug with uart, stop in first exception.
+    532           *     Print the exception context, and enter an infinite loop.
+    533           *
+    534           *     DEBUGGER_ON: 0
+    535           */
+    536          
+    537          #define DEBUGGER_ON    0
+    538          
+    539          /**
+    540            * @brief  This function handles Hard Fault exception.
+    541            * @param  None
+    542            * @retval None
+    543            */
+    544          void Hard_Fault_Handler(uint32_t stack[])
+    545          {
+    546              printf("\n\rIn Hard Fault Handler\n\r");
+    547              printf("SCB->HFSR = 0x%08x\n\r", (unsigned int)SCB->HFSR);
+    548              if ((SCB->HFSR & (1 << 30)) != 0) {
+    549                  printf("Forced Hard Fault\n\r");
+    550                  printf("SCB->CFSR = 0x%08x\n\r", (unsigned int)SCB->CFSR );
+    551                  if ((SCB->CFSR & 0xFFFF0000) != 0) {
+    552                      printUsageErrorMsg(SCB->CFSR);
+    553                  }
+    554                  if ((SCB->CFSR & 0x0000FF00) != 0 ) {
+    555                      printBusFaultErrorMsg(SCB->CFSR);
+    556                  }
+    557                  if ((SCB->CFSR & 0x000000FF) != 0 ) {
+    558                      printMemoryManagementErrorMsg(SCB->CFSR);
+    559                  }
+    560              }
+    561          
+    562              stackDump(stack);
+    563          
+    564              memoryDumpAll();
+    565          
+    566          #if DEBUGGER_ON
+    567              __ASM volatile("BKPT #01");
+    568          #else
+    569              while (1);
+    570          #endif
+    571          }
+    572          
+    573          void MemManage_Fault_Handler(uint32_t stack[])
+    574          {
+    575              printf("\n\rIn MemManage Fault Handler\n\r");
+    576              printf("SCB->CFSR = 0x%08x\n\r", (unsigned int)SCB->CFSR );
+    577              if ((SCB->CFSR & 0xFF) != 0) {
+    578                  printMemoryManagementErrorMsg(SCB->CFSR);
+    579              }
+    580          
+    581              stackDump(stack);
+    582          
+    583              memoryDumpAll();
+    584          
+    585          #if DEBUGGER_ON
+    586              __ASM volatile("BKPT #01");
+    587          #else
+    588              while (1);
+    589          #endif
+    590          }
+    591          
+    592          void Bus_Fault_Handler(uint32_t stack[])
+    593          {
+    594              printf("\n\rIn Bus Fault Handler\n\r");
+    595              printf("SCB->CFSR = 0x%08x\n\r", (unsigned int)SCB->CFSR );
+    596              if ((SCB->CFSR & 0xFF00) != 0) {
+    597                  printBusFaultErrorMsg(SCB->CFSR);
+    598              }
+    599          
+    600              stackDump(stack);
+    601          
+    602              memoryDumpAll();
+    603          
+    604          #if DEBUGGER_ON
+    605              __ASM volatile("BKPT #01");
+    606          #else
+    607              while (1);
+    608          #endif
+    609          }
+    610          
+    611          void Usage_Fault_Handler(uint32_t stack[])
+    612          {
+    613              printf("\n\rIn Usage Fault Handler\n\r");
+    614              printf("SCB->CFSR = 0x%08x\n\r", (unsigned int)SCB->CFSR);
+    615              if ((SCB->CFSR & 0xFFFF0000) != 0) {
+    616                  printUsageErrorMsg(SCB->CFSR);
+    617              }
+    618          
+    619              stackDump(stack);
+    620          
+    621              memoryDumpAll();
+    622          
+    623          #if DEBUGGER_ON
+    624              __ASM volatile("BKPT #01");
+    625          #else
+    626              while (1);
+    627          #endif
+    628          }
+    629          
+    630          /******************************************************************************/
+    631          /*                   Toolchain Dependent Part                                 */
+    632          /******************************************************************************/
+    633          #if defined(__GNUC__)
+    634          
+    635          #if (PRODUCT_VERSION == 2523) || (PRODUCT_VERSION == 2533)
+    636          #define __EXHDLR_ATTR__   __attribute__((naked, section(".ram_code")))
+    637          #endif
+    638          
+    639          #if (PRODUCT_VERSION == 7687) || (PRODUCT_VERSION == 7697) || (PRODUCT_VERSION == 7686) || (PRODUCT_VERSION == 7682) || (PRODUCT_VERSION == 5932)
+    640          #define __EXHDLR_ATTR__   __attribute__((naked))
+    641          #endif
+    642          
+    643          /**
+    644            * @brief  This function is the common part of exception handlers.
+    645            * @param  r3 holds EXC_RETURN value
+    646            * @retval None
+    647            */
+    648          __EXHDLR_ATTR__ void CommonFault_Handler(void)
+    649          {
+    650              __asm volatile
+    651              (
+    652                  "cpsid i                       \n"     /* disable irq                 */
+    653                  "ldr r3, =pxExceptionStack     \n"
+    654                  "ldr r3, [r3]                  \n"     /* r3 := pxExceptionStack      */
+    655                  "ldr r0, =pTaskContext         \n"
+    656                  "ldr r0, [r0]                  \n"     /* r0 := pTaskContext          */
+    657                  "add r0, r0, #16               \n"     /* point to context.r4         */
+    658                  "stmia r0!, {r4-r11}           \n"     /* store r4-r11                */
+    659                  "mov r5, r12                   \n"     /* r5 := EXC_RETURN            */
+    660                  "add r0, r0, #20               \n"     /* point to context.control    */
+    661                  "mrs r1, control               \n"     /* move CONTROL to r1          */
+    662                  "str r1, [r0], #4              \n"     /* store CONTROL               */
+    663                  "str r5, [r0], #4              \n"     /* store EXC_RETURN            */
+    664                  "mrs r4, msp                   \n"     /* r4 := MSP                   */
+    665                  "str r4, [r0], #4              \n"     /* store MSP                   */
+    666                  "mrs r1, psp                   \n"     /* move PSP to r1              */
+    667                  "str r1, [r0]                  \n"     /* store PSP                   */
+    668                  "tst r5, #0x10                 \n"     /* FPU context?                */
+    669                  "itt eq                        \n"
+    670                  "addeq r0, r0, #68             \n"     /* point to contex.s16         */
+    671                  "vstmeq r0, {s16-s31}          \n"     /* store r16-r31               */
+    672                  "cmp r3, #0                    \n"     /* if (!pxExceptionStack)      */
+    673                  "it ne                         \n"
+    674                  "movne sp, r3                  \n"     /* update msp                  */
+    675                  "push {lr}                     \n"
+    676                  "bl exception_init             \n"
+    677                  "pop {lr}                      \n"
+    678                  "tst r5, #4                    \n"     /* thread or handler mode?     */
+    679                  "ite eq                        \n"
+    680                  "moveq r0, r4                  \n"
+    681                  "mrsne r0, psp                 \n"
+    682                  "bx lr                         \n"
+    683              );
+    684          }
+    685          
+    686          /**
+    687            * @brief  This function handles Hard Fault exception.
+    688            * @param  None
+    689            * @retval None
+    690            */
+    691          __EXHDLR_ATTR__ void HardFault_Handler(void)
+    692          {
+    693              __asm volatile
+    694              (
+    695                  "mov r12, lr                   \n"
+    696                  "bl CommonFault_Handler        \n"
+    697                  "bl Hard_Fault_Handler         \n"
+    698              );
+    699          }
+    700          
+    701          /**
+    702            * @brief  This function handles Memory Manage exception.
+    703            * @param  None
+    704            * @retval None
+    705            */
+    706          __EXHDLR_ATTR__ void MemManage_Handler(void)
+    707          {
+    708              __asm volatile
+    709              (
+    710                  "mov r12, lr                   \n"
+    711                  "bl CommonFault_Handler        \n"
+    712                  "bl MemManage_Fault_Handler    \n"
+    713              );
+    714          }
+    715          
+    716          /**
+    717            * @brief  This function handles Bus Fault exception.
+    718            * @param  None
+    719            * @retval None
+    720            */
+    721          __EXHDLR_ATTR__ void BusFault_Handler(void)
+    722          {
+    723              __asm volatile
+    724              (
+    725                  "mov r12, lr                   \n"
+    726                  "bl CommonFault_Handler        \n"
+    727                  "bl Bus_Fault_Handler          \n"
+    728              );
+    729          }
+    730          
+    731          /**
+    732            * @brief  This function handles Usage Fault exception.
+    733            * @param  None
+    734            * @retval None
+    735            */
+    736          __EXHDLR_ATTR__ void UsageFault_Handler(void)
+    737          {
+    738              __asm volatile
+    739              (
+    740                  "mov r12, lr                   \n"
+    741                  "bl CommonFault_Handler        \n"
+    742                  "bl Usage_Fault_Handler        \n"
+    743              );
+    744          }
+    745          
+    746          #endif /* __GNUC__ */
+    747          
+    748          #if defined (__CC_ARM)
+    749          
+    750          #if (PRODUCT_VERSION == 2523) || (PRODUCT_VERSION == 2533)
+    751          #define __EXHDLR_ATTR__   __asm __attribute__((section(".ram_code")))
+    752          #endif
+    753          
+    754          #if (PRODUCT_VERSION == 7687) || (PRODUCT_VERSION == 7697) || (PRODUCT_VERSION == 7686) || (PRODUCT_VERSION == 7682) || (PRODUCT_VERSION == 5932)
+    755          #define __EXHDLR_ATTR__ __asm
+    756          #endif
+    757          
+    758          /**
+    759            * @brief  This function is the common part of exception handlers.
+    760            * @param  r3 holds EXC_RETURN value
+    761            * @retval None
+    762            */
+    763          __EXHDLR_ATTR__ void CommonFault_Handler(void)
+    764          {
+    765              extern pTaskContext
+    766              extern pxExceptionStack
+    767          
+    768              PRESERVE8
+    769          
+    770              cpsid i                       /* disable irq                  */
+    771              ldr r3, =pxExceptionStack
+    772              ldr r3, [r3]                  /* r3 := pxExceptionStack       */
+    773              ldr r0, =pTaskContext
+    774              ldr r0, [r0]                  /* r0 := pTaskContext           */
+    775              add r0, r0, #16               /* point to context.r4          */
+    776              stmia r0!, {r4-r11}           /* store r4-r11                 */
+    777              mov r5, r12                   /* r5 := EXC_RETURN             */
+    778              add r0, r0, #20               /* point to context.control     */
+    779              mrs r1, control               /* move CONTROL to r1           */
+    780              str r1, [r0], #4              /* store CONTROL                */
+    781              str r5, [r0], #4              /* store EXC_RETURN             */
+    782              mrs r4, msp                   /* r4 := MSP                    */
+    783              str r4, [r0], #4              /* store MSP                    */
+    784              mrs r1, psp                   /* move PSP to r1               */
+    785              str r1, [r0]                  /* store PSP                    */
+    786              tst r5, #0x10                 /* FPU context?                 */
+    787              itt eq
+    788              addeq r0, r0, #68             /* point to contex.s16          */
+    789              vstmeq r0, {s16-s31}          /* store r16-r31                */
+    790              cmp r3, #0                    /* if (!pxExceptionStack)       */
+    791              it ne
+    792              movne sp, r3                  /* update msp                   */
+    793              push {lr}
+    794              bl __cpp(exception_init)
+    795              pop  {lr}
+    796              tst r5, #4                    /* thread or handler mode?      */
+    797              ite eq
+    798              moveq r0, r4
+    799              mrsne r0, psp
+    800              bx lr
+    801          }
+    802          
+    803          /**
+    804            * @brief  This function handles Hard Fault exception.
+    805            * @param  None
+    806            * @retval None
+    807            */
+    808          __EXHDLR_ATTR__ void HardFault_Handler(void)
+    809          {
+    810              PRESERVE8
+    811          
+    812              mov r12, lr
+    813              bl __cpp(CommonFault_Handler)
+    814              bl __cpp(Hard_Fault_Handler)
+    815          }
+    816          
+    817          /**
+    818            * @brief  This function handles Memory Manage exception.
+    819            * @param  None
+    820            * @retval None
+    821            */
+    822          __EXHDLR_ATTR__ void MemManage_Handler(void)
+    823          {
+    824              PRESERVE8
+    825          
+    826              mov r12, lr
+    827              bl __cpp(CommonFault_Handler)
+    828              bl __cpp(MemManage_Fault_Handler)
+    829          }
+    830          
+    831          /**
+    832            * @brief  This function handles Bus Fault exception.
+    833            * @param  None
+    834            * @retval None
+    835            */
+    836          __EXHDLR_ATTR__ void BusFault_Handler(void)
+    837          {
+    838              PRESERVE8
+    839          
+    840              mov r12, lr
+    841              bl __cpp(CommonFault_Handler)
+    842              bl __cpp(Bus_Fault_Handler)
+    843          }
+    844          
+    845          /**
+    846            * @brief  This function handles Usage Fault exception.
+    847            * @param  None
+    848            * @retval None
+    849            */
+    850          __EXHDLR_ATTR__ void UsageFault_Handler(void)
+    851          {
+    852              PRESERVE8
+    853          
+    854              mov r12, lr
+    855              bl __cpp(CommonFault_Handler)
+    856              bl __cpp(Usage_Fault_Handler)
+    857          }
+    858          
+    859          #endif /* __CC_ARM */
+    860          
+    861          #if defined (__ICCARM__)
+    862          
+    863          #define __EXHDLR_ATTR__  __stackless
+    864          
+    865          #pragma location=".ram_code"
+    866          TaskContext* get_pTaskContext(void);
+    867          
+    868          #pragma location=".ram_code"
+    869          void CommonFault_Handler(void);
+    870          
+    871          #pragma location=".ram_code"
+    872          void HardFault_Handler(void);
+    873          
+    874          #pragma location=".ram_code"
+    875          void MemManage_Handler(void);
+    876          
+    877          #pragma location=".ram_code"
+    878          void BusFault_Handler(void);
+    879          
+    880          #pragma location=".ram_code"
+    881          void UsageFault_Handler(void);
+    882          
+    883          /**
+    884            * @brief  This function is the common part of exception handlers.
+    885            * @param  r3 holds EXC_RETURN value
+    886            * @retval None
+    887            */
+    888          __EXHDLR_ATTR__ void CommonFault_Handler(void)
+    889          {
+    890              __asm volatile
+    891              (
+    892                  "cpsid i                       \n"     /* disable irq                 */
+    893                  "mov r3, %0                    \n"     /* r3 := pxExceptionStack      */
+    894                  "mov r0, %1                    \n"     /* r0 := pTaskContext          */
+    895                  "add r0, r0, #16               \n"     /* point to context.r4         */
+    896                  "stmia r0!, {r4-r11}           \n"     /* store r4-r11                */
+    897                  "mov r5, r12                   \n"     /* r5 := EXC_RETURN            */
+    898                  "add r0, r0, #20               \n"     /* point to context.control    */
+    899                  "mrs r1, control               \n"     /* move CONTROL to r1          */
+    900                  "str r1, [r0], #4              \n"     /* store CONTROL               */
+    901                  "str r5, [r0], #4              \n"     /* store EXC_RETURN            */
+    902                  "mrs r4, msp                   \n"     /* r4 := MSP                   */
+    903                  "str r4, [r0], #4              \n"     /* store MSP                   */
+    904                  "mrs r1, psp                   \n"     /* move PSP to r1              */
+    905                  "str r1, [r0]                  \n"     /* store PSP                   */
+    906                  "tst r5, #0x10                 \n"     /* FPU context?                */
+    907                  "itt eq                        \n"
+    908                  "addeq r0, r0, #68             \n"     /* point to contex.s16         */
+    909                  "vstmeq r0, {s16-s31}          \n"     /* store r16-r31               */
+    910                  "cmp r3, #0                    \n"     /* if (!pxExceptionStack)      */
+    911                  "it ne                         \n"
+    912                  "movne sp, r3                  \n"     /* update msp                  */
+    913                  "push {lr}                     \n"
+    914                  "bl exception_init             \n"
+    915                  "pop {lr}                      \n"
+    916                  "tst r5, #4                    \n"     /* thread or handler mode?     */
+    917                  "ite eq                        \n"
+    918                  "moveq r0, r4                  \n"
+    919                  "mrsne r0, psp                 \n"
+    920                  "bx lr                         \n"
+    921                  ::"r"(pxExceptionStack), "r"(pTaskContext)
+    922              );
+    923          }
+    924          
+    925          /**
+    926            * @brief  This function handles Hard Fault exception.
+    927            * @param  None
+    928            * @retval None
+    929            */
+    930          __EXHDLR_ATTR__ void HardFault_Handler(void)
+    931          {
+    932              __asm volatile
+    933              (
+    934                  "mov r12, lr                   \n"
+    935                  "bl CommonFault_Handler        \n"
+    936                  "bl Hard_Fault_Handler         \n"
+    937              );
+    938          }
+    939          
+    940          /**
+    941            * @brief  This function handles Memory Manage exception.
+    942            * @param  None
+    943            * @retval None
+    944            */
+    945          __EXHDLR_ATTR__ void MemManage_Handler(void)
+    946          {
+    947              __asm volatile
+    948              (
+    949                  "mov r12, lr                   \n"
+    950                  "bl CommonFault_Handler        \n"
+    951                  "bl MemManage_Fault_Handler    \n"
+    952              );
+    953          }
+    954          
+    955          /**
+    956            * @brief  This function handles Bus Fault exception.
+    957            * @param  None
+    958            * @retval None
+    959            */
+    960          __EXHDLR_ATTR__ void BusFault_Handler(void)
+    961          {
+    962              __asm volatile
+    963              (
+    964                  "mov r12, lr                   \n"
+    965                  "bl CommonFault_Handler        \n"
+    966                  "bl Bus_Fault_Handler          \n"
+    967              );
+    968          }
+    969          
+    970          /**
+    971            * @brief  This function handles Usage Fault exception.
+    972            * @param  None
+    973            * @retval None
+    974            */
+    975          __EXHDLR_ATTR__ void UsageFault_Handler(void)
+    976          {
+    977              __asm volatile
+    978              (
+    979                  "mov r12, lr                   \n"
+    980                  "bl CommonFault_Handler        \n"
+    981                  "bl Usage_Fault_Handler        \n"
+    982              );
+    983          }
+    984          
+    985          #endif /* __ICCARM__ */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BusFault_Handler
+      16   Bus_Fault_Handler
+        16   -> memoryDumpAll
+        16   -> printBusFaultErrorMsg
+        16   -> printf
+        16   -> stackDump
+       0   CommonFault_Handler
+       0   HardFault_Handler
+      16   Hard_Fault_Handler
+        16   -> memoryDumpAll
+        16   -> printBusFaultErrorMsg
+        16   -> printMemoryManagementErrorMsg
+        16   -> printUsageErrorMsg
+        16   -> printf
+        16   -> stackDump
+      16   MemManage_Fault_Handler
+        16   -> memoryDumpAll
+        16   -> printMemoryManagementErrorMsg
+        16   -> printf
+        16   -> stackDump
+       0   MemManage_Handler
+       0   NMI_Handler
+       0   UsageFault_Handler
+      16   Usage_Fault_Handler
+        16   -> memoryDumpAll
+        16   -> printUsageErrorMsg
+        16   -> printf
+        16   -> stackDump
+       0   __aeabi_assert
+         0   -> platform_assert
+       0   abort
+       0   exception_dump_config
+       8   exception_init
+         8   -- Indirect call
+         8   -> Flash_ReturnReady
+         0   -> printf
+       0   exception_reboot
+       8   exception_register_callbacks
+      24   memoryDumpAll
+        24   -- Indirect call
+         0   -> printf
+        24   -> printf
+       0   platform_assert
+      16   printBusFaultErrorMsg
+         0   -> printf
+        16   -> printf
+      16   printMemoryManagementErrorMsg
+         0   -> printf
+        16   -> printf
+       8   printUsageErrorMsg
+         0   -> printf
+         8   -> printf
+       0   reboot_check
+      16   stackDump
+         0   -> exception_reboot
+        16   -> printf
+        16   -> reboot_check
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable108
+       4  ??DataTable108_1
+       4  ??DataTable108_2
+       4  ??DataTable98
+       4  ??DataTable98_1
+       4  ??DataTable98_2
+       4  ??DataTable98_3
+       4  ??DataTable98_4
+       4  ??DataTable98_5
+       4  ??DataTable98_6
+       4  ??DataTable98_7
+       4  ??DataTable98_8
+      40  ?_0
+      16  ?_1
+      56  ?_10
+      60  ?_11
+      32  ?_12
+      64  ?_13
+      24  ?_14
+      12  ?_15
+      60  ?_16
+      56  ?_17
+      56  ?_18
+      44  ?_19
+      20  ?_2
+      52  ?_20
+      56  ?_21
+      24  ?_22
+      16  ?_23
+      16  ?_24
+      16  ?_25
+      16  ?_26
+      16  ?_27
+      16  ?_28
+      16  ?_29
+      20  ?_3
+      16  ?_30
+      16  ?_31
+      16  ?_32
+      16  ?_33
+      16  ?_34
+      16  ?_35
+      16  ?_36
+      16  ?_37
+      16  ?_38
+      20  ?_39
+      20  ?_4
+      16  ?_40
+      16  ?_41
+      16  ?_42
+      16  ?_43
+      16  ?_44
+      16  ?_45
+      16  ?_46
+      16  ?_47
+      16  ?_48
+      16  ?_49
+      24  ?_5
+      16  ?_50
+      16  ?_51
+      16  ?_52
+      16  ?_53
+      16  ?_54
+      16  ?_55
+      16  ?_56
+      16  ?_57
+      16  ?_58
+      16  ?_59
+      16  ?_6
+      16  ?_60
+      16  ?_61
+      16  ?_62
+      16  ?_63
+      16  ?_64
+      16  ?_65
+      16  ?_66
+      16  ?_67
+      16  ?_68
+      16  ?_69
+      24  ?_7
+      16  ?_70
+      16  ?_71
+      20  ?_72
+      20  ?_73
+      20  ?_74
+      20  ?_75
+      20  ?_76
+      32  ?_77
+      28  ?_78
+      28  ?_79
+      28  ?_8
+      24  ?_80
+      20  ?_81
+      24  ?_82
+      32  ?_83
+      28  ?_84
+      28  ?_85
+      64  ?_9
+      12  BusFault_Handler
+      50  Bus_Fault_Handler
+      96  CommonFault_Handler
+      12  HardFault_Handler
+     100  Hard_Fault_Handler
+      48  MemManage_Fault_Handler
+      12  MemManage_Handler
+       2  NMI_Handler
+      12  UsageFault_Handler
+      50  Usage_Fault_Handler
+       2  __aeabi_assert
+      24  abort
+      68  assert_expr
+          exception_config
+       8  exception_dump_config
+      68  exception_init
+       2  exception_reboot
+      86  exception_register_callbacks
+     118  memoryDumpAll
+      24  platform_assert
+     120  printBusFaultErrorMsg
+     108  printMemoryManagementErrorMsg
+      92  printUsageErrorMsg
+       8  pxExceptionStack
+          pTaskContext
+      22  reboot_check
+       4  reboot_flag
+     748  stackDump
+     216  taskContext
+     768  xExceptionStack
+
+ 
+ 1 056 bytes in section .bss
+     8 bytes in section .data
+   264 bytes in section .ram_code
+ 3 600 bytes in section .text
+ 
+ 3 862 bytes of CODE memory (+ 2 bytes shared)
+ 1 064 bytes of DATA memory
+
+Errors: none
+Warnings: none

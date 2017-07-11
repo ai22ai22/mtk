@@ -1,0 +1,822 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:41
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\lwip\ports\sys_arch.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWB2C8.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\lwip\ports\sys_arch.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\sys_arch.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\sys_arch.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\third_party\lwip\ports\sys_arch.c
+      1          /*
+      2           * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * 1. Redistributions of source code must retain the above copyright notice,
+      9           *    this list of conditions and the following disclaimer.
+     10           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     11           *    this list of conditions and the following disclaimer in the documentation
+     12           *    and/or other materials provided with the distribution.
+     13           * 3. The name of the author may not be used to endorse or promote products
+     14           *    derived from this software without specific prior written permission.
+     15           *
+     16           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     17           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     18           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     19           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     20           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     21           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     22           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     23           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     24           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     25           * OF SUCH DAMAGE.
+     26           *
+     27           * This file is part of the lwIP TCP/IP stack.
+     28           *
+     29           * Author: Adam Dunkels <adam@sics.se>
+     30           *
+     31           */
+     32          
+     33          //*****************************************************************************
+     34          //
+     35          // Include OS functionality.
+     36          //
+     37          //*****************************************************************************
+     38          
+     39          /* ------------------------ System architecture includes ----------------------------- */
+     40          #include "arch/sys_arch.h"
+     41          
+     42          /* ------------------------ lwIP includes --------------------------------- */
+     43          #include "lwip/opt.h"
+     44          
+     45          #include "lwip/debug.h"
+     46          #include "lwip/def.h"
+     47          #include "lwip/sys.h"
+     48          #include "lwip/mem.h"
+     49          #include "lwip/stats.h"
+     50          #include "hal_gpt.h"
+     51          /* Very crude mechanism used to determine if the critical section handling
+     52          functions are being called from an interrupt context or not.  This relies on
+     53          the interrupt handler setting this variable manually. */
+     54          portBASE_TYPE xInsideISR = pdFALSE;
+     55          
+     56          /*---------------------------------------------------------------------------*
+     57           * Routine:  sys_mbox_new
+     58           *---------------------------------------------------------------------------*
+     59           * Description:
+     60           *      Creates a new mailbox
+     61           * Inputs:
+     62           *      int size                -- Size of elements in the mailbox
+     63           * Outputs:
+     64           *      sys_mbox_t              -- Handle to new mailbox
+     65           *---------------------------------------------------------------------------*/
+     66          err_t sys_mbox_new( sys_mbox_t *pxMailBox, int iSize )
+     67          {
+     68          err_t xReturn = ERR_MEM;
+     69          
+     70              *pxMailBox = xQueueCreate( iSize, sizeof( void * ) );
+     71          
+     72              if( *pxMailBox != NULL )
+     73              {
+     74                  xReturn = ERR_OK;
+     75                  SYS_STATS_INC_USED( mbox );
+     76              }
+     77          
+     78              return xReturn;
+     79          }
+     80          
+     81          
+     82          /*---------------------------------------------------------------------------*
+     83           * Routine:  sys_mbox_free
+     84           *---------------------------------------------------------------------------*
+     85           * Description:
+     86           *      Deallocates a mailbox. If there are messages still present in the
+     87           *      mailbox when the mailbox is deallocated, it is an indication of a
+     88           *      programming error in lwIP and the developer should be notified.
+     89           * Inputs:
+     90           *      sys_mbox_t mbox         -- Handle of mailbox
+     91           * Outputs:
+     92           *      sys_mbox_t              -- Handle to new mailbox
+     93           *---------------------------------------------------------------------------*/
+     94          void sys_mbox_free( sys_mbox_t *pxMailBox )
+     95          {
+     96          unsigned long ulMessagesWaiting;
+     97          
+     98              ulMessagesWaiting = uxQueueMessagesWaiting( *pxMailBox );
+     99              configASSERT( ( ulMessagesWaiting == 0 ) );
+    100          
+    101              #if SYS_STATS
+    102              {
+    103                  if( ulMessagesWaiting != 0UL )
+    104                  {
+    105                      SYS_STATS_INC( mbox.err );
+    106                  }
+    107          
+    108                  SYS_STATS_DEC( mbox.used );
+    109              }
+    110              #endif /* SYS_STATS */
+    111          
+    112              vQueueDelete( *pxMailBox );
+    113          }
+    114          
+    115          /*---------------------------------------------------------------------------*
+    116           * Routine:  sys_mbox_post
+    117           *---------------------------------------------------------------------------*
+    118           * Description:
+    119           *      Post the "msg" to the mailbox.
+    120           * Inputs:
+    121           *      sys_mbox_t mbox         -- Handle of mailbox
+    122           *      void *data              -- Pointer to data to post
+    123           *---------------------------------------------------------------------------*/
+    124          void sys_mbox_post( sys_mbox_t *pxMailBox, void *pxMessageToPost )
+    125          {
+    126              while( xQueueSendToBack( *pxMailBox, &pxMessageToPost, portMAX_DELAY ) != pdTRUE );
+    127          }
+    128          
+    129          /*---------------------------------------------------------------------------*
+    130           * Routine:  sys_mbox_trypost
+    131           *---------------------------------------------------------------------------*
+    132           * Description:
+    133           *      Try to post the "msg" to the mailbox.  Returns immediately with
+    134           *      error if cannot.
+    135           * Inputs:
+    136           *      sys_mbox_t mbox         -- Handle of mailbox
+    137           *      void *msg               -- Pointer to data to post
+    138           * Outputs:
+    139           *      err_t                   -- ERR_OK if message posted, else ERR_MEM
+    140           *                                  if not.
+    141           *---------------------------------------------------------------------------*/
+    142          err_t sys_mbox_trypost( sys_mbox_t *pxMailBox, void *pxMessageToPost )
+    143          {
+    144          err_t xReturn;
+    145          portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    146          
+    147              if( xInsideISR != pdFALSE )
+    148              {
+    149                  xReturn = xQueueSendFromISR( *pxMailBox, &pxMessageToPost, &xHigherPriorityTaskWoken );
+    150              }
+    151              else
+    152              {
+    153                  xReturn = xQueueSend( *pxMailBox, &pxMessageToPost, ( TickType_t ) 0 );
+    154              }
+    155          
+    156              if( xReturn == pdPASS )
+    157              {
+    158                  xReturn = ERR_OK;
+    159              }
+    160              else
+    161              {
+    162                  /* The queue was already full. */
+    163                  xReturn = ERR_MEM;
+    164                  SYS_STATS_INC( mbox.err );
+    165              }
+    166          
+    167              return xReturn;
+    168          }
+    169          
+    170          /*---------------------------------------------------------------------------*
+    171           * Routine:  sys_arch_mbox_fetch
+    172           *---------------------------------------------------------------------------*
+    173           * Description:
+    174           *      Blocks the thread until a message arrives in the mailbox, but does
+    175           *      not block the thread longer than "timeout" milliseconds (similar to
+    176           *      the sys_arch_sem_wait() function). The "msg" argument is a result
+    177           *      parameter that is set by the function (i.e., by doing "*msg =
+    178           *      ptr"). The "msg" parameter maybe NULL to indicate that the message
+    179           *      should be dropped.
+    180           *
+    181           *      The return values are the same as for the sys_arch_sem_wait() function:
+    182           *      Number of milliseconds spent waiting or SYS_ARCH_TIMEOUT if there was a
+    183           *      timeout.
+    184           *
+    185           *      Note that a function with a similar name, sys_mbox_fetch(), is
+    186           *      implemented by lwIP.
+    187           * Inputs:
+    188           *      sys_mbox_t mbox         -- Handle of mailbox
+    189           *      void **msg              -- Pointer to pointer to msg received
+    190           *      u32_t timeout           -- Number of milliseconds until timeout
+    191           * Outputs:
+    192           *      u32_t                   -- SYS_ARCH_TIMEOUT if timeout, else number
+    193           *                                  of milliseconds until received.
+    194           *---------------------------------------------------------------------------*/
+    195          u32_t sys_arch_mbox_fetch( sys_mbox_t *pxMailBox, void **ppvBuffer, u32_t ulTimeOut )
+    196          {
+    197              void *pvDummy;
+    198              TickType_t xStartTime, xEndTime, xElapsed;
+    199              unsigned long ulReturn;
+    200              uint32_t start_count, end_count, count;
+    201              static uint32_t xElapsed_count = 0;
+    202              hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &start_count);
+    203              xStartTime = xTaskGetTickCount();
+    204              if( NULL == ppvBuffer )
+    205              {
+    206                  ppvBuffer = &pvDummy;
+    207              }
+    208          
+    209              if( ulTimeOut != 0UL )
+    210              {
+    211                  configASSERT( xInsideISR == ( portBASE_TYPE ) 0 );
+    212          
+    213                  if( pdTRUE == xQueueReceive( *pxMailBox, &( *ppvBuffer ), ulTimeOut/ portTICK_PERIOD_MS ) )
+    214                  {
+    215                      xEndTime = xTaskGetTickCount();
+    216                      hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &end_count);
+    217                      hal_gpt_get_duration_count(start_count, end_count, &count);
+    218                      xElapsed = ( xEndTime - xStartTime ) * portTICK_PERIOD_MS;
+    219                      if (xElapsed == 0) {
+    220                          xElapsed_count += count;
+    221                          if (xElapsed_count >= 32) {
+    222                              xElapsed++;
+    223                              xElapsed_count -= 32;
+    224                          }
+    225                      }
+    226                      ulReturn = xElapsed;
+    227                  }
+    228                  else
+    229                  {
+    230                      /* Timed out. */
+    231                      *ppvBuffer = NULL;
+    232                      ulReturn = SYS_ARCH_TIMEOUT;
+    233                  }
+    234              }
+    235              else
+    236              {
+    237                  while( pdTRUE != xQueueReceive( *pxMailBox, &( *ppvBuffer ), portMAX_DELAY ) );
+    238                  xEndTime = xTaskGetTickCount();
+    239                  xElapsed = ( xEndTime - xStartTime ) * portTICK_PERIOD_MS;
+    240          
+    241                  if( xElapsed == 0UL )
+    242                  {
+    243                      xElapsed = 1UL;
+    244                  }
+    245          
+    246                  ulReturn = xElapsed;
+    247              }
+    248          
+    249              return ulReturn;
+    250          }
+    251          
+    252          /*---------------------------------------------------------------------------*
+    253           * Routine:  sys_arch_mbox_tryfetch
+    254           *---------------------------------------------------------------------------*
+    255           * Description:
+    256           *      Similar to sys_arch_mbox_fetch, but if message is not ready
+    257           *      immediately, we'll return with SYS_MBOX_EMPTY.  On success, 0 is
+    258           *      returned.
+    259           * Inputs:
+    260           *      sys_mbox_t mbox         -- Handle of mailbox
+    261           *      void **msg              -- Pointer to pointer to msg received
+    262           * Outputs:
+    263           *      u32_t                   -- SYS_MBOX_EMPTY if no messages.  Otherwise,
+    264           *                                  return ERR_OK.
+    265           *---------------------------------------------------------------------------*/
+    266          u32_t sys_arch_mbox_tryfetch( sys_mbox_t *pxMailBox, void **ppvBuffer )
+    267          {
+    268          void *pvDummy;
+    269          unsigned long ulReturn;
+    270          long lResult;
+    271          portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    272          
+    273              if( ppvBuffer== NULL )
+    274              {
+    275                  ppvBuffer = &pvDummy;
+    276              }
+    277          
+    278              if( xInsideISR != pdFALSE )
+    279              {
+    280                  lResult = xQueueReceiveFromISR( *pxMailBox, &( *ppvBuffer ), &xHigherPriorityTaskWoken );
+    281              }
+    282              else
+    283              {
+    284                  lResult = xQueueReceive( *pxMailBox, &( *ppvBuffer ), 0UL );
+    285              }
+    286          
+    287              if( lResult == pdPASS )
+    288              {
+    289                  ulReturn = ERR_OK;
+    290              }
+    291              else
+    292              {
+    293                  ulReturn = SYS_MBOX_EMPTY;
+    294              }
+    295          
+    296              return ulReturn;
+    297          }
+    298          
+    299          /*---------------------------------------------------------------------------*
+    300           * Routine:  sys_sem_new
+    301           *---------------------------------------------------------------------------*
+    302           * Description:
+    303           *      Creates and returns a new semaphore. The "ucCount" argument specifies
+    304           *      the initial state of the semaphore.
+    305           *      NOTE: Currently this routine only creates counts of 1 or 0
+    306           * Inputs:
+    307           *      sys_mbox_t mbox         -- Handle of mailbox
+    308           *      u8_t ucCount              -- Initial ucCount of semaphore (1 or 0)
+    309           * Outputs:
+    310           *      sys_sem_t               -- Created semaphore or 0 if could not create.
+    311           *---------------------------------------------------------------------------*/
+    312          err_t sys_sem_new( sys_sem_t *pxSemaphore, u8_t ucCount )
+    313          {
+    314          err_t xReturn = ERR_MEM;
+    315          
+    316              vSemaphoreCreateBinary( ( *pxSemaphore ) );
+    317          
+    318              if( *pxSemaphore != NULL )
+    319              {
+    320                  if( ucCount == 0U )
+    321                  {
+    322                      xSemaphoreTake( *pxSemaphore, 1UL );
+    323                  }
+    324          
+    325                  xReturn = ERR_OK;
+    326                  SYS_STATS_INC_USED( sem );
+    327              }
+    328              else
+    329              {
+    330                  SYS_STATS_INC( sem.err );
+    331              }
+    332          
+    333              return xReturn;
+    334          }
+    335          
+    336          /*---------------------------------------------------------------------------*
+    337           * Routine:  sys_arch_sem_wait
+    338           *---------------------------------------------------------------------------*
+    339           * Description:
+    340           *      Blocks the thread while waiting for the semaphore to be
+    341           *      signaled. If the "timeout" argument is non-zero, the thread should
+    342           *      only be blocked for the specified time (measured in
+    343           *      milliseconds).
+    344           *
+    345           *      If the timeout argument is non-zero, the return value is the number of
+    346           *      milliseconds spent waiting for the semaphore to be signaled. If the
+    347           *      semaphore wasn't signaled within the specified time, the return value is
+    348           *      SYS_ARCH_TIMEOUT. If the thread didn't have to wait for the semaphore
+    349           *      (i.e., it was already signaled), the function may return zero.
+    350           *
+    351           *      Notice that lwIP implements a function with a similar name,
+    352           *      sys_sem_wait(), that uses the sys_arch_sem_wait() function.
+    353           * Inputs:
+    354           *      sys_sem_t sem           -- Semaphore to wait on
+    355           *      u32_t timeout           -- Number of milliseconds until timeout
+    356           * Outputs:
+    357           *      u32_t                   -- Time elapsed or SYS_ARCH_TIMEOUT.
+    358           *---------------------------------------------------------------------------*/
+    359          u32_t sys_arch_sem_wait( sys_sem_t *pxSemaphore, u32_t ulTimeout )
+    360          {
+    361          TickType_t xStartTime, xEndTime, xElapsed;
+    362          unsigned long ulReturn;
+    363          
+    364              xStartTime = xTaskGetTickCount();
+    365          
+    366              if( ulTimeout != 0UL )
+    367              {
+    368                  if( xSemaphoreTake( *pxSemaphore, ulTimeout / portTICK_PERIOD_MS ) == pdTRUE )
+    369                  {
+    370                      xEndTime = xTaskGetTickCount();
+    371                      xElapsed = (xEndTime - xStartTime) * portTICK_PERIOD_MS;
+    372                      ulReturn = xElapsed;
+    373                  }
+    374                  else
+    375                  {
+    376                      ulReturn = SYS_ARCH_TIMEOUT;
+    377                  }
+    378              }
+    379              else
+    380              {
+    381                  while( xSemaphoreTake( *pxSemaphore, portMAX_DELAY ) != pdTRUE );
+    382                  xEndTime = xTaskGetTickCount();
+    383                  xElapsed = ( xEndTime - xStartTime ) * portTICK_PERIOD_MS;
+    384          
+    385                  if( xElapsed == 0UL )
+    386                  {
+    387                      xElapsed = 1UL;
+    388                  }
+    389          
+    390                  ulReturn = xElapsed;
+    391              }
+    392          
+    393              return ulReturn;
+    394          }
+    395          
+    396          /** Create a new mutex
+    397           * @param mutex pointer to the mutex to create
+    398           * @return a new mutex */
+    399          err_t sys_mutex_new( sys_mutex_t *pxMutex )
+    400          {
+    401          err_t xReturn = ERR_MEM;
+    402          
+    403              *pxMutex = xSemaphoreCreateMutex();
+    404          
+    405              if( *pxMutex != NULL )
+    406              {
+    407                  xReturn = ERR_OK;
+    408                  SYS_STATS_INC_USED( mutex );
+    409              }
+    410              else
+    411              {
+    412                  SYS_STATS_INC( mutex.err );
+    413              }
+    414          
+    415              return xReturn;
+    416          }
+    417          
+    418          /** Lock a mutex
+    419           * @param mutex the mutex to lock */
+    420          void sys_mutex_lock( sys_mutex_t *pxMutex )
+    421          {
+    422              while( xSemaphoreTake( *pxMutex, portMAX_DELAY ) != pdPASS );
+    423          }
+    424          
+    425          /** Unlock a mutex
+    426           * @param mutex the mutex to unlock */
+    427          void sys_mutex_unlock(sys_mutex_t *pxMutex )
+    428          {
+    429              xSemaphoreGive( *pxMutex );
+    430          }
+    431          
+    432          
+    433          /** Delete a semaphore
+    434           * @param mutex the mutex to delete */
+    435          void sys_mutex_free( sys_mutex_t *pxMutex )
+    436          {
+    437              SYS_STATS_DEC( mutex.used );
+    438              vQueueDelete( *pxMutex );
+    439          }
+    440          
+    441          
+    442          /*---------------------------------------------------------------------------*
+    443           * Routine:  sys_sem_signal
+    444           *---------------------------------------------------------------------------*
+    445           * Description:
+    446           *      Signals (releases) a semaphore
+    447           * Inputs:
+    448           *      sys_sem_t sem           -- Semaphore to signal
+    449           *---------------------------------------------------------------------------*/
+    450          void sys_sem_signal( sys_sem_t *pxSemaphore )
+    451          {
+    452          portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    453          
+    454              if( xInsideISR != pdFALSE )
+    455              {
+    456                  xSemaphoreGiveFromISR( *pxSemaphore, &xHigherPriorityTaskWoken );
+    457              }
+    458              else
+    459              {
+    460                  xSemaphoreGive( *pxSemaphore );
+    461              }
+    462          }
+    463          
+    464          /*---------------------------------------------------------------------------*
+    465           * Routine:  sys_sem_free
+    466           *---------------------------------------------------------------------------*
+    467           * Description:
+    468           *      Deallocates a semaphore
+    469           * Inputs:
+    470           *      sys_sem_t sem           -- Semaphore to free
+    471           *---------------------------------------------------------------------------*/
+    472          void sys_sem_free( sys_sem_t *pxSemaphore )
+    473          {
+    474              SYS_STATS_DEC(sem.used);
+    475              vQueueDelete( *pxSemaphore );
+    476          }
+    477          
+    478          /*---------------------------------------------------------------------------*
+    479           * Routine:  sys_init
+    480           *---------------------------------------------------------------------------*
+    481           * Description:
+    482           *      Initialize sys arch
+    483           *---------------------------------------------------------------------------*/
+    484          void sys_init(void)
+    485          {
+    486              srand(rand());
+    487          }
+    488          
+    489          u32_t sys_now(void)
+    490          {
+    491              return xTaskGetTickCount();
+    492          }
+    493          
+    494          /*---------------------------------------------------------------------------*
+    495           * Routine:  sys_thread_new
+    496           *---------------------------------------------------------------------------*
+    497           * Description:
+    498           *      Starts a new thread with priority "prio" that will begin its
+    499           *      execution in the function "thread()". The "arg" argument will be
+    500           *      passed as an argument to the thread() function. The id of the new
+    501           *      thread is returned. Both the id and the priority are system
+    502           *      dependent.
+    503           * Inputs:
+    504           *      char *name              -- Name of thread
+    505           *      void (* thread)(void *arg) -- Pointer to function to run.
+    506           *      void *arg               -- Argument passed into function
+    507           *      int stacksize           -- Required stack amount in bytes
+    508           *      int prio                -- Thread priority
+    509           * Outputs:
+    510           *      sys_thread_t            -- Pointer to per-thread timeouts.
+    511           *---------------------------------------------------------------------------*/
+    512          sys_thread_t sys_thread_new( const char *pcName, void( *pxThread )( void *pvParameters ), void *pvArg, int iStackSize, int iPriority )
+    513          {
+    514          TaskHandle_t xCreatedTask;
+    515          portBASE_TYPE xResult;
+    516          sys_thread_t xReturn;
+    517          
+    518              xResult = xTaskCreate( pxThread, pcName, iStackSize, pvArg, iPriority, &xCreatedTask );
+    519          
+    520              if( xResult == pdPASS )
+    521              {
+    522                  xReturn = xCreatedTask;
+    523              }
+    524              else
+    525              {
+    526                  xReturn = NULL;
+    527              }
+    528          
+    529              return xReturn;
+    530          }
+    531          
+    532          /*---------------------------------------------------------------------------*
+    533           * Routine:  sys_arch_protect
+    534           *---------------------------------------------------------------------------*
+    535           * Description:
+    536           *      This optional function does a "fast" critical region protection and
+    537           *      returns the previous protection level. This function is only called
+    538           *      during very short critical regions. An embedded system which supports
+    539           *      ISR-based drivers might want to implement this function by disabling
+    540           *      interrupts. Task-based systems might want to implement this by using
+    541           *      a mutex or disabling tasking. This function should support recursive
+    542           *      calls from the same task or interrupt. In other words,
+    543           *      sys_arch_protect() could be called while already protected. In
+    544           *      that case the return value indicates that it is already protected.
+    545           *
+    546           *      sys_arch_protect() is only required if your port is supporting an
+    547           *      operating system.
+    548           * Outputs:
+    549           *      sys_prot_t              -- Previous protection level (not used here)
+    550           *---------------------------------------------------------------------------*/
+    551          sys_prot_t sys_arch_protect( void )
+    552          {
+    553              if( xInsideISR == pdFALSE )
+    554              {
+    555                  taskENTER_CRITICAL();
+    556              }
+    557              return ( sys_prot_t ) 1;
+    558          }
+    559          
+    560          /*---------------------------------------------------------------------------*
+    561           * Routine:  sys_arch_unprotect
+    562           *---------------------------------------------------------------------------*
+    563           * Description:
+    564           *      This optional function does a "fast" set of critical region
+    565           *      protection to the value specified by pval. See the documentation for
+    566           *      sys_arch_protect() for more information. This function is only
+    567           *      required if your port is supporting an operating system.
+    568           * Inputs:
+    569           *      sys_prot_t              -- Previous protection level (not used here)
+    570           *---------------------------------------------------------------------------*/
+    571          void sys_arch_unprotect( sys_prot_t xValue )
+    572          {
+    573              (void) xValue;
+    574              if( xInsideISR == pdFALSE )
+    575              {
+    576                  taskEXIT_CRITICAL();
+    577              }
+    578          }
+    579          
+    580          /*
+    581           * Prints an assertion messages and aborts execution.
+    582           */
+    583          void sys_assert( const char *pcMessage )
+    584          {
+    585              (void) pcMessage;
+    586                  printf("sys_assert : loop forever\n");
+    587              for (;;)
+    588              {
+    589              }
+    590          }
+    591          /*-------------------------------------------------------------------------*
+    592           * End of File:  sys_arch.c
+    593           *-------------------------------------------------------------------------*/
+    594          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   sys_arch_mbox_fetch
+        40   -> hal_gpt_get_duration_count
+        40   -> hal_gpt_get_free_run_count
+        40   -> platform_assert
+        40   -> xQueueGenericReceive
+        40   -> xTaskGetTickCount
+      16   sys_arch_mbox_tryfetch
+        16   -> xQueueGenericReceive
+        16   -> xQueueReceiveFromISR
+       8   sys_arch_protect
+         8   -> vPortEnterCritical
+      16   sys_arch_sem_wait
+        16   -> xQueueGenericReceive
+        16   -> xTaskGetTickCount
+       0   sys_arch_unprotect
+         0   -> vPortExitCritical
+       8   sys_assert
+         8   -> printf
+       8   sys_init
+         8   -> rand
+         0   -> srand
+      16   sys_mbox_free
+        16   -> platform_assert
+        16   -> uxQueueMessagesWaiting
+         0   -> vQueueDelete
+      16   sys_mbox_new
+        16   -> xQueueGenericCreate
+      16   sys_mbox_post
+        16   -> xQueueGenericSend
+      16   sys_mbox_trypost
+        16   -> xQueueGenericSend
+        16   -> xQueueGenericSendFromISR
+       0   sys_mutex_free
+         0   -> vQueueDelete
+       8   sys_mutex_lock
+         8   -> xQueueGenericReceive
+      16   sys_mutex_new
+        16   -> xQueueCreateMutex
+       0   sys_mutex_unlock
+         0   -> xQueueGenericSend
+       0   sys_now
+         0   -> xTaskGetTickCount
+       0   sys_sem_free
+         0   -> vQueueDelete
+      16   sys_sem_new
+        16   -> xQueueGenericCreate
+        16   -> xQueueGenericReceive
+        16   -> xQueueGenericSend
+       8   sys_sem_signal
+         8   -> xQueueGenericSend
+         8   -> xQueueGiveFromISR
+      32   sys_thread_new
+        32   -> xTaskGenericCreate
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable15_2
+       4  ??DataTable15_3
+       4  ??DataTable15_4
+      28  ?_0
+      80  ?_1
+      36  ?_2
+      28  ?_3
+     170  sys_arch_mbox_fetch
+      56  sys_arch_mbox_tryfetch
+      18  sys_arch_protect
+      78  sys_arch_sem_wait
+      14  sys_arch_unprotect
+      12  sys_assert
+      14  sys_init
+      56  sys_mbox_free
+      52  sys_mbox_new
+      24  sys_mbox_post
+      70  sys_mbox_trypost
+      18  sys_mutex_free
+      24  sys_mutex_lock
+      54  sys_mutex_new
+      12  sys_mutex_unlock
+       4  sys_now
+      18  sys_sem_free
+      92  sys_sem_new
+      38  sys_sem_signal
+      50  sys_thread_new
+       8  xInsideISR
+          xElapsed_count
+
+ 
+     8 bytes in section .bss
+ 1 066 bytes in section .text
+ 
+ 1 066 bytes of CODE memory
+     8 bytes of DATA memory
+
+Errors: none
+Warnings: none

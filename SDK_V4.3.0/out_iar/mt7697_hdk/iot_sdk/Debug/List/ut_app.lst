@@ -1,0 +1,2169 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:46
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\src\ut_app\ut_app.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWC42F.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\src\ut_app\ut_app.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\ut_app.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\ut_app.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\src\ut_app\ut_app.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "ut_app.h"
+     36          
+     37          /* Start of changable configuration. */
+     38          #include "ut_app_config.h"
+     39          #include "bt_debug.h"
+     40          #include "bt_lwip.h"
+     41          #include <string.h>
+     42          #ifdef MTK_BLE_SMTCN_ENABLE
+     43          #include "ble_smtcn.h"
+     44          #endif
+     45          #ifdef BLE_THROUGHPUT
+     46          static uint8_t enable_dle = 0;
+     47          #endif
+     48          extern uint32_t bt_gatt_service_execute_write(uint16_t handle, uint8_t flag);
+     49          extern uint16_t conn_interval; /* this is for calculating ble throughput*/
+     50          /* Lower Tester Information (PTS) */
+     51          const uint8_t lt_addr_type = BT_ADDR_PUBLIC;
+     52          uint8_t lt_addr[6] = APP_LT_ADDR;
+     53          /* Fill ABCD0000000000000000000004030201 in pts for SM OOB. */
+     54          const uint8_t oob_data[] = "\x01\x02\x03\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xcd\xab";
+     55          /* End of changable configuration. */
+     56          
+     57          extern void bt_gap_dump(void);
+     58          #ifdef BT_DEBUG
+     59          extern void bt_gap_debug_cmd_sending(uint8_t* buffer);
+     60          #endif
+     61          
+     62          extern bt_bd_addr_t local_public_addr;
+     63          static bt_gap_le_local_config_req_ind_t local_config;
+     64          
+     65          /* Start of flash. */
+     66          bt_gap_le_smp_pairing_config_t pairing_config_req, pairing_config_req_default = {
+     67              .auth_req = BT_GAP_LE_SMP_AUTH_REQ_BONDING,
+     68              .maximum_encryption_key_size = 16,
+     69          };
+     70          
+     71          bt_gap_le_local_key_t local_key_req, local_key_req_default = {
+     72              .encryption_info = {{0}},
+     73              .master_id = {0},
+     74              .identity_info = {{0x12,0x34,0x56,0x78,0x9a,0xbc,0xde,0xf0,0x19,0x28,0x55,0x33,0x68,0x33,0x56,0xde}},
+     75              .signing_info = {{0}}
+     76          };
+     77          /* End of flash. */
+     78          
+     79          /* Start of default configuration, don't edit here. */
+     80          bool sc_only, sc_only_default = false;
+     81          
+     82          bt_hci_cmd_le_set_advertising_enable_t adv_enable, adv_enable_default = {
+     83              .advertising_enable = BT_HCI_ENABLE,
+     84          };
+     85          
+     86          bt_hci_cmd_le_set_advertising_parameters_t adv_para, adv_para_default = {
+     87              .advertising_interval_min = 0x0800,
+     88              .advertising_interval_max = 0x0800,
+     89              .advertising_type = BT_HCI_ADV_TYPE_CONNECTABLE_UNDIRECTED,
+     90              .advertising_channel_map = 7,
+     91              .advertising_filter_policy = 0
+     92          };
+     93          
+     94          #if 0
+     95          bt_hci_cmd_le_set_multi_advertising_enable_t multi_adv_enable, multi_adv_enable_default = {
+     96              .advertising_enable = BT_HCI_ENABLE,
+     97          };
+     98          
+     99          bt_hci_cmd_le_set_multi_advertising_parameters_t multi_adv_para, multi_adv_para_default = {
+    100              .advertising_interval_min = 0x0800,
+    101              .advertising_interval_max = 0x0800,
+    102              .advertising_type = BT_HCI_ADV_TYPE_NON_CONNECTABLE_UNDIRECTED,
+    103              .advertising_channel_map = 7,
+    104              .advertising_filter_policy = 0
+    105          };
+    106          #endif
+    107          
+    108          const bt_hci_cmd_le_set_scan_enable_t scan_enable = {
+    109              .le_scan_enable = BT_HCI_ENABLE,
+    110              .filter_duplicates = BT_HCI_ENABLE,
+    111          };
+    112          
+    113          const bt_hci_cmd_le_set_scan_enable_t scan_disable = {
+    114              .le_scan_enable = BT_HCI_DISABLE,
+    115              .filter_duplicates = BT_HCI_DISABLE,
+    116          };
+    117          
+    118          bt_hci_cmd_le_set_scan_parameters_t scan_para, scan_para_default = {
+    119              .le_scan_type = BT_HCI_SCAN_TYPE_ACTIVE,
+    120              .le_scan_interval = 0x0024,
+    121              .le_scan_window = 0x0011,
+    122              .own_address_type = BT_HCI_SCAN_ADDR_PUBLIC,
+    123              .scanning_filter_policy = BT_HCI_SCAN_FILTER_ACCEPT_ALL_ADVERTISING_PACKETS,
+    124          };
+    125          
+    126          bt_hci_cmd_le_create_connection_t connect_para, connect_para_default = {
+    127              .le_scan_interval = 0x0010,
+    128              .le_scan_window = 0x0010,
+    129              .initiator_filter_policy = BT_HCI_CONN_FILTER_ASSIGNED_ADDRESS,
+    130              .peer_address = {
+    131                  .type = BT_ADDR_PUBLIC,
+    132              },
+    133              .own_address_type = BT_ADDR_PUBLIC,
+    134              .conn_interval_min = 0x0006,
+    135              .conn_interval_max = 0x0320,
+    136              .conn_latency = 0x0000,
+    137              .supervision_timeout = 0x07d0,
+    138              .minimum_ce_length = 0x0000,
+    139              .maximum_ce_length = 0x0190,
+    140          };
+    141          
+    142          bt_hci_cmd_disconnect_t disconnect_para, disconnect_para_default = {
+    143              .connection_handle = 0x0200,
+    144              .reason = BT_HCI_STATUS_REMOTE_USER_TERMINATED_CONNECTION,
+    145          };
+    146          
+    147          bt_hci_cmd_le_connection_update_t conn_update_para, conn_update_para_default = {
+    148              .connection_handle = 0x0200,
+    149              .conn_interval_min = 0x0320,
+    150              .conn_interval_max = 0x0320,
+    151              .conn_latency = 0x0006,
+    152              .supervision_timeout = 0x0962,
+    153              .minimum_ce_length = 0x0000,
+    154              .maximum_ce_length = 0x0190,
+    155          };
+    156          
+    157          bt_hci_cmd_read_rssi_t read_rssi = {
+    158              .handle = 0x0200,
+    159          };
+    160          
+    161          bt_hci_cmd_le_set_advertising_data_t adv_data, adv_data_default = {0};
+    162          bt_hci_cmd_le_set_scan_response_data_t scan_data, scan_data_default = {0};
+    163          //bt_hci_cmd_le_set_multi_advertising_data_t multi_adv_data, multi_adv_data_default = {0};
+    164          //bt_hci_cmd_le_set_multi_scan_response_data_t multi_scan_data, multi_scan_data_default = {0};
+    165          
+    166          static uint8_t ut_app_reset_global_config_flag = true;
+    167          static uint8_t ut_app_reset_flash_flag = true;
+    168          bt_status_t (*ut_app_callback)(bt_msg_type_t, bt_status_t, void *) = NULL;
+    169          /* End of default configuration. */
+    170          
+    171          bool bt_app_advertising = false;
+    172          bool bt_app_scanning = false;
+    173          bool bt_app_connecting = false;
+    174          bool bt_app_wait_peer_central_address_resolution_rsp = false;
+    175          #define BT_APP_RESOLVING_LIST_UPDATING 0x01
+    176          #define BT_APP_WHITE_LIST_UPDATING 0x02
+    177          uint8_t list_updating = 0;//combination of BT_APP_RESOLVING_LIST_UPDATING & BT_APP_WHITE_LIST_UPDATING
+    178          
+    179          bt_status_t bt_app_gap_io_callback(void *input, void *output);
+    180          bt_status_t bt_app_sm_io_callback(void *input, void *output);
+    181          bt_status_t bt_app_l2cap_io_callback(void *input, void *output);
+    182          bt_status_t bt_app_gatts_io_callback(void *input, void *output);
+    183          bt_status_t bt_app_gattc_io_callback(void *input, void *output);
+    184          //bt_status_t bt_app_demo_io_callback(void *input, void *output);
+    185          bt_status_t bt_cmd_gattc_io_callback(void *input, void *output);
+    186          
+    187          static const struct bt_app_callback_table_t {
+    188              const char *name;
+    189              bt_status_t (*io_callback)(void *, void *);
+    190          } bt_app_callback_table[] = {
+    191              {"gap",     bt_app_gap_io_callback},
+    192              {"sm",      bt_app_sm_io_callback},
+    193              {"l2cap",   bt_app_l2cap_io_callback},
+    194              {"gatts",   bt_app_gatts_io_callback},
+    195              {"GATTC",   bt_app_gattc_io_callback},
+    196              //{"demo",    bt_app_demo_io_callback},
+    197              {"gatt",    bt_cmd_gattc_io_callback},
+    198          };
+    199          
+    200          /*Weak symbol declaration for l2cap */
+    201          bt_status_t bt_app_l2cap_io_callback(void *input, void *output);
+    202          bt_status_t default_bt_app_l2cap_io_callback(void *input, void *output)
+    203          {
+    204              return BT_STATUS_SUCCESS;
+    205          }
+    206          
+    207          #if _MSC_VER >= 1500
+    208              #pragma comment(linker, "/alternatename:_bt_app_l2cap_io_callback=_default_bt_app_l2cap_io_callback")
+    209          #elif defined(__GNUC__) || defined(__ICCARM__) || defined(__CC_ARM)
+    210              #pragma weak bt_app_l2cap_io_callback = default_bt_app_l2cap_io_callback
+    211          #else
+    212              #error "Unsupported Platform"
+    213          #endif
+    214          
+    215          /*Weak symbol declaration for sm */
+    216          bt_status_t bt_app_sm_io_callback(void *input, void *output);
+    217          bt_status_t default_bt_app_sm_io_callback(void *input, void *output)
+    218          {
+    219              return BT_STATUS_SUCCESS;
+    220          }
+    221          
+    222          #if _MSC_VER >= 1500
+    223              #pragma comment(linker, "/alternatename:_bt_app_sm_io_callback=_default_bt_app_sm_io_callback")
+    224          #elif defined(__GNUC__) || defined(__ICCARM__) || defined(__CC_ARM)
+    225              #pragma weak bt_app_sm_io_callback = default_bt_app_sm_io_callback
+    226          #else
+    227              #error "Unsupported Platform"
+    228          #endif
+    229          
+    230          
+    231          void ut_app_reset_flash()
+    232          {
+    233              clear_bonded_info();
+    234              pairing_config_req = pairing_config_req_default;
+    235              local_key_req = local_key_req_default;
+    236          }
+    237          
+    238          void ut_app_reset_global_config()
+    239          {
+    240              ut_app_callback = NULL;
+    241              adv_enable = adv_enable_default;
+    242              adv_para = adv_para_default;
+    243              scan_para = scan_para_default;
+    244              connect_para = connect_para_default;
+    245              disconnect_para = disconnect_para_default;
+    246              conn_update_para = conn_update_para_default;
+    247              adv_data = adv_data_default;
+    248              scan_data = scan_data_default;
+    249              sc_only = sc_only_default;
+    250              //multi_adv_data = multi_adv_data_default;
+    251              //multi_scan_data = multi_scan_data_default;
+    252              //multi_adv_para = multi_adv_para_default;
+    253              //multi_adv_enable = multi_adv_enable_default;
+    254          }
+    255          
+    256          static char* get_event_type(uint8_t type)
+    257          {
+    258              switch (type)
+    259              {
+    260                  case BT_GAP_LE_ADV_REPORT_EVT_TYPE_ADV_IND:
+    261                      return "ADV_IND";
+    262                  case BT_GAP_LE_ADV_REPORT_EVT_TYPE_ADV_DIRECT_IND:
+    263                      return "ADV_DIRECT_IND";
+    264                  case BT_GAP_LE_ADV_REPORT_EVT_TYPE_ADV_SCAN_IND:
+    265                      return "ADV_SCAN_IND";
+    266                  case BT_GAP_LE_ADV_REPORT_EVT_TYPE_ADV_NONCONN_IND:
+    267                      return "ADV_NONCONN_IND";
+    268                  case BT_GAP_LE_ADV_REPORT_EVT_TYPE_ADV_SCAN_RSP:
+    269                      return "SCAN_RSP";
+    270                  default:
+    271                      return "NULL";
+    272              }
+    273          }
+    274          
+    275          
+    276          void print_advertising_report(void *p)
+    277          {
+    278              const bt_gap_le_advertising_report_ind_t *report = (bt_gap_le_advertising_report_ind_t *)p;
+    279          
+    280              BT_COLOR_SET(BT_COLOR_BLUE);
+    281              BT_LOGI("APP", "========================================");
+    282              BT_LOGI("APP", "CL:10Address:\t%s", bt_debug_addr2str(&report->address));
+    283              BT_LOGI("APP", "CL:10Event Type:\t%s", get_event_type(report->event_type));
+    284              uint8_t count, ad_data_len, ad_data_type, ad_data_idx;
+    285              count = 0;
+    286              uint8_t buff[100] = {0};
+    287              while (count < report->data_length) {
+    288                  ad_data_len = report->data[count];
+    289                  /* Error handling for data length over 30 bytes. */
+    290                  if (ad_data_len >= 0x1F) {
+    291                      BT_LOGI("APP", "AD Data Length Error");
+    292                      break;
+    293                  }
+    294                  ad_data_type = report->data[count+1];
+    295                  count+=2;
+    296          
+    297                  if (ad_data_type == BT_GAP_LE_AD_TYPE_FLAG) {
+    298                      if (report->data[count] & BT_GAP_LE_AD_FLAG_LIMITED_DISCOVERABLE) {
+    299                          BT_LOGI("APP", "CL:10AD Flags:\tLE Limited Discoverable Mode");
+    300                      } else if (report->data[count] & BT_GAP_LE_AD_FLAG_GENERAL_DISCOVERABLE) {
+    301                          BT_LOGI("APP", "CL:10AD Flags:\tLE General Discoverable Mode");
+    302                      } else {
+    303                          BT_LOGI("APP", "CL:10AD Flags:\tUnknown: 0x%02x", report->data[count]);
+    304                      }
+    305                      count+=(ad_data_len-1);
+    306                  } else if (ad_data_type == BT_GAP_LE_AD_TYPE_NAME_COMPLETE) {
+    307                      for (ad_data_idx=0; ad_data_idx<(ad_data_len-1); ad_data_idx++, count++) {
+    308                          buff[ad_data_idx] = report->data[count];
+    309                      }
+    310                      BT_LOGI("APP", "CL:10Complete Name:\t%s", buff);
+    311                  } else {
+    312                      count+=(ad_data_len-1);
+    313                  }
+    314              }
+    315              /* print raw data */
+    316              printf("[I][APP] RAW DATA=0x");
+    317              for (count = 0; count<report->data_length; count++){
+    318                  printf("%02x",report->data[count]);
+    319              }
+    320              printf("\n");
+    321          #if defined(MTK_BT_LWIP_ENABLE)
+    322              bt_lwip_send(report->data, report->data_length);
+    323              bt_lwip_send("\r\n", 5);
+    324          #endif
+    325              BT_LOGI("APP", "========================================");
+    326              BT_COLOR_SET(BT_COLOR_WHITE);
+    327          }
+    328          
+    329          void print_help()
+    330          {
+    331              printf("Command line usage example: (ble h), (ble gap power_off)\n"
+    332                     "ble                                 -Common command\n"
+    333                     "  h                                 -Help\n"
+    334                     "  reset config off                  -Not reset config in each command\n"
+    335                     "  reset flash off                   -Not reset flash in each command\n"
+    336                     "  reset config on                   -Reset config in each command\n"
+    337                     "  reset flash on                    -Reset flash in each command\n"
+    338                     "  reset config                      -Reset config\n"
+    339                     "  reset flash                       -Reset flash\n"
+    340                     "  add resolving_list [peer_addr_type] [peer_addr] [peer_irk]\n"
+    341                     "                                    -Add the device to resolving list\n"
+    342                     "  rl clear                          -Clear the resolving list\n"
+    343                     "  set irk [16byte_irk]              -Set the IRK\n"
+    344                     "  ar [on/off]                       -Enable/disable address resolution\n"
+    345                     "  set address_timeout [time]        -Set resolvable private address timeout\n"
+    346                     "  hci [on/off]                      -Enable/disable HCI log, default disable\n"
+    347                     "  bond [connection handle]          -Bond the remote device\n"
+    348                     "  sm passkey [key]                  -Input the passkey\n"
+    349                     "  sm numeric compare [compare result]\n"
+    350                     "                                    -Input the numeric compare result\n"
+    351                     "  mitm on                           -Enable the MITM protection\n"
+    352                     "  lesc on                           -Enable LE secure connection\n"
+    353                     "======================================================\n"
+    354                     "ble gap                             -GAP command line\n"
+    355                     "  power_off                         -Power off BT\n"
+    356                     "  power_on                          -Power on BT\n"
+    357                     "  set_adv_data [data_buffer]        -Set advertising data\n"
+    358                     "  set_scan_rsp_data [data_buffer]   -Set scan response data\n"
+    359                     "  set_adv_params [min_interval] [max_interval] [adv_type] [own_addr_type] [peer_addr_type] [peer_addr] [channel_map] [filter_policy]\n"
+    360                     "                                    -Set advertising parameters\n"
+    361                     "  start_scan [scan_type] [interval] [window] [own addr type] [scan filter policy]\n"
+    362                     "                                    -Start scan\n"
+    363                     "  stop_scan                         -Stop scan\n"
+    364                     "  connect [address_type] [address]  -Connect the remote device\n"
+    365                     "  advanced_conn [scan interval] [scan window] [initiator filter policy] [peer address_type] [peer address] [own addr type] [conn interval min] [conn interval max] [conn latency] [supervision timeout] [minimum ce length] [max ce length]\n"
+    366                     "                                    -Connect the remote device by more parameters\n"
+    367                     "  update_conn [connection handle] [conn interval min] [conn interval max] [conn latency] [supervision timeout] [min ce length] [max ce length]\n"
+    368                     "                                    -Update connection\n"
+    369                     "  cancel connect                    -Cacel connection\n"
+    370                     "  disconnect [connection handle]    -Disconnect the connection\n"
+    371                     "  bond [connection handle] [io capability] [oob data flag] [auth req] [initiator key distribution] [responder key distribution]\n"
+    372                     "                                    -Bond the remote device\n"
+    373                     "  random_addr [address]             -Set the random address\n"
+    374                     "  read_rssi [connection handle]     -Read the RSSI\n"
+    375                     "  wl add [0:public/1:random] [address]  -Add the device to white list\n"
+    376                     "  wl remove [0:public/1:random] [address]  -Remove the device from white list\n"
+    377                     "  wl clear                          -Clear the white list\n"
+    378                     "  update data length [connection handle] [tx octets] [tx time] -Update the data length\n"
+    379                     "======================================================\n"
+    380                     "ble gatt                             -GATT command line\n"
+    381                     "  discover_all [connection handle]   -Discover all primary services, included services, characteristics, descriptors\n"
+    382                     "  read [connection handle] [attribute handle]      -Read characteristic value or descriptor\n"
+    383                     "  write [connection handle] [attribute handle] [attribute value]     -Write characteristic value or descriptor\n"
+    384                     );
+    385          }
+    386          
+    387          void copy_str_to_addr(uint8_t *addr, const char *str)
+    388          {
+    389              unsigned int i, value;
+    390              int using_long_format = 0;
+    391              int using_hex_sign = 0;
+    392          
+    393              if (str[2] == ':' || str[2] == '-') {
+    394                  using_long_format = 1;
+    395              }
+    396          
+    397              if (str[1] == 'x') {
+    398                  using_hex_sign = 2;
+    399              }
+    400          
+    401              for (i=0; i<6; i++) {
+    402                  sscanf(str+using_hex_sign+i*(2+using_long_format), "%02x", &value);
+    403                  addr[5-i] = (uint8_t) value;
+    404              }
+    405          }
+    406          
+    407          void copy_str_to_byte(uint8_t *des, const char *str, uint32_t len)
+    408          {
+    409              unsigned int i, value = 0;
+    410              int using_long_format = 0;
+    411              int using_hex_sign = 0;
+    412          
+    413              if (str[2] == ':' || str[2] == '-') {
+    414                  using_long_format = 1;
+    415              }
+    416          
+    417              if (str[1] == 'x') {
+    418                  using_hex_sign = 2;
+    419              }
+    420          
+    421              for (i=0; i<len; i++) {
+    422                  sscanf(str+using_hex_sign+i*(2+using_long_format), "%02x", &value);
+    423                  des[i] = (uint8_t) value;
+    424                  value = 0;
+    425              }
+    426          }
+    427          
+    428          static uint32_t sm_passkey;
+    429          static uint8_t nc_value_correct[1];
+    430          
+    431          bt_status_t app_clear_resolving_list()
+    432          {
+    433              bt_status_t st = BT_STATUS_SUCCESS;
+    434              st = bt_gap_le_set_resolving_list(BT_GAP_LE_CLEAR_RESOLVING_LIST, NULL);
+    435              if (BT_STATUS_OUT_OF_MEMORY == st) {
+    436                  BT_COLOR_SET(BT_COLOR_RED);
+    437                  BT_LOGI("APP", "Add device to Resolving List Failed [OOM]");
+    438                  BT_COLOR_SET(BT_COLOR_WHITE);
+    439              }
+    440              return st;
+    441          }
+    442          bt_status_t app_delete_dev_from_resolving_list(const bt_gap_le_bonding_info_t *bonded_info)
+    443          {
+    444              bt_status_t st = BT_STATUS_SUCCESS;
+    445              if (BT_ADDR_TYPE_UNKNOW != bonded_info->identity_addr.address.type){
+    446                  bt_hci_cmd_le_remove_device_from_resolving_list_t dev;
+    447                  dev.peer_identity_address = bonded_info->identity_addr.address;
+    448                  st = bt_gap_le_set_resolving_list(BT_GAP_LE_REMOVE_FROM_RESOLVING_LIST,(void*)&dev);
+    449                  if (BT_STATUS_OUT_OF_MEMORY == st) {
+    450                      BT_COLOR_SET(BT_COLOR_RED);
+    451                      BT_LOGI("APP", "Add device to Resolving List Failed [OOM]");
+    452                      BT_COLOR_SET(BT_COLOR_WHITE);
+    453                  }
+    454              }
+    455              return st;
+    456          }
+    457          bt_status_t app_add_dev_2_resolving_list(const bt_gap_le_bonding_info_t *bonded_info)
+    458          {
+    459              bt_status_t st = BT_STATUS_SUCCESS;
+    460              if (BT_ADDR_TYPE_UNKNOW != bonded_info->identity_addr.address.type){
+    461                  bt_hci_cmd_le_add_device_to_resolving_list_t dev;
+    462                  dev.peer_identity_address = bonded_info->identity_addr.address;
+    463                  memcpy(dev.peer_irk,&(bonded_info->identity_info), sizeof(dev.peer_irk));
+    464                  memcpy(dev.local_irk,&(local_key_req.identity_info), sizeof(dev.local_irk));
+    465                  st = bt_gap_le_set_resolving_list(BT_GAP_LE_ADD_TO_RESOLVING_LIST,(void*)&dev);
+    466                  if (BT_STATUS_OUT_OF_MEMORY == st) {
+    467                      BT_COLOR_SET(BT_COLOR_RED);
+    468                      BT_LOGI("APP", "Add device to Resolving List Failed [OOM]");
+    469                      BT_COLOR_SET(BT_COLOR_WHITE);
+    470                  }
+    471              }
+    472              return st;
+    473          }
+    474          /* If we have peer's identity address info(type/address), we will add identity info to white list, or
+    475             Add peer_addr info if we don't have peer's identity address.
+    476          */
+    477          bt_status_t app_add_dev_2_white_list(const bt_gap_le_bonding_info_t *bonded_info, const bt_addr_t *peer_addr)
+    478          {
+    479              bt_status_t st = BT_STATUS_SUCCESS;
+    480              if (BT_ADDR_TYPE_UNKNOW != bonded_info->identity_addr.address.type) {
+    481                  const bt_addr_t *bt_addr = (const bt_addr_t *)(&bonded_info->identity_addr);
+    482                  st = bt_gap_le_set_white_list(BT_GAP_LE_ADD_TO_WHITE_LIST, bt_addr);
+    483              } else if(peer_addr->type != BT_ADDR_TYPE_UNKNOW){
+    484                  st = bt_gap_le_set_white_list(BT_GAP_LE_ADD_TO_WHITE_LIST, peer_addr);
+    485              }
+    486              if (BT_STATUS_OUT_OF_MEMORY == st){
+    487                  BT_COLOR_SET(BT_COLOR_RED);
+    488                  BT_LOGI("APP", "CL:10Add device to White List Failed [OOM]");
+    489                  BT_COLOR_SET(BT_COLOR_WHITE);
+    490              }
+    491              return st;
+    492          }
+    493          
+    494          static bool g_bt_hci_log_enable = false;
+    495          
+    496          bool bt_hci_log_enabled(void)
+    497          {
+    498              return g_bt_hci_log_enable;
+    499          }
+    500          
+    501          bt_status_t bt_app_io_callback(void *input, void *output)
+    502          {
+    503              const char *cmd = input;
+    504          
+    505              BT_LOGI("APP", "CL:10bt_app_io_callback %s", cmd);
+    506              if(ut_app_reset_global_config_flag) {
+    507                  ut_app_reset_global_config();
+    508              }
+    509          
+    510              if(ut_app_reset_flash_flag) {
+    511                  ut_app_reset_flash();
+    512          
+    513              }
+    514          
+    515              if (UT_APP_CMP("?")) {
+    516                  print_help();
+    517                  return BT_STATUS_SUCCESS;
+    518              }
+    519              else if (UT_APP_CMP("hci on")) {
+    520                  g_bt_hci_log_enable = true;
+    521              }
+    522              else if (UT_APP_CMP("hci off")) {
+    523                  g_bt_hci_log_enable = false;
+    524              }
+    525              else if (UT_APP_CMP("reset config off")) {
+    526                  ut_app_reset_global_config_flag = false;
+    527              }
+    528          
+    529              else if (UT_APP_CMP("reset flash off")) {
+    530                  ut_app_reset_flash_flag = false;
+    531              }
+    532              /* Usage: set pts_addr [pts address]*/
+    533              else if (UT_APP_CMP("set pts_addr")) {
+    534                  const char *addr_str = cmd + 13;
+    535                  copy_str_to_addr(lt_addr, addr_str);
+    536                  BT_LOGI("APP", "change to lt_addr: %x-%x-%x-%x-%x-%x", lt_addr[5], lt_addr[4], lt_addr[3], lt_addr[2], lt_addr[1], lt_addr[0]);
+    537              }
+    538              else if (UT_APP_CMP("reset config on")) {
+    539                  ut_app_reset_global_config_flag = true;
+    540              }
+    541          
+    542              else if (UT_APP_CMP("reset flash on")) {
+    543                  ut_app_reset_flash_flag = true;
+    544              }
+    545          
+    546              else if (UT_APP_CMP("reset config")) {
+    547                  ut_app_reset_global_config();
+    548              }
+    549          
+    550              else if (UT_APP_CMP("reset flash")) {
+    551                  ut_app_reset_flash();
+    552              
+    553              }
+    554          
+    555              else if (UT_APP_CMP("po")) {
+    556                  bt_power_on((bt_bd_addr_ptr_t)&local_public_addr, NULL);
+    557                  bt_gatts_set_max_mtu(128); /* This value should consider with MM Tx/Rx buffer size. */
+    558              }
+    559          
+    560              else if (UT_APP_CMP("pf")) {
+    561                  bt_power_off();
+    562              }
+    563          
+    564              /* Usage: advanced po [public address] [random address].
+    565                 Note:  Set N if you doesn't need it. */
+    566              else if (UT_APP_CMP("advanced po")) {
+    567                  if (strlen(cmd) >= 12) {
+    568                      uint8_t public_addr[6]={0};
+    569                      uint8_t random_addr[6]={0};
+    570                      const char *addr_str = cmd + 12;
+    571          
+    572                      /* Find public address */
+    573                      if (strncmp("N", addr_str, 1) != 0) {
+    574                          copy_str_to_addr(public_addr, addr_str);
+    575                      } else {
+    576                          public_addr[0] = 'N';
+    577                      }
+    578          
+    579                      /* Jump to the start of the random address */
+    580                      uint32_t i=0;
+    581                      while (i<18) {
+    582                          if (strncmp(" ", addr_str, 1) == 0)
+    583                              break;
+    584                          addr_str++;
+    585                          i++;
+    586                      }
+    587                      addr_str++;
+    588          
+    589                      /* Find random address */
+    590                      if (strncmp("N", addr_str, 1) != 0) {
+    591                          copy_str_to_addr(random_addr, addr_str);
+    592                      } else {
+    593                          random_addr[0] = 'N';
+    594                      }
+    595          
+    596                      bt_power_on((public_addr[0] == 'N'? NULL:public_addr),
+    597                          (random_addr[0] == 'N'? NULL:random_addr));
+    598                  } else {
+    599                      BT_COLOR_SET(BT_COLOR_RED);
+    600                      BT_LOGW("APP", "please input the specific public address and random address");
+    601                      BT_LOGW("APP", "format: advanced po [public address/N] [random address/N]");
+    602                      BT_COLOR_SET(BT_COLOR_WHITE);
+    603                  }
+    604              }
+    605              else if (UT_APP_CMP("set address_timeout")) {
+    606                  if (strlen(cmd) >= 20) {
+    607                      uint8_t timeout = (uint8_t)strtoul(cmd + 20, NULL, 10);
+    608                      bt_gap_le_set_resolvable_private_address_timeout(timeout);
+    609                  }
+    610              }
+    611              else if (UT_APP_CMP("set irk")) {
+    612                  if (strlen((char *)cmd) >= 8) {
+    613                      const char *key = cmd + 8;
+    614                      copy_str_to_byte(local_key_req_default.identity_info.irk, key, 16);
+    615                      local_key_req.identity_info = local_key_req_default.identity_info;
+    616                  }
+    617              }
+    618              else if (UT_APP_CMP("add resolving_list")) {
+    619                  if (strlen(cmd) >= 34) {
+    620                      uint8_t addr_type = (uint8_t)strtoul(cmd + 19, NULL, 10); 
+    621                      const char *addr_str = cmd + 21;
+    622                      const char *key = cmd + 34;
+    623                      if (addr_type != 0 && addr_type!= 1) {
+    624                          BT_COLOR_SET(BT_COLOR_RED);
+    625                          BT_LOGW("APP", "add resolving_list [0:public_indentity / 1:random_identity] [bt address] [irk]");
+    626                          BT_COLOR_SET(BT_COLOR_WHITE);
+    627                      } else {
+    628                          uint8_t addr[6];
+    629                          bt_hci_cmd_le_add_device_to_resolving_list_t dev;
+    630                          copy_str_to_addr(addr, addr_str);
+    631                          dev.peer_identity_address.type = addr_type;
+    632                          memcpy(dev.peer_identity_address.addr, addr, sizeof(addr));                
+    633                          copy_str_to_byte((uint8_t *)(&(dev.peer_irk)), key, 16);
+    634                          memcpy(dev.local_irk,&(local_key_req.identity_info), sizeof(dev.local_irk));
+    635                          bt_gap_le_set_resolving_list(BT_GAP_LE_ADD_TO_RESOLVING_LIST,(void*)&dev);
+    636                          if (BT_STATUS_OUT_OF_MEMORY == bt_gap_le_set_resolving_list(BT_GAP_LE_ADD_TO_RESOLVING_LIST,(void*)&dev)) {
+    637                              BT_COLOR_SET(BT_COLOR_RED);
+    638                              BT_LOGI("APP", "Add device to Resolving List Failed [OOM]");
+    639                              BT_COLOR_SET(BT_COLOR_WHITE);
+    640                          }                
+    641                      }            
+    642                  }
+    643                  else {
+    644                      BT_COLOR_SET(BT_COLOR_RED);
+    645                      BT_LOGW("APP", "add resolving_list [2:public_indentity / 3:random_identity] [bt address] [irk]");
+    646                      BT_COLOR_SET(BT_COLOR_WHITE);
+    647                  }
+    648              }
+    649              /* Set first 6 bytes local irk */
+    650              else if (UT_APP_CMP("local_irk set")) {
+    651                  if (strlen((char *)cmd) >= 14) {
+    652                      const char *key = cmd+ 14;
+    653                      copy_str_to_addr(local_key_req_default.identity_info.irk, key);
+    654                      local_key_req.identity_info = local_key_req_default.identity_info;
+    655                  }
+    656              }
+    657              /* update peer Central Address Resolution supporting */
+    658              else if (UT_APP_CMP("check peer CAR supporting")) {
+    659                  const char *handle = cmd + 27;
+    660                  bt_gattc_read_using_charc_uuid_req_t req;
+    661                  uint16_t uuid = BT_SIG_UUID16_CENTRAL_ADDRESS_RESOLUTION;
+    662                  req.opcode = BT_ATT_OPCODE_READ_BY_TYPE_REQUEST;
+    663                  req.starting_handle = 0x0001;
+    664                  req.ending_handle = 0xffff;
+    665                  bt_uuid_load(&req.type, (void *)&uuid, 2);
+    666                  bt_gattc_read_using_charc_uuid((uint16_t)strtoul(handle, NULL, 16), &req);
+    667                  bt_app_wait_peer_central_address_resolution_rsp = true;
+    668              }
+    669          
+    670              /* Usage: random address [random address].
+    671                 Note:  [random address] should be existed. */
+    672              else if (UT_APP_CMP("random address")) {
+    673                  if (strlen(cmd) >= 15) {
+    674                      const char *addr_str = cmd + 15;
+    675                      uint8_t addr[6];
+    676                      copy_str_to_addr(addr, addr_str);
+    677          
+    678                      bt_gap_le_set_random_address(addr);
+    679                  } else {
+    680                      BT_COLOR_SET(BT_COLOR_RED);
+    681                      BT_LOGW("APP", "please input the specific random address");
+    682                      BT_LOGW("APP", "random address [random address]");
+    683                      BT_COLOR_SET(BT_COLOR_WHITE);
+    684                  }
+    685              }
+    686          
+    687              else if (UT_APP_CMP("ar on")) {
+    688                  /* Set address resolition enable*/
+    689                      bt_gap_le_set_address_resolution_enable(1);
+    690              }
+    691              else if (UT_APP_CMP("ar off")) {
+    692                  /* Set address resolition disable*/
+    693                      bt_gap_le_set_address_resolution_enable(0);
+    694              }
+    695              else if (UT_APP_CMP("rl add")) {
+    696                  uint8_t idx = (uint8_t)strtoul(cmd+7, NULL, 10);
+    697                  app_bt_bonded_info_t *app_bonded_info = NULL;
+    698                  app_bonded_info = find_bonded_info_by_index(idx);
+    699                  if (app_bonded_info != NULL) {
+    700                      bt_gap_le_bonding_info_t *bonded_info = &(app_bonded_info->info);
+    701                      //remove device from resolving list
+    702                      if (BT_STATUS_SUCCESS != app_add_dev_2_resolving_list(bonded_info)) {
+    703                          BT_LOGE("APP", "Add Device to Resolving List FAILED!!!");
+    704                      }
+    705                  } else {
+    706                      BT_LOGE("APP", "Can not find the bonded info idx[%d]. Please use \"list bond\" to check bonded info.",idx);
+    707                  }
+    708              }
+    709              else if (UT_APP_CMP("rl remove")) {
+    710                  uint8_t idx = (uint8_t)strtoul(cmd+10, NULL, 10);
+    711                  app_bt_bonded_info_t *app_bonded_info = NULL;
+    712                  app_bonded_info = find_bonded_info_by_index(idx);
+    713                  if (app_bonded_info != NULL) {
+    714                      bt_gap_le_bonding_info_t *bonded_info = &(app_bonded_info->info);
+    715                      //remove device from resolving list
+    716                      if (BT_STATUS_SUCCESS != app_delete_dev_from_resolving_list(bonded_info)) {
+    717                          BT_LOGE("APP", "Remove Device from Resolving List FAILED!!!");
+    718                      }
+    719                  } else {
+    720                      BT_LOGE("APP", "Can not find the bonded info idx[%d]. Please use \"list bond\" to check bonded info.",idx);
+    721                  }
+    722              }
+    723              else if (UT_APP_CMP("rl clear")) {
+    724                  app_clear_resolving_list();
+    725              }
+    726              /* Usage: wl add [0:public / 1:random] [bt address].
+    727                 Note:  default use #lt_addr_type and #lt_addr */
+    728              else if (UT_APP_CMP("wl add")) {
+    729                  bt_addr_t device;
+    730                  if (strlen(cmd) >= 7) {
+    731          
+    732                      uint8_t addr_type = (uint8_t)strtoul(cmd + 7, NULL, 10);
+    733          
+    734                      if (addr_type != 0 && addr_type!= 1) {
+    735                          BT_COLOR_SET(BT_COLOR_RED);
+    736                          BT_LOGW("APP", "please input the correct address type");
+    737                          BT_LOGW("APP", "wl add [0:public / 1:random] [bt address]");
+    738                          BT_COLOR_SET(BT_COLOR_WHITE);
+    739                      } else {
+    740                          const char *addr_str = cmd + 9;
+    741                          uint8_t addr[6];
+    742                          copy_str_to_addr(addr, addr_str);
+    743          
+    744                          device.type = addr_type;
+    745                          memcpy(device.addr, addr, sizeof(addr));
+    746                          bt_gap_le_set_white_list(BT_GAP_LE_ADD_TO_WHITE_LIST, &device);
+    747                      }
+    748                  } else {
+    749                      device.type = lt_addr_type;
+    750                      memcpy(device.addr, lt_addr, sizeof(lt_addr));
+    751                      bt_gap_le_set_white_list(BT_GAP_LE_ADD_TO_WHITE_LIST, &device);
+    752                  }
+    753              }
+    754          
+    755              /* Usage: wl remove [0:public / 1:random] [bt address].
+    756                 Note:  default use #lt_addr_type and #lt_addr */
+    757              else if (UT_APP_CMP("wl remove")) {
+    758                  bt_addr_t device;
+    759                  if (strlen(cmd) >= 10) {
+    760          
+    761                      uint8_t addr_type = (uint8_t)strtoul(cmd + 10, NULL, 10);
+    762                      if (addr_type != 0 && addr_type!= 1) {
+    763                          BT_COLOR_SET(BT_COLOR_RED);
+    764                          BT_LOGW("APP", "please input the correct address type");
+    765                          BT_LOGW("APP", "wl add [0:public / 1:random] [bt address]");
+    766                          BT_COLOR_SET(BT_COLOR_WHITE);
+    767                      } else {
+    768                          const char *addr_str = cmd + 12;
+    769                          uint8_t addr[6];
+    770                          copy_str_to_addr(addr, addr_str);
+    771          
+    772                          device.type = addr_type;
+    773                          memcpy(device.addr, addr, sizeof(addr));
+    774                          bt_gap_le_set_white_list(BT_GAP_LE_REMOVE_FROM_WHITE_LIST, &device);
+    775                      }
+    776                  } else {
+    777                      device.type = lt_addr_type;
+    778                      memcpy(device.addr, lt_addr, sizeof(lt_addr));
+    779                      bt_gap_le_set_white_list(BT_GAP_LE_REMOVE_FROM_WHITE_LIST, &device);
+    780                  }
+    781              }
+    782          
+    783              else if (UT_APP_CMP("wl clear")) {
+    784                  bt_gap_le_set_white_list(BT_GAP_LE_CLEAR_WHITE_LIST, NULL);
+    785              }
+    786              /*advanced scan [scan type] [Own Address Type] [Scanning Filter Policy]
+    787              */
+    788              else if (UT_APP_CMP("advanced scan")) {
+    789                  uint8_t scan_type = (uint8_t)strtoul(cmd+14, NULL, 10);
+    790                  uint8_t own_address_type = (uint8_t)strtoul(cmd+16, NULL, 10);
+    791                  uint8_t policy = (uint8_t)strtoul(cmd+18, NULL, 10);
+    792                  BT_COLOR_SET(BT_COLOR_BLUE);
+    793                  BT_LOGI("APP", "Advanced Scan test");
+    794                  BT_LOGI("APP", "Scan Type[%d] Own Address Type[%d] Scanning Filter Policy[%d]\n",scan_type,own_address_type,policy);
+    795                  BT_COLOR_SET(BT_COLOR_WHITE);
+    796                  scan_para.le_scan_type = scan_type,
+    797                  scan_para.own_address_type = own_address_type,
+    798                  scan_para.scanning_filter_policy = policy,
+    799                  bt_app_scanning = true;
+    800                  bt_gap_le_set_scan(&scan_enable, &scan_para);
+    801              }
+    802              else if (UT_APP_CMP("gap dump")) {
+    803                  bt_gap_dump();
+    804              }
+    805          #ifdef BT_DEBUG
+    806              else if (UT_APP_CMP("bt debug cmd")) {
+    807                  uint32_t length = strlen("bt debug cmd ");
+    808                  unsigned int temp_value;
+    809                  uint32_t i = 0;
+    810                  uint8_t* cmd_data_buff = (uint8_t*)cmd;
+    811                  uint8_t value[4] = {*(cmd + length), *(cmd + length + 1), 0};
+    812                  while (value[0] != 0) {
+    813                      sscanf((const char*)value, "%02x", &temp_value);
+    814                      *(cmd_data_buff + (i>>1)) = (uint8_t)temp_value;
+    815                      i += 2;
+    816                      value[0] = *(cmd + length + i);
+    817                      value[1] = *(cmd + length + i + 1);
+    818                  }
+    819                  bt_gap_debug_cmd_sending(cmd_data_buff);
+    820              }
+    821          #endif
+    822              else if (UT_APP_CMP("scan on")) {
+    823                  bt_app_scanning = true;
+    824                  bt_gap_le_set_scan(&scan_enable, &scan_para);
+    825              }
+    826          
+    827              else if (UT_APP_CMP("scan off")) {
+    828                  bt_app_scanning = false;
+    829                  bt_gap_le_set_scan(&scan_disable, NULL);
+    830              }
+    831          
+    832              else if (UT_APP_CMP("adv on")) {
+    833                  bt_app_advertising = true;
+    834                  adv_enable.advertising_enable = BT_HCI_ENABLE;
+    835                  bt_gap_le_set_advertising(&adv_enable, &adv_para, NULL, NULL);
+    836              }
+    837          
+    838              else if (UT_APP_CMP("adv off")) {
+    839                  bt_app_advertising = false;
+    840                  bt_hci_cmd_le_set_advertising_enable_t enable;
+    841                  enable.advertising_enable = BT_HCI_DISABLE;
+    842                  bt_gap_le_set_advertising(&enable, NULL, NULL, NULL);
+    843              }
+    844          
+    845              else if (UT_APP_CMP("bond off")) {
+    846                  pairing_config_req.auth_req &= ~BT_GAP_LE_SMP_AUTH_REQ_BONDING;
+    847              }
+    848          
+    849            /*advanced adv [own addr type] [adv type] [advertising_filter_policy] [peer addr type] [peer BT addr]
+    850              [own addr type] :0:public / 1:random/ 2: Gen RPA from resolving list or public address host provide/ 3: Gen RPA from resolving list or static random address host provide
+    851              [adv type] : 0:ADV_IND, 1:ADV_DIRECT_IND high duty cycle, 2: ADV_SCAN_IND, 3:ADV_NONCONN_IND or 4.ADV_DIRECT_IND low duty cycle.
+    852              [peer addr type]:0:public / 1:random
+    853              [advertising_filter_policy]: define in spec, 0~4
+    854              [peer addr type] : Chck src/hbif/bt_gap_le_spec.h BT_GAP_LE_AD_xxxx 0~4
+    855              [peer BT Addr] : peer BT address for BT_GAP_LE_AD_CONNECTABLE_DIRECTED_HIGH or BT_GAP_LE_AD_CONNECTABLE_DIRECTED_LOW
+    856              Hint: for [peer addr type] and [peer BT addr], you can refer bond info for the device we had bonded before.
+    857             */
+    858              else if (UT_APP_CMP("advanced adv")) {
+    859                  bt_hci_cmd_le_set_advertising_data_t adv_data = {
+    860                      .advertising_data_length=31,
+    861                      .advertising_data="DDDDDHUMMINGBIRD_ADV_DATA",
+    862                  };
+    863                  bt_hci_cmd_le_set_scan_response_data_t scan_data = {
+    864                      .scan_response_data_length=31,
+    865                      .scan_response_data = "DDSCAN_DATA_HUMMINGBIRD",
+    866                  };
+    867                  bt_app_advertising = true;
+    868                  memset(gatts_device_name, 0x00, sizeof(gatts_device_name));
+    869                  memcpy(gatts_device_name, &adv_data.advertising_data[5], 11);
+    870                  gap_appearance = 0x4567;
+    871                  adv_data.advertising_data[0]=2; //adv_length
+    872                  adv_data.advertising_data[1]=BT_GAP_LE_AD_TYPE_FLAG;
+    873                  adv_data.advertising_data[2]=BT_GAP_LE_AD_FLAG_BR_EDR_NOT_SUPPORTED|BT_GAP_LE_AD_FLAG_GENERAL_DISCOVERABLE;
+    874                  adv_data.advertising_data[3]=21;//adv_length
+    875                  adv_data.advertising_data[4]=0x09;
+    876                  scan_data.scan_response_data[0] = 22; /* ADV length. */
+    877                  scan_data.scan_response_data[1] = 0x08;
+    878                  uint8_t own_addr_type = (uint8_t)strtoul(cmd+13, NULL, 10);
+    879                  uint8_t adv_type = (uint8_t)strtoul(cmd+15, NULL, 10);
+    880                  uint8_t policy = (uint8_t)strtoul(cmd+17, NULL, 10);
+    881                  uint8_t peer_addr_type = (uint8_t)strtoul(cmd+19, NULL, 10);
+    882          
+    883          
+    884                  const char *addr_str = cmd + 21;
+    885                  uint8_t addr[6];
+    886                  copy_str_to_addr(addr, addr_str);
+    887                  BT_COLOR_SET(BT_COLOR_BLUE);
+    888                  BT_LOGI("APP", "Advanced advertising test");
+    889                  BT_LOGI("APP", "own_addr_type[%d] adv_type[%d] adv_policy[%d] peer_addr_type[%d]",
+    890                      own_addr_type,adv_type,policy,peer_addr_type);
+    891                  BT_LOGI("APP", "peer_addr(%02x:%02x:%02x:%02x:%02x:%02x)",
+    892                      addr[0],addr[1],addr[2],addr[3],addr[4],addr[5]);
+    893                  BT_COLOR_SET(BT_COLOR_WHITE);
+    894          
+    895                  adv_enable.advertising_enable = true;
+    896          
+    897                  adv_para.advertising_interval_min =0x0800;
+    898                  adv_para.advertising_interval_max =0x1000;
+    899                  adv_para.advertising_type = adv_type;
+    900                  adv_para.own_address_type = own_addr_type;
+    901                  adv_para.peer_address.type = peer_addr_type;
+    902                  memcpy(adv_para.peer_address.addr, &addr, 6);
+    903                  adv_para.advertising_channel_map = 7;
+    904                  adv_para.advertising_filter_policy = policy;
+    905                  if ((adv_para.advertising_type == 1) || (adv_para.advertising_type == 4)){
+    906                      bt_gap_le_set_advertising(&adv_enable, &adv_para, NULL, NULL);
+    907                  } else {
+    908                      bt_gap_le_set_advertising(&adv_enable, &adv_para, &adv_data, &scan_data);
+    909                  }
+    910              }
+    911          
+    912            /*advanced connect [Initiator_Filter_Policy] [Own_Address_Type] [Peer_Address_Type] [Peer_Address]
+    913              [Initiator_Filter_Policy] :0;white list is not used. 1;white list is used.
+    914              [Own_Address_Type] : 0~4;Public/Random/RPA or Public/RPA or Random
+    915              [Peer_Address_Type] : 0~4; Public/Random/Public Identity/Random Identity
+    916              [Peer_Address] :
+    917              Test case command for Privacy 1.2:
+    918              [ar on]
+    919              advanced connect 0 2 2 [Peer Identity Address]
+    920              advanced connect 1 2 0 0x000000000000
+    921             */
+    922              else if (UT_APP_CMP("advanced connect")){
+    923                  uint8_t policy = (uint8_t)strtoul(cmd+17, NULL, 10);
+    924                  uint8_t own_address_type = (uint8_t)strtoul(cmd+19, NULL, 10);
+    925                  uint8_t peer_address_type = (uint8_t)strtoul(cmd+21, NULL, 10);
+    926          
+    927          
+    928                  const char *addr_str = cmd + 23;
+    929                  uint8_t addr[6];
+    930                  copy_str_to_addr(addr, addr_str);
+    931                  BT_COLOR_SET(BT_COLOR_BLUE);
+    932                  BT_LOGI("APP", "Advanced connect ");
+    933                  BT_LOGI("APP", "Initiator_Filter_Policy[%d] Own_Address_Type[%d] Peer_Address_Type[%d]",
+    934                      policy, own_address_type, peer_address_type);
+    935                  BT_LOGI("APP", "peer_addr(%02x:%02x:%02x:%02x:%02x:%02x)",
+    936                      addr[0],addr[1],addr[2],addr[3],addr[4],addr[5]);
+    937                  BT_COLOR_SET(BT_COLOR_WHITE);
+    938          
+    939                  connect_para.initiator_filter_policy = policy;
+    940                  connect_para.own_address_type = own_address_type;
+    941                  connect_para.peer_address.type = peer_address_type;
+    942                  memcpy(connect_para.peer_address.addr, addr, sizeof(addr));
+    943          
+    944                  bt_gap_le_connect(&connect_para);
+    945              }
+    946          
+    947              /* Usage: connect [0:public / 1:random] [bt address].
+    948                 Note:  default use #lt_addr_type and #lt_addr */
+    949              else if (UT_APP_CMP("connect")) {
+    950                  if (strlen(cmd) >= 8) {
+    951                      uint8_t peer_addr_type = (uint8_t)strtoul(cmd + 8, NULL, 10);
+    952          
+    953                      const char *addr_str = cmd + 10;
+    954                      uint8_t addr[6];
+    955                      copy_str_to_addr(addr, addr_str);
+    956          #ifdef BLE_THROUGHPUT
+    957                      //const char *conn_interval = cmd + 23;
+    958                      enable_dle = (uint8_t)strtoul(cmd + 23, NULL, 10);
+    959                      uint16_t interval_conn = (uint16_t)strtoul(cmd + 25, NULL, 10);
+    960                      //uint16_t interval_conn = (uint16_t)strtoul(cmd + 23, NULL, 10);
+    961                      connect_para.conn_interval_min = interval_conn;
+    962                      connect_para.conn_interval_max = interval_conn;
+    963                      // 0x50 is for BLE4.2
+    964                      //connect_para.conn_interval_min = 0x50;
+    965                      //connect_para.conn_interval_max = 0x50;
+    966          #endif
+    967                      connect_para.peer_address.type = peer_addr_type;
+    968                      memcpy(connect_para.peer_address.addr, addr, sizeof(addr));
+    969                      bt_gap_le_connect(&connect_para);
+    970                  } else {
+    971                      connect_para.peer_address.type = lt_addr_type;
+    972                      memcpy(connect_para.peer_address.addr, lt_addr, sizeof(lt_addr));
+    973                      bt_gap_le_connect(&connect_para);
+    974                  }
+    975              }
+    976          
+    977              else if (UT_APP_CMP("cancel connect")) {
+    978                  bt_gap_le_cancel_connection();
+    979              }
+    980          
+    981              /* Usage:   disconnect <handle in hex>
+    982                 Example: disconnect 0200 */
+    983              else if (UT_APP_CMP("disconnect")) {
+    984                  const char *handle = cmd + strlen("disconnect ");
+    985                  disconnect_para.connection_handle = (uint16_t)strtoul(handle, NULL, 16);
+    986                  BT_LOGI("APP", "connection_handle(0x%04x)",disconnect_para.connection_handle);
+    987                  bt_gap_le_disconnect(&disconnect_para);
+    988              }
+    989          
+    990              else if (UT_APP_CMP("read rssi")) {
+    991                  bt_gap_le_read_rssi(&read_rssi);
+    992              }
+    993          
+    994              else if (UT_APP_CMP("update conn param")) {
+    995                  bt_gap_le_update_connection_parameter(&conn_update_para);
+    996              }
+    997          
+    998              /* Usage: update data length <handle in hex> <tx octets in hex> <tx time in hex>.
+    999                 Example: update data length 0200 0030 0500*/
+   1000              else if (UT_APP_CMP("update data length")) {
+   1001                  bt_hci_cmd_le_set_data_length_t data_length;
+   1002                  data_length.connection_handle = (uint16_t)strtoul(cmd + 19, NULL, 16);
+   1003                  data_length.tx_octets = (uint16_t)strtoul(cmd + 24, NULL, 16);
+   1004                  data_length.tx_time = (uint16_t)strtoul(cmd + 29, NULL, 16);
+   1005                  if (data_length.connection_handle > 0x0f00 ||
+   1006                     (data_length.tx_octets < 0x001B || data_length.tx_octets > 0x00FB) ||
+   1007                     (data_length.tx_time < 0x0148 || data_length.tx_time > 0x0848)) {
+   1008                      BT_LOGW("APP", "Usage: update data length <handle in hex> <tx octets in hex> <tx time in hex>.");
+   1009                      BT_LOGW("APP", "The range of connection handle is 0x0000-0x0EFF");
+   1010                      BT_LOGW("APP", "The range of tx octets is 0x001B-0x00FB");
+   1011                      BT_LOGW("APP", "The range of tx time is 0x0148-0x0848");
+   1012                  }
+   1013                  else {
+   1014                      BT_LOGI("APP", "update data length handle(%04x) tx_octets(%04x) tx_time(%04x)",
+   1015                          data_length.connection_handle,data_length.tx_octets,data_length.tx_time);
+   1016                      bt_gap_le_update_data_length(&data_length);
+   1017                  }
+   1018              }
+   1019          
+   1020              /* Usage:   bond <handle in hex>
+   1021                 Example: bond 0200 */
+   1022              else if (UT_APP_CMP("bond")) {
+   1023                  const char *handle = cmd + strlen("bond ");
+   1024          
+   1025                  bt_gap_le_bond(strtoul(handle, NULL, 16), &pairing_config_req);
+   1026              }
+   1027              else if (UT_APP_CMP("sm passkey")) {
+   1028                  sm_passkey = (uint32_t)atoi(cmd + 11);
+   1029              }
+   1030              else if (UT_APP_CMP("sm numeric compare")) {
+   1031                  nc_value_correct[0] = *((uint8_t *)(cmd + 19));
+   1032              }
+   1033              else if (UT_APP_CMP("remove bond")) {
+   1034                  bt_addr_t addr = {
+   1035                      .type = (uint8_t)strtoul(cmd + strlen("remove bond "), NULL, 10),
+   1036                  };
+   1037                  copy_str_to_addr(addr.addr, cmd + strlen("remove bond 0 "));
+   1038                  cancel_bonded_info(&addr);
+   1039              }
+   1040          
+   1041              else if (UT_APP_CMP("list bond")) {
+   1042                  BT_COLOR_SET(BT_COLOR_BLUE);
+   1043                  dump_bonded_info_list();
+   1044                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1045              }
+   1046          
+   1047              else if (UT_APP_CMP("list connection")) {
+   1048                  BT_COLOR_SET(BT_COLOR_BLUE);
+   1049                  dump_connection_info_list();
+   1050                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1051              }
+   1052          
+   1053              else if (UT_APP_CMP("show status")) {
+   1054                  BT_COLOR_SET(BT_COLOR_BLUE);
+   1055                  BT_LOGD("APP", "Advertising:\t%s", bt_app_advertising?"ON":"OFF");
+   1056                  BT_LOGD("APP", "Scanning:\t%s", bt_app_scanning?"ON":"OFF");
+   1057                  BT_LOGD("APP", "Connecting:\t%s", bt_app_connecting?"ON":"OFF");
+   1058                  BT_LOGD("APP", "MITM:\t\t%s", pairing_config_req.auth_req & BT_GAP_LE_SMP_AUTH_REQ_MITM?"ON":"OFF");
+   1059                  BT_LOGD("APP", "Bonding:\t%s", pairing_config_req.auth_req & BT_GAP_LE_SMP_AUTH_REQ_BONDING?"ON":"OFF");
+   1060                  BT_LOGD("APP", "LESC:\t\t%s", pairing_config_req.auth_req & BT_GAP_LE_SMP_AUTH_REQ_SECURE_CONNECTION?"ON":"OFF");
+   1061                  BT_LOGD("APP", "OOB:\t\t%s", pairing_config_req.oob_data_flag?"ON":"OFF");
+   1062                  switch (pairing_config_req.io_capability) {
+   1063                  case BT_GAP_LE_SMP_DISPLAY_ONLY:
+   1064                      BT_LOGD("APP", "IO Capability:\tBT_GAP_LE_SMP_DISPLAY_ONLY");
+   1065                      break;
+   1066                  case BT_GAP_LE_SMP_KEYBOARD_DISPLAY:
+   1067                      BT_LOGD("APP", "IO Capability:\tBT_GAP_LE_SMP_KEYBOARD_DISPLAY");
+   1068                      break;
+   1069                  default:
+   1070                      BT_LOGD("APP", "IO Capability:\t%d", pairing_config_req.io_capability);
+   1071                  }
+   1072                  BT_LOGD("APP", "Master LTK:\t%s", pairing_config_req.initiator_key_distribution & BT_GAP_LE_SMP_KEY_DISTRIBUTE_ENCKEY?"ON":"OFF");
+   1073                  BT_LOGD("APP", "Master CSRK:\t%s", pairing_config_req.initiator_key_distribution & BT_GAP_LE_SMP_KEY_DISTRIBUTE_SIGN?"ON":"OFF");
+   1074                  BT_LOGD("APP", "Master IRK:\t%s", pairing_config_req.initiator_key_distribution & BT_GAP_LE_SMP_KEY_DISTRIBUTE_IDKEY?"ON":"OFF");
+   1075                  BT_LOGD("APP", "Slave LTK:\t%s", pairing_config_req.responder_key_distribution & BT_GAP_LE_SMP_KEY_DISTRIBUTE_ENCKEY?"ON":"OFF");
+   1076                  BT_LOGD("APP", "Slave CSRK:\t%s", pairing_config_req.responder_key_distribution & BT_GAP_LE_SMP_KEY_DISTRIBUTE_SIGN?"ON":"OFF");
+   1077                  BT_LOGD("APP", "Slave IRK:\t%s", pairing_config_req.responder_key_distribution & BT_GAP_LE_SMP_KEY_DISTRIBUTE_IDKEY?"ON":"OFF");
+   1078                  dump_bonded_info_list();
+   1079                  dump_connection_info_list();
+   1080                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1081              }
+   1082          
+   1083              /* GATTC signed write wo rsp 0201 xxxx value. */
+   1084              else if (UT_APP_CMP("dist csrk")) {
+   1085                  pairing_config_req.initiator_key_distribution |= BT_GAP_LE_SMP_KEY_DISTRIBUTE_SIGN;
+   1086                  pairing_config_req.responder_key_distribution |= BT_GAP_LE_SMP_KEY_DISTRIBUTE_SIGN;
+   1087              }
+   1088          
+   1089              else if (UT_APP_CMP("dist ltk")) {
+   1090                  pairing_config_req.initiator_key_distribution |= BT_GAP_LE_SMP_KEY_DISTRIBUTE_ENCKEY;
+   1091                  pairing_config_req.responder_key_distribution |= BT_GAP_LE_SMP_KEY_DISTRIBUTE_ENCKEY;
+   1092              }
+   1093          
+   1094              else if (UT_APP_CMP("dist irk")) {
+   1095                  pairing_config_req.initiator_key_distribution |= BT_GAP_LE_SMP_KEY_DISTRIBUTE_IDKEY;
+   1096                  pairing_config_req.responder_key_distribution |= BT_GAP_LE_SMP_KEY_DISTRIBUTE_IDKEY;
+   1097              }
+   1098          
+   1099              else if (UT_APP_CMP("mitm on")) {
+   1100                  pairing_config_req.auth_req |= BT_GAP_LE_SMP_AUTH_REQ_MITM;
+   1101              }
+   1102          
+   1103              else if (UT_APP_CMP("lesc only")) {
+   1104                  sc_only = true;
+   1105              }
+   1106          
+   1107              else if (UT_APP_CMP("lesc on")) {
+   1108                  pairing_config_req.auth_req |= BT_GAP_LE_SMP_AUTH_REQ_SECURE_CONNECTION;
+   1109              }
+   1110          
+   1111              else if (UT_APP_CMP("keyboard only")) {
+   1112                  pairing_config_req.io_capability = BT_GAP_LE_SMP_KEYBOARD_ONLY;
+   1113              }
+   1114          
+   1115              else if (UT_APP_CMP("display only")) {
+   1116                  pairing_config_req.io_capability = BT_GAP_LE_SMP_DISPLAY_ONLY;
+   1117              }
+   1118          
+   1119              else if (UT_APP_CMP("display yn")) {
+   1120                  pairing_config_req.io_capability = BT_GAP_LE_SMP_DISPLAY_YES_NO;
+   1121              }
+   1122          
+   1123              else if (UT_APP_CMP("keyboard display")) {
+   1124                  pairing_config_req.io_capability = BT_GAP_LE_SMP_KEYBOARD_DISPLAY;
+   1125              }
+   1126          
+   1127              else if (UT_APP_CMP("no io")) {
+   1128                  pairing_config_req.io_capability = BT_GAP_LE_SMP_NO_INPUT_NO_OUTPUT;
+   1129              }
+   1130          
+   1131          #ifdef MTK_BLE_SMTCN_ENABLE
+   1132              else if (UT_APP_CMP("wifi smart")) {
+   1133                  BT_LOGI("APP", "[DTP]start adv\n");
+   1134                  ble_smtcn_init();
+   1135                  ble_smtcn_set_adv();
+   1136              }
+   1137          #endif   
+   1138              else {
+   1139                  int i;
+   1140                  for (i=0;i<sizeof(bt_app_callback_table)/sizeof(struct bt_app_callback_table_t);i++) {
+   1141                      if (UT_APP_CMP(bt_app_callback_table[i].name)) {
+   1142                          return bt_app_callback_table[i].io_callback(input, output);
+   1143                      }
+   1144                  }
+   1145                  BT_LOGE("APP", "%s: command not found", cmd);
+   1146              }
+   1147          
+   1148              return BT_STATUS_SUCCESS;
+   1149          }
+   1150          
+   1151          bt_gap_le_bonding_info_t *bt_gap_le_get_bonding_info(const bt_addr_t remote_addr)
+   1152          {
+   1153              app_bt_bonded_info_t* bonded_info = get_bonded_info(&remote_addr, 1);
+   1154              if (bonded_info) {
+   1155                  return &(bonded_info->info);
+   1156              }
+   1157          
+   1158              return NULL;
+   1159          }
+   1160           
+   1161          bt_gap_le_local_config_req_ind_t *bt_gap_le_get_local_config(void)
+   1162          {
+   1163              local_config.local_key_req = &local_key_req;
+   1164              local_config.sc_only_mode_req = sc_only;
+   1165           
+   1166              return &local_config;
+   1167          }
+   1168          
+   1169          bt_status_t bt_gap_le_get_pairing_config(bt_gap_le_bonding_start_ind_t *ind)
+   1170          {
+   1171              ind->pairing_config_req = pairing_config_req;
+   1172          
+   1173              return BT_STATUS_SUCCESS;
+   1174          }
+   1175          
+   1176          
+   1177          bt_status_t bt_app_event_callback(bt_msg_type_t msg, bt_status_t status, void *buff)
+   1178          {
+   1179              BT_COLOR_SET(BT_COLOR_GREEN);
+   1180              BT_LOGI("APP", "CL:10%s: status(0x%04x)", __FUNCTION__, status);
+   1181              BT_COLOR_SET(BT_COLOR_WHITE);
+   1182          
+   1183          #ifdef MTK_BLE_SMTCN_ENABLE
+   1184              ble_smtcn_event_callback(msg, status, buff);
+   1185          #endif
+   1186          
+   1187              switch(msg) {
+   1188              /* GAP */
+   1189              case BT_POWER_ON_CNF:
+   1190                  BT_COLOR_SET(BT_COLOR_RED);
+   1191                  BT_LOGI("APP", "BT_POWER_ON_CNF %s",
+   1192                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1193                  {
+   1194                      uint8_t idx;
+   1195                      for (idx = 0; idx <BT_CONNECTION_MAX; idx++) {
+   1196                          app_bt_bonded_info_t *app_bonded_info = NULL;
+   1197                          app_bonded_info = find_bonded_info_by_index(idx);
+   1198                          if (app_bonded_info != NULL) {
+   1199                              bt_gap_le_bonding_info_t *bonded_info = &(app_bonded_info->info);
+   1200                              //update resolving list
+   1201                              if (BT_STATUS_SUCCESS != app_add_dev_2_resolving_list(bonded_info)) {
+   1202                                  BT_LOGE("APP", "Add Device to Resolving List FAILED!!!");
+   1203                              }
+   1204                              //update white list(use identity address or address)
+   1205                              if (BT_STATUS_SUCCESS != app_add_dev_2_white_list(bonded_info, &(app_bonded_info->bt_addr))) {
+   1206                                  BT_LOGE("APP", "Add Device to White List FAILED!!!");
+   1207                              }
+   1208                          }
+   1209                      }
+   1210                      /* set RPA timeout */
+   1211                      bt_gap_le_set_resolvable_private_address_timeout(0x0384);
+   1212                  }
+   1213                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1214                  bt_app_advertising = false;
+   1215                  bt_app_scanning = false;
+   1216                  bt_app_connecting = false;
+   1217                  break;
+   1218              case BT_GAP_LE_SET_RANDOM_ADDRESS_CNF:
+   1219                  BT_COLOR_SET(BT_COLOR_RED);
+   1220                  BT_LOGI("APP", "BT_GAP_LE_SET_RANDOM_ADDRESS_CNF %s",
+   1221                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1222                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1223                  break;
+   1224              case BT_GAP_LE_SET_WHITE_LIST_CNF:
+   1225                  BT_COLOR_SET(BT_COLOR_RED);
+   1226                  BT_LOGI("APP", "BT_GAP_LE_SET_WHITE_LIST_CNF %s",
+   1227                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1228                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1229                  list_updating = list_updating | (~BT_APP_WHITE_LIST_UPDATING);
+   1230                  if (list_updating == 0x00){
+   1231                      if (bt_app_advertising){
+   1232                          adv_enable.advertising_enable = BT_HCI_ENABLE;
+   1233                          bt_gap_le_set_advertising(&adv_enable, NULL, NULL, NULL);
+   1234                      }
+   1235                      if (bt_app_scanning){
+   1236                          bt_gap_le_set_scan(&scan_enable, &scan_para);
+   1237                      }
+   1238                  }
+   1239                  break;
+   1240              case BT_GAP_LE_SET_RESOLVING_LIST_CNF:
+   1241                  BT_COLOR_SET(BT_COLOR_RED);
+   1242                  BT_LOGI("APP", "BT_GAP_LE_SET_RESOLVING_LIST_CNF %s",
+   1243                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1244                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1245                  list_updating = list_updating | (~BT_APP_RESOLVING_LIST_UPDATING);
+   1246                  if (list_updating == 0x00){
+   1247                      if (bt_app_advertising){
+   1248                          adv_enable.advertising_enable = BT_HCI_ENABLE;
+   1249                          bt_gap_le_set_advertising(&adv_enable, NULL, NULL, NULL);
+   1250                      }
+   1251                      if (bt_app_scanning){
+   1252                          bt_gap_le_set_scan(&scan_enable, &scan_para);
+   1253                      }
+   1254                  }
+   1255                  break;
+   1256              case BT_GAP_LE_SET_ADDRESS_RESOLUTION_ENABLE_CNF:
+   1257                  BT_COLOR_SET(BT_COLOR_RED);
+   1258                  BT_LOGI("APP", "BT_GAP_LE_SET_ADDRESS_RESOLUTION_ENABLE_CNF %s",
+   1259                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1260                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1261                  break;
+   1262              case BT_GAP_LE_SET_RESOLVABLE_PRIVATE_ADDRESS_TIMEOUT_CNF:
+   1263                  BT_COLOR_SET(BT_COLOR_RED);
+   1264                  BT_LOGI("APP", "BT_GAP_LE_SET_RESOLVABLE_PRIVATE_ADDRESS_TIMEOUT_CNF %s",
+   1265                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1266                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1267                  break;
+   1268              case BT_GAP_LE_SET_ADVERTISING_CNF:
+   1269                  BT_COLOR_SET(BT_COLOR_RED);
+   1270                  BT_LOGI("APP", "BT_GAP_LE_SET_ADVERTISING_CNF %s",
+   1271                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1272                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1273                  break;
+   1274              case BT_GAP_LE_SET_SCAN_CNF:
+   1275                  BT_COLOR_SET(BT_COLOR_RED);
+   1276                  BT_LOGI("APP", "BT_GAP_LE_SET_SCAN_CNF %s",
+   1277                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1278                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1279                  break;
+   1280              case BT_GAP_LE_ADVERTISING_REPORT_IND:
+   1281                  BT_COLOR_SET(BT_COLOR_RED);
+   1282                  BT_LOGI("APP", "BT_GAP_LE_ADVERTISING_REPORT_IND %s",
+   1283                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1284                  print_advertising_report(buff);
+   1285                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1286                  break;
+   1287              case BT_GAP_LE_CONNECT_CNF:
+   1288                  BT_COLOR_SET(BT_COLOR_RED);
+   1289                  BT_LOGI("APP", "BT_GAP_LE_CONNECT_CNF %s",
+   1290                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1291                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1292                  bt_app_connecting = status == BT_STATUS_SUCCESS;
+   1293                  break;
+   1294              case BT_GAP_LE_CONNECT_IND:
+   1295              {
+   1296                  BT_COLOR_SET(BT_COLOR_RED);
+   1297                  BT_LOGI("APP", "BT_GAP_LE_CONNECT_IND %s",
+   1298                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1299                  BT_COLOR_SET(BT_COLOR_BLUE);
+   1300          
+   1301                  bt_gap_le_connection_ind_t *connection_ind = (bt_gap_le_connection_ind_t *)buff;
+   1302                  BT_LOGI("APP", "connection handle=0x%04x", connection_ind->connection_handle);
+   1303                  BT_LOGI("APP", "role=%s",(connection_ind->role == BT_ROLE_MASTER)? "Master" : "Slave");
+   1304                  BT_LOGI("APP", "peer address:%s", bt_debug_addr2str(&connection_ind->peer_addr));
+   1305          #ifdef BLE_THROUGHPUT
+   1306                  printf("connection handle=0x%04x\n", connection_ind->connection_handle);
+   1307                  printf("peer address:%s\n", bt_debug_addr2str(&connection_ind->peer_addr));
+   1308          #endif
+   1309                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1310                  if (status == BT_STATUS_SUCCESS) {
+   1311                      add_connection_info(buff);
+   1312                      bt_handle_t handle = connection_ind->connection_handle;
+   1313                      disconnect_para.connection_handle = handle;
+   1314                      conn_update_para.connection_handle = handle;
+   1315                      read_rssi.handle = handle;
+   1316                      conn_interval = (connection_ind->conn_interval * 5)/4;
+   1317                  #ifdef BLE_THROUGHPUT
+   1318                      if (enable_dle) {
+   1319                          bt_hci_cmd_le_set_data_length_t data_length;
+   1320                          data_length.connection_handle = handle;
+   1321                          data_length.tx_octets = 0xFA;
+   1322                          data_length.tx_time = 0x150;
+   1323                          bt_gap_le_update_data_length(&data_length);
+   1324                      }
+   1325                  #endif
+   1326                  }
+   1327                  bt_app_advertising = false;
+   1328                  break;
+   1329              }
+   1330              case BT_GAP_LE_CONNECT_CANCEL_CNF:
+   1331                  BT_COLOR_SET(BT_COLOR_RED);
+   1332                  BT_LOGI("APP", "BT_GAP_LE_CONNECT_CANCEL_CNF %s",
+   1333                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1334                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1335                  bt_app_connecting =  false;
+   1336                  break;
+   1337              case BT_GAP_LE_DISCONNECT_CNF:
+   1338                  BT_COLOR_SET(BT_COLOR_RED);
+   1339                  BT_LOGI("APP", "BT_GAP_LE_DISCONNECT_CNF %s",
+   1340                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1341                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1342                  break;
+   1343              case BT_GAP_LE_DISCONNECT_IND:
+   1344                  BT_COLOR_SET(BT_COLOR_RED);
+   1345                  BT_LOGI("APP", "BT_GAP_LE_DISCONNECT_IND %s",
+   1346                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1347                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1348                  delete_connection_info(buff);
+   1349                  break;
+   1350              case BT_GAP_LE_CONNECTION_UPDATE_CNF:
+   1351                  BT_COLOR_SET(BT_COLOR_RED);
+   1352                  BT_LOGI("APP", "BT_GAP_LE_CONNECTION_UPDATE_CNF %s",
+   1353                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1354                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1355                  break;
+   1356              case BT_GAP_LE_CONNECTION_UPDATE_IND:
+   1357                  BT_COLOR_SET(BT_COLOR_RED);
+   1358                  BT_LOGI("APP", "BT_GAP_LE_CONNECTION_UPDATE_IND %s",
+   1359                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1360                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1361                  break;
+   1362              case BT_GAP_LE_BONDING_REPLY_REQ_IND:
+   1363                  BT_COLOR_SET(BT_COLOR_RED);
+   1364                  BT_LOGI("APP", "BT_GAP_LE_BONDING_REPLY_REQ_IND %s",
+   1365                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1366                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1367                  {
+   1368                      if (buff == NULL) {
+   1369                          BT_LOGI("APP", "status = %d", status);
+   1370                          BT_COLOR_SET(BT_COLOR_WHITE);
+   1371                          return status;
+   1372                      }
+   1373                      bt_gap_le_bonding_reply_t rsp = {{{0}}};
+   1374                      bt_gap_le_bonding_reply_req_ind_t *ind = (bt_gap_le_bonding_reply_req_ind_t *)buff;
+   1375                      if (ind->method & BT_GAP_LE_SMP_PASSKEY_DISPLAY_MASK) {
+   1376                          BT_COLOR_SET(BT_COLOR_BLUE);
+   1377                          printf("------------------------------>Passkey: %06u<---------------------------------\n", ind->passkey_display);
+   1378                          BT_COLOR_SET(BT_COLOR_WHITE);
+   1379          
+   1380                      } else if (ind->method & BT_GAP_LE_SMP_PASSKEY_INPUT_MASK) {
+   1381                          uint32_t i;
+   1382                          BT_COLOR_SET(BT_COLOR_BLUE);
+   1383                          sm_passkey = 0;
+   1384                          printf("\nInput passkey: \n");
+   1385                          //wait for input
+   1386                          BT_COLOR_SET(BT_COLOR_WHITE);
+   1387                          for (i = 0; i < 40; i++) {
+   1388                              if (sm_passkey != 0) {
+   1389                                  break;
+   1390                              }
+   1391                              bt_os_layer_sleep_task(1000);
+   1392                          }
+   1393                          rsp.passkey = sm_passkey;
+   1394                          status = bt_gap_le_bonding_reply(ind->handle, &rsp);
+   1395                      } else if (ind->method == BT_GAP_LE_SMP_OOB) {
+   1396                          memcpy(rsp.oob_data, oob_data, 16);
+   1397          
+   1398                          status = bt_gap_le_bonding_reply(ind->handle, &rsp);
+   1399                      } else if (ind->method & BT_GAP_LE_SMP_NUMERIC_COMPARISON_MASK) {
+   1400                          uint32_t i;
+   1401                          BT_COLOR_SET(BT_COLOR_BLUE);
+   1402                          printf("------------------------------>Passkey: %06u<---------------------------------\n", ind->passkey_display);
+   1403                          sm_passkey = 0;
+   1404                          printf("\nConfirm numeric number:Y/N\n");
+   1405                          BT_COLOR_SET(BT_COLOR_WHITE);
+   1406                          for (i = 0; i < 40; i++) {
+   1407                              if (nc_value_correct[0] != 0) {
+   1408                                  break;
+   1409                              }
+   1410                              bt_os_layer_sleep_task(1000);
+   1411                          }
+   1412                          if (nc_value_correct[0]!='n' && nc_value_correct[0]!='N') {
+   1413                              rsp.nc_value_matched = true;
+   1414                          } else {
+   1415                              rsp.nc_value_matched = false;
+   1416                          }
+   1417          
+   1418                          status = bt_gap_le_bonding_reply(ind->handle, &rsp);
+   1419                      }
+   1420                  }
+   1421                  break;
+   1422              case BT_GAP_LE_BONDING_COMPLETE_IND:
+   1423                  BT_COLOR_SET(BT_COLOR_RED);
+   1424                  BT_LOGI("APP", "BT_GAP_LE_BONDING_COMPLETE_IND %s",
+   1425                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1426                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1427                  if (status == BT_STATUS_SUCCESS) {
+   1428                  const bt_gap_le_bonding_complete_ind_t *ind = (bt_gap_le_bonding_complete_ind_t*)buff;
+   1429                  app_bt_bonded_info_t *bonded_info = find_bonded_info_by_handle(ind->handle);
+   1430                  app_bt_connection_cb_t *con = find_conneciton_info_by_handle(ind->handle);
+   1431                  /* If peer identity address is not null, update to resolving list and white list*/
+   1432                      //If advertising or scanning is enable, Disable advertising or scanning.
+   1433                      if (bt_app_advertising){
+   1434                          adv_enable.advertising_enable = BT_HCI_DISABLE;
+   1435                          bt_gap_le_set_advertising(&adv_enable, NULL, NULL, NULL);
+   1436                      }
+   1437                      if (bt_app_scanning){
+   1438                          bt_gap_le_set_scan(&scan_disable, NULL);
+   1439                      }
+   1440                      // If we got IRK/Identity address from peer, we have to change
+   1441                      // 1. connection info's bd address; app_bt_connection_cb_t
+   1442                      // 2. bonding info's bd address; app_bt_bonded_info_t
+   1443                      if (BT_ADDR_TYPE_UNKNOW != bonded_info->info.identity_addr.address.type){
+   1444                          /*Because value of bonded_info->info.identity_addr.address_type is 0[Public Identity] or 1[Random Identity],
+   1445                           *but Identity address type were definied 2 or 3 in spec.
+   1446                           *We have to "+2" for synchronization.
+   1447                          */
+   1448                          con->peer_addr = bonded_info->info.identity_addr.address;
+   1449                          bonded_info->bt_addr = bonded_info->info.identity_addr.address;
+   1450                      }
+   1451                      //update resolving list
+   1452                          if (BT_STATUS_SUCCESS == app_add_dev_2_resolving_list(&(bonded_info->info))) {
+   1453                              list_updating = list_updating | BT_APP_RESOLVING_LIST_UPDATING;
+   1454                          }
+   1455                      //update white list(use identity address or address)
+   1456                      if (BT_STATUS_SUCCESS == app_add_dev_2_white_list(&(bonded_info->info), &(con->peer_addr))) {
+   1457                              list_updating = list_updating | BT_APP_WHITE_LIST_UPDATING;
+   1458                      }
+   1459                  }
+   1460                  break;
+   1461              case BT_GAP_LE_READ_RSSI_CNF:
+   1462              {
+   1463                  BT_COLOR_SET(BT_COLOR_RED);
+   1464                  BT_LOGI("APP", "BT_GAP_LE_READ_RSSI_CNF %s",
+   1465                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1466                  BT_COLOR_SET(BT_COLOR_BLUE);
+   1467          
+   1468                  const bt_hci_evt_cc_read_rssi_t *rssi = (bt_hci_evt_cc_read_rssi_t *)buff;
+   1469                  BT_LOGI("APP", "connection handle=0x%04x", rssi->handle);
+   1470                  if (rssi->rssi == 127) {
+   1471                      BT_LOGI("APP", "rssi cannot be read");
+   1472                  } else {
+   1473                      if ((rssi->rssi>>7)>0){
+   1474                          BT_LOGI("APP", "rssi=%ddBm", ((~rssi->rssi)&0xFF)+0x01);
+   1475                      } else {
+   1476                          BT_LOGI("APP", "rssi=%ddBm", rssi->rssi);
+   1477                      }
+   1478                  }
+   1479                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1480                  break;
+   1481              }    
+   1482              case BT_GAP_LE_UPDATE_DATA_LENGTH_CNF:
+   1483                  BT_COLOR_SET(BT_COLOR_RED);
+   1484                  BT_LOGI("APP", "BT_GAP_LE_UPDATE_DATA_LENGTH_CNF %s",
+   1485                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1486                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1487                  break;
+   1488              case BT_GAP_LE_SET_TX_POWER_CNF:
+   1489                  BT_COLOR_SET(BT_COLOR_RED);
+   1490                  BT_LOGI("APP", "BT_GAP_LE_SET_TX_POWER_CNF %s",
+   1491                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1492                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1493                  break;
+   1494          #if 0
+   1495              case  BT_GAP_LE_MULTI_ADVERTISING_STATE_CHANGE_IND:
+   1496              {
+   1497                  BT_LOGI("APP", "BT_GAP_LE_MULTI_ADVERTISING_STATE_CHANGE_IND");
+   1498                  bt_gap_le_multi_advertising_state_change_ind_t *state_change_t = 
+   1499                      (bt_gap_le_multi_advertising_state_change_ind_t *)buff;
+   1500                  BT_LOGI("APP", "instance:%d, reason:0x%02x, connection handle:0x%04x",
+   1501                      state_change_t->instance,
+   1502                      state_change_t->reason,
+   1503                      state_change_t->connection_handle);
+   1504                  break;
+   1505              }
+   1506          #endif
+   1507          #ifdef BT_BQB
+   1508              case BT_GAP_LE_BQB_DISCONNECT_REQ_IND:
+   1509                  BT_COLOR_SET(BT_COLOR_RED);
+   1510                  BT_LOGI("APP", "BT_GAP_LE_BQB_DISCONNECT_REQ_IND %s",
+   1511                      (status == BT_STATUS_SUCCESS)? "Success":"Failed");
+   1512                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1513                  return bt_gap_le_disconnect(&disconnect_para);
+   1514          #endif
+   1515              case BT_GATTC_READ_USING_CHARC_UUID:
+   1516                  {
+   1517                      if (bt_app_wait_peer_central_address_resolution_rsp == true){
+   1518                          bt_app_wait_peer_central_address_resolution_rsp = false;
+   1519                          BT_COLOR_SET(BT_COLOR_RED);
+   1520                          BT_LOGI("APP", "Read Peer Central Address Resolution characteristic");
+   1521                          BT_COLOR_SET(BT_COLOR_BLUE);
+   1522                          bt_gattc_read_by_type_rsp_t rsp = *((bt_gattc_read_by_type_rsp_t *)buff);
+   1523                          if (rsp.att_rsp->opcode == BT_ATT_OPCODE_READ_BY_TYPE_RESPONSE){
+   1524          
+   1525                              if (status == BT_STATUS_SUCCESS && rsp.att_rsp == NULL) {
+   1526                                  BT_LOGI("APP", "Read Peer Central Address Resolution characteristic FINISHED!!");
+   1527                                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1528                                  break;
+   1529                              }
+   1530          
+   1531                              if (rsp.att_rsp == NULL) {
+   1532                                  BT_LOGI("APP", "status = %d", status);
+   1533                                  BT_COLOR_SET(BT_COLOR_WHITE);
+   1534                                  break;
+   1535                              }
+   1536          
+   1537                              uint8_t *attribute_data_list = rsp.att_rsp->attribute_data_list;
+   1538                              uint8_t Peer_CAR_supporting = 0;
+   1539          
+   1540                              if (rsp.att_rsp->length - 2 == 1){
+   1541                                  Peer_CAR_supporting = *((uint8_t *)(attribute_data_list + 2));
+   1542                                  BT_LOGI("APP", "Peer Central Address Resolution Supporting= %d",Peer_CAR_supporting);
+   1543                              }
+   1544          
+   1545                          } else if (rsp.att_rsp->opcode == 0x1) {
+   1546                              bt_gattc_error_rsp_t error_rsp = *((bt_gattc_error_rsp_t *)buff);
+   1547                              BT_LOGI("APP", "Can not find Peer Central Address Resolution");
+   1548                              BT_LOGI("APP", "Error_opcode=0x%02x, error_code=0x%02x",error_rsp.att_rsp->error_opcode, error_rsp.att_rsp->error_code);
+   1549                          } else {
+   1550                              BT_LOGI("APP", "Read Peer Central Address Resolution Error:Can not handle feedback");
+   1551                          }
+   1552                          BT_COLOR_SET(BT_COLOR_WHITE);
+   1553                          return BT_STATUS_SUCCESS;
+   1554                      }
+   1555                  }
+   1556              }
+   1557          
+   1558              if (status == BT_STATUS_OUT_OF_MEMORY) {
+   1559                  return BT_STATUS_OUT_OF_MEMORY;
+   1560              }
+   1561          
+   1562              if (ut_app_callback) {
+   1563                  status = ut_app_callback(msg, status, buff);
+   1564              }
+   1565          
+   1566              return status;
+   1567          }
+   1568          
+   1569          
+   1570          
+   1571          bt_status_t bt_gatts_get_authorization_check_result(bt_gatts_authorization_check_req_t *req)
+   1572          {
+   1573              bt_gap_le_bonding_info_t *bonded_info = &(find_bonded_info_by_handle(req->connection_handle)->info);
+   1574              BT_LOGI("APP", "Peer ask to access attribute with authorization requirement.");
+   1575              BT_LOGI("APP", "connection[0x%04x] attribute handle[0x%04x] [%s]",req->connection_handle, req->attribute_handle,
+   1576                      req->read_write==BT_GATTS_CALLBACK_READ? "Read":"Write");
+   1577              BT_LOGI("APP", "Security mode[0x%02x]",bonded_info->key_security_mode);
+   1578              if ((bonded_info->key_security_mode & BT_GAP_LE_SECURITY_AUTHENTICATION_MASK) >0) {
+   1579                  /* If you agree peer device can access all characteristic with
+   1580                     authorization permission, you can set #BT_GAP_LE_SECURITY_AUTHORIZATION_MASK
+   1581                     flag, and GATTS will not call for authorization check again. */
+   1582                  bonded_info->key_security_mode = bonded_info->key_security_mode |BT_GAP_LE_SECURITY_AUTHORIZATION_MASK;
+   1583                  /* If application accept peer access this attribute. */
+   1584                  return BT_STATUS_SUCCESS;
+   1585              } else {
+   1586                  /* If application reject peer access this attribute. */
+   1587                  return BT_STATUS_UNSUPPORTED;
+   1588              }
+   1589          
+   1590          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      56   app_add_dev_2_resolving_list
+        56   -> __aeabi_memcpy
+        56   -> bt_debug_log
+        56   -> bt_gap_le_set_resolving_list
+       8   app_add_dev_2_white_list
+         8   -> bt_debug_log
+         8   -> bt_gap_le_set_white_list
+       8   app_clear_resolving_list
+         8   -> bt_debug_log
+         8   -> bt_gap_le_set_resolving_list
+      16   app_delete_dev_from_resolving_list
+        16   -> __aeabi_memcpy
+        16   -> bt_debug_log
+        16   -> bt_gap_le_set_resolving_list
+      48   bt_app_event_callback
+        48   -- Indirect call
+        48   -> __aeabi_memclr4
+        48   -> __aeabi_memcpy
+        48   -> __aeabi_memcpy4
+        48   -> add_connection_info
+        48   -> app_add_dev_2_resolving_list
+        48   -> app_add_dev_2_white_list
+        48   -> ble_smtcn_event_callback
+        48   -> bt_debug_addr2str
+        48   -> bt_debug_log
+        48   -> bt_gap_le_bonding_reply
+        48   -> bt_gap_le_set_advertising
+        48   -> bt_gap_le_set_resolvable_private_address_timeout
+        48   -> bt_gap_le_set_scan
+        48   -> bt_os_layer_sleep_task
+        48   -> delete_connection_info
+        48   -> find_bonded_info_by_handle
+        48   -> find_bonded_info_by_index
+        48   -> find_conneciton_info_by_handle
+        48   -> print_advertising_report
+        48   -> printf
+     112   bt_app_io_callback
+       112   -- Indirect call
+       112   -> __aeabi_memcpy
+       112   -> __aeabi_memcpy4
+       112   -> __aeabi_memset
+       112   -> app_add_dev_2_resolving_list
+       112   -> app_clear_resolving_list
+       112   -> app_delete_dev_from_resolving_list
+       112   -> atoi
+       112   -> ble_smtcn_init
+       112   -> ble_smtcn_set_adv
+       112   -> bt_debug_log
+       112   -> bt_gap_debug_cmd_sending
+       112   -> bt_gap_dump
+       112   -> bt_gap_le_bond
+       112   -> bt_gap_le_cancel_connection
+       112   -> bt_gap_le_connect
+       112   -> bt_gap_le_disconnect
+       112   -> bt_gap_le_read_rssi
+       112   -> bt_gap_le_set_address_resolution_enable
+       112   -> bt_gap_le_set_advertising
+       112   -> bt_gap_le_set_random_address
+       112   -> bt_gap_le_set_resolvable_private_address_timeout
+       112   -> bt_gap_le_set_resolving_list
+       112   -> bt_gap_le_set_scan
+       112   -> bt_gap_le_set_white_list
+       112   -> bt_gap_le_update_connection_parameter
+       112   -> bt_gap_le_update_data_length
+       112   -> bt_gattc_read_using_charc_uuid
+       112   -> bt_gatts_set_max_mtu
+       112   -> bt_power_off
+       112   -> bt_power_on
+       112   -> bt_uuid_load
+       112   -> cancel_bonded_info
+       112   -> copy_str_to_addr
+       112   -> copy_str_to_byte
+       112   -> dump_bonded_info_list
+       112   -> dump_connection_info_list
+       112   -> find_bonded_info_by_index
+       112   -> print_help
+       112   -> sscanf
+       112   -> strlen
+       112   -> strncmp
+       112   -> strtoul
+       112   -> ut_app_reset_flash
+       112   -> ut_app_reset_global_config
+       0   bt_app_l2cap_io_callback
+       0   bt_app_sm_io_callback
+      16   bt_gap_le_get_bonding_info
+        16   -> get_bonded_info
+       0   bt_gap_le_get_local_config
+       8   bt_gap_le_get_pairing_config
+         8   -> __aeabi_memcpy
+      16   bt_gatts_get_authorization_check_result
+        16   -> bt_debug_log
+        16   -> find_bonded_info_by_handle
+       0   bt_hci_log_enabled
+      32   copy_str_to_addr
+        32   -> sscanf
+      32   copy_str_to_byte
+        32   -> sscanf
+       0   default_bt_app_l2cap_io_callback
+       0   default_bt_app_sm_io_callback
+       0   get_event_type
+     120   print_advertising_report
+       120   -> __aeabi_memclr4
+       120   -> bt_debug_addr2str
+       120   -> bt_debug_log
+       120   -> get_event_type
+       120   -> printf
+       0   print_help
+         0   -> printf
+       8   ut_app_reset_flash
+         0   -> __aeabi_memcpy4
+         8   -> clear_bonded_info
+      16   ut_app_reset_global_config
+        16   -> __aeabi_memcpy4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable200
+       4  ??DataTable200_1
+       4  ??DataTable200_10
+       4  ??DataTable200_11
+       4  ??DataTable200_2
+       4  ??DataTable200_3
+       4  ??DataTable200_4
+       4  ??DataTable200_5
+       4  ??DataTable200_6
+       4  ??DataTable200_7
+       4  ??DataTable200_8
+       4  ??DataTable200_9
+       4  ??DataTable207
+       4  ??DataTable207_1
+       4  ??DataTable207_2
+       4  ??DataTable207_3
+       4  ??DataTable207_4
+       4  ??DataTable208
+       4  ??DataTable208_1
+       4  ??DataTable208_10
+       4  ??DataTable208_11
+       4  ??DataTable208_12
+       4  ??DataTable208_13
+       4  ??DataTable208_14
+       4  ??DataTable208_15
+       4  ??DataTable208_16
+       4  ??DataTable208_17
+       4  ??DataTable208_18
+       4  ??DataTable208_19
+       4  ??DataTable208_2
+       4  ??DataTable208_20
+       4  ??DataTable208_21
+       4  ??DataTable208_22
+       4  ??DataTable208_23
+       4  ??DataTable208_24
+       4  ??DataTable208_25
+       4  ??DataTable208_26
+       4  ??DataTable208_27
+       4  ??DataTable208_28
+       4  ??DataTable208_29
+       4  ??DataTable208_3
+       4  ??DataTable208_30
+       4  ??DataTable208_31
+       4  ??DataTable208_4
+       4  ??DataTable208_5
+       4  ??DataTable208_6
+       4  ??DataTable208_7
+       4  ??DataTable208_8
+       4  ??DataTable208_9
+       4  ??DataTable210
+       4  ??DataTable210_1
+       4  ??DataTable210_2
+       4  ??DataTable211
+       4  ??DataTable211_1
+       4  ??DataTable211_2
+       4  ??DataTable211_3
+       4  ??DataTable212
+       4  ??DataTable212_1
+       4  ??DataTable212_2
+       4  ??DataTable212_3
+       4  ??DataTable212_4
+       4  ??DataTable212_5
+       4  ??DataTable212_6
+       4  ??DataTable212_7
+       4  ?_0
+       4  ?_1
+      12  ?_10
+       8  ?_100
+      12  ?_101
+      20  ?_102
+      12  ?_103
+      12  ?_104
+      16  ?_105
+      12  ?_106
+      28  ?_107
+       4  ?_108
+       4  ?_109
+       8  ?_11
+      24  ?_110
+      28  ?_111
+      20  ?_112
+      24  ?_113
+      20  ?_114
+      20  ?_115
+      52  ?_116
+      56  ?_117
+      28  ?_118
+      28  ?_119
+      52  ?_12
+      28  ?_120
+      28  ?_121
+      24  ?_122
+      28  ?_123
+      24  ?_124
+      12  ?_125
+      12  ?_126
+      12  ?_127
+       8  ?_128
+      12  ?_129
+      28  ?_13
+       8  ?_130
+      16  ?_131
+      16  ?_132
+      12  ?_133
+      20  ?_134
+       8  ?_135
+      12  ?_136
+      28  ?_137
+      32  ?_138
+      36  ?_139
+      32  ?_14
+      32  ?_140
+       8  ?_141
+       8  ?_142
+      48  ?_143
+      48  ?_144
+      44  ?_145
+      48  ?_146
+      60  ?_147
+      68  ?_148
+      44  ?_149
+     100  ?_15
+      36  ?_150
+      48  ?_151
+      36  ?_152
+      36  ?_153
+      36  ?_154
+      20  ?_155
+       8  ?_156
+       8  ?_157
+      28  ?_158
+      44  ?_159
+      32  ?_16
+      40  ?_160
+      40  ?_161
+      48  ?_162
+      48  ?_163
+      48  ?_164
+      24  ?_165
+      80  ?_166
+      20  ?_167
+      32  ?_168
+      44  ?_169
+      56  ?_17
+      40  ?_170
+      32  ?_171
+      24  ?_172
+      48  ?_173
+      40  ?_174
+      64  ?_175
+      76  ?_176
+      60  ?_177
+      56  ?_178
+      52  ?_179
+      56  ?_18
+      80  ?_180
+      72  ?_181
+      60  ?_182
+       8  ?_183
+       8  ?_184
+      32  ?_185
+       4  ?_186
+      32  ?_187
+      32  ?_188
+       8  ?_189
+      44  ?_19
+      16  ?_190
+       8  ?_2
+      36  ?_20
+      24  ?_21
+       8  ?_22
+       2  ?_23
+    3760  ?_24
+      52  ?_25
+      56  ?_26
+      40  ?_27
+       2  ?_28
+       8  ?_29
+       8  ?_3
+       8  ?_30
+      20  ?_31
+      16  ?_32
+      16  ?_33
+      48  ?_34
+      16  ?_35
+      16  ?_36
+      16  ?_37
+      12  ?_38
+       4  ?_39
+       8  ?_4
+       4  ?_40
+      12  ?_41
+       8  ?_42
+       8  ?_43
+       2  ?_44
+       2  ?_45
+      72  ?_46
+      68  ?_47
+      20  ?_48
+       8  ?_49
+       8  ?_5
+      20  ?_50
+      92  ?_51
+      92  ?_52
+      16  ?_53
+      28  ?_54
+      16  ?_55
+      52  ?_56
+      44  ?_57
+       8  ?_58
+       8  ?_59
+       8  ?_6
+       8  ?_60
+      52  ?_61
+      96  ?_62
+      12  ?_63
+      56  ?_64
+      12  ?_65
+       8  ?_66
+      48  ?_67
+      52  ?_68
+      12  ?_69
+      16  ?_7
+      12  ?_70
+      16  ?_71
+      32  ?_72
+      76  ?_73
+      12  ?_74
+      16  ?_75
+       8  ?_76
+      12  ?_77
+       8  ?_78
+       8  ?_79
+      16  ?_8
+      12  ?_80
+      16  ?_81
+      36  ?_82
+      76  ?_83
+      52  ?_84
+      20  ?_85
+      28  ?_86
+      84  ?_87
+       8  ?_88
+      16  ?_89
+      16  ?_9
+      12  ?_90
+      36  ?_91
+      12  ?_92
+      20  ?_93
+      20  ?_94
+      92  ?_95
+      60  ?_96
+      52  ?_97
+      48  ?_98
+      72  ?_99
+      40  adv_enable
+          lt_addr
+          local_config
+          sc_only
+          ut_app_reset_global_config_flag
+          ut_app_reset_flash_flag
+          bt_app_advertising
+          bt_app_scanning
+          bt_app_connecting
+          bt_app_wait_peer_central_address_resolution_rsp
+          list_updating
+          nc_value_correct
+          g_bt_hci_log_enable
+          read_rssi
+          ut_app_callback
+          sm_passkey
+     205  adv_enable_default
+          adv_para_default
+          scan_para_default
+          connect_para_default
+          disconnect_para_default
+          conn_update_para_default
+          adv_data
+          adv_data_default
+          scan_data
+          scan_data_default
+          sc_only_default
+      16  adv_para
+      84  app_add_dev_2_resolving_list
+      62  app_add_dev_2_white_list
+      30  app_clear_resolving_list
+      52  app_delete_dev_from_resolving_list
+      48  bt_app_callback_table
+    1648  bt_app_event_callback
+    3884  bt_app_io_callback
+       4  bt_app_l2cap_io_callback
+          default_bt_app_l2cap_io_callback
+       4  bt_app_sm_io_callback
+          default_bt_app_sm_io_callback
+      24  bt_gap_le_get_bonding_info
+      18  bt_gap_le_get_local_config
+      18  bt_gap_le_get_pairing_config
+      94  bt_gatts_get_authorization_check_result
+       6  bt_hci_log_enabled
+      16  conn_update_para
+      28  connect_para
+      82  copy_str_to_addr
+      78  copy_str_to_byte
+       4  disconnect_para
+      50  get_event_type
+     120  local_key_req
+          local_key_req_default
+       1  lt_addr_type
+      20  oob_data
+       8  pairing_config_req
+       8  pairing_config_req_default
+     248  print_advertising_report
+       8  print_help
+       2  scan_disable
+       2  scan_enable
+       8  scan_para
+      34  ut_app_reset_flash
+     104  ut_app_reset_global_config
+      24  -- Other
+
+ 
+     80 bytes in section .bss
+    373 bytes in section .data
+  1 217 bytes in section .rodata
+ 15 032 bytes in section .text
+ 
+ 15 032 bytes of CODE  memory
+  1 217 bytes of CONST memory
+    453 bytes of DATA  memory
+
+Errors: none
+Warnings: none

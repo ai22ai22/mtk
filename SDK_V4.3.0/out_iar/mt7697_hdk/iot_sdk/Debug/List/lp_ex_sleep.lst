@@ -1,0 +1,466 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:31
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\common\bsp_ex\src\lp_ex_sleep.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW8EC7.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\common\bsp_ex\src\lp_ex_sleep.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\lp_ex_sleep.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\lp_ex_sleep.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\common\bsp_ex\src\lp_ex_sleep.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <stdlib.h>
+     36          #include <stdio.h>
+     37          #include <string.h>
+     38          /* #include "mlog.h" */
+     39          
+     40          #include "hal_lp.h"
+     41          
+     42          #if ((PRODUCT_VERSION == 7686)||(PRODUCT_VERSION == 7682)||(PRODUCT_VERSION == 5932))
+     43          #include "mt7686.h"
+     44          #include "system_mt7686.h"
+     45          #elif ((PRODUCT_VERSION == 7687)||(PRODUCT_VERSION == 7697))
+     46          #include "lp_ex_sleep.h"
+     47          #include "mt7687.h"
+     48          #include "system_mt7687.h"
+     49          #include "hal_sleep_driver.h"
+     50          #endif
+     51          #include "connsys_driver.h"
+     52          
+     53          #include "timer.h"
+     54          #include "top.h"
+     55          #include "hal_sleep_manager.h"
+     56          #include "FreeRTOS.h"
+     57          #include "toi.h"
+     58          #include "hal_rtc.h"
+     59          #include "hal_gpt.h"
+     60          
+     61          #define HAL_REG_32(reg)         (*((volatile unsigned int *)(reg)))
+     62          
+     63          extern uint32_t hal_sleep_manager_sleep_driver_dump_handle_name(void);
+     64          
+     65          void hal_ex_lp_gpt_isr(void)
+     66          {
+     67          }
+     68          
+     69          #if ((PRODUCT_VERSION == 7687)||(PRODUCT_VERSION == 7697))
+     70          static uint8_t _cli_deep_sleep(uint8_t len, char *param[])
+     71          {
+     72              /* Setup timer as wakeup source */
+     73              /* TMR0 is usesd by iperf */
+     74              drvTMR_init(TMR1, (atoi(param[0]) * 32768), 0, hal_ex_lp_gpt_isr);//1
+     75              TMR_Stop(TMR0);
+     76              TMR_Start(TMR1);
+     77          
+     78              /* Enable FW_OWN_BACK_INT interrupt */
+     79              hal_lp_connsys_get_own_enable_int();
+     80          
+     81              /* Give connsys ownership to N9 */
+     82              hal_lp_connsys_give_n9_own();
+     83          
+     84              /* Switch flash clock to XTAL */
+     85              cmnSerialFlashClkConfToXtal();
+     86          
+     87              /* Switch MCU clock to XTAL */
+     88              cmnCpuClkConfigureToXtal();
+     89          
+     90              /* Unclaim PLL usage */
+     91              cmnPLL1OFF_PLL2OFF();
+     92          
+     93              hal_lp_deep_sleep();
+     94          
+     95              return 0;
+     96          }
+     97          
+     98          static uint8_t _cli_legacy_sleep(uint8_t len, char *param[])
+     99          {
+    100              /* Setup timer as wakeup source */
+    101              /* TMR_IDX0 is usesd by iperf */
+    102              drvTMR_init(HAL_GPT_1, (atoi(param[0]) * 32768), 0, hal_ex_lp_gpt_isr);//1
+    103          
+    104              /* disable TMR_IDX0 which trigger a 30sec timer due to tickless */
+    105              TMR_Stop(HAL_GPT_0);
+    106          
+    107              TMR_Start(HAL_GPT_1);
+    108          
+    109              /* Enable FW_OWN_BACK_INT interrupt */
+    110              hal_lp_connsys_get_own_enable_int();
+    111          
+    112              /* Give connsys ownership to N9 */
+    113              hal_lp_connsys_give_n9_own();
+    114          
+    115              /* Switch flash clock to XTAL */
+    116              cmnSerialFlashClkConfToXtal();
+    117          
+    118              /* Switch MCU clock to XTAL */
+    119              cmnCpuClkConfigureToXtal();
+    120          
+    121              /* Unclaim PLL usage */
+    122              cmnPLL1OFF_PLL2OFF();
+    123          
+    124              hal_lp_legacy_sleep();
+    125          
+    126              /* After wakeup from legacy sleep */
+    127              /* Enable MCU clock to 192MHz */
+    128              cmnCpuClkConfigureTo192M();
+    129          
+    130              /* Enable flash clock to 64MHz */
+    131              cmnSerialFlashClkConfTo64M();
+    132          
+    133              /* re-init connsys for handling inband-cmd response */
+    134              connsys_open();
+    135          
+    136              TMR_Start(HAL_GPT_0);
+    137          
+    138              return 0;
+    139          }
+    140          
+    141          #if configUSE_TICKLESS_IDLE == 2
+    142          extern uint32_t ticklessTryCount;
+    143          extern uint32_t ticklessWFICount;
+    144          extern uint32_t ticklessLSCount;
+    145          extern uint32_t ticklessIdleCount;
+    146          #endif
+    147          
+    148          static uint8_t _cli_tickless_mode(uint8_t len, char *param[])
+    149          {
+    150          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    151          #if configUSE_TICKLESS_IDLE == 2
+    152          #ifdef configTICKLESS_DYNAMIC_ENABLE
+    153              int ticklessMode = 1;
+    154          #endif
+    155          
+    156          #ifdef configTICKLESS_DYNAMIC_ENABLE
+    157              ticklessMode = atoi(param[0]);
+    158          
+    159              switch (ticklessMode) {
+    160              case 0:
+    161                  sleepdrv_set_sleep_mode(HAL_SLEEP_MODE_NONE);
+    162                  break;
+    163              case 1:
+    164                  sleepdrv_set_sleep_mode(HAL_SLEEP_MODE_SLEEP);
+    165                  break;
+    166              case 2:
+    167                  sleepdrv_set_sleep_mode(HAL_SLEEP_MODE_LEGACY_SLEEP);
+    168                  break;
+    169              default:
+    170                  break;
+    171              }
+    172          
+    173              ticklessTryCount  = 0;
+    174              ticklessWFICount  = 0;
+    175              ticklessLSCount   = 0;
+    176              ticklessIdleCount = 0;
+    177          #endif
+    178          #endif
+    179          #endif
+    180              return 0;
+    181          }
+    182          
+    183          static uint8_t _cli_tickless_status(uint8_t len, char *param[])
+    184          {
+    185          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    186          #if configUSE_TICKLESS_IDLE == 2
+    187              hal_sleep_mode_t ticklessMode = sleepdrv_get_sleep_mode();
+    188          
+    189              printf("tickless:\n");
+    190              printf("\ttried   %u times\n", (unsigned int)ticklessTryCount);
+    191              printf("\tentered wfi  %u times\n", (unsigned int)ticklessWFICount);
+    192              printf("\tentered ls   %u times\n", (unsigned int)ticklessLSCount);
+    193              printf("\tentered idle %u times\n", (unsigned int)ticklessIdleCount);
+    194              printf("\t%s\n", ticklessMode ? "enabled" : "disabled");
+    195          
+    196              #if ((PRODUCT_VERSION == 7687)||(PRODUCT_VERSION == 7697))
+    197              if (ticklessMode == HAL_SLEEP_MODE_SLEEP) {
+    198                  printf("\tmode: WFI\n");
+    199              } else if (ticklessMode == HAL_SLEEP_MODE_LEGACY_SLEEP) {
+    200                  printf("\tmode: Legacy Sleep\n");
+    201              }
+    202              #elif  ((PRODUCT_VERSION == 7686)||(PRODUCT_VERSION == 7682)||(PRODUCT_VERSION == 5932))
+    203              if (ticklessMode == HAL_SLEEP_MODE_IDLE) {
+    204                  printf("\tmode: WFI\n");
+    205              } else if (ticklessMode == HAL_SLEEP_MODE_SLEEP) {
+    206                  printf("\tmode: Deep Sleep\n");
+    207              }
+    208              #endif
+    209          
+    210              printf("\t%s\n", hal_sleep_manager_is_sleep_locked() ? "locked" : "not locked");
+    211              if (hal_sleep_manager_is_sleep_locked()) {
+    212                  hal_sleep_manager_sleep_driver_dump_handle_name();
+    213              }
+    214          #endif
+    215          #endif
+    216              return 0;
+    217          }
+    218          
+    219          static uint8_t _cli_rtc_mode(uint8_t len, char *param[])
+    220          {
+    221              printf("ready to enter RTC mode.\n");
+    222              hal_rtc_sleep(HAL_RTC_SLEEP_MAGIC);
+    223              
+    224          #ifdef HAL_RTC_FEATURE_SLEEP
+    225              if (HAL_RTC_STATUS_OK == hal_rtc_init()) {
+    226                  printf("ready to enter RTC mode.\n");
+    227                  hal_rtc_sleep(HAL_RTC_SLEEP_MAGIC);
+    228              } else {
+    229                  printf("RTC init fail.\n");
+    230              }
+    231          #endif
+    232              return 0;
+    233          }
+    234          
+    235          cmd_t lp_cli[] = {
+    236              { "ls",              "legacy sleep",                  _cli_legacy_sleep    },
+    237          #if ((PRODUCT_VERSION == 7687)||(PRODUCT_VERSION == 7697))
+    238              { "ds",              "deep sleep",                    _cli_deep_sleep      },
+    239          #endif
+    240              { "tick",            "tickless enable",               _cli_tickless_mode   },
+    241              { "status",          "tickless status",               _cli_tickless_status },
+    242              { "rtc",             "rtc mode",                      _cli_rtc_mode        },
+    243              { NULL }
+    244          };
+    245          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   _cli_deep_sleep
+         8   -> TMR_Start
+         8   -> TMR_Stop
+         8   -> atoi
+         8   -> cmnCpuClkConfigureToXtal
+         8   -> cmnPLL1OFF_PLL2OFF
+         8   -> cmnSerialFlashClkConfToXtal
+         8   -> drvTMR_init
+         8   -> hal_lp_connsys_get_own_enable_int
+         8   -> hal_lp_connsys_give_n9_own
+         8   -> hal_lp_deep_sleep
+       8   _cli_legacy_sleep
+         8   -> TMR_Start
+         8   -> TMR_Stop
+         8   -> atoi
+         8   -> cmnCpuClkConfigureTo192M
+         8   -> cmnCpuClkConfigureToXtal
+         8   -> cmnPLL1OFF_PLL2OFF
+         8   -> cmnSerialFlashClkConfTo64M
+         8   -> cmnSerialFlashClkConfToXtal
+         8   -> connsys_open
+         8   -> drvTMR_init
+         8   -> hal_lp_connsys_get_own_enable_int
+         8   -> hal_lp_connsys_give_n9_own
+         8   -> hal_lp_legacy_sleep
+      16   _cli_rtc_mode
+        16   -> hal_rtc_init
+        16   -> hal_rtc_sleep
+        16   -> printf
+       8   _cli_tickless_mode
+         8   -> atoi
+         8   -> sleepdrv_set_sleep_mode
+      16   _cli_tickless_status
+        16   -> hal_sleep_manager_is_sleep_locked
+        16   -> hal_sleep_manager_sleep_driver_dump_handle_name
+        16   -> printf
+        16   -> sleepdrv_get_sleep_mode
+       0   hal_ex_lp_gpt_isr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable29
+       4  ??DataTable29_1
+       4  ??DataTable29_2
+       4  ??DataTable29_3
+       4  ??DataTable29_4
+       4  ??DataTable29_5
+       4  ?_0
+      16  ?_1
+      12  ?_10
+      20  ?_11
+      24  ?_12
+      24  ?_13
+      24  ?_14
+       8  ?_15
+       8  ?_16
+      12  ?_17
+      12  ?_18
+      24  ?_19
+       4  ?_2
+       8  ?_20
+      12  ?_21
+      28  ?_22
+      16  ?_23
+      12  ?_3
+       8  ?_4
+      16  ?_5
+       8  ?_6
+      16  ?_7
+       4  ?_8
+      12  ?_9
+      62  _cli_deep_sleep
+      80  _cli_legacy_sleep
+      54  _cli_rtc_mode
+      62  _cli_tickless_mode
+     154  _cli_tickless_status
+       2  hal_ex_lp_gpt_isr
+      96  lp_cli
+
+ 
+  96 bytes in section .data
+ 100 bytes in section .rodata
+ 670 bytes in section .text
+ 
+ 670 bytes of CODE  memory
+ 100 bytes of CONST memory
+  96 bytes of DATA  memory
+
+Errors: none
+Warnings: none

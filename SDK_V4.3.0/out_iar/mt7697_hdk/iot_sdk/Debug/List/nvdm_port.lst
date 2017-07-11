@@ -1,0 +1,461 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:35
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\nvdm\src\nvdm_port.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW9E43.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\nvdm\src\nvdm_port.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\nvdm_port.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\nvdm_port.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\nvdm\src\nvdm_port.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #ifdef MTK_NVDM_ENABLE
+     36          
+     37          #include "hal_flash.h"
+     38          #include "syslog.h"
+     39          #include <assert.h>
+     40          
+     41          #if !defined (MTK_DEBUG_LEVEL_NONE)
+     42          extern log_control_block_t log_control_block_common;
+     43          void nvdm_port_log_notice(const char *message, ...)
+     44          {
+     45              va_list ap;
+     46          
+     47              va_start(ap, message);
+     48              vprint_module_log(&log_control_block_common, __FUNCTION__, __LINE__, PRINT_LEVEL_INFO, message, ap);
+     49              va_end(ap);
+     50          }
+     51          
+     52          void nvdm_port_log_info(const char *message, ...)
+     53          {
+     54              va_list ap;
+     55          
+     56              va_start(ap, message);
+     57              //vprint_module_log(&log_control_block_common, __FUNCTION__, __LINE__, PRINT_LEVEL_INFO, message, ap);
+     58              va_end(ap);
+     59          }
+     60          
+     61          void nvdm_port_log_error(const char *message, ...)
+     62          {
+     63              va_list ap;
+     64          
+     65              va_start(ap, message);
+     66              vprint_module_log(&log_control_block_common, __FUNCTION__, __LINE__, PRINT_LEVEL_ERROR, message, ap);
+     67              va_end(ap);
+     68          
+     69              assert(0);
+     70          }
+     71          #else
+     72          void nvdm_port_log_notice(const char *message, ...)
+     73          {}
+     74          void nvdm_port_log_info(const char *message, ...)
+     75          {}
+     76          void nvdm_port_log_error(const char *message, ...)
+     77          {
+     78              assert(0);
+     79          }
+     80          #endif
+     81          
+     82          void nvdm_port_flash_read(uint32_t address, uint8_t *buffer, uint32_t length)
+     83          {
+     84              hal_flash_status_t status;
+     85          
+     86              status = hal_flash_read(address, buffer, length);
+     87              if (status != HAL_FLASH_STATUS_OK) {
+     88                  nvdm_port_log_error("hal_flash_read: address = 0x%08x, buffer = 0x%08x, length = %d", address, (uint32_t)buffer, length);
+     89              }
+     90          }
+     91          
+     92          void nvdm_port_flash_write(uint32_t address, const uint8_t *buffer, uint32_t length)
+     93          {
+     94              hal_flash_status_t status;
+     95          
+     96              status = hal_flash_write(address, buffer, length);
+     97              if (status != HAL_FLASH_STATUS_OK) {
+     98                  nvdm_port_log_error("hal_flash_write: address = 0x%08x, buffer = 0x%08x, length = %d", address, (uint32_t)buffer, length);
+     99              }
+    100          }
+    101          
+    102          /* erase unit is 4K large(which is size of PEB) */
+    103          void nvdm_port_flash_erase(uint32_t address)
+    104          {
+    105              hal_flash_status_t status;
+    106          
+    107              status = hal_flash_erase(address, HAL_FLASH_BLOCK_4K);
+    108              if (status != HAL_FLASH_STATUS_OK) {
+    109                  nvdm_port_log_error("hal_flash_erase: address = 0x%08x", address);
+    110              }
+    111          }
+    112          
+    113          /* This macro defines NVDM using in OS context */
+    114          #define NVDM_PORT_USE_OS
+    115          
+    116          #ifdef NVDM_PORT_USE_OS
+    117          #include "FreeRTOS.h"
+    118          #include "task.h"
+    119          #include "semphr.h"
+    120          
+    121          typedef SemaphoreHandle_t nvdm_port_mutex_t;
+    122          static nvdm_port_mutex_t g_nvdm_mutex;
+    123          
+    124          void nvdm_port_mutex_creat(void)
+    125          {
+    126              g_nvdm_mutex = xSemaphoreCreateMutex();
+    127          
+    128              if (g_nvdm_mutex == NULL) {
+    129                  nvdm_port_log_error("nvdm_port_mutex_creat error\r\n");
+    130              }
+    131              nvdm_port_log_info("nvdm_port_mutex_creat successfully");
+    132          }
+    133          
+    134          void nvdm_port_mutex_take(void)
+    135          {
+    136              if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED) {
+    137                  if (xSemaphoreTake(g_nvdm_mutex, portMAX_DELAY) == pdFALSE) {
+    138                      nvdm_port_log_error("nvdm_port_mutex_take error\r\n");
+    139                  }
+    140                  nvdm_port_log_info("nvdm_port_mutex_take successfully");
+    141              }
+    142          }
+    143          
+    144          void nvdm_port_mutex_give(void)
+    145          {
+    146              if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED) {
+    147                  if (xSemaphoreGive(g_nvdm_mutex) == pdFALSE) {
+    148                      nvdm_port_log_error("nvdm_port_mutex_give error\r\n");
+    149                  }
+    150                  nvdm_port_log_info("nvdm_port_mutex_give successfully");
+    151              }
+    152          }
+    153          
+    154          void *nvdm_port_malloc(uint32_t size)
+    155          {
+    156              return pvPortMalloc(size);
+    157          }
+    158          
+    159          void nvdm_port_free(void *pdata)
+    160          {
+    161              vPortFree(pdata);
+    162          }
+    163          
+    164          #else
+    165          
+    166          #include "malloc.h"
+    167          void nvdm_port_mutex_creat(void)
+    168          {}
+    169          
+    170          void nvdm_port_mutex_take(void)
+    171          {}
+    172          
+    173          void nvdm_port_mutex_give(void)
+    174          {}
+    175          
+    176          void *nvdm_port_malloc(uint32_t size)
+    177          {
+    178              return malloc(size);
+    179          }
+    180          
+    181          void nvdm_port_free(void *pdata)
+    182          {
+    183              free(pdata);
+    184          }
+    185          
+    186          #endif
+    187          
+    188          /* This macro defines max count of data items */
+    189          #define NVDM_PORT_DAT_ITEM_COUNT (200)
+    190          
+    191          /* This macro defines size of PEB, normally it is size of flash block */
+    192          #define NVDM_PORT_PEB_SIZE (4096)
+    193          
+    194          /* This macro defines max size of data item during all user defined data items.
+    195           * 1. Must not define it greater than 2048 bytes.
+    196           * 2. Define it as smaller as possible to enhance the utilization rate of NVDM region.
+    197           * 2. Try your best to store small data less than 256 bytes.
+    198           */
+    199          #define NVDM_PORT_MAX_DATA_ITEM_SIZE (2048)
+    200          
+    201          /* This macro defines start address and PEB count of the NVDM region */
+    202          #if (PRODUCT_VERSION == 7687) || (PRODUCT_VERSION == 7697)
+    203          #include "flash_map.h"
+    204          #define NVDM_PORT_REGION_ADDRESS(pnum, offset) (NVDM_BASE + pnum * NVDM_PORT_PEB_SIZE + offset)
+    205          #define NVDM_PORT_REGION_PEB_COUNT    (NVDM_LENGTH / NVDM_PORT_PEB_SIZE)
+    206          #else
+    207          #include "memory_map.h"
+    208          #define NVDM_PORT_REGION_ADDRESS(pnum, offset) (ROM_NVDM_BASE - BL_BASE + pnum * NVDM_PORT_PEB_SIZE + offset)
+    209          #define NVDM_PORT_REGION_PEB_COUNT    (ROM_NVDM_LENGTH / NVDM_PORT_PEB_SIZE)
+    210          #endif
+    211          
+    212          /* This macro defines max length of group name of data item */
+    213          #define GROUP_NAME_MAX_LENGTH (16)
+    214          
+    215          /* This macro defines max length of data item name of data item */
+    216          #define DATA_ITEM_NAME_MAX_LENGTH (32)
+    217          
+    218          uint32_t nvdm_port_get_data_item_config(uint32_t *max_data_item_size,
+    219                                                  uint32_t *max_group_name_size,
+    220                                                  uint32_t *max_data_item_name_size)
+    221          {
+    222              *max_data_item_size = NVDM_PORT_MAX_DATA_ITEM_SIZE;
+    223              *max_group_name_size = GROUP_NAME_MAX_LENGTH;
+    224              *max_data_item_name_size = DATA_ITEM_NAME_MAX_LENGTH;
+    225          
+    226              return NVDM_PORT_DAT_ITEM_COUNT;
+    227          }
+    228          
+    229          uint32_t nvdm_port_get_peb_config(uint32_t *peb_count)
+    230          {
+    231              *peb_count = NVDM_PORT_REGION_PEB_COUNT;
+    232          
+    233              return NVDM_PORT_PEB_SIZE;
+    234          }
+    235          
+    236          uint32_t nvdm_port_get_peb_address(int32_t pnum, int32_t offset)
+    237          {
+    238              return NVDM_PORT_REGION_ADDRESS(pnum, offset);
+    239          }
+    240          
+    241          void nvdm_port_poweroff_time_set(void)
+    242          {}
+    243          void nvdm_port_poweroff(uint32_t poweroff_time)
+    244          {}
+    245          
+    246          #endif
+    247          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   nvdm_port_flash_erase
+         8   -> hal_flash_erase
+         0   -> nvdm_port_log_error
+      16   nvdm_port_flash_read
+        16   -> hal_flash_read
+         0   -> nvdm_port_log_error
+      16   nvdm_port_flash_write
+        16   -> hal_flash_write
+         0   -> nvdm_port_log_error
+       0   nvdm_port_free
+         0   -> vPortFree
+       0   nvdm_port_get_data_item_config
+       0   nvdm_port_get_peb_address
+       0   nvdm_port_get_peb_config
+      24   nvdm_port_log_error
+        24   -> __aeabi_assert
+        24   -> __iar_EmptyStepPoint
+        24   -> vprint_module_log
+      12   nvdm_port_log_info
+      24   nvdm_port_log_notice
+        24   -> vprint_module_log
+       0   nvdm_port_malloc
+         0   -> pvPortMalloc
+       8   nvdm_port_mutex_creat
+         8   -> nvdm_port_log_error
+         0   -> nvdm_port_log_info
+         8   -> xQueueCreateMutex
+       8   nvdm_port_mutex_give
+         8   -> nvdm_port_log_error
+         0   -> nvdm_port_log_info
+         8   -> xQueueGenericSend
+         8   -> xTaskGetSchedulerState
+       8   nvdm_port_mutex_take
+         8   -> nvdm_port_log_error
+         0   -> nvdm_port_log_info
+         8   -> xQueueGenericReceive
+         8   -> xTaskGetSchedulerState
+       0   nvdm_port_poweroff
+       0   nvdm_port_poweroff_time_set
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable17
+       4  ??DataTable17_1
+       8  ?_0
+      68  ?_1
+      36  ?_10
+      64  ?_2
+      64  ?_3
+      36  ?_4
+      32  ?_5
+      36  ?_6
+      32  ?_7
+      36  ?_8
+      32  ?_9
+       4  g_nvdm_mutex
+      28  nvdm_port_flash_erase
+      34  nvdm_port_flash_read
+      34  nvdm_port_flash_write
+       4  nvdm_port_free
+      18  nvdm_port_get_data_item_config
+      12  nvdm_port_get_peb_address
+      10  nvdm_port_get_peb_config
+      48  nvdm_port_log_error
+       6  nvdm_port_log_info
+      30  nvdm_port_log_notice
+       4  nvdm_port_malloc
+      34  nvdm_port_mutex_creat
+      48  nvdm_port_mutex_give
+      50  nvdm_port_mutex_take
+       2  nvdm_port_poweroff
+       2  nvdm_port_poweroff_time_set
+      44  -- Other
+
+ 
+   4 bytes in section .bss
+ 860 bytes in section .text
+ 
+ 860 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,874 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:46
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\wifi_service\combo\src\wifi_inband_cli.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWC9D3.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\wifi_service\combo\src\wifi_inband_cli.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\wifi_inband_cli.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\wifi_inband_cli.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\wifi_service\combo\src\wifi_inband_cli.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          
+     36          #include <stdio.h>
+     37          #include <stdlib.h>
+     38          
+     39          #include <os.h>
+     40          #include <cli.h>
+     41          #include <toi.h>
+     42          #include <timer.h>
+     43          #include <os_util.h>
+     44          
+     45          #include "wifi_inband.h"
+     46          
+     47          
+     48          #define _STEP (16)
+     49          
+     50          #ifdef MTK_MINICLI_ENABLE
+     51          
+     52          static uint8_t _efuse_get_free(uint8_t len, char *param[]);
+     53          static uint8_t _efuse_get(uint8_t len, char *param[]);
+     54          static uint8_t _efuse_set(uint8_t len, char *param[]);
+     55          static uint8_t _efuse_get_phy(uint8_t len, char *param[]);
+     56          static uint8_t _efuse_set_phy(uint8_t len, char *param[]);
+     57          static uint8_t _efuse_block_status(uint8_t len, char *param[]);
+     58          //static uint8_t _efuse_timer(uint8_t len, char *param[]);
+     59          
+     60          #ifdef MTK_WIFI_CONFIGURE_FREE_ENABLE
+     61          static uint8_t _ie_set(uint8_t len, char *param[]);
+     62          static uint8_t _ie_del(uint8_t len, char *param[]);
+     63          static uint8_t _ie_clr(uint8_t len, char *param[]);
+     64          static uint8_t _ie_lst(uint8_t len, char *param[]);
+     65          #endif
+     66          
+     67          static uint8_t _inband_debug_flag(uint8_t len, char *param[]);
+     68          
+     69          const static cmd_t _efuse_phy_cmds[] = {
+     70              { "get",    "show eFuse content",   _efuse_get_phy,     NULL },
+     71              { "set",    "set eFuse content",    _efuse_set_phy,     NULL },
+     72              { "status", "show block status",    _efuse_block_status, NULL },
+     73              { NULL,     NULL,                   NULL,               NULL }
+     74          };
+     75          
+     76          
+     77          const static cmd_t _efuse_cmds[] = {
+     78              { "free",   "show free blocks",     _efuse_get_free,    NULL },
+     79              { "get",    "show eFuse content",   _efuse_get,         NULL },
+     80              { "set",    "set eFuse content",    _efuse_set,         NULL },
+     81              { "phy",    "physical access",      NULL, (cmd_t *) &_efuse_phy_cmds[0] },
+     82              { NULL,     NULL,                   NULL,               NULL }
+     83          };
+     84          
+     85          #ifdef MTK_WIFI_CONFIGURE_FREE_ENABLE
+     86          const static cmd_t _ie_cmds[] = {
+     87              { "set",    "set IE: <type> <port> <id> <len> [bytes]", _ie_set, NULL },
+     88              { "del",    "del IE: <type> <port>",                    _ie_del, NULL },
+     89              { "clr",    "remove all IE",                            _ie_clr, NULL },
+     90              { "lst",    "options",                                  _ie_lst, NULL },
+     91              { NULL,     NULL,                                       NULL,    NULL }
+     92          };
+     93          #endif /* MTK_WIFI_CONFIGURE_FREE_ENABLE */
+     94          
+     95          
+     96          #ifndef __CC_ARM
+     97          const cmd_t inband_cmds[] =
+     98          #else
+     99          cmd_t inband_cmds[] =
+    100          #endif
+    101          {
+    102              { "efuse",  "efuse access",         NULL, (cmd_t *) &_efuse_cmds[0] },
+    103          #ifdef MTK_WIFI_CONFIGURE_FREE_ENABLE
+    104              { "ie",     "information element",  NULL, (cmd_t *) &_ie_cmds[0] },
+    105          #endif /* MTK_WIFI_CONFIGURE_FREE_ENABLE */
+    106              //{ "time",   "show timestamp",       _efuse_timer,       NULL },
+    107              { "debug",  "show/set debug flags", _inband_debug_flag, NULL },
+    108              { NULL,     NULL,                   NULL,               NULL }
+    109          };
+    110          
+    111          
+    112          static uint8_t _efuse_get_free(uint8_t len, char *param[])
+    113          {
+    114              uint32_t free_blocks;
+    115          
+    116              if (wifi_inband_get_efuse_free(&free_blocks) < 0) {
+    117                  printf("API error\n");
+    118                  return 1;
+    119              }
+    120          
+    121              printf("Available blocks: %u\n", (unsigned int)free_blocks);
+    122          
+    123              return 0;
+    124          }
+    125          
+    126          
+    127          static uint8_t _efuse_get(uint8_t len, char *param[])
+    128          {
+    129              uint32_t    a;
+    130              uint32_t    l;
+    131              uint8_t     type;
+    132              uint8_t     buf[16];
+    133              uint16_t    s_addr;
+    134              uint16_t    e_addr;
+    135              int         i;
+    136          
+    137              if (len != 2) {
+    138                  printf("need address and length\n");
+    139                  return 1;
+    140              }
+    141          
+    142              a = toi(param[0], &type);
+    143              if (type == TOI_ERR || a & 0xF) {
+    144                  printf("invalid addr, must be multiple of 16.\n");
+    145                  return 2;
+    146              }
+    147          
+    148              l = toi(param[1], &type);
+    149              if (type == TOI_ERR || l & 0xF || l == 0) {
+    150                  printf("invalid length, must be a multiple of 16.\n");
+    151                  return 3;
+    152              }
+    153          
+    154              if ((a + l) > 512) {
+    155                  printf("read range should be 0-512.\n");
+    156                  return 4;
+    157              }
+    158          
+    159              s_addr = a;
+    160              e_addr = a + l;
+    161          
+    162              while (s_addr < e_addr) {
+    163                  int32_t r = wifi_inband_get_efuse(EFUSE_ADDR_SPACE_LOGICAL, s_addr, buf);
+    164          
+    165                  printf("%08x: ", s_addr);
+    166                  for (i = 0; i < _STEP; i++) {
+    167                      printf("%02x%c", buf[i], (i == _STEP - 1) ? '\n' : ' ');
+    168                  }
+    169          
+    170                  if (r) {
+    171                      printf("read logical efuse err\n");
+    172                  }
+    173          
+    174                  s_addr += _STEP;
+    175              }
+    176          
+    177              return 0;
+    178          }
+    179          
+    180          
+    181          static uint8_t _efuse_get_phy(uint8_t len, char *param[])
+    182          {
+    183              uint32_t    a;
+    184              uint32_t    l;
+    185              uint8_t     type;
+    186              uint8_t     buf[16];
+    187              uint16_t    s_addr;
+    188              uint16_t    e_addr;
+    189              int         i;
+    190          
+    191              if (len != 2) {
+    192                  printf("need address and length\n");
+    193                  return 1;
+    194              }
+    195          
+    196              a = toi(param[0], &type);
+    197              if (type == TOI_ERR || a & 0xF) {
+    198                  printf("invalid addr, must be multiple of 16.\n");
+    199                  return 2;
+    200              }
+    201          
+    202              l = toi(param[1], &type);
+    203              if (type == TOI_ERR || l & 0xF || l == 0) {
+    204                  printf("invalid length, must be a multiple of 16.\n");
+    205                  return 3;
+    206              }
+    207          
+    208              if ((a + l) > 512) {
+    209                  printf("read range should be 0-512.\n");
+    210                  return 4;
+    211              }
+    212          
+    213              s_addr = a;
+    214              e_addr = a + l;
+    215          
+    216              while (s_addr < e_addr) {
+    217                  if (wifi_inband_get_efuse(EFUSE_ADDR_SPACE_PHYSICAL, s_addr, buf) != 0) {
+    218                      printf("read physical efuse err\n");
+    219                  } else {
+    220                      printf("%08x: ", s_addr);
+    221                      for (i = 0; i < _STEP; i++) {
+    222                          printf("%02x%c", buf[i], (i == _STEP - 1) ? '\n' : ' ');
+    223                      }
+    224                  }
+    225          
+    226                  s_addr += _STEP;
+    227              }
+    228          
+    229              return 0;
+    230          }
+    231          
+    232          
+    233          static uint8_t _efuse_set(uint8_t len, char *param[])
+    234          {
+    235              uint32_t    a;
+    236              uint32_t    magic;
+    237              uint16_t    s_addr;
+    238              uint8_t     type;
+    239              uint8_t     data[16];
+    240              int         i;
+    241              uint8_t     ok;
+    242              uint8_t     used;
+    243              uint8_t     noop;
+    244              uint8_t     reuse;
+    245              uint32_t    free_blocks;
+    246          
+    247              if (len < 3) {
+    248                  printf("need address, magic, and at least 1 byte\n");
+    249                  return 1;
+    250              }
+    251          
+    252              /* parse address */
+    253              a = toi(param[0], &type);
+    254              if (type == TOI_ERR || a >= 0x512) {
+    255                  printf("invalid addr!\n");
+    256                  return 1;
+    257              }
+    258              s_addr = (uint16_t)a;
+    259          
+    260              /* parse magic */
+    261              magic = toi(param[1], &type);
+    262              if (type == TOI_ERR) {
+    263                  printf("invalid magic!\n");
+    264                  return 2;
+    265              }
+    266          
+    267              for (i = 2; i < len; i++) {
+    268                  a = toi(param[i], &type);
+    269                  if (type == TOI_ERR || a > 255) {
+    270                      printf("invalid: %s\n",param[i]);
+    271                      return 3;
+    272                  }
+    273                  data[i - 2] = (uint8_t)a;
+    274              }
+    275          
+    276              if (wifi_inband_get_efuse_free(&free_blocks) < 0) {
+    277                  printf("API error\n");
+    278                  return 4;
+    279              }
+    280          
+    281              if (wifi_inband_query_efuse(EFUSE_ADDR_SPACE_LOGICAL, s_addr, data,
+    282                                          len - 2, &ok, &used, &noop, &reuse) != 0) {
+    283                  printf("query write failed!\n");
+    284                  return 5;
+    285              }
+    286          
+    287              if (!ok) {
+    288                  printf("no eFuse space!\n");
+    289                  return 6;
+    290              }
+    291          
+    292              if (free_blocks < used) {
+    293                  printf("not enough blocks: need ");
+    294                  printf("%d",used);
+    295                  printf(" has ");
+    296                  printf("%d",(int)free_blocks);
+    297                  printf(".\n");
+    298                  return 6;
+    299              }
+    300          
+    301              printf("eFuse write request: \n");
+    302              printf("  will use: ");
+    303              printf("%d",used);
+    304              printf(" blocks\n");
+    305              printf("are you sure (y/n)? ");
+    306          
+    307              if (1) {
+    308                  char c = getchar();
+    309                  if (c != 'Y') {
+    310                      printf("skip\n");
+    311                      return 0;
+    312                  }
+    313              }
+    314          
+    315              if (wifi_inband_set_efuse(EFUSE_ADDR_SPACE_LOGICAL, s_addr, data, len - 2, magic) != 0) {
+    316                  printf("write efuse failed\n");
+    317                  return 7;
+    318              }
+    319          
+    320              return 0;
+    321          }
+    322          
+    323          
+    324          static uint8_t _efuse_set_phy(uint8_t len, char *param[])
+    325          {
+    326              uint32_t    a;
+    327              uint32_t    magic;
+    328              uint16_t    s_addr;
+    329              uint8_t     type;
+    330              uint8_t     data[16];
+    331              int         i;
+    332              uint8_t     ok;
+    333              uint8_t     used;
+    334              uint8_t     noop;
+    335              uint8_t     reuse;
+    336              uint32_t    free_blocks;
+    337          
+    338              if (len < 3) {
+    339                  printf("need address, magic, and at least 1 byte\n");
+    340                  return 1;
+    341              }
+    342          
+    343              /* parse address */
+    344              a = toi(param[0], &type);
+    345              if (type == TOI_ERR || a >= 0x512) {
+    346                  printf("invalid addr!\n");
+    347                  return 1;
+    348              }
+    349              s_addr = (uint16_t)a;
+    350          
+    351              /* parse magic */
+    352              magic = toi(param[1], &type);
+    353              if (type == TOI_ERR) {
+    354                  printf("invalid magic!\n");
+    355                  return 2;
+    356              }
+    357          
+    358              for (i = 2; i < len; i++) {
+    359                  a = toi(param[i], &type);
+    360                  if (type == TOI_ERR || a > 255) {
+    361                      printf("invalid: %s\n",param[i]);
+    362                      return 3;
+    363                  }
+    364                  data[i - 2] = (uint8_t)a;
+    365              }
+    366          
+    367              if (wifi_inband_get_efuse_free(&free_blocks) < 0) {
+    368                  printf("API error\n");
+    369                  return 4;
+    370              }
+    371          
+    372              if (wifi_inband_query_efuse(EFUSE_ADDR_SPACE_PHYSICAL, s_addr, data,
+    373                                          len - 2, &ok, &used, &noop, &reuse) != 0) {
+    374                  printf("query write failed!\n");
+    375                  return 5;
+    376              }
+    377          
+    378              if (!ok) {
+    379                  printf("query failed\n");
+    380                  return 6;
+    381              }
+    382          
+    383              if (free_blocks < used) {
+    384                  printf("not enough blocks: need ");
+    385                  printf("%d",used);
+    386                  printf(" has ");
+    387                  printf("%d",(int)free_blocks);
+    388                  printf(".\n");
+    389                  return 6;
+    390              }
+    391          
+    392              printf("eFuse write request: \n");
+    393              printf("  will use: ");
+    394              printf("%d",used);
+    395              printf(" blocks\n");
+    396              printf("are you sure (Y/n)? ");
+    397          
+    398              if (1) {
+    399                  char c = getchar();
+    400                  if (c != 'Y') {
+    401                      printf("no\n");
+    402                      return 0;
+    403                  }
+    404                  printf("Y\n");
+    405              }
+    406          
+    407              if (wifi_inband_set_efuse(EFUSE_ADDR_SPACE_PHYSICAL, s_addr, data, len - 2, magic) != 0) {
+    408                  printf("write efuse failed\n");
+    409                  return 7;
+    410              }
+    411          
+    412              return 0;
+    413          }
+    414          
+    415          
+    416          static uint8_t _efuse_block_status(uint8_t len, char *param[])
+    417          {
+    418              uint32_t    block_no;
+    419              uint8_t     type;
+    420              uint8_t     buf[16];
+    421              int         i;
+    422          
+    423              if (len != 1) {
+    424                  printf("block no err!\n");
+    425                  return 1;
+    426              }
+    427          
+    428              block_no = toi(param[0], &type);
+    429              if (type == TOI_ERR) {
+    430                  printf("block no err!\n");
+    431                  return 2;
+    432              }
+    433          
+    434              if (wifi_inband_get_efuse(EFUSE_ADDR_SPACE_PHYSICAL, block_no << 4, buf) != 0) {
+    435                  printf("read physical efuse err!\n");
+    436                  return 3;
+    437              }
+    438          
+    439              for (i = 0; i < sizeof(buf); i++) {
+    440                  if (buf[i] != 0) {
+    441                      break;
+    442                  }
+    443              }
+    444          
+    445              printf((i != sizeof(buf)) ? "used\n" : "empty\n");
+    446          
+    447              return 0;
+    448          }
+    449          #if 0
+    450          //Not sure this cli used for.
+    451          static uint8_t _efuse_timer(uint8_t len, char *param[])
+    452          {
+    453              static uint32_t start = 0;
+    454          
+    455              if (start == 0) {
+    456                  drvGPT4Init();
+    457                  TMR_Start(4);
+    458                  start = get_current_gpt4_count();
+    459              } else {
+    460                  uint32_t stop = get_current_gpt4_count();
+    461                  TMR_Stop(4);
+    462          
+    463                  printf("delta: ");
+    464                  printf("%d",(int)(stop - start) / 192);
+    465                  printf(" us\n");
+    466                  start = 0 ;
+    467              }
+    468          
+    469              return 0;
+    470          }
+    471          #endif
+    472          
+    473          #ifdef MTK_WIFI_CONFIGURE_FREE_ENABLE
+    474          static uint8_t _ie_set(uint8_t len, char *param[])
+    475          {
+    476              uint32_t type;
+    477              uint32_t port;
+    478              uint32_t ie_id;
+    479              uint32_t ie_len;
+    480              uint8_t  *ie_body;
+    481              uint8_t  e;
+    482              uint16_t i;
+    483          
+    484              if (len < 1 || (type = toi(param[0], &e)) == 0 || e == TOI_ERR) {
+    485                  printf("<type> err!\n");
+    486                  return 1;
+    487              }
+    488              type--;
+    489          
+    490              if (len < 2 || (port = toi(param[1], &e)) == 0 || e == TOI_ERR) {
+    491                  printf("<port> err!\n");
+    492                  return 2;
+    493              }
+    494              port--;
+    495          
+    496              if (len < 4 || (ie_id  = toi(param[2], &e)) == 0xFFF || e == TOI_ERR ||
+    497                      (ie_len = toi(param[3], &e)) == 0xFFF || e == TOI_ERR) {
+    498                  printf("<IE> err!\n");
+    499                  return 3;
+    500              }
+    501          
+    502              ie_id  &= 0xFF;
+    503              ie_len &= 0xFF;
+    504          
+    505              if (ie_len + 4 != len) {
+    506                  printf("IE len not match err!\n");
+    507                  return 4;
+    508              }
+    509          
+    510              ie_body    = os_malloc(ie_len + 2);
+    511              ie_body[0] = ie_id;
+    512              ie_body[1] = ie_len;
+    513          
+    514              for (i = 2; i < ie_len + 2; i++) {
+    515                  ie_body[i] = toi(param[i + 2], &e);
+    516                  if (e == TOI_ERR) {
+    517                      break;
+    518                  }
+    519              }
+    520          
+    521              if (i != ie_len + 2) {
+    522                  printf("IE bytes parse err!\n");
+    523                  os_free(ie_body);
+    524                  return 5;
+    525              }
+    526          
+    527              wifi_inband_set_ie((wifi_inband_packet_type_t)type,
+    528                                 (wifi_inband_port_id_t)port,
+    529                                 ie_len + 2,
+    530                                 ie_body);
+    531          
+    532              os_free(ie_body);
+    533          
+    534              return 0;
+    535          }
+    536          
+    537          static uint8_t _ie_del(uint8_t len, char *param[])
+    538          {
+    539              uint32_t type;
+    540              uint32_t port;
+    541              uint8_t  e;
+    542          
+    543              if (len < 1 || (type = toi(param[0], &e)) == 0 || e == TOI_ERR) {
+    544                  printf("<type> err!\n");
+    545                  return 1;
+    546              }
+    547              type--;
+    548          
+    549              if (len < 2 || (port = toi(param[1], &e)) == 0 || e == TOI_ERR) {
+    550                  printf("<port> err!\n");
+    551                  return 2;
+    552              }
+    553              port--;
+    554          
+    555              wifi_inband_set_ie((wifi_inband_packet_type_t)type,
+    556                                 (wifi_inband_port_id_t)port,
+    557                                 0,
+    558                                 NULL);
+    559              return 0;
+    560          }
+    561          
+    562          static uint8_t _ie_clr(uint8_t len, char *param[])
+    563          {
+    564              uint32_t port;
+    565              uint8_t  e;
+    566          
+    567              if (len < 1 || (port = toi(param[0], &e)) == 0 || e == TOI_ERR) {
+    568                  printf("<port> err!\n");
+    569                  return 2;
+    570              }
+    571              port--;
+    572          
+    573              wifi_inband_set_ie(WIFI_PACKET_TYPE_CLEAR_ALL_ID,
+    574                                 (wifi_inband_port_id_t)port,
+    575                                 0,
+    576                                 NULL);
+    577              return 0;
+    578          }
+    579          
+    580          static uint8_t _ie_lst(uint8_t len, char *param[])
+    581          {
+    582          #define IE_REQUEST_TYPES "<type>\n" \
+    583                                   "  1: beacon\n" \
+    584                                   "  2: probe request\n" \
+    585                                   "  3: probe response\n" \
+    586                                   "  4: assoication request\n" \
+    587                                   "  5: clear assoication response\n" \
+    588                                   "  6: clear all packets\n" \
+    589                                   "<port>\n" \
+    590                                   "  1: APCLI/STA\n" \
+    591                                   "  2: AP\n" \
+    592          
+    593              printf(IE_REQUEST_TYPES);
+    594              return 0;
+    595          }
+    596          #endif /* MTK_WIFI_CONFIGURE_FREE_ENABLE */
+    597          
+    598          static uint8_t _inband_debug_flag(uint8_t len, char *param[])
+    599          {
+    600              extern uint32_t g_inband_debug_feature;
+    601          
+    602              if (len == 0) {
+    603                  printf("connsys inband is %d(0x%x)\n",
+    604                         (int)g_inband_debug_feature,
+    605                         (unsigned int)g_inband_debug_feature);
+    606          
+    607                  printf("debug setting are bitwise\n");
+    608                  printf("BIT 0:INBAND_DBG_MAIN\n");
+    609              } else {
+    610                  uint32_t flags;
+    611                  uint8_t  type;
+    612          
+    613                  flags = toi(param[0], &type);
+    614          
+    615                  if (type == TOI_ERR) {
+    616                      return 1;
+    617                  }
+    618          
+    619                  printf("Set inband debug from %d (0x%x) to %d (0x%x)\n",
+    620                         (int)g_inband_debug_feature,
+    621                         (unsigned int)g_inband_debug_feature,
+    622                         (int)flags,
+    623                         (unsigned int)flags);
+    624          
+    625                  g_inband_debug_feature = flags;
+    626              }
+    627          
+    628              return 0;
+    629          }
+    630          
+    631          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   _efuse_block_status
+        24   -> printf
+        24   -> toi
+        24   -> wifi_inband_get_efuse
+      40   _efuse_get
+        40   -> printf
+        40   -> toi
+        40   -> wifi_inband_get_efuse
+       8   _efuse_get_free
+         8   -> printf
+         8   -> wifi_inband_get_efuse_free
+      40   _efuse_get_phy
+        40   -> printf
+        40   -> toi
+        40   -> wifi_inband_get_efuse
+      72   _efuse_set
+        72   -> getchar
+        72   -> printf
+        72   -> toi
+        72   -> wifi_inband_get_efuse_free
+        72   -> wifi_inband_query_efuse
+        72   -> wifi_inband_set_efuse
+      72   _efuse_set_phy
+        72   -> getchar
+        72   -> printf
+        72   -> toi
+        72   -> wifi_inband_get_efuse_free
+        72   -> wifi_inband_query_efuse
+        72   -> wifi_inband_set_efuse
+      24   _inband_debug_flag
+        24   -> printf
+        24   -> toi
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable57
+       4  ??DataTable58
+       4  ??DataTable58_1
+       4  ??DataTable58_2
+       4  ??DataTable58_3
+       4  ?_0
+      20  ?_1
+       8  ?_10
+      16  ?_11
+       8  ?_12
+      24  ?_13
+      12  ?_14
+      24  ?_15
+      28  ?_16
+      40  ?_17
+      44  ?_18
+      32  ?_19
+       4  ?_2
+       8  ?_20
+       8  ?_21
+      24  ?_22
+      28  ?_23
+      44  ?_24
+      16  ?_25
+      16  ?_26
+      16  ?_27
+      24  ?_28
+      20  ?_29
+      20  ?_3
+      28  ?_30
+       4  ?_31
+       8  ?_32
+       4  ?_33
+      24  ?_34
+      16  ?_35
+      12  ?_36
+      24  ?_37
+       8  ?_38
+      20  ?_39
+       8  ?_4
+      16  ?_40
+      24  ?_41
+       4  ?_42
+       4  ?_43
+      16  ?_44
+      28  ?_45
+       8  ?_46
+       8  ?_47
+      28  ?_48
+      28  ?_49
+      20  ?_5
+      24  ?_50
+      48  ?_51
+       8  ?_6
+      20  ?_7
+       4  ?_8
+      16  ?_9
+     120  _efuse_block_status
+      80  _efuse_cmds
+     206  _efuse_get
+      38  _efuse_get_free
+     204  _efuse_get_phy
+      64  _efuse_phy_cmds
+     426  _efuse_set
+     432  _efuse_set_phy
+      88  _inband_debug_flag
+      48  inband_cmds
+
+ 
+   388 bytes in section .rodata
+ 2 286 bytes in section .text
+ 
+ 2 286 bytes of CODE  memory
+   388 bytes of CONST memory
+
+Errors: none
+Warnings: none

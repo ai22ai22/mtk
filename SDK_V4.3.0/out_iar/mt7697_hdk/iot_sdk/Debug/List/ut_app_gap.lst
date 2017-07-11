@@ -1,0 +1,736 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:45
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\src\ut_app\ut_app_gap.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWC45F.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\src\ut_app\ut_app_gap.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\ut_app_gap.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\ut_app_gap.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\src\ut_app\ut_app_gap.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #define __BT_MULTI_ADV__
+     36          #include "ut_app.h"
+     37          #include <string.h>
+     38          
+     39          
+     40          bt_status_t bqb_gap_io_callback(void *input, void *output);
+     41          
+     42          // Weak symbol declaration
+     43          #if _MSC_VER >= 1500
+     44              #pragma comment(linker, "/alternatename:_bqb_gap_io_callback=_default_bqb_gap_io_callback")
+     45          #elif defined(__GNUC__) || defined(__ICCARM__) || defined(__CC_ARM)
+     46              #pragma weak bqb_gap_io_callback = default_bqb_gap_io_callback
+     47          #else
+     48              #error "Unsupported Platform"
+     49          #endif
+     50          
+     51          extern bt_hci_cmd_read_rssi_t read_rssi;
+     52          extern bt_bd_addr_t local_public_addr;
+     53          extern bool bt_app_advertising;
+     54          extern bool bt_app_scanning;
+     55          extern bool bt_app_scanning;
+     56          
+     57          bt_status_t default_bqb_gap_io_callback(void *input, void *output)
+     58          {
+     59             return BT_STATUS_SUCCESS;
+     60          }
+     61          
+     62          static void ut_app_gap_convert_hex_str(const char *str, uint8_t *output, uint8_t len)
+     63          {
+     64              uint8_t i = 0;
+     65              char tempbuf[2];
+     66          
+     67              while (len)
+     68              {
+     69                  memcpy(tempbuf, (str + (i*2)), 2);
+     70                  output[i] = (uint8_t)strtoul(tempbuf, NULL, 16);
+     71                  len = len - 2;
+     72                  i++;
+     73              }
+     74          }
+     75          
+     76          bt_status_t bt_app_gap_io_callback(void *input, void *output)
+     77          {
+     78              const char *cmd = input;
+     79          
+     80              if (UT_APP_CMP("gap power_on")) {
+     81                  bt_power_on((bt_bd_addr_ptr_t)&local_public_addr, NULL);
+     82                  //bt_gatts_set_max_mtu(128); /* This value should consider with MM Tx/Rx buffer size. */
+     83              }
+     84          
+     85              else if (UT_APP_CMP("gap power_off")) {
+     86                  bt_power_off();
+     87              }
+     88              
+     89              /* Usage: advanced power_on [public address] [random address].
+     90                 Note:  Set N if you doesn't need it. */
+     91              else if (UT_APP_CMP("advanced power_on")) {
+     92                  if (strlen(cmd) >= 18) {
+     93                      uint8_t public_addr[6]={0};
+     94                      uint8_t random_addr[6]={0};
+     95                      const char *addr_str = cmd + 18;
+     96          
+     97                      /* Find public address */
+     98                      if (strncmp("N", addr_str, 1) != 0) {
+     99                          copy_str_to_addr(public_addr, addr_str);
+    100                      } else {
+    101                          public_addr[0] = 'N';
+    102                      }
+    103          
+    104                      /* Jump to the start of the random address */
+    105                      uint32_t i=0;
+    106                      while (i<18) {
+    107                          if (strncmp(" ", addr_str, 1) == 0)
+    108                              break;
+    109                          addr_str++;
+    110                          i++;
+    111                      }
+    112                      addr_str++;
+    113          
+    114                      /* Find random address */
+    115                      if (strncmp("N", addr_str, 1) != 0) {
+    116                          copy_str_to_addr(random_addr, addr_str);
+    117                      } else {
+    118                          random_addr[0] = 'N';
+    119                      }
+    120          
+    121                      bt_power_on((public_addr[0] == 'N'? NULL:public_addr),
+    122                          (random_addr[0] == 'N'? NULL:random_addr));
+    123                  } else {
+    124                      BT_COLOR_SET(BT_COLOR_RED);
+    125                      BT_LOGW("APP", "please input the specific public address and random address");
+    126                      BT_LOGW("APP", "format: advanced po [public address/N] [random address/N]");
+    127                      BT_COLOR_SET(BT_COLOR_WHITE);
+    128                  }
+    129              }
+    130          
+    131              /* Usage: random_addr [random address].
+    132                 Note:  [random address] should be existed. */
+    133              else if (UT_APP_CMP("gap random_addr")) {
+    134                  if (strlen(cmd) >= 16) {
+    135                      const char *addr_str = cmd + 16;
+    136                      uint8_t addr[6];
+    137                      copy_str_to_addr(addr, addr_str);
+    138          
+    139                      bt_gap_le_set_random_address(addr);
+    140                  } else {
+    141                      BT_COLOR_SET(BT_COLOR_RED);
+    142                      BT_LOGW("APP", "please input the specific random address");
+    143                      BT_LOGW("APP", "gap random_addr [random address]");
+    144                      BT_COLOR_SET(BT_COLOR_WHITE);
+    145                  }
+    146              }
+    147              
+    148              /* Usage: gap wl add [0:public / 1:random] [bt address].
+    149                 Note:  default use #lt_addr_type and #lt_addr */
+    150              else if (UT_APP_CMP("gap wl add")) {
+    151                  bt_addr_t device;
+    152                  if (strlen(cmd) >= 11) {
+    153          
+    154                      uint8_t addr_type = (uint8_t)strtoul(cmd + 11, NULL, 10);
+    155          
+    156                      if (addr_type != 0 && addr_type!= 1) {
+    157                          BT_COLOR_SET(BT_COLOR_RED);
+    158                          BT_LOGW("APP", "please input the correct address type");
+    159                          BT_LOGW("APP", "gap wl add [0:public / 1:random] [bt address]");
+    160                          BT_COLOR_SET(BT_COLOR_WHITE);
+    161                      } else {
+    162                          const char *addr_str = cmd + 13;
+    163                          uint8_t addr[6];
+    164                          copy_str_to_addr(addr, addr_str);
+    165          
+    166                          device.type = addr_type;
+    167                          memcpy(device.addr, addr, sizeof(addr));
+    168                          bt_gap_le_set_white_list(BT_GAP_LE_ADD_TO_WHITE_LIST, &device);
+    169                      }
+    170                  } else {
+    171                      //device.address_type = lt_addr_type;
+    172                      //memcpy(device, lt_addr, sizeof(lt_addr));
+    173                      //bt_gap_le_set_white_list(BT_ADD_TO_WHITE_LIST, &device);
+    174                      BT_COLOR_SET(BT_COLOR_RED);
+    175                      BT_LOGW("APP", "please input the correct cmd");
+    176                      BT_LOGW("APP", "gap wl add [0:public / 1:random] [bt address]");
+    177                      BT_COLOR_SET(BT_COLOR_WHITE);
+    178                  }
+    179              }
+    180          
+    181              /* Usage: gap wl remove [0:public / 1:random] [bt address].
+    182                 Note:  default use #lt_addr_type and #lt_addr */
+    183              else if (UT_APP_CMP("gap wl remove")) {
+    184                  bt_addr_t device;
+    185                  if (strlen(cmd) >= 14) {
+    186          
+    187                      uint8_t addr_type = (uint8_t)strtoul(cmd + 14, NULL, 10);
+    188                      if (addr_type != 0 && addr_type!= 1) {
+    189                          BT_COLOR_SET(BT_COLOR_RED);
+    190                          BT_LOGW("APP", "please input the correct address type");
+    191                          BT_LOGW("APP", "gap wl remove [0:public / 1:random] [bt address]");
+    192                          BT_COLOR_SET(BT_COLOR_WHITE);
+    193                      } else {
+    194                          const char *addr_str = cmd + 16;
+    195                          uint8_t addr[6];
+    196                          copy_str_to_addr(addr, addr_str);
+    197          
+    198                          device.type = addr_type;
+    199                          memcpy(device.addr, addr, sizeof(addr));
+    200                          bt_gap_le_set_white_list(BT_GAP_LE_REMOVE_FROM_WHITE_LIST, &device);
+    201                      }
+    202                  } else {
+    203                      //device.address_type = lt_addr_type;
+    204                      //memcpy(device.address, lt_addr, sizeof(lt_addr));
+    205                      //bt_gap_le_set_white_list(BT_REMOVE_FROM_WHITE_LIST, &device);
+    206                      BT_COLOR_SET(BT_COLOR_RED);
+    207                      BT_LOGW("APP", "please input the correct cmd");
+    208                      BT_LOGW("APP", "gap wl remove [0:public / 1:random] [bt address]");
+    209                      BT_COLOR_SET(BT_COLOR_WHITE);
+    210                  }
+    211              }
+    212          
+    213              else if (UT_APP_CMP("gap wl clear")) {
+    214                  bt_gap_le_set_white_list(BT_GAP_LE_CLEAR_WHITE_LIST, NULL);
+    215              }
+    216              
+    217              else if (UT_APP_CMP("gap set_adv_data")) {
+    218                  if (strlen(cmd) >= 17) {
+    219                      const char *adv_data_str = cmd + 17;
+    220                      uint8_t len = strlen(adv_data_str); 
+    221          
+    222                      adv_data.advertising_data_length=31;
+    223                      ut_app_gap_convert_hex_str(adv_data_str, adv_data.advertising_data, len);
+    224                      BT_LOGW("APP", "[GAP] adv data:%x, %x\n", adv_data.advertising_data[0], adv_data.advertising_data[1]);
+    225                  }
+    226              }
+    227          
+    228              else if (UT_APP_CMP("gap set_scan_rsp_data")) {
+    229                  if (strlen(cmd) >= 22) {
+    230                      const char *scan_data_str = cmd + 22;
+    231                      uint8_t len = strlen(scan_data_str); 
+    232          
+    233                      scan_data.scan_response_data_length=31;
+    234                      ut_app_gap_convert_hex_str(scan_data_str, scan_data.scan_response_data, len);
+    235                  }
+    236              }
+    237              
+    238              /*gap set_adv_params [min_interval] [max_interval] [adv type] [own addr type] [peer addr type] [peer BT addr] [channel map] [advertising_filter_policy]
+    239                [adv type] : Chck src/hbif/bt_gap_le_spec.h BT_GAP_LE_AD_xxxx 0~4
+    240                [own addr type] :0:public / 1:random/ 2: Gen RPA from resolving list or public address host provide/ 3: Gen RPA from resolving list or static random address host provide
+    241                [peer addr type]:0:public / 1:random
+    242                [advertising_filter_policy]: define in spec, 0~4
+    243                [peer BT Addr] : peer BT address for BT_GAP_LE_AD_CONNECTABLE_DIRECTED_HIGH or BT_GAP_LE_AD_CONNECTABLE_DIRECTED_LOW
+    244               */
+    245                else if (UT_APP_CMP("gap set_adv_params")) {
+    246                    uint16_t min_interval = (uint16_t)strtoul(cmd+19, NULL, 16);
+    247                    uint16_t max_interval = (uint16_t)strtoul(cmd+24, NULL, 16);
+    248                    uint8_t adv_type = (uint8_t)strtoul(cmd+29, NULL, 10);
+    249                    uint8_t own_addr_type = (uint8_t)strtoul(cmd+31, NULL, 10);
+    250                    uint8_t peer_addr_type = (uint8_t)strtoul(cmd+33, NULL, 10);
+    251                    
+    252                    const char *addr_str = cmd + 35;
+    253                    uint8_t addr[6];
+    254                    copy_str_to_addr(addr, addr_str);
+    255          
+    256                    uint8_t map = (uint8_t)strtoul(cmd+53, NULL, 10);
+    257                    uint8_t policy = (uint8_t)strtoul(cmd+55, NULL, 10);
+    258                    
+    259                    BT_COLOR_SET(BT_COLOR_BLUE);
+    260                    BT_LOGI("APP", "set advertising params");
+    261                    BT_LOGI("APP", "own_addr_type[%d] adv_type[%d] adv_policy[%d] peer_addr_type[%d]",
+    262                        own_addr_type,adv_type,policy,peer_addr_type);
+    263                    BT_LOGI("APP", "peer_addr(%02x:%02x:%02x:%02x:%02x:%02x)",
+    264                        addr[0],addr[1],addr[2],addr[3],addr[4],addr[5]);
+    265                    BT_COLOR_SET(BT_COLOR_WHITE);
+    266              
+    267                    adv_para.advertising_interval_min =min_interval;
+    268                    adv_para.advertising_interval_max =max_interval;
+    269                    adv_para.advertising_type = adv_type;
+    270                    adv_para.own_address_type = own_addr_type;
+    271                    adv_para.peer_address.type = peer_addr_type;
+    272                    memcpy(adv_para.peer_address.addr, addr, 6);
+    273                    adv_para.advertising_channel_map = map;
+    274                    adv_para.advertising_filter_policy = policy;
+    275              }
+    276          #ifdef __BT_MULTI_ADV__
+    277               /*gap start_multi_adv [instance] [tx_power] [address]
+    278                [instance] : 01 ~ (max_adv - 1).
+    279                [tx_power] : -70 ~ 020, default 005.
+    280                [address]: ex. AA11223344CC
+    281                [advertising_filter_policy]: define in spec, 0~4
+    282                [peer BT Addr] : peer BT address for BT_GAP_LE_AD_CONNECTABLE_DIRECTED_HIGH or BT_GAP_LE_AD_CONNECTABLE_DIRECTED_LOW
+    283               */
+    284              else if (UT_APP_CMP("gap start_multi_adv")) {
+    285                  bt_status_t ret;
+    286                  BT_LOGI("APP", "start multi adv %d", __LINE__);
+    287                  if (strlen(cmd) >= sizeof("gap start_multi_adv xx xx")) {
+    288                      uint8_t instance = (uint8_t)strtoul(cmd + sizeof("gap start_multi_adv"), NULL, 10);
+    289                      int8_t tx_power = (int8_t)strtoul(cmd + sizeof("gap start_multi_adv xx"), NULL, 10);
+    290                      uint8_t addr[6];
+    291                      copy_str_to_addr(addr, cmd + sizeof("gap start_multi_adv xx xxx"));
+    292                      BT_LOGI("APP", "MADV(%d) min: %x, max: %x, adv_type %d, own_type %d, map %x, policy %d", instance, 
+    293                                                 adv_para.advertising_interval_min, 
+    294                                                 adv_para.advertising_interval_max, 
+    295                                                 adv_para.advertising_type, 
+    296                                                 adv_para.own_address_type, 
+    297                                                 adv_para.advertising_channel_map, 
+    298                                                 adv_para.advertising_filter_policy);
+    299                      ret = bt_gap_le_start_multiple_advertising(instance, tx_power, addr, &adv_para, &adv_data, &scan_data);
+    300                      BT_LOGI("APP", "start multi adv return %x", ret);
+    301                  }
+    302              }
+    303              else if (UT_APP_CMP("gap stop_multi_adv")) {
+    304                  if (strlen(cmd) >= sizeof("gap stop_multi_adv")) {
+    305                      uint8_t instance = (uint8_t)strtoul(cmd + sizeof("gap stop_multi_adv"), NULL, 10);
+    306                      bt_gap_le_stop_multiple_advertising(instance);
+    307                  }
+    308              }
+    309              else if (UT_APP_CMP("gap get_adv_instance")) {
+    310                      BT_LOGI("APP", "Max adv instance %d", bt_gap_le_get_max_multiple_advertising_instances());
+    311              }
+    312          #endif
+    313              else if (UT_APP_CMP("gap start_adv")) {
+    314                  bt_app_advertising = true;
+    315                  memset(gatts_device_name, 0x00, sizeof(gatts_device_name));
+    316                  memcpy(gatts_device_name, &adv_data.advertising_data[5], 3);
+    317          
+    318                  BT_COLOR_SET(BT_COLOR_BLUE);
+    319                  BT_LOGI("APP", "start advertising");
+    320                  BT_COLOR_SET(BT_COLOR_WHITE);
+    321                    
+    322                  adv_enable.advertising_enable = BT_HCI_ENABLE;
+    323                  bt_gap_le_set_advertising(&adv_enable, &adv_para, &adv_data, &scan_data);
+    324              }
+    325          
+    326              else if (UT_APP_CMP("gap stop_adv")) {
+    327                  bt_app_advertising = false;
+    328                  bt_hci_cmd_le_set_advertising_enable_t enable;
+    329                  enable.advertising_enable = BT_HCI_DISABLE;
+    330                  bt_gap_le_set_advertising(&enable, NULL, NULL, NULL);
+    331              }
+    332              /* gap start_scan [scan type] [scan interval] [scan window] [own address type] [scan filter policy]
+    333                 [scan type]: 0 is passive, 1 is active
+    334              */
+    335              else if (UT_APP_CMP("gap start_scan")) {
+    336                  scan_para.le_scan_type = (uint8_t)strtoul(cmd + 15, NULL, 10);
+    337                  scan_para.le_scan_interval = (uint16_t)strtoul(cmd + 17, NULL, 16);
+    338                  scan_para.le_scan_window = (uint16_t)strtoul(cmd + 22, NULL, 16);
+    339                  scan_para.own_address_type = (uint8_t)strtoul(cmd + 27, NULL, 10);
+    340                  scan_para.scanning_filter_policy = (uint8_t)strtoul(cmd + 29, NULL, 10);
+    341                  bt_app_scanning = true;
+    342                  bt_gap_le_set_scan(&scan_enable, &scan_para);
+    343              }
+    344          
+    345              else if (UT_APP_CMP("gap stop_scan")) {
+    346                  bt_app_scanning = false;
+    347                  bt_gap_le_set_scan(&scan_disable, NULL);
+    348              }
+    349          
+    350              /* Usage: gap connect [0:public / 1:random] [bt address].
+    351                  Note:  default use #lt_addr_type and #lt_addr */
+    352               else if (UT_APP_CMP("gap connect")) {
+    353                   if (strlen(cmd) >= 12) {
+    354                       uint8_t peer_addr_type = (uint8_t)strtoul(cmd + 12, NULL, 10);
+    355              
+    356                       const char *addr_str = cmd + 14;
+    357                       uint8_t addr[6];
+    358                       copy_str_to_addr(addr, addr_str);
+    359              
+    360                       connect_para.peer_address.type = peer_addr_type;
+    361                       memcpy(connect_para.peer_address.addr, addr, sizeof(addr));
+    362                       bt_gap_le_connect(&connect_para);
+    363                   } else {
+    364                   }
+    365               }
+    366          
+    367               /* Usage: gap advanced_conn [scan interval] [scan window] [initiator_filter_policy] [peer_address_type] [peer_address] [own_address_type]
+    368                         [conn_interval_min] [conn_interval_max] [conn_latency] [supervision_timeout] [minimum_ce_length] [maximum_ce_length].
+    369               */
+    370               else if (UT_APP_CMP("gap advanced_conn")) {
+    371                   if (strlen(cmd) >= 18) {
+    372                       connect_para.le_scan_interval = (uint16_t)strtoul(cmd + 18, NULL, 16);
+    373                       connect_para.le_scan_window = (uint16_t)strtoul(cmd + 23, NULL, 16);
+    374                       connect_para.initiator_filter_policy = (uint8_t)strtoul(cmd + 28, NULL, 10);
+    375                       connect_para.peer_address.type = (uint8_t)strtoul(cmd + 30, NULL, 10);
+    376          
+    377                       const char *addr_str = cmd + 32;
+    378                       uint8_t addr[6];
+    379                       copy_str_to_addr(addr, addr_str);
+    380                       memcpy(connect_para.peer_address.addr, addr, sizeof(addr));
+    381                       connect_para.own_address_type = (uint8_t)strtoul(cmd + 50, NULL, 10);
+    382                       connect_para.conn_interval_min = (uint16_t)strtoul(cmd + 52, NULL, 16);
+    383                       connect_para.conn_interval_max = (uint16_t)strtoul(cmd + 57, NULL, 16);
+    384                       connect_para.conn_latency = (uint16_t)strtoul(cmd + 62, NULL, 16);
+    385                       connect_para.supervision_timeout = (uint16_t)strtoul(cmd + 67, NULL, 16);
+    386                       connect_para.minimum_ce_length = (uint16_t)strtoul(cmd + 72, NULL, 16);
+    387                       connect_para.maximum_ce_length = (uint16_t)strtoul(cmd + 77, NULL, 16);
+    388                       bt_gap_le_connect(&connect_para);
+    389                   } else {
+    390                   }
+    391               }
+    392              
+    393               else if (UT_APP_CMP("gap cancel connect")) {
+    394                   bt_gap_le_cancel_connection();
+    395               }
+    396              
+    397               /* Usage:   disconnect <handle in hex>
+    398                  Example: disconnect 0200 */
+    399               else if (UT_APP_CMP("gap disconnect")) {
+    400                   const char *handle = cmd + strlen("gap disconnect ");
+    401                   disconnect_para.connection_handle = (uint16_t)strtoul(handle, NULL, 16);
+    402                   BT_LOGI("APP", "connection_handle(0x%04x)",disconnect_para.connection_handle);
+    403                   bt_gap_le_disconnect(&disconnect_para);
+    404               }
+    405              
+    406               else if (UT_APP_CMP("gap read_rssi")) {
+    407                   read_rssi.handle = (uint16_t)strtoul(cmd + 14, NULL, 16);
+    408                   bt_gap_le_read_rssi(&read_rssi);
+    409               }
+    410              
+    411               else if (UT_APP_CMP("gap update_conn")) {
+    412                   conn_update_para.connection_handle = (uint16_t)strtoul(cmd + 16, NULL, 16);
+    413                   conn_update_para.conn_interval_min = (uint16_t)strtoul(cmd + 21, NULL, 16);
+    414                   conn_update_para.conn_interval_max = (uint16_t)strtoul(cmd + 26, NULL, 16);
+    415                   conn_update_para.conn_latency = (uint16_t)strtoul(cmd + 31, NULL, 16);
+    416                   conn_update_para.supervision_timeout = (uint16_t)strtoul(cmd + 36, NULL, 16);
+    417                   conn_update_para.minimum_ce_length = (uint16_t)strtoul(cmd + 41, NULL, 16);
+    418                   conn_update_para.maximum_ce_length = (uint16_t)strtoul(cmd + 46, NULL, 16);
+    419                   bt_gap_le_update_connection_parameter(&conn_update_para);
+    420               }
+    421              
+    422               /* Usage: update data length <handle in hex> <tx octets in hex> <tx time in hex>.
+    423                  Example: update data length 0200 0030 0500*/
+    424               else if (UT_APP_CMP("gap update data length")) {
+    425                   bt_hci_cmd_le_set_data_length_t data_length;
+    426                   data_length.connection_handle = (uint16_t)strtoul(cmd + 23, NULL, 16);
+    427                   data_length.tx_octets = (uint16_t)strtoul(cmd + 28, NULL, 16);
+    428                   data_length.tx_time = (uint16_t)strtoul(cmd + 33, NULL, 16);
+    429                   if (data_length.connection_handle > 0x0f00 ||
+    430                      (data_length.tx_octets < 0x001B || data_length.tx_octets > 0x00FB) ||
+    431                      (data_length.tx_time < 0x0148 || data_length.tx_time > 0x0848)) {
+    432                       BT_LOGW("APP", "Usage: update data length <handle in hex> <tx octets in hex> <tx time in hex>.");
+    433                       BT_LOGW("APP", "The range of connection handle is 0x0000-0x0EFF");
+    434                       BT_LOGW("APP", "The range of tx octets is 0x001B-0x00FB");
+    435                       BT_LOGW("APP", "The range of tx time is 0x0148-0x0848");
+    436                   }
+    437                   else {
+    438                       BT_LOGI("APP", "update data length handle(%04x) tx_octets(%04x) tx_time(%04x)",
+    439                           data_length.connection_handle,data_length.tx_octets,data_length.tx_time);
+    440                       bt_gap_le_update_data_length(&data_length);
+    441                   }
+    442               }
+    443          
+    444               /* Usage: tx_power <handle in hex> <tx power level in integer>.
+    445                  [tx power level]: 0~7
+    446                  Example: tx_power 0200 1*/
+    447               else if (UT_APP_CMP("gap tx_power")) {
+    448                   bt_hci_cmd_le_set_tx_power_t tx_power_t;
+    449                   tx_power_t.connection_handle = (uint16_t)strtoul(cmd + 13, NULL, 16);
+    450                   tx_power_t.tx_power_level = (uint16_t)strtoul(cmd + 18, NULL, 10);
+    451                   
+    452                   if (tx_power_t.connection_handle > 0x0f00 ||
+    453                       tx_power_t.tx_power_level > 7) {
+    454                       BT_LOGW("APP", "Usage: tx_power <handle in hex> <tx power level in integer>.");
+    455                       BT_LOGW("APP", "The range of connection handle is 0x0000-0x0EFF");
+    456                       BT_LOGW("APP", "The range of tx power level is 0-7");
+    457                   }
+    458                   else {
+    459                       BT_LOGI("APP", "tx power handle(%04x) tx_power_level(%d)",
+    460                           tx_power_t.connection_handle, tx_power_t.tx_power_level);
+    461                       bt_gap_le_set_tx_power(&tx_power_t);
+    462                   }
+    463               }
+    464               
+    465               /* Usage:   gap bond <handle in hex> [io capability] [oob data flag] [auth req]
+    466                           [initiator_key_distribution] [responder_key_distribution]
+    467                  Example: gap bond 0200 3 0 1 0 0*/
+    468               else if (UT_APP_CMP("gap bond")) {
+    469                   const char *handle = cmd + strlen("gap bond ");
+    470          
+    471                   pairing_config_req.io_capability = (uint8_t)strtoul(cmd + 14, NULL, 10);
+    472                   pairing_config_req.oob_data_flag = (uint8_t)strtoul(cmd + 16, NULL, 10);
+    473                   pairing_config_req.auth_req = (uint8_t)strtoul(cmd + 18, NULL, 10);
+    474                   pairing_config_req.maximum_encryption_key_size = 16;
+    475                   pairing_config_req.initiator_key_distribution = (uint8_t)strtoul(cmd + 20, NULL, 10);
+    476                   pairing_config_req.responder_key_distribution = (uint8_t)strtoul(cmd + 22, NULL, 10);
+    477                      
+    478                   bt_gap_le_bond(strtoul(handle, NULL, 16), &pairing_config_req);
+    479               }
+    480               else {
+    481                  return bqb_gap_io_callback(input, output);
+    482               }
+    483              return BT_STATUS_SUCCESS;
+    484          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   bqb_gap_io_callback
+      64   bt_app_gap_io_callback
+        64   -> __aeabi_memcpy
+        64   -> __aeabi_memset
+        64   -> bqb_gap_io_callback
+        64   -> bt_debug_log
+        64   -> bt_gap_le_bond
+        64   -> bt_gap_le_cancel_connection
+        64   -> bt_gap_le_connect
+        64   -> bt_gap_le_disconnect
+        64   -> bt_gap_le_get_max_multiple_advertising_instances
+        64   -> bt_gap_le_read_rssi
+        64   -> bt_gap_le_set_advertising
+        64   -> bt_gap_le_set_random_address
+        64   -> bt_gap_le_set_scan
+        64   -> bt_gap_le_set_tx_power
+        64   -> bt_gap_le_set_white_list
+        64   -> bt_gap_le_start_multiple_advertising
+        64   -> bt_gap_le_stop_multiple_advertising
+        64   -> bt_gap_le_update_connection_parameter
+        64   -> bt_gap_le_update_data_length
+        64   -> bt_power_off
+        64   -> bt_power_on
+        64   -> copy_str_to_addr
+        64   -> strlen
+        64   -> strncmp
+        64   -> strtoul
+        64   -> ut_app_gap_convert_hex_str
+       0   default_bqb_gap_io_callback
+      24   ut_app_gap_convert_hex_str
+        24   -> __aeabi_memcpy
+        24   -> strtoul
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable57
+       4  ??DataTable57_1
+       4  ??DataTable57_10
+       4  ??DataTable57_11
+       4  ??DataTable57_12
+       4  ??DataTable57_13
+       4  ??DataTable57_14
+       4  ??DataTable57_15
+       4  ??DataTable57_2
+       4  ??DataTable57_3
+       4  ??DataTable57_4
+       4  ??DataTable57_5
+       4  ??DataTable57_6
+       4  ??DataTable57_7
+       4  ??DataTable57_8
+       4  ??DataTable57_9
+      16  ?_0
+      16  ?_1
+      52  ?_10
+      44  ?_11
+      12  ?_12
+      48  ?_13
+      56  ?_14
+      40  ?_15
+      16  ?_16
+      60  ?_17
+      16  ?_18
+      20  ?_19
+      20  ?_2
+      36  ?_20
+      24  ?_21
+      20  ?_22
+      36  ?_23
+      76  ?_24
+      52  ?_25
+      20  ?_26
+      32  ?_27
+      84  ?_28
+      36  ?_29
+       8  ?_3
+      20  ?_30
+      24  ?_31
+      32  ?_32
+      16  ?_33
+      28  ?_34
+      16  ?_35
+      16  ?_36
+      16  ?_37
+      12  ?_38
+      20  ?_39
+       8  ?_4
+      20  ?_40
+      16  ?_41
+      36  ?_42
+      16  ?_43
+      16  ?_44
+      24  ?_45
+      92  ?_46
+      60  ?_47
+      52  ?_48
+      48  ?_49
+       2  ?_5
+      72  ?_50
+      16  ?_51
+      72  ?_52
+      48  ?_53
+      52  ?_54
+      12  ?_55
+       2  ?_6
+      72  ?_7
+      68  ?_8
+      16  ?_9
+    2424  bt_app_gap_io_callback
+       4  default_bqb_gap_io_callback
+          bqb_gap_io_callback
+      52  ut_app_gap_convert_hex_str
+
+ 
+    20 bytes in section .rodata
+ 4 384 bytes in section .text
+ 
+ 4 384 bytes of CODE  memory
+    20 bytes of CONST memory
+
+Errors: none
+Warnings: none

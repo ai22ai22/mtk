@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>1850733325</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\startup_mt7687.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\gpt.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\top.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_gpio.c</file>
+            <file>$PROJ_DIR$\..\src\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\hal_I2C.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_nvic.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\pinmux.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\low_hal_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\system_mt7687.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\timer.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_nvic_internal.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\i2c.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_uart.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\nvic.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\hal_pinmux.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_i2c_master.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_log.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_gpt.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\dma.c</file>
+            <file>$PROJ_DIR$\..\src\system_mt7687.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\hal_gpio_7687.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\startup_mt7687.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\system_mt7687.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\dma.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\main.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_log.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_nvic_internal.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_pinmux.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\low_hal_gpio.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\pinmux.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpio_7687.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_uart.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\nvic.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_I2C.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\top.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_i2c_master.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\uart.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\i2c.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpt.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpio.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\gpt.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_nvic.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\timer.o</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_i2c_master.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\top.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_nvic.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Include\core_cm4.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_gdma.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Include\core_cmFunc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\hal_log.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_gpt.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\mt7687.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_define.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Include\core_cmInstr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\hal_pinmux_define.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\hal_platform.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_gpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\i2c_control_EEPROM_with_polling.pbd</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_pinmux.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\i2c.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpio_7687.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\low_hal_gpio.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\timer.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\pinmux.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Exe\i2c_control_EEPROM_with_polling.out</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_I2C.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_log.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Exe\i2c_control_EEPROM_with_polling.bin</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_i2c_master.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_uart.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\gpt.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Include\core_cmSimd.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\dma.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpio.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_gpt.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_nvic_internal.pbi</file>
+            <file>$PROJ_DIR$\..\inc\hal_feature_config.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\system_mt7687.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\hal_nvic.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\top.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Obj\nvic.pbi</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\exception_mt7687.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\mt7687_cm4_hw_memmap.h</file>
+            <file>$PROJ_DIR$\..\inc\flash_map.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\type_def.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\memory_attribute.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\hal_cache_hw.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\debug.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\dma_hw.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\dma_sw.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\nvic.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\timer.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\low_hal_gpio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_eint.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\pinmux.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\gpt.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\uart.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\mem_util.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\nvic_extern.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\hal_gpio_7687.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\hal_pinmux.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\i2c.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\inc\hal_nvic_internal.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\hal_I2C.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\spi_flash.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\include\uart_hw.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\driver\chip\inc\hal_flash.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\i2c.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_log.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\gpt.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_nvic_internal.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_gpt.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_gpio.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\dma.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_I2C.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_nvic.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_i2c_master.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_I2C.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_gpio_7687.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\gpt.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\startup_mt7687.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_gpt.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_gpio_7687.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_log.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_i2c_master.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_nvic.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_uart.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_pinmux.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_gpio.s</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\i2c.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\top.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\main.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_nvic_internal.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\low_hal_gpio.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\uart.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\system_mt7687.s</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\top.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\main.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\nvic.s</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
+            <file>$PROJ_DIR$\flash.icf</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\i2c_control_EEPROM_with_polling.map</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\low_hal_gpio.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\nvic.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\pinmux.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_pinmux.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\timer.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\hal_uart.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\pinmux.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\uart.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\system_mt7687.lst</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\timer.s</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\tools\iar\mt7697\bootloader\bootloader.bin</file>
+            <file>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\List\dma.s</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 80 164</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_mt7687.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 23 141</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\gpt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 130 140 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 103 104 106 70 57 115 48 101 110 111 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63 51 94 65 70 115 68 96 72 104 103 95 62 88 61 106 110 111 69 93 53 58 49 54 52 56 66 57 48 101</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\top.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 159 152 37</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103 96 53 94 58 49 54 104 48 95 62 52 65 68 66 56 88 101 125 127 69 63 72 93</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 104 58 49 96 68 101 66 93 62 94 54 52 56 103 48 95 125 53 65 88 127 69 63 72</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 149 133 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 90</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 67 108 57 112 113 114 59 70</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 93 94 69 96 54 52 56 59 67 108 53 58 49 66 68 57 70 112 63 62 72 95 65 88 113 71 114</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 160 153 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96 53 94 58 49 54 70 57 47 50 60 93 59 55 69 63 72 62 52 65 68 66 56 88 95 71 67 61 46 51 64 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 93 88 94 95 96 57 47 53 65 68 69 70 60 48 58 49 54 50 59 55 71 61 46 51 64 63 62 72 52 56 66 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\hal_I2C.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138 135 36</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 70 57 47 50 103 104 48 123 101 109 108 59 61 106 122 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54 96 94 52 93 95 59 56 103 108 70 123 106 53 58 49 68 57 47 48 109 61 122 69 63 62 72 65 88 101 51 46 66 50 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_nvic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 136 146 44</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 97</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 122 104 59 70 57</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 59 96 54 94 122 93 53 58 49 95 65 66 104 62 69 63 72 52 56 68 51 70 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\pinmux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 167 171 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 67 103 104 120 101 114</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49 58 96 66 114 62 72 71 103 69 63 94 54 52 56 120 67 93 53 95 65 88 68 104 101</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 156 172 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 116 96 53 94 58 49 54 109 69 63 72 93 62 52 65 68 66 56 88 95 108 57 126 103 104 101 117 111 61 110 48 107</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94 65 109 110 108 93 96 69 117 103 95 88 53 72 62 126 111 48 107 58 49 54 63 52 56 68 57 101 104 116 66 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\low_hal_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 155 165 31</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 113 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 71 67 103 104 112 114 119 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95 113 96 93 88 112 53 65 68 114 71 103 119 69 63 62 72 94 58 49 54 52 56 104 66 67 101</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\timer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 174 169 45</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 103 104 115 48 101 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65 53 111 68 101 103 72 69 93 96 95 88 48 115 63 62 94 58 49 54 52 56 66 104 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_nvic_internal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 131 154 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 92</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 122 51 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 122 63 94 54 51 69 62 72 58 49 95 88 104 93 96 53 65 68 52 56 66</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 128 151 40</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 70 57 47 50 103 104 121 123 101 109 108 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53 109 68 96 103 63 94 65 104 70 121 69 62 72 95 88 57 47 123 59 93 58 49 54 52 56 66 50 46 101 108</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 147 170 34</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47 53 94 58 49 54 57 50 109 69 63 96 72 93 62 52 65 68 66 56 88 95 108 116 48 59 70 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 96 64 53 52 54 69 109 62 48 94 58 49 108 93 65 95 116 59 57 50 63 72 56 68 47 66 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\nvic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 161 166 35</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 110 117 103 104 111 61 118</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96 68 66 61 117 53 118 93 103 69 110 111 104 63 62 72 94 58 49 54 52 56 51 95 65 88</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\hal_pinmux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 148 168 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 74</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 67 70 57 47 50 103 104 48 120 101 119 113 114</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68 63 94 65 66 103 69 53 104 71 70 120 62 72 95 88 50 96 114 47 48 119 67 93 58 49 54 52 56 57 113 101</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_i2c_master.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 137 145 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 108 57 47 50 121 103 104 109 59 70 123 101 110 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94 59 88 68 53 121 58 49 108 52 110 93 96 54 65 66 50 47 62 109 123 51 69 63 72 95 56 57 103 70 104 46 101</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 144 129 28</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 70 53 94 58 49 54 57 47 50 69 63 96 72 93 62 52 65 68 66 56 88 95 59 60 55 71 67 61 46 51 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69 68 71 53 94 57 59 58 49 93 96 52 56 64 47 54 50 66 46 124 60 63 62 72 95 65 88 55 61 51 70 67</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\hal_gpt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 132 142 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 91</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 47 57 50 111 115 48 101 103 104 59 70</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66 53 58 96 49 115 72 104 93 47 59 69 54 52 56 94 61 57 111 63 62 95 65 88 68 70 50 48 101 103</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\dma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 176 134 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 89</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 110 103 104 107 101 109 108 57 106 70 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68 57 51 103 63 94 65 62 109 72 95 88 104 101 110 107 106 93 96 53 58 49 54 52 56 66 69 108 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\system_mt7687.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 157 173 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96 53 94 58 49 54 62 52 65 68 66 56 88 95 101 103 104 100 70 57 48 102 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 95 103 100 54 102 53 58 49 65 68 104 94 62 101 48 105 52 96 56 66 70 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\driver\chip\mt7687\src\common\hal_gpio_7687.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 139 143 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 113 69 63 96 53 94 58 49 54 72 93 62 52 65 68 66 56 88 95 71 67 70 57 103 104 119 101 114 110 120 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67 68 51 94 96 103 71 110 53 58 49 66 114 70 119 120 93 54 52 56 113 104 62 69 63 72 95 65 88 57 101</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\out_iar\mt7697_hdk\i2c_control_EEPROM_with_polling\Exe\i2c_control_EEPROM_with_polling.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 83</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 164</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 163 175 26 43 42 33 41 36 38 28 44 29 30 34 40 31 27 35 32 23 25 45 37 39 158 150 162</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

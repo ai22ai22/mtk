@@ -1,0 +1,1638 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:19
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\dhcpd\src\dhcpd.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW5DEA.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\dhcpd\src\dhcpd.c -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\dhcpd.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\dhcpd.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\middleware\MTK\dhcpd\src\dhcpd.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include "stdio.h"
+     36          #include "stdlib.h"
+     37          #include "string.h"
+     38          
+     39          #include "FreeRTOS.h"
+     40          #include "task.h"
+     41          #include "wifi_api.h"
+     42          
+     43          #include "lwip/opt.h"
+     44          #include "lwip/arch.h"
+     45          #include "lwip/api.h"
+     46          #include "lwip/inet.h"
+     47          #include "lwip/sockets.h"
+     48          #include "lwip/ip4_addr.h"
+     49          
+     50          #include "dhcpd.h"
+     51          #include "nvdm.h"
+     52          #include "task_def.h"
+     53          
+     54          
+     55          /* Define 0 to disable logging, define 1 to enable logging. */
+     56          #ifndef MTK_DEBUG_LEVEL_NONE
+     57          #define DHCPD_DEBUG 1
+     58          #else
+     59          #define DHCPD_DEBUG 0
+     60          #endif
+     61          
+     62          /* The following content is used inside the DHCPD module. */
+     63          #if DHCPD_DEBUG
+     64          #define DHCPD_PRINTF(x, ...) LOG_I(dhcpd, x, ##__VA_ARGS__)
+     65          #define DHCPD_WARN(x, ...) LOG_W(dhcpd, x, ##__VA_ARGS__)
+     66          #define DHCPD_ERR(x, ...) LOG_E(dhcpd, x, ##__VA_ARGS__)
+     67          #else
+     68          #define DHCPD_PRINTF(x, ...)
+     69          #define DHCPD_WARN(x, ...)
+     70          #define DHCPD_ERR(x, ...)
+     71          #endif
+     72          
+     73          
+     74          /*
+     75             0                   1                   2                   3
+     76             0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     77             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     78             |     op (1)    |   htype (1)   |   hlen (1)    |   hops (1)    |
+     79             +---------------+---------------+---------------+---------------+
+     80             |                            xid (4)                            |
+     81             +-------------------------------+-------------------------------+
+     82             |           secs (2)            |           flags (2)           |
+     83             +-------------------------------+-------------------------------+
+     84             |                          ciaddr  (4)                          |
+     85             +---------------------------------------------------------------+
+     86             |                          yiaddr  (4)                          |
+     87             +---------------------------------------------------------------+
+     88             |                          siaddr  (4)                          |
+     89             +---------------------------------------------------------------+
+     90             |                          giaddr  (4)                          |
+     91             +---------------------------------------------------------------+
+     92             |                          chaddr  (16)                         |
+     93             +---------------------------------------------------------------+
+     94             |                                                               |
+     95             |                          sname   (64)                         |
+     96             +---------------------------------------------------------------+
+     97             |                                                               |
+     98             |                          file    (128)                        |
+     99             +---------------------------------------------------------------+
+    100             |                                                               |
+    101             |                          options (variable)                   |
+    102             +---------------------------------------------------------------+
+    103          
+    104                            Figure 1:  Format of a DHCP message
+    105           */
+    106          
+    107          typedef struct {
+    108              unsigned char  op;                /* Message op code / Message type */
+    109              unsigned char  htype;            /* Hardware address type (see ARP section in "Assigned Numbers" RFC; e.g., '1' = 10mb Ethernet.) */
+    110              unsigned char  hlen;              /* hardware address length (e.g.  '6' for 10mb Ethernet) */
+    111              unsigned char  hops;              /* Optionally used by relay agents when booting via a relay agent. */
+    112              unsigned int   xid;              /* Transaction ID */
+    113              unsigned short secs;            /* seconds elapsed since client began address acquisition or renewal process */
+    114              unsigned short flags;            /* Flags, BROADCAST flag */
+    115              unsigned char  ciaddr[4];         /* Client IP address */
+    116              unsigned char  yiaddr[4];         /* 'your' (client) IP address */
+    117              unsigned char  siaddr[4];         /* IP address of next server to use in bootstrap */
+    118              unsigned char  giaddr[4];          /* Relay agent IP address */
+    119              unsigned char  chaddr[16];         /* Client hardware address */
+    120              unsigned char  sname[64];        /* Optional server host name */
+    121              unsigned char  file[128];        /* Optional parameters field */
+    122              unsigned char  magic[4];        /* Magic Cookie (Vendor), 63,82,53,63*/
+    123              unsigned char  options[308];    /* options(variable) content*/
+    124          } dhcpd_message_t;
+    125          
+    126          typedef struct dhcpd_alloc_info {
+    127              struct dhcpd_alloc_info *next;
+    128              unsigned char mac[6];
+    129              struct ip4_addr ip_addr;
+    130          } dhcpd_alloc_info_t;
+    131          
+    132          
+    133          #define DHCPD_DOMAIN_NAME    "example.org"
+    134          
+    135          #define DHCPD_OP_REQ              1
+    136          #define DHCPD_OP_REPLY            2
+    137          
+    138          #define DHCPD_SERVER_PORT 67
+    139          #define DHCPD_CLIENT_PORT 68
+    140          
+    141          
+    142          /* DHCP Options */
+    143          #define DHCPD_OPT_NETMASK           1
+    144          #define DHCPD_OPT_ROUTER            3
+    145          #define DHCPD_OPT_DNSSERVER         6
+    146          #define DHCPD_OPT_DOMAINNAME        15
+    147          #define DHCPD_OPT_BROADCAST_ADDR    28
+    148          #define DHCPD_OPT_REQUESTED_IP      50
+    149          #define DHCPD_OPT_LEASE_TIME        51
+    150          #define DHCPD_OPT_MESSAGE_TYPE      53
+    151          #define DHCPD_OPT_SERVER_IDENTIFIER 54
+    152          #define DHCPD_OPT_MESSAGE           56
+    153          #define DHCPD_OPT_T1                58
+    154          #define DHCPD_OPT_T2                59
+    155          #define DHCPD_OPT_END               255
+    156          
+    157          #define DHCPD_DISCOVER    1
+    158          #define DHCPD_OFFER       2
+    159          #define DHCPD_REQUEST     3
+    160          #define DHCPD_DECLINE     4        //Not using in this release.
+    161          #define DHCPD_ACK         5
+    162          #define DHCPD_NAK         6
+    163          #define DHCPD_RELEASE     7
+    164          #define DHCPD_INFORM      8        //Not using in this release.
+    165          
+    166          #define PROFILE_BUF_LEN (64)    //buffer length to get NVRAM
+    167          
+    168          /* These addresses are all in network order. */
+    169          static struct ip4_addr dhcpd_primary_dns;
+    170          static struct ip4_addr dhcpd_secondary_dns;
+    171          static struct ip4_addr dhcpd_ip_pool_start;
+    172          static struct ip4_addr dhcpd_ip_pool_end;
+    173          static struct ip4_addr dhcpd_last_alloc_ip;
+    174          static struct ip4_addr dhcpd_server_address;    /* IP address of dhcp server. */
+    175          static struct ip4_addr dhcpd_server_netmask;
+    176          static struct ip4_addr dhcpd_server_gw;            /* IP address of gateway. Usually, it's router's IP. */
+    177          
+    178          static xTaskHandle dhcpd_task_handle = 0;
+    179          static int dhcpd_running = 0;
+    180          static int dhcpd_socket = -1;
+    181          
+    182          static xSemaphoreHandle dhcpd_mutex;
+    183          
+    184          static unsigned char dhcpd_send_ack; /* always initialize to 1 in dhcpd_do_request() */
+    185          static dhcpd_message_t *dhcpd_msg;
+    186          
+    187          static dhcpd_alloc_info_t *dhcpd_alloc_infos_in_use;
+    188          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    189          static dhcpd_alloc_info_t *dhcpd_alloc_infos_unuse;
+    190          #endif
+    191          
+    192          const char dhcpd_opt_magic_tmp[]        = {0x63, 0x82, 0x53, 0x63};
+    193          const char dhcpd_opt_subnet_tmp[]       = {DHCPD_OPT_NETMASK, 4, 255, 255, 255, 0};
+    194          const char dhcpd_opt_offer_tmp[]        = {DHCPD_OPT_MESSAGE_TYPE, 1, DHCPD_OFFER};
+    195          const char dhcpd_opt_ack_tmp[]          = {DHCPD_OPT_MESSAGE_TYPE, 1, DHCPD_ACK};
+    196          const char dhcpd_opt_nak_tmp[]          = {DHCPD_OPT_MESSAGE_TYPE, 1, DHCPD_NAK};
+    197          const char dhcpd_opt_msg_tmp[]          = {DHCPD_OPT_MESSAGE, 13, 'w', 'r', 'o', 'n', 'g', ' ', 'n', 'e', 't', 'w', 'o', 'r', 'k'};
+    198          const unsigned char dhcpd_opt_end_tmp[] = {DHCPD_OPT_END};
+    199          const unsigned char dhcpd_zeros[6]      = {0, 0, 0, 0, 0, 0};
+    200          
+    201          static void dhcpd_prepare(void *param);
+    202          
+    203          #if DHCPD_DEBUG
+    204          log_create_module(dhcpd, PRINT_LEVEL_INFO);
+    205          #endif
+    206          
+    207          #if 0
+    208          static void dhcpd_hex_dump(char *str, unsigned char *pSrcBufVA, unsigned int SrcBufLen)
+    209          {
+    210              unsigned char *pt;
+    211              int x;
+    212          
+    213              pt = pSrcBufVA;
+    214              printf("%s: %p, len = %d\n\r", str, pSrcBufVA, SrcBufLen);
+    215              for (x = 0; x < SrcBufLen; x++) {
+    216                  if (x % 16 == 0) {
+    217                      printf("0x%04x : ", x);
+    218                  }
+    219                  printf("%02x ", ((unsigned char)pt[x]));
+    220                  if (x % 16 == 15) {
+    221                      printf("\n\r");
+    222                  }
+    223              }
+    224              printf("\n\r");
+    225          }
+    226          #endif
+    227          
+    228          static void dhcpd_print_ip_allocation_status(void)
+    229          {
+    230              dhcpd_alloc_info_t *alloc_info = dhcpd_alloc_infos_in_use;
+    231          
+    232              while (alloc_info) {
+    233                  DHCPD_PRINTF("[%02X:%02X:%02X:%02X:%02X:%02X][%d.%d.%d.%d]",
+    234                               (alloc_info->mac)[0], (alloc_info->mac)[1],
+    235                               (alloc_info->mac)[2], (alloc_info->mac)[3],
+    236                               (alloc_info->mac)[4], (alloc_info->mac)[5],
+    237                               ip4_addr1(&(alloc_info->ip_addr)),
+    238                               ip4_addr2(&(alloc_info->ip_addr)),
+    239                               ip4_addr3(&(alloc_info->ip_addr)),
+    240                               ip4_addr4(&(alloc_info->ip_addr)));
+    241                  alloc_info = alloc_info->next;
+    242              }
+    243          }
+    244          
+    245          
+    246          static void dhcpd_mutex_new(void)
+    247          {
+    248              if (dhcpd_mutex == NULL) {
+    249                  dhcpd_mutex = xSemaphoreCreateMutex();
+    250              }
+    251          
+    252              if (dhcpd_mutex == NULL) {
+    253                  DHCPD_PRINTF("Mutex create failed.");
+    254              }
+    255          }
+    256          
+    257          static void dhcpd_mutex_lock(void)
+    258          {
+    259              while (xSemaphoreTake(dhcpd_mutex, portMAX_DELAY) != pdPASS);
+    260          }
+    261          
+    262          
+    263          static void dhcpd_mutex_unlock(void)
+    264          {
+    265              xSemaphoreGive(dhcpd_mutex);
+    266          }
+    267          
+    268          
+    269          #if 0
+    270          static void dhcpd_mutex_free(void)
+    271          {
+    272              vQueueDelete(dhcpd_mutex);
+    273          }
+    274          #endif
+    275          
+    276          
+    277          static void dhcpd_log_ip(char *intro, struct ip4_addr *ip)
+    278          {
+    279              if (!ip) {
+    280                  return;
+    281              }
+    282          
+    283              DHCPD_PRINTF("[%s]%s", intro, inet_ntoa(*ip));
+    284          }
+    285          
+    286          
+    287          int dhcpd_insert_alloc_info_into_list(dhcpd_alloc_info_t *alloc_info, dhcpd_alloc_info_t **alloc_info_list)
+    288          {
+    289              dhcpd_alloc_info_t *tmp_alloc_info = NULL;
+    290          
+    291              // DHCPD_PRINTF("dhcpd_insert_alloc_info_into_list()");
+    292          
+    293              if (!alloc_info || !alloc_info_list) {
+    294                  return -1;
+    295              }
+    296          
+    297          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    298              DHCPD_PRINTF("Insert into %s", alloc_info_list == &dhcpd_alloc_infos_in_use ? "in use list" : \
+    299                              (*alloc_info_list == dhcpd_alloc_infos_unuse ? "unsue list" : "unknown list"));
+    300          #endif
+    301          
+    302              if (NULL == *alloc_info_list) {
+    303                  *alloc_info_list = alloc_info;
+    304              } else {
+    305                  tmp_alloc_info = *alloc_info_list;
+    306                  while (tmp_alloc_info->next) {
+    307                      tmp_alloc_info = tmp_alloc_info->next;
+    308                  }
+    309          
+    310                  tmp_alloc_info->next = alloc_info;
+    311              }
+    312          
+    313              return 0;
+    314          }
+    315          
+    316          
+    317          int dhcpd_remove_alloc_info_from_list(dhcpd_alloc_info_t *alloc_info,
+    318                                                        dhcpd_alloc_info_t *pre_alloc_info,
+    319                                                        dhcpd_alloc_info_t **alloc_info_list)
+    320          {
+    321              if (!alloc_info || (!pre_alloc_info && !alloc_info_list) || (alloc_info_list && !(*alloc_info_list))) {
+    322                  DHCPD_PRINTF("dhcpd_remove_alloc_info_from_list() failed. ");
+    323                  return -1;
+    324              }
+    325          
+    326              if (pre_alloc_info) {
+    327                  pre_alloc_info->next = alloc_info->next;
+    328              } else if (alloc_info_list) {
+    329                  *alloc_info_list = alloc_info->next;
+    330              }
+    331          
+    332              alloc_info->next = NULL;
+    333              DHCPD_PRINTF("dhcpd_remove_alloc_info_from_list() succeed. ");
+    334              return 0;
+    335          }
+    336          
+    337          
+    338          /* pre_alloc_info [OUT] The node before the target node. If the target node is the head of the list,
+    339           * pre_alloc_info will be NULL. */
+    340          dhcpd_alloc_info_t *dhcpd_find_alloc_info_by_mac(unsigned char mac[6],
+    341                                                                   dhcpd_alloc_info_t *alloc_info_list,
+    342                                                                   dhcpd_alloc_info_t **pre_alloc_info)
+    343          {
+    344              dhcpd_alloc_info_t *alloc_info = NULL, *previous_alloc_info = NULL;
+    345          
+    346              // DHCPD_PRINTF("dhcpd_find_alloc_info_by_mac()");
+    347          
+    348              if (!mac || !alloc_info_list) {
+    349                  return NULL;
+    350              }
+    351          
+    352          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    353              DHCPD_PRINTF("Try to find in %s", alloc_info_list == dhcpd_alloc_infos_in_use ? "in-use list" : \
+    354                              (alloc_info_list == dhcpd_alloc_infos_unuse ? "unsue list" : "unknown list"));
+    355          #endif
+    356          
+    357              alloc_info = alloc_info_list;
+    358          
+    359              while (alloc_info) {
+    360                  if (memcmp(mac, alloc_info->mac, 6) == 0) {
+    361                      DHCPD_PRINTF("Find the alloc_info node");
+    362                      /* Find the alloc_info node. */
+    363                      if (pre_alloc_info) {
+    364                          *pre_alloc_info = previous_alloc_info;
+    365                      }
+    366                      return alloc_info;
+    367                  }
+    368          
+    369                  previous_alloc_info = alloc_info;
+    370                  alloc_info = alloc_info->next;
+    371              }
+    372          
+    373              /* Failed to find the alloc_info node. */
+    374              DHCPD_PRINTF("Failed to find the alloc_info node");
+    375              return NULL;
+    376          }
+    377          
+    378          
+    379          /* Both ip_addr1 and ip_addr2 are in network order.
+    380            * Return: 1   ip_addr1 > ip_addr2
+    381            *            0   ip_addr1 == ip_addr2
+    382            *            -2  ip_addr1 < ip_addr2
+    383            *            -1 Input parameter error
+    384            */
+    385          int dhcpd_ip_cmp(struct ip4_addr *ip_addr1, struct ip4_addr *ip_addr2)
+    386          {
+    387              uint8_t i = 0, *ip1 = NULL, *ip2 = NULL;
+    388              int res = 0;
+    389          
+    390              if (!ip_addr1 || !ip_addr2) {
+    391                  return -1;
+    392              }
+    393          
+    394              ip1 = (uint8_t *)(&(ip_addr1->addr));
+    395              ip2 = (uint8_t *)(&(ip_addr2->addr));
+    396          
+    397              for (i = 0; i < 4; i++) {
+    398                  res = ip1[i] - ip2[i];
+    399          
+    400                  if (0 == res) {
+    401                      continue;
+    402                  }
+    403          
+    404                  return res > 0 ? 1 : -2;
+    405              }
+    406          
+    407              return 0;
+    408          }
+    409          
+    410          
+    411          /* ip_addr is in network order. */
+    412          int dhcpd_is_ip_allocable(struct ip4_addr *ip_addr)
+    413          {
+    414              dhcpd_alloc_info_t *alloc_info = NULL;
+    415          
+    416              if (!ip_addr || !dhcpd_task_handle) {
+    417                  /* settings maybe hasn't been set yet */
+    418                  return -1;
+    419              }
+    420          
+    421              if (0 < dhcpd_ip_cmp(&dhcpd_ip_pool_start, ip_addr) ||
+    422                  0 > dhcpd_ip_cmp(&dhcpd_ip_pool_end, ip_addr)) {
+    423                  /* Out of range */
+    424                  return -2;
+    425              }
+    426          
+    427              /* For start and end both match newmask, addresses which are not out of range match the netmask for sure. */
+    428          
+    429              if (0 == ip4_addr4(ip_addr)) {
+    430                  return -3;
+    431              }
+    432          
+    433              if (255 == ip4_addr4(ip_addr)) {
+    434                  return -4;
+    435              }
+    436          
+    437              if (ip4_addr_cmp(ip_addr, &dhcpd_server_gw)) {
+    438                  return -5;
+    439              }
+    440          
+    441              /* Check in-use list */
+    442              alloc_info = dhcpd_alloc_infos_in_use;
+    443              while (alloc_info) {
+    444                  if (0 == dhcpd_ip_cmp(&(alloc_info->ip_addr), ip_addr)) {
+    445                      /* IP has been allocated in in-use list. */
+    446                      return -6;
+    447                  }
+    448          
+    449                  alloc_info = alloc_info->next;
+    450              }
+    451          
+    452          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    453              /* Check unuse list */
+    454              alloc_info = dhcpd_alloc_infos_unuse;
+    455              while (alloc_info) {
+    456                  if (0 == dhcpd_ip_cmp(&(alloc_info->ip_addr), ip_addr)) {
+    457                      /* IP has been allocated in unuse list. */
+    458                      return -7;
+    459                  }
+    460          
+    461                  alloc_info = alloc_info->next;
+    462              }
+    463          #endif
+    464          
+    465              return 0;
+    466          }
+    467          
+    468          
+    469          /* new_ip is in network order.
+    470            * Return: 0 Brand new IP
+    471            *            1 Reuse IP in unuse list
+    472            */
+    473          int dhcpd_alloc_new_ip(struct ip4_addr *new_ip)
+    474          {
+    475              struct ip4_addr tmp_ip = { 0 };
+    476              int ret = -1, from_start = 0;
+    477          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    478              dhcpd_alloc_info_t *alloc_info = NULL;
+    479          #endif
+    480          
+    481              if (!new_ip) {
+    482                  return -1;
+    483              }
+    484          
+    485              if (ip4_addr_isany_val(dhcpd_last_alloc_ip)) {
+    486                  /* First allocation */
+    487                  memcpy(&(new_ip->addr), &(dhcpd_ip_pool_start.addr), 4);
+    488                  DHCPD_PRINTF("dhcpd_last_alloc_ip is 0s.");
+    489                  dhcpd_log_ip("New IP", new_ip);
+    490                  return 0;
+    491              }
+    492          
+    493              /* dhcpd_last_alloc_ip may be available. */
+    494              tmp_ip.addr = lwip_ntohl(dhcpd_last_alloc_ip.addr);
+    495              new_ip->addr = lwip_htonl(tmp_ip.addr);
+    496          
+    497              while (0 > (ret = dhcpd_is_ip_allocable(new_ip))) {
+    498                  DHCPD_PRINTF("Is ip allocable ret:%d", ret);
+    499                  /* Out of range. Go back to the start. */
+    500                  if (-2 == ret) {
+    501                      if (from_start) {
+    502                          DHCPD_PRINTF("NOT FOUND: Out of range twice.");
+    503                          break;
+    504                      }
+    505          
+    506                      from_start = 1;
+    507                      tmp_ip.addr = lwip_ntohl(dhcpd_ip_pool_start.addr);
+    508                  } else {
+    509                      tmp_ip.addr++;
+    510                  }
+    511          
+    512                  new_ip->addr = lwip_htonl(tmp_ip.addr);
+    513          
+    514                  if (0 == dhcpd_ip_cmp(new_ip, &dhcpd_last_alloc_ip)) {
+    515                      DHCPD_PRINTF("NOT FOUND: Complete one cycle.");
+    516                      break;
+    517                  }
+    518              }
+    519          
+    520          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    521              if (0 > ret) {
+    522                  alloc_info = dhcpd_alloc_infos_unuse;
+    523                  dhcpd_remove_alloc_info_from_list(alloc_info, NULL, &dhcpd_alloc_infos_unuse);
+    524                  if (alloc_info) {
+    525                      DHCPD_PRINTF("Free oldest node in unuse list to release ip it occupied for new assignment req.");
+    526                      memcpy(&alloc_info->ip_addr, new_ip, sizeof(struct ip4_addr));
+    527                      vPortFree(alloc_info);
+    528                      ret = 1;
+    529                  }
+    530              }
+    531          #endif
+    532          
+    533              if (0 <= ret) {
+    534                  dhcpd_log_ip("New IP", new_ip);
+    535              }
+    536          
+    537              return ret;
+    538          }
+    539          
+    540          
+    541          static int dhcpd_opt_dns_tlv_int(char *dest, struct ip4_addr *dns1, struct ip4_addr *dns2)
+    542          {
+    543              char *opt_len = NULL, *buf_start = dest;
+    544          
+    545              if ((!dns1 && !dns2) || !dest) {
+    546                  return 0;
+    547              }
+    548          
+    549              *dest++ = DHCPD_OPT_DNSSERVER;
+    550              opt_len = dest++;
+    551              //DHCPD_PRINTF("opt_len: %x, dest:%x", opt_len, dest);
+    552              if (dns1) {
+    553                  *dest++ = ip4_addr1(dns1);
+    554                  *dest++ = ip4_addr2(dns1);
+    555                  *dest++ = ip4_addr3(dns1);
+    556                  *dest++ = ip4_addr4(dns1);
+    557              }
+    558          
+    559              if (dns2 && !ip4_addr_isany_val(*dns2)) {
+    560                  *dest++ = ip4_addr1(dns2);
+    561                  *dest++ = ip4_addr2(dns2);
+    562                  *dest++ = ip4_addr3(dns2);
+    563                  *dest++ = ip4_addr4(dns2);
+    564              }
+    565          
+    566              *opt_len = dest - opt_len - 1;
+    567          
+    568              DHCPD_PRINTF("opt type[%d]%d, %d.%d.%d.%d, %d.%d.%d.%d",
+    569                          buf_start[0], buf_start[1],
+    570                          buf_start[2], buf_start[3], buf_start[4], buf_start[5],
+    571                          buf_start[6], buf_start[7], buf_start[8], buf_start[9]);
+    572          
+    573              return *opt_len + 2;
+    574          }
+    575          
+    576          
+    577          void dhcpd_release_alloc_info_lists(void)
+    578          {
+    579              dhcpd_alloc_info_t *alloc_info = NULL, *tmp_alloc_info = NULL;
+    580          
+    581              /* Release in-use list */
+    582              alloc_info = dhcpd_alloc_infos_in_use;
+    583              while (alloc_info) {
+    584                  tmp_alloc_info = alloc_info->next;
+    585                  vPortFree(alloc_info);
+    586                  alloc_info = tmp_alloc_info;
+    587              }
+    588              dhcpd_alloc_infos_in_use = NULL;
+    589          
+    590          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    591              /* Release unuse list */
+    592              alloc_info = dhcpd_alloc_infos_unuse;
+    593              while (alloc_info) {
+    594                  tmp_alloc_info = alloc_info->next;
+    595                  vPortFree(alloc_info);
+    596                  alloc_info = tmp_alloc_info;
+    597              }
+    598              dhcpd_alloc_infos_unuse = NULL;
+    599          #endif
+    600          }
+    601          
+    602          
+    603          void dhcpd_memzero_settings(void)
+    604          {
+    605              memset(&dhcpd_server_address, 0, sizeof(dhcpd_server_address));
+    606              memset(&dhcpd_server_netmask, 0, sizeof(dhcpd_server_netmask));
+    607              memset(&dhcpd_server_gw, 0, sizeof(dhcpd_server_gw));
+    608              memset(&dhcpd_primary_dns, 0, sizeof(dhcpd_primary_dns));
+    609              memset(&dhcpd_secondary_dns, 0, sizeof(dhcpd_secondary_dns));
+    610              memset(&dhcpd_ip_pool_start, 0, sizeof(dhcpd_ip_pool_start));
+    611              memset(&dhcpd_ip_pool_end, 0, sizeof(dhcpd_ip_pool_end));
+    612          }
+    613          
+    614          int dhcpd_set_settings(char *ip_str_settings, char *ip_str_default, struct ip4_addr *ip_addr)
+    615          {
+    616              if (!ip_addr || !(ip_str_settings || ip_str_default)) {
+    617                  return -1;
+    618              }
+    619          
+    620              if (ip_str_settings) {
+    621                  /* inet_aton() will change IP from text format to 32bytes format in network order (big endian).  */
+    622                  if (!inet_aton(ip_str_settings, ip_addr)) {
+    623                      DHCPD_PRINTF("Input setting is invalid.");
+    624                      return -2;
+    625                  }
+    626              } else {
+    627                  if (!inet_aton(ip_str_default, ip_addr)) {
+    628                      DHCPD_PRINTF("Default setting is invalid.");
+    629                      return -3;
+    630                  }
+    631              }
+    632          
+    633              return 0;
+    634          }
+    635          
+    636          
+    637          int dhcpd_start(dhcpd_settings_t *dhcpd_settings)
+    638          {
+    639              DHCPD_PRINTF("dhcpd_start [%d][%d]", (int)dhcpd_task_handle, dhcpd_running);
+    640          
+    641              dhcpd_mutex_new();
+    642              dhcpd_mutex_lock();
+    643          
+    644              if (dhcpd_running == 0 && dhcpd_task_handle == 0) {
+    645          
+    646                  DHCPD_PRINTF("DHCPD preparing");
+    647          
+    648                  dhcpd_memzero_settings();
+    649          
+    650                  if (dhcpd_settings) {
+    651                      if (0 > dhcpd_set_settings(dhcpd_settings->dhcpd_server_address, DHPCD_DEFAULT_SERVER_IP, &dhcpd_server_address) ||
+    652                          0 > dhcpd_set_settings(dhcpd_settings->dhcpd_gateway, DHPCD_DEFAULT_GATEWAY, &dhcpd_server_gw) ||
+    653                          0 > dhcpd_set_settings(dhcpd_settings->dhcpd_netmask, DHPCD_DEFAULT_NETMASK, &dhcpd_server_netmask) ||
+    654                          0 > dhcpd_set_settings(dhcpd_settings->dhcpd_primary_dns, DHPCD_DEFAULT_PRIMARY_DNS, &dhcpd_primary_dns) ||
+    655                          0 > dhcpd_set_settings(dhcpd_settings->dhcpd_secondary_dns, DHPCD_DEFAULT_SECONDARY_DNS, &dhcpd_secondary_dns) ||
+    656                          0 > dhcpd_set_settings(dhcpd_settings->dhcpd_ip_pool_start, DHPCD_DEFAULT_IP_POOL_START, &dhcpd_ip_pool_start) ||
+    657                          0 > dhcpd_set_settings(dhcpd_settings->dhcpd_ip_pool_end, DHPCD_DEFAULT_IP_POOL_END, &dhcpd_ip_pool_end)) {
+    658                          dhcpd_memzero_settings();
+    659                          return -2;
+    660                      }
+    661          
+    662                      if (!ip4_addr_netmask_valid(dhcpd_server_netmask.addr) ||
+    663                          !ip4_addr_netcmp(&dhcpd_server_gw, &dhcpd_ip_pool_start, &dhcpd_server_netmask) ||
+    664                          !ip4_addr_netcmp(&dhcpd_ip_pool_start, &dhcpd_ip_pool_end, &dhcpd_server_netmask) ||
+    665                          0 < dhcpd_ip_cmp(&dhcpd_ip_pool_start, &dhcpd_ip_pool_end)) {
+    666          
+    667                          dhcpd_log_ip("Server IP", &dhcpd_server_address);
+    668                          dhcpd_log_ip("Netmask", &dhcpd_server_netmask);
+    669                          dhcpd_log_ip("Gateway", &dhcpd_server_gw);
+    670                          dhcpd_log_ip("DNS1", &dhcpd_primary_dns);
+    671                          dhcpd_log_ip("DNS2", &dhcpd_secondary_dns);
+    672                          dhcpd_log_ip("Start IP", &dhcpd_ip_pool_start);
+    673                          dhcpd_log_ip("End IP", &dhcpd_ip_pool_end);
+    674          
+    675                          dhcpd_memzero_settings();
+    676                          DHCPD_PRINTF("Something wrong with settings.");
+    677                          return -4;
+    678                      }
+    679                  } else {
+    680                      if (0 > dhcpd_set_settings(NULL, DHPCD_DEFAULT_SERVER_IP, &dhcpd_server_address) ||
+    681                          0 > dhcpd_set_settings(NULL, DHPCD_DEFAULT_GATEWAY, &dhcpd_server_gw) ||
+    682                          0 > dhcpd_set_settings(NULL, DHPCD_DEFAULT_NETMASK, &dhcpd_server_netmask) ||
+    683                          0 > dhcpd_set_settings(NULL, DHPCD_DEFAULT_PRIMARY_DNS, &dhcpd_primary_dns) ||
+    684                          0 > dhcpd_set_settings(NULL, DHPCD_DEFAULT_SECONDARY_DNS, &dhcpd_secondary_dns) ||
+    685                          0 > dhcpd_set_settings(NULL, DHPCD_DEFAULT_IP_POOL_START, &dhcpd_ip_pool_start) ||
+    686                          0 > dhcpd_set_settings(NULL, DHPCD_DEFAULT_IP_POOL_END, &dhcpd_ip_pool_end)) {
+    687                          dhcpd_memzero_settings();
+    688                          return -3;
+    689                      }
+    690                  }
+    691          
+    692                  memset(&dhcpd_last_alloc_ip, 0, sizeof(dhcpd_last_alloc_ip));
+    693          
+    694                  if (dhcpd_alloc_infos_in_use || dhcpd_alloc_infos_unuse) {
+    695                      dhcpd_release_alloc_info_lists();
+    696                  }
+    697          
+    698                  xTaskCreate(dhcpd_prepare, DHCPD_TASK_NAME, DHCPD_TASK_STACKSIZE/sizeof(portSTACK_TYPE), NULL, TASK_PRIORITY_NORMAL, &dhcpd_task_handle);
+    699              } else {
+    700                  DHCPD_PRINTF("DHCPD no need to start.");
+    701              }
+    702          
+    703              dhcpd_mutex_unlock();
+    704              return 0;
+    705          }
+    706          
+    707          
+    708          static int32_t dhcpd_wifi_api_rx_event_handler(wifi_event_t evt,
+    709                                                         uint8_t      *payload,
+    710                                                         uint32_t     len)
+    711          {
+    712              dhcpd_alloc_info_t *alloc_info = NULL, *pre_alloc_info = NULL;
+    713          
+    714              /* search for existing */
+    715              DHCPD_PRINTF("wifi notifi");
+    716              DHCPD_PRINTF("paylodlen=%d evt=%d,(%02X:%02X:%02X:%02X:%02X:%02X)", (int)len, evt, payload[0], payload[1], payload[2], payload[3], payload[4], payload[5]);
+    717              if (evt != WIFI_EVENT_IOT_DISCONNECTED || dhcpd_running != 1) {
+    718                  return 0;
+    719              }
+    720          
+    721              dhcpd_mutex_lock();
+    722          
+    723              alloc_info = dhcpd_find_alloc_info_by_mac(payload, dhcpd_alloc_infos_in_use, &pre_alloc_info);
+    724              if (alloc_info) {
+    725                  //dhcpd_release_alloc_info(alloc_info);
+    726                  dhcpd_remove_alloc_info_from_list(alloc_info, pre_alloc_info, &dhcpd_alloc_infos_in_use);
+    727          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    728                  dhcpd_insert_alloc_info_into_list(alloc_info, &dhcpd_alloc_infos_unuse);
+    729          #else
+    730                  vPortFree(alloc_info);
+    731          #endif
+    732          
+    733                  dhcpd_print_ip_allocation_status();
+    734                  dhcpd_mutex_unlock();
+    735                  return 1;
+    736              }
+    737          
+    738              dhcpd_mutex_unlock();
+    739              return 0;
+    740          }
+    741          
+    742          
+    743          /* Return: 1 in in-use list
+    744            *            2 in unuse list
+    745            *            0 other
+    746            */
+    747          static int dhcpd_lease_address(unsigned char mac[], unsigned char ip[])
+    748          {
+    749              dhcpd_alloc_info_t *alloc_info = NULL, *pre_alloc_info = NULL;
+    750          
+    751              alloc_info = dhcpd_find_alloc_info_by_mac(mac, dhcpd_alloc_infos_in_use, NULL);
+    752              if (alloc_info) {
+    753                  DHCPD_PRINTF("Assigned, Old Client");
+    754                  /* Both are big endian. */
+    755                  memcpy(ip, &(alloc_info->ip_addr.addr), 4);
+    756                  dhcpd_print_ip_allocation_status();
+    757                  return 1;
+    758              } else {
+    759          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    760                  alloc_info = dhcpd_find_alloc_info_by_mac(mac, dhcpd_alloc_infos_unuse, &pre_alloc_info);
+    761                  if (alloc_info) {
+    762                      DHCPD_PRINTF("Unassigned, Old Client");
+    763                      dhcpd_remove_alloc_info_from_list(alloc_info, pre_alloc_info, &dhcpd_alloc_infos_unuse);
+    764                      dhcpd_insert_alloc_info_into_list(alloc_info, &dhcpd_alloc_infos_in_use);
+    765                      memcpy(ip, &(alloc_info->ip_addr.addr), 4);
+    766                      dhcpd_print_ip_allocation_status();
+    767                      return 2;
+    768                  } else
+    769          #endif
+    770                  {
+    771                      DHCPD_PRINTF("Unassigned, New Client");
+    772                      alloc_info = (dhcpd_alloc_info_t *)pvPortMalloc(sizeof(dhcpd_alloc_info_t));
+    773                      if (!alloc_info) {
+    774          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    775                          /* Assign the oldest unuse node to the new client. */
+    776                          alloc_info = dhcpd_alloc_infos_unuse;
+    777                          dhcpd_remove_alloc_info_from_list(alloc_info, NULL, &dhcpd_alloc_infos_unuse);
+    778                          DHCPD_PRINTF("Try to reuse oldest node in unuse list for new client when memory is not enough. 0x%x", (unsigned int)alloc_info);
+    779                          if (!alloc_info)
+    780          #endif
+    781                          {
+    782                              DHCPD_PRINTF("Not enough memory for new allocation.");
+    783                              return -1;
+    784                          }
+    785                      }
+    786          
+    787                      memset(alloc_info, 0, sizeof(dhcpd_alloc_info_t));
+    788          
+    789                      if (0 <= dhcpd_alloc_new_ip(&(alloc_info->ip_addr))) {
+    790                          memcpy(alloc_info->mac, mac, 6);
+    791                          memcpy(ip, &(alloc_info->ip_addr.addr), 4);
+    792                          memcpy(&dhcpd_last_alloc_ip.addr, &alloc_info->ip_addr.addr, 4);
+    793                          //dhcpd_insert_alloc_info(alloc_info);
+    794                          dhcpd_insert_alloc_info_into_list(alloc_info, &dhcpd_alloc_infos_in_use);
+    795                          dhcpd_print_ip_allocation_status();
+    796                          return 0;
+    797                      } else {
+    798                          // dhcpd_release_alloc_info(alloc_info);
+    799                          vPortFree(alloc_info);
+    800                          return -1;
+    801                      }
+    802                  }
+    803              }
+    804          
+    805          }
+    806          
+    807          static int dhcpd_send_response(int type)
+    808          {
+    809              struct sockaddr_in dest_addr;
+    810              int ret = 0;
+    811              ip4_addr_t temp_addr;
+    812          
+    813              dest_addr.sin_port   = htons(DHCPD_CLIENT_PORT);
+    814              dest_addr.sin_family = AF_INET;
+    815              temp_addr.addr = INADDR_BROADCAST;
+    816              if (type == DHCPD_ACK &&
+    817                  dhcpd_msg->yiaddr[0]==dhcpd_msg->ciaddr[0] &&
+    818                  dhcpd_msg->yiaddr[1]==dhcpd_msg->ciaddr[1] &&
+    819                  dhcpd_msg->yiaddr[2]==dhcpd_msg->ciaddr[2] &&
+    820                  dhcpd_msg->yiaddr[3]==dhcpd_msg->ciaddr[3]) {
+    821                  IP4_ADDR(&temp_addr, dhcpd_msg->yiaddr[0], dhcpd_msg->yiaddr[1], dhcpd_msg->yiaddr[2], dhcpd_msg->yiaddr[3]);
+    822                  DHCPD_PRINTF("send to dest ip");
+    823              }
+    824              DHCPD_PRINTF("sendto [%d][0x%08x]", sizeof(dhcpd_msg->ciaddr), (unsigned int)temp_addr.addr);
+    825              dest_addr.sin_addr.s_addr = temp_addr.addr;
+    826              //dhcpd_hex_dump("-----dhcpd_msg ready-----\n", (unsigned char *)dhcpd_msg, sizeof(dhcpd_message_t));
+    827              ret = sendto(dhcpd_socket, (char *)dhcpd_msg, sizeof(dhcpd_message_t), 0 , (struct sockaddr *)&dest_addr, sizeof(dest_addr));
+    828              DHCPD_PRINTF("sendto ret=[%d] type[%d] [%02X:%02X:%02X:%02X:%02X:%02X][%d.%d.%d.%d]", ret, type,
+    829                           dhcpd_msg->chaddr[0], dhcpd_msg->chaddr[1], dhcpd_msg->chaddr[2],
+    830                           dhcpd_msg->chaddr[3], dhcpd_msg->chaddr[4], dhcpd_msg->chaddr[5],
+    831                           dhcpd_msg->yiaddr[0], dhcpd_msg->yiaddr[1], dhcpd_msg->yiaddr[2], dhcpd_msg->yiaddr[3]);
+    832          
+    833              return ret;
+    834          }
+    835          
+    836          static int dhcpd_opt_tlv_int(char *dest, char type, char v1, char v2, char v3, char v4)
+    837          {
+    838              *dest++ = type;
+    839              *dest++ = 4;
+    840              *dest++ = v1;
+    841              *dest++ = v2;
+    842              *dest++ = v3;
+    843              *dest++ = v4;
+    844              DHCPD_PRINTF("opt type[%d]:%d.%d.%d.%d", type, v1, v2, v3, v4);
+    845          
+    846              return 6;
+    847          }
+    848          
+    849          static int dhcpd_do_discover(struct sockaddr *source_addr)
+    850          {
+    851              int ret = 0;
+    852              struct ip4_addr ip_addr;
+    853              char *option_ptr;
+    854              unsigned int lease_time = DHCPD_DEFAULT_LEASE_TIME;
+    855              unsigned char *lease_ptr = (unsigned char *)&lease_time;
+    856          
+    857              ip_addr.addr = *((unsigned int *) &dhcpd_server_address);
+    858          
+    859              if (dhcpd_lease_address(dhcpd_msg->chaddr , dhcpd_msg->yiaddr) != -1) {
+    860                  DHCPD_PRINTF("do discover:%d.%d.%d.%d", dhcpd_msg->yiaddr[0], dhcpd_msg->yiaddr[1], dhcpd_msg->yiaddr[2], dhcpd_msg->yiaddr[3]);
+    861          
+    862                  dhcpd_msg->op = DHCPD_OP_REPLY;
+    863                  dhcpd_msg->secs = 0;
+    864                  dhcpd_msg->flags = 0;
+    865          
+    866                  memset(dhcpd_msg->options, 0, sizeof(dhcpd_msg->options));
+    867                  memcpy(dhcpd_msg->magic, dhcpd_opt_magic_tmp, 4);
+    868                  //dhcpd_hex_dump("-----1 dhcpd_msg--------\n", (unsigned char *)dhcpd_msg, sizeof(dhcpd_message_t));
+    869                  // printf("\n\n");
+    870          
+    871                  option_ptr = (char *)dhcpd_msg->options;
+    872                  memcpy(option_ptr, dhcpd_opt_offer_tmp, sizeof(dhcpd_opt_offer_tmp));
+    873                  option_ptr += sizeof(dhcpd_opt_offer_tmp);
+    874                  //dhcpd_hex_dump("-----2 dhcpd_msg--------\n", (unsigned char *)dhcpd_msg, sizeof(dhcpd_message_t));
+    875                  //printf("\n\n");
+    876                  //dhcpd_hex_dump("dhcpd_opt_subnet_tmp", (unsigned char *)&dhcpd_opt_subnet_tmp, sizeof(dhcpd_opt_subnet_tmp));
+    877                  memcpy(option_ptr, dhcpd_opt_subnet_tmp, sizeof(dhcpd_opt_subnet_tmp));
+    878                  option_ptr += sizeof(dhcpd_opt_subnet_tmp);
+    879                  //dhcpd_hex_dump("-----3 dhcpd_msg--------\n", (unsigned char *)dhcpd_msg, sizeof(dhcpd_message_t));
+    880                  //printf("\n\n");
+    881          
+    882                  option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_LEASE_TIME, *(lease_ptr + 3), *(lease_ptr + 2), *(lease_ptr + 1), *(lease_ptr));
+    883                  option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_SERVER_IDENTIFIER, ip4_addr1(&ip_addr), ip4_addr2(&ip_addr), ip4_addr3(&ip_addr), ip4_addr4(&ip_addr));
+    884          
+    885                  *option_ptr++ = DHCPD_OPT_END;
+    886                  //dhcpd_hex_dump("-----4 dhcpd_msg--------\n", (unsigned char *)dhcpd_msg, sizeof(dhcpd_message_t));
+    887                  //printf("\n\n");
+    888          
+    889                  ret = dhcpd_send_response(DHCPD_OFFER);
+    890          
+    891              } else {
+    892                  DHCPD_WARN("Can't handle discover, pool full");
+    893              }
+    894          
+    895              return ret;
+    896          }
+    897          
+    898          
+    899          static int dhcpd_do_request(struct sockaddr *source_addr)
+    900          {
+    901              int ret = 0, request_ip_opt_exist = 0;
+    902              struct ip4_addr ip_addr;
+    903              char *option_ptr;
+    904              unsigned int lease_time = DHCPD_DEFAULT_LEASE_TIME;
+    905              unsigned char *lease_ptr = (unsigned char *)&lease_time;
+    906              unsigned int t1_time = DHCPD_DEFAULT_LEASE_TIME * 0.5;
+    907              unsigned char *t1_ptr = (unsigned char *)&t1_time;
+    908              unsigned int t2_time = DHCPD_DEFAULT_LEASE_TIME * 0.875;
+    909              unsigned char *t2_ptr = (unsigned char *)&t2_time;
+    910              unsigned char lease_ip[4];
+    911              dhcpd_alloc_info_t *alloc_info = NULL, *pre_alloc_info = NULL;
+    912          
+    913              ip_addr.addr = *((unsigned int *) &dhcpd_server_address);
+    914              dhcpd_send_ack = 1;
+    915          
+    916              ret = dhcpd_lease_address(dhcpd_msg->chaddr, lease_ip);
+    917              if (ret != -1) {
+    918                  DHCPD_PRINTF("lease_ip:%d.%d.%d.%d", lease_ip[0], lease_ip[1], lease_ip[2], lease_ip[3]);
+    919                  dhcpd_msg->op = DHCPD_OP_REPLY;
+    920                  dhcpd_msg->secs = 0;
+    921                  dhcpd_msg->flags = 0;
+    922                  option_ptr = (char *)dhcpd_msg->options;
+    923          
+    924                  /* Handle Request special IP from Client */
+    925                  while (*option_ptr != DHCPD_OPT_END) {
+    926                      int len = option_ptr[1];
+    927                      //DHCPD_PRINTF("Request MSG option type:%d", *option_ptr);
+    928                      switch (*option_ptr) {
+    929                          case DHCPD_OPT_REQUESTED_IP:
+    930                              request_ip_opt_exist = 1;
+    931                              if (len == 4) {
+    932                                  DHCPD_PRINTF("Client req special IP");
+    933                                  memcpy(dhcpd_msg->yiaddr, option_ptr + 2, 4);
+    934                                  DHCPD_PRINTF("yiaddr:%d.%d.%d.%d", dhcpd_msg->yiaddr[0], dhcpd_msg->yiaddr[1], dhcpd_msg->yiaddr[2], dhcpd_msg->yiaddr[3]);
+    935                              }
+    936                              break;
+    937                          default:
+    938                              break;
+    939                      }
+    940                      option_ptr += (len + 2);
+    941                  }
+    942                  /* Check if it is the REQUEST to extend the lease time at T1 or T2 */
+    943                  if (1 == ret &&
+    944                      !request_ip_opt_exist &&
+    945                      (dhcpd_msg->ciaddr[0] || dhcpd_msg->ciaddr[1] ||
+    946                       dhcpd_msg->ciaddr[2] || dhcpd_msg->ciaddr[3])) {
+    947                      /* This is the REQUEST to extend the lease time */
+    948                      DHCPD_PRINTF("This is the REQUEST to extend the lease time.\r\n");
+    949                  } else {
+    950                      /* Requested IP is not the same as the lease_ip */
+    951                      if (memcmp(dhcpd_msg->yiaddr, lease_ip, 4) != 0) {
+    952                          // Client receive NAK, and will restart dhcp from Discover.
+    953                          DHCPD_PRINTF("Can't handle request, reply NAK.");
+    954                          dhcpd_send_ack  = 0;
+    955                          memset(dhcpd_msg->yiaddr, 0, sizeof(dhcpd_msg->yiaddr));
+    956          
+    957                          memcpy(dhcpd_msg->magic, dhcpd_opt_magic_tmp, 4);
+    958                          memset(dhcpd_msg->options, 0, sizeof(dhcpd_msg->options));
+    959          
+    960                          option_ptr = (char *)dhcpd_msg->options;
+    961                          memcpy(option_ptr, dhcpd_opt_nak_tmp, sizeof(dhcpd_opt_nak_tmp));
+    962                          option_ptr += sizeof(dhcpd_opt_nak_tmp);
+    963                          memcpy(option_ptr, dhcpd_opt_msg_tmp, sizeof(dhcpd_opt_msg_tmp));
+    964                          option_ptr += sizeof(dhcpd_opt_msg_tmp);
+    965          
+    966                          option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_SERVER_IDENTIFIER, ip4_addr1(&ip_addr), ip4_addr2(&ip_addr), ip4_addr3(&ip_addr), ip4_addr4(&ip_addr));
+    967          
+    968                          /* Add end mark */
+    969                          *option_ptr++ = DHCPD_OPT_END;
+    970          
+    971                          /* Release IP , due to NAK */
+    972                          alloc_info = dhcpd_find_alloc_info_by_mac(dhcpd_msg->chaddr,
+    973                                                                    dhcpd_alloc_infos_in_use,
+    974                                                                    &pre_alloc_info);
+    975                          if (alloc_info) {
+    976                              //dhcpd_release_alloc_info(alloc_info);
+    977                              dhcpd_remove_alloc_info_from_list(alloc_info, pre_alloc_info, &dhcpd_alloc_infos_in_use);
+    978          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+    979                              if (2 == ret) {
+    980                                  /* alloc_info was in unuse list. */
+    981                                  dhcpd_insert_alloc_info_into_list(alloc_info, &dhcpd_alloc_infos_unuse);
+    982                              } else
+    983          #endif
+    984                              {
+    985                                  vPortFree(alloc_info);
+    986                              }
+    987                          }
+    988          
+    989                          ret = dhcpd_send_response(DHCPD_NAK);
+    990                      }
+    991                  }
+    992          
+    993                  if (dhcpd_send_ack == 1) {
+    994                      DHCPD_PRINTF("Accept request, reply ACK.");
+    995          
+    996                      memcpy(dhcpd_msg->yiaddr, lease_ip, 4);
+    997                      memcpy(dhcpd_msg->magic, dhcpd_opt_magic_tmp, 4);
+    998                      memset(dhcpd_msg->options, 0, sizeof(dhcpd_msg->options));
+    999                      option_ptr = (char *)dhcpd_msg->options;
+   1000          
+   1001                      // ACK message type
+   1002                      *option_ptr++ = DHCPD_OPT_MESSAGE_TYPE;
+   1003                      *option_ptr++ = 1;
+   1004                      *option_ptr++ = 5;
+   1005          
+   1006                      // renewal time
+   1007                      option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_T1, *(t1_ptr + 3), *(t1_ptr + 2), *(t1_ptr + 1), *(t1_ptr));//0, 0, 0x62, 0x70);
+   1008          
+   1009                      // rebinding time
+   1010                      option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_T2, *(t2_ptr + 3), *(t2_ptr + 2), *(t2_ptr + 1), *(t2_ptr));//0, 0, 0x62, 0x70);
+   1011          
+   1012                      // lease time
+   1013                      option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_LEASE_TIME, *(lease_ptr + 3), *(lease_ptr + 2), *(lease_ptr + 1), *(lease_ptr));
+   1014          
+   1015                      // dhcp server identifier
+   1016                      option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_SERVER_IDENTIFIER, ip4_addr1(&ip_addr), ip4_addr2(&ip_addr), ip4_addr3(&ip_addr), ip4_addr4(&ip_addr));
+   1017          
+   1018                      // subnet mask
+   1019                      ip_addr.addr = *((unsigned int *) &dhcpd_server_netmask);
+   1020                      option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_NETMASK, ip4_addr1(&ip_addr), ip4_addr2(&ip_addr), ip4_addr3(&ip_addr), ip4_addr4(&ip_addr));
+   1021          
+   1022                      // broadcast address
+   1023                      option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_BROADCAST_ADDR, 0xff, 0xff, 0xff, 0xff);
+   1024          
+   1025          #if 0
+   1026                      // domain name
+   1027                      *option_ptr++ = DHCPD_OPT_DOMAINNAME;
+   1028                      int len = sprintf((char *)option_ptr + 1, DHCPD_DOMAIN_NAME);
+   1029                      *option_ptr = (len + 1);
+   1030                      option_ptr += (len + 2);
+   1031          #endif
+   1032          
+   1033                      // router(gateway)
+   1034                      ip_addr.addr = *((unsigned int *) &dhcpd_server_gw);
+   1035                      option_ptr += dhcpd_opt_tlv_int(option_ptr, DHCPD_OPT_ROUTER, ip4_addr1(&ip_addr), ip4_addr2(&ip_addr), ip4_addr3(&ip_addr), ip4_addr4(&ip_addr));
+   1036          
+   1037                      // domain name server (DNS)
+   1038                      ip_addr.addr = *((unsigned int *) &dhcpd_primary_dns);
+   1039                      option_ptr += dhcpd_opt_dns_tlv_int(option_ptr, &dhcpd_primary_dns, &dhcpd_secondary_dns);
+   1040          
+   1041                      // end mark
+   1042                      *option_ptr++ = DHCPD_OPT_END;
+   1043          
+   1044                      ret = dhcpd_send_response(DHCPD_ACK);
+   1045                  }
+   1046              } else {
+   1047                  DHCPD_WARN("Can't handle request, pool full");
+   1048              }
+   1049          
+   1050              return ret;
+   1051          }
+   1052          
+   1053          
+   1054          static int dhcpd_task_loop(void *arg)
+   1055          {
+   1056              int ret = -1;
+   1057              struct sockaddr_in addr;
+   1058              dhcpd_alloc_info_t *alloc_info = NULL, *pre_alloc_info = NULL;
+   1059          
+   1060              DHCPD_PRINTF("dhcpd task entry:%d", dhcpd_running);
+   1061          
+   1062              while (dhcpd_running == 1) {
+   1063          
+   1064                  DHCPD_PRINTF("Wait for UDP");
+   1065          
+   1066                  ret = recvfrom(dhcpd_socket, (char *)dhcpd_msg, sizeof(*dhcpd_msg),
+   1067                                  0 , (struct sockaddr *)&addr, 0);
+   1068                  DHCPD_PRINTF("recvfrom=[%d]", ret);
+   1069          
+   1070                  if (ret > 0) {
+   1071                      switch (dhcpd_msg->options[2]) {
+   1072                          case DHCPD_DISCOVER:
+   1073                              DHCPD_PRINTF("Handle DISCOVER");
+   1074                              ret = dhcpd_do_discover((struct sockaddr *)&addr);
+   1075                              break;
+   1076          
+   1077                          case DHCPD_REQUEST:
+   1078                              DHCPD_PRINTF("Handle REQUEST");
+   1079                              ret = dhcpd_do_request((struct sockaddr *)&addr);
+   1080                              break;
+   1081          
+   1082                          case DHCPD_RELEASE:
+   1083                              DHCPD_PRINTF("DHCPD RELEASE");
+   1084                              alloc_info = dhcpd_find_alloc_info_by_mac(dhcpd_msg->chaddr,
+   1085                                                                        dhcpd_alloc_infos_in_use,
+   1086                                                                        &pre_alloc_info);
+   1087                              if (alloc_info) {
+   1088                                  // dhcpd_release_alloc_info(alloc_info);
+   1089                                  ret = dhcpd_remove_alloc_info_from_list(alloc_info, pre_alloc_info, &dhcpd_alloc_infos_in_use);
+   1090          #ifdef DHCPD_SAVE_CLIENT_CONFIG_ON_LINE
+   1091                                  ret = dhcpd_insert_alloc_info_into_list(alloc_info, &dhcpd_alloc_infos_unuse);
+   1092          #else
+   1093                                  vPortFree(alloc_info);
+   1094          #endif
+   1095                              }
+   1096                              break;
+   1097          
+   1098                          case DHCPD_DECLINE:
+   1099                          default:
+   1100                              DHCPD_PRINTF("DECLINE Received. ignore message [%d]", dhcpd_msg->options[2]);
+   1101                              break;
+   1102                      }
+   1103                  }
+   1104              }
+   1105              return ret;
+   1106          }
+   1107          
+   1108          
+   1109          static void dhcpd_prepare(void *param)
+   1110          {
+   1111              struct sockaddr_in dhcpd_addr = {0};
+   1112          
+   1113              dhcpd_addr.sin_family      = AF_INET;
+   1114              dhcpd_addr.sin_port        = htons(DHCPD_SERVER_PORT);
+   1115              dhcpd_addr.sin_addr.s_addr = INADDR_ANY;
+   1116              if (dhcpd_socket != -1) {
+   1117                  DHCPD_ERR("socket exist");
+   1118                  dhcpd_task_handle = 0;
+   1119                  vTaskDelete(NULL);
+   1120              }
+   1121          
+   1122              dhcpd_socket = socket(AF_INET, SOCK_DGRAM, 0);
+   1123              if (dhcpd_socket < 0) {
+   1124                  DHCPD_ERR("socket error");
+   1125                  dhcpd_task_handle = 0;
+   1126                  vTaskDelete(NULL);
+   1127              }
+   1128          
+   1129              if (0 > bind(dhcpd_socket, (struct sockaddr *)&dhcpd_addr,  sizeof (dhcpd_addr))) {
+   1130                  DHCPD_ERR("socket error");
+   1131                  close(dhcpd_socket);
+   1132                  dhcpd_socket = -1;
+   1133                  dhcpd_task_handle = 0;
+   1134                  vTaskDelete(NULL);
+   1135              }
+   1136          
+   1137              if (dhcpd_running == 0) {
+   1138                  dhcpd_running = 1;
+   1139          
+   1140                  if (dhcpd_msg) {
+   1141                      memset(dhcpd_msg, 0, sizeof(dhcpd_message_t));
+   1142                      DHCPD_PRINTF("DHCPD Warning: dhcpd_msg has been allocated.\n");
+   1143                  } else {
+   1144                      dhcpd_msg = pvPortMalloc(sizeof(dhcpd_message_t));
+   1145          
+   1146                      if (NULL == dhcpd_msg) {
+   1147                          DHCPD_PRINTF("DHCPD Err: Not enough memory for dhcpd_msg->\n");
+   1148          
+   1149                          dhcpd_running = 0;
+   1150          
+   1151                          close(dhcpd_socket);
+   1152                          dhcpd_socket = -1;
+   1153          
+   1154                          dhcpd_task_handle = 0;
+   1155                          vTaskDelete(NULL);
+   1156                      }
+   1157          
+   1158                      memset(dhcpd_msg, 0, sizeof(dhcpd_message_t));
+   1159                  }
+   1160          
+   1161                  wifi_connection_register_event_notifier(WIFI_EVENT_IOT_DISCONNECTED,
+   1162                                                          dhcpd_wifi_api_rx_event_handler);
+   1163                  DHCPD_PRINTF("DHCPD started");
+   1164          
+   1165                  dhcpd_log_ip("Server IP", &dhcpd_server_address);
+   1166                  dhcpd_log_ip("Netmask", &dhcpd_server_netmask);
+   1167                  dhcpd_log_ip("Gateway", &dhcpd_server_gw);
+   1168                  dhcpd_log_ip("DNS1", &dhcpd_primary_dns);
+   1169                  dhcpd_log_ip("DNS2", &dhcpd_secondary_dns);
+   1170                  dhcpd_log_ip("Start IP", &dhcpd_ip_pool_start);
+   1171                  dhcpd_log_ip("End IP", &dhcpd_ip_pool_end);
+   1172          
+   1173                  dhcpd_task_loop(NULL);
+   1174          
+   1175                  close(dhcpd_socket);
+   1176                  dhcpd_socket = -1;
+   1177          
+   1178                  if (dhcpd_msg) {
+   1179                      vPortFree(dhcpd_msg);
+   1180                      dhcpd_msg = NULL;
+   1181                  }
+   1182          
+   1183                  wifi_connection_unregister_event_notifier(WIFI_EVENT_IOT_DISCONNECTED, dhcpd_wifi_api_rx_event_handler);
+   1184          
+   1185                  dhcpd_release_alloc_info_lists();
+   1186              }
+   1187          
+   1188              dhcpd_task_handle = 0;
+   1189              vTaskDelete(NULL);
+   1190          }
+   1191          
+   1192          void dhcpd_stop(void)
+   1193          {
+   1194              DHCPD_PRINTF("dhcpd_stop [%d][%d]", (int)dhcpd_task_handle, dhcpd_running);
+   1195              dhcpd_mutex_lock();
+   1196              if (dhcpd_running == 1) {
+   1197                  dhcpd_running = 0;
+   1198                  vTaskDelete(dhcpd_task_handle);
+   1199                  dhcpd_task_handle=0;
+   1200                  wifi_connection_unregister_event_notifier(WIFI_EVENT_IOT_DISCONNECTED, dhcpd_wifi_api_rx_event_handler);
+   1201                  close(dhcpd_socket);
+   1202                  dhcpd_socket = -1;
+   1203          
+   1204                  dhcpd_release_alloc_info_lists();
+   1205          
+   1206                  if (dhcpd_msg) {
+   1207                      vPortFree(dhcpd_msg);
+   1208                      dhcpd_msg = NULL;
+   1209                  }
+   1210          
+   1211                  DHCPD_PRINTF("DHCPD stopped");
+   1212              } else {
+   1213                  DHCPD_PRINTF("DHCPD no need to stop.");
+   1214              }
+   1215              dhcpd_mutex_unlock();
+   1216          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   dhcpd_alloc_new_ip
+        40   -- Indirect call
+        40   -> __aeabi_memcpy
+        40   -> __aeabi_memcpy4
+        40   -> dhcpd_ip_cmp
+        40   -> dhcpd_is_ip_allocable
+        40   -> dhcpd_log_ip
+        40   -> dhcpd_remove_alloc_info_from_list
+        40   -> lwip_htonl
+        40   -> lwip_ntohl
+        40   -> vPortFree
+      48   dhcpd_do_discover
+        48   -- Indirect call
+        48   -> __aeabi_memcpy
+        48   -> __aeabi_memcpy4
+        48   -> __aeabi_memset4
+        48   -> dhcpd_lease_address
+        48   -> dhcpd_opt_tlv_int
+        48   -> dhcpd_send_response
+      80   dhcpd_do_request
+        80   -- Indirect call
+        80   -> __aeabi_memcpy
+        80   -> __aeabi_memcpy4
+        80   -> __aeabi_memset4
+        80   -> dhcpd_find_alloc_info_by_mac
+        80   -> dhcpd_insert_alloc_info_into_list
+        80   -> dhcpd_lease_address
+        80   -> dhcpd_opt_dns_tlv_int
+        80   -> dhcpd_opt_tlv_int
+        80   -> dhcpd_remove_alloc_info_from_list
+        80   -> dhcpd_send_response
+        80   -> memcmp
+        80   -> vPortFree
+      40   dhcpd_find_alloc_info_by_mac
+        40   -- Indirect call
+        40   -> memcmp
+      24   dhcpd_insert_alloc_info_into_list
+        24   -- Indirect call
+       4   dhcpd_ip_cmp
+      16   dhcpd_is_ip_allocable
+        16   -> dhcpd_ip_cmp
+      40   dhcpd_lease_address
+        40   -- Indirect call
+        40   -> __aeabi_memcpy
+        40   -> __aeabi_memset4
+        40   -> dhcpd_alloc_new_ip
+        40   -> dhcpd_find_alloc_info_by_mac
+        40   -> dhcpd_insert_alloc_info_into_list
+        40   -> dhcpd_print_ip_allocation_status
+        40   -> dhcpd_remove_alloc_info_from_list
+        40   -> pvPortMalloc
+        40   -> vPortFree
+      24   dhcpd_log_ip
+        24   -- Indirect call
+        24   -> ip4addr_ntoa
+       8   dhcpd_memzero_settings
+         0   -> __aeabi_memset
+         8   -> __aeabi_memset
+       8   dhcpd_mutex_lock
+         8   -> xQueueGenericReceive
+      16   dhcpd_mutex_new
+        16   -- Indirect call
+        16   -> xQueueCreateMutex
+       0   dhcpd_mutex_unlock
+         0   -> xQueueGenericSend
+      56   dhcpd_opt_dns_tlv_int
+        56   -- Indirect call
+      40   dhcpd_opt_tlv_int
+        40   -- Indirect call
+      40   dhcpd_prepare
+        40   -- Indirect call
+        40   -> __aeabi_memclr4
+        40   -> __aeabi_memset4
+        40   -> dhcpd_log_ip
+        40   -> dhcpd_release_alloc_info_lists
+        40   -> dhcpd_task_loop
+        40   -> lwip_bind
+        40   -> lwip_close
+        40   -> lwip_htons
+        40   -> lwip_socket
+        40   -> pvPortMalloc
+        40   -> vPortFree
+        40   -> vTaskDelete
+        40   -> wifi_connection_register_event_notifier
+        40   -> wifi_connection_unregister_event_notifier
+      64   dhcpd_print_ip_allocation_status
+        64   -- Indirect call
+      16   dhcpd_release_alloc_info_lists
+        16   -> vPortFree
+      16   dhcpd_remove_alloc_info_from_list
+        16   -- Indirect call
+      88   dhcpd_send_response
+        88   -- Indirect call
+        88   -> lwip_htons
+        88   -> lwip_sendto
+      16   dhcpd_set_settings
+        16   -- Indirect call
+        16   -> ip4addr_aton
+      40   dhcpd_start
+        40   -- Indirect call
+        40   -> __aeabi_memset
+        40   -> dhcpd_ip_cmp
+        40   -> dhcpd_log_ip
+        40   -> dhcpd_memzero_settings
+        40   -> dhcpd_mutex_lock
+        40   -> dhcpd_mutex_new
+        40   -> dhcpd_mutex_unlock
+        40   -> dhcpd_release_alloc_info_lists
+        40   -> dhcpd_set_settings
+        40   -> ip4_addr_netmask_valid
+        40   -> xTaskGenericCreate
+      32   dhcpd_stop
+        32   -- Indirect call
+        32   -> dhcpd_mutex_lock
+         0   -> dhcpd_mutex_unlock
+        32   -> dhcpd_release_alloc_info_lists
+        32   -> lwip_close
+        32   -> vPortFree
+        32   -> vTaskDelete
+        32   -> wifi_connection_unregister_event_notifier
+      48   dhcpd_task_loop
+        48   -- Indirect call
+        48   -> dhcpd_do_discover
+        48   -> dhcpd_do_request
+        48   -> dhcpd_find_alloc_info_by_mac
+        48   -> dhcpd_insert_alloc_info_into_list
+        48   -> dhcpd_remove_alloc_info_from_list
+        48   -> lwip_recvfrom
+      64   dhcpd_wifi_api_rx_event_handler
+        64   -- Indirect call
+        64   -> dhcpd_find_alloc_info_by_mac
+        64   -> dhcpd_insert_alloc_info_into_list
+        64   -> dhcpd_mutex_lock
+        64   -> dhcpd_mutex_unlock
+        64   -> dhcpd_print_ip_allocation_status
+        64   -> dhcpd_remove_alloc_info_from_list
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable118
+       4  ??DataTable125
+       4  ??DataTable125_1
+       4  ??DataTable125_2
+       4  ??DataTable126
+       4  ??DataTable126_1
+       4  ??DataTable126_2
+       4  ??DataTable126_3
+       4  ??DataTable126_4
+       4  ??DataTable126_5
+       4  ??DataTable126_6
+       4  ??DataTable126_7
+       4  ??DataTable126_8
+       8  ?_0
+      48  ?_1
+      20  ?_10
+      12  ?_11
+      28  ?_12
+      36  ?_13
+      28  ?_14
+       8  ?_15
+      24  ?_16
+      32  ?_17
+      32  ?_18
+      84  ?_19
+      24  ?_2
+      44  ?_20
+      28  ?_21
+      28  ?_22
+      24  ?_23
+      16  ?_24
+      12  ?_25
+      16  ?_26
+       8  ?_27
+       8  ?_28
+      12  ?_29
+       8  ?_3
+      12  ?_30
+      12  ?_31
+       8  ?_32
+       8  ?_33
+       8  ?_34
+       8  ?_35
+      12  ?_36
+       8  ?_37
+      32  ?_38
+      24  ?_39
+      16  ?_4
+      12  ?_40
+      52  ?_41
+      24  ?_42
+      24  ?_43
+      24  ?_44
+      88  ?_45
+      40  ?_46
+      16  ?_47
+      20  ?_48
+      72  ?_49
+      12  ?_5
+      28  ?_50
+      24  ?_51
+      36  ?_52
+      24  ?_53
+      24  ?_54
+      20  ?_55
+      48  ?_56
+      36  ?_57
+      28  ?_58
+      32  ?_59
+      12  ?_6
+      20  ?_60
+      16  ?_61
+      16  ?_62
+      16  ?_63
+      16  ?_64
+      16  ?_65
+      40  ?_66
+      16  ?_67
+      16  ?_68
+      16  ?_69
+      16  ?_7
+      48  ?_70
+      48  ?_71
+      16  ?_72
+      20  ?_73
+      16  ?_74
+      24  ?_75
+      48  ?_8
+      48  ?_9
+     300  dhcpd_alloc_new_ip
+     250  dhcpd_do_discover
+     880  dhcpd_do_request
+     168  dhcpd_find_alloc_info_by_mac
+     104  dhcpd_insert_alloc_info_into_list
+      56  dhcpd_ip_cmp
+     156  dhcpd_is_ip_allocable
+     342  dhcpd_lease_address
+      46  dhcpd_log_ip
+      94  dhcpd_memzero_settings
+      26  dhcpd_mutex_lock
+      50  dhcpd_mutex_new
+      16  dhcpd_mutex_unlock
+       4  dhcpd_opt_ack_tmp
+     172  dhcpd_opt_dns_tlv_int
+       1  dhcpd_opt_end_tmp
+       4  dhcpd_opt_magic_tmp
+      16  dhcpd_opt_msg_tmp
+       4  dhcpd_opt_nak_tmp
+       4  dhcpd_opt_offer_tmp
+       8  dhcpd_opt_subnet_tmp
+      64  dhcpd_opt_tlv_int
+     462  dhcpd_prepare
+      82  dhcpd_print_ip_allocation_status
+      48  dhcpd_release_alloc_info_lists
+     110  dhcpd_remove_alloc_info_from_list
+      80  dhcpd_send_ack
+          log_control_block_dhcpd
+          dhcpd_ip_pool_start
+          dhcpd_ip_pool_end
+          dhcpd_last_alloc_ip
+          dhcpd_server_address
+          dhcpd_server_netmask
+          dhcpd_server_gw
+          dhcpd_task_handle
+          dhcpd_running
+          dhcpd_socket
+          dhcpd_mutex
+          dhcpd_msg
+          dhcpd_alloc_infos_in_use
+          dhcpd_alloc_infos_unuse
+          dhcpd_primary_dns
+          dhcpd_secondary_dns
+     238  dhcpd_send_response
+     114  dhcpd_set_settings
+     624  dhcpd_start
+     150  dhcpd_stop
+     292  dhcpd_task_loop
+     170  dhcpd_wifi_api_rx_event_handler
+       8  dhcpd_zeros
+     424  -- Other
+
+ 
+    80 bytes in section .data
+    93 bytes in section .rodata
+ 7 350 bytes in section .text
+ 
+ 7 350 bytes of CODE  memory
+    93 bytes of CONST memory
+    80 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

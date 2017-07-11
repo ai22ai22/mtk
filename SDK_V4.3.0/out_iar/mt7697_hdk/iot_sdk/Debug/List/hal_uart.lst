@@ -1,0 +1,1028 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:27
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_uart.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW7C28.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_uart.c -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\hal_uart.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\hal_uart.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\hal_uart.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #include <string.h>
+     36          #include "dma_sw.h"
+     37          #include "mt7687.h"
+     38          #include "system_mt7687.h"
+     39          #include "core_cm4.h"
+     40          #include "uart.h"
+     41          #include "top.h"
+     42          #include "hal_log.h"
+     43          #include "hal_uart.h"
+     44          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     45          #include "hal_sleep_manager.h"
+     46          #include "hal_nvic.h"
+     47          #endif
+     48          
+     49          #define UART_PORT_MAPPING(ext)          \
+     50              (                                   \
+     51                  (                               \
+     52                      (ext == HAL_UART_0) ?       \
+     53                          UART_PORT0              \
+     54                      :                           \
+     55                          (ext == HAL_UART_1) ?   \
+     56                              UART_PORT1          \
+     57                          :                       \
+     58                              UART_MAX_PORT       \
+     59                  )                               \
+     60              )
+     61          
+     62          
+     63          typedef struct {
+     64              hal_uart_callback_t callback;
+     65              void *user_data;
+     66          } hal_uart_callback_config_t;
+     67          
+     68          typedef struct {
+     69              bool basic_config_present;
+     70              hal_uart_config_t basic_config;
+     71              bool callback_present;
+     72              hal_uart_callback_config_t callback_config;
+     73              bool dma_config_present;
+     74              hal_uart_dma_config_t dma_config;
+     75          } uart_context_t;
+     76          
+     77          static uart_context_t g_uart_context_table[HAL_UART_MAX];
+     78          
+     79          #ifdef HAL_SLEEP_MANAGER_ENABLED
+     80          static bool g_uart_frist_send_complete_interrupt[HAL_UART_MAX] = {false};
+     81          static bool g_uart_send_lock_status[HAL_UART_MAX] = {false};
+     82          static uint8_t g_uart_sleep_handler[HAL_UART_MAX];
+     83          extern const char *const g_uart_sleep_handler_name[];
+     84          extern hal_nvic_irq_t g_uart_port_to_irq_num[];
+     85          #endif
+     86          
+     87          static bool hal_uart_is_port_valid(hal_uart_port_t uart_port)
+     88          {
+     89              return (uart_port < HAL_UART_MAX);
+     90          }
+     91          
+     92          
+     93          static bool hal_uart_is_config_valid(hal_uart_port_t uart_port, const hal_uart_config_t *uart_config)
+     94          {
+     95              if (!hal_uart_is_port_valid(uart_port)) {
+     96                  return false;
+     97              }
+     98              if (NULL == uart_config) {
+     99                  return false;
+    100              }
+    101              if ((uart_config->baudrate > HAL_UART_BAUDRATE_921600) ||
+    102                      (uart_config->parity > HAL_UART_PARITY_EVEN) ||
+    103                      (uart_config->stop_bit > HAL_UART_STOP_BIT_2) ||
+    104                      (uart_config->word_length > HAL_UART_WORD_LENGTH_8)) {
+    105                  return false;
+    106              }
+    107          
+    108              return true;
+    109          }
+    110          
+    111          
+    112          static bool hal_uart_is_dma_config_valid(const hal_uart_dma_config_t *dma_config)
+    113          {
+    114              if (NULL == dma_config) {
+    115                  return false;
+    116              }
+    117              if (NULL == dma_config->receive_vfifo_buffer) {
+    118                  return false;
+    119              }
+    120              if (dma_config->receive_vfifo_buffer_size < dma_config->receive_vfifo_threshold_size) {
+    121                  return false;
+    122              }
+    123              if (dma_config->receive_vfifo_buffer_size < dma_config->receive_vfifo_alert_size) {
+    124                  return false;
+    125              }
+    126              if (NULL == dma_config->send_vfifo_buffer) {
+    127                  return false;
+    128              }
+    129              if (dma_config->send_vfifo_buffer_size < dma_config->send_vfifo_threshold_size) {
+    130                  return false;
+    131              }
+    132              if (dma_config->receive_vfifo_buffer_size < dma_config->receive_vfifo_alert_size) {
+    133                  return false;
+    134              }
+    135              return true;
+    136          }
+    137          
+    138          
+    139          static UART_PORT hal_uart_translate_port(hal_uart_port_t uart_port)
+    140          {
+    141              return (HAL_UART_0 == uart_port) ? UART_PORT0 : UART_PORT1;
+    142          }
+    143          
+    144          
+    145          static uint32_t hal_uart_translate_baudrate(hal_uart_baudrate_t bandrate)
+    146          {
+    147              uint32_t baudrate_tbl[] = {
+    148                  110, 300, 1200, 2400, 4800, 9600, 19200,
+    149                  38400, 57600, 115200, 230400, 460800, 921600
+    150              };
+    151              return baudrate_tbl[bandrate];
+    152          }
+    153          
+    154          
+    155          static uint16_t hal_uart_translate_word_length(hal_uart_word_length_t word_length)
+    156          {
+    157              uint16_t databit_tbl[] = {
+    158                  UART_WLS_5, UART_WLS_6, UART_WLS_7, UART_WLS_8
+    159              };
+    160              return databit_tbl[word_length];
+    161          }
+    162          
+    163          
+    164          static uint16_t hal_uart_translate_parity(hal_uart_parity_t parity)
+    165          {
+    166              uint16_t parity_tbl[] = {
+    167                  UART_NONE_PARITY, UART_ODD_PARITY, UART_EVEN_PARITY, HAL_UART_PARITY_NONE, HAL_UART_PARITY_NONE
+    168              };
+    169              return parity_tbl[parity];
+    170          }
+    171          
+    172          
+    173          static uint16_t hal_uart_translate_stopbit(hal_uart_stop_bit_t stopbit)
+    174          {
+    175              uint16_t stopbit_tbl[] = {
+    176                  UART_1_STOP, UART_2_STOP, UART_1_5_STOP
+    177              };
+    178              return stopbit_tbl[stopbit];
+    179          }
+    180          
+    181          
+    182          static uint32_t hal_uart_translate_timeout(uint32_t timeout_us)
+    183          {
+    184              uint32_t ticks_per_us;
+    185          
+    186              ticks_per_us = top_mcu_freq_get() / 1000000;
+    187          
+    188              return ticks_per_us * timeout_us;
+    189          }
+    190          
+    191          static DMA_VFIFO_CHANNEL uart_channel_to_dma_channel(UART_PORT port, bool is_rx)
+    192          {
+    193              DMA_VFIFO_CHANNEL ch;
+    194          
+    195              if (port == UART_PORT0) {
+    196                  if (is_rx) {
+    197                      ch = VDMA_UART1RX_CH;
+    198                  } else {
+    199                      ch = VDMA_UART1TX_CH;
+    200                  }
+    201              } else {
+    202                  if (is_rx) {
+    203                      ch = VDMA_UART2RX_CH;
+    204                  } else {
+    205                      ch = VDMA_UART2TX_CH;
+    206                  }
+    207              }
+    208          
+    209              return ch;
+    210          }
+    211          
+    212          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    213          void uart_send_handler(UART_PORT u_port)
+    214          {
+    215              uint32_t length;
+    216              uint32_t irq_status;
+    217          
+    218              if (g_uart_frist_send_complete_interrupt[u_port] == false) {
+    219                  hal_nvic_save_and_set_interrupt_mask(&irq_status);
+    220                  halUART_Get_VFIFO_Length(u_port, 0, &length);
+    221                  if (g_uart_context_table[u_port].dma_config.send_vfifo_buffer_size - length == 0) {
+    222                      if (g_uart_send_lock_status[u_port] == true) {
+    223                          hal_sleep_manager_unlock_sleep(g_uart_sleep_handler[u_port]);
+    224                          g_uart_send_lock_status[u_port] = false;
+    225                      }
+    226                  }
+    227                  hal_nvic_restore_interrupt_mask(irq_status);
+    228              } else {
+    229                  g_uart_frist_send_complete_interrupt[u_port] = false;
+    230              }
+    231          }
+    232          #endif
+    233          
+    234          hal_uart_status_t hal_uart_init(hal_uart_port_t uart_port, hal_uart_config_t *uart_config)
+    235          {
+    236              if (!hal_uart_is_config_valid(uart_port, uart_config)) {
+    237                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    238              }
+    239              if (g_uart_context_table[uart_port].basic_config_present == true) {
+    240                  return HAL_UART_STATUS_ERROR_BUSY;
+    241              }
+    242              memset(&g_uart_context_table[uart_port], 0, sizeof(uart_context_t));
+    243              memcpy(&g_uart_context_table[uart_port].basic_config,
+    244                     uart_config, sizeof(hal_uart_config_t));
+    245              g_uart_context_table[uart_port].basic_config_present = true;
+    246              uart_reset_default_value(hal_uart_translate_port(uart_port));
+    247              halUART_HWInit(hal_uart_translate_port(uart_port));
+    248          
+    249              if (HAL_UART_STATUS_OK != hal_uart_set_format(uart_port, uart_config)) {
+    250                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    251              }
+    252          
+    253          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    254              uart_set_sleep_mode(hal_uart_translate_port(uart_port));
+    255              g_uart_frist_send_complete_interrupt[uart_port] = false;
+    256              g_uart_send_lock_status[uart_port] = false;
+    257              g_uart_sleep_handler[uart_port] = hal_sleep_manager_set_sleep_handle((char *)g_uart_sleep_handler_name[uart_port]);
+    258          #endif
+    259          
+    260              return HAL_UART_STATUS_OK;
+    261          }
+    262          
+    263          
+    264          hal_uart_status_t hal_uart_deinit(hal_uart_port_t uart_port)
+    265          {
+    266              if (!hal_uart_is_port_valid(uart_port)) {
+    267                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    268              }
+    269              if (g_uart_context_table[uart_port].basic_config_present == false) {
+    270                  return HAL_UART_STATUS_ERROR_UNINITIALIZED;
+    271              }
+    272              memset(&g_uart_context_table[uart_port], 0, sizeof(uart_context_t));
+    273          
+    274              /* wait all left data sent out before deinit. */
+    275              uart_query_empty(hal_uart_translate_port(uart_port));
+    276          
+    277          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    278              NVIC_DisableIRQ(g_uart_port_to_irq_num[uart_port]);
+    279              g_uart_frist_send_complete_interrupt[uart_port] = false;
+    280              g_uart_send_lock_status[uart_port] = false;
+    281              uart_mask_send_interrupt(hal_uart_translate_port(uart_port));
+    282              hal_sleep_manager_release_sleep_handle(g_uart_sleep_handler[uart_port]);
+    283          #endif
+    284              uart_reset_default_value(hal_uart_translate_port(uart_port));
+    285          
+    286              return HAL_UART_STATUS_OK;
+    287          }
+    288          
+    289          
+    290          void hal_uart_put_char(hal_uart_port_t uart_port, char byte)
+    291          {
+    292              UART_PORT   int_no = UART_PORT_MAPPING(uart_port);
+    293          
+    294              if (int_no != UART_MAX_PORT) {
+    295                  uart_output_char(int_no, (unsigned int)byte);
+    296              } else {
+    297                  //log_hal_error("uart port invalid: %d", uart_port);
+    298              }
+    299          }
+    300          
+    301          
+    302          uint32_t hal_uart_send_polling(hal_uart_port_t uart_port, const uint8_t *data, uint32_t size)
+    303          {
+    304              UART_PORT   int_no = UART_PORT_MAPPING(uart_port);
+    305              uint32_t    index;
+    306          
+    307              if (data == NULL) {
+    308                  return 0;
+    309              }
+    310          
+    311              if (int_no < UART_MAX_PORT) {
+    312                  for (index = 0; index < size; index++) {
+    313                      uart_output_char(int_no, (unsigned char)data[index]);
+    314                  }
+    315                  return size;
+    316              }
+    317              return 0;
+    318          }
+    319          
+    320          uint32_t hal_uart_send_dma(hal_uart_port_t uart_port, const uint8_t *data, uint32_t size)
+    321          {
+    322              uint32_t actual_space, send_size;
+    323              DMA_VFIFO_CHANNEL ch;
+    324          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    325              uint32_t irq_status;
+    326          #endif
+    327          
+    328              if (!hal_uart_is_port_valid(uart_port)) {
+    329                  //log_hal_error("Wrong uart port: %d", uart_port);
+    330                  return 0;
+    331              }
+    332              if ((data == NULL) || (size == 0)) {
+    333                  return 0;
+    334              }
+    335              if (!g_uart_context_table[uart_port].dma_config_present) {
+    336                  //log_hal_error("DMA not actived.");
+    337                  return 0;
+    338              }
+    339          
+    340          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    341              hal_nvic_save_and_set_interrupt_mask(&irq_status);
+    342              if (g_uart_send_lock_status[uart_port] == false) {
+    343                  hal_sleep_manager_lock_sleep(g_uart_sleep_handler[uart_port]);
+    344                  g_uart_send_lock_status[uart_port] = true;
+    345              }
+    346              hal_nvic_restore_interrupt_mask(irq_status);
+    347          #endif
+    348          
+    349              halUART_Get_VFIFO_Length(hal_uart_translate_port(uart_port), 0, &actual_space);
+    350              if (actual_space >= size) {
+    351                  send_size = size;
+    352              } else {
+    353                  send_size = actual_space;
+    354              }
+    355              halUART_Write_VFIFO_Data(hal_uart_translate_port(uart_port), data, send_size);
+    356          
+    357              if (send_size == actual_space) {
+    358                  ch = uart_channel_to_dma_channel(hal_uart_translate_port(uart_port), 0);
+    359                  DMA_Vfifo_enable_interrupt(ch);
+    360              }
+    361              return send_size;
+    362          }
+    363          
+    364          
+    365          char hal_uart_get_char(hal_uart_port_t uart_port)
+    366          {
+    367              UART_PORT   int_no = UART_PORT_MAPPING(uart_port);
+    368          
+    369              if (int_no < UART_MAX_PORT) {
+    370                  return (char)uart_input_char(int_no);
+    371              } else {
+    372                  //log_hal_error("uart port invalid: %d", uart_port);
+    373                  return 0;
+    374              }
+    375          }
+    376          
+    377          
+    378          uint32_t hal_uart_receive_polling(hal_uart_port_t uart_port, uint8_t *buffer, uint32_t size)
+    379          {
+    380              UART_PORT   int_no = UART_PORT_MAPPING(uart_port);
+    381              uint32_t    index;
+    382          
+    383              if (buffer == NULL) {
+    384                  return 0;
+    385              }
+    386          
+    387              if (int_no < UART_MAX_PORT) {
+    388                  for (index = 0; index < size; index++) {
+    389                      buffer[index] = (uint8_t)uart_input_char(int_no);
+    390                  }
+    391                  return size;
+    392              }
+    393              return 0;
+    394          }
+    395          
+    396          uint32_t hal_uart_receive_dma(hal_uart_port_t uart_port, uint8_t *buffer, uint32_t size)
+    397          {
+    398              uint32_t actual_size, receive_size;
+    399              DMA_VFIFO_CHANNEL ch;
+    400          
+    401              if (!hal_uart_is_port_valid(uart_port)) {
+    402                  //log_hal_error("Wrong uart port: %d", uart_port);
+    403                  return 0;
+    404              }
+    405              if ((buffer == NULL) || (size == 0)) {
+    406                  return 0;
+    407              }
+    408          
+    409              halUART_Get_VFIFO_Length(hal_uart_translate_port(uart_port), 1, &actual_size);
+    410              if (actual_size < size) {
+    411                  receive_size = actual_size;
+    412              } else {
+    413                  receive_size = size;
+    414              }
+    415              halUART_Read_VFIFO_Data(hal_uart_translate_port(uart_port), buffer, receive_size);
+    416          
+    417              if (receive_size == actual_size) {
+    418                  ch = uart_channel_to_dma_channel(hal_uart_translate_port(uart_port), 1);
+    419                  DMA_Vfifo_enable_interrupt(ch);
+    420              }
+    421          
+    422              return receive_size;
+    423          }
+    424          
+    425          
+    426          uint32_t hal_uart_get_available_send_space(hal_uart_port_t uart_port)
+    427          {
+    428              uint32_t length = 0;
+    429          
+    430              if (!hal_uart_is_port_valid(uart_port)) {
+    431                  return 0;
+    432              }
+    433          
+    434              halUART_Get_VFIFO_Length(hal_uart_translate_port(uart_port), 0, &length);
+    435              return length;
+    436          }
+    437          
+    438          
+    439          uint32_t hal_uart_get_available_receive_bytes(hal_uart_port_t uart_port)
+    440          {
+    441              uint32_t length = 0;
+    442          
+    443              if (!hal_uart_is_port_valid(uart_port)) {
+    444                  //log_hal_error("Wrong uart port: %d", uart_port);
+    445                  return 0;
+    446              }
+    447              halUART_Get_VFIFO_Length(hal_uart_translate_port(uart_port), 1, &length);
+    448          
+    449              return length;
+    450          }
+    451          
+    452          static void hal_uart_check_irq_disable(UART_PORT uart_port, bool is_rx)
+    453          {
+    454              uint32_t avail_size, avail_space;
+    455              hal_uart_dma_config_t *dma_config;
+    456              DMA_VFIFO_CHANNEL ch;
+    457          
+    458              dma_config = &g_uart_context_table[uart_port].dma_config;
+    459              if (is_rx) {
+    460                  halUART_Get_VFIFO_Length(uart_port, 1, &avail_size);
+    461                  if (avail_size >= dma_config->receive_vfifo_threshold_size) {
+    462                      ch = uart_channel_to_dma_channel(uart_port, 1);
+    463                      DMA_Vfifo_disable_interrupt(ch);
+    464                  }
+    465              } else {
+    466                  halUART_Get_VFIFO_Length(uart_port, 0, &avail_space);
+    467                  if (avail_space >= dma_config->send_vfifo_buffer_size - dma_config->send_vfifo_threshold_size) {
+    468                      ch = uart_channel_to_dma_channel(uart_port, 0);
+    469                      DMA_Vfifo_disable_interrupt(ch);
+    470                  }
+    471              }
+    472          }
+    473          
+    474          static void hal_uart_receive_callback0(void)
+    475          {
+    476              if ((g_uart_context_table[HAL_UART_0].callback_present) &&
+    477                      (hal_uart_get_available_receive_bytes(HAL_UART_0) != 0)) {
+    478                  hal_uart_callback_config_t *callback_context = &g_uart_context_table[HAL_UART_0].callback_config;
+    479                  if (NULL != callback_context->callback) {
+    480                      callback_context->callback(HAL_UART_EVENT_READY_TO_READ, callback_context->user_data);
+    481                  }
+    482              }
+    483              hal_uart_check_irq_disable(hal_uart_translate_port(HAL_UART_0), 1);
+    484          }
+    485          
+    486          
+    487          static void hal_uart_receive_callback1(void)
+    488          {
+    489              if ((g_uart_context_table[HAL_UART_1].callback_present) &&
+    490                      (hal_uart_get_available_receive_bytes(HAL_UART_1) != 0)) {
+    491                  hal_uart_callback_config_t *callback_context = &g_uart_context_table[HAL_UART_1].callback_config;
+    492                  if (NULL != callback_context->callback) {
+    493                      callback_context->callback(HAL_UART_EVENT_READY_TO_READ, callback_context->user_data);
+    494                  }
+    495              }
+    496              hal_uart_check_irq_disable(hal_uart_translate_port(HAL_UART_1), 1);
+    497          }
+    498          
+    499          static void hal_uart_send_callback0(void)
+    500          {
+    501              if (g_uart_context_table[HAL_UART_0].callback_present) {
+    502                  hal_uart_callback_config_t *callback_context = &g_uart_context_table[HAL_UART_0].callback_config;
+    503                  if (NULL != callback_context->callback) {
+    504                      callback_context->callback(HAL_UART_EVENT_READY_TO_WRITE, callback_context->user_data);
+    505                  }
+    506              }
+    507              hal_uart_check_irq_disable(hal_uart_translate_port(HAL_UART_0), 0);
+    508          }
+    509          
+    510          
+    511          static void hal_uart_send_callback1(void)
+    512          {
+    513              if (g_uart_context_table[HAL_UART_1].callback_present) {
+    514                  hal_uart_callback_config_t *callback_context = &g_uart_context_table[HAL_UART_1].callback_config;
+    515                  if (NULL != callback_context->callback) {
+    516                      callback_context->callback(HAL_UART_EVENT_READY_TO_WRITE, callback_context->user_data);
+    517                  }
+    518              }
+    519              hal_uart_check_irq_disable(hal_uart_translate_port(HAL_UART_1), 0);
+    520          }
+    521          
+    522          static inline VOID_FUNC hal_uart_map_receive_callback(hal_uart_port_t uart_port)
+    523          {
+    524              static const VOID_FUNC func_tbl[] = {
+    525                  hal_uart_receive_callback0, hal_uart_receive_callback1
+    526              };
+    527              return func_tbl[uart_port];
+    528          }
+    529          
+    530          
+    531          hal_uart_status_t hal_uart_register_callback(hal_uart_port_t uart_port,
+    532                  hal_uart_callback_t user_callback,
+    533                  void *user_data)
+    534          {
+    535              DMA_VFIFO_CHANNEL ch;
+    536          
+    537              if (!hal_uart_is_port_valid(uart_port)) {
+    538                  //log_hal_error("Wrong uart port: %d", uart_port);
+    539                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    540              }
+    541              if (user_callback == NULL) {
+    542                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    543              }
+    544              g_uart_context_table[uart_port].callback_config.callback = user_callback;
+    545              g_uart_context_table[uart_port].callback_config.user_data = user_data;
+    546              g_uart_context_table[uart_port].callback_present = true;
+    547          
+    548              halUART_VDMA_Rx_Register_Callback(hal_uart_translate_port(uart_port),
+    549                                                hal_uart_map_receive_callback(uart_port));
+    550              halUART_VDMA_Rx_Register_TO_Callback(hal_uart_translate_port(uart_port),
+    551                                                   hal_uart_map_receive_callback(uart_port));
+    552              if (hal_uart_translate_port(uart_port) == UART_PORT0) {
+    553                  DMA_Vfifo_Register_Callback(VDMA_UART1TX_CH, hal_uart_send_callback0);
+    554              } else {
+    555                  DMA_Vfifo_Register_Callback(VDMA_UART2TX_CH, hal_uart_send_callback1);
+    556              }
+    557              ch = uart_channel_to_dma_channel(hal_uart_translate_port(uart_port), 0);
+    558              DMA_Vfifo_enable_interrupt(ch);
+    559          #ifdef HAL_SLEEP_MANAGER_ENABLED
+    560              g_uart_frist_send_complete_interrupt[uart_port] = true;
+    561              hal_nvic_register_isr_handler(g_uart_port_to_irq_num[uart_port], uart_interrupt_handler);
+    562              uart_unmask_send_interrupt(hal_uart_translate_port(uart_port));
+    563              NVIC_EnableIRQ(g_uart_port_to_irq_num[uart_port]);
+    564          #endif
+    565          
+    566              return HAL_UART_STATUS_OK;
+    567          }
+    568          
+    569          
+    570          hal_uart_status_t hal_uart_set_baudrate(hal_uart_port_t uart_port, hal_uart_baudrate_t baudrate)
+    571          {
+    572              if ((!hal_uart_is_port_valid(uart_port)) ||
+    573                      (baudrate > HAL_UART_BAUDRATE_921600)) {
+    574                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    575              }
+    576              g_uart_context_table[uart_port].basic_config.baudrate = baudrate;
+    577              return hal_uart_set_format(uart_port, &g_uart_context_table[uart_port].basic_config);
+    578          }
+    579          
+    580          
+    581          hal_uart_status_t hal_uart_set_format(hal_uart_port_t uart_port, const hal_uart_config_t *config)
+    582          {
+    583              if (!hal_uart_is_config_valid(uart_port, config)) {
+    584                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    585              }
+    586              memcpy(&g_uart_context_table[uart_port].basic_config, config, sizeof(hal_uart_config_t));
+    587              halUART_SetFormat(hal_uart_translate_port(uart_port),
+    588                                hal_uart_translate_baudrate(config->baudrate),
+    589                                hal_uart_translate_word_length(config->word_length),
+    590                                hal_uart_translate_parity(config->parity),
+    591                                hal_uart_translate_stopbit(config->stop_bit));
+    592              return HAL_UART_STATUS_OK;
+    593          }
+    594          
+    595          
+    596          hal_uart_status_t hal_uart_set_dma(hal_uart_port_t uart_port, const hal_uart_dma_config_t *uart_dma_config)
+    597          {
+    598              if (!hal_uart_is_port_valid(uart_port)) {
+    599                  //log_hal_error("Invalid port!");
+    600                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    601              }
+    602              if (!hal_uart_is_dma_config_valid(uart_dma_config)) {
+    603                  //log_hal_error("Invalid dma config!");
+    604                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    605              }
+    606              g_uart_context_table[uart_port].dma_config_present = true;
+    607              memcpy(&g_uart_context_table[uart_port].dma_config,
+    608                     uart_dma_config, sizeof(hal_uart_dma_config_t));
+    609              DMA_Init();
+    610              DMA_Vfifo_init();
+    611              halUART_Rx_VFIFO_Initialize(hal_uart_translate_port(uart_port),
+    612                                          uart_dma_config->receive_vfifo_buffer,
+    613                                          uart_dma_config->receive_vfifo_buffer_size,
+    614                                          uart_dma_config->receive_vfifo_alert_size,
+    615                                          uart_dma_config->receive_vfifo_threshold_size,
+    616                                          hal_uart_translate_timeout(5000)); /* 5ms */
+    617              halUART_Tx_VFIFO_Initialize(hal_uart_translate_port(uart_port),
+    618                                          uart_dma_config->send_vfifo_buffer,
+    619                                          uart_dma_config->send_vfifo_buffer_size,
+    620                                          uart_dma_config->send_vfifo_threshold_size);
+    621          
+    622              return HAL_UART_STATUS_OK;
+    623          }
+    624          
+    625          hal_uart_status_t hal_uart_set_hardware_flowcontrol(hal_uart_port_t uart_port)
+    626          {
+    627              UART_PORT int_no;
+    628          
+    629              if (!hal_uart_is_port_valid(uart_port)) {
+    630                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    631              }
+    632          
+    633              int_no = UART_PORT_MAPPING(uart_port);
+    634              uart_set_hardware_flowcontrol(int_no);
+    635          
+    636              return HAL_UART_STATUS_OK;
+    637          }
+    638          
+    639          hal_uart_status_t hal_uart_set_software_flowcontrol(hal_uart_port_t uart_port,
+    640                  uint8_t xon,
+    641                  uint8_t xoff,
+    642                  uint8_t escape_character)
+    643          {
+    644              UART_PORT int_no;
+    645          
+    646              if (!hal_uart_is_port_valid(uart_port)) {
+    647                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    648              }
+    649          
+    650              int_no = UART_PORT_MAPPING(uart_port);
+    651              uart_set_software_flowcontrol(int_no, xon, xoff, escape_character);
+    652          
+    653              return HAL_UART_STATUS_OK;
+    654          }
+    655          
+    656          hal_uart_status_t hal_uart_disable_flowcontrol(hal_uart_port_t uart_port)
+    657          {
+    658              UART_PORT int_no;
+    659          
+    660              if (!hal_uart_is_port_valid(uart_port)) {
+    661                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    662              }
+    663          
+    664              int_no = UART_PORT_MAPPING(uart_port);
+    665              uart_disable_flowcontrol(int_no);
+    666          
+    667              return HAL_UART_STATUS_OK;
+    668          }
+    669          
+    670          #ifdef HAL_UART_FEATURE_VFIFO_DMA_TIMEOUT
+    671          hal_uart_status_t hal_uart_set_dma_timeout(hal_uart_port_t uart_port, uint32_t timeout)
+    672          {
+    673              if (!hal_uart_is_port_valid(uart_port)) {
+    674                  return HAL_UART_STATUS_ERROR_PARAMETER;
+    675              }
+    676          
+    677              if (uart_port == HAL_UART_0) {
+    678                  DMA_Vfifo_Set_timeout(VDMA_UART1RX_CH, hal_uart_translate_timeout(timeout));
+    679              } else {
+    680                  DMA_Vfifo_Set_timeout(VDMA_UART2RX_CH, hal_uart_translate_timeout(timeout));
+    681              }
+    682          
+    683              return HAL_UART_STATUS_OK;
+    684          }
+    685          #endif
+    686          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_DisableIRQ
+       0   NVIC_EnableIRQ
+      24   hal_uart_check_irq_disable
+        24   -> DMA_Vfifo_disable_interrupt
+        24   -> halUART_Get_VFIFO_Length
+        24   -> uart_channel_to_dma_channel
+      16   hal_uart_deinit
+        16   -> NVIC_DisableIRQ
+        16   -> __aeabi_memset
+        16   -> hal_sleep_manager_release_sleep_handle
+        16   -> hal_uart_is_port_valid
+        16   -> hal_uart_translate_port
+        16   -> uart_mask_send_interrupt
+        16   -> uart_query_empty
+        16   -> uart_reset_default_value
+       8   hal_uart_disable_flowcontrol
+         8   -> hal_uart_is_port_valid
+         8   -> uart_disable_flowcontrol
+      16   hal_uart_get_available_receive_bytes
+        16   -> halUART_Get_VFIFO_Length
+        16   -> hal_uart_is_port_valid
+        16   -> hal_uart_translate_port
+      16   hal_uart_get_available_send_space
+        16   -> halUART_Get_VFIFO_Length
+        16   -> hal_uart_is_port_valid
+        16   -> hal_uart_translate_port
+       0   hal_uart_get_char
+         0   -> uart_input_char
+      32   hal_uart_init
+        32   -> __aeabi_memcpy
+        32   -> __aeabi_memset
+        32   -> halUART_HWInit
+        32   -> hal_sleep_manager_set_sleep_handle
+        32   -> hal_uart_is_config_valid
+        32   -> hal_uart_set_format
+        32   -> hal_uart_translate_port
+        32   -> uart_reset_default_value
+        32   -> uart_set_sleep_mode
+       8   hal_uart_is_config_valid
+         8   -> hal_uart_is_port_valid
+       0   hal_uart_is_dma_config_valid
+       0   hal_uart_is_port_valid
+       0   hal_uart_map_receive_callback
+       0   hal_uart_put_char
+         0   -> uart_output_char
+       8   hal_uart_receive_callback0
+         8   -- Indirect call
+         0   -> hal_uart_check_irq_disable
+         8   -> hal_uart_get_available_receive_bytes
+         8   -> hal_uart_translate_port
+       8   hal_uart_receive_callback1
+         8   -- Indirect call
+         0   -> hal_uart_check_irq_disable
+         8   -> hal_uart_get_available_receive_bytes
+         8   -> hal_uart_translate_port
+      24   hal_uart_receive_dma
+        24   -> DMA_Vfifo_enable_interrupt
+        24   -> halUART_Get_VFIFO_Length
+        24   -> halUART_Read_VFIFO_Data
+        24   -> hal_uart_is_port_valid
+        24   -> hal_uart_translate_port
+        24   -> uart_channel_to_dma_channel
+      24   hal_uart_receive_polling
+        24   -> uart_input_char
+      24   hal_uart_register_callback
+        24   -> DMA_Vfifo_Register_Callback
+        24   -> DMA_Vfifo_enable_interrupt
+        24   -> NVIC_EnableIRQ
+        24   -> halUART_VDMA_Rx_Register_Callback
+        24   -> halUART_VDMA_Rx_Register_TO_Callback
+        24   -> hal_nvic_register_isr_handler
+        24   -> hal_uart_is_port_valid
+        24   -> hal_uart_map_receive_callback
+        24   -> hal_uart_translate_port
+        24   -> uart_channel_to_dma_channel
+        24   -> uart_unmask_send_interrupt
+       8   hal_uart_send_callback0
+         8   -- Indirect call
+         0   -> hal_uart_check_irq_disable
+         8   -> hal_uart_translate_port
+       8   hal_uart_send_callback1
+         8   -- Indirect call
+         0   -> hal_uart_check_irq_disable
+         8   -> hal_uart_translate_port
+      32   hal_uart_send_dma
+        32   -> DMA_Vfifo_enable_interrupt
+        32   -> halUART_Get_VFIFO_Length
+        32   -> halUART_Write_VFIFO_Data
+        32   -> hal_nvic_restore_interrupt_mask
+        32   -> hal_nvic_save_and_set_interrupt_mask
+        32   -> hal_sleep_manager_lock_sleep
+        32   -> hal_uart_is_port_valid
+        32   -> hal_uart_translate_port
+        32   -> uart_channel_to_dma_channel
+      24   hal_uart_send_polling
+        24   -> uart_output_char
+      16   hal_uart_set_baudrate
+        16   -> hal_uart_is_port_valid
+         0   -> hal_uart_set_format
+      24   hal_uart_set_dma
+        24   -> DMA_Init
+        24   -> DMA_Vfifo_init
+        24   -> __aeabi_memcpy
+        24   -> halUART_Rx_VFIFO_Initialize
+        24   -> halUART_Tx_VFIFO_Initialize
+        24   -> hal_uart_is_dma_config_valid
+        24   -> hal_uart_is_port_valid
+        24   -> hal_uart_translate_port
+        24   -> hal_uart_translate_timeout
+      16   hal_uart_set_dma_timeout
+        16   -> DMA_Vfifo_Set_timeout
+        16   -> hal_uart_is_port_valid
+        16   -> hal_uart_translate_timeout
+      32   hal_uart_set_format
+        32   -> __aeabi_memcpy
+        32   -> halUART_SetFormat
+        32   -> hal_uart_is_config_valid
+        32   -> hal_uart_translate_baudrate
+        32   -> hal_uart_translate_parity
+        32   -> hal_uart_translate_port
+        32   -> hal_uart_translate_stopbit
+        32   -> hal_uart_translate_word_length
+       8   hal_uart_set_hardware_flowcontrol
+         8   -> hal_uart_is_port_valid
+         8   -> uart_set_hardware_flowcontrol
+      24   hal_uart_set_software_flowcontrol
+        24   -> hal_uart_is_port_valid
+        24   -> uart_set_software_flowcontrol
+      64   hal_uart_translate_baudrate
+        64   -> __aeabi_memcpy4
+      20   hal_uart_translate_parity
+       0   hal_uart_translate_port
+      12   hal_uart_translate_stopbit
+       8   hal_uart_translate_timeout
+         8   -> top_mcu_freq_get
+      12   hal_uart_translate_word_length
+       0   uart_channel_to_dma_channel
+      24   uart_send_handler
+        24   -> halUART_Get_VFIFO_Length
+        24   -> hal_nvic_restore_interrupt_mask
+        24   -> hal_nvic_save_and_set_interrupt_mask
+        24   -> hal_sleep_manager_unlock_sleep
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable19
+       4  ??DataTable19_1
+       4  ??DataTable19_2
+       4  ??DataTable19_3
+       4  ??DataTable19_4
+       4  ??DataTable19_5
+       4  ??DataTable19_6
+       4  ??DataTable19_7
+       4  ??DataTable19_8
+       4  ??DataTable19_9
+      52  ?_0
+       8  ?_1
+      12  ?_2
+       8  ?_3
+      20  NVIC_DisableIRQ
+      20  NVIC_EnableIRQ
+       8  func_tbl
+      96  g_uart_context_table
+       6  g_uart_frist_send_complete_interrupt
+          g_uart_send_lock_status
+          g_uart_sleep_handler
+      92  hal_uart_check_irq_disable
+     114  hal_uart_deinit
+      44  hal_uart_disable_flowcontrol
+      42  hal_uart_get_available_receive_bytes
+      42  hal_uart_get_available_send_space
+      30  hal_uart_get_char
+     160  hal_uart_init
+      48  hal_uart_is_config_valid
+      72  hal_uart_is_dma_config_valid
+      12  hal_uart_is_port_valid
+      10  hal_uart_map_receive_callback
+      28  hal_uart_put_char
+      46  hal_uart_receive_callback0
+      52  hal_uart_receive_callback1
+      90  hal_uart_receive_dma
+      58  hal_uart_receive_polling
+     166  hal_uart_register_callback
+      36  hal_uart_send_callback0
+      42  hal_uart_send_callback1
+     146  hal_uart_send_dma
+      58  hal_uart_send_polling
+      44  hal_uart_set_baudrate
+     120  hal_uart_set_dma
+      56  hal_uart_set_dma_timeout
+     100  hal_uart_set_format
+      44  hal_uart_set_hardware_flowcontrol
+      56  hal_uart_set_software_flowcontrol
+      28  hal_uart_translate_baudrate
+      24  hal_uart_translate_parity
+      10  hal_uart_translate_port
+      24  hal_uart_translate_stopbit
+      22  hal_uart_translate_timeout
+      24  hal_uart_translate_word_length
+      28  uart_channel_to_dma_channel
+      84  uart_send_handler
+
+ 
+   102 bytes in section .bss
+ 2 220 bytes in section .text
+ 
+ 2 220 bytes of CODE memory
+   102 bytes of DATA memory
+
+Errors: none
+Warnings: none

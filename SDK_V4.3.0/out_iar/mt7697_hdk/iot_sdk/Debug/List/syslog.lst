@@ -1,0 +1,1580 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:41
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\service\src\syslog.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EWB367.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\service\src\syslog.c -D
+#        MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\syslog.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\syslog.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\kernel\service\src\syslog.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          #if !defined (MTK_DEBUG_LEVEL_NONE)
+     36          
+     37          #include <stdio.h>
+     38          #include <stdint.h>
+     39          #include <string.h>
+     40          #include <stdbool.h>
+     41          #include "FreeRTOS.h"
+     42          #include "task.h"
+     43          #include "semphr.h"
+     44          #include "syslog.h"
+     45          #include "toi.h"
+     46          #include "hal_gpt.h"
+     47          #include "exception_handler.h"
+     48          #include "timers.h"
+     49          #if defined(MTK_PORT_SERVICE_ENABLE)
+     50          #include "serial_port.h"
+     51          #endif
+     52          #include "task_def.h"
+     53          
+     54          /* max size of each block of normal log message */
+     55          #define MAX_LOG_SIZE (256)
+     56          
+     57          /* max size of each block of hex dump message */
+     58          #define MAX_DUMP_MESSAGE_SIZE (128)
+     59          
+     60          /* max size of each block of hex dump message */
+     61          #define MAX_DUMP_DATA_SIZE (128)
+     62          
+     63          /* max hex dump length */
+     64          #define MAX_HEXDUMP_LENGTH (2048)
+     65          
+     66          #if (PRODUCT_VERSION == 7687) || (PRODUCT_VERSION == 7697) || (PRODUCT_VERSION == 7686) || (PRODUCT_VERSION == 7682) || (PRODUCT_VERSION == 5932) || defined(MTK_NO_PSRAM_ENABLE)
+     67          
+     68          /* buffer pool items */
+     69          #define LOG_POOL_ITEMS (SYSLOG_QUEUE_LENGTH + 8)
+     70          
+     71          /* maximum delay to wait for available log queue */
+     72          #define LOG_QUEUE_WAITING_TIME (portMAX_DELAY)
+     73          
+     74          #elif (PRODUCT_VERSION == 2523) || (PRODUCT_VERSION == 2533)
+     75          
+     76          /* For MT2523, the bt audio related feature generates lots of bt logs. */
+     77          
+     78          /* buffer pool items */
+     79          #define LOG_POOL_ITEMS SYSLOG_QUEUE_LENGTH
+     80          
+     81          /* maximum delay to wait for available log queue */
+     82          #define LOG_QUEUE_WAITING_TIME (0)
+     83          
+     84          #endif
+     85          
+     86          typedef enum {
+     87              MESSAGE_TYPE_NORMAL_LOG,
+     88              MESSAGE_TYPE_HEX_DUMP
+     89          } message_type_t;
+     90          
+     91          typedef struct {
+     92              const char *module_name;
+     93              print_level_t print_level;
+     94              const char *func_name;
+     95              int line_number;
+     96              uint32_t timestamp;
+     97              char message[MAX_LOG_SIZE + 1]; //C string format
+     98          } normal_log_message_t;
+     99          
+    100          typedef struct {
+    101              const char *module_name;
+    102              print_level_t print_level;
+    103              const char *func_name;
+    104              int line_number;
+    105              uint32_t timestamp;
+    106              char message[MAX_DUMP_MESSAGE_SIZE + 1]; //C string format
+    107              uint32_t data_length;
+    108              char data[MAX_DUMP_DATA_SIZE];
+    109              char *additional_data;
+    110          } hex_dump_message_t;
+    111          
+    112          
+    113          /* log message definition */
+    114          typedef struct {
+    115              message_type_t message_type;
+    116              union {
+    117                  normal_log_message_t normal_log_message;
+    118                  hex_dump_message_t   hex_dump_message;
+    119              } u;
+    120          } log_message_t;
+    121          
+    122          typedef struct {
+    123              uint32_t occupied;
+    124              uint8_t  buffer[sizeof(log_message_t)];
+    125          } syslog_buffer_t;
+    126          
+    127          /* syslog task handle */
+    128          static xTaskHandle syslog_task_handle;
+    129          
+    130          /* syslog buffer pool */
+    131          static syslog_buffer_t syslog_buffer_pool[LOG_POOL_ITEMS];
+    132          
+    133          /* log queue handle */
+    134          static xQueueHandle g_log_queue = NULL;
+    135          
+    136          #define SYSLOG_UART_INIT_DONE 0x1
+    137          #define SYSLOG_GPT_INIT_DONE  0x2
+    138          #define SYSLOG_NVDM_INIT_DONE 0x4
+    139          #define SYSLOG_UART_DMA_MODE  0x8
+    140          #define SYSLOG_PORT_OPEN_DONE 0x10
+    141          
+    142          static uint32_t syslog_init_time = 0;
+    143          static uint32_t syslog_init_done = 0;
+    144          static uint32_t syslog_task_ready = false;
+    145          static uint32_t syslog_drop_count = 0;
+    146          
+    147          /* create common module for unspecified module to use */
+    148          log_create_module(common, PRINT_LEVEL_INFO);
+    149          
+    150          static syslog_config_t syslog_config;
+    151          
+    152          static const char *log_switch_table[]  = { "on", "off" };
+    153          
+    154          static const char *print_level_table[] = { "debug", "info", "warning", "error" };
+    155          
+    156          static hal_uart_port_t g_log_uart_port;
+    157          
+    158          #if defined(MTK_PORT_SERVICE_ENABLE)
+    159          static serial_port_dev_t g_log_port;
+    160          static serial_port_handle_t g_log_port_handle;
+    161          static SemaphoreHandle_t tx_sem, rx_sem;
+    162          void syslog_serial_port_switch(serial_port_dev_t device);
+    163          #endif
+    164          
+    165          #if  defined ( __GNUC__ )
+    166            #ifndef __weak
+    167              #define __weak   __attribute__((weak))
+    168            #endif /* __weak */
+    169          #endif /* __GNUC__ */
+    170          
+    171          /*******************************************************************************
+    172           *  syslog uart port management
+    173           ******************************************************************************/
+    174          
+    175          hal_uart_status_t log_uart_init(hal_uart_port_t port)
+    176          {
+    177              hal_uart_config_t uart_config;
+    178              hal_uart_status_t ret;
+    179          
+    180              /* Configure UART PORT */
+    181              uart_config.baudrate = HAL_UART_BAUDRATE_115200;
+    182              uart_config.parity = HAL_UART_PARITY_NONE;
+    183              uart_config.stop_bit = HAL_UART_STOP_BIT_1;
+    184              uart_config.word_length = HAL_UART_WORD_LENGTH_8;
+    185          
+    186              g_log_uart_port = port;
+    187              ret = hal_uart_init(port, &uart_config);
+    188          
+    189              syslog_init_done |= SYSLOG_UART_INIT_DONE;
+    190          
+    191              return ret;
+    192          }
+    193          
+    194          void log_putchar(char byte)
+    195          {
+    196              hal_uart_put_char(g_log_uart_port, byte);
+    197          }
+    198          
+    199          #if defined (MTK_PORT_SERVICE_ENABLE)
+    200          
+    201          __weak serial_port_status_t serial_port_open(serial_port_dev_t device,
+    202                                                       serial_port_open_para_t *para,
+    203                                                       serial_port_handle_t *handle)
+    204          {
+    205              configASSERT(device - SERIAL_PORT_DEV_UART_0 <= SERIAL_PORT_DEV_UART_3);
+    206              /* If port service feature is not enabled, use the one passed in log_uart_init. */
+    207              return (log_uart_init(g_log_uart_port) == HAL_UART_STATUS_OK) ? SERIAL_PORT_STATUS_OK: SERIAL_PORT_STATUS_FAIL;
+    208          }
+    209          
+    210          __weak serial_port_status_t serial_port_close(serial_port_handle_t handle)
+    211          {
+    212              return SERIAL_PORT_STATUS_OK;
+    213          }
+    214          
+    215          __weak serial_port_status_t serial_port_config_read_dev_number(const char *user_name, serial_port_dev_t *device)
+    216          {
+    217              return SERIAL_PORT_STATUS_OK;
+    218          }
+    219          
+    220          __weak serial_port_status_t serial_port_config_write_dev_number(const char *user_name, serial_port_dev_t device)
+    221          {
+    222              return SERIAL_PORT_STATUS_OK;
+    223          }
+    224          
+    225          __weak serial_port_status_t serial_port_control(serial_port_handle_t handle,
+    226                                                          serial_port_ctrl_cmd_t command,
+    227                                                          serial_port_ctrl_para_t *para)
+    228          {
+    229              return SERIAL_PORT_STATUS_OK;
+    230          }
+    231          
+    232          static void log_switch_to_polling_mode(void)
+    233          {
+    234              syslog_init_done &= ~(SYSLOG_UART_DMA_MODE);
+    235              log_uart_init(g_log_uart_port);
+    236          }
+    237          
+    238          static void log_switch_to_dma_mode(void)
+    239          {
+    240              syslog_init_done |= SYSLOG_UART_DMA_MODE | SYSLOG_PORT_OPEN_DONE;
+    241          }
+    242          
+    243          static void exception_io_init(void)
+    244          {
+    245              log_switch_to_polling_mode();
+    246              syslog_task_ready = false;
+    247          }
+    248          
+    249          int log_write(char *buf, int len)
+    250          {
+    251              serial_port_status_t status;
+    252              serial_port_ctrl_para_t send_data;
+    253              int ret=0;
+    254              int i;
+    255          
+    256              if (syslog_init_done & SYSLOG_UART_INIT_DONE)  {
+    257                  send_data.serial_port_write_data.data = (uint8_t*)buf;
+    258                  send_data.serial_port_write_data.size = len;
+    259          
+    260                  if (syslog_init_done & SYSLOG_UART_DMA_MODE) {
+    261                      while(1) {
+    262                          status = serial_port_control(g_log_port_handle, SERIAL_PORT_CMD_WRITE_DATA, &send_data);
+    263                          if (status == SERIAL_PORT_STATUS_OK) {
+    264                              send_data.serial_port_write_data.size -= send_data.serial_port_write_data.ret_size;
+    265                              send_data.serial_port_write_data.data += send_data.serial_port_write_data.ret_size;
+    266                          }
+    267                          if (send_data.serial_port_write_data.size == 0) {
+    268                              break;
+    269                          }
+    270                          if ((xTaskGetSchedulerState() != taskSCHEDULER_SUSPENDED) && ((portNVIC_INT_CTRL_REG & 0xff)==0)) {
+    271                              xSemaphoreTake(tx_sem, 1000);
+    272                          }
+    273                      }
+    274                      ret = (send_data.serial_port_write_data.size == 0) ? len : 0;
+    275                  } else {
+    276                      if (syslog_init_done & SYSLOG_PORT_OPEN_DONE) {
+    277                          status = serial_port_control(g_log_port_handle, SERIAL_PORT_CMD_WRITE_DATA_BLOCKING, &send_data);
+    278                          ret = (status == SERIAL_PORT_STATUS_OK) ? len : 0;
+    279                      }
+    280                      else {
+    281                          for (i = 0; i < len; i++) {
+    282                              log_putchar(*buf++);
+    283                          }
+    284                          ret = len;
+    285                      }
+    286                  }
+    287              }
+    288              return ret;
+    289          }
+    290          
+    291          static void syslog_port_service_callback(serial_port_dev_t device, serial_port_callback_event_t event, void *parameter)
+    292          {
+    293              BaseType_t xHigherPriorityTaskWoken;
+    294          
+    295              switch(event) {
+    296                  case SERIAL_PORT_EVENT_READY_TO_READ:
+    297                      xSemaphoreGiveFromISR(rx_sem, &xHigherPriorityTaskWoken);
+    298                      portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+    299                  break;
+    300          
+    301                  case SERIAL_PORT_EVENT_READY_TO_WRITE:
+    302                      xSemaphoreGiveFromISR(tx_sem, &xHigherPriorityTaskWoken);
+    303                      portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+    304                  break;
+    305          
+    306                  case SERIAL_PORT_EVENT_USB_CONNECTION:
+    307                      if (g_log_port == device) {
+    308                          log_switch_to_dma_mode();
+    309                      }
+    310                  break;
+    311          
+    312                  case SERIAL_PORT_EVENT_USB_DISCONNECTION:
+    313                      if (g_log_port == device) {
+    314                          g_log_port = (serial_port_dev_t)g_log_uart_port;
+    315                          syslog_serial_port_switch(g_log_port);
+    316                      }
+    317                  break;
+    318          
+    319                  default:
+    320                  break;
+    321              }
+    322          }
+    323          
+    324          #endif /* MTK_PORT_SERVICE_ENABLE */
+    325          
+    326          #define LOG_TS(p) (((log_message_t*)(p)->buffer)->u.normal_log_message.timestamp)
+    327          
+    328          static syslog_buffer_t *sort_syslog_buffer(syslog_buffer_t *pList)
+    329          {
+    330              syslog_buffer_t *pHead = NULL, *pCurr, *p;
+    331          
+    332              if (pList == NULL || pList->occupied == 0) {
+    333                  return pList;
+    334              }
+    335          
+    336              while (pList != NULL) {
+    337                  pCurr = pList;
+    338                  pList = (syslog_buffer_t*)(pList->occupied);
+    339                  if ((pHead == NULL) || LOG_TS(pCurr) < LOG_TS(pHead)) {
+    340                     pCurr->occupied = (uint32_t)pHead;
+    341                     pHead = pCurr;
+    342                  }
+    343                  else {
+    344                     p = pHead;
+    345                     while (p != NULL) {
+    346                        if ((p->occupied == 0) ||
+    347                            LOG_TS(pCurr) < LOG_TS((syslog_buffer_t*)(p->occupied))) {
+    348                            pCurr->occupied = p->occupied;
+    349                            p->occupied = (uint32_t)pCurr;
+    350                            break;
+    351                        }
+    352                        p = (syslog_buffer_t*)(p->occupied);
+    353                     }
+    354                  }
+    355              }
+    356              return pHead;
+    357          }
+    358          
+    359          void process_log_message(const log_message_t *log_message);
+    360          
+    361          static void syslog_buffer_dump(void)
+    362          {
+    363              uint32_t index;
+    364              syslog_buffer_t *pHead = NULL, *pCurr;
+    365          
+    366              /* create a link list of syslog buffer(s) in use now */
+    367              for (index = 0; index < LOG_POOL_ITEMS; index++) {
+    368                  /* reuse the 'occupied' field as a pointer */
+    369                  if (syslog_buffer_pool[index].occupied) {
+    370                      syslog_buffer_pool[index].occupied = (uint32_t)pHead;
+    371                      pHead = &syslog_buffer_pool[index];
+    372                  }
+    373              }
+    374          
+    375              /* sort the log by time */
+    376              pHead = sort_syslog_buffer(pHead);
+    377          
+    378              printf("\n\r>>> dump syslog buffer\n\r\n\r");
+    379          
+    380              /* print the sorted log */
+    381              while (pHead) {
+    382                  pCurr = pHead;
+    383                  pHead = (syslog_buffer_t*)(pHead->occupied);
+    384                  pCurr->occupied = 1;
+    385                  process_log_message((log_message_t *)(pCurr->buffer));
+    386              }
+    387          }
+    388          
+    389          static void syslog_exception_cb(void)
+    390          {
+    391          #if defined(MTK_PORT_SERVICE_ENABLE)
+    392              exception_io_init();
+    393          #endif
+    394              syslog_buffer_dump();
+    395          }
+    396          
+    397          /*******************************************************************************
+    398           *  syslog memory pool management
+    399           ******************************************************************************/
+    400          void buffer_pool_init()
+    401          {
+    402              memset(syslog_buffer_pool, 0, sizeof(syslog_buffer_pool));
+    403          }
+    404          
+    405          #define DEBUG_SYSLOG_BLOCK_ISSUE 0
+    406          
+    407          syslog_buffer_t *buffer_pool_alloc(void)
+    408          {
+    409              UBaseType_t uxSavedInterruptStatus;
+    410              uint32_t index;
+    411          
+    412              uxSavedInterruptStatus = portSET_INTERRUPT_MASK_FROM_ISR();
+    413              for (index = 0; index < LOG_POOL_ITEMS; index++) {
+    414                  if (!syslog_buffer_pool[index].occupied) {
+    415                      syslog_buffer_pool[index].occupied = true;
+    416                      portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
+    417                      return &syslog_buffer_pool[index];
+    418                  }
+    419              }
+    420              syslog_drop_count++;
+    421              portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
+    422          
+    423          #if (DEBUG_SYSLOG_BLOCK_ISSUE == 1)
+    424              configASSERT(syslog_drop_count < 3000);
+    425          #endif
+    426          
+    427              return NULL;
+    428          }
+    429          
+    430          void buffer_pool_release(syslog_buffer_t *syslog_buffer)
+    431          {
+    432              UBaseType_t uxSavedInterruptStatus;
+    433              log_message_t *log_message = (log_message_t *)syslog_buffer->buffer;
+    434          
+    435              uxSavedInterruptStatus = portSET_INTERRUPT_MASK_FROM_ISR();
+    436              syslog_buffer->occupied = false;
+    437              if ((log_message->message_type == MESSAGE_TYPE_HEX_DUMP)
+    438                      && (log_message->u.hex_dump_message.additional_data) ) {
+    439                  vPortFree(log_message->u.hex_dump_message.additional_data);
+    440              }
+    441              portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
+    442          }
+    443          
+    444          static unsigned int get_current_time_in_ms(void)
+    445          {
+    446              uint32_t count = 0;
+    447              uint64_t count64 = 0;
+    448              hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &count);
+    449              count64 = ((uint64_t)count)*1000/32768;
+    450              return (unsigned int)count64;
+    451          }
+    452          
+    453          /*******************************************************************************
+    454           *  syslog queue management
+    455           ******************************************************************************/
+    456          void log_queue_create(void)
+    457          {
+    458              g_log_queue = xQueueCreate(SYSLOG_QUEUE_LENGTH, sizeof(syslog_buffer_t *));
+    459              if (NULL == g_log_queue) {
+    460                  printf("log_queue_create: create log queue failed.\r\n");
+    461              }
+    462          }
+    463          
+    464          void log_queue_send(syslog_buffer_t **log_buffer)
+    465          {
+    466              if (portNVIC_INT_CTRL_REG & 0xff) {
+    467                  BaseType_t xTaskWokenByPost = pdFALSE;
+    468                  if (xQueueSendFromISR(g_log_queue, log_buffer, &xTaskWokenByPost) ==  errQUEUE_FULL ) {
+    469                      buffer_pool_release(*log_buffer);
+    470                  } else {
+    471                      portYIELD_FROM_ISR(xTaskWokenByPost);
+    472                  }
+    473              } else {
+    474                  xQueueSend(g_log_queue, log_buffer, LOG_QUEUE_WAITING_TIME);
+    475              }
+    476          }
+    477          
+    478          int log_queue_receive(syslog_buffer_t **log_buffer)
+    479          {
+    480              BaseType_t ret_val = xQueueReceive(g_log_queue, log_buffer, portMAX_DELAY);
+    481              return (pdPASS == ret_val) ? 0 : -1;
+    482          }
+    483          
+    484          /*******************************************************************************
+    485           *  syslog implementation
+    486           ******************************************************************************/
+    487          #define change_level_to_string(level) \
+    488            ((level) - PRINT_LEVEL_DEBUG <= PRINT_LEVEL_ERROR) ? print_level_table[level] : "debug"
+    489          
+    490          void print_normal_log(const normal_log_message_t *normal_log_message)
+    491          {
+    492              printf("[T: %u M: %s C: %s F: %s L: %d]: ",
+    493                     (unsigned int)normal_log_message->timestamp,
+    494                     normal_log_message->module_name,
+    495                     change_level_to_string(normal_log_message->print_level),
+    496                     normal_log_message->func_name,
+    497                     normal_log_message->line_number);
+    498              printf("%s\r\n", (char *)normal_log_message->message);
+    499          }
+    500          
+    501          void hex_dump_data(const char *data, int length)
+    502          {
+    503              int index = 0;
+    504              for (index = 0; index < length; index++) {
+    505                  printf("%02X", (int)(data[index]));
+    506                  if ((index + 1) % 16 == 0) {
+    507                      printf("\r\n");
+    508                      continue;
+    509                  }
+    510                  if (index + 1 != length) {
+    511                      printf(" ");
+    512                  }
+    513              }
+    514              if (0 != index && 0 != index % 16) {
+    515                  printf("\r\n");//add one more blank line
+    516              }
+    517          }
+    518          
+    519          void print_hex_dump(const hex_dump_message_t *hex_dump_message)
+    520          {
+    521              printf("[T: %u M: %s C: %s F: %s L: %d]: ",
+    522                     (unsigned int)hex_dump_message->timestamp,
+    523                     hex_dump_message->module_name,
+    524                     change_level_to_string(hex_dump_message->print_level),
+    525                     hex_dump_message->func_name,
+    526                     hex_dump_message->line_number);
+    527              printf("%s\r\n", (char *)hex_dump_message->message);
+    528              if (hex_dump_message->data_length > MAX_DUMP_DATA_SIZE) {
+    529                  hex_dump_data(hex_dump_message->data, MAX_DUMP_DATA_SIZE);
+    530                  hex_dump_data(hex_dump_message->additional_data, hex_dump_message->data_length - MAX_DUMP_DATA_SIZE);
+    531              } else {
+    532                  hex_dump_data(hex_dump_message->data, hex_dump_message->data_length);
+    533              }
+    534          }
+    535          
+    536          void process_log_message(const log_message_t *log_message)
+    537          {
+    538              if (syslog_drop_count) {
+    539                  UBaseType_t uxSavedInterruptStatus = portSET_INTERRUPT_MASK_FROM_ISR();;
+    540                  printf("\t\t>>> log drop count = %u\r\n\n", (unsigned int)syslog_drop_count);
+    541                  syslog_drop_count = 0;
+    542                  portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
+    543              }
+    544          
+    545              if (MESSAGE_TYPE_NORMAL_LOG == log_message->message_type) {
+    546                  print_normal_log(&log_message->u.normal_log_message);
+    547              } else {
+    548                  print_hex_dump(&log_message->u.hex_dump_message);
+    549              }
+    550          }
+    551          
+    552          #if defined(MTK_PORT_SERVICE_ENABLE)
+    553          
+    554          static void syslog_serial_port_open(TimerHandle_t timer)
+    555          {
+    556              serial_port_open_para_t serial_port_open_para;
+    557              serial_port_status_t status;
+    558          
+    559              portENTER_CRITICAL();
+    560              if (g_log_port == (serial_port_dev_t)g_log_uart_port) {
+    561                  hal_uart_deinit(g_log_uart_port);
+    562              }
+    563              serial_port_open_para.callback = syslog_port_service_callback;
+    564              status = serial_port_open(g_log_port, &serial_port_open_para, &g_log_port_handle);
+    565              portEXIT_CRITICAL();
+    566          
+    567              switch (status) {
+    568                  case SERIAL_PORT_STATUS_DEV_NOT_READY:
+    569                      break;
+    570          
+    571                  case SERIAL_PORT_STATUS_OK:
+    572                      /* port service ready */
+    573                      log_switch_to_dma_mode();
+    574                      break;
+    575          
+    576                  case SERIAL_PORT_STATUS_BUSY:
+    577                  case SERIAL_PORT_STATUS_UNINITIALIZED:
+    578                  case SERIAL_PORT_STATUS_UNSUPPORTED:
+    579                  case SERIAL_PORT_STATUS_INVALID_DEVICE:
+    580                  case SERIAL_PORT_STATUS_INVALID_PARAMETER:
+    581                  case SERIAL_PORT_STATUS_FAIL:
+    582                      /* not recoverable */
+    583                      break;
+    584              }
+    585          
+    586              LOG_I(common, "open port status = %d", status);
+    587          }
+    588          
+    589          void syslog_serial_port_switch(serial_port_dev_t device)
+    590          {
+    591              syslog_init_done &= ~(SYSLOG_UART_DMA_MODE | SYSLOG_PORT_OPEN_DONE);
+    592              serial_port_close(g_log_port_handle);
+    593              if (g_log_port == (serial_port_dev_t)g_log_uart_port) {
+    594                  log_uart_init(g_log_uart_port);
+    595              }
+    596              g_log_port = device;
+    597              syslog_serial_port_open(NULL);
+    598          }
+    599          
+    600          #endif /* MTK_PORT_SERVICE_ENABLE */
+    601          
+    602          void syslog_task_entry(void *args)
+    603          {
+    604          #if defined(MTK_PORT_SERVICE_ENABLE)
+    605              tx_sem = xSemaphoreCreateBinary();
+    606              rx_sem = xSemaphoreCreateBinary();
+    607              /* The port setting is written during project initialization. Syslog reads the port setting. */
+    608              if (serial_port_config_read_dev_number("syslog", &g_log_port) != SERIAL_PORT_STATUS_OK) {
+    609                  g_log_port = (serial_port_dev_t)g_log_uart_port;
+    610              }
+    611              LOG_I(common, "syslog port = %d", g_log_port);
+    612              syslog_serial_port_open(NULL);
+    613          #endif
+    614          
+    615              syslog_task_ready = true;
+    616              for (;;) {
+    617                  syslog_buffer_t *log_buffer = NULL;
+    618                  if (0 == log_queue_receive(&log_buffer)) {
+    619                      process_log_message((log_message_t *)(log_buffer->buffer));
+    620                      buffer_pool_release(log_buffer);
+    621                  }
+    622              }
+    623          }
+    624          
+    625          void log_init(syslog_save_fn         save,
+    626                        syslog_load_fn         load,
+    627                        log_control_block_t  **entries)
+    628          {
+    629              exception_config_type exception_config;
+    630          
+    631              if (syslog_init_done & SYSLOG_GPT_INIT_DONE) {
+    632                  /* avoid initializing syslog twice */
+    633                  return;
+    634              }
+    635          
+    636              syslog_init_done |= SYSLOG_UART_INIT_DONE; /* for backward compatible */
+    637              buffer_pool_init();
+    638              log_queue_create();
+    639              syslog_task_ready = false;
+    640          
+    641              exception_config.init_cb = syslog_exception_cb;
+    642              exception_config.dump_cb = NULL;
+    643              exception_register_callbacks(&exception_config);
+    644          
+    645          
+    646              if (pdPASS != xTaskCreate(syslog_task_entry,
+    647                                        SYSLOG_TASK_NAME,
+    648                                        SYSLOG_TASK_STACKSIZE,
+    649                                        NULL,
+    650                                        SYSLOG_TASK_PRIO,
+    651                                        &syslog_task_handle)) {
+    652                  printf("log_init: create syslog task failed.\r\n");
+    653              }
+    654          
+    655              syslog_init_time = get_current_time_in_ms();
+    656              syslog_init_done |= SYSLOG_GPT_INIT_DONE;
+    657              (void)syslog_init_time;
+    658          
+    659              syslog_config.save_fn = save;
+    660              syslog_config.filters = entries;
+    661          
+    662              if (load) {
+    663                  /* overwrite the rom code definition if any */
+    664                  if (load(&syslog_config) != 0) {
+    665                      LOG_E(common, "load syslog config failed\n");
+    666                  }
+    667              }
+    668              syslog_init_done |= SYSLOG_NVDM_INIT_DONE;
+    669          }
+    670          
+    671          void vprint_module_log(void *handle,
+    672                                 const char *func,
+    673                                 int line,
+    674                                 print_level_t level,
+    675                                 const char *message,
+    676                                 va_list list)
+    677          {
+    678              log_control_block_t *context = (log_control_block_t *)handle;
+    679              if ((context->log_switch == DEBUG_LOG_ON)
+    680                      && (context->print_level <= level)) {
+    681          
+    682                  if (!syslog_task_ready
+    683                          || (xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED
+    684                              && (portNVIC_INT_CTRL_REG & 0xff) == 0)) {
+    685                      if (syslog_init_done > 0) {
+    686                          UBaseType_t uxSavedInterruptStatus;
+    687                          uxSavedInterruptStatus = portSET_INTERRUPT_MASK_FROM_ISR();
+    688                          if (syslog_init_done > SYSLOG_UART_INIT_DONE) {
+    689                              /* gpt init done, time can be printed  */
+    690                              printf("[T: %u M: %s C: %s F: %s L: %d]: ",
+    691                                     get_current_time_in_ms(),
+    692                                     context->module_name,
+    693                                     change_level_to_string(level),
+    694                                     func,
+    695                                     line);
+    696                          }
+    697                          vprintf(message, list);
+    698                          printf("\r\n");
+    699                          portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
+    700                      }
+    701                  } else {
+    702                      /* syslog task is ready, send to queue to print */
+    703                      syslog_buffer_t *syslog_buffer = buffer_pool_alloc();
+    704                      log_message_t *log_message;
+    705                      normal_log_message_t *normal_log_message;
+    706          
+    707                      if (NULL == syslog_buffer) {
+    708                          return;
+    709                      }
+    710                      log_message = (log_message_t *)syslog_buffer->buffer;
+    711                      log_message->message_type = MESSAGE_TYPE_NORMAL_LOG;
+    712                      normal_log_message = &log_message->u.normal_log_message;
+    713                      normal_log_message->module_name = context->module_name;
+    714                      normal_log_message->print_level = level;
+    715                      normal_log_message->func_name = func;
+    716                      normal_log_message->line_number = line;
+    717                      normal_log_message->timestamp = get_current_time_in_ms();
+    718          
+    719                      /* This step might fail when log message is too long,
+    720                         but syslog will do it's best to print the log */
+    721                      (void)vsnprintf(normal_log_message->message, MAX_LOG_SIZE, message, list);
+    722                      log_queue_send(&syslog_buffer);
+    723                  }
+    724              }
+    725          }
+    726          
+    727          void print_module_log(void *handle,
+    728                                const char *func,
+    729                                int line,
+    730                                print_level_t level,
+    731                                const char *message, ...)
+    732          {
+    733              va_list ap;
+    734              va_start(ap, message);
+    735              vprint_module_log(handle, func, line, level, message, ap);
+    736              va_end(ap);
+    737          }
+    738          
+    739          void vdump_module_buffer(void *handle,
+    740                                   const char *func,
+    741                                   int line,
+    742                                   print_level_t level,
+    743                                   const void *data,
+    744                                   int length,
+    745                                   const char *message,
+    746                                   va_list list)
+    747          {
+    748              log_control_block_t *context = (log_control_block_t *)handle;
+    749              int additional_length;
+    750          
+    751              if ((context->log_switch == DEBUG_LOG_ON)
+    752                      && (context->print_level <= level)) {
+    753          
+    754                  if (!syslog_task_ready
+    755                          || (xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED
+    756                              && (portNVIC_INT_CTRL_REG & 0xff) == 0)) {
+    757                      if (syslog_init_done > 0) {
+    758                          UBaseType_t uxSavedInterruptStatus;
+    759                          uxSavedInterruptStatus = portSET_INTERRUPT_MASK_FROM_ISR();
+    760                          if (syslog_init_done > SYSLOG_UART_INIT_DONE) {
+    761                              /* gpt init done, time can be printed  */
+    762                              printf("[T: %u M: %s C: %s F: %s L: %d]: ",
+    763                                     get_current_time_in_ms(),
+    764                                     context->module_name,
+    765                                     change_level_to_string(level),
+    766                                     func,
+    767                                     line);
+    768                          }
+    769                          vprintf(message, list);
+    770                          printf("\r\n");
+    771                          hex_dump_data((char *)data, length);
+    772                          portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
+    773                      }
+    774                  } else {
+    775                      /* syslog task is ready, send to queue to print */
+    776                      syslog_buffer_t *syslog_buffer = buffer_pool_alloc();
+    777                      log_message_t *log_message;
+    778                      hex_dump_message_t *hex_dump_message;
+    779          
+    780                      if (NULL == syslog_buffer) {
+    781                          return;
+    782                      }
+    783          
+    784                      log_message = (log_message_t *)syslog_buffer->buffer;
+    785                      log_message->message_type = MESSAGE_TYPE_HEX_DUMP;
+    786                      hex_dump_message = &log_message->u.hex_dump_message;
+    787                      hex_dump_message->module_name = context->module_name;
+    788                      hex_dump_message->print_level = level;
+    789                      hex_dump_message->func_name = func;
+    790                      hex_dump_message->line_number = line;
+    791                      hex_dump_message->timestamp = get_current_time_in_ms();
+    792          
+    793                      /* This step might fail when log message is too long,
+    794                         but syslog will do it's best to print the log */
+    795                      (void)vsnprintf(hex_dump_message->message, MAX_DUMP_MESSAGE_SIZE, message, list);
+    796          
+    797                      if (length > MAX_HEXDUMP_LENGTH) {
+    798                          length = MAX_HEXDUMP_LENGTH;
+    799                      }
+    800          
+    801                      additional_length = 0;
+    802                      if (length > MAX_DUMP_DATA_SIZE) {
+    803                          if ( (portNVIC_INT_CTRL_REG & 0xff) == 0) {
+    804                              additional_length = length - MAX_DUMP_DATA_SIZE;
+    805                          }
+    806                          length = MAX_DUMP_DATA_SIZE;
+    807                      }
+    808          
+    809                      memcpy(hex_dump_message->data, data, length);
+    810                      hex_dump_message->data_length = length;
+    811          
+    812                      hex_dump_message->additional_data = NULL;
+    813                      if (additional_length) {
+    814                          if ((hex_dump_message->additional_data = (char *) pvPortMalloc(additional_length)) != NULL) {
+    815                              memcpy(hex_dump_message->additional_data, (char *)data + length, additional_length);
+    816                              hex_dump_message->data_length += additional_length;
+    817                          }
+    818                      }
+    819          
+    820                      log_queue_send(&syslog_buffer);
+    821                  }
+    822              }
+    823          }
+    824          
+    825          void dump_module_buffer(void *handle,
+    826                                  const char *func,
+    827                                  int line,
+    828                                  print_level_t level,
+    829                                  const void *data,
+    830                                  int length,
+    831                                  const char *message, ...)
+    832          {
+    833              va_list ap;
+    834              va_start(ap, message);
+    835              vdump_module_buffer(handle, func, line, level, data, length, message, ap);
+    836              va_end(ap);
+    837          }
+    838          
+    839          
+    840          void syslog_get_config(syslog_config_t *config)
+    841          {
+    842              *config = syslog_config;
+    843          }
+    844          
+    845          /**
+    846           * @param p  the string pointer.
+    847           * @param pp the pointer be assigned the start of next string.
+    848           *
+    849           * @retval 0 No valid string found.
+    850           * @return the length of the found string.
+    851           */
+    852          static int syslog_get_a_string(const char *p, char **pp)
+    853          {
+    854              const char *start;
+    855          
+    856              while (*p == ' ') {
+    857                  p++;
+    858              }
+    859          
+    860              start = p;
+    861          
+    862              /* first non-space is '\0' */
+    863              if (*p == '\0') {
+    864                  *pp = NULL;
+    865                  return 0;
+    866              }
+    867          
+    868              *pp = (char *)p;
+    869          
+    870              while (*p != ' ' && *p != '\0') {
+    871                  p++;
+    872              }
+    873          
+    874              return (p - start);
+    875          }
+    876          
+    877          static int syslog_get_index_from_module_name(log_control_block_t **filters, const char *module_name)
+    878          {
+    879              int i = 0;
+    880          
+    881              if (filters == NULL) {
+    882                  return -1;
+    883              }
+    884          
+    885              while (filters[i]) {
+    886                  if (!strcmp(filters[i]->module_name, module_name)) {
+    887                      return i;
+    888                  }
+    889                  i++;
+    890              }
+    891          
+    892              /* no match tag name found */
+    893              return -1;
+    894          }
+    895          
+    896          int syslog_set_filter(char *module_name, char *log_switch_str, char *print_level_str, int save)
+    897          {
+    898              int         i;
+    899              int         log_switch;
+    900              int         print_level;
+    901          
+    902              log_switch = str_to_log_switch(log_switch_str);
+    903              if (log_switch < 0) {
+    904                  return -1;
+    905              }
+    906          
+    907              print_level = str_to_print_level(print_level_str);
+    908              if (print_level < 0) {
+    909                  return -1;
+    910              }
+    911          
+    912              if (strcmp(module_name, "*") == 0) {
+    913          
+    914                  if (syslog_config.filters == NULL) {
+    915                      return -1;
+    916                  }
+    917          
+    918                  i = 0;
+    919                  while (syslog_config.filters[i]) {
+    920                      syslog_config.filters[i]->log_switch = (log_switch_t)log_switch;
+    921                      syslog_config.filters[i]->print_level = (print_level_t)print_level;
+    922                      i++;
+    923                  }
+    924          
+    925              } else {
+    926          
+    927                  i = syslog_get_index_from_module_name(syslog_config.filters, module_name);
+    928                  /* no match tag name found */
+    929                  if (i < 0) {
+    930                      return -1;
+    931                  }
+    932                  syslog_config.filters[i]->log_switch = (log_switch_t)log_switch;
+    933                  syslog_config.filters[i]->print_level = (print_level_t)print_level;
+    934          
+    935              }
+    936          
+    937              if (save) {
+    938                  syslog_config.save_fn(&syslog_config);
+    939              }
+    940          
+    941              return 0;
+    942          }
+    943          
+    944          int syslog_at_set_filter(char *module_name, int log_switch, int print_level, int save)
+    945          {
+    946              int         i;
+    947          
+    948              if (strcmp(module_name, "*") == 0) {
+    949          
+    950                  if (syslog_config.filters == NULL) {
+    951                      return -1;
+    952                  }
+    953          
+    954                  i = 0;
+    955                  while (syslog_config.filters[i]) {
+    956                      syslog_config.filters[i]->log_switch = (log_switch_t)log_switch;
+    957                      syslog_config.filters[i]->print_level = (print_level_t)print_level;
+    958                      i++;
+    959                  }
+    960          
+    961              } else {
+    962          
+    963                  i = syslog_get_index_from_module_name(syslog_config.filters, module_name);
+    964                  /* no match tag name found */
+    965                  if (i < 0) {
+    966                      return -1;
+    967                  }
+    968                  syslog_config.filters[i]->log_switch = (log_switch_t)log_switch;
+    969                  syslog_config.filters[i]->print_level = (print_level_t)print_level;
+    970          
+    971              }
+    972          
+    973              if (save) {
+    974                  syslog_config.save_fn(&syslog_config);
+    975              }
+    976          
+    977              return 0;
+    978          }
+    979          
+    980          /**
+    981           * Find name and filter spec pair and convert into filter.
+    982           */
+    983          int syslog_convert_filter_str2val(log_control_block_t **filters, char *buff)
+    984          {
+    985              int     pos = 0;
+    986              int     i;
+    987              char    *module_name;
+    988              char    *log_switch_str;
+    989              char    *print_level_str;
+    990              bool    done = false;
+    991              uint32_t    log_switch;
+    992              uint32_t    print_level;
+    993              uint8_t     type;
+    994          
+    995              while (!done) {
+    996          
+    997                  /*
+    998                   * 1. find module_name
+    999                   */
+   1000          
+   1001                  i = syslog_get_a_string(&buff[pos], &module_name);
+   1002                  if (i == 0 || buff[pos + i] == '\0') {
+   1003                      /* premature end */
+   1004                      return -1;
+   1005                  }
+   1006          
+   1007                  buff[pos + i]  = '\0';
+   1008                  pos           += i + 1;
+   1009          
+   1010                  /*
+   1011                   * 2. find log_switch
+   1012                   */
+   1013          
+   1014                  i = syslog_get_a_string(&buff[pos], &log_switch_str);
+   1015                  if (i == 0) {
+   1016                      /* premature end */
+   1017                      return -2;
+   1018                  }
+   1019          
+   1020                  done = (buff[i + pos] == '\0');
+   1021          
+   1022                  buff[pos + i]  = '\0';
+   1023                  pos           += i + 1;
+   1024          
+   1025                  /*
+   1026                   * 3. find print_level
+   1027                   */
+   1028          
+   1029                  i = syslog_get_a_string(&buff[pos], &print_level_str);
+   1030                  if (i == 0) {
+   1031                      /* premature end */
+   1032                      return -2;
+   1033                  }
+   1034          
+   1035                  done = (buff[i + pos] == '\0');
+   1036          
+   1037                  buff[pos + i]  = '\0';
+   1038                  pos           += i + 1;
+   1039          
+   1040                  /* 4. check and set */
+   1041          
+   1042                  i = syslog_get_index_from_module_name(filters, module_name);
+   1043          
+   1044                  /* no match tag found */
+   1045                  if (i < 0) {
+   1046                      return -3;
+   1047                  }
+   1048          
+   1049                  log_switch = toi(log_switch_str, &type);
+   1050          
+   1051                  /* not a valid number */
+   1052                  if (type == TOI_ERR) {
+   1053                      return -4;
+   1054                  }
+   1055          
+   1056                  /* handle out of range */
+   1057                  log_switch = (log_switch > DEBUG_LOG_OFF) ? DEBUG_LOG_OFF : log_switch;
+   1058          
+   1059                  print_level = toi(print_level_str, &type);
+   1060          
+   1061                  /* not a valid number */
+   1062                  if (type == TOI_ERR) {
+   1063                      return -4;
+   1064                  }
+   1065          
+   1066                  /* handle out of range */
+   1067                  print_level = (print_level > PRINT_LEVEL_ERROR) ? PRINT_LEVEL_ERROR : print_level;
+   1068          
+   1069                  filters[i]->log_switch = (log_switch_t)log_switch;
+   1070                  filters[i]->print_level = (print_level_t)print_level;
+   1071              }
+   1072          
+   1073              return 0;
+   1074          }
+   1075          
+   1076          int syslog_convert_filter_val2str(const log_control_block_t **filters, char *buff)
+   1077          {
+   1078              int i   = 0;
+   1079              int pos = 0;
+   1080              int n;
+   1081          
+   1082              while (filters && filters[i]) {
+   1083                  n = snprintf(&buff[pos], SYSLOG_FILTER_LEN - pos, "%s%s 0x%01x 0x%01x",
+   1084                              (i == 0) ? "" : " ",
+   1085                              filters[i]->module_name,
+   1086                              filters[i]->log_switch,
+   1087                              filters[i]->print_level);
+   1088                  pos += n;
+   1089                  i++;
+   1090              }
+   1091          
+   1092              configASSERT (pos < SYSLOG_FILTER_LEN);
+   1093          
+   1094              return pos;
+   1095          }
+   1096          
+   1097          const char *log_switch_to_str(log_switch_t log_switch)
+   1098          {
+   1099              configASSERT (log_switch - DEBUG_LOG_ON <= DEBUG_LOG_OFF);
+   1100              return  log_switch_table[log_switch];
+   1101          }
+   1102          
+   1103          const char *print_level_to_str(print_level_t print_level)
+   1104          {
+   1105              configASSERT (print_level - PRINT_LEVEL_DEBUG <= PRINT_LEVEL_ERROR);
+   1106              return  print_level_table[print_level];
+   1107          }
+   1108          
+   1109          int str_to_log_switch(const char *log_switch_str)
+   1110          {
+   1111              int i;
+   1112          
+   1113              for (i = 0; i < sizeof(log_switch_table) / sizeof(char *); i++) {
+   1114                  if (!strcmp(log_switch_str, log_switch_table[i])) {
+   1115                      return i;
+   1116                  }
+   1117              }
+   1118              return -1;
+   1119          }
+   1120          
+   1121          int str_to_print_level(const char *print_level_str)
+   1122          {
+   1123              int i;
+   1124          
+   1125              for (i = 0; i < sizeof(print_level_table) / sizeof(char *); i++) {
+   1126                  if (!strcmp(print_level_str, print_level_table[i])) {
+   1127                      return i;
+   1128                  }
+   1129              }
+   1130              return -1;
+   1131          }
+   1132          
+   1133          int __wrap_printf( const char *format, ... )
+   1134          {
+   1135              va_list ap;
+   1136              int ret;
+   1137              UBaseType_t uxSavedInterruptStatus;
+   1138          
+   1139              if ( !syslog_init_done ) {
+   1140                  return 0;
+   1141              }
+   1142          
+   1143              uxSavedInterruptStatus = portSET_INTERRUPT_MASK_FROM_ISR();
+   1144          
+   1145              va_start(ap, format);
+   1146              ret = vprintf(format, ap);
+   1147              va_end(ap);
+   1148          
+   1149              portCLEAR_INTERRUPT_MASK_FROM_ISR( uxSavedInterruptStatus );
+   1150          
+   1151              return ret;
+   1152          }
+   1153          
+   1154          #else
+   1155          
+   1156          #include "syslog.h"
+   1157          
+   1158          #if defined(MTK_PORT_SERVICE_ENABLE)
+   1159          #include "serial_port.h"
+   1160          #endif
+   1161          
+   1162          /* create common module for unspecified module to use */
+   1163          log_create_module(common, PRINT_LEVEL_INFO);
+   1164          
+   1165          static hal_uart_port_t g_log_uart_port;
+   1166          
+   1167          hal_uart_status_t log_uart_init(hal_uart_port_t port)
+   1168          {
+   1169              hal_uart_config_t uart_config;
+   1170              hal_uart_status_t ret;
+   1171          
+   1172              /* Configure UART PORT */
+   1173              uart_config.baudrate = HAL_UART_BAUDRATE_115200;
+   1174              uart_config.parity = HAL_UART_PARITY_NONE;
+   1175              uart_config.stop_bit = HAL_UART_STOP_BIT_1;
+   1176              uart_config.word_length = HAL_UART_WORD_LENGTH_8;
+   1177          
+   1178              g_log_uart_port = port;
+   1179              ret = hal_uart_init(port, &uart_config);
+   1180          
+   1181              return ret;
+   1182          }
+   1183          
+   1184          void log_putchar(char byte)
+   1185          {
+   1186              hal_uart_put_char(g_log_uart_port, byte);
+   1187          }
+   1188          
+   1189          void print_module_log(void *handle,
+   1190                                const char *func,
+   1191                                int line,
+   1192                                print_level_t level,
+   1193                                const char *message, ...)
+   1194          {
+   1195          }
+   1196          
+   1197          void dump_module_buffer(void *handle,
+   1198                                  const char *func,
+   1199                                  int line,
+   1200                                  print_level_t level,
+   1201                                  const void *data,
+   1202                                  int length,
+   1203                                  const char *message, ...)
+   1204          {
+   1205          }
+   1206          
+   1207          void vprint_module_log(void *handle,
+   1208                                 const char *func,
+   1209                                 int line,
+   1210                                 print_level_t level,
+   1211                                 const char *message,
+   1212                                 va_list list)
+   1213          {
+   1214          }
+   1215          
+   1216          void vdump_module_buffer(void *handle,
+   1217                                   const char *func,
+   1218                                   int line,
+   1219                                   print_level_t level,
+   1220                                   const void *data,
+   1221                                   int length,
+   1222                                   const char *message,
+   1223                                   va_list list)
+   1224          {
+   1225          }
+   1226          
+   1227          #if defined (MTK_PORT_SERVICE_ENABLE)
+   1228          
+   1229          int log_write(char *buf, int len)
+   1230          {
+   1231              return 0;
+   1232          }
+   1233          
+   1234          void syslog_serial_port_switch(serial_port_dev_t device)
+   1235          {
+   1236          }
+   1237          
+   1238          #endif /* MTK_PORT_SERVICE_ENABLE */
+   1239          
+   1240          #endif /* MTK_DEBUG_LEVEL_NONE */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   __wrap_printf
+        24   -> vprintf
+       4   buffer_pool_alloc
+       0   buffer_pool_init
+         0   -> __aeabi_memset4
+       8   buffer_pool_release
+         8   -> vPortFree
+      40   dump_module_buffer
+        40   -> vdump_module_buffer
+       8   get_current_time_in_ms
+         8   -> hal_gpt_get_free_run_count
+      24   hex_dump_data
+         0   -> printf
+        24   -> printf
+      48   log_init
+        48   -- Indirect call
+        48   -> buffer_pool_init
+        48   -> exception_register_callbacks
+        48   -> get_current_time_in_ms
+        48   -> log_queue_create
+        48   -> printf
+        48   -> xTaskGenericCreate
+       0   log_putchar
+         0   -> hal_uart_put_char
+       8   log_queue_create
+         0   -> printf
+         8   -> xQueueGenericCreate
+       8   log_queue_receive
+         8   -> xQueueGenericReceive
+      16   log_queue_send
+        16   -> buffer_pool_release
+        16   -> xQueueGenericSend
+        16   -> xQueueGenericSendFromISR
+       8   log_switch_to_str
+         8   -> platform_assert
+      16   log_uart_init
+        16   -> hal_uart_init
+      16   print_hex_dump
+         0   -> hex_dump_data
+        16   -> hex_dump_data
+        16   -> printf
+       8   print_level_to_str
+         8   -> platform_assert
+      24   print_module_log
+        24   -> vprint_module_log
+      16   print_normal_log
+         0   -> printf
+        16   -> printf
+      16   process_log_message
+         0   -> print_hex_dump
+         0   -> print_normal_log
+        16   -> printf
+      12   sort_syslog_buffer
+      16   str_to_log_switch
+        16   -> strcmp
+      16   str_to_print_level
+        16   -> strcmp
+      32   syslog_at_set_filter
+        32   -- Indirect call
+        32   -> strcmp
+        32   -> syslog_get_index_from_module_name
+       8   syslog_buffer_dump
+         8   -> printf
+         8   -> process_log_message
+         8   -> sort_syslog_buffer
+      48   syslog_convert_filter_str2val
+        48   -> syslog_get_a_string
+        48   -> syslog_get_index_from_module_name
+        48   -> toi
+      32   syslog_convert_filter_val2str
+        32   -> platform_assert
+        32   -> snprintf
+       0   syslog_exception_cb
+         0   -> syslog_buffer_dump
+       0   syslog_get_a_string
+       0   syslog_get_config
+      16   syslog_get_index_from_module_name
+        16   -> strcmp
+      32   syslog_set_filter
+        32   -- Indirect call
+        32   -> str_to_log_switch
+        32   -> str_to_print_level
+        32   -> strcmp
+        32   -> syslog_get_index_from_module_name
+       8   syslog_task_entry
+         8   -> buffer_pool_release
+         8   -> log_queue_receive
+         8   -> process_log_message
+      56   vdump_module_buffer
+        56   -> __aeabi_memcpy
+        56   -> buffer_pool_alloc
+        56   -> get_current_time_in_ms
+        56   -> hex_dump_data
+        56   -> log_queue_send
+        56   -> printf
+        56   -> pvPortMalloc
+        56   -> vprintf
+        56   -> vsnprintf
+        56   -> xTaskGetSchedulerState
+      48   vprint_module_log
+        48   -> buffer_pool_alloc
+        48   -> get_current_time_in_ms
+        48   -> log_queue_send
+        48   -> printf
+        48   -> vprintf
+        48   -> vsnprintf
+        48   -> xTaskGetSchedulerState
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable40
+       4  ??DataTable40_1
+       4  ??DataTable44
+       4  ??DataTable50
+       4  ??DataTable50_1
+       4  ??DataTable50_10
+       4  ??DataTable50_2
+       4  ??DataTable50_3
+       4  ??DataTable50_4
+       4  ??DataTable50_5
+       4  ??DataTable50_6
+       4  ??DataTable50_7
+       4  ??DataTable50_8
+       4  ??DataTable50_9
+       8  ?_0
+       8  ?_1
+       8  ?_10
+       8  ?_11
+       4  ?_12
+       2  ?_13
+      32  ?_14
+       8  ?_15
+      40  ?_16
+      28  ?_17
+       2  ?_18
+      20  ?_19
+       8  ?_2
+       1  ?_20
+      24  ?_21
+      60  ?_22
+      44  ?_23
+      56  ?_24
+       8  ?_3
+       8  ?_4
+       4  ?_5
+       4  ?_6
+      32  ?_7
+      48  ?_8
+      36  ?_9
+      50  __wrap_printf
+      78  buffer_pool_alloc
+      14  buffer_pool_init
+      48  buffer_pool_release
+      28  dump_module_buffer
+       4  g_log_queue
+      30  get_current_time_in_ms
+      94  hex_dump_data
+     164  log_init
+      12  log_putchar
+      36  log_queue_create
+      34  log_queue_receive
+      82  log_queue_send
+       8  log_switch_table
+      32  log_switch_to_str
+      44  log_uart_init
+      98  print_hex_dump
+      34  print_level_to_str
+      18  print_module_log
+      62  print_normal_log
+      72  process_log_message
+      78  sort_syslog_buffer
+      40  str_to_log_switch
+      42  str_to_print_level
+     120  syslog_at_set_filter
+      70  syslog_buffer_dump
+    4736  syslog_buffer_pool
+      60  syslog_config
+          g_log_uart_port
+          log_control_block_common
+          syslog_init_time
+          syslog_init_done
+          syslog_task_ready
+          print_level_table
+          syslog_task_handle
+     212  syslog_convert_filter_str2val
+      90  syslog_convert_filter_val2str
+       4  syslog_drop_count
+       2  syslog_exception_cb
+      42  syslog_get_a_string
+      14  syslog_get_config
+      44  syslog_get_index_from_module_name
+     140  syslog_set_filter
+      40  syslog_task_entry
+     348  vdump_module_buffer
+     230  vprint_module_log
+      12  -- Other
+
+ 
+ 4 744 bytes in section .bss
+    68 bytes in section .data
+    49 bytes in section .rodata
+ 3 062 bytes in section .text
+ 
+ 3 062 bytes of CODE  memory
+    49 bytes of CONST memory
+ 4 812 bytes of DATA  memory
+
+Errors: none
+Warnings: none

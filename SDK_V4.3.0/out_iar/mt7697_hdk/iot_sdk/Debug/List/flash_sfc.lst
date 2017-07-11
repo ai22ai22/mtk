@@ -1,0 +1,793 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       28/Jun/2017  11:27:21
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\flash_sfc.c
+#    Command line =  
+#        -f C:\Users\leo\AppData\Local\Temp\EW674F.tmp
+#        (C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\flash_sfc.c
+#        -D MTK_LOAD_MAC_ADDR_FROM_EFUSE -D MTK_PING_OUT_ENABLE -D
+#        MTK_WIFI_PROFILE_ENABLE -D PCFG_OS=2 -D _REENT_SMALL -D
+#        MTK_MINISUPP_ENABLE -D MTK_MINICLI_ENABLE -D MTK_BSPEXT_ENABLE -D
+#        MTK_HAL_LOWPOWER_ENABLE -D MTK_LWIP_ENABLE -D
+#        MTK_HTTPCLIENT_SSL_ENABLE -D MTK_IPERF_ENABLE -D PRODUCT_VERSION=7697
+#        -D MTK_FLASH_DIRECT_DL -D MTK_PATCH_DL_ENABLE -D MTK_SMTCN_V5_ENABLE
+#        -D MTK_CLI_TEST_MODE_ENABLE -D MTK_WIFI_REPEATER_ENABLE -D
+#        CONFIG_REPEATER -D MTK_DEBUG_LEVEL_INFO -D MTK_DEBUG_LEVEL_WARNING -D
+#        MTK_DEBUG_LEVEL_ERROR -D configOVERRIDE_DEFAULT_TICK_CONFIGURATION -D
+#        CFG_SUPPORT_SMNT_PROTO=2 -D BT_DEBUG -D MTK_BLE_CLI_ENABLE -D
+#        MTK_BLE_BQB_CLI_ENABLE -D MTK_HCI_CONSOLE_MIX_ENABLE -D
+#        MTK_BLE_BQB_TEST_ENABLE -D MTK_BLE_SMTCN_ENABLE -D
+#        MBEDTLS_CONFIG_FILE=<config-mtk-md5.h> -D MTK_NVDM_ENABLE -D
+#        MTK_WIFI_PRIVILEGE_ENABLE -D __BT_DEBUG__ -lcN
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        -lA
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List
+#        --diag_suppress Pa050,Ta022,Ta023 --diag_error Pe606 -o
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\service\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\Source\portable\IAR\ARM_CM4F\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\kernel\rtos\FreeRTOS\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Device\MTK\mt7687\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\CMSIS\Include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\dhcpd\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minicli\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\minisupp\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\src\common\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\ports\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\lwip\src\include\lwip\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\common\bsp_ex\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\nvdm\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\ping\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\smtcn\inc\internal\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\iperf\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\chip\mt7687\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\util\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\wifi_service\combo\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\prebuilt\middleware\MTK\bluetooth\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\project\mt7697_hdk\apps\iot_sdk\src\ut_app\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\ept\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\include\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\third_party\mbedtls\configs\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\driver\board\mt76x7_hdk\external_flash\inc\
+#        -I
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\mt7697_hdk\apps\iot_sdk\EWARM\..\..\..\..\..\middleware\MTK\connsys\inc\
+#        -Om -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0_2\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\List\flash_sfc.lst
+#    Object file  =  
+#        C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\out_iar\mt7697_hdk\iot_sdk\Debug\Obj\flash_sfc.o
+#
+###############################################################################
+
+C:\LEO\myGit\MTK-IOT\SDK_V4.3.0\driver\chip\mt7687\src\common\flash_sfc.c
+      1          /* Copyright Statement:
+      2           *
+      3           * (C) 2005-2016  MediaTek Inc. All rights reserved.
+      4           *
+      5           * This software/firmware and related documentation ("MediaTek Software") are
+      6           * protected under relevant copyright laws. The information contained herein
+      7           * is confidential and proprietary to MediaTek Inc. ("MediaTek") and/or its licensors.
+      8           * Without the prior written permission of MediaTek and/or its licensors,
+      9           * any reproduction, modification, use or disclosure of MediaTek Software,
+     10           * and information contained herein, in whole or in part, shall be strictly prohibited.
+     11           * You may only use, reproduce, modify, or distribute (as applicable) MediaTek Software
+     12           * if you have agreed to and been bound by the applicable license agreement with
+     13           * MediaTek ("License Agreement") and been granted explicit permission to do so within
+     14           * the License Agreement ("Permitted User").  If you are not a Permitted User,
+     15           * please cease any access or use of MediaTek Software immediately.
+     16           * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+     17           * THAT MEDIATEK SOFTWARE RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES
+     18           * ARE PROVIDED TO RECEIVER ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+     19           * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+     20           * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+     21           * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+     22           * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+     23           * SUPPLIED WITH MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+     24           * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+     25           * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+     26           * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+     27           * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+     28           * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+     29           * CUMULATIVE LIABILITY WITH RESPECT TO MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+     30           * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE MEDIATEK SOFTWARE AT ISSUE,
+     31           * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+     32           * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+     33           */
+     34          
+     35          /****************************************************************************
+     36              Module Name:
+     37              Flash
+     38          
+     39              Abstract:
+     40              Flash related access function.
+     41          
+     42              Revision History:
+     43              Who         When            What
+     44              --------    ----------      ------------------------------------------
+     45          ***************************************************************************/
+     46          #include "hal_flash.h"
+     47          
+     48          #ifdef HAL_FLASH_MODULE_ENABLED
+     49          #include <stdio.h>
+     50          #include <string.h>
+     51          #include <assert.h>
+     52          #include "type_def.h"
+     53          #include "mt7687.h"
+     54          
+     55          #include "flash_sfc.h"
+     56          #include "spi_flash.h"
+     57          #include "nvic.h"
+     58          #include "hal_cache.h"
+     59          #include "hal_flash.h"
+     60          #include "hal_gpt.h"
+     61          #include "hal_log.h"
+     62          #include "nvic.h"
+     63          #include "hal_nvic_internal.h"
+     64          #include "memory_attribute.h"
+     65          #include "bsp_flash_config.h"
+     66          
+     67          #define PAGE_BUFFER_SIZE      (64)
+     68          #define SF_DAL_FLAG_BUSY()    (NOR_FLASH_BUSY)
+     69          #define SF_DAL_FLAG_SUS()     (NOR_FLASH_SUSPENDED)
+     70          #define ust_get_duration(a,b) ((a>b)?(b+(0xFFFFFFFF-a)+0x1):(b-a))
+     71          
+     72          SF_DRV_STATE sf_drvier_status = SF_DRV_NOT_READY;
+     73          #define FLASH_DADA_MAX_LEN  (128)
+     74          ATTR_RWDATA_IN_TCM bool NOR_FLASH_BUSY = false;
+     75          ATTR_RWDATA_IN_TCM bool NOR_FLASH_SUSPENDED = false;
+     76          
+     77          uint32_t gucFlashSFCMode;
+     78          static int sf_Mutex = 1;
+     79          extern SF_TYPT support_flash_id;
+     80          extern int gd_write_sr2_1;
+     81          
+     82          uint32_t suspend_time;
+     83          uint32_t resume_suspend_on_ready;
+     84          uint32_t resume_suspend_on_checkready;
+     85          
+     86          ATTR_TEXT_IN_TCM uint32_t gpt_get_current_time(void)
+     87          {
+     88              uint32_t counter = 0;
+     89              hal_gpt_status_t ret;
+     90              ret = hal_gpt_get_free_run_count(HAL_GPT_CLOCK_SOURCE_32K, &counter);
+     91              if (ret != HAL_GPT_STATUS_OK) {
+     92                  assert(0);
+     93              }
+     94              return counter;
+     95          }
+     96          
+     97          ATTR_TEXT_IN_TCM void SF_DAL_FLAG_BUSY_SET(void)
+     98          {
+     99              NOR_FLASH_BUSY = true;
+    100          }
+    101          ATTR_TEXT_IN_TCM void SF_DAL_FLAG_BUSY_CLR(void)
+    102          {
+    103              NOR_FLASH_BUSY = false;
+    104          }
+    105          ATTR_TEXT_IN_TCM void SF_DAL_FLAG_SUS_SET(void)
+    106          {
+    107              NOR_FLASH_SUSPENDED = true;
+    108          }
+    109          ATTR_TEXT_IN_TCM void SF_DAL_FLAG_SUS_CLR(void)
+    110          {
+    111              NOR_FLASH_SUSPENDED = false;
+    112          }
+    113          
+    114          int32_t get_sf_lock(void)
+    115          {
+    116              uint32_t savedMask;
+    117              savedMask = save_and_set_interrupt_mask();
+    118              if (sf_Mutex == 1) {
+    119                  sf_Mutex--;
+    120                  restore_interrupt_mask(savedMask);
+    121                  return 0;
+    122              } else if (sf_Mutex == 0) {
+    123                  restore_interrupt_mask(savedMask);
+    124                  return -2;
+    125              } else {
+    126                  restore_interrupt_mask(savedMask);
+    127                  assert(0);
+    128                  return -1;
+    129              }
+    130          }
+    131          
+    132          void free_sf_lock(void)
+    133          {
+    134              uint32_t savedMask;
+    135              savedMask = save_and_set_interrupt_mask();
+    136              if (sf_Mutex == 0) {
+    137                  sf_Mutex++;
+    138                  restore_interrupt_mask(savedMask);
+    139              } else {
+    140                  restore_interrupt_mask(savedMask);
+    141                  assert(0);
+    142              }
+    143          }
+    144          
+    145          void retrieve_sf_lock(void)
+    146          {
+    147              int32_t Result;
+    148              do { /* polling lock become avaliable */
+    149                  Result = get_sf_lock();
+    150              } while (Result != 0);
+    151          }
+    152          
+    153          /*****************************************************************
+    154          Description : relieve FDM synchronization lock.
+    155          Input       :
+    156          Output      : None
+    157          ******************************************************************/
+    158          void release_sf_lock(void)
+    159          {
+    160              free_sf_lock();
+    161          }
+    162          
+    163          static void sfc_pad_config(void)
+    164          {
+    165          #if (PRODUCTION_VERSION == 7687)
+    166          	   uint32_t pad_io_setting = 0;
+    167              #define TOP_PAD_CLT0 (0x8102188)
+    168              pad_io_setting = *(volatile uint32_t*)TOP_PAD_CLT0;
+    169              pad_io_setting |= 0x00007E00;    //bit9 - bit14 used by sip flash
+    170              *(volatile uint32_t*)TOP_PAD_CLT0 = pad_io_setting;
+    171          #elif (PRODUCTION_VERSION == 7697)  
+    172              #define TOP_PAD_CLT0 (0x81021080)	
+    173              uint32_t pad_io_setting = 0;
+    174              /* bit4   SPI_DATA0_EXT
+    175                     bit5   SPI_DATA1_EXT
+    176                     bit7   SPI_CS_EXT
+    177                     bit24  SPI_DATA2_EXT
+    178                     bit25  SPI_DATA4_EXT 
+    179                     bit26  SPI_CLK_EXT
+    180                  */
+    181              pad_io_setting = *(volatile uint32_t*)TOP_PAD_CLT0;
+    182              pad_io_setting |= 0x070000B0;  
+    183              *(volatile uint32_t*)TOP_PAD_CLT0 = pad_io_setting;
+    184          #endif
+    185          }
+    186          ATTR_TEXT_IN_TCM int32_t flash_sfc_config(uint8_t mode)
+    187          {
+    188              INT32 ret = 0;
+    189              sfc_pad_config();
+    190              gpt_get_current_time();   // init gpt one time to avoid put more GPT code in RAM
+    191              if (customer_flash_register() != NULL) {
+    192              	   //configured external flash
+    193                  support_flash_id = SF_TYPE_CUSTOMER;
+    194              }
+    195              flash_check_device();
+    196          
+    197              return ret;
+    198          }
+    199          
+    200          void hal_flash_direct_read(void *absolute_address, uint8_t *buffer, uint32_t length)
+    201          {
+    202              retrieve_sf_lock();
+    203              memcpy(buffer, absolute_address, length);
+    204              release_sf_lock();
+    205          }
+    206          
+    207          ATTR_TEXT_IN_TCM int32_t flash_sfc_read(uint32_t address, uint32_t length, uint8_t *buffer)
+    208          {
+    209              INT32 ret = 0;
+    210              UINT32 u4Redidual = length;
+    211              UINT32 u4ReadLen = 0;
+    212          
+    213              retrieve_sf_lock();
+    214              while (FLASH_DADA_MAX_LEN <= u4Redidual) {
+    215                  u4ReadLen = FLASH_DADA_MAX_LEN;
+    216                  if (FLASH_MODE_SPI == gucFlashSFCMode) {
+    217                      flash_read(buffer, address, u4ReadLen);
+    218                  } else if (FLASH_MODE_QPI == gucFlashSFCMode) {
+    219                      flash_fast_read(buffer, address, u4ReadLen, 1 /* dummy_cycle, 4bit * 2cycle == 1byte */);
+    220                  }
+    221          
+    222                  buffer = buffer + u4ReadLen;
+    223                  address = address + u4ReadLen;
+    224                  u4Redidual = u4Redidual - u4ReadLen;
+    225              }
+    226          
+    227              if (FLASH_MODE_SPI == gucFlashSFCMode) {
+    228                  flash_read(buffer, address, u4Redidual);
+    229              } else if (FLASH_MODE_QPI == gucFlashSFCMode) {
+    230                  flash_fast_read(buffer, address, u4Redidual, 1 /* dummy_cycle, 4bit * 2cycle == 1byte */);
+    231              }
+    232              sf_drvier_status = SF_DRV_READY;
+    233              release_sf_lock();
+    234              return ret;
+    235          }
+    236          
+    237          
+    238          int32_t flash_sfc_write(uint32_t address, uint32_t length, const uint8_t *buffer)
+    239          {
+    240              INT32 ret = 0;
+    241          
+    242              retrieve_sf_lock();
+    243          #ifdef HAL_CACHE_MODULE_ENABLED
+    244              hal_cache_invalidate_all_cache_lines();
+    245              hal_cache_disable();
+    246          #endif
+    247              ret = flash_write(buffer, address, length);
+    248              sf_drvier_status = SF_DRV_READY;
+    249          #ifdef HAL_CACHE_MODULE_ENABLED
+    250              hal_cache_enable();
+    251          #endif
+    252              release_sf_lock();
+    253              return ret;
+    254          }
+    255          
+    256          ATTR_TEXT_IN_TCM int32_t flash_sfc_erase(uint32_t address, uint32_t type)
+    257          {
+    258              INT32 ret = 0;
+    259              retrieve_sf_lock();
+    260          #ifdef HAL_CACHE_MODULE_ENABLED
+    261              hal_cache_invalidate_all_cache_lines();
+    262              hal_cache_disable();
+    263          #endif
+    264              flash_write_enable();
+    265              flash_unprotect();
+    266          
+    267              if (HAL_FLASH_BLOCK_4K == type) {
+    268                  if ((address & 0xFFF) != 0) {
+    269          #ifdef HAL_CACHE_MODULE_ENABLED
+    270                     hal_cache_enable();
+    271          #endif
+    272                     release_sf_lock();
+    273                     return (ret = -3);
+    274                  }
+    275                  ret = flash_erase_page(address);
+    276              } else if (HAL_FLASH_BLOCK_32K == type) {
+    277                  if ((address & 0x7FFF) != 0) {
+    278          #ifdef HAL_CACHE_MODULE_ENABLED
+    279                     hal_cache_enable();
+    280          #endif
+    281                     release_sf_lock();
+    282                     return (ret = -3);
+    283                  }
+    284                  ret = flash_erase_sector_32k(address);
+    285              } else if (HAL_FLASH_BLOCK_64K == type) {
+    286                  if ((address & 0xFFFF) != 0) {
+    287          #ifdef HAL_CACHE_MODULE_ENABLED
+    288                     hal_cache_enable();
+    289          #endif
+    290                     release_sf_lock();
+    291                     return (ret = -3);
+    292                  }
+    293                  ret = flash_erase_sector(address);
+    294              }
+    295          
+    296          #ifdef HAL_CACHE_MODULE_ENABLED
+    297              hal_cache_enable();
+    298          #endif
+    299              release_sf_lock();
+    300              return ret;
+    301          }
+    302          
+    303          
+    304          ATTR_TEXT_IN_TCM void Flash_ReturnReady(void)
+    305          {
+    306              uint8_t sr = 0;
+    307              uint32_t savedMask = 0;
+    308          
+    309              if (sf_drvier_status == SF_DRV_NOT_READY) {
+    310                  //assert(0);
+    311                  //return;
+    312              }
+    313          
+    314              // No Suspend Conditions
+    315              // 1. For those deivces that do not support program-suspend (buffer length < 32 bytes).
+    316              // 2. Serial Flash Unit Test: Erase/Program w/o suspend.
+    317              // 3. NOR_NO_SUSPEND is defiend.
+    318              if ((PAGE_BUFFER_SIZE < 16) && (sf_drvier_status >= SF_DRV_PROGRAMMING)) {
+    319                  while (1) {
+    320                      if (flash_read_sr(&sr) < 0) {
+    321                          assert(0);
+    322                      }
+    323                      if (0 == (sr & SR_WIP)) {
+    324                          break;
+    325                      }
+    326                  }
+    327              }
+    328          
+    329              savedMask = save_and_set_interrupt_mask();
+    330              if ((!SF_DAL_FLAG_SUS()) && SF_DAL_FLAG_BUSY()) {
+    331                  if (flash_read_sr(&sr) < 0) {
+    332                      //read SR failed
+    333                      assert(0);
+    334                  }
+    335          
+    336                  // if flash is busy, suspend any on-going operations
+    337                  if (0 != (sr & FLASH_STATUS_BUSY)) {
+    338                      // 1. Issue suspend command
+    339                      flash_suspend_Winbond();
+    340                      // 2. wait for device ready
+    341                      while (1) {
+    342                          if (flash_read_sr(&sr) < 0) {
+    343                              //read SR failed
+    344                              assert(0);
+    345                          }
+    346                          if (0 == (sr & SR_WIP)) {
+    347                              break;
+    348                          }
+    349                      }
+    350                      SF_DAL_FLAG_SUS_SET();
+    351          
+    352                  } else {
+    353                      SF_DAL_FLAG_BUSY_CLR();
+    354                  }
+    355              }
+    356              restore_interrupt_mask(savedMask);
+    357          }
+    358          
+    359          ATTR_TEXT_IN_TCM int32_t SF_DAL_CheckDeviceReady(void *MTDData, uint32_t BlockIndex)
+    360          {
+    361              int32_t result;
+    362              uint32_t savedMask = 0;
+    363              uint8_t status_busy, status_suspend;
+    364              uint8_t sr = 0;
+    365              uint8_t sr1 = 0;
+    366          
+    367              if (flash_read_sr(&sr) < 0) {
+    368                  assert(0);
+    369              } else {
+    370                  status_busy = sr;
+    371              }
+    372          
+    373              if (flash_read_sr2(&sr1) < 0) {
+    374                  assert(0);
+    375              } else {
+    376                  status_suspend = sr1;
+    377              }
+    378          
+    379              /* ensure that the status check is atomic */
+    380              savedMask = save_and_set_interrupt_mask();
+    381          
+    382              if (0 == (status_busy & FLASH_STATUS_BUSY)) {
+    383                  uint8_t check_status = (0x08 | 0x04); //defualt is MXIC
+    384          
+    385                  if (support_flash_id == SF_TYPE_WINBOND || support_flash_id == SF_TYPE_GD) {
+    386                      //windbond is s15(0x80)
+    387                      check_status = 0x80;
+    388                      if (gd_write_sr2_1 == 0x31) {
+    389                          //GD25Q32CSIG  it's s15 & s10 bit
+    390                          check_status |= 0x84;
+    391                      }
+    392                      
+    393                  } else if (support_flash_id == SF_TYPE_MXIC) {
+    394                      //mxic is WSP & WSE of security status regist(0x04 and 0x08)
+    395                      check_status = (0x08 | 0x04);
+    396                  } else if (support_flash_id == SF_TYPE_MICRON) {
+    397                      //mxic is WSP & WSE of security status regist(0x04 and 0x08)
+    398                      check_status = 0x42;     //bit7: erase susspend      bit2: program suspend
+    399                  } else if (support_flash_id == SF_TYPE_CUSTOMER) {
+    400                      //customer flash
+    401                      check_status = customer_flash_suspend_bit();
+    402                  }
+    403          
+    404                  // erase suspended or program suspended
+    405                  if ((0 != (status_suspend & check_status)) ||  // check suspend flags
+    406                          ((0 == check_status) && SF_DAL_FLAG_SUS())) { //devices that do not have suspend flags => check driver flag
+    407                      assert(SF_DAL_FLAG_BUSY());
+    408          
+    409                      // issue resume command
+    410                      flash_resume_Winbond();
+    411                      SF_DAL_FLAG_SUS_CLR();
+    412                      result =  -121;  //FS_FLASH_ERASE_BUSY;
+    413                  } else { // flash is neither busy nor suspendeds
+    414                      SF_DAL_FLAG_BUSY_CLR();
+    415                      /********************************************//**
+    416                       * If an interrupt comes during program/erase, in Flash_ReturnReady(), the device may deny the
+    417                       * "Suspend Erase/Program" command because the device is near/already ready. However,
+    418                       * NOR_FLASH_SUSPENDED is still be set to true.
+    419                       *
+    420                       * In such case, after back to erase/program operation, CheckDeviceReady will reach here
+    421                       * because flash is not busy and not erase suspended (but with NOR_FLASH_SUSPENDED = true). If NOR_FLASH_SUSPENDED
+    422                       * is not set to false here, next time when an interrupt comes during erase/program
+    423                       * operation, Flash_ReturnReady() will be misleaded by wrong NOR_FLASH_SUSPENDED and return
+    424                       * to IRQ handler directly even if flash is still erasing/programing, leading to an execution
+    425                       * error!
+    426                       ***********************************************/
+    427                      SF_DAL_FLAG_SUS_CLR();
+    428                      result = 0;   //FS_NO_ERROR;
+    429                  }
+    430              } else {
+    431                  result = -121;   //FS_FLASH_ERASE_BUSY;
+    432              }
+    433          
+    434              restore_interrupt_mask(savedMask);
+    435              return result;
+    436          }
+    437          
+    438          
+    439          ATTR_TEXT_IN_TCM int32_t SF_DAL_CheckReadyAndResume(void *MTDData, uint32_t addr, uint8_t data)
+    440          {
+    441              uint32_t          savedMask;
+    442              int32_t           result = 0;   //RESULT_FLASH_BUSY;    // default result is busy
+    443              uint8_t           check_data;
+    444              uint16_t          status_busy = 0;
+    445              uint8_t           sr = 0;
+    446          
+    447              // Read device status
+    448              if (flash_read_sr(&sr) < 0) {
+    449                  assert(0);
+    450              } else {
+    451                  status_busy = sr;
+    452              }
+    453          
+    454              savedMask = save_and_set_interrupt_mask();
+    455          
+    456              // Flash is suspended due to interrupt => Resume
+    457              if (SF_DAL_FLAG_SUS()) {
+    458                  assert(SF_DAL_FLAG_BUSY());
+    459                  flash_resume_Winbond();
+    460                  SF_DAL_FLAG_SUS_CLR();
+    461                  restore_interrupt_mask(savedMask);
+    462              }
+    463              // Flash is not suspended and ready => Validate programmed data
+    464              else  if (0 == (status_busy & FLASH_STATUS_BUSY)) {
+    465                  SF_DAL_FLAG_BUSY_CLR();
+    466                  // Compare last programmed byte
+    467                  check_data = *(volatile uint8_t *)addr;
+    468                  if (check_data == data) {
+    469                      result = 1;    //RESULT_FLASH_DONE;
+    470                  } else {
+    471                      result = -1;   //RESULT_FLASH_FAIL;
+    472                  }
+    473              }
+    474              restore_interrupt_mask(savedMask);
+    475          
+    476              return result;
+    477          }
+    478          
+    479          #ifdef OTP_FEATURE_SUPPORT
+    480          ATTR_TEXT_IN_TCM int SF_DAL_OTPAccess(void *MTDData, int accesstype, uint32_t Offset, void *Buffer, uint32_t Length)
+    481          {
+    482              switch (accesstype) {
+    483                  case OTP_READ:
+    484                      if (support_flash_id	== SF_TYPE_WINBOND) {
+    485                          return SF_OTPRead_WINBOND(Offset, Buffer, Length);
+    486                      } else if (support_flash_id == SF_TYPE_MXIC) {
+    487                          log_hal_info("Not support OTP!\r\n");
+    488                      }
+    489                      break;
+    490                  case OTP_WRITE:
+    491                      if (support_flash_id	== SF_TYPE_WINBOND) {
+    492                          return SF_OTPWrite_WINBOND(Offset, Buffer, Length);
+    493                      } else if (support_flash_id == SF_TYPE_MXIC) {
+    494                          log_hal_info("Not support OTP!\r\n");
+    495                      }
+    496                      break;
+    497                  case OTP_LOCK:
+    498                      if (support_flash_id	== SF_TYPE_WINBOND) {
+    499                          return SF_OTPLock_WINBOND();
+    500                      } else if (support_flash_id == SF_TYPE_MXIC) {
+    501                          log_hal_info("Not support OTP!\r\n");
+    502                      }
+    503                      break;
+    504                  default:
+    505                      break;
+    506              }
+    507          
+    508              return -1;
+    509          }
+    510          
+    511          ATTR_TEXT_IN_TCM int SF_DAL_OTPQueryLength(void *MTDData, uint32_t *Length)
+    512          {
+    513              if (support_flash_id == SF_TYPE_WINBOND) {
+    514                  *Length = 768;
+    515              } else if (support_flash_id	== SF_TYPE_MXIC) {
+    516                  log_hal_info("Not support OTP!\r\n");
+    517              } else {
+    518                  log_hal_info("Invalid Flash!\r\n");
+    519                  return -1;
+    520              }
+    521              return -1;
+    522          }
+    523          #endif
+    524          
+    525          #endif
+    526          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   Flash_ReturnReady
+        16   -> SF_DAL_FLAG_BUSY_CLR
+        16   -> SF_DAL_FLAG_SUS_SET
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+        16   -> flash_read_sr
+        16   -> flash_suspend_Winbond
+        16   -> restore_interrupt_mask
+        16   -> save_and_set_interrupt_mask
+      24   SF_DAL_CheckDeviceReady
+        24   -> SF_DAL_FLAG_BUSY_CLR
+        24   -> SF_DAL_FLAG_SUS_CLR
+        24   -> __aeabi_assert
+        24   -> __iar_EmptyStepPoint
+        24   -> customer_flash_suspend_bit
+        24   -> flash_read_sr
+        24   -> flash_read_sr2
+        24   -> flash_resume_Winbond
+        24   -> restore_interrupt_mask
+        24   -> save_and_set_interrupt_mask
+      32   SF_DAL_CheckReadyAndResume
+        32   -> SF_DAL_FLAG_BUSY_CLR
+        32   -> SF_DAL_FLAG_SUS_CLR
+        32   -> __aeabi_assert
+        32   -> __iar_EmptyStepPoint
+        32   -> flash_read_sr
+        32   -> flash_resume_Winbond
+        32   -> restore_interrupt_mask
+        32   -> save_and_set_interrupt_mask
+       0   SF_DAL_FLAG_BUSY_CLR
+       0   SF_DAL_FLAG_BUSY_SET
+       0   SF_DAL_FLAG_SUS_CLR
+       0   SF_DAL_FLAG_SUS_SET
+       8   flash_sfc_config
+         8   -> customer_flash_register
+         8   -> flash_check_device
+         8   -> gpt_get_current_time
+         8   -> sfc_pad_config
+      16   flash_sfc_erase
+        16   -> flash_erase_page
+        16   -> flash_erase_sector
+        16   -> flash_erase_sector_32k
+        16   -> flash_unprotect
+        16   -> flash_write_enable
+        16   -> hal_cache_disable
+        16   -> hal_cache_enable
+        16   -> hal_cache_invalidate_all_cache_lines
+        16   -> release_sf_lock
+        16   -> retrieve_sf_lock
+      24   flash_sfc_read
+        24   -> flash_fast_read
+        24   -> flash_read
+        24   -> release_sf_lock
+        24   -> retrieve_sf_lock
+      16   flash_sfc_write
+        16   -> flash_write
+        16   -> hal_cache_disable
+        16   -> hal_cache_enable
+        16   -> hal_cache_invalidate_all_cache_lines
+        16   -> release_sf_lock
+        16   -> retrieve_sf_lock
+       8   free_sf_lock
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         0   -> restore_interrupt_mask
+         8   -> restore_interrupt_mask
+         8   -> save_and_set_interrupt_mask
+       8   get_sf_lock
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         8   -> restore_interrupt_mask
+         8   -> save_and_set_interrupt_mask
+       8   gpt_get_current_time
+         8   -> __aeabi_assert
+         8   -> __iar_EmptyStepPoint
+         8   -> hal_gpt_get_free_run_count
+      16   hal_flash_direct_read
+        16   -> __aeabi_memcpy
+         0   -> release_sf_lock
+        16   -> retrieve_sf_lock
+       0   release_sf_lock
+         0   -> free_sf_lock
+       8   retrieve_sf_lock
+         8   -> get_sf_lock
+       0   sfc_pad_config
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable17
+       4  ??DataTable17_1
+       4  ??DataTable17_2
+       4  ??DataTable17_3
+       8  ?_0
+      76  ?_1
+     128  Flash_ReturnReady
+       2  NOR_FLASH_BUSY
+          NOR_FLASH_SUSPENDED
+     230  SF_DAL_CheckDeviceReady
+     148  SF_DAL_CheckReadyAndResume
+       8  SF_DAL_FLAG_BUSY_CLR
+       8  SF_DAL_FLAG_BUSY_SET
+       8  SF_DAL_FLAG_SUS_CLR
+       8  SF_DAL_FLAG_SUS_SET
+      32  flash_sfc_config
+     106  flash_sfc_erase
+     104  flash_sfc_read
+      50  flash_sfc_write
+      46  free_sf_lock
+      64  get_sf_lock
+      38  gpt_get_current_time
+      28  hal_flash_direct_read
+       2  release_sf_lock
+       4  resume_suspend_on_checkready
+       4  resume_suspend_on_ready
+      12  retrieve_sf_lock
+       4  sf_Mutex
+       8  sf_drvier_status
+          gucFlashSFCMode
+       2  sfc_pad_config
+       4  suspend_time
+
+ 
+  14 bytes in section .bss
+  12 bytes in section .data
+ 918 bytes in section .ramTEXT
+ 220 bytes in section .text
+ 
+ 1 138 bytes of CODE memory
+    26 bytes of DATA memory
+
+Errors: none
+Warnings: none
