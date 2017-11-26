@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armJET.dll" 
+
+"D:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\linkit7697_hdk\apps\ble_fota\EWARM\..\..\..\..\..\out_iar\linkit7697_hdk\ble_fota\Debug\Exe\ble_fota.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armbat.dll" 
+
+--macro "D:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\linkit7697_hdk\apps\ble_fota\EWARM\..\..\..\..\..\tools\iar\mt7687\FlashMT7687.mac" 
+
+--flash_loader "D:\LEO\myGit\MTK-IOT\SDK_V4.3.0\project\linkit7697_hdk\apps\ble_fota\EWARM\..\..\..\..\..\tools\iar\mt7687\FlashMT7687.board" 
+
+
+
+
