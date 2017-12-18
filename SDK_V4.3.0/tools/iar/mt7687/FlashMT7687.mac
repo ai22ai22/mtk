@@ -4,41 +4,34 @@ __var RCC_CIR;
 __var IWDG_PR;
 __var IWDG_RLR;
 
+unlockMem()
+{
+if(__readMemory32(0x0,"Memory") == 0x0){
+__writeMemory32(0x76371688,0x8300f050, "Memory");
+     __writeMemory32(0x76371688,0x8300f050, "Memory");
+     __writeMemory32(0x76371688,0x8300f050, "Memory");
+__message "unlock mem success in iar script"; 
+}
+}
+
 execUserFlashInit()
 {
-    if(__readMemory32(0x20000000,"Memory") != 0x76877697){
-        __writeMemory32(0x76371688,0x8300f050, "Memory");
-	      __writeMemory32(0x76371688,0x8300f050, "Memory");
-	      __writeMemory32(0x76371688,0x8300f050, "Memory");
-        __writeMemory32(0x76877697,0x20000000, "Memory");
-    }
+        __message "enter execUserFlashInit() function in iar script"; 
+        unlockMem();
+__message "exit execUserFlashInit() function in iar script"; 
 }
 
 execUserFlashExit()
 {
-
+__message "enter execUserFlashExit() function in iar script"; 
+        unlockMem();
+__message "exit execUserFlashExit() function in iar script"; 
 }
 
 
 execUserReset() 
 { 
-    __message "Executing execUserReset() function"; 
-    /* unlock memory */
-    if(__readMemory32(0x20000000,"Memory") != 0x76877697){
-        __writeMemory32(0x76371688,0x8300f050, "Memory");
-        __writeMemory32(0x76371688,0x8300f050, "Memory");
-        __writeMemory32(0x76371688,0x8300f050, "Memory");
-        __writeMemory32(0x76877697,0x20000000, "Memory");
-    }
-    __message "FINISH Executing execUserReset() function"; 
-}
-
-execUserPreload()
-{
-    if(__readMemory32(0x20000000,"Memory") != 0x76877697){
-        __writeMemory32(0x76371688,0x8300f050, "Memory");
-        __writeMemory32(0x76371688,0x8300f050, "Memory");
-        __writeMemory32(0x76371688,0x8300f050, "Memory");
-        __writeMemory32(0x76877697,0x20000000, "Memory");
-    }
+__message "enter execUserReset() function in iar script"; 
+        unlockMem();
+__message "exit execUserReset() function in iar script"; 
 }
