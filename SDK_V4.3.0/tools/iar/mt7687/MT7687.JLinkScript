@@ -1,0 +1,134 @@
+/*********************************************************************
+* SEGGER MICROCONTROLLER GmbH & Co KG *
+* Solutions for real time microcontroller applications *
+**********************************************************************
+* *
+* (c) 2011 SEGGER Microcontroller GmbH & Co KG *
+* *
+* www.segger.com Support: support@segger.com *
+* *
+**********************************************************************
+----------------------------------------------------------------------
+File : MT76x7.JLinkScript
+Purpose : J-Link target setup file for Mediatek MT76x7.
+---------------------------END-OF-HEADER------------------------------
+*/
+
+/*********************************************************************
+*
+* SetupTarget
+*/
+int UnlockMem(void)
+{
+    if(MEM_ReadU32(0x0) == 0x0){
+     MEM_WriteU32(0x8300f050, 0x76371688);
+     MEM_WriteU32(0x8300f050, 0x76371688);
+     MEM_WriteU32(0x8300f050, 0x76371688);
+     Report("MT76x7 Unlock Memory Success In J-Link Script!");
+    }
+}
+
+/*********************************************************************
+*
+* SetupTarget
+*/
+int SetupTarget(void) 
+{
+    Report("MT76x7 SetupTarget In J-Link Script");
+    UnlockMem();
+}
+
+/*********************************************************************
+*
+* AfterResetTarget
+*/
+int AfterResetTarget(void){
+    Report("MT76x7 AfterResetTarget In J-Link Script");
+    UnlockMem();
+}
+
+/*********************************************************************
+*
+* ResetTarget()
+* HW Reset and wait until CPU is halted.
+* reference:http://www.seggerforum.com/index.php?page=Thread&postID=10158
+*/
+void ResetTarget(void) {
+int AIRCR_ADDR ;
+int DHCSR_ADDR ;
+int DEMCR_ADDR ;
+int AHBAP_REG_CTRL ;
+int AHBAP_REG_ADDR ;
+int AHBAP_REG_DATA ;
+int DP_REG_SELECT ;
+AIRCR_ADDR = 0xE000ED0C;
+DHCSR_ADDR = 0xE000EDF0;
+DEMCR_ADDR = 0xE000EDFC;
+AHBAP_REG_CTRL = 0;
+AHBAP_REG_ADDR = 1;
+AHBAP_REG_DATA = 3;
+DP_REG_SELECT = 2;
+
+
+int Ctrl;
+int Value_DHCSR;
+int Tries;
+int Done;
+
+// RESETPIN HW RESET 
+    JTAG_ResetPin = 0;
+    SYS_Sleep(100); // Give pin some time to get low
+    JTAG_ResetPin = 1;
+
+// DAP INIT
+if (MAIN_ActiveTIF == JLINK_TIF_JTAG) {
+JLINK_CORESIGHT_Configure("IRPre=0;DRPre=0;IRPost=0;DRPost=0;IRLenDevice=4");
+} else {
+JLINK_CORESIGHT_Configure(""); // For SWD, no special setup is needed, just output the switching sequence
+}
+
+// Power-up complete DAP
+Ctrl = 0
+| (1 << 30) // System power-up
+| (1 << 28) // Debug popwer-up
+| (1 << 5) // Clear STICKYERR
+;
+JLINK_CORESIGHT_WriteDP(1, Ctrl);
+
+// Select AHB-AP and configure it 
+// Select AP[0] (AHB-AP) bank 0
+JLINK_CORESIGHT_WriteDP(DP_REG_SELECT, (0 << 4) | (0 << 24)); 
+// Auto-increment, Private access, HMASTER = DEBUG, Access size: word 
+JLINK_CORESIGHT_WriteAP(AHBAP_REG_CTRL, (1 << 4) | (1 << 24) | (1 << 25) | (1 << 29) | (2 << 0)); 
+
+// ENABLE DEBUG & HALT 
+JLINK_CORESIGHT_WriteAP(AHBAP_REG_ADDR, DHCSR_ADDR);
+Value_DHCSR = JLINK_CORESIGHT_ReadAP(AHBAP_REG_DATA);
+Value_DHCSR &= 0x3F; // Mask out "debug" bits
+Value_DHCSR |= 0xA05F0000; // Debug key to make a write to the DHCSR a valid one
+Value_DHCSR |= 0x00000002; // Halt the core
+Value_DHCSR |= 0x00000001; // Enable debug functionalities of the core
+JLINK_CORESIGHT_WriteAP(AHBAP_REG_ADDR, DHCSR_ADDR);
+JLINK_CORESIGHT_WriteAP(AHBAP_REG_DATA, Value_DHCSR);
+
+// Wait until CPU is halted
+Tries = 0;
+Done = 0;
+Value_DHCSR = 0;
+do {
+JLINK_CORESIGHT_WriteAP(AHBAP_REG_ADDR, DHCSR_ADDR);
+Value_DHCSR = JLINK_CORESIGHT_ReadAP(AHBAP_REG_DATA);
+// Check if CPU is halted. If so, we are done
+if (Tries >= 5) {
+MessageBox("mt76x7 (connect): Timeout while waiting for CPU to halt after reset. Manually halting CPU.");
+Done = 1;
+}
+if (Value_DHCSR & 0x00020000) { // 1 << 17
+Done = 1;
+}
+Tries = Tries + 1;
+SYS_Sleep(100);
+} while(Done == 0);
+
+    UnlockMem();
+}
